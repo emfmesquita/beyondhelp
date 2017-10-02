@@ -1,0 +1,46 @@
+.Monster-hp-panel {
+    background-color: #FFFFFF !important;
+}
+
+div.Monster-dead {
+    background-color: #C8C8C8 !important;
+}
+
+h5.Monster-dead {
+    text-decoration: line-through;
+}
+
+.Monster-title {
+    margin: 4px;
+}
+
+.Monster-hp-bar-text {
+    position: absolute;
+    width: 100%;
+    color: #333;
+    font-weight: bold;
+}
+
+.Monster-damage-column {
+    padding-right: 4px !important;
+}
+
+.Monster-heal-column {
+    padding-left: 4px !important;
+}
+
+.Monster-hp-button {
+    padding-left: 8px !important;
+	padding-right: 8px !important;
+	height: 34px;
+}
+
+.progress {
+	position: relative;
+	margin-bottom: 8px !important;
+}
+
+.well {
+	padding: 8px !important;
+	margin-bottom: 0px !important;
+}
