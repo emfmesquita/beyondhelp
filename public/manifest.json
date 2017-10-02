@@ -1,15 +1,24 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
+  "name": "Beyond Help",
+  "version": "0.1.0",
+  "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "icon-19.png",
+    "default_title": "Beyond Help",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "declarativeContent"
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "icons": {
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "manifest_version": 2
 }

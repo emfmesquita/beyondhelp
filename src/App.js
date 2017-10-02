@@ -15,6 +15,26 @@ const monsters = [
     name: "Druid",
     number: 1,
     hp: 45
+  }, {
+    name: "Druid",
+    number: 2,
+    hp: 45
+  }, {
+    name: "Druid",
+    number: 3,
+    hp: 45
+  }, {
+    name: "Druid",
+    number: 4,
+    hp: 45
+  }, {
+    name: "Druid",
+    number: 5,
+    hp: 45
+  }, {
+    name: "Druid",
+    number: 6,
+    hp: 45
   }
 ];
 
