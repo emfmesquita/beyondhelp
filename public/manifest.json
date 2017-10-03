@@ -8,13 +8,19 @@
     ],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.dndbeyond.com/monsters/*"],
+      "js": ["monstercontent.js"]
+    }
+  ],
   "page_action": {
     "default_icon": "icon-19.png",
     "default_title": "Beyond Help",
     "default_popup": "index.html"
   },
   "permissions": [
-    "declarativeContent"
+    "declarativeContent", "activeTab", "https://www.dndbeyond.com/*"
   ],
   "icons": {
     "48": "icon-48.png",

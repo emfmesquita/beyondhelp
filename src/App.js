@@ -4,7 +4,8 @@ import MonsterList from './MonsterList';
 
 const monsters = [
   {
-    name: "Dragon",
+    id: "aboleth",
+    name: "Aboleth",
     number: 1,
     hp: 100
   }, {

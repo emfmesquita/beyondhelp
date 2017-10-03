@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Col, FormControl, FormGroup, InputGroup, Row } from 'react-bootstrap';
 import './Monster.css';
+import MonsterInfoModal from './MonsterInfoModal';
 
 class Monster extends Component {
     constructor(props) {
@@ -61,7 +62,10 @@ class Monster extends Component {
 
     render() {
         return (
-            <div className={"well Monster-hp-panel" + (this.state.dead ? " Monster-dead" : "")}>
+            <div className={"well" + (this.state.dead ? " Monster-dead" : "")}>
+                <a className={"pull-left monster-stats-button" + (this.props.monster.id ? "" : " hidden")} href="javascript:void(0)" onClick="mhp_stats.showMonsterStats(this);" role="button">
+                    <span className="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </a>
                 <h5 className={"text-center Monster-title" + (this.state.dead ? " Monster-dead" : "")}>
                     {this.props.monster.name} ({this.props.monster.number})
                 </h5>

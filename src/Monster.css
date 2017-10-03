@@ -1,9 +1,5 @@
-.Monster-hp-panel {
-    background-color: #FFFFFF !important;
-}
-
 div.Monster-dead {
-    background-color: #C8C8C8 !important;
+    background-image: linear-gradient(to bottom, #888888 0%, #a5a5a5 100%);
 }
 
 h5.Monster-dead {
