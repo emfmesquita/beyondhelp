@@ -2,10 +2,13 @@
 // import ReactDOM from 'react-dom';
 import $ from "jquery";
 
-const bhAddMonster = function(id, name, hp){
+const bhAddMonster = function (id, name, hp) {
     console.log(id);
     console.log(name);
     console.log(hp);
+    chrome.runtime.sendMessage({
+        id, name, hp
+    });
 }
 
 chrome.runtime.onMessage.addListener(() => {
