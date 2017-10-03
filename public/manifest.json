@@ -4,14 +4,14 @@
   "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
   "background": {
     "scripts": [
-      "background.js"
+      "extensionbackground.js"
     ],
-    "persistent": false
+    "persistent": true
   },
   "content_scripts": [
     {
       "matches": ["https://www.dndbeyond.com/monsters/*"],
-      "js": ["monstercontent.js"]
+      "js": ["extensioncontentscript.js"]
     }
   ],
   "page_action": {
@@ -20,7 +20,7 @@
     "default_popup": "index.html"
   },
   "permissions": [
-    "declarativeContent", "activeTab", "https://www.dndbeyond.com/*"
+    "declarativeContent", "activeTab", "webRequest", "https://www.dndbeyond.com/*"
   ],
   "icons": {
     "48": "icon-48.png",
