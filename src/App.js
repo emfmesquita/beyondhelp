@@ -48,11 +48,15 @@ class App extends Component {
     this.addMonster = this.addMonster.bind(this);
 
     /* global chrome */
-    chrome.runtime.onMessage.addListener(
-      (request, sender, sendResponse) => {
-        this.addMonster(request);
-      }
-    );
+    chrome.storage.sync.get(null, (storageData) => {
+      const monsters = [];
+      Object.keys(storageData).map((keyName, keyIndex) => {
+        if (keyName && keyName.startsWith("bh-monster-")) {
+          monsters.push(storageData[keyName]);
+        }
+      });
+      this.setState({ monsters });
+    });
   }
 
   addMonster(monster) {

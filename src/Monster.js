@@ -46,7 +46,6 @@ class Monster extends Component {
     }
 
     doHeal() {
-        console.log("before");
         this.setState((prevState, props)=> {
             if(isNaN(prevState.heal) && prevState.heal !== "") return prevState;
             const newState = {};
