@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import MonsterList from './MonsterList';
-import MonsterService from './services/MonsterService';
+import MonsterData from './data/MonsterData';
+import StorageService from './services/StorageService';
 /* global chrome */
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      /**
+       * @type {MonsterData[]}
+       */
       monsters: []
     }
     this.addMonster = this.addMonster.bind(this);
     this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
-    MonsterService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
+    StorageService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
   }
 
+  /**
+   * @param {MonsterData} monster 
+   */
   addMonster(monster) {
     this.setState((prevState, props) => {
       prevState.monsters.push(monster);
@@ -22,12 +29,15 @@ class App extends Component {
     });
   }
 
+  /**
+   * @param {string} storageId 
+   */
   handleRemoveMonster(storageId) {    
     chrome.storage.sync.remove(storageId, (error) => {
       if (chrome.runtime.lastError) {
         throw chrome.runtime.lastError;
       }
-      MonsterService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
+      StorageService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
     });
   }
 

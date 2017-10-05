@@ -1,7 +1,10 @@
 
 const diceExpRegex = /^(\s*(\+|\-)?\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)(\s*(\+|\-)\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)*$/i;
 
-// calcs a dice expression term
+/**
+ * Calcs a dice expression term.
+ * @param {string} term 
+ */
 const calcTermValue = function (term) {
     var isVariable = term.indexOf("d") != -1;
     if (!isVariable) return Number(term);
@@ -21,7 +24,10 @@ const calcTermValue = function (term) {
     return termValue;
 }
 
-// calcs a dice expression value
+/**
+ * Calcs a dice expression value.
+ * @param {string} diceExp 
+ */
 const calcDiceExpValue = function (diceExp) {
     var spaceLessExp = diceExp.replace(/\s/g, '');
     var value = 0;
@@ -46,6 +52,10 @@ const calcDiceExpValue = function (diceExp) {
 
 class DiceExp {
 
+    /**
+     * Calcs a dice expression value.
+     * @param {string} diceExp 
+     */
     static calcValue(diceExp) {
         let innerDiceExp = diceExp;
         if (typeof innerDiceExp !== "string") {
