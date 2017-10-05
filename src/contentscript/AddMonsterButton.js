@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import MonsterData from '../data/MonsterData';
+
+const buttonStyle = {
+    display: "inline-block",
+    marginRight: "20px",
+    marginBottom: "20px",
+    width: "200px",
+    paddingTop: "8px"
+}
 
 class AddMonsterButton extends Component {
     constructor(props) {
@@ -8,13 +17,14 @@ class AddMonsterButton extends Component {
     }
 
     addMonster() {
-        const clonedData = JSON.parse(JSON.stringify(this.props.monsterdata));
         const toSave = {};
         const storageId = `bh-monster-${new Date().getTime()}`;
-        toSave[storageId] = this.props.monsterdata;
-        chrome.storage.sync.set(toSave, (error) => {
-            if(error){
-                return;
+        const data = this.props.monsterdata;
+        const monsterData = new MonsterData(storageId, data.id, data.name, data.hp);
+        toSave[storageId] = monsterData;
+        chrome.storage.sync.set(toSave, () => {
+            if (chrome.runtime.lastError) {
+                throw chrome.runtime.lastError;
             }
             chrome.runtime.sendMessage({
                 notificationid: storageId,
@@ -22,7 +32,7 @@ class AddMonsterButton extends Component {
                     type: "basic",
                     iconUrl: "icon-128.png",
                     title: "Beyond Help",
-                    message: `${clonedData.name} added with ${clonedData.hp}HP`
+                    message: `${monsterData.name} added with ${monsterData.hp}HP`
                 }
             });
         });
@@ -33,11 +43,7 @@ class AddMonsterButton extends Component {
     }
 
     render() {
-        return (
-            <div className="more-info-footer-details-button" onClick={this.addMonster}>
-                <a className="button button-monsters" href="javascript:void(0);">{this.buildLabel()}</a>
-            </div>
-        );
+        return <a className="button button-monsters" style={buttonStyle} href="javascript:void(0);" onClick={this.addMonster}>{this.buildLabel()}</a>;
     }
 }
 

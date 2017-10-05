@@ -13,12 +13,20 @@ chrome.runtime.onMessage.addListener(() => {
         const id = rowDiv.attr("data-slug");
         const name = rowDiv.find(".monster-name a").text();
         const hp = moreInfoDiv.find(".ddb-statblock-item-hit-points .primary").text();
+        const diceHp = moreInfoDiv.find(".ddb-statblock-item-hit-points .secondary").text();
 
         // render add buttons on monster more-info block
         const moreInfoBody = $(el).closest(".more-info-body");
         const elementToPrepend = document.createElement("div");
 
-        ReactDOM.render(<AddMonsterButton monsterdata={{id, name, hp}}/>, elementToPrepend);
+        const toRender = (
+            <div className="more-info-footer-details-button">
+                <AddMonsterButton monsterdata={{ id, name, hp }} />
+                {diceHp && <AddMonsterButton monsterdata={{ id, name, hp: diceHp }} />}
+            </div>
+        );
+
+        ReactDOM.render(toRender, elementToPrepend);
         moreInfoBody.prepend(elementToPrepend);
     });
 });

@@ -17,6 +17,7 @@ class Monster extends Component {
         this.updateHeal = this.updateHeal.bind(this);
         this.doDamage = this.doDamage.bind(this);
         this.doHeal = this.doHeal.bind(this);
+        this.removeMonster = this.removeMonster.bind(this);
     }
 
     calcHpRatio() {
@@ -32,13 +33,13 @@ class Monster extends Component {
     }
 
     doDamage() {
-        this.setState((prevState, props)=> {
-            if(isNaN(prevState.damage) && prevState.damage !== "") return prevState;
+        this.setState((prevState, props) => {
+            if (isNaN(prevState.damage) && prevState.damage !== "") return prevState;
             const newState = {};
             const damage = prevState.damage === "" ? 1 : Number(prevState.damage);
             newState.currenthp = prevState.currenthp - damage;
             newState.currenthp = newState.currenthp < 0 ? 0 : newState.currenthp;
-            if(newState.currenthp === 0){
+            if (newState.currenthp === 0) {
                 newState.dead = true;
             }
             return newState;
@@ -46,23 +47,30 @@ class Monster extends Component {
     }
 
     doHeal() {
-        this.setState((prevState, props)=> {
-            if(isNaN(prevState.heal) && prevState.heal !== "") return prevState;
+        this.setState((prevState, props) => {
+            if (isNaN(prevState.heal) && prevState.heal !== "") return prevState;
             const newState = {};
             const heal = prevState.heal === "" ? 1 : Number(prevState.heal);
             newState.currenthp = prevState.currenthp + heal;
             newState.currenthp = newState.currenthp > props.monster.hp ? props.monster.hp : newState.currenthp;
-            if(newState.currenthp > 0){
+            if (newState.currenthp > 0) {
                 newState.dead = false;
             }
             return newState;
         });
     }
 
+    removeMonster() {
+        this.props.onRemoveMonster(this.props.monster.storageId);
+    }
+
     render() {
         return (
             <div className={"well" + (this.state.dead ? " Monster-dead" : "")}>
-                <a className={"pull-left monster-stats-button" + (this.props.monster.id ? "" : " hidden")} href="javascript:void(0)" onClick="mhp_stats.showMonsterStats(this);" role="button">
+                <a className="close pull-right Monster-remove-button" href="javascript:void(0)" onClick={this.removeMonster} role="button">
+                    <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </a>
+                <a className={"pull-left" + (this.props.monster.monsterId ? "" : " hidden")} href="javascript:void(0)" onClick="" role="button">
                     <span className="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 </a>
                 <h5 className={"text-center Monster-title" + (this.state.dead ? " Monster-dead" : "")}>
@@ -86,17 +94,17 @@ class Monster extends Component {
                                         <span className="glyphicon glyphicon-arrow-down" aria-hidden="true" />
                                     </Button>
                                 </InputGroup.Button>
-                                <FormControl placeholder="DMG" type="text" className="text-center" onChange={this.updateDamage}/>
+                                <FormControl placeholder="DMG" type="text" className="text-center" onChange={this.updateDamage} />
                             </InputGroup>
                         </FormGroup>
                     </Col>
                     <Col xs={6} className="Monster-heal-column">
                         <FormGroup>
                             <InputGroup>
-                                <FormControl placeholder="Heal" type="text" className="text-center" onChange={this.updateHeal}/>
+                                <FormControl placeholder="Heal" type="text" className="text-center" onChange={this.updateHeal} />
                                 <InputGroup.Button>
                                     <Button bsStyle="danger" className="Monster-hp-button" onClick={this.doHeal}>
-                                        <span className="glyphicon glyphicon-arrow-up" aria-hidden="true"/>
+                                        <span className="glyphicon glyphicon-arrow-up" aria-hidden="true" />
                                     </Button>
                                 </InputGroup.Button>
                             </InputGroup>

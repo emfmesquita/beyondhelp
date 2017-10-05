@@ -10,6 +10,10 @@ h5.Monster-dead {
     margin: 4px;
 }
 
+.Monster-remove-button{
+    font-size: 12px;
+}
+
 .Monster-hp-bar-text {
     position: absolute;
     width: 100%;

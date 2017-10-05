@@ -10,8 +10,7 @@ class MonsterList extends Component {
 
     buildList(){
         return this.props.monsters.map((monster) => {
-            const key = monster.name + "_" + monster.number;
-            return <li key={key}><Monster monster={monster} /></li>;
+            return <li key={monster.storageId}><Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster}/></li>;
         });
     }
 

@@ -1,43 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import MonsterList from './MonsterList';
-
-// const monsters = [
-//   {
-//     id: "aboleth",
-//     name: "Aboleth",
-//     number: 1,
-//     hp: 100
-//   }, {
-//     name: "Dragon",
-//     number: 2,
-//     hp: 200
-//   }, {
-//     name: "Druid",
-//     number: 1,
-//     hp: 45
-//   }, {
-//     name: "Druid",
-//     number: 2,
-//     hp: 45
-//   }, {
-//     name: "Druid",
-//     number: 3,
-//     hp: 45
-//   }, {
-//     name: "Druid",
-//     number: 4,
-//     hp: 45
-//   }, {
-//     name: "Druid",
-//     number: 5,
-//     hp: 45
-//   }, {
-//     name: "Druid",
-//     number: 6,
-//     hp: 45
-//   }
-// ];
+import MonsterService from './services/MonsterService';
+/* global chrome */
 
 class App extends Component {
   constructor(props) {
@@ -46,17 +11,8 @@ class App extends Component {
       monsters: []
     }
     this.addMonster = this.addMonster.bind(this);
-
-    /* global chrome */
-    chrome.storage.sync.get(null, (storageData) => {
-      const monsters = [];
-      Object.keys(storageData).map((keyName, keyIndex) => {
-        if (keyName && keyName.startsWith("bh-monster-")) {
-          monsters.push(storageData[keyName]);
-        }
-      });
-      this.setState({ monsters });
-    });
+    this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
+    MonsterService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
   }
 
   addMonster(monster) {
@@ -66,9 +22,18 @@ class App extends Component {
     });
   }
 
+  handleRemoveMonster(storageId) {    
+    chrome.storage.sync.remove(storageId, (error) => {
+      if (chrome.runtime.lastError) {
+        throw chrome.runtime.lastError;
+      }
+      MonsterService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
+    });
+  }
+
   render() {
     return (
-      <MonsterList monsters={this.state.monsters} />
+      <MonsterList monsters={this.state.monsters} onRemoveMonster={this.handleRemoveMonster} />
     );
   }
 }
