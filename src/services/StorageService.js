@@ -78,7 +78,7 @@ class StorageService {
                 const toUpdate = {};
 
                 // adds number property to monsters that do not have it
-                const monsters = updateMonsters(grouped, toUpdate);
+                const monsters = addNumbers(grouped, toUpdate);
 
                 // update monster with set numbers on storage
                 updateMonsters(toUpdate).then(() => resolve(monsters)).catch(e => reject(e));
