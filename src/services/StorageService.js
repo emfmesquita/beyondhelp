@@ -8,7 +8,7 @@ import MonsterData from '../data/MonsterData'
  */
 const filterMonsters = function (storageData) {
     const grouped = {};
-    Object.keys(storageData).map((storageId) => {
+    Object.keys(storageData).forEach((storageId) => {
         if (!storageId || !storageId.startsWith("bh-monster-")) return;
         const monster = storageData[storageId];
 
@@ -30,7 +30,7 @@ const addNumbers = function (grouped, toUpdate) {
     const monsters = [];
 
     // adds number property to monsters that do not have it
-    Object.keys(grouped).map((monsterId) => {
+    Object.keys(grouped).forEach((monsterId) => {
         if (!monsterId) return;
         let lastNumber = 0;
         grouped[monsterId].forEach((monster) => {

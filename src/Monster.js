@@ -2,12 +2,31 @@ import React, { Component } from 'react';
 import { Button, Col, FormControl, FormGroup, InputGroup, Row } from 'react-bootstrap';
 import './Monster.css';
 import MonsterInfoModal from './MonsterInfoModal';
+import StorageService from './services/StorageService';
+
+/**
+ * Generates a new state with updated hp.
+ * @param {number} currentHp 
+ * @param {number} maxHp 
+ * @param {string} hpDiff 
+ * @param {boolean} isDamage 
+ */
+const changeHp = function (currentHp, maxHp, hpDiff, isDamage) {
+    let numberDiff = hpDiff === "" ? 1 : Number(hpDiff);
+    numberDiff = isDamage ? -1 * numberDiff : numberDiff;
+
+    let newCurrentHp = currentHp + numberDiff;
+    newCurrentHp = newCurrentHp < 0 ? 0 : newCurrentHp;
+    newCurrentHp = newCurrentHp > maxHp ? maxHp : newCurrentHp;
+
+    return { currentHp: newCurrentHp, dead: newCurrentHp === 0 };
+}
 
 class Monster extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currenthp: props.monster.hp,
+            currentHp: props.monster.hp,
             damage: "",
             heal: "",
             dead: false
@@ -21,7 +40,7 @@ class Monster extends Component {
     }
 
     calcHpRatio() {
-        return (this.state.currenthp / this.props.monster.hp) * 100 + "%";
+        return (this.state.currentHp / this.props.monster.hp) * 100 + "%";
     }
 
     updateDamage(e) {
@@ -35,28 +54,14 @@ class Monster extends Component {
     doDamage() {
         this.setState((prevState, props) => {
             if (isNaN(prevState.damage) && prevState.damage !== "") return prevState;
-            const newState = {};
-            const damage = prevState.damage === "" ? 1 : Number(prevState.damage);
-            newState.currenthp = prevState.currenthp - damage;
-            newState.currenthp = newState.currenthp < 0 ? 0 : newState.currenthp;
-            if (newState.currenthp === 0) {
-                newState.dead = true;
-            }
-            return newState;
+            return changeHp(prevState.currentHp, this.props.monster.hp, prevState.damage, true);
         });
     }
 
     doHeal() {
         this.setState((prevState, props) => {
             if (isNaN(prevState.heal) && prevState.heal !== "") return prevState;
-            const newState = {};
-            const heal = prevState.heal === "" ? 1 : Number(prevState.heal);
-            newState.currenthp = prevState.currenthp + heal;
-            newState.currenthp = newState.currenthp > props.monster.hp ? props.monster.hp : newState.currenthp;
-            if (newState.currenthp > 0) {
-                newState.dead = false;
-            }
-            return newState;
+            return changeHp(prevState.currentHp, this.props.monster.hp, prevState.heal, false);
         });
     }
 
@@ -80,7 +85,7 @@ class Monster extends Component {
                     <Col xs={12}>
                         <div className="progress">
                             <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio() }}>
-                                <div className="Monster-hp-bar-text">{this.state.currenthp} / {this.props.monster.hp}</div>
+                                <div className="Monster-hp-bar-text">{this.state.currentHp} / {this.props.monster.hp}</div>
                             </div>
                         </div>
                     </Col>
