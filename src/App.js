@@ -19,20 +19,14 @@ class App extends Component {
     StorageService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
   }
 
-  /**
-   * @param {MonsterData} monster 
-   */
-  addMonster(monster) {
+  addMonster(monster: MonsterData) {
     this.setState((prevState, props) => {
       prevState.monsters.push(monster);
       return { monsters: prevState.monsters };
     });
   }
 
-  /**
-   * @param {string} storageId 
-   */
-  handleRemoveMonster(storageId) {    
+  handleRemoveMonster(storageId: string) {
     chrome.storage.sync.remove(storageId, (error) => {
       if (chrome.runtime.lastError) {
         throw chrome.runtime.lastError;

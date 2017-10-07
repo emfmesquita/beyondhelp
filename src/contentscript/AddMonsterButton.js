@@ -43,7 +43,7 @@ class AddMonsterButton extends Component {
     }
 
     render() {
-        return <a className="button button-monsters" style={buttonStyle} href="javascript:void(0);" onClick={this.addMonster}>{this.buildLabel()}</a>;
+        return <button className="button button-monsters" style={buttonStyle} onClick={this.addMonster}>{this.buildLabel()}</button>;
     }
 }
 

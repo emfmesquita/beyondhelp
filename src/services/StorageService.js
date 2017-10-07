@@ -1,12 +1,12 @@
 import MonsterData from '../data/MonsterData'
 /* global chrome */
 
+type StorageData = {[key: string]: MonsterData}
+
 /**
  * Filter monsters out the storage data and group them by id.
- * @param {*} storageData
- * @returns {*}
  */
-const filterMonsters = function (storageData) {
+const filterMonsters = function (storageData : StorageData) : {[key: string]: MonsterData[]} {
     const grouped = {};
     Object.keys(storageData).forEach((storageId) => {
         if (!storageId || !storageId.startsWith("bh-monster-")) return;
@@ -22,12 +22,9 @@ const filterMonsters = function (storageData) {
 
 /**
  * Adds number property to monsters that do not have it
- * @param {*} grouped
- * @param {*} toUpdate 
- * @returns {MonsterData[]}
  */
-const addNumbers = function (grouped, toUpdate) {
-    const monsters = [];
+const addNumbers = function (grouped : {[key: string]: MonsterData[]}, toUpdate: StorageData) {
+    const monsters: MonsterData[] = [];
 
     // adds number property to monsters that do not have it
     Object.keys(grouped).forEach((monsterId) => {
@@ -49,11 +46,10 @@ const addNumbers = function (grouped, toUpdate) {
 
 /**
  * Update monsters with set numbers on storage.
- * @param {*} monsters 
  */
-const updateMonsters = function (monsters) {
+const updateMonsters = function (toUpdate: StorageData) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.set(monsters, () => {
+        chrome.storage.sync.set(toUpdate, () => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
         });
     });
@@ -63,9 +59,8 @@ class StorageService {
 
     /**
      * Gets all monsters from the storage. Alsso addds numbers on them if they don't have it.
-     * @returns {Promise<MonsterData[]>}
      */
-    static getMonstersFromStorage() {
+    static getMonstersFromStorage(): Promise<MonsterData[]> {
         return new Promise((resolve, reject) => {
             chrome.storage.sync.get(null, (storageData) => {
                 if (chrome.runtime.lastError) {
@@ -88,11 +83,10 @@ class StorageService {
 
     /**
      * Updates monster on storage.
-     * @param {MonsterData} monster 
      */
-    static updateMonster(monster){
+    static updateMonster(monster: MonsterData) {
         return new Promise((resolve, reject) => {
-            const storageEntry = {};
+            const storageEntry: StorageData = {};
             storageEntry[monster.storageId] = monster;
             chrome.storage.sync.set(storageEntry, () => {
                 chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();

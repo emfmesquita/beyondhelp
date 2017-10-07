@@ -6,14 +6,11 @@ import MonsterInfoModal from './MonsterInfoModal';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
 
+
 /**
  * Generates a new state with updated hp.
- * @param {number} currentHp 
- * @param {number} maxHp 
- * @param {string} hpDiff 
- * @param {boolean} isDamage 
  */
-const changeHp = function (currentHp, maxHp, hpDiff, isDamage) {
+const changeHp = function (currentHp: number, maxHp: number, hpDiff: string, isDamage: boolean) {
     let numberDiff = hpDiff === "" ? 1 : Number(hpDiff);
     numberDiff = isDamage ? -1 * numberDiff : numberDiff;
 
@@ -26,10 +23,8 @@ const changeHp = function (currentHp, maxHp, hpDiff, isDamage) {
 
 /**
  * Handler called after hp changes, updates the monster on storage.
- * @param {MonsterData} monster 
- * @param {int} newHp 
  */
-const hpChanged = _.throttle((monster, newHp) => {
+const hpChanged = _.throttle((monster: MonsterData, newHp: number) => {
     monster.currentHp = newHp;
     StorageService.updateMonster(monster).catch((e) => { throw new Error(e); });
 }, 500);
@@ -55,11 +50,11 @@ class Monster extends Component {
         return (this.state.currentHp / this.props.monster.hp) * 100 + "%";
     }
 
-    updateDamage(e) {
+    updateDamage(e: Event) {
         this.setState({ damage: e.target.value });
     }
 
-    updateHeal(e) {
+    updateHeal(e: Event) {
         this.setState({ heal: e.target.value });
     }
 
@@ -84,9 +79,9 @@ class Monster extends Component {
     render() {
         return (
             <div className={"well" + (this.state.dead ? " Monster-dead" : "")}>
-                <a className="close pull-right Monster-remove-button" href="javascript:void(0)" onClick={this.removeMonster} role="button">
+                <button className="close pull-right Monster-remove-button" onClick={this.removeMonster}>
                     <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </a>
+                </button>
                 <a className={"pull-left" + (this.props.monster.monsterId ? "" : " hidden")} href="javascript:void(0)" onClick="" role="button">
                     <span className="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 </a>

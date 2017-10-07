@@ -1,13 +1,7 @@
 import DiceExp from "../services/DiceExp"
 
 class MonsterData {
-    /**
-     * @param {string} storageId 
-     * @param {string} monsterId 
-     * @param {string} name 
-     * @param {string} hp 
-     */
-    constructor(storageId, monsterId, name, hp) {
+    constructor(storageId: string, monsterId: string, name: string, hp: string) {
         this.storageId = storageId;
         this.monsterId = monsterId;
         this.name = name;
@@ -16,14 +10,11 @@ class MonsterData {
         this.currentHp = this.hp;
     }
 
-    /**
-     * @returns {number}
-     */
-    get number(){
+    get number() {
         return this.number;
     }
 
-    set number(value){
+    set number(value: number) {
         this.number = value;
     }
 }

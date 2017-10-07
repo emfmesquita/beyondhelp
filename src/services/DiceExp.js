@@ -1,11 +1,10 @@
 
-const diceExpRegex = /^(\s*(\+|\-)?\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)(\s*(\+|\-)\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)*$/i;
+const diceExpRegex = /^(\s*(\+|-)?\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)(\s*(\+|-)\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)*$/i;
 
 /**
  * Calcs a dice expression term.
- * @param {string} term 
  */
-const calcTermValue = function (term) {
+const calcTermValue = function (term: string) {
     var isVariable = term.indexOf("d") !== -1;
     if (!isVariable) return Number(term);
 
@@ -26,9 +25,8 @@ const calcTermValue = function (term) {
 
 /**
  * Calcs a dice expression value.
- * @param {string} diceExp 
  */
-const calcDiceExpValue = function (diceExp) {
+const calcDiceExpValue = function (diceExp: string) {
     var spaceLessExp = diceExp.replace(/\s/g, "");
     var value = 0;
     var token = "";
@@ -54,9 +52,8 @@ class DiceExp {
 
     /**
      * Calcs a dice expression value.
-     * @param {string} diceExp 
      */
-    static calcValue(diceExp) {
+    static calcValue(diceExp: string) {
         let innerDiceExp = diceExp;
         if (typeof innerDiceExp !== "string") {
             throw new Error("Only strings are supported.");
