@@ -13,6 +13,7 @@ class MonsterData {
         this.name = name;
         this.hp = DiceExp.calcValue(hp);
         this.hp = this.hp > 0 ? this.hp : 1;
+        this.currentHp = this.hp;
     }
 
     /**
@@ -24,17 +25,6 @@ class MonsterData {
 
     set number(value){
         this.number = value;
-    }
-
-    /**
-     * @returns {number}
-     */
-    get currentHp(){
-        return this.currentHp;
-    }
-
-    set currentHp(value){
-        this.currentHp = value;
     }
 }
 

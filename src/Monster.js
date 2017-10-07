@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Col, FormControl, FormGroup, InputGroup, Row } from 'react-bootstrap';
+import _ from 'lodash';
 import './Monster.css';
 import MonsterInfoModal from './MonsterInfoModal';
+import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
 
 /**
@@ -22,11 +24,21 @@ const changeHp = function (currentHp, maxHp, hpDiff, isDamage) {
     return { currentHp: newCurrentHp, dead: newCurrentHp === 0 };
 }
 
+/**
+ * Handler called after hp changes, updates the monster on storage.
+ * @param {MonsterData} monster 
+ * @param {int} newHp 
+ */
+const hpChanged = _.throttle((monster, newHp) => {
+    monster.currentHp = newHp;
+    StorageService.updateMonster(monster).catch((e) => { throw new Error(e); });
+}, 500);
+
 class Monster extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentHp: props.monster.hp,
+            currentHp: props.monster.currentHp,
             damage: "",
             heal: "",
             dead: false
@@ -55,14 +67,14 @@ class Monster extends Component {
         this.setState((prevState, props) => {
             if (isNaN(prevState.damage) && prevState.damage !== "") return prevState;
             return changeHp(prevState.currentHp, this.props.monster.hp, prevState.damage, true);
-        });
+        }, (updatedState) => hpChanged(this.props.monster, this.state.currentHp));
     }
 
     doHeal() {
         this.setState((prevState, props) => {
             if (isNaN(prevState.heal) && prevState.heal !== "") return prevState;
             return changeHp(prevState.currentHp, this.props.monster.hp, prevState.heal, false);
-        });
+        }, (updatedState) => hpChanged(this.props.monster, this.state.currentHp));
     }
 
     removeMonster() {
