@@ -1,13 +1,14 @@
 import MonsterData from '../data/MonsterData'
 /* global chrome */
 
-type StorageData = {[key: string]: MonsterData}
+type StorageData = { [key: string]: MonsterData }
 
 /**
- * Filter monsters out the storage data and group them by id.
+ * Filter monsters out the storage data, group them by id and sort them by name.
  */
-const filterMonsters = function (storageData : StorageData) : {[key: string]: MonsterData[]} {
+const filterMonsters = function (storageData: StorageData): MonsterData[][] {
     const grouped = {};
+    // group by id
     Object.keys(storageData).forEach((storageId) => {
         if (!storageId || !storageId.startsWith("bh-monster-")) return;
         const monster = storageData[storageId];
@@ -17,20 +18,21 @@ const filterMonsters = function (storageData : StorageData) : {[key: string]: Mo
         }
         grouped[monster.monsterId].push(monster);
     });
-    return grouped;
+
+    // sort by name
+    const sorted: MonsterData[][] = Object.keys(grouped).map((monsterId) => grouped[monsterId]);
+    sorted.sort(([a: MonsterData], [b: MonsterData]) => a.name.localeCompare(b.name));
+    return sorted;
 }
 
 /**
  * Adds number property to monsters that do not have it
  */
-const addNumbers = function (grouped : {[key: string]: MonsterData[]}, toUpdate: StorageData) {
+const addNumbers = function (grouped: MonsterData[][], toUpdate: StorageData) {
     const monsters: MonsterData[] = [];
-
-    // adds number property to monsters that do not have it
-    Object.keys(grouped).forEach((monsterId) => {
-        if (!monsterId) return;
+    grouped.forEach((monstersOfSameType) => {
         let lastNumber = 0;
-        grouped[monsterId].forEach((monster) => {
+        monstersOfSameType.forEach((monster) => {
             monsters.push(monster);
             if (monster.number) {
                 lastNumber = monster.number;
@@ -68,14 +70,9 @@ class StorageService {
                     return;
                 }
 
-                // filter monsters out the storage data and group them by id
                 const grouped = filterMonsters(storageData);
                 const toUpdate = {};
-
-                // adds number property to monsters that do not have it
                 const monsters = addNumbers(grouped, toUpdate);
-
-                // update monster with set numbers on storage
                 updateMonsters(toUpdate).then(() => resolve(monsters)).catch(e => reject(e));
             });
         });

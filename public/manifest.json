@@ -10,8 +10,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.dndbeyond.com/monsters*"],
-      "js": ["extensioncontentscript.js"]
+      "matches": [
+        "https://www.dndbeyond.com/monsters*"
+      ],
+      "js": [
+        "extensioncontentscript.js"
+      ]
     }
   ],
   "page_action": {
@@ -20,7 +24,13 @@
     "default_popup": "index.html"
   },
   "permissions": [
-    "declarativeContent", "activeTab", "webRequest", "storage", "notifications", "https://www.dndbeyond.com/*"
+    "activeTab",
+    "declarativeContent",
+    "notifications",
+    "storage",
+    "tabs",
+    "webRequest",
+    "https://www.dndbeyond.com/*"
   ],
   "icons": {
     "48": "icon-48.png",

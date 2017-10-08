@@ -5,6 +5,8 @@ import './Monster.css';
 import MonsterInfoModal from './MonsterInfoModal';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
+import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton"
 
 
 /**
@@ -32,11 +34,12 @@ const hpChanged = _.throttle((monster: MonsterData, newHp: number) => {
 class Monster extends Component {
     constructor(props) {
         super(props);
+        this.monster = this.props.monster;
         this.state = {
-            currentHp: props.monster.currentHp,
+            currentHp: this.monster.currentHp,
             damage: "",
             heal: "",
-            dead: false
+            dead: this.monster.currentHp === 0
         };
         this.calcHpRatio = this.calcHpRatio.bind(this);
         this.updateDamage = this.updateDamage.bind(this);
@@ -47,7 +50,7 @@ class Monster extends Component {
     }
 
     calcHpRatio() {
-        return (this.state.currentHp / this.props.monster.hp) * 100 + "%";
+        return (this.state.currentHp / this.monster.hp) * 100 + "%";
     }
 
     updateDamage(e: Event) {
@@ -61,38 +64,37 @@ class Monster extends Component {
     doDamage() {
         this.setState((prevState, props) => {
             if (isNaN(prevState.damage) && prevState.damage !== "") return prevState;
-            return changeHp(prevState.currentHp, this.props.monster.hp, prevState.damage, true);
-        }, (updatedState) => hpChanged(this.props.monster, this.state.currentHp));
+            return changeHp(prevState.currentHp, this.monster.hp, prevState.damage, true);
+        }, (updatedState) => hpChanged(this.monster, this.state.currentHp));
     }
 
     doHeal() {
-        this.setState((prevState, props) => {
+        this.setState((prevState) => {
             if (isNaN(prevState.heal) && prevState.heal !== "") return prevState;
-            return changeHp(prevState.currentHp, this.props.monster.hp, prevState.heal, false);
-        }, (updatedState) => hpChanged(this.props.monster, this.state.currentHp));
+            return changeHp(prevState.currentHp, this.monster.hp, prevState.heal, false);
+        }, (updatedState) => hpChanged(this.monster, this.state.currentHp));
     }
 
     removeMonster() {
-        this.props.onRemoveMonster(this.props.monster.storageId);
+        this.props.onRemoveMonster(this.monster.storageId);
     }
 
     render() {
         return (
             <div className={"well" + (this.state.dead ? " Monster-dead" : "")}>
-                <button className="close pull-right Monster-remove-button" onClick={this.removeMonster}>
+                <button className="close pull-right Monster-remove-button" onClick={this.removeMonster} title="Remove Monster">
                     <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </button>
-                <a className={"pull-left" + (this.props.monster.monsterId ? "" : " hidden")} href="javascript:void(0)" onClick="" role="button">
-                    <span className="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                </a>
+                <MonsterMenuButton hidden={!!this.monster.monsterId} icon="glyphicon-stats" />
+                <ToMonsterPageButton monsterId={this.monster.monsterId} />
                 <h5 className={"text-center Monster-title" + (this.state.dead ? " Monster-dead" : "")}>
-                    {this.props.monster.name} ({this.props.monster.number})
+                    {this.monster.name} ({this.monster.number})
                 </h5>
                 <Row>
                     <Col xs={12}>
                         <div className="progress">
                             <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio() }}>
-                                <div className="Monster-hp-bar-text">{this.state.currentHp} / {this.props.monster.hp}</div>
+                                <div className="Monster-hp-bar-text">{this.state.currentHp} / {this.monster.hp}</div>
                             </div>
                         </div>
                     </Col>
