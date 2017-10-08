@@ -30,7 +30,7 @@ class AddMonsterButton extends Component {
                 notificationid: storageId,
                 notification: {
                     type: "basic",
-                    iconUrl: "icon-128.png",
+                    iconUrl: "icon-grey-128.png",
                     title: "Beyond Help",
                     message: `${monsterData.name} added with ${monsterData.hp}HP`
                 }

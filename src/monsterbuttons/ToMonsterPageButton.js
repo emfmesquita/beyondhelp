@@ -9,15 +9,16 @@ class ToMonsterPageButton extends Component {
     }
 
     click({ button }: MouseEvent) {
+        if(button === 2) return;
         const newUrl = `https://www.dndbeyond.com/monsters/${this.props.monsterId}`;
-        if (button === 0) {
-            chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
+        chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
+            if(button === 0){
                 if (tab.url === newUrl) return;
                 chrome.tabs.update(tab.id, { url: newUrl });
-            });
-        } else if (button === 1) {
-            chrome.tabs.create({ url: newUrl, active: false });
-        }
+            } else if (button === 1) {
+                chrome.tabs.create({ url: newUrl, active: false, index: tab.index + 1 });
+            }
+        });
     }
 
     render() {
