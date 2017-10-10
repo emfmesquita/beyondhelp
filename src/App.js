@@ -2,44 +2,59 @@ import React, { Component } from 'react';
 import './App.css';
 import MonsterList from './MonsterList';
 import MonsterData from './data/MonsterData';
+import MonsterMetadata from './data/MonsterMetadata';
+import MonsterListData from './data/MonsterListData';
 import StorageService from './services/StorageService';
 /* global chrome */
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      /**
-       * @type {MonsterData[]}
-       */
-      monsters: []
+    constructor(props) {
+        super(props);
+        this.state = {
+            lists: [],
+            activeList: null
+        }
+        this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
+        this.buildList = this.buildList.bind(this);
+        StorageService.getMonsterLists().then(lists => {
+            const activeList = lists.find(list => list.active);
+            this.setState({ lists, activeList });
+        }).catch(error => { throw error });
     }
-    this.addMonster = this.addMonster.bind(this);
-    this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
-    StorageService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
-  }
 
-  addMonster(monster: MonsterData) {
-    this.setState((prevState, props) => {
-      prevState.monsters.push(monster);
-      return { monsters: prevState.monsters };
-    });
-  }
+    handleRemoveMonster(toDeleteMonster: MonsterData) {
+        const toDeleteId = toDeleteMonster.storageId;
+        StorageService.deleteMonster(toDeleteMonster).then(() => {
+            this.setState((prevState) => {
+                prevState.activeList.metadatas.forEach((metadata, metaIndex) => {
+                    metadata.monsters.forEach((monster, monsterIndex) => {
+                        if(monster.storageId !== toDeleteId) return;
+                        metadata.monsters.splice(monsterIndex, 1);
+                        if(metadata.monsters.length === 0) prevState.activeList.metadatas.splice(metaIndex, 1);
+                    });
+                });
+                return {activeList: prevState.activeList};
+            });
+        });
+    }
 
-  handleRemoveMonster(storageId: string) {
-    chrome.storage.sync.remove(storageId, (error) => {
-      if (chrome.runtime.lastError) {
-        throw chrome.runtime.lastError;
-      }
-      StorageService.getMonstersFromStorage().then(monsters => this.setState({ monsters })).catch(error => { throw error });
-    });
-  }
+    buildList() {
+        const list: MonsterListData = this.state.activeList;
+        if(!list) return "";
+        return list.metadatas.map((metadata, index) => {
+            const id = metadata.monsterId;
+            const last = (list.metadatas.length - 1) === index;
+            return (
+                <li className={last && "Monster-list-last"} key={id}>
+                    <MonsterList monsters={metadata.monsters} id={id} name={metadata.name} onRemoveMonster={this.handleRemoveMonster} />
+                </li>
+            );
+        });
+    }
 
-  render() {
-    return (
-      <MonsterList monsters={this.state.monsters} onRemoveMonster={this.handleRemoveMonster} />
-    );
-  }
+    render() {
+        return <ul>{this.buildList()}</ul>;
+    }
 }
 
 export default App;

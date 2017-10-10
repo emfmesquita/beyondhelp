@@ -1,17 +1,6 @@
-div.Monster-dead {
+.Monster-dead {
     background-image: linear-gradient(to bottom, #888888 0%, #a5a5a5 100%);
-}
-
-h5.Monster-dead {
-    text-decoration: line-through;
-}
-
-.Monster-title {
-    margin: 4px;
-}
-
-.Monster-remove-button{
-    font-size: 12px;
+    background-repeat: initial;
 }
 
 .Monster-hp-bar-text {
@@ -35,12 +24,30 @@ h5.Monster-dead {
 	height: 34px;
 }
 
+.Monster-hp-bar {
+    width: calc(100% - 23px);
+    float: left;
+    padding-left: 15px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.Monster-delete-button {
+    font-size: 10px;
+    padding-top: 5px;
+}
+
 .progress {
 	position: relative;
-	margin-bottom: 8px !important;
+    margin-bottom: 0px !important;
+    background-image: linear-gradient(180deg,#aaa 0,#ddd) !important;
 }
 
 .well {
 	padding: 8px !important;
 	margin-bottom: 0px !important;
+}
+
+.form-group {
+    margin-bottom: 0px !important;
 }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Button, Col, FormControl, FormGroup, InputGroup, Row } from 'react-bootstrap';
 import _ from 'lodash';
+import $ from "jquery"
 import './Monster.css';
 import MonsterInfoModal from './MonsterInfoModal';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
-import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton"
 
 
 /**
@@ -28,7 +28,7 @@ const changeHp = function (currentHp: number, maxHp: number, hpDiff: string, isD
  */
 const hpChanged = _.throttle((monster: MonsterData, newHp: number) => {
     monster.currentHp = newHp;
-    StorageService.updateMonster(monster).catch((e) => { throw new Error(e); });
+    StorageService.updateData(monster).catch((e) => { throw new Error(e); });
 }, 500);
 
 class Monster extends Component {
@@ -41,12 +41,18 @@ class Monster extends Component {
             heal: "",
             dead: this.monster.currentHp === 0
         };
+        this.progressBarLabel = this.progressBarLabel.bind(this);
         this.calcHpRatio = this.calcHpRatio.bind(this);
         this.updateDamage = this.updateDamage.bind(this);
         this.updateHeal = this.updateHeal.bind(this);
         this.doDamage = this.doDamage.bind(this);
         this.doHeal = this.doHeal.bind(this);
+        this.doChangeHp = this.doChangeHp.bind(this);
         this.removeMonster = this.removeMonster.bind(this);
+    }
+
+    progressBarLabel() {
+        return `#${this.monster.number} ${this.state.currentHp} / ${this.monster.hp}`;
     }
 
     calcHpRatio() {
@@ -75,31 +81,35 @@ class Monster extends Component {
         }, (updatedState) => hpChanged(this.monster, this.state.currentHp));
     }
 
+    doChangeHp(e: WheelEvent) {
+        e.preventDefault();
+        e.stopPropagation();
+        const delta = e.deltaY;
+        this.setState((prevState) => {
+            return changeHp(prevState.currentHp, this.monster.hp, "1" , delta > 0);
+        }, (updatedState) => hpChanged(this.monster, this.state.currentHp));
+    }
+
     removeMonster() {
-        this.props.onRemoveMonster(this.monster.storageId);
+        $(this.element).fadeOut(400, () => this.props.onRemoveMonster(this.monster));
     }
 
     render() {
         return (
-            <div className={"well" + (this.state.dead ? " Monster-dead" : "")}>
-                <button className="close pull-right Monster-remove-button" onClick={this.removeMonster} title="Remove Monster">
-                    <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </button>
-                <MonsterMenuButton hidden={!!this.monster.monsterId} icon="glyphicon-stats" />
-                <ToMonsterPageButton monsterId={this.monster.monsterId} />
-                <h5 className={"text-center Monster-title" + (this.state.dead ? " Monster-dead" : "")}>
-                    {this.monster.name} ({this.monster.number})
-                </h5>
+            <div className={"well" + (this.state.dead ? " Monster-dead" : "")} ref={(element) => { this.element = element; }}>
                 <Row>
-                    <Col xs={12}>
+                    <div className="Monster-hp-bar" onWheel={this.doChangeHp} title="Scroll to Change or Click">
                         <div className="progress">
                             <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio() }}>
-                                <div className="Monster-hp-bar-text">{this.state.currentHp} / {this.monster.hp}</div>
+                                <div className="Monster-hp-bar-text">{this.progressBarLabel()}</div>
                             </div>
                         </div>
-                    </Col>
+                    </div>
+                    <div className="Monster-delete-button">
+                        <MonsterMenuButton hidden={false} icon="glyphicon-trash" onClick={this.removeMonster} title="Delete Monster" />
+                    </div>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col xs={6} className="Monster-damage-column">
                         <FormGroup>
                             <InputGroup>
@@ -124,7 +134,7 @@ class Monster extends Component {
                             </InputGroup>
                         </FormGroup>
                     </Col>
-                </Row>
+                </Row> */}
             </div>
         );
     }

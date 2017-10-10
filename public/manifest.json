@@ -18,14 +18,18 @@
       ]
     }
   ],
-  "page_action": {
+  "commands": {
+    "_execute_browser_action": {
+    }
+  },
+  "browser_action": {
     "default_icon": "icon-19.png",
     "default_title": "Beyond Help",
     "default_popup": "index.html"
   },
   "permissions": [
     "activeTab",
-    "declarativeContent",
+    "commands",
     "notifications",
     "storage",
     "tabs",

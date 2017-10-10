@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import MonsterData from '../data/MonsterData';
+import StorageService from '../services/StorageService';
+import MonsterData from "../data/MonsterData";
 
 const buttonStyle = {
     display: "inline-block",
@@ -17,25 +18,18 @@ class AddMonsterButton extends Component {
     }
 
     addMonster() {
-        const toSave = {};
-        const storageId = `bh-monster-${new Date().getTime()}`;
         const data = this.props.monsterdata;
-        const monsterData = new MonsterData(storageId, data.id, data.name, data.hp);
-        toSave[storageId] = monsterData;
-        chrome.storage.sync.set(toSave, () => {
-            if (chrome.runtime.lastError) {
-                throw chrome.runtime.lastError;
-            }
+        StorageService.createMonster(data.id, data.name, data.hp, data.thumbUrl).then(monster => {
             chrome.runtime.sendMessage({
-                notificationid: storageId,
+                notificationid: monster.storageId,
                 notification: {
                     type: "basic",
                     iconUrl: "icon-grey-128.png",
                     title: "Beyond Help",
-                    message: `${monsterData.name} added with ${monsterData.hp}HP`
+                    message: `${data.name} added with ${monster.hp}HP`
                 }
             });
-        });
+        }).catch(e => { throw e; });
     }
 
     buildLabel() {
