@@ -28,7 +28,7 @@
   "browser_action": {
     "default_icon": "icon-19.png",
     "default_title": "Beyond Help",
-    "default_popup": "index.html"
+    "default_popup": "extensionpopup.html"
   },
   "permissions": [
     "activeTab",
@@ -43,5 +43,6 @@
     "48": "icon-48.png",
     "128": "icon-128.png"
   },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "manifest_version": 2
 }
