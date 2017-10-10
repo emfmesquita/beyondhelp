@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import StorageService from '../services/StorageService';
+import NotificationService from "../services/NotificationService";
 import MonsterData from "../data/MonsterData";
+/* global chrome */
 
 const buttonStyle = {
     display: "inline-block",
@@ -19,17 +21,9 @@ class AddMonsterButton extends Component {
 
     addMonster() {
         const data = this.props.monsterdata;
-        StorageService.createMonster(data.id, data.name, data.hp, data.thumbUrl).then(monster => {
-            chrome.runtime.sendMessage({
-                notificationid: monster.storageId,
-                notification: {
-                    type: "basic",
-                    iconUrl: "icon-grey-128.png",
-                    title: "Beyond Help",
-                    message: `${data.name} added with ${monster.hp}HP`
-                }
-            });
-        }).catch(e => { throw e; });
+        StorageService.createMonster(data.id, data.name, data.hp, data.thumbUrl)
+            .then(monster => NotificationService.notifyNewMonster(data.name, monster))
+            .catch(e => { throw e; });
     }
 
     buildLabel() {
