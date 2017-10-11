@@ -9,7 +9,7 @@ class NotificationService {
                 type: "basic",
                 iconUrl: "icon-grey-128.png",
                 title: "Beyond Help",
-                message: `${name} added with ${monster.hp}HP`
+                message: `${name} #${monster.number} added with ${monster.hp}HP`
             }
         });
     }

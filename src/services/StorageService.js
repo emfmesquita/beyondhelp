@@ -97,7 +97,7 @@ class StorageService {
         return this.createData(null, data);
     }
 
-    static createMonster(monsterId: string, name: string, hp: string, thumbUrl: string): Promise<MonsterData> {
+    static createMonster(monsterId: string, name: string, hp: string): Promise<MonsterData> {
         return new Promise((resolve, reject) => {
             chrome.storage.sync.get(null, (storageData: StorageData) => {
                 if (chrome.runtime.lastError) {
@@ -113,13 +113,14 @@ class StorageService {
                 listPromise.then(foundList => {
                     list = foundList;
                     metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.prop("listId", list.storageId), Q.prop("monsterId", monsterId));
-                    return metadata ? Promise.resolve(metadata) : this.createData("MonsterMetadata", new MonsterMetadata(null, list.storageId, monsterId, name, thumbUrl));
+                    return metadata ? Promise.resolve(metadata) : this.createData("MonsterMetadata", new MonsterMetadata(null, list.storageId, monsterId, name, 0));
                 }).then(foundMetadata => {
                     metadata = foundMetadata;
-                    return find(storageData, Q.clazz("MonsterData"), Q.prop("metadataId", metadata.storageId));
-                }).then(monstersOfSameMetadata => {
-                    const newMonster = new MonsterData(null, metadata.storageId, hp, monstersOfSameMetadata.length + 1);
+                    const newMonster = new MonsterData(null, metadata.storageId, hp, metadata.lastNumber + 1);
                     return this.createData("MonsterData", newMonster);
+                }).then((monster) => {
+                    metadata.lastNumber = metadata.lastNumber + 1;
+                    return this.updateData(metadata).then(() => monster);
                 }).then(resolve).catch(reject);
             });
         });

@@ -21,7 +21,7 @@ class AddMonsterButton extends Component {
 
     addMonster() {
         const data = this.props.monsterdata;
-        StorageService.createMonster(data.id, data.name, data.hp, data.thumbUrl)
+        StorageService.createMonster(data.id, data.name, data.hp)
             .then(monster => NotificationService.notifyNewMonster(data.name, monster))
             .catch(e => { throw e; });
     }
