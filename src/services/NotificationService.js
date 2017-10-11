@@ -13,6 +13,14 @@ class NotificationService {
             }
         });
     }
+
+    static clearAll(){
+        chrome.notifications.getAll((notifications) => {
+            Object.keys(notifications).forEach((id) => {
+                if(id && id.startsWith("bh-")) chrome.notifications.clear(id, () => { });
+            });
+        });
+    }
 }
 
 export default NotificationService;
