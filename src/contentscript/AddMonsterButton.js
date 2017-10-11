@@ -1,37 +1,41 @@
 import React, { Component } from 'react';
 import StorageService from '../services/StorageService';
 import NotificationService from "../services/NotificationService";
-import MonsterData from "../data/MonsterData";
-/* global chrome */
+import MonsterContentData from "./MonsterContentData";
 
 const buttonStyle = {
     display: "inline-block",
-    marginRight: "20px",
+    marginRight: "10px",
     marginBottom: "20px",
-    width: "200px",
-    paddingTop: "8px"
+    width: "auto",
+    padding: "0 15px",
+    borderColor: "#bc0f0f"
 }
 
 class AddMonsterButton extends Component {
     constructor(props) {
         super(props);
+        this.data = this.props.monsterdata;
         this.addMonster = this.addMonster.bind(this);
         this.buildLabel = this.buildLabel.bind(this);
     }
 
     addMonster() {
-        const data = this.props.monsterdata;
-        StorageService.createMonster(data.id, data.name, data.hp)
-            .then(monster => NotificationService.notifyNewMonster(data.name, monster))
+        StorageService.createMonster(this.data.id, this.data.name, this.data.hp)
+            .then(monster => NotificationService.notifyNewMonster(this.data.name, monster))
             .catch(e => { throw e; });
     }
 
     buildLabel() {
-        return `Add with ${this.props.monsterdata.hp}hp`
+        return `Add with ${this.data.hp}hp`
     }
 
     render() {
-        return <button className="button button-monsters" style={buttonStyle} onClick={this.addMonster}>{this.buildLabel()}</button>;
+        return (
+            <a href="javascript:void(0)" className="view-rules button-alt spell-button-alt" style={buttonStyle} onClick={this.addMonster}>
+                <span>{this.buildLabel()}</span>
+            </a>
+        );
     }
 }
 

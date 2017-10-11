@@ -11,7 +11,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.dndbeyond.com/monsters*"
+                "https://www.dndbeyond.com/monsters*",
+                "https://www.dndbeyond.com/homebrew/monsters*"
             ],
             "js": [
                 "extensioncontentscript.js"

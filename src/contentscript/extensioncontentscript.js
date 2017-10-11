@@ -1,32 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AddMonsterButton from './AddMonsterButton';
-import $ from "jquery";
+import ParseData from "./ParseData";
+import ParseService from "./ParseService";
 
-chrome.runtime.onMessage.addListener(() => {
-    $(".more-info-monster:not(.bh-processed").find(".ddb-statblock-monster:first").each((idx, el) => {
-        // gather monster info from page
-        const moreInfoDiv = $(el).closest(".more-info-monster");
-        moreInfoDiv.addClass("bh-processed");
-        const rowDiv = moreInfoDiv.prev();
+const addButton = function(id: string, name: string, hp: string, target: JQuery<HTMLElement>){    
+    const elementToPrepend = document.createElement("span");
+    ReactDOM.render(<AddMonsterButton monsterdata={{ id, name, hp }} />, elementToPrepend);
+    target.prepend(elementToPrepend);
+}
 
-        const id = rowDiv.attr("data-slug");
-        const name = rowDiv.find(".monster-name a").text();
-        const hp = moreInfoDiv.find(".ddb-statblock-item-hit-points .primary").text();
-        const diceHp = moreInfoDiv.find(".ddb-statblock-item-hit-points .secondary").text();
-
-        // render add buttons on monster more-info block
-        const moreInfoBody = $(el).closest(".more-info-body");
-        const elementToPrepend = document.createElement("div");
-
-        const toRender = (
-            <div className="more-info-footer-details-button">
-                <AddMonsterButton monsterdata={{ id, name, hp }} />
-                {diceHp && <AddMonsterButton monsterdata={{ id, name, hp: diceHp }} />}
-            </div>
-        );
-
-        ReactDOM.render(toRender, elementToPrepend);
-        moreInfoBody.prepend(elementToPrepend);
+const addButtons = function () {
+    ParseService.parseMonsters().forEach(data => {
+        const monster = data.monsterData;
+        if(monster.diceHp){
+            addButton(monster.id, monster.name, monster.diceHp, data.targetToPrepent);
+        }
+        addButton(monster.id, monster.name, monster.hp, data.targetToPrepent);
     });
-});
+}
+
+chrome.runtime.onMessage.addListener(() => addButtons());
+addButtons();
