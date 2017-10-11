@@ -5,6 +5,7 @@ import MonsterData from './data/MonsterData';
 import MonsterMetadata from './data/MonsterMetadata';
 import MonsterListData from './data/MonsterListData';
 import StorageService from './services/StorageService';
+import BadgeService from './services/BadgeService';
 /* global chrome */
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
                 });
                 return {activeList: prevState.activeList};
             });
+            BadgeService.updateBadgeCount();
         });
     }
 

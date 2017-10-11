@@ -30,8 +30,12 @@ class Q {
         return (data: Data) => data.storageId && data.storageId.startsWith(Prefix.getStoragePrefix(dataClass));
     }
 
-    static prop(propName: string, propValue: any) {
+    static eq(propName: string, propValue: any) {
         return (data: Data) => data[propName] === propValue;
+    }
+
+    static in(propName: string, array: any[]){
+        return (data: Data) => array.indexOf(data[propName]) > -1;
     }
 }
 
@@ -59,7 +63,7 @@ const findGroupedBy = function (storageData: StorageData, groupProp: string, ...
     const result = new Map();
     Object.keys(storageData).forEach((storageId) => {
         const data = storageData[storageId];
-        if(!innerFind(data, queries)) return;
+        if (!innerFind(data, queries)) return;
 
         const propValue = data[groupProp];
         if (!result.has(propValue)) {
@@ -105,14 +109,14 @@ class StorageService {
                     return;
                 }
 
-                let list = findSingle(storageData, Q.clazz("MonsterListData"), Q.prop("active", true));
+                let list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("active", true));
                 let listPromise = list ? Promise.resolve(list) : this.createData("MonsterListData", new MonsterListData(null, "default", true));
 
                 let metadata = null;
 
                 listPromise.then(foundList => {
                     list = foundList;
-                    metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.prop("listId", list.storageId), Q.prop("monsterId", monsterId));
+                    metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.eq("listId", list.storageId), Q.eq("monsterId", monsterId));
                     return metadata ? Promise.resolve(metadata) : this.createData("MonsterMetadata", new MonsterMetadata(null, list.storageId, monsterId, name, 0));
                 }).then(foundMetadata => {
                     metadata = foundMetadata;
@@ -165,15 +169,42 @@ class StorageService {
                         return;
                     }
 
-                    const monsterOfSameMetadata = find(storageData, Q.clazz("MonsterData"), Q.prop("metadataId", monster.metadataId));
+                    const monsterOfSameMetadata = find(storageData, Q.clazz("MonsterData"), Q.eq("metadataId", monster.metadataId));
                     if (monsterOfSameMetadata.length > 0) {
                         resolve();
                         return;
                     }
 
-                    const metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.prop("storageId", monster.metadataId));
+                    const metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.eq("storageId", monster.metadataId));
                     metadata ? deleteData(metadata).then(resolve).catch(reject) : resolve();
                 });
+            });
+        });
+    }
+
+    static countActiveMonsters(): Promise<number> {
+        return new Promise((resolve, reject) => {
+            chrome.storage.sync.get(null, (storageData) => {
+                if (chrome.runtime.lastError) {
+                    reject(chrome.runtime.lastError);
+                    return;
+                }
+
+                const activeList = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("active", true));
+                if (!activeList){
+                    resolve(0);
+                    return;
+                }
+
+                const metadatas = find(storageData, Q.clazz("MonsterMetadata"), Q.eq("listId", activeList.storageId));
+                if(metadatas.length === 0){
+                    resolve(0);
+                    return;
+                }
+
+                const metaIds = metadatas.map(metadata => metadata.storageId);
+                const monsters = find(storageData, Q.clazz("MonsterData"), Q.in("metadataId", metaIds));
+                resolve(monsters.length);
             });
         });
     }

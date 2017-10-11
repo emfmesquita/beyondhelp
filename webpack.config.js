@@ -47,6 +47,16 @@ const file = {
 }
 
 module.exports = [{
+    entry: './src/background/extensionbackground.js',
+    output: {
+        filename: 'extensionbackground.js',
+        path: buildDir
+    },
+    devtool: "cheap-module-eval-source-map",
+    module: {
+        rules: [js]
+    }
+}, {
     entry: './src/contentscript/extensioncontentscript.js',
     output: {
         filename: 'extensioncontentscript.js',
@@ -54,9 +64,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [{
-            oneOf: [static, js, css, file]
-        }]
+        rules: [js]
     }
 }, {
     entry: './src/extensionpopup.js',

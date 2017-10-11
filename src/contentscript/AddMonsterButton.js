@@ -27,7 +27,7 @@ class AddMonsterButton extends Component {
     }
 
     buildLabel() {
-        return `Add with ${this.data.hp}hp`
+        return `Add with ${this.data.hp}hp`;
     }
 
     render() {
