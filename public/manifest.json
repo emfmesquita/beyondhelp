@@ -1,48 +1,48 @@
 {
-  "name": "Beyond Help",
-  "version": "0.1.0",
-  "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
-  "background": {
-    "scripts": [
-      "extensionbackground.js"
+    "name": "Beyond Help",
+    "version": "0.1.0",
+    "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
+    "background": {
+        "scripts": [
+            "extensionbackground.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.dndbeyond.com/monsters*"
+            ],
+            "js": [
+                "extensioncontentscript.js"
+            ]
+        }
     ],
-    "persistent": true
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.dndbeyond.com/monsters*"
-      ],
-      "js": [
-        "extensioncontentscript.js"
-      ]
-    }
-  ],
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Alt+Shift+D"
-      }
-    }
-  },
-  "browser_action": {
-    "default_icon": "icon-19.png",
-    "default_title": "Beyond Help",
-    "default_popup": "extensionpopup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "commands",
-    "notifications",
-    "storage",
-    "tabs",
-    "webRequest",
-    "https://www.dndbeyond.com/*"
-  ],
-  "icons": {
-    "48": "icon-48.png",
-    "128": "icon-128.png"
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "manifest_version": 2
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+D"
+            }
+        }
+    },
+    "browser_action": {
+        "default_icon": "icon-19.png",
+        "default_title": "Beyond Help",
+        "default_popup": "extensionpopup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "commands",
+        "notifications",
+        "storage",
+        "tabs",
+        "webRequest",
+        "https://www.dndbeyond.com/*"
+    ],
+    "icons": {
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "manifest_version": 2
 }

@@ -3,7 +3,6 @@ import { Button, Col, FormControl, FormGroup, InputGroup, Row } from 'react-boot
 import _ from 'lodash';
 import $ from "jquery"
 import './Monster.css';
-import MonsterInfoModal from './MonsterInfoModal';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
@@ -86,7 +85,7 @@ class Monster extends Component {
         e.stopPropagation();
         const delta = e.deltaY;
         this.setState((prevState) => {
-            return changeHp(prevState.currentHp, this.monster.hp, "1" , delta > 0);
+            return changeHp(prevState.currentHp, this.monster.hp, "1", delta > 0);
         }, (updatedState) => hpChanged(this.monster, this.state.currentHp));
     }
 
