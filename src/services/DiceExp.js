@@ -2,6 +2,26 @@
 const diceExpRegex = /^(\s*(\+|-)?\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)(\s*(\+|-)\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s*)*$/i;
 
 /**
+ * Roll a dice.
+ */
+const rollDice = function (diceValue) {
+    return Math.floor((Math.random() * diceValue) + 1);
+}
+
+/**
+ * Roll a number of dice (caps at 99999) and add the results.
+ * @param {*} numberOfDice 
+ * @param {*} diceValue 
+ */
+const rollAllDice = function (numberOfDice, diceValue) {
+    var total = 0;
+    for (var i = 0; i < numberOfDice % 100000; i++) {
+        total += rollDice(diceValue);
+    }
+    return total;
+}
+
+/**
  * Calcs a dice expression term.
  */
 const calcTermValue = function (term: string) {
@@ -12,15 +32,11 @@ const calcTermValue = function (term: string) {
     var multiplier = variableTokens[0].length === 0 ? 1 : Number(variableTokens[0]);
     var diceValue = Number(variableTokens[1]);
 
-    var termValue = 0;
     if (diceValue > 0) {
-        for (var i = 0; i < multiplier; i++) {
-            var parcialValue = Math.floor((Math.random() * diceValue) + 1);
-            termValue += parcialValue;
-        }
+        return rollAllDice(multiplier, diceValue);
     }
 
-    return termValue;
+    return 0;
 }
 
 /**
