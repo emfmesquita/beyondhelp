@@ -4,19 +4,19 @@ import AddMonsterButton from './AddMonsterButton';
 import ParseData from "./ParseData";
 import ParseService from "./ParseService";
 
-const addButton = function(id: string, name: string, hp: string, target: JQuery<HTMLElement>){    
-    const elementToPrepend = document.createElement("span");
-    ReactDOM.render(<AddMonsterButton monsterdata={{ id, name, hp }} />, elementToPrepend);
-    target.prepend(elementToPrepend);
+const createButton = function (id: string, name: string, hp: string) {
+    const buttonSpan = document.createElement("span");
+    ReactDOM.render(<AddMonsterButton monsterdata={{ id, name, hp }} />, buttonSpan);
+    return buttonSpan;
 }
 
 const addButtons = function () {
     ParseService.parseMonsters().forEach(data => {
+        const buttonsDiv = document.createElement("div");
         const monster = data.monsterData;
-        if(monster.diceHp){
-            addButton(monster.id, monster.name, monster.diceHp, data.targetToPrepent);
-        }
-        addButton(monster.id, monster.name, monster.hp, data.targetToPrepent);
+        buttonsDiv.appendChild(createButton(monster.id, monster.name, monster.hp, data.insert));
+        buttonsDiv.appendChild(createButton(monster.id, monster.name, monster.diceHp, data.insert));
+        data.insert(buttonsDiv);
     });
 }
 

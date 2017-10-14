@@ -6,11 +6,11 @@ const isOnMonsterList = function (path: string) {
     return path === "/monsters";
 }
 
-const isOnHomebrewMonsterList = function (path: string) {
-    return path === "/homebrew/monsters";
+const isOnHomebrew = function (path: string) {
+    return path.startsWith("/homebrew/");
 }
 
-const isOnMonsterDetail = function(path: string){
+const isOnMonsterDetail = function (path: string) {
     return path.startsWith("/monsters/");
 }
 
@@ -29,15 +29,15 @@ const parseList = function (isHomebrew): ParseData[] {
         const hp = moreInfoDiv.find(".ddb-statblock-item-hit-points .primary").text().trim();
         const monsterData = new MonsterContentData(id, name, hp, diceHp);
 
-        // target to prepend
-        const moreInfoBody = $(el).closest(".more-info-body");
+        // target
+        const target = $(el);
 
-        parseDataArray.push(new ParseData(moreInfoBody, monsterData));
+        parseDataArray.push(new ParseData("before", target, monsterData));
     });
     return parseDataArray;
 }
 
-const parseDetail = function(): ParseData[] {
+const parseDetail = function (): ParseData[] {
     const path = window.location.pathname;
     const id = path.substring(path.lastIndexOf("/") + 1);
     const name = $(".monster-name").text().trim();
@@ -46,7 +46,7 @@ const parseDetail = function(): ParseData[] {
     const diceHp = infoDiv.find(".hp .secondary").text().trim();
     const hp = infoDiv.find(".hp .primary").text().trim();
 
-    return [new ParseData(infoDiv, new MonsterContentData(id, name, hp, diceHp))];
+    return [new ParseData("prepend", infoDiv, new MonsterContentData(id, name, hp, diceHp))];
 }
 
 class ParseService {
@@ -54,12 +54,12 @@ class ParseService {
         const path = window.location.pathname;
 
         const isMonsterList = isOnMonsterList(path);
-        const isMonsterHomebrewList = isOnHomebrewMonsterList(path);
-        if(isMonsterList || isMonsterHomebrewList){
-            return parseList(isMonsterHomebrewList);
+        const isHomebrew = isOnHomebrew(path);
+        if (isMonsterList || isHomebrew) {
+            return parseList(isHomebrew);
         }
 
-        if(isOnMonsterDetail(path)){
+        if (isOnMonsterDetail(path)) {
             return parseDetail();
         }
 

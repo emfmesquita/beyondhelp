@@ -12,7 +12,9 @@
         {
             "matches": [
                 "https://www.dndbeyond.com/monsters*",
-                "https://www.dndbeyond.com/homebrew/monsters*"
+                "https://www.dndbeyond.com/homebrew/monsters*",
+                "https://www.dndbeyond.com/homebrew/collection*",
+                "https://www.dndbeyond.com/homebrew/creations*"
             ],
             "js": [
                 "extensioncontentscript.js"
