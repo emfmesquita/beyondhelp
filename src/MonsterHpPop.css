@@ -9,3 +9,7 @@
 .Monster-hp-pop-heal {
     color: #5cb85c;
 }
+
+.Monster-list-column .popover-title { 
+    display: none;
+}

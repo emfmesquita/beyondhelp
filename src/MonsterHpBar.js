@@ -75,7 +75,7 @@ class MonsterHpBar extends Component {
 
     render() {
         return (
-            <div id={this.outerDivId} className="Monster-hp-bar" onWheel={this.doChangeHp} onMouseLeave={this.hidePopover} /*title="Scroll to Change or Click"*/>
+            <div id={this.outerDivId} className="Monster-hp-bar" onWheel={this.doChangeHp} onMouseLeave={this.hidePopover} title="Scroll to Change or Click">
                 <div className="progress">
                     <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio() }}>
                         <div className="Monster-hp-bar-text">{this.progressBarLabel()}</div>
