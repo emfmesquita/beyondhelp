@@ -3,35 +3,6 @@
     background-repeat: initial;
 }
 
-.Monster-hp-bar-text {
-    position: absolute;
-    width: 100%;
-    color: #333;
-    font-weight: bold;
-}
-
-.Monster-damage-column {
-    padding-right: 4px !important;
-}
-
-.Monster-heal-column {
-    padding-left: 4px !important;
-}
-
-.Monster-hp-button {
-    padding-left: 8px !important;
-	padding-right: 8px !important;
-	height: 34px;
-}
-
-.Monster-hp-bar {
-    width: calc(100% - 23px);
-    float: left;
-    padding-left: 15px;
-    padding-right: 4px;
-    cursor: pointer;
-}
-
 .Monster-delete-button {
     font-size: 10px;
     padding-top: 5px;

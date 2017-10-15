@@ -1,0 +1,14 @@
+.Monster-hp-bar-text {
+    position: absolute;
+    width: 100%;
+    color: #333;
+    font-weight: bold;
+}
+
+.Monster-hp-bar {
+    width: calc(100% - 23px);
+    float: left;
+    padding-left: 15px;
+    padding-right: 4px;
+    cursor: pointer;
+}
