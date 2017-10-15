@@ -14,8 +14,9 @@ const buildContent = function (hpChange: number) {
 }
 
 class MonsterHpPop {
-    constructor(targetId: string) {
+    constructor(targetId: string, targetOriginalTitle: string) {
         this.selector = `#${targetId}`;
+        this.targetOriginalTitle = targetOriginalTitle;
         this.isVisible = false;
         this.startHp = 0;
     }
@@ -40,6 +41,7 @@ class MonsterHpPop {
 
     hide() {
         $(this.selector).popover("destroy");
+        $(this.selector).attr("title", this.targetOriginalTitle);
         this.isVisible = false;
     }
 }
