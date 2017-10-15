@@ -47,7 +47,7 @@ class App extends Component {
             const id = metadata.monsterId;
             const last = (list.metadatas.length - 1) === index;
             return (
-                <li className={last && "Monster-list-last"} key={id}>
+                <li className={last ? "Monster-list-last" : ""} key={id}>
                     <MonsterList monsters={metadata.monsters} id={id} name={metadata.name} onRemoveMonster={this.handleRemoveMonster} />
                 </li>
             );

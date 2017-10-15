@@ -27,7 +27,7 @@ class MonsterList extends Component {
             const even = index % 2 === 0;
             if (!even) return false;
             return (
-                <Row>
+                <Row key={monsters[index].storageId}>
                     {this.buildColumn(monsters[index])}
                     {this.buildColumn(index < monsters.length - 1 ? monsters[index + 1] : null)}
                 </Row>
