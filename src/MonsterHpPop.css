@@ -1,0 +1,11 @@
+.Monster-hp-pop {
+    font-weight: bold;
+}
+
+.Monster-hp-pop-damage {
+    color: #d9534f;
+}
+
+.Monster-hp-pop-heal {
+    color: #5cb85c;
+}

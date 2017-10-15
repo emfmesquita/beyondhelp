@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const buildDir = path.resolve(__dirname, 'build');
 const publicDir = path.resolve(__dirname, 'public');
@@ -82,5 +83,8 @@ module.exports = [{
         inject: true,
         template: popupHtml,
         filename: "extensionpopup.html"
+    }), new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
     })]
 }];
