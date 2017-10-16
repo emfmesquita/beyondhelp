@@ -5,26 +5,35 @@ import $ from "jquery"
 import './MonsterHpBar.css';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
+import MonsterHpBarForm from "./MonsterHpBarForm"
+import MonsterHpBarPop from "./MonsterHpBarPop"
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 
-const popoverTimeout = 2000;
+/**
+ * Generates a new state with updated hp given a hp value.
+ */
+const changeHp = function (prevState, maxHp: number, newHp: number, onMonsterDead: Function) {
+    newHp = newHp < 0 ? 0 : newHp;
+    newHp = newHp > maxHp ? maxHp : newHp;
+    onMonsterDead(newHp === 0);
+    return { currentHp: newHp };
+}
 
 /**
- * Generates a new state with updated hp.
+ * Generates a new state with updated hp given a hp delta.
  */
-const changeHp = function (prevState, maxHp: number, hpDiff: string, isDamage: boolean, onMonsterDead: Function) {
+const changeHpWithDelta = function (prevState, maxHp: number, hpDiff: string, isDamage: boolean, onMonsterDead: Function) {
     let numberDiff = hpDiff === "" ? 1 : Number(hpDiff);
     numberDiff = isDamage ? -1 * numberDiff : numberDiff;
 
     let newCurrentHp = prevState.currentHp + numberDiff;
-    newCurrentHp = newCurrentHp < 0 ? 0 : newCurrentHp;
-    newCurrentHp = newCurrentHp > maxHp ? maxHp : newCurrentHp;
-
-    onMonsterDead(newCurrentHp === 0);
+    const newState = changeHp(prevState, maxHp, newCurrentHp, onMonsterDead);
 
     const popoverInitHp = prevState.popoverVisible ? prevState.popoverInitHp : prevState.currentHp;
+    newState.popoverInitHp = popoverInitHp;
+    newState.popoverVisible = true;
 
-    return { currentHp: newCurrentHp, popoverInitHp, popoverVisible: true };
+    return newState;
 }
 
 /**
@@ -41,18 +50,16 @@ class MonsterHpBar extends Component {
         this.monster = this.props.monster;
         this.state = {
             currentHp: this.monster.currentHp,
-            hpFieldMode: false,
+            hpFormMode: false,
             mouseIn: true,
-            hpChangeFieldValue: "",
             popoverVisible: false,
             popoverInitHp: 0
         };
 
-        this.title = "Scroll or Click to Change";
+        this.title = "Scroll or Click to Change HP";
 
         this.progressBarLabel = this.progressBarLabel.bind(this);
         this.calcHpRatio = this.calcHpRatio.bind(this);
-        this.validateHpChangeField = this.validateHpChangeField.bind(this);
 
         // event handlers
         this.click = this.click.bind(this);
@@ -60,13 +67,12 @@ class MonsterHpBar extends Component {
         this.killPopover = this.killPopover.bind(this);
         this.mouseEnter = this.mouseEnter.bind(this);
         this.mouseLeave = this.mouseLeave.bind(this);
-        this.cancelClick = this.cancelClick.bind(this);
-        this.okClick = this.okClick.bind(this);
-        this.changeHpFieldValue = this.changeHpFieldValue.bind(this);
+        this.handleChangeHpFormValue = this.handleChangeHpFormValue.bind(this);
+        this.handleChangeHpFormCancel = this.handleChangeHpFormCancel.bind(this);
 
         // render helpers
         this.renderProgressBar = this.renderProgressBar.bind(this);
-        this.renderHpChangeField = this.renderHpChangeField.bind(this);
+        this.renderHpChangeForm = this.renderHpChangeForm.bind(this);
         this.renderWithPopover = this.renderWithPopover.bind(this);
         this.renderWithTooltip = this.renderWithTooltip.bind(this);
     }
@@ -79,17 +85,13 @@ class MonsterHpBar extends Component {
         return (this.state.currentHp / this.monster.hp) * 100 + "%";
     }
 
-    validateHpChangeField() {
-        return isNaN(this.state.hpChangeFieldValue) ? "error" : "success";
-    }
-
     //#region event handlers
     /**
      * onClick - Turn on hp field mode
      */
     click() {
-        if (!this.state.hpFieldMode) {
-            this.setState({ hpFieldMode: true, hpChangeFieldValue: this.state.currentHp });
+        if (!this.state.hpFormMode) {
+            this.setState({ hpFormMode: true, popoverVisible: false });
         }
     }
 
@@ -97,14 +99,14 @@ class MonsterHpBar extends Component {
      * onWheel - change hp if not on hp field mode
      */
     doChangeHp(e: WheelEvent) {
-        if (this.state.hpFieldMode) {
+        if (this.state.hpFormMode) {
             return;
         }
         e.preventDefault();
         e.stopPropagation();
         const delta = e.deltaY;
         this.setState((prevState) => {
-            return changeHp(prevState, this.monster.hp, "1", delta > 0, this.props.onMonsterDead);
+            return changeHpWithDelta(prevState, this.monster.hp, "1", delta > 0, this.props.onMonsterDead);
         }, () => {
             hpChanged(this.monster, this.state.currentHp);
         });
@@ -123,8 +125,8 @@ class MonsterHpBar extends Component {
      */
     mouseLeave() {
         this.setState({ mouseIn: false });
-        if (!this.state.hpFieldMode) {
-            this.popoverFadeTimeout = setTimeout(this.killPopover, popoverTimeout);
+        if (!this.state.hpFormMode) {
+            this.popoverFadeTimeout = setTimeout(this.killPopover, MonsterHpBarPop.FadeTime);
         }
     }
 
@@ -136,25 +138,21 @@ class MonsterHpBar extends Component {
     }
 
     /**
-     * onChange of hp field value
+     * onHpChange of hp form value
      */
-    changeHpFieldValue(e) {
-        this.setState({ hpChangeFieldValue: e.target.value });
+    handleChangeHpFormValue(newValue: number) {
+        this.setState((prevState) => {
+            const newState = changeHp(prevState, this.monster.hp, newValue, this.props.onMonsterDead);
+            newState.hpFormMode = false;
+            return newState;
+        });
     }
 
     /**
-     * onClick of cancel button of hp field mode
+     * onCancel of hp form
      */
-    cancelClick() {
-        this.setState({ hpFieldMode: false });
-    }
-
-    /**
-     * onClick of ok button of hp field mode
-     */
-    okClick() {
-        if(this.validateHpChangeField() === "error") return;
-        this.setState({ hpFieldMode: false });
+    handleChangeHpFormCancel() {
+        this.setState({ hpFormMode: false });
     }
     //#endregion 
 
@@ -171,46 +169,27 @@ class MonsterHpBar extends Component {
         );
     }
 
-    renderHpChangeField() {
+    renderHpChangeForm() {
         return (
             <div className="Monster-hp-bar">
-                <FormGroup validationState={this.validateHpChangeField()}>
-                    <InputGroup bsSize="small">
-                        <InputGroup.Addon>
-                            <MonsterMenuButton icon="glyphicon-remove" onClick={this.cancelClick} title="Cancel" />
-                        </InputGroup.Addon>
-                        <FormControl type="text" value={this.state.hpChangeFieldValue} onChange={this.changeHpFieldValue} />
-                        <InputGroup.Addon>
-                            <MonsterMenuButton icon="glyphicon-ok" onClick={this.okClick} title="Change Hp" />
-                        </InputGroup.Addon>
-                    </InputGroup>
-                </FormGroup>
+                <MonsterHpBarForm currentHp={this.state.currentHp} maxHp={this.monster.hp} onHpChange={this.handleChangeHpFormValue} onCancel={this.handleChangeHpFormCancel} />
             </div>
         );
     }
 
     renderWithPopover(progressBar: JSX.Element) {
-        const hpChange = this.state.currentHp - this.state.popoverInitHp;
-        const colorClass = hpChange > 0 ? "Monster-hp-pop-heal" : (hpChange < 0 ? "Monster-hp-pop-damage" : "");
-
-        const overlayProps = {
+        const popProps = {
+            idProp: this.monster.storageId,
+            hpChange: this.state.currentHp - this.state.popoverInitHp,
             target: () => this.progressBarDiv,
             show: this.state.popoverVisible,
-            rootClose: true,
-            onHide: this.killPopover,
-            placement: "top"
-        }
-
+            fade: !this.state.mouseIn,
+            onHide: this.killPopover
+        };
         return (
             <div>
                 {progressBar}
-                <Overlay {...overlayProps}>
-                    <Popover id={`popover-${this.monster.storageId}`} className={this.state.mouseIn ? "Monster-hp-pop-in" : "Monster-hp-pop-fade"}>
-                        <span className={`Monster-hp-pop ${colorClass}`}>
-                            {hpChange > 0 ? `+${hpChange}` : `${hpChange}`}
-                        </span>
-                    </Popover>
-                </Overlay>
+                <MonsterHpBarPop {...popProps} />
             </div>
         );
     }
@@ -222,8 +201,8 @@ class MonsterHpBar extends Component {
     //#endregion
 
     render() {
-        if (this.state.hpFieldMode) {
-            return this.renderHpChangeField();
+        if (this.state.hpFormMode) {
+            return this.renderHpChangeForm();
         }
         if (this.state.popoverVisible) {
             return this.renderWithPopover(this.renderProgressBar());

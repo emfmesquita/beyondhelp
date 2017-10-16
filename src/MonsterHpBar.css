@@ -12,38 +12,3 @@
     padding-right: 4px;
     cursor: pointer;
 }
-
-.Monster-hp-pop {
-    font-weight: bold;
-}
-
-.Monster-hp-pop-damage {
-    color: #d9534f;
-}
-
-.Monster-hp-pop-heal {
-    color: #5cb85c;
-}
-
-.Monster-hp-pop-fade {
-    opacity: 0 !important;
-    -webkit-transition: opacity 2000ms linear;
-    -o-transition: opacity 2000ms linear;
-    transition: opacity 2000ms linear;
-}
-
-.Monster-hp-pop-in {
-    opacity: 1 !important;
-}
-
-.Monster-hp-bar .input-group-addon {
-    padding: 0px 0px 0px 4px !important;
-    height: 20px !important;
-    line-height: 0px;
-    font-size: 10px;
-}
-
-.Monster-hp-bar input {
-    padding: 4px !important;
-    height: 20px !important;
-}

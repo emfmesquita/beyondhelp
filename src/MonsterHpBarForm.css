@@ -1,0 +1,16 @@
+.Monster-hp-bar .input-group-addon {
+    padding: 0px 0px 2px 4px !important;
+    height: 20px !important;
+    line-height: 0px;
+    font-size: 10px;
+}
+
+.Monster-hp-bar input {
+    padding: 4px !important;
+    height: 20px !important;
+}
+
+.Monster-hp-bar .Monster-hp-bar-form-max-hp {
+    padding-right: 4px;
+    line-height: 3px;
+}
