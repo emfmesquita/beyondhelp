@@ -35,3 +35,15 @@
 .Monster-hp-pop-in {
     opacity: 1 !important;
 }
+
+.Monster-hp-bar .input-group-addon {
+    padding: 0px 0px 0px 4px !important;
+    height: 20px !important;
+    line-height: 0px;
+    font-size: 10px;
+}
+
+.Monster-hp-bar input {
+    padding: 4px !important;
+    height: 20px !important;
+}
