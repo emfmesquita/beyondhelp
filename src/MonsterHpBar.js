@@ -75,6 +75,7 @@ class MonsterHpBar extends Component {
     }
 
     mouseEnter() {
+        clearTimeout(this.popoverFadeTimeout);
         this.setState({ mouseIn: true });
     }
 
@@ -85,9 +86,6 @@ class MonsterHpBar extends Component {
 
     killPopover() {
         this.setState({ popoverVisible: false });
-        if(this.popoverFadeTimeout){
-            clearTimeout(this.popoverFadeTimeout);
-        }
     }
 
     render() {
