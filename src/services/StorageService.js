@@ -153,7 +153,7 @@ class StorageService {
                 metadataMap.forEach(metadatas => metadatas.forEach(metadata => metadata.monsters = monsterMap.get(metadata.storageId)));
                 lists.forEach(list => {
                     list.metadatas = metadataMap.get(list.storageId);
-                    list.metadatas.sort((a: MonsterMetadata, b: MonsterMetadata) => a.name.localeCompare(b.name));
+                    list.metadatas && list.metadatas.sort((a: MonsterMetadata, b: MonsterMetadata) => a.name.localeCompare(b.name));
                 });
                 resolve(lists);
             });

@@ -8,17 +8,17 @@
     padding-top: 5px;
 }
 
-.progress {
+.Monster .progress {
 	position: relative;
     margin-bottom: 0px !important;
     background-image: linear-gradient(180deg,#aaa 0,#ddd) !important;
 }
 
-.well {
+.Monster.well {
 	padding: 8px !important;
 	margin-bottom: 0px !important;
 }
 
-.form-group {
+.Monster .form-group {
     margin-bottom: 0px !important;
 }

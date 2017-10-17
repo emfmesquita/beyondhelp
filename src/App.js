@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Well } from 'react-bootstrap';
 import './App.css';
 import MonsterList from './MonsterList';
 import MonsterData from './data/MonsterData';
@@ -17,6 +18,7 @@ class App extends Component {
         }
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
         this.buildList = this.buildList.bind(this);
+        this.mainContent = this.mainContent.bind(this);
         StorageService.getMonsterLists().then(lists => {
             const activeList = lists.find(list => list.active);
             this.setState({ lists, activeList });
@@ -54,6 +56,24 @@ class App extends Component {
         });
     }
 
+    mainContent() {
+        const list: MonsterListData = this.state.activeList;
+        if (!list) return <span></span>;
+        if (list.metadatas && list.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
+
+        const goblin = <a href="#">Goblin</a>;
+        const mList = <a href="#">Monsters Listing</a>;
+        const mHomebrew = <a href="#">Homebrew Monsters Listing</a>;
+        const hCollection = <a href="#">Homebrew Collection</a>;
+        const hCreation = <a href="#">Homebrew Creations</a>;
+
+        return (
+            <Well className="Monster-empty-list">
+                <p>No monsters added. Try to add a {goblin}. Monsters can also be added from the expanded details of {mList}, {mHomebrew}, {hCollection} and {hCreation}.</p>
+            </Well>
+        );
+    }
+
     render() {
         return (
             <div>
@@ -61,7 +81,7 @@ class App extends Component {
                     <MonsterMenuButton icon="glyphicon-plus" title="Expand All"/>
                     <MonsterMenuButton icon="glyphicon-minus" title="Collapse All"/>
                 </div> */}
-                <ul>{this.buildList()}</ul>
+                {this.mainContent()}
             </div>
         );
     }

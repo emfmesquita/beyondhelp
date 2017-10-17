@@ -26,7 +26,7 @@ class Monster extends Component {
 
     render() {
         return (
-            <div className={"well" + (this.state.dead ? " Monster-dead" : "")} ref={(element) => { this.element = element; }}>
+            <div className={"Monster well" + (this.state.dead ? " Monster-dead" : "")} ref={(element) => { this.element = element; }}>
                 <Row>
                     <MonsterHpBar monster={this.monster} onMonsterDead={this.handleMonsterDead} />
                     <div className="Monster-delete-button">

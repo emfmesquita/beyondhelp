@@ -11,3 +11,11 @@ li {
 .Monster-list-last {
     margin-bottom: 0px !important;
 }
+
+.Monster-empty-list {
+    margin: 8px;
+}
+
+.Monster-empty-list p {
+    margin: 0;
+}
