@@ -35,9 +35,13 @@ class MonsterHpBarForm extends Component {
     /**
      * onClick of ok button
      */
-    okClick() {
-        if (this.validate() === "error") return;
-        this.props.onHpChange(Number(this.state.value));
+    okClick(e: MouseEvent) {
+        if (this.validate() === "success") {
+            this.props.onHpChange(Number(this.state.value));
+            return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
     }
 
     /**

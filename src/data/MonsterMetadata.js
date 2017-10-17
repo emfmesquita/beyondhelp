@@ -12,7 +12,9 @@ class MonsterMetadata extends Data {
     }
 
     static savableClone(data: MonsterMetadata) {
-        return new MonsterMetadata(data.storageId, data.listId, data.monsterId, data.name, data.lastNumber);
+        const clone = new MonsterMetadata(data.storageId, data.listId, data.monsterId, data.name, data.lastNumber);
+        clone.collapsed = data.collapsed;
+        return clone;
     }
 
     get monsters() {

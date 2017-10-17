@@ -1,10 +1,13 @@
 .Monster-list-header {
     width: calc(100% - 30px);
+    cursor: pointer;
+    display: inline-block;
 }
 
-.Monster-list-header p {
-    margin: 0px;
-    font-size: 14px;
+.Monster-list-header-collapsible {
+    float: "right";
+    position: absolute;
+    right: 0px;
 }
 
 .Monster-list-column {

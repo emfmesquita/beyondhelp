@@ -12,5 +12,6 @@
 
 .Monster-hp-bar .Monster-hp-bar-form-max-hp {
     padding-right: 4px;
-    line-height: 3px;
+    position: relative;
+    top: 2px;
 }

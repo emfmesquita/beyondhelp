@@ -6,7 +6,7 @@ import MonsterMetadata from './data/MonsterMetadata';
 import MonsterListData from './data/MonsterListData';
 import StorageService from './services/StorageService';
 import BadgeService from './services/BadgeService';
-/* global chrome */
+import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 
 class App extends Component {
     constructor(props) {
@@ -29,12 +29,12 @@ class App extends Component {
             this.setState((prevState) => {
                 prevState.activeList.metadatas.forEach((metadata, metaIndex) => {
                     metadata.monsters.forEach((monster, monsterIndex) => {
-                        if(monster.storageId !== toDeleteId) return;
+                        if (monster.storageId !== toDeleteId) return;
                         metadata.monsters.splice(monsterIndex, 1);
-                        if(metadata.monsters.length === 0) prevState.activeList.metadatas.splice(metaIndex, 1);
+                        if (metadata.monsters.length === 0) prevState.activeList.metadatas.splice(metaIndex, 1);
                     });
                 });
-                return {activeList: prevState.activeList};
+                return { activeList: prevState.activeList };
             });
             BadgeService.updateBadgeCount();
         });
@@ -42,20 +42,28 @@ class App extends Component {
 
     buildList() {
         const list: MonsterListData = this.state.activeList;
-        if(!list) return "";
+        if (!list) return "";
         return list.metadatas.map((metadata, index) => {
             const id = metadata.monsterId;
             const last = (list.metadatas.length - 1) === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
-                    <MonsterList monsters={metadata.monsters} id={id} name={metadata.name} onRemoveMonster={this.handleRemoveMonster} />
+                    <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} />
                 </li>
             );
         });
     }
 
     render() {
-        return <ul>{this.buildList()}</ul>;
+        return (
+            <div>
+                {/* <div style={{padding: "4px"}}>
+                    <MonsterMenuButton icon="glyphicon-plus" title="Expand All"/>
+                    <MonsterMenuButton icon="glyphicon-minus" title="Collapse All"/>
+                </div> */}
+                <ul>{this.buildList()}</ul>
+            </div>
+        );
     }
 }
 

@@ -22,7 +22,7 @@ class ToMonsterPageButton extends Component {
     }
 
     render() {
-        return <MonsterMenuButton hidden={!this.props.monsterId} icon="glyphicon-list-alt" title="Monster Details Page" onClick={this.click} />
+        return <MonsterMenuButton hidden={!this.props.monsterId} icon="glyphicon-list-alt" title={`To Details Page of ${this.props.name}`} onClick={this.click} />
     }
 }
 
