@@ -1,5 +1,5 @@
-import DiceExp from "../services/DiceExp";
 import Data from "./Data";
+import DiceExp from "../services/DiceExp";
 
 class MonsterData extends Data {
     constructor(storageId: string, metadataId: string, hp: string, number: number) {

@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-import { Well } from 'react-bootstrap';
 import './App.css';
-import MonsterList from './MonsterList';
-import MonsterData from './data/MonsterData';
-import MonsterMetadata from './data/MonsterMetadata';
-import MonsterListData from './data/MonsterListData';
-import StorageService from './services/StorageService';
+
+import React, { Component } from 'react';
+
 import BadgeService from './services/BadgeService';
+import Link from './monsterbuttons/Link';
+import MonsterData from './data/MonsterData';
+import MonsterList from './MonsterList';
+import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
+import MonsterMetadata from './data/MonsterMetadata';
+import StorageService from './services/StorageService';
+import { Well } from 'react-bootstrap';
 
 class App extends Component {
     constructor(props) {
@@ -61,11 +64,12 @@ class App extends Component {
         if (!list) return <span/>;
         if (list.metadatas && list.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
 
-        const goblin = <a href="#">Goblin</a>;
-        const mList = <a href="#">Monsters Listing</a>;
-        const mHomebrew = <a href="#">Homebrew Monsters Listing</a>;
-        const hCollection = <a href="#">Homebrew Collection</a>;
-        const hCreation = <a href="#">Homebrew Creations</a>;
+        const base = "https://www.dndbeyond.com";
+        const goblin = <Link address={`${base}/monsters/goblin`}>Goblin</Link>;
+        const mList = <Link address={`${base}/monsters`}>Monsters Listing</Link>;
+        const mHomebrew = <Link address={`${base}/homebrew/monsters`}>Homebrew Monsters Listing</Link>;
+        const hCollection = <Link address={`${base}/homebrew/collection`}>Homebrew Collection</Link>;
+        const hCreation = <Link address={`${base}/homebrew/creations`}>Homebrew Creations</Link>;
 
         return (
             <Well className="Monster-empty-list">

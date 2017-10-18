@@ -1,6 +1,6 @@
+import $ from "jquery";
 import MonsterContentData from "./MonsterContentData";
 import ParseData from "./ParseData";
-import $ from "jquery";
 
 const isOnMonsterList = function (path: string) {
     return path === "/monsters";

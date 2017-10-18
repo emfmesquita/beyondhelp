@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import StorageService from '../services/StorageService';
-import NotificationService from "../services/NotificationService";
+
 import MonsterContentData from "./MonsterContentData";
+import NotificationService from "../services/NotificationService";
+import StorageService from '../services/StorageService';
 
 const buttonStyle = {
     display: "inline-block",

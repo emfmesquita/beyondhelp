@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import AddMonsterButton from './AddMonsterButton';
 import ParseData from "./ParseData";
 import ParseService from "./ParseService";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");

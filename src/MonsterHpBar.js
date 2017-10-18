@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import { Button, FormControl, FormGroup, InputGroup, Overlay, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap';
-import _ from 'lodash';
-import $ from "jquery";
 import './MonsterHpBar.css';
+
+import { Button, FormControl, FormGroup, InputGroup, Overlay, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap';
+import React, { Component } from 'react';
+
+import $ from "jquery";
 import MonsterData from './data/MonsterData';
-import StorageService from './services/StorageService';
 import MonsterHpBarForm from "./MonsterHpBarForm";
 import MonsterHpBarPop from "./MonsterHpBarPop";
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import StorageService from './services/StorageService';
+import _ from 'lodash';
 
 /**
  * Generates a new state with updated hp given a hp value.

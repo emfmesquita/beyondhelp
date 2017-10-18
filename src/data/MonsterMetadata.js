@@ -1,5 +1,5 @@
-import MonsterData from "./MonsterData";
 import Data from "./Data";
+import MonsterData from "./MonsterData";
 
 class MonsterMetadata extends Data {
     constructor(storageId: string, listId: string, monsterId: string, name: string, lastNumber: number) {

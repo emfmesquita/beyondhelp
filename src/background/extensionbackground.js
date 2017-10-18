@@ -1,5 +1,6 @@
 import BadgeService from "../services/BadgeService";
 import NotificationService from "../services/NotificationService";
+
 /* global chrome */
 
 // listen the dndbeyound request to gather a monster info

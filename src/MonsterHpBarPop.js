@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import { Overlay, Popover } from 'react-bootstrap';
 import './MonsterHpBarPop.css';
+
+import { Overlay, Popover } from 'react-bootstrap';
+import React, { Component } from 'react';
 
 class MonsterHpBarPop extends Component {
     static get FadeTime() {

@@ -1,7 +1,8 @@
 import Data from "../data/Data";
 import MonsterData from '../data/MonsterData';
-import MonsterMetadata from '../data/MonsterMetadata';
 import MonsterListData from '../data/MonsterListData';
+import MonsterMetadata from '../data/MonsterMetadata';
+
 /* global chrome */
 
 type StorageData = { [key: string]: Data }

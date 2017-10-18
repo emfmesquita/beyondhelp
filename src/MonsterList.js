@@ -1,13 +1,15 @@
+import './MonsterList.css';
+
+import { Col, Grid, Label, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
-import { Label, Grid, Row, Col } from 'react-bootstrap';
-import _ from 'lodash';
+
 import Monster from './Monster';
 import MonsterData from './data/MonsterData';
-import MonsterMetadata from './data/MonsterMetadata';
-import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
-import './MonsterList.css';
+import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
+import _ from 'lodash';
 
 /**
  * Handler called after toggle, updates the metadata on storage.

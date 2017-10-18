@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
 import './MonsterMenuButton.css';
+
+import React, { Component } from 'react';
 
 class MonsterMenuButton extends Component {
     render() {

@@ -1,4 +1,5 @@
 import StorageService from "./StorageService";
+
 /* global chrome */
 
 class BadgeService {

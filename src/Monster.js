@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
-import $ from "jquery";
 import './Monster.css';
-import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+
+import React, { Component } from 'react';
+
+import $ from "jquery";
 import MonsterHpBar from "./MonsterHpBar";
+import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import { Row } from 'react-bootstrap';
 
 class Monster extends Component {
     constructor(props) {

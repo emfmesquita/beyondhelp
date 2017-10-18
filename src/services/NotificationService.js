@@ -1,4 +1,5 @@
 import MonsterData from "../data/MonsterData";
+
 /* global chrome */
 
 class NotificationService {

@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import { FormControl, FormGroup, InputGroup } from 'react-bootstrap';
 import './MonsterHpBarForm.css';
+
+import { FormControl, FormGroup, InputGroup } from 'react-bootstrap';
+import React, { Component } from 'react';
+
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 
 class MonsterHpBarForm extends Component {
