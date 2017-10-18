@@ -13,6 +13,12 @@ fs.copySync(publicDir, buildDir, {
     filter: file => file !== popupHtml
 });
 
+const lint = {
+    test: /\.(js|jsx)$/,
+    enforce: 'pre',
+    loader: 'eslint-loader'
+}
+
 const static = {
     test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
     loader: 'url-loader',
@@ -55,7 +61,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [js]
+        rules: [lint, js]
     }
 }, {
     entry: './src/contentscript/extensioncontentscript.js',
@@ -65,7 +71,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [js]
+        rules: [lint, js]
     }
 }, {
     entry: './src/extensionpopup.js',
@@ -75,7 +81,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [{
+        rules: [lint, {
             oneOf: [static, js, css, file]
         }]
     },

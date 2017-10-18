@@ -10,5 +10,8 @@
     float: left;
     padding-left: 15px;
     padding-right: 4px;
+}
+
+.Monster-hp-bar .progress {
     cursor: pointer;
 }

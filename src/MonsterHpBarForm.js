@@ -6,7 +6,7 @@ import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 class MonsterHpBarForm extends Component {
     constructor(props) {
         super(props);
-        this.state = { value: this.props.currentHp + "" }
+        this.state = { value: this.props.currentHp + "" };
         this.inputRendered = this.inputRendered.bind(this);
         this.validate = this.validate.bind(this);
         this.changeValue = this.changeValue.bind(this);

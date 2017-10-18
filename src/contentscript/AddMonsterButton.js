@@ -10,7 +10,7 @@ const buttonStyle = {
     width: "auto",
     padding: "0 15px",
     borderColor: "#bc0f0f"
-}
+};
 
 class AddMonsterButton extends Component {
     constructor(props) {

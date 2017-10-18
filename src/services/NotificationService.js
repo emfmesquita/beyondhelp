@@ -2,7 +2,7 @@ import MonsterData from "../data/MonsterData";
 /* global chrome */
 
 class NotificationService {
-    static notifyNewMonster(name: string, monster: MonsterData){
+    static notifyNewMonster(name: string, monster: MonsterData) {
         chrome.runtime.sendMessage({
             notificationid: monster.storageId,
             notification: {
@@ -14,7 +14,7 @@ class NotificationService {
         });
     }
 
-    static createNotification(newNotificationId: string, newNotification){
+    static createNotification(newNotificationId: string, newNotification) {
         chrome.notifications.getAll((notifications) => {
             const notificationIds = Object.keys(notifications);
             if (notificationIds.length >= 3) {
@@ -26,10 +26,10 @@ class NotificationService {
         });
     }
 
-    static clearAll(){
+    static clearAll() {
         chrome.notifications.getAll((notifications) => {
             Object.keys(notifications).forEach((id) => {
-                if(id && id.startsWith("bh-")) chrome.notifications.clear(id, () => { });
+                if (id && id.startsWith("bh-")) chrome.notifications.clear(id, () => { });
             });
         });
     }

@@ -3,16 +3,16 @@ import { Overlay, Popover } from 'react-bootstrap';
 import './MonsterHpBarPop.css';
 
 class MonsterHpBarPop extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     static get FadeTime() {
         return 2000;
     }
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
-        const colorClass = this.props.hpChange > 0 ? "Monster-hp-pop-heal" : (this.props.hpChange < 0 ? "Monster-hp-pop-damage" : "");
+        const colorClass = this.props.hpChange > 0 ? "Monster-hp-pop-heal" : this.props.hpChange < 0 ? "Monster-hp-pop-damage" : "";
         const valueToShow = this.props.hpChange > 0 ? `+${this.props.hpChange}` : `${this.props.hpChange}`;
 
         const overlayProps = {
@@ -24,7 +24,7 @@ class MonsterHpBarPop extends Component {
         };
 
         return (
-            <Overlay {...overlayProps }>
+            <Overlay {...overlayProps}>
                 <Popover id={`popover-${this.props.idProp}`} className={this.props.fade ? "Monster-hp-pop-fade" : "Monster-hp-pop-in"}>
                     <span className={`Monster-hp-pop ${colorClass}`}>{valueToShow}</span>
                 </Popover>

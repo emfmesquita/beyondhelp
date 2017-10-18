@@ -41,12 +41,12 @@ class Q {
 
 const innerFind = function (data: Data, queries): boolean {
     return !queries || queries.every((query) => query(data));
-}
+};
 
 const findSingle = function (storageData: StorageData, ...queries): Data {
     const storageId = Object.keys(storageData).find(storageId => innerFind(storageData[storageId], queries));
     return storageId ? storageData[storageId] : undefined;
-}
+};
 
 const find = function (storageData: StorageData, ...queries): Data[] {
     const found = [];
@@ -57,7 +57,7 @@ const find = function (storageData: StorageData, ...queries): Data[] {
         }
     });
     return found;
-}
+};
 
 const findGroupedBy = function (storageData: StorageData, groupProp: string, ...queries): Map<string, Data[]> {
     const result = new Map();
@@ -72,7 +72,7 @@ const findGroupedBy = function (storageData: StorageData, groupProp: string, ...
         result.get(propValue).push(data);
     });
     return result;
-}
+};
 
 const deleteData = function (data: Data): Promise<Data> {
     return new Promise((resolve, reject) => {
@@ -80,7 +80,7 @@ const deleteData = function (data: Data): Promise<Data> {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
         });
     });
-}
+};
 
 class StorageService {
 

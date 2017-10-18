@@ -1,4 +1,4 @@
-import MonsterContentData from "./MonsterContentData"
+import MonsterContentData from "./MonsterContentData";
 
 class ParseData {
     constructor(insertFunction: string, target: JQuery<HTMLElement>, monsterData: MonsterContentData) {

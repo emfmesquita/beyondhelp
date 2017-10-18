@@ -4,15 +4,15 @@ import $ from "jquery";
 
 const isOnMonsterList = function (path: string) {
     return path === "/monsters";
-}
+};
 
 const isOnHomebrew = function (path: string) {
     return path.startsWith("/homebrew/");
-}
+};
 
 const isOnMonsterDetail = function (path: string) {
     return path.startsWith("/monsters/");
-}
+};
 
 const parseList = function (isHomebrew): ParseData[] {
     const parseDataArray = [];
@@ -35,7 +35,7 @@ const parseList = function (isHomebrew): ParseData[] {
         parseDataArray.push(new ParseData("before", target, monsterData));
     });
     return parseDataArray;
-}
+};
 
 const parseDetail = function (): ParseData[] {
     const path = window.location.pathname;
@@ -47,7 +47,7 @@ const parseDetail = function (): ParseData[] {
     const hp = infoDiv.find(".hp .primary").text().trim();
 
     return [new ParseData("prepend", infoDiv, new MonsterContentData(id, name, hp, diceHp))];
-}
+};
 
 class ParseService {
     static parseMonsters(): ParseData[] {

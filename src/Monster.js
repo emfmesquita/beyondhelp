@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
-import $ from "jquery"
+import $ from "jquery";
 import './Monster.css';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 import MonsterHpBar from "./MonsterHpBar";

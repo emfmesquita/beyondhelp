@@ -3,10 +3,12 @@ const diceExpRegex = /^(\s*(\+|-)?\s*(([0-9]{0,10}d[0-9]{1,10})|([0-9]{1,10}))\s
 
 /**
  * Roll a dice.
+ * @param {number} diceValue The number value of the dice.
+ * @returns {number} The value of the dice roll.
  */
 const rollDice = function (diceValue) {
-    return Math.floor((Math.random() * diceValue) + 1);
-}
+    return Math.floor(Math.random() * diceValue + 1);
+};
 
 /**
  * Roll a number of dice (caps at 99999) and add the results.
@@ -19,7 +21,7 @@ const rollAllDice = function (numberOfDice, diceValue) {
         total += rollDice(diceValue);
     }
     return total;
-}
+};
 
 /**
  * Calcs a dice expression term.
@@ -37,7 +39,7 @@ const calcTermValue = function (term: string) {
     }
 
     return 0;
-}
+};
 
 /**
  * Calcs a dice expression value.
@@ -62,7 +64,7 @@ const calcDiceExpValue = function (diceExp: string) {
     else value -= calcTermValue(token);
 
     return value;
-}
+};
 
 class DiceExp {
 

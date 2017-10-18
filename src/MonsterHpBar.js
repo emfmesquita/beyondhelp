@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Button, FormControl, FormGroup, InputGroup, Overlay, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap';
 import _ from 'lodash';
-import $ from "jquery"
+import $ from "jquery";
 import './MonsterHpBar.css';
 import MonsterData from './data/MonsterData';
 import StorageService from './services/StorageService';
-import MonsterHpBarForm from "./MonsterHpBarForm"
-import MonsterHpBarPop from "./MonsterHpBarPop"
+import MonsterHpBarForm from "./MonsterHpBarForm";
+import MonsterHpBarPop from "./MonsterHpBarPop";
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 
 /**
@@ -17,7 +17,7 @@ const changeHp = function (prevState, maxHp: number, newHp: number, onMonsterDea
     newHp = newHp > maxHp ? maxHp : newHp;
     onMonsterDead(newHp === 0);
     return { currentHp: newHp };
-}
+};
 
 /**
  * Generates a new state with updated hp given a hp delta.
@@ -34,7 +34,7 @@ const changeHpWithDelta = function (prevState, maxHp: number, hpDiff: string, is
     newState.popoverVisible = true;
 
     return newState;
-}
+};
 
 /**
  * Handler called after hp changes, updates the monster on storage.
@@ -82,7 +82,7 @@ class MonsterHpBar extends Component {
     }
 
     calcHpRatio() {
-        return (this.state.currentHp / this.monster.hp) * 100 + "%";
+        return this.state.currentHp / this.monster.hp * 100 + "%";
     }
 
     //#region event handlers

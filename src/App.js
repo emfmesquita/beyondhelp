@@ -15,14 +15,14 @@ class App extends Component {
         this.state = {
             lists: [],
             activeList: null
-        }
+        };
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
         this.buildList = this.buildList.bind(this);
         this.mainContent = this.mainContent.bind(this);
         StorageService.getMonsterLists().then(lists => {
             const activeList = lists.find(list => list.active);
             this.setState({ lists, activeList });
-        }).catch(error => { throw error });
+        }).catch(error => { throw error; });
     }
 
     handleRemoveMonster(toDeleteMonster: MonsterData) {
@@ -47,7 +47,7 @@ class App extends Component {
         if (!list) return "";
         return list.metadatas.map((metadata, index) => {
             const id = metadata.monsterId;
-            const last = (list.metadatas.length - 1) === index;
+            const last = list.metadatas.length - 1 === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
                     <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} />
@@ -58,7 +58,7 @@ class App extends Component {
 
     mainContent() {
         const list: MonsterListData = this.state.activeList;
-        if (!list) return <span></span>;
+        if (!list) return <span/>;
         if (list.metadatas && list.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
 
         const goblin = <a href="#">Goblin</a>;

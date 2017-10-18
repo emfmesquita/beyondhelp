@@ -6,18 +6,11 @@ class MonsterListData extends Data {
         super(storageId);
         this.name = name;
         this.active = active;
+        this.metadatas = undefined;
     }
 
     static savableClone(data: MonsterListData) {
         return new MonsterListData(data.storageId, data.name, data.active);
-    }
-
-    get metadatas() {
-        return this.metadatas;
-    }
-
-    set metadatas(value: MonsterMetadata[]) {
-        this.metadatas = value;
     }
 }
 

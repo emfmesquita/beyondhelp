@@ -8,7 +8,7 @@ const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");
     ReactDOM.render(<AddMonsterButton monsterdata={{ id, name, hp }} />, buttonSpan);
     return buttonSpan;
-}
+};
 
 const addButtons = function () {
     ParseService.parseMonsters().forEach(data => {
@@ -18,7 +18,7 @@ const addButtons = function () {
         buttonsDiv.appendChild(createButton(monster.id, monster.name, monster.diceHp, data.insert));
         data.insert(buttonsDiv);
     });
-}
+};
 
 chrome.runtime.onMessage.addListener(() => addButtons());
 addButtons();
