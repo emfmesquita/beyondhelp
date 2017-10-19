@@ -8,10 +8,6 @@ class MonsterHpBarPop extends Component {
         return 2000;
     }
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const colorClass = this.props.hpChange > 0 ? "Monster-hp-pop-heal" : this.props.hpChange < 0 ? "Monster-hp-pop-damage" : "";
         const valueToShow = this.props.hpChange > 0 ? `+${this.props.hpChange}` : `${this.props.hpChange}`;

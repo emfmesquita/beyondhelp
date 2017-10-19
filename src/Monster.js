@@ -10,27 +10,18 @@ import { Row } from 'react-bootstrap';
 class Monster extends Component {
     constructor(props) {
         super(props);
-        this.monster = this.props.monster;
-        this.state = {
-            dead: this.monster.currentHp === 0
-        };
-        this.handleMonsterDead = this.handleMonsterDead.bind(this);
         this.removeMonster = this.removeMonster.bind(this);
     }
 
-    handleMonsterDead(dead: boolean) {
-        this.setState({ dead });
-    }
-
     removeMonster() {
-        $(this.element).fadeOut(400, () => this.props.onRemoveMonster(this.monster));
+        $(this.element).fadeOut(400, () => this.props.onRemoveMonster(this.props.monster));
     }
 
     render() {
         return (
-            <div className={"Monster well" + (this.state.dead ? " Monster-dead" : "")} ref={(element) => { this.element = element; }}>
+            <div className={"Monster well" + (this.props.monster.currentHp === 0 ? " Monster-dead" : "")} ref={(element) => { this.element = element; }}>
                 <Row>
-                    <MonsterHpBar monster={this.monster} onMonsterDead={this.handleMonsterDead} />
+                    <MonsterHpBar monster={this.props.monster} onMonsterHpChange={this.props.onMonsterHpChange}/>
                     <div className="Monster-delete-button">
                         <MonsterMenuButton hidden={false} icon="glyphicon-trash" onClick={this.removeMonster} title="Delete Monster" />
                     </div>

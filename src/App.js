@@ -11,6 +11,25 @@ import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
 import { Well } from 'react-bootstrap';
+import _ from 'lodash';
+
+/* global chrome */
+
+
+/**
+ * Handler called after toggle, updates the metadata on storage.
+ */
+const saveToggle = _.throttle((metadata: MonsterMetadata) => {
+    const toSave = MonsterMetadata.savableClone(metadata);
+    StorageService.updateData(toSave).catch((e) => { throw new Error(e); });
+}, 500);
+
+/**
+ * Handler called after hp changes, updates the monster on storage.
+ */
+const saveHpChanged = _.throttle((monster: MonsterData) => {
+    StorageService.updateData(monster).catch((e) => { throw new Error(e); });
+}, 500);
 
 class App extends Component {
     constructor(props) {
@@ -20,8 +39,19 @@ class App extends Component {
             activeList: null
         };
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
+        this.handleListToggle = this.handleListToggle.bind(this);
+        this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
         this.buildList = this.buildList.bind(this);
         this.mainContent = this.mainContent.bind(this);
+        this.init();
+
+        // listen when a monster is added from AddMonsterButton, reloads
+        chrome.runtime.onMessage.addListener((request, sender) => {
+            this.init();
+        });
+    }
+
+    init() {
         StorageService.getMonsterLists().then(lists => {
             const activeList = lists.find(list => list.active);
             this.setState({ lists, activeList });
@@ -45,6 +75,21 @@ class App extends Component {
         });
     }
 
+    handleListToggle(metadata: MonsterMetadata) {
+        metadata.collapsed = !metadata.collapsed;
+        this.setState({ activeList: this.state.activeList }, () => saveToggle(metadata));
+    }
+
+    handleMonsterHpChange(monster: MonsterData, newHp: number) {
+        return new Promise((resolve, reject) => {
+            monster.currentHp = newHp;
+            this.setState({ activeList: this.state.activeList }, () => {
+                saveHpChanged(monster);
+                resolve();
+            });
+        });
+    }
+
     buildList() {
         const list: MonsterListData = this.state.activeList;
         if (!list) return "";
@@ -53,7 +98,7 @@ class App extends Component {
             const last = list.metadatas.length - 1 === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
-                    <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} />
+                    <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} onToggle={this.handleListToggle} onMonsterHpChange={this.handleMonsterHpChange} />
                 </li>
             );
         });
@@ -61,7 +106,7 @@ class App extends Component {
 
     mainContent() {
         const list: MonsterListData = this.state.activeList;
-        if (!list) return <span/>;
+        if (!list) return <span />;
         if (list.metadatas && list.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
 
         const base = "https://www.dndbeyond.com";

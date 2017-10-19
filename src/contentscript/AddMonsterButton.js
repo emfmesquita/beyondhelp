@@ -16,19 +16,18 @@ const buttonStyle = {
 class AddMonsterButton extends Component {
     constructor(props) {
         super(props);
-        this.data = this.props.monsterdata;
         this.addMonster = this.addMonster.bind(this);
         this.buildLabel = this.buildLabel.bind(this);
     }
 
     addMonster() {
-        StorageService.createMonster(this.data.id, this.data.name, this.data.hp)
-            .then(monster => NotificationService.notifyNewMonster(this.data.name, monster))
+        StorageService.createMonster(this.props.monsterdata.id, this.props.monsterdata.name, this.props.monsterdata.hp)
+            .then(monster => NotificationService.notifyNewMonster(this.props.monsterdata.name, monster))
             .catch(e => { throw e; });
     }
 
     buildLabel() {
-        return `Add with ${this.data.hp}hp`;
+        return `Add with ${this.props.monsterdata.hp}hp`;
     }
 
     render() {

@@ -9,49 +9,19 @@ import MonsterHpBarForm from "./MonsterHpBarForm";
 import MonsterHpBarPop from "./MonsterHpBarPop";
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 import StorageService from './services/StorageService';
-import _ from 'lodash';
 
 /**
- * Generates a new state with updated hp given a hp value.
+ * Limits a HP value between zero and max HP.
  */
-const changeHp = function (prevState, maxHp: number, newHp: number, onMonsterDead: Function) {
-    newHp = newHp < 0 ? 0 : newHp;
-    newHp = newHp > maxHp ? maxHp : newHp;
-    onMonsterDead(newHp === 0);
-    return { currentHp: newHp };
+const validHp = function (maxHp: number, newHp: number) {
+    const notNegativeHp = newHp < 0 ? 0 : newHp;
+    return notNegativeHp > maxHp ? maxHp : notNegativeHp;
 };
-
-/**
- * Generates a new state with updated hp given a hp delta.
- */
-const changeHpWithDelta = function (prevState, maxHp: number, hpDiff: string, isDamage: boolean, onMonsterDead: Function) {
-    let numberDiff = hpDiff === "" ? 1 : Number(hpDiff);
-    numberDiff = isDamage ? -1 * numberDiff : numberDiff;
-
-    let newCurrentHp = prevState.currentHp + numberDiff;
-    const newState = changeHp(prevState, maxHp, newCurrentHp, onMonsterDead);
-
-    const popoverInitHp = prevState.popoverVisible ? prevState.popoverInitHp : prevState.currentHp;
-    newState.popoverInitHp = popoverInitHp;
-    newState.popoverVisible = true;
-
-    return newState;
-};
-
-/**
- * Handler called after hp changes, updates the monster on storage.
- */
-const hpChanged = _.throttle((monster: MonsterData, newHp: number) => {
-    monster.currentHp = newHp;
-    StorageService.updateData(monster).catch((e) => { throw new Error(e); });
-}, 500);
 
 class MonsterHpBar extends Component {
     constructor(props) {
         super(props);
-        this.monster = this.props.monster;
         this.state = {
-            currentHp: this.monster.currentHp,
             hpFormMode: false,
             mouseIn: true,
             popoverVisible: false,
@@ -80,11 +50,11 @@ class MonsterHpBar extends Component {
     }
 
     progressBarLabel() {
-        return `#${this.monster.number} ${this.state.currentHp} / ${this.monster.hp}`;
+        return `#${this.props.monster.number} ${this.props.monster.currentHp} / ${this.props.monster.hp}`;
     }
 
     calcHpRatio() {
-        return this.state.currentHp / this.monster.hp * 100 + "%";
+        return this.props.monster.currentHp / this.props.monster.hp * 100 + "%";
     }
 
     //#region event handlers
@@ -107,10 +77,15 @@ class MonsterHpBar extends Component {
         e.preventDefault();
         e.stopPropagation();
         const delta = e.deltaY;
-        this.setState((prevState) => {
-            return changeHpWithDelta(prevState, this.monster.hp, "1", delta > 0, this.props.onMonsterDead);
-        }, () => {
-            hpChanged(this.monster, this.state.currentHp);
+        const hpChange = delta > 0 ? -1 : 1;
+        const newHp = validHp(this.props.monster.hp, this.props.monster.currentHp + hpChange);
+        const oldHp = this.props.monster.currentHp
+
+        this.props.onMonsterHpChange(this.props.monster, newHp).then(() => {
+            this.setState((prevState) => {
+                const popoverInitHp = prevState.popoverVisible ? prevState.popoverInitHp : oldHp;
+                return { popoverInitHp, popoverVisible: true };
+            });
         });
     }
 
@@ -143,10 +118,8 @@ class MonsterHpBar extends Component {
      * onHpChange of hp form value
      */
     handleChangeHpFormValue(newValue: number) {
-        this.setState((prevState) => {
-            const newState = changeHp(prevState, this.monster.hp, newValue, this.props.onMonsterDead);
-            newState.hpFormMode = false;
-            return newState;
+        this.props.onMonsterHpChange(this.props.monster, validHp(this.props.monster.hp, newValue)).then(() => {
+            this.setState({ hpFormMode: false });
         });
     }
 
@@ -174,15 +147,15 @@ class MonsterHpBar extends Component {
     renderHpChangeForm() {
         return (
             <div className="Monster-hp-bar">
-                <MonsterHpBarForm currentHp={this.state.currentHp} maxHp={this.monster.hp} onHpChange={this.handleChangeHpFormValue} onCancel={this.handleChangeHpFormCancel} />
+                <MonsterHpBarForm currentHp={this.props.monster.currentHp} maxHp={this.props.monster.hp} onHpChange={this.handleChangeHpFormValue} onCancel={this.handleChangeHpFormCancel} />
             </div>
         );
     }
 
     renderWithPopover(progressBar: JSX.Element) {
         const popProps = {
-            idProp: this.monster.storageId,
-            hpChange: this.state.currentHp - this.state.popoverInitHp,
+            idProp: this.props.monster.storageId,
+            hpChange: this.props.monster.currentHp - this.state.popoverInitHp,
             target: () => this.progressBarDiv,
             show: this.state.popoverVisible,
             fade: !this.state.mouseIn,
@@ -197,7 +170,7 @@ class MonsterHpBar extends Component {
     }
 
     renderWithTooltip(progressBar: JSX.Element) {
-        const tooltip = <Tooltip id={`tooltip-${this.monster.storageId}`}>{this.title}</Tooltip>;
+        const tooltip = <Tooltip id={`tooltip-${this.props.monster.storageId}`}>{this.title}</Tooltip>;
         return <OverlayTrigger placement="top" overlay={tooltip} delay={200}>{progressBar}</OverlayTrigger>;
     }
     //#endregion

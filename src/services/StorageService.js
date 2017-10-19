@@ -35,7 +35,7 @@ class Q {
         return (data: Data) => data[propName] === propValue;
     }
 
-    static in(propName: string, array: any[]){
+    static in(propName: string, array: any[]) {
         return (data: Data) => array.indexOf(data[propName]) > -1;
     }
 }
@@ -79,6 +79,7 @@ const deleteData = function (data: Data): Promise<Data> {
     return new Promise((resolve, reject) => {
         chrome.storage.sync.remove(data.storageId, (error) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
+            chrome.runtime.sendMessage({ reload: true });
         });
     });
 };
@@ -94,6 +95,7 @@ class StorageService {
             storageEntry[data.storageId] = data;
             chrome.storage.sync.set(storageEntry, () => {
                 chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(data);
+                chrome.runtime.sendMessage({ reload: true });
             });
         });
     }
@@ -192,13 +194,13 @@ class StorageService {
                 }
 
                 const activeList = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("active", true));
-                if (!activeList){
+                if (!activeList) {
                     resolve(0);
                     return;
                 }
 
                 const metadatas = find(storageData, Q.clazz("MonsterMetadata"), Q.eq("listId", activeList.storageId));
-                if(metadatas.length === 0){
+                if (metadatas.length === 0) {
                     resolve(0);
                     return;
                 }

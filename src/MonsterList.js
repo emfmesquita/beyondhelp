@@ -9,22 +9,10 @@ import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
 import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
-import _ from 'lodash';
-
-/**
- * Handler called after toggle, updates the metadata on storage.
- */
-const saveToggle = _.throttle((metadata: MonsterMetadata, collapsedState: boolean) => {
-    metadata.collapsed = collapsedState;
-    const toSave = MonsterMetadata.savableClone(metadata);
-    StorageService.updateData(toSave).catch((e) => { throw new Error(e); });
-}, 500);
 
 class MonsterList extends Component {
     constructor(props) {
         super(props);
-        this.state = { collapsed: this.props.metadata.collapsed };
-        this.monsters = this.props.metadata.monsters;
         this.buildColumn = this.buildColumn.bind(this);
         this.buildRows = this.buildRows.bind(this);
         this.toggle = this.toggle.bind(this);
@@ -34,37 +22,36 @@ class MonsterList extends Component {
         if (!monster) return false;
         return (
             <Col className="Monster-list-column" xs={6} key={monster.storageId}>
-                <Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster} />
+                <Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster} onMonsterHpChange={this.props.onMonsterHpChange}/>
             </Col>
         );
     }
 
     buildRows() {
-        const rows = this.monsters.map((monster: MonsterData, index: number) => {
+        const monsters = this.props.metadata.monsters;
+        const rows = monsters.map((monster: MonsterData, index: number) => {
             const even = index % 2 === 0;
             if (!even) return false;
             return (
-                <Row key={this.monsters[index].storageId}>
-                    {this.buildColumn(this.monsters[index])}
-                    {this.buildColumn(index < this.monsters.length - 1 ? this.monsters[index + 1] : null)}
+                <Row key={monsters[index].storageId}>
+                    {this.buildColumn(monsters[index])}
+                    {this.buildColumn(index < monsters.length - 1 ? monsters[index + 1] : null)}
                 </Row>
             );
         });
         return rows;
     }
 
-    toggle() {
-        this.setState((prevState) => {
-            return { collapsed: !prevState.collapsed };
-        }, () => {
-            saveToggle(this.props.metadata, this.state.collapsed);
-        });
+    toggle(){
+        return this.props.onToggle(this.props.metadata);
     }
 
     render() {
-        const icon = this.state.collapsed ? "glyphicon-chevron-right" : "glyphicon-chevron-down";
-        const title = this.state.collapsed ? "Expand" : "Collapse";
-        const grid = this.state.collapsed ? <span /> : <Grid>{this.buildRows()}</Grid>;
+        const collapsed = this.props.metadata.collapsed;
+        const monsters = this.props.metadata.monsters;
+        const icon = collapsed ? "glyphicon-chevron-right" : "glyphicon-chevron-down";
+        const title = collapsed ? "Expand" : "Collapse";
+        const grid = collapsed ? <span /> : <Grid>{this.buildRows()}</Grid>;
         return (
             <div>
                 <div>
@@ -72,7 +59,7 @@ class MonsterList extends Component {
                         <ToMonsterPageButton monsterId={this.props.metadata.monsterId} name={this.props.metadata.name} />
                     </div>
                     <div className="Monster-list-header" title={title} onClick={this.toggle}>
-                        <span>{this.props.metadata.name} (x{this.monsters.length}):</span>
+                        <span>{this.props.metadata.name} (x{monsters.length}):</span>
                         <span className="Monster-list-header-collapsible">
                             <MonsterMenuButton icon={icon} onClick={() => { }} />
                         </span>
