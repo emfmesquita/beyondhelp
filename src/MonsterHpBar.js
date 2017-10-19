@@ -79,7 +79,7 @@ class MonsterHpBar extends Component {
         const delta = e.deltaY;
         const hpChange = delta > 0 ? -1 : 1;
         const newHp = validHp(this.props.monster.hp, this.props.monster.currentHp + hpChange);
-        const oldHp = this.props.monster.currentHp
+        const oldHp = this.props.monster.currentHp;
 
         this.props.onMonsterHpChange(this.props.monster, newHp).then(() => {
             this.setState((prevState) => {

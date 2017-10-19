@@ -22,13 +22,16 @@ class MonsterList extends Component {
         if (!monster) return false;
         return (
             <Col className="Monster-list-column" xs={6} key={monster.storageId}>
-                <Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster} onMonsterHpChange={this.props.onMonsterHpChange}/>
+                <Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster} onMonsterHpChange={this.props.onMonsterHpChange} />
             </Col>
         );
     }
 
     buildRows() {
         const monsters = this.props.metadata.monsters;
+        if (!monsters) {
+            return <span />;
+        }
         const rows = monsters.map((monster: MonsterData, index: number) => {
             const even = index % 2 === 0;
             if (!even) return false;
@@ -42,13 +45,13 @@ class MonsterList extends Component {
         return rows;
     }
 
-    toggle(){
+    toggle() {
         return this.props.onToggle(this.props.metadata);
     }
 
     render() {
         const collapsed = this.props.metadata.collapsed;
-        const monsters = this.props.metadata.monsters;
+        const numberOfMonsters = this.props.metadata.monsters ? this.props.metadata.monsters.length : 0;
         const icon = collapsed ? "glyphicon-chevron-right" : "glyphicon-chevron-down";
         const title = collapsed ? "Expand" : "Collapse";
         const grid = collapsed ? <span /> : <Grid>{this.buildRows()}</Grid>;
@@ -59,7 +62,7 @@ class MonsterList extends Component {
                         <ToMonsterPageButton monsterId={this.props.metadata.monsterId} name={this.props.metadata.name} />
                     </div>
                     <div className="Monster-list-header" title={title} onClick={this.toggle}>
-                        <span>{this.props.metadata.name} (x{monsters.length}):</span>
+                        <span>{this.props.metadata.name} (x{numberOfMonsters}):</span>
                         <span className="Monster-list-header-collapsible">
                             <MonsterMenuButton icon={icon} onClick={() => { }} />
                         </span>
