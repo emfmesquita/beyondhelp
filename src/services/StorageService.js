@@ -1,3 +1,4 @@
+import Configuration from '../data/Configuration';
 import Data from "../data/Data";
 import MonsterData from '../data/MonsterData';
 import MonsterEncounterData from '../data/MonsterEncounterData';
@@ -6,6 +7,7 @@ import MonsterListData from '../data/MonsterListData';
 /* global chrome */
 
 type StorageData = { [key: string]: Data }
+const ConfigurationId = "bh-config";
 
 class Prefix {
     static getStoragePrefix(dataClass: string) {
@@ -22,6 +24,7 @@ class Prefix {
     }
 
     static createStorageId(dataClass: string) {
+        if(dataClass === "Configuration") return ConfigurationId;
         return Prefix.getStoragePrefix(dataClass) + new Date().getTime();
     }
 }
@@ -39,6 +42,14 @@ class Q {
         return (data: Data) => array.indexOf(data[propName]) > -1;
     }
 }
+
+const getStorageData = function (id: string): Promise<storageData> {
+    return new Promise((resolve, reject) => {
+        chrome.storage.sync.get(id ? id : null, (storageData: StorageData) => {
+            chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(storageData);
+        });
+    });
+};
 
 const innerFind = function (data: Data, queries): boolean {
     return !queries || queries.every((query) => query(data));
@@ -86,6 +97,12 @@ const deleteData = function (data: Data): Promise<Data> {
 
 class StorageService {
 
+    static getConfig(): Promise<Configuration> {
+        return this.getData(ConfigurationId).then(config => {
+            return config ? Promise.resolve(config) : this.createData("Configuration", new Configuration());
+        });
+    }
+
     static createData(dataClass: sttring, data: Data): Promise {
         return new Promise((resolve, reject) => {
             const storageEntry: StorageData = {};
@@ -100,117 +117,126 @@ class StorageService {
         });
     }
 
+    static getData(id: string): Promise<Data> {
+        return getStorageData(id).then(storageData => storageData[id]);
+    }
+
     static updateData(data: Data): Promise {
         return this.createData(null, data);
     }
 
     static createMonster(monsterId: string, name: string, hp: string): Promise<MonsterData> {
-        return new Promise((resolve, reject) => {
-            chrome.storage.sync.get(null, (storageData: StorageData) => {
-                if (chrome.runtime.lastError) {
-                    reject(chrome.runtime.lastError);
-                    return;
-                }
+        let storageData, config, encounter, list;
+        return getStorageData().then(result => {
+            storageData = result;
+            return this.getConfig();
+        }).then(result => {
+            config = result;
 
-                let encounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("active", true));
-                let encounterPromise = encounter ? Promise.resolve(encounter) : this.createData("MonsterEncounterData", new MonsterEncounterData(null, "default", true));
+            if (config.activeEncounterId) {
+                const activeEncounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("storageId", config.activeEncounterId));
+                return Promise.resolve(activeEncounter);
+            }
 
-                let list = null;
-
-                encounterPromise.then(foundEncounter => {
-                    encounter = foundEncounter;
-                    list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
-                    return list ? Promise.resolve(list) : this.createData("MonsterListData", new MonsterListData(null, encounter.storageId, monsterId, name, 0));
-                }).then(foundList => {
-                    list = foundList;
-                    const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
-                    return this.createData("MonsterData", newMonster);
-                }).then((monster) => {
-                    list.lastNumber = list.lastNumber + 1;
-                    return this.updateData(list).then(() => monster);
-                }).then(resolve).catch(reject);
+            return this.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
+                config.activeEncounterId = encounter.storageId;
+                return this.updateData(config).then(() => encounter);
             });
+        }).then(result => {
+            encounter = result;
+            list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
+            return list ? Promise.resolve(list) : this.createData("MonsterListData", new MonsterListData(null, encounter.storageId, monsterId, name, 0));
+        }).then(result => {
+            list = result;
+            const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
+            return this.createData("MonsterData", newMonster);
+        }).then((monster) => {
+            list.lastNumber = list.lastNumber + 1;
+            return this.updateData(list).then(() => monster);
         });
     }
 
-    static getMonsterEncounters(): Promise<MonsterEncounterData[]> {
-        return new Promise((resolve, reject) => {
-            chrome.storage.sync.get(null, (storageData) => {
-                if (chrome.runtime.lastError) {
-                    reject(chrome.runtime.lastError);
-                    return;
-                }
+    static getMonsterEncounters(): Promise<{ active: MonsterEncounterData, all: MonsterEncounterData[] }> {
+        let storageData;
 
-                const encounters: MonsterEncounterData[] = find(storageData, Q.clazz("MonsterEncounterData"));
-                if (encounters.length === 0) {
-                    this.createData("MonsterEncounterData", new MonsterEncounterData(null, "default", true)).then(encounter => resolve([encounter])).catch(reject);
-                    return;
-                }
-
-                const listMap: Map<string, MonsterListData[]> = findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
-                if (listMap.length === 0) {
-                    return;
-                }
-
-                const monsterMap: Map<string, MonsterData[]> = findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
-                listMap.forEach(lists => lists.forEach(list => list.monsters = monsterMap.get(list.storageId)));
-                encounters.forEach(encounter => {
-                    encounter.lists = listMap.get(encounter.storageId);
-                    encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.name.localeCompare(b.name));
+        return getStorageData().then(result => {
+            storageData = result;
+            return this.getConfig();
+        }).then(config => {
+            if (!config.activeEncounterId) {
+                return this.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
+                    config.activeEncounterId = encounter.storageId;
+                    return this.updateData(config).then(() => {
+                        return { active: encounter, all: [encounter] };
+                    });
                 });
-                resolve(encounters);
+            }
+
+            const encounters: MonsterEncounterData[] = find(storageData, Q.clazz("MonsterEncounterData"));
+            const activeEncounter = encounters.find(encounter => encounter.storageId === config.activeEncounterId);
+            const result = { active: activeEncounter, all: encounters };
+
+            const listMap: Map<string, MonsterListData[]> = findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
+            if (listMap.length === 0) {
+                return result;
+            }
+
+            const monsterMap: Map<string, MonsterData[]> = findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
+            listMap.forEach(lists => lists.forEach(list => list.monsters = monsterMap.get(list.storageId)));
+            encounters.forEach(encounter => {
+                encounter.lists = listMap.get(encounter.storageId);
+                encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.name.localeCompare(b.name));
             });
+            return result;
         });
     }
 
     static deleteMonster(monster: MonsterData): Promise {
-        return deleteData(monster).then(() => {
-            return new Promise((resolve, reject) => {
-                chrome.storage.sync.get(null, (storageData) => {
-                    if (chrome.runtime.lastError) {
-                        reject(chrome.runtime.lastError);
-                        return;
-                    }
+        return deleteData(monster).then(() => getStorageData()).then(storageData => {
+            const monsterOfSameList = find(storageData, Q.clazz("MonsterData"), Q.eq("listId", monster.listId));
+            if (monsterOfSameList.length > 0) return Promise.resolve();
 
-                    const monsterOfSameList = find(storageData, Q.clazz("MonsterData"), Q.eq("listId", monster.listId));
-                    if (monsterOfSameList.length > 0) {
-                        resolve();
-                        return;
-                    }
+            const list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", monster.listId));
+            if (!list) return Promise.resolve();
 
-                    const list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", monster.listId));
-                    list ? deleteData(list).then(resolve).catch(reject) : resolve();
-                });
-            });
+            return deleteData(list);
         });
     }
 
     static countActiveMonsters(): Promise<{ alive: number, total: number }> {
-        return new Promise((resolve, reject) => {
-            chrome.storage.sync.get(null, (storageData) => {
-                if (chrome.runtime.lastError) {
-                    reject(chrome.runtime.lastError);
-                    return;
-                }
+        let storageData;
+        const empty = { total: 0, alive: 0 };
+        return getStorageData().then(result => {
+            storageData = result;
+            return this.getConfig();
+        }).then(config => {
+            if (!config.activeEncounterId) {
+                return empty;
+            }
 
-                const activeEncounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("active", true));
-                if (!activeEncounter) {
-                    resolve(0);
-                    return;
-                }
+            const activeEncounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("storageId", config.activeEncounterId));
 
-                const lists = find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", activeEncounter.storageId));
-                if (lists.length === 0) {
-                    resolve(0);
-                    return;
-                }
+            const lists = find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", activeEncounter.storageId));
+            if (lists.length === 0) {
+                return empty;
+            }
 
-                const metaIds = lists.map(list => list.storageId);
-                const monsters: MonsterData[] = find(storageData, Q.clazz("MonsterData"), Q.in("listId", metaIds));
-                const total = monsters.length;
-                const alive = monsters.filter(m => m.currentHp > 0).length;
-                resolve({ total, alive });
-            });
+            const metaIds = lists.map(list => list.storageId);
+            const monsters: MonsterData[] = find(storageData, Q.clazz("MonsterData"), Q.in("listId", metaIds));
+            const total = monsters.length;
+            const alive = monsters.filter(m => m.currentHp > 0).length;
+            return { total, alive };
+        });
+    }
+
+    static createEncounter(name: string): Promise {
+        let config;
+        return this.getConfig().then(result => {
+            config = result;
+            return this.createData("MonsterEncounterData", new MonsterEncounterData(null, name));
+        }).then(newEncounter => {
+            config.activeEncounterId = newEncounter.storageId;
+            return this.updateData(config);
         });
     }
 }

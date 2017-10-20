@@ -5,9 +5,8 @@
 }
 
 .Monster-list-header-collapsible {
-    float: "right";
     position: absolute;
-    right: 0px;
+    right: 8px;
 }
 
 .Monster-list-column {

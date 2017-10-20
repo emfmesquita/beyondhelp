@@ -49,16 +49,16 @@ class MonsterHpBar extends Component {
         this.renderWithTooltip = this.renderWithTooltip.bind(this);
     }
 
+    componentWillUnmount() {
+        clearTimeout(this.popoverFadeTimeout);
+    }
+
     progressBarLabel() {
         return `#${this.props.monster.number} ${this.props.monster.currentHp} / ${this.props.monster.hp}`;
     }
 
     calcHpRatio() {
         return this.props.monster.currentHp / this.props.monster.hp * 100 + "%";
-    }
-
-    componentWillUnmount() {
-        clearTimeout(this.popoverFadeTimeout);
     }
 
     //#region event handlers

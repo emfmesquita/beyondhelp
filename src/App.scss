@@ -1,0 +1,57 @@
+ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.Monster-encounter-menu {
+    padding: 8px 8px 0px 8px;
+    .Monster-menu-button {
+        position: relative;
+        top: -8px;
+    }
+    .Monster-encounter-select {
+        padding-left: 4px;
+        display: inline-block;
+        width: calc(100% - 40px);
+    }
+}
+
+.Monster-list-last {
+    margin-bottom: 0px !important;
+}
+
+.Monster-empty-list {
+    margin: 8px;
+    p {
+        margin: 0;
+    }
+}
+
+.modal-dialog {
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 8px;
+    }
+    .modal-title {
+        font-size: 16px;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+}
+
+.Select-menu-outer {
+    width: calc(100% - 4px) !important;
+}
+
+$select-item-gutter: 4px;
+$select-item-font-size: 11px;
+$select-input-height: 30px;
+$select-menu-max-height: 170px;
+@import "../node_modules/react-select/scss/default";

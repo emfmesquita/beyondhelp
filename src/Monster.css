@@ -9,14 +9,14 @@
 }
 
 .Monster .progress {
-	position: relative;
+    position: relative;
     margin-bottom: 0px !important;
-    background-image: linear-gradient(180deg,#aaa 0,#ddd) !important;
+    background-image: linear-gradient(180deg, #aaa 0, #ddd) !important;
 }
 
 .Monster.well {
-	padding: 8px !important;
-	margin-bottom: 0px !important;
+    padding: 8px !important;
+    margin-bottom: 0px !important;
 }
 
 .Monster .form-group {

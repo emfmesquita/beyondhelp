@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import React, { Component } from 'react';
 
@@ -9,6 +9,8 @@ import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterList from './MonsterList';
 import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
+import NewEncounterModal from "./modals/NewEncounterModal";
+import Select from 'react-select';
 import StorageService from './services/StorageService';
 import { Well } from 'react-bootstrap';
 import _ from 'lodash';
@@ -38,11 +40,19 @@ class App extends Component {
         super(props);
         this.state = {
             encounters: [],
-            activeEncounter: null
+            activeEncounter: null,
+            showNewEncounterModal: false
         };
+
+        this.newEncounterClick = this.newEncounterClick.bind(this);
+        this.activeEncounterChange = this.activeEncounterChange.bind(this);
+
+        this.handleCloseNewEncounterModal = this.handleCloseNewEncounterModal.bind(this);
+        this.handleNewEncounter = this.handleNewEncounter.bind(this);
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
         this.handleListToggle = this.handleListToggle.bind(this);
         this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
+
         this.buildList = this.buildList.bind(this);
         this.mainContent = this.mainContent.bind(this);
         this.init();
@@ -54,10 +64,33 @@ class App extends Component {
     }
 
     init() {
-        StorageService.getMonsterEncounters().then(encounters => {
-            const activeEncounter = encounters.find(encounter => encounter.active);
-            this.setState({ encounters, activeEncounter });
+        StorageService.getMonsterEncounters().then(({ active, all }) => {
+            this.setState({ encounters: all, activeEncounter: active });
         }).catch(error => { throw error; });
+    }
+
+    newEncounterClick() {
+        this.setState({ showNewEncounterModal: true });
+    }
+
+    activeEncounterChange(newActiveEncounter: MonsterEncounterData) {
+        StorageService.getConfig().then(config => {
+            config.activeEncounterId = newActiveEncounter.storageId;
+            return StorageService.updateData(config);
+        }).then(() => {
+            this.setState({ activeEncounter: newActiveEncounter }, BadgeService.updateBadgeCount);
+        });
+    }
+
+    //#region children event handlers
+    handleCloseNewEncounterModal() {
+        this.setState({ showNewEncounterModal: false });
+    }
+
+    handleNewEncounter(name: string) {
+        StorageService.createEncounter(name).then(() => {
+            this.setState({ showNewEncounterModal: false }, this.init);
+        });
     }
 
     handleRemoveMonster(toDeleteMonster: MonsterData) {
@@ -91,7 +124,9 @@ class App extends Component {
             });
         });
     }
+    //#endregion
 
+    //#region renderer
     buildList() {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return "";
@@ -128,14 +163,28 @@ class App extends Component {
     render() {
         return (
             <div>
-                {/* <div style={{padding: "4px"}}>
-                    <MonsterMenuButton icon="glyphicon-plus" title="Expand All"/>
-                    <MonsterMenuButton icon="glyphicon-minus" title="Collapse All"/>
-                </div> */}
+                <div className="Monster-encounter-menu">
+                    <MonsterMenuButton icon="glyphicon-file" title="New Encounter" onClick={this.newEncounterClick} />
+                    <MonsterMenuButton icon="glyphicon-trash" title="Delete Encounter" />
+                    <Select
+                        className="Monster-encounter-select"
+                        labelKey="name"
+                        valueKey="storageId"
+                        noResultsText="No encounters found"
+                        autoBlur
+                        value={this.state.activeEncounter}
+                        options={this.state.encounters}
+                        onChange={this.activeEncounterChange}
+                    />
+                </div>
+
                 {this.mainContent()}
-            </div>
+
+                <NewEncounterModal show={this.state.showNewEncounterModal} onHide={this.handleCloseNewEncounterModal} onSave={this.handleNewEncounter} />
+            </div >
         );
     }
+    //#endregion
 }
 
 export default App;
