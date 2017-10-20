@@ -4,9 +4,9 @@ import StorageService from "./StorageService";
 
 class BadgeService {
     static updateBadgeCount() {
-        StorageService.countActiveMonsters().then(count => {
-            const text = count > 0 ? count + "" : "";
-            const color = count > 0 ? [0, 0, 255, 255] : [0, 0, 0, 0];
+        StorageService.countActiveMonsters().then(({alive, total}) => {
+            const text = total > 0 ? `${alive}/${total}` : "";
+            const color = total > 0 ? [0, 0, 255, 255] : [0, 0, 0, 0];
             chrome.browserAction.setBadgeText({ text });
             chrome.browserAction.setBadgeBackgroundColor({ color });
         });

@@ -57,6 +57,10 @@ class MonsterHpBar extends Component {
         return this.props.monster.currentHp / this.props.monster.hp * 100 + "%";
     }
 
+    componentWillUnmount() {
+        clearTimeout(this.popoverFadeTimeout);
+    }
+
     //#region event handlers
     /**
      * onClick - Turn on hp field mode

@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 import BadgeService from './services/BadgeService';
 import Link from './monsterbuttons/Link';
 import MonsterData from './data/MonsterData';
+import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterList from './MonsterList';
-import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
@@ -28,15 +28,17 @@ const saveToggle = _.throttle((metadata: MonsterMetadata) => {
  * Handler called after hp changes, updates the monster on storage.
  */
 const saveHpChanged = _.throttle((monster: MonsterData) => {
-    StorageService.updateData(monster).catch((e) => { throw new Error(e); });
+    StorageService.updateData(monster).then(() => {
+        BadgeService.updateBadgeCount();
+    }).catch((e) => { throw new Error(e); });
 }, 500);
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lists: [],
-            activeList: null
+            encounters: [],
+            activeEncounter: null
         };
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
         this.handleListToggle = this.handleListToggle.bind(this);
@@ -52,9 +54,9 @@ class App extends Component {
     }
 
     init() {
-        StorageService.getMonsterLists().then(lists => {
-            const activeList = lists.find(list => list.active);
-            this.setState({ lists, activeList });
+        StorageService.getMonsterEncounters().then(encounters => {
+            const activeEncounter = encounters.find(encounter => encounter.active);
+            this.setState({ encounters, activeEncounter });
         }).catch(error => { throw error; });
     }
 
@@ -62,14 +64,14 @@ class App extends Component {
         const toDeleteId = toDeleteMonster.storageId;
         StorageService.deleteMonster(toDeleteMonster).then(() => {
             this.setState((prevState) => {
-                prevState.activeList.metadatas.forEach((metadata, metaIndex) => {
+                prevState.activeEncounter.metadatas.forEach((metadata, metaIndex) => {
                     metadata.monsters.forEach((monster, monsterIndex) => {
                         if (monster.storageId !== toDeleteId) return;
                         metadata.monsters.splice(monsterIndex, 1);
-                        if (metadata.monsters.length === 0) prevState.activeList.metadatas.splice(metaIndex, 1);
+                        if (metadata.monsters.length === 0) prevState.activeEncounter.metadatas.splice(metaIndex, 1);
                     });
                 });
-                return { activeList: prevState.activeList };
+                return { activeEncounter: prevState.activeEncounter };
             });
             BadgeService.updateBadgeCount();
         });
@@ -77,13 +79,13 @@ class App extends Component {
 
     handleListToggle(metadata: MonsterMetadata) {
         metadata.collapsed = !metadata.collapsed;
-        this.setState({ activeList: this.state.activeList }, () => saveToggle(metadata));
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(metadata));
     }
 
     handleMonsterHpChange(monster: MonsterData, newHp: number) {
         return new Promise((resolve, reject) => {
             monster.currentHp = newHp;
-            this.setState({ activeList: this.state.activeList }, () => {
+            this.setState({ activeEncounter: this.state.activeEncounter }, () => {
                 saveHpChanged(monster);
                 resolve();
             });
@@ -91,11 +93,11 @@ class App extends Component {
     }
 
     buildList() {
-        const list: MonsterListData = this.state.activeList;
-        if (!list) return "";
-        return list.metadatas.map((metadata, index) => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        if (!encounter) return "";
+        return encounter.metadatas.map((metadata, index) => {
             const id = metadata.monsterId;
-            const last = list.metadatas.length - 1 === index;
+            const last = encounter.metadatas.length - 1 === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
                     <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} onToggle={this.handleListToggle} onMonsterHpChange={this.handleMonsterHpChange} />
@@ -105,9 +107,9 @@ class App extends Component {
     }
 
     mainContent() {
-        const list: MonsterListData = this.state.activeList;
-        if (!list) return <span />;
-        if (list.metadatas && list.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        if (!encounter) return <span />;
+        if (encounter.metadatas && encounter.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
 
         const base = "https://www.dndbeyond.com";
         const goblin = <Link address={`${base}/monsters/goblin`}>Goblin</Link>;

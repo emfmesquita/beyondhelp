@@ -1,7 +1,7 @@
 import Data from "./Data";
 import MonsterMetadata from "./MonsterMetadata";
 
-class MonsterListData extends Data {
+class MonsterEncounterData extends Data {
     constructor(storageId: string, name: string, active: boolean) {
         super(storageId);
         this.name = name;
@@ -9,9 +9,9 @@ class MonsterListData extends Data {
         this.metadatas = undefined;
     }
 
-    static savableClone(data: MonsterListData) {
-        return new MonsterListData(data.storageId, data.name, data.active);
+    static savableClone(data: MonsterEncounterData) {
+        return new MonsterEncounterData(data.storageId, data.name, data.active);
     }
 }
 
-export default MonsterListData;
+export default MonsterEncounterData;
