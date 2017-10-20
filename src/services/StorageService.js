@@ -1,7 +1,7 @@
 import Data from "../data/Data";
 import MonsterData from '../data/MonsterData';
 import MonsterEncounterData from '../data/MonsterEncounterData';
-import MonsterMetadata from '../data/MonsterMetadata';
+import MonsterListData from '../data/MonsterListData';
 
 /* global chrome */
 
@@ -12,8 +12,8 @@ class Prefix {
         switch (dataClass) {
             case "MonsterData":
                 return "bh-monster-";
-            case "MonsterMetadata":
-                return "bh-monstermetadata-";
+            case "MonsterListData":
+                return "bh-monsterlist-";
             case "MonsterEncounterData":
                 return "bh-monsterencounter-";
             default:
@@ -115,19 +115,19 @@ class StorageService {
                 let encounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("active", true));
                 let encounterPromise = encounter ? Promise.resolve(encounter) : this.createData("MonsterEncounterData", new MonsterEncounterData(null, "default", true));
 
-                let metadata = null;
+                let list = null;
 
                 encounterPromise.then(foundEncounter => {
                     encounter = foundEncounter;
-                    metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
-                    return metadata ? Promise.resolve(metadata) : this.createData("MonsterMetadata", new MonsterMetadata(null, encounter.storageId, monsterId, name, 0));
-                }).then(foundMetadata => {
-                    metadata = foundMetadata;
-                    const newMonster = new MonsterData(null, metadata.storageId, hp, metadata.lastNumber + 1);
+                    list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
+                    return list ? Promise.resolve(list) : this.createData("MonsterListData", new MonsterListData(null, encounter.storageId, monsterId, name, 0));
+                }).then(foundList => {
+                    list = foundList;
+                    const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
                     return this.createData("MonsterData", newMonster);
                 }).then((monster) => {
-                    metadata.lastNumber = metadata.lastNumber + 1;
-                    return this.updateData(metadata).then(() => monster);
+                    list.lastNumber = list.lastNumber + 1;
+                    return this.updateData(list).then(() => monster);
                 }).then(resolve).catch(reject);
             });
         });
@@ -147,16 +147,16 @@ class StorageService {
                     return;
                 }
 
-                const metadataMap: Map<string, MonsterMetadata[]> = findGroupedBy(storageData, "encounterId", Q.clazz("MonsterMetadata"));
-                if (metadataMap.length === 0) {
+                const listMap: Map<string, MonsterListData[]> = findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
+                if (listMap.length === 0) {
                     return;
                 }
 
-                const monsterMap: Map<string, MonsterData[]> = findGroupedBy(storageData, "metadataId", Q.clazz("MonsterData"));
-                metadataMap.forEach(metadatas => metadatas.forEach(metadata => metadata.monsters = monsterMap.get(metadata.storageId)));
+                const monsterMap: Map<string, MonsterData[]> = findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
+                listMap.forEach(lists => lists.forEach(list => list.monsters = monsterMap.get(list.storageId)));
                 encounters.forEach(encounter => {
-                    encounter.metadatas = metadataMap.get(encounter.storageId);
-                    encounter.metadatas && encounter.metadatas.sort((a: MonsterMetadata, b: MonsterMetadata) => a.name.localeCompare(b.name));
+                    encounter.lists = listMap.get(encounter.storageId);
+                    encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.name.localeCompare(b.name));
                 });
                 resolve(encounters);
             });
@@ -172,14 +172,14 @@ class StorageService {
                         return;
                     }
 
-                    const monsterOfSameMetadata = find(storageData, Q.clazz("MonsterData"), Q.eq("metadataId", monster.metadataId));
-                    if (monsterOfSameMetadata.length > 0) {
+                    const monsterOfSameList = find(storageData, Q.clazz("MonsterData"), Q.eq("listId", monster.listId));
+                    if (monsterOfSameList.length > 0) {
                         resolve();
                         return;
                     }
 
-                    const metadata = findSingle(storageData, Q.clazz("MonsterMetadata"), Q.eq("storageId", monster.metadataId));
-                    metadata ? deleteData(metadata).then(resolve).catch(reject) : resolve();
+                    const list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", monster.listId));
+                    list ? deleteData(list).then(resolve).catch(reject) : resolve();
                 });
             });
         });
@@ -199,14 +199,14 @@ class StorageService {
                     return;
                 }
 
-                const metadatas = find(storageData, Q.clazz("MonsterMetadata"), Q.eq("encounterId", activeEncounter.storageId));
-                if (metadatas.length === 0) {
+                const lists = find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", activeEncounter.storageId));
+                if (lists.length === 0) {
                     resolve(0);
                     return;
                 }
 
-                const metaIds = metadatas.map(metadata => metadata.storageId);
-                const monsters: MonsterData[] = find(storageData, Q.clazz("MonsterData"), Q.in("metadataId", metaIds));
+                const metaIds = lists.map(list => list.storageId);
+                const monsters: MonsterData[] = find(storageData, Q.clazz("MonsterData"), Q.in("listId", metaIds));
                 const total = monsters.length;
                 const alive = monsters.filter(m => m.currentHp > 0).length;
                 resolve({ total, alive });

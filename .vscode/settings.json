@@ -1,6 +1,11 @@
 {
-    "javascript.validate.enable": false,
+    "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.detectIndentation": false
+    "javascript.validate.enable": false,
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/build": true
+    }
 }

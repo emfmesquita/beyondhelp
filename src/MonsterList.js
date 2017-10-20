@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 
 import Monster from './Monster';
 import MonsterData from './data/MonsterData';
+import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
-import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
 import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
 
@@ -28,7 +28,7 @@ class MonsterList extends Component {
     }
 
     buildRows() {
-        const monsters = this.props.metadata.monsters;
+        const monsters = this.props.list.monsters;
         if (!monsters) {
             return <span />;
         }
@@ -46,12 +46,12 @@ class MonsterList extends Component {
     }
 
     toggle() {
-        return this.props.onToggle(this.props.metadata);
+        return this.props.onToggle(this.props.list);
     }
 
     render() {
-        const collapsed = this.props.metadata.collapsed;
-        const numberOfMonsters = this.props.metadata.monsters ? this.props.metadata.monsters.length : 0;
+        const collapsed = this.props.list.collapsed;
+        const numberOfMonsters = this.props.list.monsters ? this.props.list.monsters.length : 0;
         const icon = collapsed ? "glyphicon-chevron-right" : "glyphicon-chevron-down";
         const title = collapsed ? "Expand" : "Collapse";
         const grid = collapsed ? <span /> : <Grid>{this.buildRows()}</Grid>;
@@ -59,10 +59,10 @@ class MonsterList extends Component {
             <div>
                 <div>
                     <div style={{ display: "inline-block" }}>
-                        <ToMonsterPageButton monsterId={this.props.metadata.monsterId} name={this.props.metadata.name} />
+                        <ToMonsterPageButton monsterId={this.props.list.monsterId} name={this.props.list.name} />
                     </div>
                     <div className="Monster-list-header" title={title} onClick={this.toggle}>
-                        <span>{this.props.metadata.name} (x{numberOfMonsters}):</span>
+                        <span>{this.props.list.name} (x{numberOfMonsters}):</span>
                         <span className="Monster-list-header-collapsible">
                             <MonsterMenuButton icon={icon} onClick={() => { }} />
                         </span>

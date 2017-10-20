@@ -7,8 +7,8 @@ import Link from './monsterbuttons/Link';
 import MonsterData from './data/MonsterData';
 import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterList from './MonsterList';
+import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
-import MonsterMetadata from './data/MonsterMetadata';
 import StorageService from './services/StorageService';
 import { Well } from 'react-bootstrap';
 import _ from 'lodash';
@@ -17,10 +17,10 @@ import _ from 'lodash';
 
 
 /**
- * Handler called after toggle, updates the metadata on storage.
+ * Handler called after toggle, updates the list on storage.
  */
-const saveToggle = _.throttle((metadata: MonsterMetadata) => {
-    const toSave = MonsterMetadata.savableClone(metadata);
+const saveToggle = _.throttle((list: MonsterListData) => {
+    const toSave = MonsterListData.savableClone(list);
     StorageService.updateData(toSave).catch((e) => { throw new Error(e); });
 }, 500);
 
@@ -64,11 +64,11 @@ class App extends Component {
         const toDeleteId = toDeleteMonster.storageId;
         StorageService.deleteMonster(toDeleteMonster).then(() => {
             this.setState((prevState) => {
-                prevState.activeEncounter.metadatas.forEach((metadata, metaIndex) => {
-                    metadata.monsters.forEach((monster, monsterIndex) => {
+                prevState.activeEncounter.lists.forEach((list, metaIndex) => {
+                    list.monsters.forEach((monster, monsterIndex) => {
                         if (monster.storageId !== toDeleteId) return;
-                        metadata.monsters.splice(monsterIndex, 1);
-                        if (metadata.monsters.length === 0) prevState.activeEncounter.metadatas.splice(metaIndex, 1);
+                        list.monsters.splice(monsterIndex, 1);
+                        if (list.monsters.length === 0) prevState.activeEncounter.lists.splice(metaIndex, 1);
                     });
                 });
                 return { activeEncounter: prevState.activeEncounter };
@@ -77,9 +77,9 @@ class App extends Component {
         });
     }
 
-    handleListToggle(metadata: MonsterMetadata) {
-        metadata.collapsed = !metadata.collapsed;
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(metadata));
+    handleListToggle(list: MonsterListData) {
+        list.collapsed = !list.collapsed;
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(list));
     }
 
     handleMonsterHpChange(monster: MonsterData, newHp: number) {
@@ -95,12 +95,12 @@ class App extends Component {
     buildList() {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return "";
-        return encounter.metadatas.map((metadata, index) => {
-            const id = metadata.monsterId;
-            const last = encounter.metadatas.length - 1 === index;
+        return encounter.lists.map((list, index) => {
+            const id = list.monsterId;
+            const last = encounter.lists.length - 1 === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
-                    <MonsterList metadata={metadata} onRemoveMonster={this.handleRemoveMonster} onToggle={this.handleListToggle} onMonsterHpChange={this.handleMonsterHpChange} />
+                    <MonsterList list={list} onRemoveMonster={this.handleRemoveMonster} onToggle={this.handleListToggle} onMonsterHpChange={this.handleMonsterHpChange} />
                 </li>
             );
         });
@@ -109,7 +109,7 @@ class App extends Component {
     mainContent() {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return <span />;
-        if (encounter.metadatas && encounter.metadatas.length > 0) return <ul>{this.buildList()}</ul>;
+        if (encounter.lists && encounter.lists.length > 0) return <ul>{this.buildList()}</ul>;
 
         const base = "https://www.dndbeyond.com";
         const goblin = <Link address={`${base}/monsters/goblin`}>Goblin</Link>;

@@ -1,7 +1,7 @@
 import Data from "./Data";
 import MonsterData from "./MonsterData";
 
-class MonsterMetadata extends Data {
+class MonsterListData extends Data {
     constructor(storageId: string, encounterId: string, monsterId: string, name: string, lastNumber: number) {
         super(storageId);
         this.encounterId = encounterId;
@@ -11,8 +11,8 @@ class MonsterMetadata extends Data {
         this.collapsed = false;
     }
 
-    static savableClone(data: MonsterMetadata) {
-        const clone = new MonsterMetadata(data.storageId, data.encounterId, data.monsterId, data.name, data.lastNumber);
+    static savableClone(data: MonsterListData) {
+        const clone = new MonsterListData(data.storageId, data.encounterId, data.monsterId, data.name, data.lastNumber);
         clone.collapsed = data.collapsed;
         return clone;
     }
@@ -26,4 +26,4 @@ class MonsterMetadata extends Data {
     }
 }
 
-export default MonsterMetadata;
+export default MonsterListData;
