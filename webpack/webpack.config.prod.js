@@ -18,7 +18,7 @@ module.exports = [{
         path: paths.buildDir
     },
     module: {
-        rules: [rules.lint, rules.js]
+        rules: [rules.lint, rules.js, rules.css]
     },
     plugins: [plugins.react, plugins.uglify, plugins.merge]
 }, {

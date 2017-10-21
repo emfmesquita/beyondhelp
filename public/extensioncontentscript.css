@@ -1,0 +1,20 @@
+.BH-Monster-button {
+    display: inline-block !important;
+    margin-right: 10px !important;
+    margin-bottom: 20px !important;
+    width: auto !important;
+    padding: 0 15px !important;
+    border-color: #bc0f0f !important;
+}
+
+.BH-Monster-button span::before {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: url("chrome-extension://__MSG_@@extension_id__/icon-white.svg") no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px)
+}

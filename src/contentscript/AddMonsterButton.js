@@ -4,15 +4,6 @@ import MonsterContentData from "./MonsterContentData";
 import NotificationService from "../services/NotificationService";
 import StorageService from '../services/StorageService';
 
-const buttonStyle = {
-    display: "inline-block",
-    marginRight: "10px",
-    marginBottom: "20px",
-    width: "auto",
-    padding: "0 15px",
-    borderColor: "#bc0f0f"
-};
-
 class AddMonsterButton extends Component {
     constructor(props) {
         super(props);
@@ -28,12 +19,12 @@ class AddMonsterButton extends Component {
     }
 
     buildLabel() {
-        return `Add with ${this.props.monsterdata.hp}hp`;
+        return `${this.props.monsterdata.hp}hp`;
     }
 
     render() {
         return (
-            <a href="javascript:void(0)" className="view-rules button-alt spell-button-alt" style={buttonStyle} onClick={this.addMonster}>
+            <a href="javascript:void(0)" className="view-rules button-alt spell-button-alt BH-Monster-button" onClick={this.addMonster}>
                 <span>{this.buildLabel()}</span>
             </a>
         );
