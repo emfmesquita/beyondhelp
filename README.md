@@ -1,9 +1,24 @@
 # beyondhelp
-Chrome extension with helpers to https://www.dndbeyond.com/.
+Chrome extension with helpers to https://www.dndbeyond.com/. 
 
 The first helper (and current only one implemented) is a monster HP tracker. Ideal for DMs that use notebooks on their table but not a virtual tabletop.
 
-### Current features:
+Realeased version on [Chrome Web Store](https://chrome.google.com/webstore/detail/beyond-help/aojmegjchfjmkgmihimpplblfalnpdop?hl=en).
+
+### Setup for Developers
+
+With Node.js installed, from the base directory of this repository:
+```bash
+npm install
+```
+Then:
+```bash
+npm run build
+```
+After the build task just open a chrome window and go to `chrome://extensions/` from address bar, check the `Developer mode` on the top right. Finally click on `Load unpacked extension...` and select the `build` folder generated from the build task.
+
+### Current features
+
 - To add all monsters from unlocked content and homebrew from dndbeyond.com. From monsters listing, monster details page, homebrew monster listing, homebrew collection and homebrew creations;
 - The monsters can be added with average HP or calculated one;
 - Creation of independent encounters. This allows to prepare the encounters before hand and quickly swap from one to another;
@@ -12,7 +27,7 @@ The first helper (and current only one implemented) is a monster HP tracker. Ide
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
-### Some screenshots:
+### Some screenshots
 
 ![Add From Monster Listing](http://i.imgur.com/pU5WvoG.png)
 ![Add From Monsters Detail Page](http://i.imgur.com/c9usntG.png)
