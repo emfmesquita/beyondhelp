@@ -66,7 +66,7 @@ class App extends Component {
     }
 
     init() {
-        StorageService.getMonsterEncounters().then(({ active, all }) => {
+        return StorageService.getMonsterEncounters().then(({ active, all }) => {
             this.setState({
                 encounters: all,
                 activeEncounter: active,
@@ -98,7 +98,7 @@ class App extends Component {
      */
     handleNewEncounter(name: string) {
         StorageService.createEncounter(name).then(() => {
-            this.setState({ showNewEncounterModal: false }, this.init);
+            this.setState({ showNewEncounterModal: false }, () => this.init().then(BadgeService.updateBadgeCount));
         });
     }
 
@@ -108,8 +108,8 @@ class App extends Component {
     handleDeleteEncounter() {
         const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
         StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
-            this.init();
-        });
+            return this.init();
+        }).then(BadgeService.updateBadgeCount);
     }
 
     /**
