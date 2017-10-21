@@ -9,7 +9,9 @@ chrome.webRequest.onCompleted.addListener((details) => chrome.tabs.sendMessage(d
 
 // listen when a monster is added from AddMonsterButton, adds a notification
 chrome.runtime.onMessage.addListener((request, sender) => {
+    // if it's a reload request just ignores
     if(request.reload) return;
+    
     NotificationService.createNotification(request.notificationid, request.notification);
     BadgeService.updateBadgeCount();
 });

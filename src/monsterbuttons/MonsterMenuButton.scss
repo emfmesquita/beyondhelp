@@ -1,0 +1,15 @@
+.Monster-menu-button {
+    opacity: .4;
+    color: #000 !important;
+    display: inline;
+    padding: 0px 4px 0px 0px;
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        filter: alpha(opacity=70);
+        opacity: .7;
+    }
+    &.disabled {
+        opacity: .15;
+    }
+}

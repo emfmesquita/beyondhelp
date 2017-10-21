@@ -36,6 +36,7 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config ./webpack/webpack.config.dev.js",
+    "release": "webpack --config ./webpack/webpack.config.prod.js"
   }
 }

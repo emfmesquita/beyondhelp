@@ -9,6 +9,9 @@ import MonsterListData from '../data/MonsterListData';
 type StorageData = { [key: string]: Data }
 const ConfigurationId = "bh-config";
 
+/**
+ * Class that handles storage data ids prefixes.
+ */
 class Prefix {
     static getStoragePrefix(dataClass: string) {
         switch (dataClass) {
@@ -24,11 +27,14 @@ class Prefix {
     }
 
     static createStorageId(dataClass: string) {
-        if(dataClass === "Configuration") return ConfigurationId;
+        if (dataClass === "Configuration") return ConfigurationId;
         return Prefix.getStoragePrefix(dataClass) + new Date().getTime();
     }
 }
 
+/**
+ * Class with querybuilder to use on finds.
+ */
 class Q {
     static clazz(dataClass: string) {
         return (data: Data) => data.storageId && data.storageId.startsWith(Prefix.getStoragePrefix(dataClass));
@@ -43,6 +49,9 @@ class Q {
     }
 }
 
+/**
+ * @param {string} id If null get all entries.
+ */
 const getStorageData = function (id: string): Promise<storageData> {
     return new Promise((resolve, reject) => {
         chrome.storage.sync.get(id ? id : null, (storageData: StorageData) => {
@@ -86,9 +95,10 @@ const findGroupedBy = function (storageData: StorageData, groupProp: string, ...
     return result;
 };
 
-const deleteData = function (data: Data): Promise<Data> {
+const deleteData = function (data: Data | Data[]): Promise<Data> {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.remove(data.storageId, (error) => {
+        const toDelete = Array.isArray(data) ? data.map((d) => d.storageId) : data.storageId;
+        chrome.storage.sync.remove(toDelete, (error) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
             chrome.runtime.sendMessage({ reload: true });
         });
@@ -97,6 +107,9 @@ const deleteData = function (data: Data): Promise<Data> {
 
 class StorageService {
 
+    /**
+     * Gets or creates the configuration data.
+     */
     static getConfig(): Promise<Configuration> {
         return this.getData(ConfigurationId).then(config => {
             return config ? Promise.resolve(config) : this.createData("Configuration", new Configuration());
@@ -125,6 +138,9 @@ class StorageService {
         return this.createData(null, data);
     }
 
+    /**
+     * Creates a monster and all the parent date related to it.
+     */
     static createMonster(monsterId: string, name: string, hp: string): Promise<MonsterData> {
         let storageData, config, encounter, list;
         return getStorageData().then(result => {
@@ -133,29 +149,35 @@ class StorageService {
         }).then(result => {
             config = result;
 
+            // if there is no encounter creates the default one and updates the config with it
             if (config.activeEncounterId) {
                 const activeEncounter = findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("storageId", config.activeEncounterId));
                 return Promise.resolve(activeEncounter);
             }
-
             return this.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
                 config.activeEncounterId = encounter.storageId;
                 return this.updateData(config).then(() => encounter);
             });
         }).then(result => {
             encounter = result;
+            // if there is not list for the monster type creates it
             list = findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
             return list ? Promise.resolve(list) : this.createData("MonsterListData", new MonsterListData(null, encounter.storageId, monsterId, name, 0));
         }).then(result => {
             list = result;
+            // creates the monster
             const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
             return this.createData("MonsterData", newMonster);
         }).then((monster) => {
+            // updates list last monster number
             list.lastNumber = list.lastNumber + 1;
             return this.updateData(list).then(() => monster);
         });
     }
 
+    /**
+     * Gets all the encounters trees of data.
+     */
     static getMonsterEncounters(): Promise<{ active: MonsterEncounterData, all: MonsterEncounterData[] }> {
         let storageData;
 
@@ -163,6 +185,7 @@ class StorageService {
             storageData = result;
             return this.getConfig();
         }).then(config => {
+            // if there is no encounter creates it, updates the config and returns because there is no more data to be gathered
             if (!config.activeEncounterId) {
                 return this.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
                     config.activeEncounterId = encounter.storageId;
@@ -172,7 +195,9 @@ class StorageService {
                 });
             }
 
-            const encounters: MonsterEncounterData[] = find(storageData, Q.clazz("MonsterEncounterData"));
+            // mounts the tree of data of each encounter
+            const encounters: MonsterEncounterData[] = find(storageData, Q.clazz("MonsterEncounterData"))
+                .sort((a: MonsterEncounterData, b: MonsterEncounterData) => a.name.localeCompare(b.name));
             const activeEncounter = encounters.find(encounter => encounter.storageId === config.activeEncounterId);
             const result = { active: activeEncounter, all: encounters };
 
@@ -191,6 +216,9 @@ class StorageService {
         });
     }
 
+    /**
+     * Deletes a monster and it's list if it is the last one.
+     */
     static deleteMonster(monster: MonsterData): Promise {
         return deleteData(monster).then(() => getStorageData()).then(storageData => {
             const monsterOfSameList = find(storageData, Q.clazz("MonsterData"), Q.eq("listId", monster.listId));
@@ -203,6 +231,9 @@ class StorageService {
         });
     }
 
+    /**
+     * Counts "alive / total" monster of active encounter.
+     */
     static countActiveMonsters(): Promise<{ alive: number, total: number }> {
         let storageData;
         const empty = { total: 0, alive: 0 };
@@ -237,6 +268,28 @@ class StorageService {
         }).then(newEncounter => {
             config.activeEncounterId = newEncounter.storageId;
             return this.updateData(config);
+        });
+    }
+
+    /**
+     * Deletes an encounter all it's lists and monsters. And updates the config with the new active encounter.
+     */
+    static deleteEncounter(oldEncounter: MonsterEncounterData, newActiveEncounter: MonsterEncounterData): Promise {
+        const toDelete = [];
+        return this.getConfig().then(config => {
+            config.activeEncounterId = newActiveEncounter.storageId;
+            return this.updateData(config);
+        }).then(() => {
+            const toDelete = [];
+            toDelete.push(oldEncounter);
+
+            if (!oldEncounter.lists) return deleteData(toDelete);
+
+            oldEncounter.lists.forEach(list => {
+                toDelete.push(list);
+                if (list.monsters) list.monsters.forEach(monster => toDelete.push(monster));
+            });
+            return deleteData(toDelete);
         });
     }
 }

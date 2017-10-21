@@ -10,10 +10,11 @@ import MonsterList from './MonsterList';
 import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import NewEncounterModal from "./modals/NewEncounterModal";
+import DeleteEncounterAlert from "./modals/DeleteEncounterAlert";
 import Select from 'react-select';
 import StorageService from './services/StorageService';
 import { Well } from 'react-bootstrap';
-import _ from 'lodash';
+import { throttle } from 'lodash';
 
 /* global chrome */
 
@@ -21,7 +22,7 @@ import _ from 'lodash';
 /**
  * Handler called after toggle, updates the list on storage.
  */
-const saveToggle = _.throttle((list: MonsterListData) => {
+const saveToggle = throttle((list: MonsterListData) => {
     const toSave = MonsterListData.savableClone(list);
     StorageService.updateData(toSave).catch((e) => { throw new Error(e); });
 }, 500);
@@ -29,7 +30,7 @@ const saveToggle = _.throttle((list: MonsterListData) => {
 /**
  * Handler called after hp changes, updates the monster on storage.
  */
-const saveHpChanged = _.throttle((monster: MonsterData) => {
+const saveHpChanged = throttle((monster: MonsterData) => {
     StorageService.updateData(monster).then(() => {
         BadgeService.updateBadgeCount();
     }).catch((e) => { throw new Error(e); });
@@ -41,19 +42,20 @@ class App extends Component {
         this.state = {
             encounters: [],
             activeEncounter: null,
-            showNewEncounterModal: false
+            showNewEncounterModal: false,
+            showDeleteEncounterAlert: false
         };
 
-        this.newEncounterClick = this.newEncounterClick.bind(this);
         this.activeEncounterChange = this.activeEncounterChange.bind(this);
+        this.canDeleteEncounter = this.canDeleteEncounter.bind(this);
 
-        this.handleCloseNewEncounterModal = this.handleCloseNewEncounterModal.bind(this);
         this.handleNewEncounter = this.handleNewEncounter.bind(this);
+        this.handleDeleteEncounter = this.handleDeleteEncounter.bind(this);
         this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
         this.handleListToggle = this.handleListToggle.bind(this);
         this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
 
-        this.buildList = this.buildList.bind(this);
+        this.buildLists = this.buildLists.bind(this);
         this.mainContent = this.mainContent.bind(this);
         this.init();
 
@@ -65,14 +67,18 @@ class App extends Component {
 
     init() {
         StorageService.getMonsterEncounters().then(({ active, all }) => {
-            this.setState({ encounters: all, activeEncounter: active });
+            this.setState({
+                encounters: all,
+                activeEncounter: active,
+                showNewEncounterModal: false,
+                showDeleteEncounterAlert: false
+            });
         }).catch(error => { throw error; });
     }
 
-    newEncounterClick() {
-        this.setState({ showNewEncounterModal: true });
-    }
-
+    /**
+     * onChange of encounter select
+     */
     activeEncounterChange(newActiveEncounter: MonsterEncounterData) {
         StorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
@@ -82,17 +88,33 @@ class App extends Component {
         });
     }
 
-    //#region children event handlers
-    handleCloseNewEncounterModal() {
-        this.setState({ showNewEncounterModal: false });
+    canDeleteEncounter() {
+        return this.state.encounters && this.state.encounters.length > 1;
     }
 
+    //#region children event handlers
+    /**
+     * onSave of new encounter modal
+     */
     handleNewEncounter(name: string) {
         StorageService.createEncounter(name).then(() => {
             this.setState({ showNewEncounterModal: false }, this.init);
         });
     }
 
+    /**
+     * onDelete of delete encounter alert
+     */
+    handleDeleteEncounter() {
+        const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
+        StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
+            this.init();
+        });
+    }
+
+    /**
+     * onClick of remove button of monsters
+     */
     handleRemoveMonster(toDeleteMonster: MonsterData) {
         const toDeleteId = toDeleteMonster.storageId;
         StorageService.deleteMonster(toDeleteMonster).then(() => {
@@ -110,11 +132,17 @@ class App extends Component {
         });
     }
 
+    /**
+     * onClick of monster list header
+     */
     handleListToggle(list: MonsterListData) {
         list.collapsed = !list.collapsed;
         this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(list));
     }
 
+    /**
+     * called by both change hp by form and and change hp by scroll
+     */
     handleMonsterHpChange(monster: MonsterData, newHp: number) {
         return new Promise((resolve, reject) => {
             monster.currentHp = newHp;
@@ -127,7 +155,7 @@ class App extends Component {
     //#endregion
 
     //#region renderer
-    buildList() {
+    buildLists() {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return "";
         return encounter.lists.map((list, index) => {
@@ -141,10 +169,13 @@ class App extends Component {
         });
     }
 
+    /**
+     * either a message of no monsters or the monster lists
+     */
     mainContent() {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return <span />;
-        if (encounter.lists && encounter.lists.length > 0) return <ul>{this.buildList()}</ul>;
+        if (encounter.lists && encounter.lists.length > 0) return <ul>{this.buildLists()}</ul>;
 
         const base = "https://www.dndbeyond.com";
         const goblin = <Link address={`${base}/monsters/goblin`}>Goblin</Link>;
@@ -164,8 +195,13 @@ class App extends Component {
         return (
             <div>
                 <div className="Monster-encounter-menu">
-                    <MonsterMenuButton icon="glyphicon-file" title="New Encounter" onClick={this.newEncounterClick} />
-                    <MonsterMenuButton icon="glyphicon-trash" title="Delete Encounter" />
+                    <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
+                    <MonsterMenuButton
+                        className={`btn ${this.canDeleteEncounter() ? "" : "disabled"}`}
+                        icon="glyphicon-trash"
+                        title="Delete Encounter"
+                        onClick={() => this.setState({ showDeleteEncounterAlert: true })}
+                    />
                     <Select
                         className="Monster-encounter-select"
                         labelKey="name"
@@ -180,7 +216,16 @@ class App extends Component {
 
                 {this.mainContent()}
 
-                <NewEncounterModal show={this.state.showNewEncounterModal} onHide={this.handleCloseNewEncounterModal} onSave={this.handleNewEncounter} />
+                <NewEncounterModal
+                    show={this.state.showNewEncounterModal}
+                    onHide={() => this.setState({ showNewEncounterModal: false })}
+                    onSave={this.handleNewEncounter}
+                />
+                <DeleteEncounterAlert
+                    show={this.state.showDeleteEncounterAlert}
+                    onHide={() => this.setState({ showDeleteEncounterAlert: false })}
+                    onDelete={this.handleDeleteEncounter}
+                />
             </div >
         );
     }

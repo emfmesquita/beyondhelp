@@ -21,6 +21,7 @@ class AddMonsterButton extends Component {
     }
 
     addMonster() {
+        // creates a new monster on storage and send a message to the background page to create a notification
         StorageService.createMonster(this.props.monsterdata.id, this.props.monsterdata.name, this.props.monsterdata.hp)
             .then(monster => NotificationService.notifyNewMonster(this.props.monsterdata.name, monster))
             .catch(e => { throw e; });

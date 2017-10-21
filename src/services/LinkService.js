@@ -2,6 +2,10 @@
 
 class LinkService {
 
+    /**
+     * Loads the page on left click.
+     * Creates new tab next to current on middle click.
+     */
     static handler(address: string) {
         return ({ button }: MouseEvent) => {
             if (button === 2) return;

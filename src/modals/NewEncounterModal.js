@@ -29,6 +29,9 @@ class NewEncounterModal extends Component {
         }
     }
 
+    /**
+     * Saves on enter.
+     */
     keyDown(e: KeyboardEvent) {
         if (e.which === 13 || e.keyCode === 13) {
             this.saveClick();
@@ -49,7 +52,7 @@ class NewEncounterModal extends Component {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button bsSize="small" bsStyle="primary" onClick={this.saveClick} disabled={this.validate() !== "success"}>Save</Button>
-                    <Button bsSize="small" onClick={this.props.onHide}>Close</Button>
+                    <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
                 </Modal.Footer>
             </Modal>
         );
