@@ -32,7 +32,11 @@
         }
     },
     "browser_action": {
-        "default_icon": "icon-19.png",
+        "default_icon": {
+            "16": "icon-16.png",
+            "48": "icon-48.png",
+            "128": "icon-128.png"
+        },
         "default_title": "Beyond Help",
         "default_popup": "extensionpopup.html"
     },
@@ -46,6 +50,7 @@
         "https://www.dndbeyond.com/*"
     ],
     "icons": {
+        "16": "icon-16.png",
         "48": "icon-48.png",
         "128": "icon-128.png"
     },
