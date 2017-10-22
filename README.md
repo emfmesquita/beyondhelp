@@ -1,7 +1,7 @@
 # beyondhelp
 Chrome extension with helpers to https://www.dndbeyond.com/. 
 
-The first helper (and current only one implemented) is a monster HP tracker. Ideal for DMs that use notebooks on their table but not a virtual tabletop.
+The first helper (and current only one implemented) is a monster HP tracker. Ideal for DMs that use a laptop on their table but not a virtual tabletop.
 
 Realeased version on [Chrome Web Store](https://chrome.google.com/webstore/detail/beyond-help/aojmegjchfjmkgmihimpplblfalnpdop?hl=en).
 
