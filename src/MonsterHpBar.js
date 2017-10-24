@@ -65,7 +65,11 @@ class MonsterHpBar extends Component {
     /**
      * onClick - Turn on hp field mode
      */
-    click() {
+    click({ button }: MouseEvent) {
+        if (button === 2) {
+            this.setState({ hpFormMode: false, popoverVisible: false });
+            return;
+        }
         if (!this.state.hpFormMode) {
             this.setState({ hpFormMode: true, popoverVisible: false });
         }

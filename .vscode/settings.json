@@ -3,6 +3,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "javascript.validate.enable": false,
+    "editor.formatOnSave": true,
     "search.exclude": {
         "**/.git": true,
         "**/node_modules": true,

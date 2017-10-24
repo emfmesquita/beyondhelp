@@ -2,15 +2,17 @@ import './App.scss';
 
 import React, { Component } from 'react';
 
+import $ from "jquery";
 import BadgeService from './services/BadgeService';
+import DeleteEncounterAlert from "./modals/DeleteEncounterAlert";
 import Link from './monsterbuttons/Link';
 import MonsterData from './data/MonsterData';
 import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterList from './MonsterList';
 import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
+import MonsterOptionsModal from "./modals/MonsterOptionsModal";
 import NewEncounterModal from "./modals/NewEncounterModal";
-import DeleteEncounterAlert from "./modals/DeleteEncounterAlert";
 import Select from 'react-select';
 import StorageService from './services/StorageService';
 import { Well } from 'react-bootstrap';
@@ -43,17 +45,25 @@ class App extends Component {
             encounters: [],
             activeEncounter: null,
             showNewEncounterModal: false,
-            showDeleteEncounterAlert: false
+            showDeleteEncounterAlert: false,
+            monsterOptions: {
+                show: false,
+                monster: null,
+                list: null,
+                monsterEl: null
+            }
         };
 
         this.activeEncounterChange = this.activeEncounterChange.bind(this);
         this.canDeleteEncounter = this.canDeleteEncounter.bind(this);
+        this.closeMonsterOptions = this.closeMonsterOptions.bind(this);
 
         this.handleNewEncounter = this.handleNewEncounter.bind(this);
         this.handleDeleteEncounter = this.handleDeleteEncounter.bind(this);
-        this.handleRemoveMonster = this.handleRemoveMonster.bind(this);
+        this.handleDeleteMonster = this.handleDeleteMonster.bind(this);
         this.handleListToggle = this.handleListToggle.bind(this);
         this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
+        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
 
         this.buildLists = this.buildLists.bind(this);
         this.mainContent = this.mainContent.bind(this);
@@ -92,6 +102,17 @@ class App extends Component {
         return this.state.encounters && this.state.encounters.length > 1;
     }
 
+    closeMonsterOptions() {
+        this.setState({
+            monsterOptions: {
+                show: false,
+                monster: null,
+                list: null,
+                monsterEl: null
+            }
+        });
+    }
+
     //#region children event handlers
     /**
      * onSave of new encounter modal
@@ -113,22 +134,27 @@ class App extends Component {
     }
 
     /**
-     * onClick of remove button of monsters
+     * onClick of delete of monsters options
      */
-    handleRemoveMonster(toDeleteMonster: MonsterData) {
-        const toDeleteId = toDeleteMonster.storageId;
-        StorageService.deleteMonster(toDeleteMonster).then(() => {
-            this.setState((prevState) => {
-                prevState.activeEncounter.lists.forEach((list, metaIndex) => {
-                    list.monsters.forEach((monster, monsterIndex) => {
-                        if (monster.storageId !== toDeleteId) return;
-                        list.monsters.splice(monsterIndex, 1);
-                        if (list.monsters.length === 0) prevState.activeEncounter.lists.splice(metaIndex, 1);
+    handleDeleteMonster() {
+        const toDeleteMonster = this.state.monsterOptions.monster;
+        const monsterEl = this.state.monsterOptions.monsterEl;
+        this.closeMonsterOptions();
+        $(monsterEl).fadeOut(400, () => {
+            const toDeleteId = toDeleteMonster.storageId;
+            StorageService.deleteMonster(toDeleteMonster).then(() => {
+                this.setState((prevState) => {
+                    prevState.activeEncounter.lists.forEach((list, metaIndex) => {
+                        list.monsters.forEach((monster, monsterIndex) => {
+                            if (monster.storageId !== toDeleteId) return;
+                            list.monsters.splice(monsterIndex, 1);
+                            if (list.monsters.length === 0) prevState.activeEncounter.lists.splice(metaIndex, 1);
+                        });
                     });
+                    return { activeEncounter: prevState.activeEncounter };
                 });
-                return { activeEncounter: prevState.activeEncounter };
+                BadgeService.updateBadgeCount();
             });
-            BadgeService.updateBadgeCount();
         });
     }
 
@@ -152,6 +178,13 @@ class App extends Component {
             });
         });
     }
+
+    /**
+     * OnRightClick on monster
+     */
+    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement, list: MonsterListData) {
+        this.setState({ monsterOptions: { show: true, monster, list, monsterEl } });
+    }
     //#endregion
 
     //#region renderer
@@ -163,7 +196,12 @@ class App extends Component {
             const last = encounter.lists.length - 1 === index;
             return (
                 <li className={last ? "Monster-list-last" : ""} key={id}>
-                    <MonsterList list={list} onRemoveMonster={this.handleRemoveMonster} onToggle={this.handleListToggle} onMonsterHpChange={this.handleMonsterHpChange} />
+                    <MonsterList
+                        list={list}
+                        onToggle={this.handleListToggle}
+                        onMonsterHpChange={this.handleMonsterHpChange}
+                        onMonsterRightClick={this.handleMonsterRightClick}
+                    />
                 </li>
             );
         });
@@ -193,7 +231,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div onContextMenu={(e) => e.preventDefault()}>
                 <div className="Monster-encounter-menu">
                     <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
                     <MonsterMenuButton
@@ -225,6 +263,12 @@ class App extends Component {
                     show={this.state.showDeleteEncounterAlert}
                     onHide={() => this.setState({ showDeleteEncounterAlert: false })}
                     onDelete={this.handleDeleteEncounter}
+                />
+                <MonsterOptionsModal
+                    show={this.state.monsterOptions.show}
+                    context={this.state.monsterOptions}
+                    onHide={this.closeMonsterOptions}
+                    onDelete={this.handleDeleteMonster}
                 />
             </div >
         );

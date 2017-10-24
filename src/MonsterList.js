@@ -13,16 +13,29 @@ import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
 class MonsterList extends Component {
     constructor(props) {
         super(props);
+        this.toggle = this.toggle.bind(this);
+        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
         this.buildColumn = this.buildColumn.bind(this);
         this.buildRows = this.buildRows.bind(this);
-        this.toggle = this.toggle.bind(this);
+    }
+
+    toggle() {
+        return this.props.onToggle(this.props.list);
+    }
+
+    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement) {
+        this.props.onMonsterRightClick(monster, monsterEl, this.props.list);
     }
 
     buildColumn(monster: MonsterData) {
         if (!monster) return false;
         return (
-            <Col className="Monster-list-column" xs={6} key={monster.storageId}>
-                <Monster monster={monster} onRemoveMonster={this.props.onRemoveMonster} onMonsterHpChange={this.props.onMonsterHpChange} />
+            <Col className="Monster-list-column" xs={12} key={monster.storageId}>
+                <Monster
+                    monster={monster}
+                    onMonsterHpChange={this.props.onMonsterHpChange}
+                    onRightClick={this.handleMonsterRightClick}
+                />
             </Col>
         );
     }
@@ -33,20 +46,9 @@ class MonsterList extends Component {
             return <span />;
         }
         const rows = monsters.map((monster: MonsterData, index: number) => {
-            const even = index % 2 === 0;
-            if (!even) return false;
-            return (
-                <Row key={monsters[index].storageId}>
-                    {this.buildColumn(monsters[index])}
-                    {this.buildColumn(index < monsters.length - 1 ? monsters[index + 1] : null)}
-                </Row>
-            );
+            return <Row key={monsters[index].storageId}>{this.buildColumn(monsters[index])}</Row>;
         });
         return rows;
-    }
-
-    toggle() {
-        return this.props.onToggle(this.props.list);
     }
 
     render() {
