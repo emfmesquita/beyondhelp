@@ -27,6 +27,8 @@ class MonsterOptionsModal extends Component {
                 </Modal.Header>
                 <Modal.Body>
                     <ListGroup>
+                        <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill (0HP)</OptionLine>
+                        <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal</OptionLine>
                         <OptionLine onClick={this.props.onDelete} icon="trash">Delete</OptionLine>
                     </ListGroup>
                 </Modal.Body>

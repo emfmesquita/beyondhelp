@@ -61,6 +61,8 @@ class App extends Component {
         this.handleNewEncounter = this.handleNewEncounter.bind(this);
         this.handleDeleteEncounter = this.handleDeleteEncounter.bind(this);
         this.handleDeleteMonster = this.handleDeleteMonster.bind(this);
+        this.handleFullHealMonster = this.handleFullHealMonster.bind(this);
+        this.handleKillMonster = this.handleKillMonster.bind(this);
         this.handleListToggle = this.handleListToggle.bind(this);
         this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
         this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
@@ -155,6 +157,24 @@ class App extends Component {
                 });
                 BadgeService.updateBadgeCount();
             });
+        });
+    }
+
+    handleFullHealMonster() {
+        const toHealMonster: MonsterData = this.state.monsterOptions.monster;
+        toHealMonster.currentHp = toHealMonster.hp;
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
+            saveHpChanged(toHealMonster);
+            this.closeMonsterOptions();
+        });
+    }
+
+    handleKillMonster() {
+        const toKillMonster: MonsterData = this.state.monsterOptions.monster;
+        toKillMonster.currentHp = 0;
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
+            saveHpChanged(toKillMonster);
+            this.closeMonsterOptions();
         });
     }
 
@@ -269,6 +289,8 @@ class App extends Component {
                     context={this.state.monsterOptions}
                     onHide={this.closeMonsterOptions}
                     onDelete={this.handleDeleteMonster}
+                    onFullHeal={this.handleFullHealMonster}
+                    onKill={this.handleKillMonster}
                 />
             </div >
         );
