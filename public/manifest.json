@@ -1,6 +1,6 @@
 {
     "name": "Beyond Help",
-    "version": "0.2.0",
+    "version": "0.1.1",
     "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
     "background": {
         "scripts": [
@@ -18,6 +18,16 @@
             ],
             "js": [
                 "extensioncontentscript.js"
+            ],
+            "css": [
+                "extensioncontentscript.css"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.dndbeyond.com/characters/backgrounds*",
+                "https://www.dndbeyond.com/magic-items*",
+                "https://www.dndbeyond.com/spells*"
             ],
             "css": [
                 "extensioncontentscript.css"
