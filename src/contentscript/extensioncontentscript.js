@@ -1,4 +1,5 @@
 import AddMonsterButton from './AddMonsterButton';
+import FavIconService from "./FavIconService";
 import ParseData from "./ParseData";
 import ParseService from "./ParseService";
 import React from 'react';
@@ -22,3 +23,5 @@ const addButtons = function () {
 
 chrome.runtime.onMessage.addListener(() => addButtons());
 addButtons();
+
+FavIconService.changeFavIcon();

@@ -1,5 +1,5 @@
 const baseConfig = require("./webpack.config.base");
-const { paths, rules, plugins} = baseConfig.config(true);
+const { paths, rules, plugins } = baseConfig.config(true);
 
 module.exports = [{
     entry: './src/background/extensionbackground.js',

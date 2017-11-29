@@ -1,6 +1,6 @@
 {
     "name": "Beyond Help",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
     "background": {
         "scripts": [
@@ -14,13 +14,14 @@
                 "https://www.dndbeyond.com/monsters*",
                 "https://www.dndbeyond.com/homebrew/monsters*",
                 "https://www.dndbeyond.com/homebrew/collection*",
-                "https://www.dndbeyond.com/homebrew/creations*"
+                "https://www.dndbeyond.com/homebrew/creations*",
+                "https://www.dndbeyond.com/profile*"
             ],
             "js": [
                 "extensioncontentscript.js"
             ],
             "css": [
-                "extensioncontentscript.css"
+                "extensioncontentstyle.css"
             ]
         },
         {
@@ -31,7 +32,7 @@
                 "https://www.dndbeyond.com/spells*"
             ],
             "css": [
-                "extensioncontentscript.css"
+                "extensioncontentstyle.css"
             ]
         }
     ],
