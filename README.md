@@ -18,7 +18,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 ## Current features
 
 ### Monster Hp Tracker
-- To add all monsters from unlocked content and homebrew from dndbeyond.com. From monsters listing, monster details page, homebrew monster listing, homebrew collection and homebrew creations;
+- Enables to add all monsters from unlocked content and homebrew from dndbeyond.com. From monsters listing, monster details page, homebrew monster listing, homebrew collection and homebrew creations;
 - The monsters can be added with average HP or calculated one;
 - Creation of independent encounters. This allows to prepare the encounters before hand and quickly swap from one to another;
 - Change the monsters current HP by clicking and typing the new value or by scrolling to damage or heal;
