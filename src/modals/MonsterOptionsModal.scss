@@ -1,4 +1,6 @@
 .Monster-options {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     .modal-body {
         padding: 8px 0px;
         .list-group {
@@ -6,7 +8,13 @@
             margin-bottom: 0px;
             .list-group-item {
                 border: 0px;
+                .input-group {
+                    width: -webkit-fill-available;
+                }
             }
+        }
+        .sketch-picker {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px !important;
         }
     }
 }

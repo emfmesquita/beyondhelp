@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import $ from "jquery";
 import BadgeService from './services/BadgeService';
+import C from "./Constants";
 import DeleteEncounterAlert from "./modals/DeleteEncounterAlert";
 import Link from './monsterbuttons/Link';
 import MonsterData from './data/MonsterData';
@@ -49,23 +50,26 @@ class App extends Component {
             monsterOptions: {
                 show: false,
                 monster: null,
+                monsterEl: null,
                 list: null,
-                monsterEl: null
+                key: null
             }
         };
 
         this.activeEncounterChange = this.activeEncounterChange.bind(this);
         this.canDeleteEncounter = this.canDeleteEncounter.bind(this);
-        this.closeMonsterOptions = this.closeMonsterOptions.bind(this);
 
         this.handleNewEncounter = this.handleNewEncounter.bind(this);
         this.handleDeleteEncounter = this.handleDeleteEncounter.bind(this);
+        this.handleListToggle = this.handleListToggle.bind(this);
+        this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
+
+        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
+        this.closeMonsterOptions = this.closeMonsterOptions.bind(this);
         this.handleDeleteMonster = this.handleDeleteMonster.bind(this);
         this.handleFullHealMonster = this.handleFullHealMonster.bind(this);
         this.handleKillMonster = this.handleKillMonster.bind(this);
-        this.handleListToggle = this.handleListToggle.bind(this);
-        this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
-        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
+        this.handleNameColorChange = this.handleNameColorChange.bind(this);
 
         this.buildLists = this.buildLists.bind(this);
         this.mainContent = this.mainContent.bind(this);
@@ -104,17 +108,6 @@ class App extends Component {
         return this.state.encounters && this.state.encounters.length > 1;
     }
 
-    closeMonsterOptions() {
-        this.setState({
-            monsterOptions: {
-                show: false,
-                monster: null,
-                list: null,
-                monsterEl: null
-            }
-        });
-    }
-
     //#region children event handlers
     /**
      * onSave of new encounter modal
@@ -133,6 +126,40 @@ class App extends Component {
         StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
             return this.init();
         }).then(BadgeService.updateBadgeCount);
+    }
+
+    /**
+     * onClick of monster list header
+     */
+    handleListToggle(list: MonsterListData) {
+        list.collapsed = !list.collapsed;
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(list));
+    }
+
+    /**
+     * called by both change hp by form and and change hp by scroll
+     */
+    handleMonsterHpChange(monster: MonsterData, newHp: number) {
+        return new Promise((resolve, reject) => {
+            monster.currentHp = newHp;
+            this.setState({ activeEncounter: this.state.activeEncounter }, () => {
+                saveHpChanged(monster);
+                resolve();
+            });
+        });
+    }
+    //#endregion
+
+    //#region monster options
+    /**
+     * OnRightClick on monster
+     */
+    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement, list: MonsterListData) {
+        this.setState({ monsterOptions: { show: true, monster, monsterEl, list, key: new Date().getTime() } });
+    }
+
+    closeMonsterOptions() {
+        this.setState({ monsterOptions: { show: false, monster: null, monsterEl: null, list: null, key: null } });
     }
 
     /**
@@ -178,32 +205,14 @@ class App extends Component {
         });
     }
 
-    /**
-     * onClick of monster list header
-     */
-    handleListToggle(list: MonsterListData) {
-        list.collapsed = !list.collapsed;
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(list));
-    }
-
-    /**
-     * called by both change hp by form and and change hp by scroll
-     */
-    handleMonsterHpChange(monster: MonsterData, newHp: number) {
-        return new Promise((resolve, reject) => {
-            monster.currentHp = newHp;
-            this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-                saveHpChanged(monster);
-                resolve();
-            });
+    handleNameColorChange({ name, color, textColor }) {
+        const monster: MonsterData = this.state.monsterOptions.monster;
+        monster.name = name;
+        monster.color = color;
+        monster.textColor = textColor;
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
+            StorageService.updateData(monster).then(() => this.closeMonsterOptions());
         });
-    }
-
-    /**
-     * OnRightClick on monster
-     */
-    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement, list: MonsterListData) {
-        this.setState({ monsterOptions: { show: true, monster, list, monsterEl } });
     }
     //#endregion
 
@@ -285,12 +294,14 @@ class App extends Component {
                     onDelete={this.handleDeleteEncounter}
                 />
                 <MonsterOptionsModal
+                    key={"option-modal-" + this.state.monsterOptions.key}
                     show={this.state.monsterOptions.show}
                     context={this.state.monsterOptions}
                     onHide={this.closeMonsterOptions}
                     onDelete={this.handleDeleteMonster}
                     onFullHeal={this.handleFullHealMonster}
                     onKill={this.handleKillMonster}
+                    onNameColorChange={this.handleNameColorChange}
                 />
             </div >
         );

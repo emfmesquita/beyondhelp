@@ -10,6 +10,30 @@ class MonsterData extends Data {
         this.currentHp = this.hp;
         this.number = number;
     }
+
+    get name() {
+        return this.name;
+    }
+
+    set name(value: string) {
+        this.name = value;
+    }
+
+    get color() {
+        return this.color;
+    }
+
+    set color(value: string) {
+        this.color = value;
+    }
+
+    get textColor() {
+        return this.textColor;
+    }
+
+    set textColor(value: string) {
+        this.textColor = textColor;
+    }
 }
 
 export default MonsterData;

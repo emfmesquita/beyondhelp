@@ -5,7 +5,7 @@ const avatarQuery = ".character-builder-page-header-avatar, .character-tidbits-a
 
 const shouldChangeFavIcon = function (): boolean {
     return regex.test(window.location.pathname);
-}
+};
 
 class FavIconService {
     static changeFavIcon(): void {

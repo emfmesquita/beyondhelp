@@ -1,7 +1,7 @@
 .Monster-hp-bar-text {
+    left: 0px;
+    right: 0px;
     position: absolute;
-    width: 100%;
-    color: #333;
     font-weight: bold;
 }
 

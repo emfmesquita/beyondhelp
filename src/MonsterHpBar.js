@@ -4,6 +4,7 @@ import { Button, FormControl, FormGroup, InputGroup, Overlay, OverlayTrigger, Po
 import React, { Component } from 'react';
 
 import $ from "jquery";
+import ColorService from "./services/ColorService";
 import MonsterData from './data/MonsterData';
 import MonsterHpBarForm from "./MonsterHpBarForm";
 import MonsterHpBarPop from "./MonsterHpBarPop";
@@ -54,7 +55,9 @@ class MonsterHpBar extends Component {
     }
 
     progressBarLabel() {
-        return `#${this.props.monster.number} ${this.props.monster.currentHp} / ${this.props.monster.hp}`;
+        const monster = this.props.monster;
+        const name = monster.name ? monster.name : `#${monster.number}`;
+        return `${name} ${monster.currentHp} / ${monster.hp}`;
     }
 
     calcHpRatio() {
@@ -144,8 +147,8 @@ class MonsterHpBar extends Component {
         return (
             <div className="Monster-hp-bar" onWheel={this.doChangeHp} onClick={this.click} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
                 <div className="progress" ref={(el) => { this.progressBarDiv = el; }}>
-                    <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio() }}>
-                        <div className="Monster-hp-bar-text">{this.progressBarLabel()}</div>
+                    <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio(), backgroundImage: ColorService.progressBarBackground(this.props.monster.color) }}>
+                        <div className="Monster-hp-bar-text" style={{ color: ColorService.progressBarTextColor(this.props.monster.textColor) }}>{this.progressBarLabel()}</div>
                     </div>
                 </div>
             </div>
