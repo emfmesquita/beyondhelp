@@ -69,7 +69,7 @@ class App extends Component {
         this.handleDeleteMonster = this.handleDeleteMonster.bind(this);
         this.handleFullHealMonster = this.handleFullHealMonster.bind(this);
         this.handleKillMonster = this.handleKillMonster.bind(this);
-        this.handleNameColorChange = this.handleNameColorChange.bind(this);
+        this.handleMonsterCustomizeSave = this.handleMonsterCustomizeSave.bind(this);
 
         this.buildLists = this.buildLists.bind(this);
         this.mainContent = this.mainContent.bind(this);
@@ -205,11 +205,15 @@ class App extends Component {
         });
     }
 
-    handleNameColorChange({ name, color, textColor }) {
+    handleMonsterCustomizeSave({ name, color, textColor, hp }) {
         const monster: MonsterData = this.state.monsterOptions.monster;
         monster.name = name;
         monster.color = color;
         monster.textColor = textColor;
+        monster.hp = hp;
+        if (monster.currentHp > hp) {
+            monster.currentHp = hp;
+        }
         this.setState({ activeEncounter: this.state.activeEncounter }, () => {
             StorageService.updateData(monster).then(() => this.closeMonsterOptions());
         });
@@ -301,7 +305,7 @@ class App extends Component {
                     onDelete={this.handleDeleteMonster}
                     onFullHeal={this.handleFullHealMonster}
                     onKill={this.handleKillMonster}
-                    onNameColorChange={this.handleNameColorChange}
+                    onCustomizeSave={this.handleMonsterCustomizeSave}
                 />
             </div >
         );

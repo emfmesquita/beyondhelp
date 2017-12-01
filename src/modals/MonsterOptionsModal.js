@@ -1,6 +1,6 @@
 import "./MonsterOptionsModal.scss";
 
-import { Button, FormControl, Glyphicon, InputGroup, ListGroup, ListGroupItem, Modal } from 'react-bootstrap';
+import { Button, FormControl, FormGroup, Glyphicon, InputGroup, ListGroup, ListGroupItem, Modal } from 'react-bootstrap';
 import { GithubPicker, SketchPicker, TwitterPicker } from 'react-color';
 import React, { Component } from 'react';
 
@@ -20,10 +20,11 @@ class MonsterOptionsModal extends Component {
         const textColor = monster && (monster.textColor ? monster.textColor : C.DefaultMonsterTextColor);
 
         this.state = {
-            showNameAndColorOptions: false,
+            showCustomize: false,
             showColorPicker: false,
             showTextColorPicker: false,
             name: monster && monster.name,
+            hp: monster && monster.hp,
             color,
             textColor
         };
@@ -31,11 +32,12 @@ class MonsterOptionsModal extends Component {
         this.buildTitle = this.buildTitle.bind(this);
         this.sampleLabel = this.sampleLabel.bind(this);
         this.toNameAndColorOptions = this.toNameAndColorOptions.bind(this);
-        this.saveNameAndColor = this.saveNameAndColor.bind(this);
+        this.validateCustomize = this.validateCustomize.bind(this);
+        this.saveCustomize = this.saveCustomize.bind(this);
 
         this.renderBaseOptions = this.renderBaseOptions.bind(this);
-        this.renderChangeNameAndColors = this.renderChangeNameAndColors.bind(this);
-        this.renderChangeNameAndColorsFooter = this.renderChangeNameAndColorsFooter.bind(this);
+        this.renderCustomize = this.renderCustomize.bind(this);
+        this.renderCustomizeFooter = this.renderCustomizeFooter.bind(this);
     }
 
     buildTitle() {
@@ -49,25 +51,30 @@ class MonsterOptionsModal extends Component {
     sampleLabel() {
         const monster = this.props.context.monster;
         const name = this.state.name ? this.state.name : `#${monster.number}`;
-        return `${name} 50 / 100`;
+        return `${name} ${this.state.hp} / ${this.state.hp}`;
     }
 
     toNameAndColorOptions() {
-        this.setState({ showNameAndColorOptions: true });
+        this.setState({ showCustomize: true });
     }
 
-    saveNameAndColor() {
-        this.props.onNameColorChange({
+    saveCustomize() {
+        this.props.onCustomizeSave({
             name: this.state.name,
+            hp: parseInt(this.state.hp),
             color: this.state.color,
             textColor: this.state.textColor
         });
     }
 
+    validateCustomize() {
+        return isNaN(parseInt(this.state.hp)) ? "error" : "success";
+    }
+
     renderBaseOptions() {
         return (
             <ListGroup>
-                <OptionLine onClick={this.toNameAndColorOptions} icon="pencil">Change Name and Colors</OptionLine>
+                <OptionLine onClick={this.toNameAndColorOptions} icon="pencil">Customize</OptionLine>
                 <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill (0HP)</OptionLine>
                 <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal</OptionLine>
                 <hr />
@@ -76,7 +83,7 @@ class MonsterOptionsModal extends Component {
         );
     }
 
-    renderChangeNameAndColors() {
+    renderCustomize() {
         return (
             <ListGroup>
                 <OptionLine>
@@ -93,6 +100,18 @@ class MonsterOptionsModal extends Component {
                             maxLength="25"
                         />
                     </InputGroup>
+                </OptionLine>
+                <OptionLine>
+                    <span>Max HP</span>
+                    <FormGroup bsSize="small" validationState={this.validateCustomize()}>
+                        <FormControl
+                            type="text"
+                            style={{ height: "32px" }}
+                            value={this.state.hp}
+                            onChange={(e) => this.setState({ hp: e.target.value })}
+                            maxLength="6"
+                        />
+                    </FormGroup>
                 </OptionLine>
                 <OptionLine>
                     <span>Hp Bar</span>
@@ -122,10 +141,10 @@ class MonsterOptionsModal extends Component {
         );
     }
 
-    renderChangeNameAndColorsFooter() {
+    renderCustomizeFooter() {
         return (
             <Modal.Footer>
-                <Button bsSize="small" bsStyle="primary" onClick={this.saveNameAndColor}>Save</Button>
+                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize} disabled={this.validateCustomize() !== "success"}>Save</Button>
                 <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
             </Modal.Footer>
         );
@@ -138,9 +157,9 @@ class MonsterOptionsModal extends Component {
                     <Modal.Title>{this.buildTitle()}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {this.state.showNameAndColorOptions ? this.renderChangeNameAndColors() : this.renderBaseOptions()}
+                    {this.state.showCustomize ? this.renderCustomize() : this.renderBaseOptions()}
                 </Modal.Body>
-                {this.state.showNameAndColorOptions ? this.renderChangeNameAndColorsFooter() : null}
+                {this.state.showCustomize ? this.renderCustomizeFooter() : null}
             </Modal>
         );
     }
