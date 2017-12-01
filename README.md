@@ -22,6 +22,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - The monsters can be added with average HP or calculated one;
 - Creation of independent encounters. This allows to prepare the encounters before hand and quickly swap from one to another;
 - Change the monsters current HP by clicking and typing the new value or by scrolling to damage or heal;
+- Customize individual monster name, max hp, hp bar/text color;
 - Links to each monster added to their details page on dndbeyond.com (middle click to open on a new tab);
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
