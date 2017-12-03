@@ -4,7 +4,7 @@ import ParseData from "./ParseData";
 import ParseService from "./ParseService";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TableRollService from "./TableRollService"
+import TableRollService from "./TableRollService";
 
 const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");

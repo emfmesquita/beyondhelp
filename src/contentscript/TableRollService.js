@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 
 import $ from "jquery";
-import DiceExp from "../services/DiceExp"
+import DiceExp from "../services/DiceExp";
 import ReactDOM from 'react-dom';
 import { throttle } from 'lodash';
 
 /**
  * regex to catch normal and reange values from cells
  */
-const cellRegex = /^[0-9]+([-–][0-9]+)?$/i
+const cellRegex = /^[0-9]+([-–][0-9]+)?$/i;
 /**
  * regex to catch normal value or more like: 16+
  */
-const cellValueOrMoreRegex = /^[0-9]+\+$/i
+const cellValueOrMoreRegex = /^[0-9]+\+$/i;
 /**
  * regex to split range values
  */
-const cellSplitRegex = /[-–]/
+const cellSplitRegex = /[-–]/;
 
 /**
  * special case of lmop
@@ -52,7 +52,7 @@ const initTable = function (table: HTMLElement) {
     const diceHeader = jqTable.find("th:first-child, thead td:first-child");
     let diceText = diceHeader.text();
     diceText = diceText ? diceText.trim() : diceText;
-    if (!diceText || (!DiceExp.isDiceExp(diceText) && diceText !== ROLL_12_SPECIAL)) return;
+    if (!diceText || !DiceExp.isDiceExp(diceText) && diceText !== ROLL_12_SPECIAL) return;
     ReactDOM.render(<ClickableRoller text={diceText} />, diceHeader.get()[0]);
 };
 
@@ -132,7 +132,7 @@ const checkCell = function (row: HTMLElement, columnIndex: number, rolled: numbe
     const jqCellToApply = columnIndex === 0 ? jqCell : jqRow.find(`td:nth-child(${columnIndex})`);
     jqCellToApply.addClass(className);
     return true;
-}
+};
 
 /**
  * Calcs min and max values of a cell and add then as attributes.
@@ -167,7 +167,7 @@ const processCell = function (jqCell) {
         jqCell.attr(MIN_ATTR, text.substr(0, text.length - 1));
         jqCell.attr(MAX_ATTR, "9999999999999");
     }
-}
+};
 
 /**
  * Shows a tooltip with the reolled result.
