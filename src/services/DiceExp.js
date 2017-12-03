@@ -45,7 +45,7 @@ const calcTermValue = function (term: string) {
  * Calcs a dice expression value.
  */
 const calcDiceExpValue = function (diceExp: string) {
-    var spaceLessExp = diceExp.replace(/\s/g, "");
+    var spaceLessExp = diceExp.replace(/\s/g, "").toLowerCase();
     var value = 0;
     var token = "";
     var add = true;
@@ -67,6 +67,11 @@ const calcDiceExpValue = function (diceExp: string) {
 };
 
 class DiceExp {
+
+    static isDiceExp(diceExp: string) {
+        if (!diceExp) return false;
+        return diceExpRegex.test(diceExp.trim());
+    }
 
     /**
      * Calcs a dice expression value.

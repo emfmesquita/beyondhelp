@@ -16,7 +16,7 @@ const isOnMonsterDetail = function (path: string) {
 
 const parseList = function (isHomebrew): ParseData[] {
     const parseDataArray = [];
-    $(".more-info-monster:not(.bh-processed").find(".ddb-statblock-monster:first").each((idx, el) => {
+    $(".more-info-monster:not(.bh-processed)").find(".ddb-statblock-monster:first").each((idx, el) => {
         // gather monster info from page
         const moreInfoDiv = $(el).closest(".more-info-monster");
         moreInfoDiv.addClass("bh-processed");
