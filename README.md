@@ -27,6 +27,9 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
+### Roll on Tables
+- Enables click to roll on most of the tables of the compendium and description pages.
+
 ### Better Printing Layout
 - Enables a better layout when printing the detail page of monsters, feats, spells, magic items and backgrounds.
 
