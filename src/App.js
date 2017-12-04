@@ -56,6 +56,7 @@ class App extends Component {
             }
         };
 
+        this.modalOpenClass = this.modalOpenClass.bind(this);
         this.activeEncounterChange = this.activeEncounterChange.bind(this);
         this.canDeleteEncounter = this.canDeleteEncounter.bind(this);
 
@@ -90,6 +91,10 @@ class App extends Component {
                 showDeleteEncounterAlert: false
             });
         }).catch(error => { throw error; });
+    }
+
+    modalOpenClass() {
+        return this.state.monsterOptions.show ? "Monster-options-opened" : "";
     }
 
     /**
@@ -264,7 +269,7 @@ class App extends Component {
 
     render() {
         return (
-            <div onContextMenu={(e) => e.preventDefault()}>
+            <div className={this.modalOpenClass()} onContextMenu={(e) => e.preventDefault()}>
                 <div className="Monster-encounter-menu">
                     <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
                     <MonsterMenuButton

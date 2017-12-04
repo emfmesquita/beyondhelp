@@ -1,6 +1,8 @@
 import { Button, FormControl, FormGroup, Modal } from 'react-bootstrap';
 import React, { Component } from 'react';
 
+import TextFieldService from "../services/TextFieldService";
+
 class NewEncounterModal extends Component {
     constructor(props) {
         super(props);
@@ -8,34 +10,18 @@ class NewEncounterModal extends Component {
             value: ""
         };
         this.validate = this.validate.bind(this);
-        this.changeValue = this.changeValue.bind(this);
-        this.saveClick = this.saveClick.bind(this);
-        this.keyDown = this.keyDown.bind(this);
+        this.save = this.save.bind(this);
     }
 
     validate() {
-        if(!this.state.value) return "error";
+        if (!this.state.value) return "error";
         const valueSize = this.state.value.trim().length;
         return valueSize > 0 && valueSize < 40 ? "success" : "error";
     }
 
-    changeValue(e) {
-        this.setState({ value: e.target.value });
-    }
-
-    saveClick(e: MouseEvent) {
+    save(e: MouseEvent) {
         if (this.validate() === "success") {
             this.props.onSave(this.state.value.trim());
-        }
-    }
-
-    /**
-     * Saves on enter.
-     */
-    keyDown(e: KeyboardEvent) {
-        if (e.which === 13 || e.keyCode === 13) {
-            this.saveClick();
-            return;
         }
     }
 
@@ -47,11 +33,17 @@ class NewEncounterModal extends Component {
                 </Modal.Header>
                 <Modal.Body>
                     <FormGroup bsSize="small" validationState={this.validate()}>
-                        <FormControl type="text" placeholder="Encounter Name" value={this.state.value} onChange={this.changeValue} onKeyDown={this.keyDown} />
+                        <FormControl
+                            type="text"
+                            placeholder="Encounter Name"
+                            value={this.state.value}
+                            onChange={TextFieldService.onChangeMethod("value", this)}
+                            onKeyDown={TextFieldService.onKeyDownMethod(this.save, this)}
+                        />
                     </FormGroup>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button bsSize="small" bsStyle="primary" onClick={this.saveClick} disabled={this.validate() !== "success"}>Save</Button>
+                    <Button bsSize="small" bsStyle="primary" onClick={this.save} disabled={this.validate() !== "success"}>Save</Button>
                     <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
                 </Modal.Footer>
             </Modal>

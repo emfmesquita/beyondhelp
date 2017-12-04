@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 
 import $ from "jquery";
-import DiceExp from "../services/DiceExp";
+import DiceExp from "../../services/DiceExp";
 import ReactDOM from 'react-dom';
+import RollableData from "./RollableData";
+import RollableTableData from "./RollableTableData";
+import TableRollParseService from "./TableRollParseService";
 import { throttle } from 'lodash';
 
 /**
- * regex to catch normal and reange values from cells
+ * regex to catch normal values from cells
  */
-const cellRegex = /^[0-9]+([-–][0-9]+)?$/i;
+const cellRegex = /^[0-9]+$/i;
 /**
- * regex to catch normal value or more like: 16+
+ * regex to catch range values from cells
  */
-const cellValueOrMoreRegex = /^[0-9]+\+$/i;
+const cellRangeRegex = /^[0-9]+[-–][0-9]+$/i;
 /**
- * regex to split range values
+ * regex to catch value or more like: 
+ *  16+
+ *  16 or more
+ *  16 or higher
  */
-const cellSplitRegex = /[-–]/;
-
+const cellValueOrMoreRegex = /^[0-9]+(( or more)|( or higher)|(\+))$/i;
 /**
- * special case of lmop
+ * regex to catch value or lower like: 2 or lower
  */
-const ROLL_12_SPECIAL = "d12 Roll";
+const cellValueOrLowerRegex = /^[0-9]+ or lower$/i;
 
 /**
  * class that add the rolled border left for the first column
@@ -46,58 +51,43 @@ const MAX_ATTR = "bh-roll-max";
  * Inits the table rendering the clickable div, only for top left cells that are dice expressions.
  * @param {HTMLElement} table table element
  */
-const initTable = function (table: HTMLElement) {
-    const jqTable = $(table);
-    jqTable.addClass("bh-processed");
-    const diceHeader = jqTable.find("th:first-child, thead td:first-child");
-    let diceText = diceHeader.text();
-    diceText = diceText ? diceText.trim() : diceText;
-    if (!diceText || !DiceExp.isDiceExp(diceText) && diceText !== ROLL_12_SPECIAL) return;
-    ReactDOM.render(<ClickableRoller text={diceText} />, diceHeader.get()[0]);
+const initTable = function (table: HTMLElement, index: number) {
+    const rollableTable = TableRollParseService.parse(table, index);
+    if (!rollableTable) return;
+
+    rollableTable.rolables.forEach(rollable => {
+        ReactDOM.render(<ClickableRoller data={rollable} />, rollable.renderTarget);
+    });
 };
 
 /**
  * Make a roll and show the result.
  */
-const throttledRoll = throttle((baseText, rollDiv) => {
-    const jqRollDiv = $(rollDiv);
-    const table = jqRollDiv.closest("table");
+const throttledRoll = throttle((data: RollableData, rollEl: HTMLElement) => {
+    const jqRollEl = $(rollEl);
+    const table = jqRollEl.closest("table");
     const rows = $(table).find("tbody tr");
-
-    // check which columns contains cells with values
-    // by checking which columns have the same text as the first one
-    const valuedColumns = [];
-    const headers = table.find("th, thead td");
-    headers.each((index, header) => {
-        let text = header.innerText;
-        text = text ? text.trim() : text;
-        if (text === baseText) {
-            valuedColumns.push(index);
-        }
-    });
 
     // remove the classes that indicates a roll result of all cells
     const cells = rows.find("td");
     cells.removeClass(ROLLED_LEFT_CLASS_NAME);
     cells.removeClass(ROLLED_RIGHT_CLASS_NAME);
 
-    const textToCalc = baseText === ROLL_12_SPECIAL ? "d12" : baseText;
-
     let found = false;
 
     // makes a roll and shows the tooltip
-    const rolled = DiceExp.calcValue(textToCalc);
-    jqRollDiv.hide();
-    jqRollDiv.fadeIn(300);
+    const rolled = DiceExp.calcValue(data.diceValue);
+    jqRollEl.hide();
+    jqRollEl.fadeIn(300);
     const id = "bh-table-roll-" + new Date().getTime();
-    jqRollDiv.attr("id", id);
-    showQtip(jqRollDiv, id, rolled);
+    jqRollEl.attr("id", id);
+    showQtip(jqRollEl, id, rolled);
 
     // tries to find the cell with the rolled vavlue and show in it the result
     rows.each((index, row: HTMLElement) => {
         if (found) return;
 
-        valuedColumns.forEach(columnIndex => {
+        data.valuedColumns.forEach(columnIndex => {
             if (found) return;
             found = checkCell(row, columnIndex, rolled);
         });
@@ -144,28 +134,26 @@ const processCell = function (jqCell) {
     text = text ? text.trim() : text;
     if (!text) return;
 
-    const isNormalOrRange = cellRegex.test(text);
-    const isValueOrMore = cellValueOrMoreRegex.test(text);
-    if (!isNormalOrRange && !isValueOrMore) return;
+    const value: string = (text) => text === "00" ? "100" : text;
 
     // adds the value attributes for each type of value cell
     // normal: 22
     // range: 3-7
-    // value or more: 16+
-    if (isNormalOrRange) {
-        const rangeValues = text.split(cellSplitRegex);
-        const value: string = (text) => text === "00" ? "100" : text;
-        if (rangeValues.length === 1) {
-            jqCell.attr(MIN_ATTR, value(rangeValues[0]));
-            jqCell.attr(MAX_ATTR, value(rangeValues[0]));
-        } else if (rangeValues.length === 2) {
-            jqCell.attr(MIN_ATTR, value(rangeValues[0]));
-            jqCell.attr(MAX_ATTR, value(rangeValues[1]));
-        }
-    }
-    if (isValueOrMore) {
-        jqCell.attr(MIN_ATTR, text.substr(0, text.length - 1));
+    // value or more: 16+, 16 or more, 16 or higher
+    // value or lower: 2 or lower
+    if (cellRegex.test(text)) {
+        jqCell.attr(MIN_ATTR, value(text));
+        jqCell.attr(MAX_ATTR, value(text));
+    } else if (cellRangeRegex.test(text)) {
+        const rangeValues = text.split(/[-–]/);
+        jqCell.attr(MIN_ATTR, value(rangeValues[0]));
+        jqCell.attr(MAX_ATTR, value(rangeValues[1]));
+    } else if (cellValueOrMoreRegex.test(text)) {
+        jqCell.attr(MIN_ATTR, value(text.split(/[ +]/)[0]));
         jqCell.attr(MAX_ATTR, "9999999999999");
+    } else if (cellValueOrLowerRegex.test(text)) {
+        jqCell.attr(MIN_ATTR, "1");
+        jqCell.attr(MAX_ATTR, value(text.split(" ")[0]));
     }
 };
 
@@ -193,7 +181,7 @@ const showQtip = function (target, targetId: string, rolled: number) {
 
 class TableRollService {
     static init() {
-        $("table:not(.bh-processed)").each((index, table) => initTable(table));
+        $("table:not(.bh-processed)").each((index, table) => initTable(table, index));
     }
 }
 
@@ -204,15 +192,15 @@ class ClickableRoller extends Component {
     }
 
     roll() {
-        throttledRoll(this.props.text, this.rollDiv);
+        throttledRoll(this.props.data, this.rollEl);
     }
 
     render() {
         return (
-            <div className="BH-Table-roll-dice" title="Click to Roll" onClick={this.roll} ref={(divEl) => { this.rollDiv = divEl; }}>
-                {this.props.text}
+            <span className="BH-Table-roll-dice" title="Click to Roll" onClick={this.roll} ref={(el) => { this.rollEl = el; }}>
+                {this.props.data.text}
                 <script />
-            </div >
+            </span >
         );
     }
 }

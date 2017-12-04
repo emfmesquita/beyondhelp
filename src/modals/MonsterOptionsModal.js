@@ -10,6 +10,9 @@ import MonsterData from '../data/MonsterData';
 import MonsterMenuButton from '../monsterbuttons/MonsterMenuButton';
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
+import TextFieldService from "../services/TextFieldService";
+
+const maxHpRegex = /^[0-9]+$/i;
 
 class MonsterOptionsModal extends Component {
     constructor(props) {
@@ -59,6 +62,7 @@ class MonsterOptionsModal extends Component {
     }
 
     saveCustomize() {
+        if (this.validateCustomize() === "error") return;
         this.props.onCustomizeSave({
             name: this.state.name,
             hp: parseInt(this.state.hp),
@@ -68,7 +72,7 @@ class MonsterOptionsModal extends Component {
     }
 
     validateCustomize() {
-        return isNaN(parseInt(this.state.hp)) ? "error" : "success";
+        return !this.state.hp || !maxHpRegex.test(this.state.hp) ? "error" : "success";
     }
 
     renderBaseOptions() {
@@ -96,7 +100,8 @@ class MonsterOptionsModal extends Component {
                             type="text"
                             style={{ height: "32px" }}
                             value={this.state.name}
-                            onChange={(e) => this.setState({ name: e.target.value })}
+                            onChange={TextFieldService.onChangeMethod("name", this)}
+                            onKeyDown={TextFieldService.onKeyDownMethod(this.saveCustomize, this)}
                             maxLength="25"
                         />
                     </InputGroup>
@@ -108,7 +113,8 @@ class MonsterOptionsModal extends Component {
                             type="text"
                             style={{ height: "32px" }}
                             value={this.state.hp}
-                            onChange={(e) => this.setState({ hp: e.target.value })}
+                            onChange={TextFieldService.onChangeMethod("hp", this)}
+                            onKeyDown={TextFieldService.onKeyDownMethod(this.saveCustomize, this)}
                             maxLength="6"
                         />
                     </FormGroup>
