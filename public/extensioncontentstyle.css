@@ -1,3 +1,9 @@
+@media print {
+    .BH-Monster-button {
+        display: none !important;
+    }
+}
+
 @media screen {
     .BH-Monster-button {
         display: inline-block !important;
