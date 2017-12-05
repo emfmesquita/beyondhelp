@@ -19,18 +19,6 @@
             "css": [
                 "extensioncontentstyle.css"
             ]
-        },
-        {
-            "matches": [
-                "https://www.dndbeyond.com/characters/backgrounds*",
-                "https://www.dndbeyond.com/characters/feats*",
-                "https://www.dndbeyond.com/magic-items*",
-                "https://www.dndbeyond.com/monsters*",
-                "https://www.dndbeyond.com/spells*"
-            ],
-            "css": [
-                "extensionprintstyle.css"
-            ]
         }
     ],
     "commands": {
