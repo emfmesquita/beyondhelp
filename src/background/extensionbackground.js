@@ -1,5 +1,6 @@
 import BadgeService from "../services/BadgeService";
 import NotificationService from "../services/NotificationService";
+import UserService from "../services/UserService";
 
 /* global chrome */
 
@@ -16,9 +17,15 @@ chrome.webRequest.onCompleted.addListener((details) => chrome.tabs.sendMessage(d
 });
 
 // listen when a monster is added from AddMonsterButton, adds a notification
-chrome.runtime.onMessage.addListener((request, sender) => {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // if it's a reload request just ignores
     if (request.reload) return;
+
+    // request to fetch the current user username
+    if (request.username) {
+        UserService.getCurrentUsername().then(sendResponse);
+        return true;
+    }
 
     NotificationService.createNotification(request.notificationid, request.notification);
     BadgeService.updateBadgeCount();

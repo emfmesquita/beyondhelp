@@ -1,3 +1,24 @@
+.BH-character-list {
+    list-style: none !important;
+    list-style-image: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+a.BH-homebrew-character-action,
+a.BH-homebrew-character-action:hover,
+a.BH-homebrew-character-action:focus,
+a.BH-homebrew-character-action:active,
+a.BH-homebrew-character-action:visited {
+    color: #ee8600 !important;
+}
+
+.BH-character-multiple-select {
+    font-size: 15px !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
 @media print {
     .BH-Monster-button {
         display: none !important;

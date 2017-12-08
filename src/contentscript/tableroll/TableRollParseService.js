@@ -79,6 +79,8 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
             new RollableData("d6", "d6", [0], firstRollableContaier[0]),
             new RollableData("d8", "d8", [0], secondRollableContaier[0])
         ]);
+    } else if (checkSpecial(firstColumnHeaderText, "d8", "/compendium/adventures/oota/audience-in-gauntlgrym")) {
+        return basicTable("d20", columnHeaders[0], "d20");
     }
     return null;
 };

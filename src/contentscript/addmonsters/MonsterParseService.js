@@ -1,6 +1,6 @@
 import $ from "jquery";
 import MonsterContentData from "./MonsterContentData";
-import ParseData from "./ParseData";
+import MonsterParseData from "./MonsterParseData";
 
 const isOnMonsterList = function (path: string) {
     return path === "/monsters";
@@ -14,7 +14,7 @@ const isOnMonsterDetail = function (path: string) {
     return path.startsWith("/monsters/");
 };
 
-const parseList = function (isHomebrew): ParseData[] {
+const parseList = function (isHomebrew): MonsterParseData[] {
     const parseDataArray = [];
     $(".more-info-monster:not(.bh-processed)").find(".mon-stat-block").each((idx, el) => {
         // gather monster info from page
@@ -35,12 +35,12 @@ const parseList = function (isHomebrew): ParseData[] {
         // target
         const target = $(el);
 
-        parseDataArray.push(new ParseData("before", target, monsterData));
+        parseDataArray.push(new MonsterParseData("before", target, monsterData));
     });
     return parseDataArray;
 };
 
-const parseDetail = function (): ParseData[] {
+const parseDetail = function (): MonsterParseData[] {
     const path = window.location.pathname;
     const id = path.substring(path.lastIndexOf("/") + 1);
     const name = $(".mon-stat-block__name-link").text().trim();
@@ -50,11 +50,11 @@ const parseDetail = function (): ParseData[] {
     const diceHp = jqHpAttribute.find(".mon-stat-block__attribute-data-extra").text().trim();
     const hp = jqHpAttribute.find(".mon-stat-block__attribute-data-value").text().trim();
 
-    return [new ParseData("before", $(".mon-stat-block"), new MonsterContentData(id, name, hp, diceHp))];
+    return [new MonsterParseData("before", $(".mon-stat-block"), new MonsterContentData(id, name, hp, diceHp))];
 };
 
-class ParseService {
-    static parseMonsters(): ParseData[] {
+class MonsterParseService {
+    static parseMonsters(): MonsterParseData[] {
         const path = window.location.pathname;
 
         const isMonsterList = isOnMonsterList(path);
@@ -71,4 +71,4 @@ class ParseService {
     }
 }
 
-export default ParseService;
+export default MonsterParseService;

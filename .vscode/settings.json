@@ -5,8 +5,13 @@
     "javascript.validate.enable": false,
     "editor.formatOnSave": true,
     "search.exclude": {
-        "**/.git": true,
-        "**/node_modules": true,
-        "**/build": true
-    }
+        "**/.git": true
+    },
+    "explorer.openEditors.visible": 0,
+    "files.exclude": {
+        "node_modules/": true,
+        "build/": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0
 }

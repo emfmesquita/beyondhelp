@@ -1,3 +1,4 @@
+import CharacterFoldersData from '../data/CharacterFoldersData';
 import Configuration from '../data/Configuration';
 import Data from "../data/Data";
 import MonsterData from '../data/MonsterData';
@@ -52,7 +53,7 @@ class Q {
 /**
  * @param {string} id If null get all entries.
  */
-const getStorageData = function (id: string): Promise<storageData> {
+const getStorageData = function (id: string): Promise<StorageData> {
     return new Promise((resolve, reject) => {
         chrome.storage.sync.get(id ? id : null, (storageData: StorageData) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(storageData);
@@ -116,7 +117,7 @@ class StorageService {
         });
     }
 
-    static createData(dataClass: sttring, data: Data): Promise {
+    static createData(dataClass: string, data: Data): Promise {
         return new Promise((resolve, reject) => {
             const storageEntry: StorageData = {};
             if (!data.storageId) {
@@ -291,6 +292,26 @@ class StorageService {
             });
             return deleteData(toDelete);
         });
+    }
+
+    /**
+     * Saves the structure of folders of my characters page on storage.
+     * @param {CharacterFoldersData} folders 
+     * @param {string} owner Username of the owner user.
+     */
+    static saveMyCharactesFolders(folders: CharacterFoldersData, owner: string): Promise<CharacterFoldersData> {
+        if (!folders.storageId) {
+            folders.storageId = "bh-charfolders-" + owner;
+        }
+        return this.createData(null, folders);
+    }
+
+    /**
+     * Gets the structure of folders of my characters page from storage.
+     * @param {string} owner Username of the owner user.
+     */
+    static getMyCharacterFolders(owner: string): Promise<CharacterFoldersData> {
+        return this.getData("bh-charfolders-" + owner);
     }
 }
 

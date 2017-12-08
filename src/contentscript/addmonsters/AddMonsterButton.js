@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import MonsterContentData from "./MonsterContentData";
-import NotificationService from "../services/NotificationService";
-import StorageService from '../services/StorageService';
+import NotificationService from "../../services/NotificationService";
+import StorageService from '../../services/StorageService';
 
 class AddMonsterButton extends Component {
     constructor(props) {
