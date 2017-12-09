@@ -68,7 +68,7 @@ class CharacterFolder extends Component {
     }
 
     secondaryText() {
-        const numbeOfChars = this.props.data.characterIds.length;
+        const numbeOfChars = this.props.characters.length;
         return numbeOfChars === 1 ? "1 character" : `${numbeOfChars} characters`;
     }
 
