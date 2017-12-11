@@ -27,9 +27,12 @@ class Prefix {
         }
     }
 
-    static createStorageId(dataClass: string) {
+    static createStorageId(dataClass: string, increment: number) {
         if (dataClass === "Configuration") return ConfigurationId;
-        return Prefix.getStoragePrefix(dataClass) + new Date().getTime();
+        if (!increment) {
+            increment = 0;
+        }
+        return Prefix.getStoragePrefix(dataClass) + (new Date().getTime() + increment);
     }
 }
 
@@ -131,12 +134,32 @@ class StorageService {
         });
     }
 
+    static batchCreate(dataClass: string, dataArray: Array<Data>): Promise {
+        return new Promise((resolve, reject) => {
+            const storageEntry: StorageData = {};
+            dataArray.forEach((data, idx) => {
+                if (!data.storageId) {
+                    data.storageId = Prefix.createStorageId(dataClass, idx);
+                }
+                storageEntry[data.storageId] = data;
+            });
+            chrome.storage.sync.set(storageEntry, () => {
+                chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(dataArray);
+                chrome.runtime.sendMessage({ reload: true });
+            });
+        });
+    }
+
     static getData(id: string): Promise<Data> {
         return getStorageData(id).then(storageData => storageData[id]);
     }
 
     static updateData(data: Data): Promise {
         return this.createData(null, data);
+    }
+
+    static batchUpdate(dataArray: Array<Data>): Promise {
+        return this.batchCreate(null, dataArray);
     }
 
     /**
@@ -170,8 +193,9 @@ class StorageService {
             const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
             return this.createData("MonsterData", newMonster);
         }).then((monster) => {
-            // updates list last monster number
+            // updates list last monster number and possible name change
             list.lastNumber = list.lastNumber + 1;
+            list.name = name;
             return this.updateData(list).then(() => monster);
         });
     }
@@ -259,6 +283,13 @@ class StorageService {
             const alive = monsters.filter(m => m.currentHp > 0).length;
             return { total, alive };
         });
+    }
+
+    static deleteList(list: MonsterListData): Promise {
+        const toDelete = [];
+        toDelete.push(list);
+        list.monsters.forEach(monster => toDelete.push(monster));
+        return deleteData(toDelete);
     }
 
     static createEncounter(name: string): Promise {

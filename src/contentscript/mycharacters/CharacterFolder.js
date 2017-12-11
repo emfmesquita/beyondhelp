@@ -22,32 +22,11 @@ class CharacterFolder extends Component {
             removeCharacterSelected: []
         };
 
-        this.secondaryText = this.secondaryText.bind(this);
-
-        this.handleMouseIn = this.handleMouseIn.bind(this);
-        this.handleMouseOut = this.handleMouseOut.bind(this);
-        this.rowClassNames = this.rowClassNames.bind(this);
-
         // adds the container of the modal to add characters to folders on content page
         $("body").append(`<div id='${addCharModalId(props.data.id)}'/>`);
-        this.handleCancelAddCharacter = this.handleCancelAddCharacter.bind(this);
-        this.handleConfirmAddCharacter = this.handleConfirmAddCharacter.bind(this);
-        this.addCharClick = this.addCharClick.bind(this);
 
         // adds the container of the modal to remove characters from folders on content page
         $("body").append(`<div id='${removeCharModalId(props.data.id)}'/>`);
-        this.handleCancelRemoveCharacter = this.handleCancelRemoveCharacter.bind(this);
-        this.handleConfirmRemoveCharacter = this.handleConfirmRemoveCharacter.bind(this);
-        this.RemoveCharClick = this.RemoveCharClick.bind(this);
-
-        this.deleteDialogId = this.deleteDialogId.bind(this);
-        this.deleteClick = this.deleteClick.bind(this);
-        this.handleDelete = this.handleDelete.bind(this);
-
-        this.renderUp = this.renderUp.bind(this);
-        this.renderDown = this.renderDown.bind(this);
-        this.renderAdd = this.renderAdd.bind(this);
-        this.renderRemove = this.renderRemove.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -67,20 +46,20 @@ class CharacterFolder extends Component {
         ReactDOM.render(modal, $(`#${removeCharModalId(this.props.data.id)}`)[0]);
     }
 
-    secondaryText() {
+    secondaryText = () => {
         const numbeOfChars = this.props.characters.length;
         return numbeOfChars === 1 ? "1 character" : `${numbeOfChars} characters`;
     }
 
-    handleMouseIn() {
+    handleMouseIn = () => {
         this.setState({ mouseOver: true });
     }
 
-    handleMouseOut() {
+    handleMouseOut = () => {
         this.setState({ mouseOver: false });
     }
 
-    rowClassNames() {
+    rowClassNames = () => {
         return `list-row list-row-background ${this.state.mouseOver || this.props.data.expanded ? "hover" : ""}`;
     }
 
@@ -89,7 +68,7 @@ class CharacterFolder extends Component {
      * @param {Array<CharacterData>} charList List of chars that are options
      * @param {string} selectProp target property of state object that should be updated with the selection
      */
-    baseCharacterModalContent(charList: Array<CharacterData>, selectProp: string) {
+    baseCharacterModalContent = (charList: Array<CharacterData>, selectProp: string) => {
         let handleSelected = (e) => {
             const options = e.target.options;
             const value = [];
@@ -120,7 +99,7 @@ class CharacterFolder extends Component {
     /**
      * Click of add char action from folders.
      */
-    addCharClick() {
+    addCharClick = () => {
         if (this.props.charactersNotOnFolders && this.props.charactersNotOnFolders.length === 1) {
             this.props.onAddChar(this.props.data, [this.props.charactersNotOnFolders[0].id]);
             return;
@@ -131,14 +110,14 @@ class CharacterFolder extends Component {
     /**
      * Called when user cancels the add characters on modal.
      */
-    handleCancelAddCharacter() {
+    handleCancelAddCharacter = () => {
         this.setState({ addCharacterModalOpened: false });
     }
 
     /**
      * Called when user confirms the add characters on modal.
      */
-    handleConfirmAddCharacter() {
+    handleConfirmAddCharacter = () => {
         if (!this.state.addCharacterSelected || this.state.addCharacterSelected.length === 0) return;
         this.setState({ addCharacterModalOpened: false });
         this.props.onAddChar(this.props.data, this.state.addCharacterSelected);
@@ -147,7 +126,7 @@ class CharacterFolder extends Component {
     /**
      * Click of remove char action from folders.
      */
-    RemoveCharClick() {
+    RemoveCharClick = () => {
         if (this.props.characters && this.props.characters.length === 1) {
             this.props.onRemoveChar(this.props.data, [this.props.characters[0].id]);
             return;
@@ -158,54 +137,54 @@ class CharacterFolder extends Component {
     /**
      * Called when user cancels the remove characters on modal.
      */
-    handleCancelRemoveCharacter() {
+    handleCancelRemoveCharacter = () => {
         this.setState({ removeCharacterModalOpened: false });
     }
 
     /**
      * Called when user confirms the remove characters on modal.
      */
-    handleConfirmRemoveCharacter() {
+    handleConfirmRemoveCharacter = () => {
         if (!this.state.removeCharacterSelected || this.state.removeCharacterSelected.length === 0) return;
         this.setState({ removeCharacterModalOpened: false });
         this.props.onRemoveChar(this.props.data, this.state.removeCharacterSelected);
     }
 
-    deleteDialogId() {
+    deleteDialogId = () => {
         return `bh-delete-folder-dialog-${this.props.data.id}`;
     }
 
     /**
      * Click of delete action from folders.
      */
-    deleteClick() {
+    deleteClick = () => {
         ContentDialogService.open(this.deleteDialogId());
     }
 
     /**
      * Called when user confirms the delete of folder on dialog.
      */
-    handleDelete() {
+    handleDelete = () => {
         ContentDialogService.close(this.deleteDialogId());
         this.props.onDelete(this.props.data);
     }
 
-    renderUp() {
+    renderUp = () => {
         if (!this.props.up) return null;
         return <a className="homebrew-creation-actions-item BH-homebrew-character-action" href="javascript:void(0)" onClick={() => this.props.onUp(this.props.data)}>Move Up</a>;
     }
 
-    renderDown() {
+    renderDown = () => {
         if (!this.props.down) return null;
         return <a className="homebrew-creation-actions-item BH-homebrew-character-action" href="javascript:void(0)" onClick={() => this.props.onDown(this.props.data)}>Move Down</a>;
     }
 
-    renderRemove() {
+    renderRemove = () => {
         if (this.props.characters.length === 0) return null;
         return <a className="homebrew-creation-actions-item BH-homebrew-character-action" href="javascript:void(0)" onClick={this.RemoveCharClick}>Remove Characters</a>;
     }
 
-    renderAdd() {
+    renderAdd = () => {
         if (this.props.charactersNotOnFolders.length === 0) return null;
         return <a className="homebrew-creation-actions-item BH-homebrew-character-action" href="javascript:void(0)" onClick={this.addCharClick}>Add Characters</a>;
     }

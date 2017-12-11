@@ -17,20 +17,6 @@ class MyCharactesApp extends Component {
             foldersData: null,
             charactersNotOnFolders: []
         };
-
-        this.updateState = this.updateState.bind(this);
-
-        this.saveData = this.saveData.bind(this);
-        this.handleCreateFolder = this.handleCreateFolder.bind(this);
-        this.handleToggle = this.handleToggle.bind(this);
-        this.move = this.move.bind(this);
-        this.handleUp = this.handleUp.bind(this);
-        this.handleDown = this.handleDown.bind(this);
-        this.handleDelete = this.handleDelete.bind(this);
-        this.handleAddCharacter = this.handleAddCharacter.bind(this);
-        this.handleRemoveCharacter = this.handleRemoveCharacter.bind(this);
-
-        this.renderFolders = this.renderFolders.bind(this);
     }
 
     componentDidMount() {
@@ -49,7 +35,7 @@ class MyCharactesApp extends Component {
         StorageService.getMyCharacterFolders(this.props.owner).then(this.updateState);
     }
 
-    updateState(foldersData: CharacterFoldersData) {
+    updateState = (foldersData: CharacterFoldersData) => {
         // calcs the characters that are not on folders
         const buildCharactersNotOnFolders = () => {
             if (!this.props.allCharacters || this.props.allCharacters.length === 0) {
@@ -69,7 +55,7 @@ class MyCharactesApp extends Component {
      * Saves the current folder structure on storage.
      * @param {CharacterFoldersData} data 
      */
-    saveData(data: CharacterFoldersData) {
+    saveData = (data: CharacterFoldersData) => {
         StorageService.saveMyCharactesFolders(data, this.props.owner).then(this.updateState);
     }
 
@@ -77,7 +63,7 @@ class MyCharactesApp extends Component {
      * Called when user confirms a folder creation on modal.
      * @param {CharacterFolderData} folder 
      */
-    handleCreateFolder(folder: CharacterFolderData) {
+    handleCreateFolder = (folder: CharacterFolderData) => {
         const foldersData: CharacterFoldersData = this.state.foldersData || new CharacterFoldersData();
         foldersData.folders.push(folder);
         this.saveData(foldersData);
@@ -87,7 +73,7 @@ class MyCharactesApp extends Component {
      * Called when user toggles a folder, saves the state on storage.
      * @param {CharacterFolderData} folder 
      */
-    handleToggle(folder: CharacterFolderData) {
+    handleToggle = (folder: CharacterFolderData) => {
         folder.expanded = !folder.expanded;
         this.saveData(this.state.foldersData);
     }
@@ -97,7 +83,7 @@ class MyCharactesApp extends Component {
      * @param {CharacterFolderData} folder 
      * @param {number} delta 
      */
-    move(folder: CharacterFolderData, delta: number) {
+    move = (folder: CharacterFolderData, delta: number) => {
         const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
         const idx = folders.indexOf(folder);
         folders.splice(idx, 1);
@@ -105,11 +91,11 @@ class MyCharactesApp extends Component {
         this.saveData(this.state.foldersData);
     }
 
-    handleUp(folder: CharacterFolderData) {
+    handleUp = (folder: CharacterFolderData) => {
         this.move(folder, -1);
     }
 
-    handleDown(folder: CharacterFolderData) {
+    handleDown = (folder: CharacterFolderData) => {
         this.move(folder, +1);
     }
 
@@ -117,7 +103,7 @@ class MyCharactesApp extends Component {
      * Called when user confirms the deletion of a folder from dialog. Removes folder from structure and saves on storage.
      * @param {CharacterFolderData} folder 
      */
-    handleDelete(folder: CharacterFolderData) {
+    handleDelete = (folder: CharacterFolderData) => {
         const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
         const idx = folders.indexOf(folder);
         folders.splice(idx, 1);
@@ -132,7 +118,7 @@ class MyCharactesApp extends Component {
      * @param {CharacterFolderData} folder 
      * @param {Array<string>} characterIds 
      */
-    handleAddCharacter(folder: CharacterFolderData, characterIds: Array<string>) {
+    handleAddCharacter = (folder: CharacterFolderData, characterIds: Array<string>) => {
         const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
 
         characterIds.forEach(characterId => {
@@ -152,7 +138,7 @@ class MyCharactesApp extends Component {
      * @param {*} folder 
      * @param {*} characterIds 
      */
-    handleRemoveCharacter(folder: CharacterFolderData, characterIds: Array<string>) {
+    handleRemoveCharacter = (folder: CharacterFolderData, characterIds: Array<string>) => {
         characterIds.forEach(characterId => {
             const idx = folder.characterIds.indexOf(characterId);
             if (idx !== -1) folder.characterIds.splice(idx, 1);
@@ -160,7 +146,7 @@ class MyCharactesApp extends Component {
         this.saveData(this.state.foldersData);
     }
 
-    renderFolders() {
+    renderFolders = () => {
         const folders = this.state.foldersData ? this.state.foldersData.folders : [];
         return folders.map((folder, idx) => {
             let characters = this.props.allCharacters.filter(character => folder.characterIds.indexOf(character.id) !== -1);

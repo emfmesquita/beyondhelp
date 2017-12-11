@@ -7,6 +7,7 @@
     &:hover {
         cursor: pointer;
         filter: alpha(opacity=70);
+        text-decoration: none;
         opacity: .7;
     }
     &.disabled {

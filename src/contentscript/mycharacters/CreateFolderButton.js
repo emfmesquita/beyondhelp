@@ -19,10 +19,6 @@ class CreateFolderButton extends Component {
 
         // adds the container to the create folder modal
         $("body").append("<div id='BH-new-folder-dialog'/>");
-
-        this.openNewFolderModal = this.openNewFolderModal.bind(this);
-        this.handleCancel = this.handleCancel.bind(this);
-        this.handleConfirm = this.handleConfirm.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -35,7 +31,7 @@ class CreateFolderButton extends Component {
         ReactDOM.render(modal, $("#BH-new-folder-dialog")[0]);
     }
 
-    modalContent() {
+    modalContent = () => {
         return (
             <div className="builder-field form-input-field">
                 <span className="builder-field-label">
@@ -47,23 +43,23 @@ class CreateFolderButton extends Component {
                         className="builder-field-value"
                         maxLength="40" ref={(el) => this.nameInput = el}
                         value={this.state.newFolderName}
-                        onChange={TextFieldService.onChangeMethod("newFolderName", this)}
-                        onKeyDown={TextFieldService.onKeyDownMethod(this.handleConfirm, this)}
+                        onChange={TextFieldService.onChangeFunc("newFolderName", this)}
+                        onKeyDown={TextFieldService.onEnterFunc(this.handleConfirm, this)}
                     />
                 </span>
             </div>
         );
     }
 
-    openNewFolderModal() {
+    openNewFolderModal = () => {
         this.setState({ newFolderModalOpened: true, newFolderName: "" });
     }
 
-    handleCancel() {
+    handleCancel = () => {
         this.setState({ newFolderModalOpened: false });
     }
 
-    handleConfirm() {
+    handleConfirm = () => {
         if (!this.state.newFolderName || !this.state.newFolderName.trim()) return;
         this.setState({ newFolderModalOpened: false });
         const newFolder = new CharacterFolderData(new Date().getTime(), this.state.newFolderName.trim());

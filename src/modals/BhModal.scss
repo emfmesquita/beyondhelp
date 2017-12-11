@@ -1,6 +1,12 @@
-.Monster-options {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+.BH-modal {
+    .modal-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .BH-modal-padding {
+        padding: 8px !important;
+    }
     .modal-body {
         padding: 8px 0px;
         .list-group {

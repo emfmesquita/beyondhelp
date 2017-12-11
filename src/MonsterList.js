@@ -1,38 +1,36 @@
-import './MonsterList.css';
+import './MonsterList.scss';
 
 import { Col, Grid, Label, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
 
+import ColorService from './services/ColorService';
 import Monster from './Monster';
 import MonsterData from './data/MonsterData';
 import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
 import StorageService from './services/StorageService';
-import ToMonsterPageButton from "./monsterbuttons/ToMonsterPageButton";
 
 class MonsterList extends Component {
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
-        this.buildColumn = this.buildColumn.bind(this);
-        this.buildRows = this.buildRows.bind(this);
+    headerTextColor = () => {
+        return ColorService.listHeaderTextColor(this.props.list.headerColor);
     }
 
-    toggle() {
+    toggle = () => {
         return this.props.onToggle(this.props.list);
     }
 
-    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement) {
+    handleMonsterRightClick = (monster: MonsterData, monsterEl: HTMLElement) => {
         this.props.onMonsterRightClick(monster, monsterEl, this.props.list);
     }
 
-    buildColumn(monster: MonsterData) {
+    buildColumn = (monster: MonsterData) => {
         if (!monster) return false;
         return (
             <Col className="Monster-list-column" xs={12} key={monster.storageId}>
                 <Monster
                     monster={monster}
+                    list={this.props.list}
+                    encounter={this.props.encounter}
                     onMonsterHpChange={this.props.onMonsterHpChange}
                     onRightClick={this.handleMonsterRightClick}
                 />
@@ -40,7 +38,7 @@ class MonsterList extends Component {
         );
     }
 
-    buildRows() {
+    buildRows = () => {
         const monsters = this.props.list.monsters;
         if (!monsters) {
             return <span />;
@@ -51,6 +49,15 @@ class MonsterList extends Component {
         return rows;
     }
 
+    handleClick = (e: MouseEvent) => {
+        if (e.button !== 2) return;
+        this.handleOptionsClick();
+    }
+
+    handleOptionsClick = () => {
+        this.props.onRightClick(this.props.list, this.element);
+    }
+
     render() {
         const collapsed = this.props.list.collapsed;
         const numberOfMonsters = this.props.list.monsters ? this.props.list.monsters.length : 0;
@@ -58,17 +65,15 @@ class MonsterList extends Component {
         const title = collapsed ? "Expand" : "Collapse";
         const grid = collapsed ? <span /> : <Grid>{this.buildRows()}</Grid>;
         return (
-            <div>
-                <div>
-                    <div style={{ display: "inline-block" }}>
-                        <ToMonsterPageButton monsterId={this.props.list.monsterId} name={this.props.list.name} />
+            <div ref={(el) => this.element = el}>
+                <div className="Monster-list-header-container" onMouseDown={this.handleClick}>
+                    <MonsterMenuButton icon="glyphicon-cog" title="List Options" onClick={this.handleOptionsClick} />
+                    <div className="Monster-list-header" title={title} onClick={this.toggle} style={{ color: this.headerTextColor() }}>
+                        <div className="Monster-list-header-text">{`(${numberOfMonsters}) ${this.props.list.name}`}</div>
                     </div>
-                    <div className="Monster-list-header" title={title} onClick={this.toggle}>
-                        <span>{this.props.list.name} (x{numberOfMonsters}):</span>
-                        <span className="Monster-list-header-collapsible">
-                            <MonsterMenuButton icon={icon} onClick={() => { }} />
-                        </span>
-                    </div>
+                    <span className="Monster-list-header-collapsible" title={title} onClick={this.toggle}>
+                        <MonsterMenuButton icon={icon} onClick={() => { }} />
+                    </span>
                 </div>
                 {grid}
             </div>

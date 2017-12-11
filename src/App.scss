@@ -13,7 +13,7 @@ li {
     margin-bottom: 20px;
 }
 
-.Monster-options-opened {
+.Dialog-opened {
     min-height: 500px;
 }
 
@@ -39,6 +39,11 @@ li {
     p {
         margin: 0;
     }
+}
+
+.modal {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .modal-dialog {

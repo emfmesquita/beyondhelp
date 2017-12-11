@@ -30,37 +30,29 @@ class MonsterHpBar extends Component {
         };
 
         this.title = "Scroll or Click to Change HP";
-
-        this.progressBarLabel = this.progressBarLabel.bind(this);
-        this.calcHpRatio = this.calcHpRatio.bind(this);
-
-        // event handlers
-        this.click = this.click.bind(this);
-        this.doChangeHp = this.doChangeHp.bind(this);
-        this.killPopover = this.killPopover.bind(this);
-        this.mouseEnter = this.mouseEnter.bind(this);
-        this.mouseLeave = this.mouseLeave.bind(this);
-        this.handleChangeHpFormValue = this.handleChangeHpFormValue.bind(this);
-        this.handleChangeHpFormCancel = this.handleChangeHpFormCancel.bind(this);
-
-        // render helpers
-        this.renderProgressBar = this.renderProgressBar.bind(this);
-        this.renderHpChangeForm = this.renderHpChangeForm.bind(this);
-        this.renderWithPopover = this.renderWithPopover.bind(this);
-        this.renderWithTooltip = this.renderWithTooltip.bind(this);
     }
 
     componentWillUnmount() {
         clearTimeout(this.popoverFadeTimeout);
     }
 
-    progressBarLabel() {
+    progressBarLabel = () => {
         const monster = this.props.monster;
         const name = monster.name ? monster.name : `#${monster.number}`;
         return `${name} ${monster.currentHp} / ${monster.hp}`;
     }
 
-    calcHpRatio() {
+    progressBarColor = () => {
+        const color = this.props.monster.color || this.props.list.color || this.props.encounter.color;
+        return ColorService.progressBarBackground(color);
+    }
+
+    progressBarTextColor = () => {
+        const color = this.props.monster.textColor || this.props.list.textColor || this.props.encounter.textColor;
+        return ColorService.progressBarTextColor(color);
+    }
+
+    calcHpRatio = () => {
         return this.props.monster.currentHp / this.props.monster.hp * 100 + "%";
     }
 
@@ -68,7 +60,7 @@ class MonsterHpBar extends Component {
     /**
      * onClick - Turn on hp field mode
      */
-    click({ button }: MouseEvent) {
+    click = ({ button }: MouseEvent) => {
         if (button === 2) {
             this.setState({ hpFormMode: false, popoverVisible: false });
             return;
@@ -81,7 +73,7 @@ class MonsterHpBar extends Component {
     /**
      * onWheel - change hp if not on hp field mode
      */
-    doChangeHp(e: WheelEvent) {
+    doChangeHp = (e: WheelEvent) => {
         if (this.state.hpFormMode) {
             return;
         }
@@ -103,7 +95,7 @@ class MonsterHpBar extends Component {
     /**
      * onMouseEnter - reshow popover if fading
      */
-    mouseEnter() {
+    mouseEnter = () => {
         clearTimeout(this.popoverFadeTimeout);
         this.setState({ mouseIn: true });
     }
@@ -111,7 +103,7 @@ class MonsterHpBar extends Component {
     /**
      * onMouseLeave - fade popover
      */
-    mouseLeave() {
+    mouseLeave = () => {
         this.setState({ mouseIn: false });
         if (!this.state.hpFormMode) {
             this.popoverFadeTimeout = setTimeout(this.killPopover, MonsterHpBarPop.FadeTime);
@@ -121,14 +113,14 @@ class MonsterHpBar extends Component {
     /**
      * onHide - changes the state to destroy popover
      */
-    killPopover() {
+    killPopover = () => {
         this.setState({ popoverVisible: false });
     }
 
     /**
      * onHpChange of hp form value
      */
-    handleChangeHpFormValue(newValue: number) {
+    handleChangeHpFormValue = (newValue: number) => {
         this.props.onMonsterHpChange(this.props.monster, validHp(this.props.monster.hp, newValue)).then(() => {
             this.setState({ hpFormMode: false });
         });
@@ -137,25 +129,25 @@ class MonsterHpBar extends Component {
     /**
      * onCancel of hp form
      */
-    handleChangeHpFormCancel() {
+    handleChangeHpFormCancel = () => {
         this.setState({ hpFormMode: false });
     }
     //#endregion 
 
     //#region render helpers
-    renderProgressBar() {
+    renderProgressBar = () => {
         return (
             <div className="Monster-hp-bar" onWheel={this.doChangeHp} onClick={this.click} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
                 <div className="progress" ref={(el) => { this.progressBarDiv = el; }}>
-                    <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio(), backgroundImage: ColorService.progressBarBackground(this.props.monster.color) }}>
-                        <div className="Monster-hp-bar-text" style={{ color: ColorService.progressBarTextColor(this.props.monster.textColor) }}>{this.progressBarLabel()}</div>
+                    <div className="progress-bar progress-bar-danger" role="progressbar" style={{ width: this.calcHpRatio(), backgroundImage: this.progressBarColor() }}>
+                        <div className="Monster-hp-bar-text" style={{ color: this.progressBarTextColor() }}>{this.progressBarLabel()}</div>
                     </div>
                 </div>
             </div>
         );
     }
 
-    renderHpChangeForm() {
+    renderHpChangeForm = () => {
         return (
             <div className="Monster-hp-bar">
                 <MonsterHpBarForm currentHp={this.props.monster.currentHp} maxHp={this.props.monster.hp} onHpChange={this.handleChangeHpFormValue} onCancel={this.handleChangeHpFormCancel} />
@@ -163,7 +155,7 @@ class MonsterHpBar extends Component {
         );
     }
 
-    renderWithPopover(progressBar: JSX.Element) {
+    renderWithPopover = (progressBar: JSX.Element) => {
         const popProps = {
             idProp: this.props.monster.storageId,
             hpChange: this.props.monster.currentHp - this.state.popoverInitHp,
@@ -180,7 +172,7 @@ class MonsterHpBar extends Component {
         );
     }
 
-    renderWithTooltip(progressBar: JSX.Element) {
+    renderWithTooltip = (progressBar: JSX.Element) => {
         const tooltip = <Tooltip id={`tooltip-${this.props.monster.storageId}`}>{this.title}</Tooltip>;
         return <OverlayTrigger placement="top" overlay={tooltip} delay={200}>{progressBar}</OverlayTrigger>;
     }

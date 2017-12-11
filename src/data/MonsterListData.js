@@ -9,6 +9,9 @@ class MonsterListData extends Data {
         this.name = name;
         this.lastNumber = lastNumber;
         this.collapsed = false;
+        this.color = null;
+        this.textColor = null;
+        this.headerColor = null;
     }
 
     static savableClone(data: MonsterListData) {

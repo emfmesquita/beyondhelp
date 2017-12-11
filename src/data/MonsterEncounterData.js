@@ -6,6 +6,8 @@ class MonsterEncounterData extends Data {
         super(storageId);
         this.name = name;
         this.lists = undefined;
+        this.color = null;
+        this.textColor = null;
     }
 
     static savableClone(data: MonsterEncounterData) {

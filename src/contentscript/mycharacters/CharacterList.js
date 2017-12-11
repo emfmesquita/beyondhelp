@@ -6,10 +6,9 @@ import React, { Component } from 'react';
 class CharacterList extends Component {
     constructor(props) {
         super(props);
-        this.renderCharacters = this.renderCharacters.bind(this);
     }
 
-    renderCharacters() {
+    renderCharacters = () => {
         return this.props.characters.map(character => {
             const charHtml = character.content.children[0].outerHTML;
             // not dangerous all is done on client side, the html string does not come from server

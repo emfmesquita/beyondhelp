@@ -2,3 +2,7 @@
     float: right;
     top: 4px;
 }
+
+.Monster-option-disabled {
+    opacity: .15;
+}

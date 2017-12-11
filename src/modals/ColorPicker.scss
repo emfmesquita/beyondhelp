@@ -1,0 +1,30 @@
+.Color-picker-container {
+    >div {
+        height: 32px;
+        width: calc(100% - 24px);
+        border: 1px solid #ccc;
+        display: inline-block;
+    }
+    .Color-picker-field {
+        padding: 8px;
+        background: #fff;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        div {
+            height: 100%;
+            border-radius: 2px;
+        }
+    }
+    .Color-picker {
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+    }
+    .Monster-menu-button {
+        padding-left: 6px;
+        position: relative;
+        top: -8px;
+    }
+}

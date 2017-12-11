@@ -19,6 +19,18 @@ class LinkService {
             });
         };
     }
+
+    /**
+     * Creates new tab next to current.
+     * @param {string} address 
+     */
+    static toNewTabHandler(address: string) {
+        return ({ button }: MouseEvent) => {
+            chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
+                chrome.tabs.create({ url: address, active: false, index: tab.index + 1 });
+            });
+        };
+    }
 }
 
 export default LinkService;

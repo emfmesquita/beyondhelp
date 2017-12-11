@@ -1,6 +1,11 @@
+import "./ColorPicker.scss";
+
+import { FormControl, InputGroup } from 'react-bootstrap';
 import React, { Component } from "react";
 
 import ColorService from "../services/ColorService";
+import FieldLabel from "./FieldLabel";
+import MonsterMenuButton from "../monsterbuttons/MonsterMenuButton";
 import { SketchPicker } from "react-color";
 import reactCSS from "reactcss";
 
@@ -13,48 +18,28 @@ class ColorPicker extends Component {
     }
 
     render() {
-        const styles = reactCSS({
-            "default": {
-                color: {
-                    height: "100%",
-                    borderRadius: "2px",
-                    backgroundImage: ColorService.progressBarBackground(this.props.color)
-                },
-                container: {
-                    height: "32px",
-                    width: "100%",
-                    border: "1px solid #ccc"
-                },
-                swatch: {
-                    padding: "8px",
-                    background: "#fff",
-                    display: "inline-block",
-                    height: "100%",
-                    width: "100%",
-                    cursor: "pointer"
-                },
-                popover: {
-                    position: "absolute",
-                    left: "0px",
-                    zIndex: "2"
-                }
-            }
-        });
-
         return (
-            <div style={styles.container} title="Click to Toggle Color Picker">
-                <div style={styles.swatch} onClick={this.props.onTogglePicker}>
-                    <div style={styles.color} />
-                </div>
-                {this.props.showPicker ? <div style={styles.popover}>
-                    <SketchPicker
-                        disableAlpha
-                        width={210}
-                        presetColors={this.props.presetColors}
-                        color={this.props.color}
-                        onChange={this.props.onChange}
-                    />
-                </div> : null}
+            <div>
+                <FieldLabel label={this.props.label} />
+                <InputGroup bsSize="small" style={{ marginBottom: this.props.showPicker ? "300px" : "0px" }}>
+                    <div className="Color-picker-container">
+                        <div title="Click to Toggle Color Picker">
+                            <div className="Color-picker-field" onClick={this.props.onTogglePicker}>
+                                <div style={{ background: this.props.color }} />
+                            </div>
+                            {this.props.showPicker ? <div className="Color-picker">
+                                <SketchPicker
+                                    disableAlpha
+                                    width={210}
+                                    presetColors={this.props.presetColors}
+                                    color={this.props.color || this.props.defaultColor}
+                                    onChange={this.props.onChange}
+                                />
+                            </div> : null}
+                        </div>
+                        <MonsterMenuButton icon="glyphicon-erase" title="Erase" onClick={() => this.props.onChange({ hex: null })} />
+                    </div>
+                </InputGroup>
             </div>
         );
     }

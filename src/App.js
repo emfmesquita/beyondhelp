@@ -5,8 +5,10 @@ import React, { Component } from 'react';
 import $ from "jquery";
 import BadgeService from './services/BadgeService';
 import C from "./Constants";
-import DeleteEncounterAlert from "./modals/DeleteEncounterAlert";
+import ConfirmDialog from "./modals/ConfirmDialog";
+import EncounterOptionsModal from "./modals/EncounterOptionsModal";
 import Link from './monsterbuttons/Link';
+import ListOptionsModal from "./modals/ListOptionsModal";
 import MonsterData from './data/MonsterData';
 import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterList from './MonsterList';
@@ -46,34 +48,25 @@ class App extends Component {
             encounters: [],
             activeEncounter: null,
             showNewEncounterModal: false,
-            showDeleteEncounterAlert: false,
+            showDeleteEncounterDialog: false,
+            showDeleteListDialog: false,
             monsterOptions: {
                 show: false,
                 monster: null,
                 monsterEl: null,
+                list: null
+            },
+            listOptions: {
+                show: false,
                 list: null,
-                key: null
+                llistEl: null
+            },
+            encounterOptions: {
+                show: false,
+                deleteEnabled: false
             }
         };
 
-        this.modalOpenClass = this.modalOpenClass.bind(this);
-        this.activeEncounterChange = this.activeEncounterChange.bind(this);
-        this.canDeleteEncounter = this.canDeleteEncounter.bind(this);
-
-        this.handleNewEncounter = this.handleNewEncounter.bind(this);
-        this.handleDeleteEncounter = this.handleDeleteEncounter.bind(this);
-        this.handleListToggle = this.handleListToggle.bind(this);
-        this.handleMonsterHpChange = this.handleMonsterHpChange.bind(this);
-
-        this.handleMonsterRightClick = this.handleMonsterRightClick.bind(this);
-        this.closeMonsterOptions = this.closeMonsterOptions.bind(this);
-        this.handleDeleteMonster = this.handleDeleteMonster.bind(this);
-        this.handleFullHealMonster = this.handleFullHealMonster.bind(this);
-        this.handleKillMonster = this.handleKillMonster.bind(this);
-        this.handleMonsterCustomizeSave = this.handleMonsterCustomizeSave.bind(this);
-
-        this.buildLists = this.buildLists.bind(this);
-        this.mainContent = this.mainContent.bind(this);
         this.init();
 
         // listen when a monster is added from AddMonsterButton, reloads
@@ -82,25 +75,30 @@ class App extends Component {
         });
     }
 
-    init() {
+    init = () => {
         return StorageService.getMonsterEncounters().then(({ active, all }) => {
             this.setState({
                 encounters: all,
                 activeEncounter: active,
                 showNewEncounterModal: false,
-                showDeleteEncounterAlert: false
+                showDeleteEncounterDialog: false
             });
         }).catch(error => { throw error; });
     }
 
-    modalOpenClass() {
-        return this.state.monsterOptions.show ? "Monster-options-opened" : "";
+    dialogOpenClass = () => {
+        const s = this.state;
+        const states = [
+            s.showNewEncounterModal, s.showDeleteEncounterDialog, s.showDeleteListDialog,
+            s.monsterOptions.show, s.listOptions.show, s.encounterOptions.show
+        ];
+        return states.some(state => state) ? "Dialog-opened" : "";
     }
 
     /**
      * onChange of encounter select
      */
-    activeEncounterChange(newActiveEncounter: MonsterEncounterData) {
+    activeEncounterChange = (newActiveEncounter: MonsterEncounterData) => {
         StorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
             return StorageService.updateData(config);
@@ -109,34 +107,53 @@ class App extends Component {
         });
     }
 
-    canDeleteEncounter() {
+    canDeleteEncounter = () => {
         return this.state.encounters && this.state.encounters.length > 1;
     }
+
+    /**
+     * Updates an array of data on storage and updates state.
+     */
+    updateMany = (dataArray: Array<Data>, callback: Function): Promise => {
+        return StorageService.batchUpdate(dataArray).then(() => {
+            BadgeService.updateBadgeCount();
+        }).then(() => {
+            callback();
+            const encounters = this.state.encounters.sort((a, b) => a.name.localeCompare(b.name));
+            this.setState({ activeEncounter: this.state.activeEncounter, encounters });
+        }).catch((e) => { throw new Error(e); });
+    }
+
+    /**
+     * Kills an array of monsters, saves and updates state.
+     */
+    killMonsters = (monsters: Array<MonsterData>, callback: Function) => {
+        monsters.forEach(monster => monster.currentHp = 0);
+        this.updateMany(monsters, callback);
+    };
+
+    /**
+     * Full heal an array of monsters, saves and updates state.
+     */
+    fullHealMonsters = (monsters: Array<MonsterData>, callback: Function) => {
+        monsters.forEach(monster => monster.currentHp = monster.hp);
+        this.updateMany(monsters, callback);
+    };
 
     //#region children event handlers
     /**
      * onSave of new encounter modal
      */
-    handleNewEncounter(name: string) {
+    handleNewEncounter = (name: string) => {
         StorageService.createEncounter(name).then(() => {
             this.setState({ showNewEncounterModal: false }, () => this.init().then(BadgeService.updateBadgeCount));
         });
     }
 
     /**
-     * onDelete of delete encounter alert
-     */
-    handleDeleteEncounter() {
-        const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
-        StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
-            return this.init();
-        }).then(BadgeService.updateBadgeCount);
-    }
-
-    /**
      * onClick of monster list header
      */
-    handleListToggle(list: MonsterListData) {
+    handleListToggle = (list: MonsterListData) => {
         list.collapsed = !list.collapsed;
         this.setState({ activeEncounter: this.state.activeEncounter }, () => saveToggle(list));
     }
@@ -144,7 +161,7 @@ class App extends Component {
     /**
      * called by both change hp by form and and change hp by scroll
      */
-    handleMonsterHpChange(monster: MonsterData, newHp: number) {
+    handleMonsterHpChange = (monster: MonsterData, newHp: number) => {
         return new Promise((resolve, reject) => {
             monster.currentHp = newHp;
             this.setState({ activeEncounter: this.state.activeEncounter }, () => {
@@ -159,18 +176,18 @@ class App extends Component {
     /**
      * OnRightClick on monster
      */
-    handleMonsterRightClick(monster: MonsterData, monsterEl: HTMLElement, list: MonsterListData) {
-        this.setState({ monsterOptions: { show: true, monster, monsterEl, list, key: new Date().getTime() } });
+    handleMonsterRightClick = (monster: MonsterData, monsterEl: HTMLElement, list: MonsterListData) => {
+        this.setState({ monsterOptions: { show: true, monster, monsterEl, list } });
     }
 
-    closeMonsterOptions() {
-        this.setState({ monsterOptions: { show: false, monster: null, monsterEl: null, list: null, key: null } });
+    closeMonsterOptions = () => {
+        this.setState({ monsterOptions: { show: false, monster: null, monsterEl: null, list: null } });
     }
 
     /**
      * onClick of delete of monsters options
      */
-    handleDeleteMonster() {
+    handleDeleteMonster = () => {
         const toDeleteMonster = this.state.monsterOptions.monster;
         const monsterEl = this.state.monsterOptions.monsterEl;
         this.closeMonsterOptions();
@@ -192,25 +209,15 @@ class App extends Component {
         });
     }
 
-    handleFullHealMonster() {
-        const toHealMonster: MonsterData = this.state.monsterOptions.monster;
-        toHealMonster.currentHp = toHealMonster.hp;
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-            saveHpChanged(toHealMonster);
-            this.closeMonsterOptions();
-        });
+    handleFullHealMonster = () => {
+        this.fullHealMonsters([this.state.monsterOptions.monster], () => this.closeMonsterOptions());
     }
 
-    handleKillMonster() {
-        const toKillMonster: MonsterData = this.state.monsterOptions.monster;
-        toKillMonster.currentHp = 0;
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-            saveHpChanged(toKillMonster);
-            this.closeMonsterOptions();
-        });
+    handleKillMonster = () => {
+        this.killMonsters([this.state.monsterOptions.monster], () => this.closeMonsterOptions());
     }
 
-    handleMonsterCustomizeSave({ name, color, textColor, hp }) {
+    handleMonsterCustomizeSave = ({ name, color, textColor, hp }) => {
         const monster: MonsterData = this.state.monsterOptions.monster;
         monster.name = name;
         monster.color = color;
@@ -219,14 +226,138 @@ class App extends Component {
         if (monster.currentHp > hp) {
             monster.currentHp = hp;
         }
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-            StorageService.updateData(monster).then(() => this.closeMonsterOptions());
+        this.updateMany([monster], () => this.closeMonsterOptions());
+    }
+    //#endregion
+
+    //#region list options
+    handleListRightClick = (list: MonsterListData, listEl: HTMLElement) => {
+        this.setState({ listOptions: { show: true, list, listEl } });
+    }
+
+    closeListOptions = () => {
+        this.setState({ listOptions: { show: false, list: null, listEl: null } });
+    }
+
+    handleFullHealList = () => {
+        this.fullHealMonsters(this.state.listOptions.list.monsters, () => this.closeListOptions());
+    }
+
+    handleKillList = () => {
+        this.killMonsters(this.state.listOptions.list.monsters, () => this.closeListOptions());
+    }
+
+    openDeleteListDialog = () => {
+        this.setState(prev => {
+            const listOptions = prev.listOptions;
+            listOptions.show = false;
+            return { listOptions, showDeleteListDialog: true };
         });
+    }
+
+    cancelDeleteList = () => {
+        this.setState({ listOptions: { show: false, list: null, listEl: null }, showDeleteListDialog: false });
+    }
+
+    handleDeleteList = () => {
+        this.setState({ showDeleteListDialog: false });
+        const toDeleteList: MonsterListData = this.state.listOptions.list;
+        const listEl = this.state.listOptions.listEl;
+        this.closeListOptions();
+        $(listEl).fadeOut(400, () => {
+            const toDeleteId = toDeleteList.storageId;
+            StorageService.deleteList(toDeleteList).then(() => {
+                this.setState((prevState) => {
+                    prevState.activeEncounter.lists.forEach((list, listIndex) => {
+                        if (list.storageId !== toDeleteId) return;
+                        prevState.activeEncounter.lists.splice(listIndex, 1);
+                    });
+                    return { activeEncounter: prevState.activeEncounter };
+                });
+                BadgeService.updateBadgeCount();
+            });
+        });
+    }
+
+    handleListCustomizeSave = ({ color, textColor, headerColor }) => {
+        const list: MonsterData = this.state.listOptions.list;
+        list.color = color;
+        list.textColor = textColor;
+        list.headerColor = headerColor;
+        this.updateMany([list], () => this.closeListOptions());
+    }
+    //#endregion
+
+    //#region encounter options
+    openEncounterOptions = () => {
+        this.setState({ encounterOptions: { show: true, deleteEnabled: this.canDeleteEncounter() } });
+    }
+
+    closeCloseEncounterOptions = () => {
+        this.setState({ encounterOptions: { show: false, deleteEnabled: false } });
+    }
+
+    updateEncounterHp = (encounter: MonsterEncounterData) => {
+        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
+            StorageService.batchUpdate(list.monsters).then(() => {
+                BadgeService.updateBadgeCount();
+            }).catch((e) => { throw new Error(e); });
+            this.closeListOptions();
+        });
+    }
+
+    handleFullHealEncounter = () => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        let monsters = [];
+        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
+        this.fullHealMonsters(monsters, () => this.closeCloseEncounterOptions());
+    }
+
+    handleKillEncounter = () => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        let monsters = [];
+        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
+        this.killMonsters(monsters, () => this.closeCloseEncounterOptions());
+    }
+
+    handleColapseEncounter = () => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        encounter.lists.forEach(list => list.collapsed = true);
+        this.updateMany(encounter.lists, () => this.closeCloseEncounterOptions());
+    }
+
+    handleExpandEncounter = () => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        encounter.lists.forEach(list => list.collapsed = false);
+        this.updateMany(encounter.lists, () => this.closeCloseEncounterOptions());
+    }
+
+    openDeleteEncounterDialog = () => {
+        this.setState(prev => {
+            const encounterOptions = prev.encounterOptions;
+            encounterOptions.show = false;
+            return { encounterOptions, showDeleteEncounterDialog: true };
+        });
+    }
+
+    handleDeleteEncounter = () => {
+        const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
+        StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
+            return this.init();
+        }).then(BadgeService.updateBadgeCount);
+    }
+
+    handleEncounterCustomizeSave = ({ name, color, textColor }) => {
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        encounter.name = name;
+        encounter.color = color;
+        encounter.textColor = textColor;
+        this.updateMany([encounter], () => this.closeCloseEncounterOptions());
     }
     //#endregion
 
     //#region renderer
-    buildLists() {
+    buildLists = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return "";
         return encounter.lists.map((list, index) => {
@@ -236,9 +367,11 @@ class App extends Component {
                 <li className={last ? "Monster-list-last" : ""} key={id}>
                     <MonsterList
                         list={list}
+                        encounter={this.state.activeEncounter}
                         onToggle={this.handleListToggle}
                         onMonsterHpChange={this.handleMonsterHpChange}
                         onMonsterRightClick={this.handleMonsterRightClick}
+                        onRightClick={this.handleListRightClick}
                     />
                 </li>
             );
@@ -248,7 +381,7 @@ class App extends Component {
     /**
      * either a message of no monsters or the monster lists
      */
-    mainContent() {
+    renderMainContent = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         if (!encounter) return <span />;
         if (encounter.lists && encounter.lists.length > 0) return <ul>{this.buildLists()}</ul>;
@@ -267,17 +400,76 @@ class App extends Component {
         );
     }
 
+    renderModalsAndDialogs = () => {
+        return (
+            <div>
+                <NewEncounterModal
+                    key={"new-encounter-modal-" + this.state.showNewEncounterModal}
+                    show={this.state.showNewEncounterModal}
+                    onHide={() => this.setState({ showNewEncounterModal: false })}
+                    onSave={this.handleNewEncounter}
+                />
+                <ConfirmDialog
+                    show={this.state.showDeleteEncounterDialog}
+                    message="Are you sure you want to delete this encounter and all monsters in it?"
+                    onCancel={() => this.setState({ showDeleteEncounterDialog: false })}
+                    confirmButtonStyle="danger"
+                    confirmLabel="Delete"
+                    onConfirm={this.handleDeleteEncounter}
+                />
+                <ConfirmDialog
+                    show={this.state.showDeleteListDialog}
+                    message="Are you sure you want to delete this list and all monsters in it?"
+                    onCancel={this.cancelDeleteList}
+                    confirmButtonStyle="danger"
+                    confirmLabel="Delete"
+                    onConfirm={this.handleDeleteList}
+                />
+                <EncounterOptionsModal
+                    key={"encounter-option-modal-" + this.state.encounterOptions.show}
+                    show={this.state.encounterOptions.show}
+                    context={this.state.encounterOptions}
+                    encounter={this.state.activeEncounter}
+                    onHide={this.closeCloseEncounterOptions}
+                    onDelete={this.openDeleteEncounterDialog}
+                    onFullHeal={this.handleFullHealEncounter}
+                    onKill={this.handleKillEncounter}
+                    onCollapse={this.handleColapseEncounter}
+                    onExpand={this.handleExpandEncounter}
+                    onCustomizeSave={this.handleEncounterCustomizeSave}
+                />
+                <ListOptionsModal
+                    key={"list-option-modal-" + this.state.listOptions.show}
+                    show={this.state.listOptions.show}
+                    context={this.state.listOptions}
+                    encounter={this.state.activeEncounter}
+                    onHide={this.closeListOptions}
+                    onDelete={this.openDeleteListDialog}
+                    onFullHeal={this.handleFullHealList}
+                    onKill={this.handleKillList}
+                    onCustomizeSave={this.handleListCustomizeSave}
+                />
+                <MonsterOptionsModal
+                    key={"monster-option-modal-" + this.state.monsterOptions.show}
+                    show={this.state.monsterOptions.show}
+                    context={this.state.monsterOptions}
+                    encounter={this.state.activeEncounter}
+                    onHide={this.closeMonsterOptions}
+                    onDelete={this.handleDeleteMonster}
+                    onFullHeal={this.handleFullHealMonster}
+                    onKill={this.handleKillMonster}
+                    onCustomizeSave={this.handleMonsterCustomizeSave}
+                />
+            </div>
+        );
+    }
+
     render() {
         return (
-            <div className={this.modalOpenClass()} onContextMenu={(e) => e.preventDefault()}>
+            <div className={this.dialogOpenClass()} onContextMenu={(e) => e.preventDefault()}>
                 <div className="Monster-encounter-menu">
                     <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
-                    <MonsterMenuButton
-                        className={`btn ${this.canDeleteEncounter() ? "" : "disabled"}`}
-                        icon="glyphicon-trash"
-                        title="Delete Encounter"
-                        onClick={() => this.setState({ showDeleteEncounterAlert: true })}
-                    />
+                    <MonsterMenuButton className="btn" icon="glyphicon-cog" title="Encounter Options" onClick={this.openEncounterOptions} />
                     <Select
                         className="Monster-encounter-select"
                         labelKey="name"
@@ -290,28 +482,9 @@ class App extends Component {
                     />
                 </div>
 
-                {this.mainContent()}
+                {this.renderMainContent()}
 
-                <NewEncounterModal
-                    show={this.state.showNewEncounterModal}
-                    onHide={() => this.setState({ showNewEncounterModal: false })}
-                    onSave={this.handleNewEncounter}
-                />
-                <DeleteEncounterAlert
-                    show={this.state.showDeleteEncounterAlert}
-                    onHide={() => this.setState({ showDeleteEncounterAlert: false })}
-                    onDelete={this.handleDeleteEncounter}
-                />
-                <MonsterOptionsModal
-                    key={"option-modal-" + this.state.monsterOptions.key}
-                    show={this.state.monsterOptions.show}
-                    context={this.state.monsterOptions}
-                    onHide={this.closeMonsterOptions}
-                    onDelete={this.handleDeleteMonster}
-                    onFullHeal={this.handleFullHealMonster}
-                    onKill={this.handleKillMonster}
-                    onCustomizeSave={this.handleMonsterCustomizeSave}
-                />
+                {this.renderModalsAndDialogs()}
             </div >
         );
     }

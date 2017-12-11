@@ -1,0 +1,30 @@
+.Monster-list-header-container {
+    display: flex;
+    &>* {
+        display: inline-flex;
+    }
+    &>.Monster-menu-button {
+        font-size: 12px;
+        position: relative;
+        top: 2px;
+    }
+    .Monster-list-header {
+        width: calc(100% - 30px);
+        cursor: pointer;
+        position: relative;
+        top: -2px;
+        .Monster-list-header-text {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .Monster-list-header-collapsible {
+        position: absolute;
+        right: 2px;
+    }
+}
+
+.Monster-list-column {
+    padding: 5px;
+}

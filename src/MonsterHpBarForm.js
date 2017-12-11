@@ -9,35 +9,30 @@ class MonsterHpBarForm extends Component {
     constructor(props) {
         super(props);
         this.state = { value: this.props.currentHp + "" };
-        this.inputRendered = this.inputRendered.bind(this);
-        this.validate = this.validate.bind(this);
-        this.changeValue = this.changeValue.bind(this);
-        this.okClick = this.okClick.bind(this);
-        this.keyDown = this.keyDown.bind(this);
     }
 
-    inputRendered(input: HTMLInputElement) {
+    inputRendered = (input: HTMLInputElement) => {
         if (input) {
             input.focus();
             input.setSelectionRange(0, this.state.value.length);
         }
     }
 
-    validate() {
+    validate = () => {
         return isNaN(this.state.value) ? "error" : "success";
     }
 
     /**
      * onChange of hp field value
      */
-    changeValue(e) {
+    changeValue = (e) => {
         this.setState({ value: e.target.value });
     }
 
     /**
      * onClick of ok button
      */
-    okClick(e: MouseEvent) {
+    okClick = (e: MouseEvent) => {
         if (this.validate() === "success") {
             this.props.onHpChange(Number(this.state.value));
             return;
@@ -49,7 +44,7 @@ class MonsterHpBarForm extends Component {
     /**
      * onKeyDown inside when input focused
      */
-    keyDown(e: KeyboardEvent) {
+    keyDown = (e: KeyboardEvent) => {
         if (e.which === 13 || e.keyCode === 13) {
             this.okClick();
             return;

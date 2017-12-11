@@ -41,6 +41,7 @@ module.exports.config = (isProd) => {
             options: {
                 babelrc: false,
                 presets: ['env', 'flow', 'react'],
+                plugins: [require('babel-plugin-transform-class-properties')],
                 cacheDirectory: true,
                 compact: !!isProd,
                 cacheDirectory: !isProd

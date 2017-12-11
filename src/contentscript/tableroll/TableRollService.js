@@ -186,12 +186,7 @@ class TableRollService {
 }
 
 class ClickableRoller extends Component {
-    constructor(props) {
-        super(props);
-        this.roll = this.roll.bind(this);
-    }
-
-    roll() {
+    roll = () => {
         throttledRoll(this.props.data, this.rollEl);
     }
 

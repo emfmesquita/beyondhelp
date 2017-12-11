@@ -1,5 +1,13 @@
+import { Component } from 'react';
+
 class TextFieldService {
-    static onKeyDownMethod(saveFunc, caller) {
+    /**
+     * Creates a function that handles a enter keydown on a text field.
+     * @param {Function} saveFunc 
+     * @param {Component} caller 
+     */
+    static onEnterFunc(saveFunc: Function, caller: Component) {
+        if (!saveFunc) return () => { };
         let func = function (e: KeyboardEvent) {
             if (e.which === 13 || e.keyCode === 13) {
                 saveFunc && saveFunc();
@@ -9,11 +17,14 @@ class TextFieldService {
         return func;
     }
 
-    static onChangeMethod(stateKey: string, caller) {
+    /**
+     * Creates a function that handles change of value on a text field.
+     * @param {string} stateKey 
+     * @param {Component} caller 
+     */
+    static onChangeFunc(stateKey: string, caller: Component) {
         let func = function (e) {
-            const state = {};
-            state[stateKey] = e.target.value;
-            this.setState(state);
+            this.setState({ [stateKey]: e.target.value });
         };
         func = func.bind(caller);
         return func;

@@ -5,52 +5,30 @@ import BhModal from "./BhModal";
 import C from "../Constants";
 import ColorPicker from "./ColorPicker";
 import ColorService from "../services/ColorService";
-import MonsterData from '../data/MonsterData';
+import LinkService from "../services/LinkService";
+import MonsterEncounterData from '../data/MonsterEncounterData';
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
 import TextField from "./TextField";
 
-const maxHpRegex = /^[0-9]+$/i;
-
-class MonsterOptionsModal extends Component {
+class EncounterOptionsModal extends Component {
     constructor(props) {
         super(props);
 
-        const monster: MonsterData = props.context.monster;
+        const encounter: MonsterEncounterData = props.encounter || {};
 
         this.state = {
             showCustomize: false,
             showColorPicker: false,
             showTextColorPicker: false,
-            name: monster && monster.name,
-            hp: monster && monster.hp,
-            color: monster && monster.color,
-            textColor: monster && monster.textColor
+            name: encounter && encounter.name,
+            color: encounter && encounter.color,
+            textColor: encounter && encounter.textColor
         };
     }
 
-    buildTitle = () => {
-        const list = this.props.context.list;
-        const mon = this.props.context.monster;
-        if (!list || !mon) return "";
-        if (mon.name) return mon.name;
-        return `${list.name} #${mon.number}`;
-    }
-
-    sampleLabel = () => {
-        const monster = this.props.context.monster;
-        const name = this.state.name ? this.state.name : `#${monster.number}`;
-        return `${name} ${this.state.hp} / ${this.state.hp}`;
-    }
-
-    sampleColor = () => {
-        const list = this.props.context.list;
-        return this.state.color || list && list.color || this.props.encounter.color;
-    }
-
-    sampleTextColor = () => {
-        const list = this.props.context.list;
-        return this.state.textColor || list && list.textColor || this.props.encounter.textColor;
+    hasLists = () => {
+        return this.props.encounter && this.props.encounter.lists && this.props.encounter.lists.length > 0;
     }
 
     toCustomizeOptions = () => {
@@ -58,27 +36,25 @@ class MonsterOptionsModal extends Component {
     }
 
     saveCustomize = () => {
-        if (this.validateCustomize() === "error") return;
         this.props.onCustomizeSave({
             name: this.state.name,
-            hp: parseInt(this.state.hp),
             color: this.state.color,
             textColor: this.state.textColor
         });
-    }
-
-    validateCustomize = () => {
-        return !this.state.hp || !maxHpRegex.test(this.state.hp) ? "error" : "success";
     }
 
     renderBaseOptions = () => {
         return (
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
-                <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill (0HP)</OptionLine>
-                <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal</OptionLine>
+                <OptionLine onClick={this.props.onCollapse} disabled={!this.hasLists()} icon="resize-small">Collapse All</OptionLine>
+                <OptionLine onClick={this.props.onExpand} disabled={!this.hasLists()} icon="resize-full">Expand All</OptionLine>
+                <OptionLine onClick={this.props.onKill} disabled={!this.hasLists()} icon="thumbs-down">Kill All (0HP)</OptionLine>
+                <OptionLine onClick={this.props.onFullHeal} disabled={!this.hasLists()} icon="heart">Full Heal All</OptionLine>
                 <hr />
-                <OptionLine onClick={this.props.onDelete} icon="trash">Delete</OptionLine>
+                <OptionLine onClick={this.props.onDelete} disabled={!this.props.context.deleteEnabled} icon="trash">
+                    Delete Encounter
+                </OptionLine>
             </ListGroup>
         );
     }
@@ -87,13 +63,10 @@ class MonsterOptionsModal extends Component {
         return (
             <ListGroup>
                 <OptionLine>
-                    <SampleHpBar label={this.sampleLabel()} color={this.sampleColor()} textColor={this.sampleTextColor()} />
+                    <SampleHpBar label="#1 100 / 100" color={this.state.color} textColor={this.state.textColor} />
                 </OptionLine>
                 <OptionLine>
                     <TextField label="Name" value={this.state.name} valuePropName="name" onEnter={this.saveCustomize} container={this} />
-                </OptionLine>
-                <OptionLine>
-                    <TextField label="Max HP" value={this.state.hp} valuePropName="hp" onEnter={this.saveCustomize} validationState={this.validateCustomize()} container={this} />
                 </OptionLine>
                 <OptionLine>
                     <ColorPicker
@@ -124,7 +97,7 @@ class MonsterOptionsModal extends Component {
     renderCustomizeFooter = () => {
         return (
             <div>
-                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize} disabled={this.validateCustomize() !== "success"}>Save</Button>
+                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize}>Save</Button>
                 <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
             </div>
         );
@@ -135,7 +108,7 @@ class MonsterOptionsModal extends Component {
             <BhModal
                 show={this.props.show}
                 onHide={this.props.onHide}
-                title={this.buildTitle()}
+                title={this.props.encounter && this.props.encounter.name}
                 body={this.state.showCustomize ? this.renderCustomize() : this.renderBaseOptions()}
                 footer={this.state.showCustomize ? this.renderCustomizeFooter() : null}
             />
@@ -143,4 +116,4 @@ class MonsterOptionsModal extends Component {
     }
 }
 
-export default MonsterOptionsModal;
+export default EncounterOptionsModal;
