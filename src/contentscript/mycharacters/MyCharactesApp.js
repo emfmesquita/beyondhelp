@@ -84,7 +84,7 @@ class MyCharactesApp extends Component {
      * @param {number} delta 
      */
     move = (folder: CharacterFolderData, delta: number) => {
-        const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
+        const folders: CharacterFolderData[] = this.state.foldersData.folders;
         const idx = folders.indexOf(folder);
         folders.splice(idx, 1);
         folders.splice(idx + delta, 0, folder);
@@ -104,7 +104,7 @@ class MyCharactesApp extends Component {
      * @param {CharacterFolderData} folder 
      */
     handleDelete = (folder: CharacterFolderData) => {
-        const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
+        const folders: CharacterFolderData[] = this.state.foldersData.folders;
         const idx = folders.indexOf(folder);
         folders.splice(idx, 1);
         this.saveData(this.state.foldersData);
@@ -116,10 +116,10 @@ class MyCharactesApp extends Component {
      * Saves on storage.
      * 
      * @param {CharacterFolderData} folder 
-     * @param {Array<string>} characterIds 
+     * @param {string[]} characterIds 
      */
-    handleAddCharacter = (folder: CharacterFolderData, characterIds: Array<string>) => {
-        const folders: Array<CharacterFolderData> = this.state.foldersData.folders;
+    handleAddCharacter = (folder: CharacterFolderData, characterIds: string[]) => {
+        const folders: CharacterFolderData[] = this.state.foldersData.folders;
 
         characterIds.forEach(characterId => {
             folders.forEach(oldFolder => {
@@ -135,10 +135,10 @@ class MyCharactesApp extends Component {
      * Called when user confirms the removal of characters from modal. 
      * Removes the characters from the folder and saves on storage.
      * 
-     * @param {*} folder 
-     * @param {*} characterIds 
+     * @param {CharacterFolderData} folder 
+     * @param {string[]} characterIds 
      */
-    handleRemoveCharacter = (folder: CharacterFolderData, characterIds: Array<string>) => {
+    handleRemoveCharacter = (folder: CharacterFolderData, characterIds: string[]) => {
         characterIds.forEach(characterId => {
             const idx = folder.characterIds.indexOf(characterId);
             if (idx !== -1) folder.characterIds.splice(idx, 1);

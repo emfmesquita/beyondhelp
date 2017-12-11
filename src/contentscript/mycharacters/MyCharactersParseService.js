@@ -6,7 +6,7 @@ class MyCharactersParseService {
     /**
      * Parse characters from my characters page as a Array of CharacterData.
      */
-    static parseCharacters(): Array<CharacterData> {
+    static parseCharacters(): CharacterData[] {
         const characters = [];
         $(".ddb-campaigns-character-card-wrapper").each((index, charWrapperEl) => {
             const jqcharWrapperEl = $(charWrapperEl);

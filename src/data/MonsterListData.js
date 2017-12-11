@@ -8,16 +8,11 @@ class MonsterListData extends Data {
         this.monsterId = monsterId;
         this.name = name;
         this.lastNumber = lastNumber;
+        this.order = 0;
         this.collapsed = false;
         this.color = null;
         this.textColor = null;
         this.headerColor = null;
-    }
-
-    static savableClone(data: MonsterListData) {
-        const clone = new MonsterListData(data.storageId, data.encounterId, data.monsterId, data.name, data.lastNumber);
-        clone.collapsed = data.collapsed;
-        return clone;
     }
 
     get monsters() {

@@ -28,8 +28,7 @@ import { throttle } from 'lodash';
  * Handler called after toggle, updates the list on storage.
  */
 const saveToggle = throttle((list: MonsterListData) => {
-    const toSave = MonsterListData.savableClone(list);
-    StorageService.updateData(toSave).catch((e) => { throw new Error(e); });
+    StorageService.updateData(list).catch((e) => { throw new Error(e); });
 }, 500);
 
 /**
@@ -112,10 +111,10 @@ class App extends Component {
     }
 
     /**
-     * Updates an array of data on storage and updates state.
+     * Updates data or an array of data on storage and updates state.
      */
-    updateMany = (dataArray: Array<Data>, callback: Function): Promise => {
-        return StorageService.batchUpdate(dataArray).then(() => {
+    update = (dataArray: Data | Data[], callback: Function): Promise => {
+        return StorageService.updateData(dataArray).then(() => {
             BadgeService.updateBadgeCount();
         }).then(() => {
             callback();
@@ -127,17 +126,17 @@ class App extends Component {
     /**
      * Kills an array of monsters, saves and updates state.
      */
-    killMonsters = (monsters: Array<MonsterData>, callback: Function) => {
+    killMonsters = (monsters: MonsterData[], callback: Function) => {
         monsters.forEach(monster => monster.currentHp = 0);
-        this.updateMany(monsters, callback);
+        this.update(monsters, callback);
     };
 
     /**
      * Full heal an array of monsters, saves and updates state.
      */
-    fullHealMonsters = (monsters: Array<MonsterData>, callback: Function) => {
+    fullHealMonsters = (monsters: MonsterData[], callback: Function) => {
         monsters.forEach(monster => monster.currentHp = monster.hp);
-        this.updateMany(monsters, callback);
+        this.update(monsters, callback);
     };
 
     //#region children event handlers
@@ -226,7 +225,7 @@ class App extends Component {
         if (monster.currentHp > hp) {
             monster.currentHp = hp;
         }
-        this.updateMany([monster], () => this.closeMonsterOptions());
+        this.update(monster, () => this.closeMonsterOptions());
     }
     //#endregion
 
@@ -284,7 +283,7 @@ class App extends Component {
         list.color = color;
         list.textColor = textColor;
         list.headerColor = headerColor;
-        this.updateMany([list], () => this.closeListOptions());
+        this.update(list, () => this.closeListOptions());
     }
     //#endregion
 
@@ -299,7 +298,7 @@ class App extends Component {
 
     updateEncounterHp = (encounter: MonsterEncounterData) => {
         this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-            StorageService.batchUpdate(list.monsters).then(() => {
+            StorageService.updateData(list.monsters).then(() => {
                 BadgeService.updateBadgeCount();
             }).catch((e) => { throw new Error(e); });
             this.closeListOptions();
@@ -323,13 +322,13 @@ class App extends Component {
     handleColapseEncounter = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         encounter.lists.forEach(list => list.collapsed = true);
-        this.updateMany(encounter.lists, () => this.closeCloseEncounterOptions());
+        this.update(encounter.lists, () => this.closeCloseEncounterOptions());
     }
 
     handleExpandEncounter = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         encounter.lists.forEach(list => list.collapsed = false);
-        this.updateMany(encounter.lists, () => this.closeCloseEncounterOptions());
+        this.update(encounter.lists, () => this.closeCloseEncounterOptions());
     }
 
     openDeleteEncounterDialog = () => {
@@ -352,7 +351,7 @@ class App extends Component {
         encounter.name = name;
         encounter.color = color;
         encounter.textColor = textColor;
-        this.updateMany([encounter], () => this.closeCloseEncounterOptions());
+        this.update(encounter, () => this.closeCloseEncounterOptions());
     }
     //#endregion
 

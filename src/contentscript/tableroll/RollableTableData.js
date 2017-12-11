@@ -1,7 +1,7 @@
 import RollableData from "./RollableData";
 
 class RollableTableData {
-    constructor(rolables: Array<RollableData>) {
+    constructor(rolables: RollableData[]) {
         this.rolables = rolables;
     }
 }

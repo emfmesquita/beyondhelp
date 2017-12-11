@@ -109,6 +109,14 @@ const deleteData = function (data: Data | Data[]): Promise<Data> {
     });
 };
 
+const prepareData = function (data: Data, storageIdHandler: Function, storageEntry) {
+    if (!data.storageId) data.storageId = storageIdHandler();
+    const clone = JSON.parse(JSON.stringify(data));
+    delete clone.lists;
+    delete clone.monsters;
+    storageEntry[clone.storageId] = clone;
+};
+
 class StorageService {
 
     /**
@@ -120,31 +128,19 @@ class StorageService {
         });
     }
 
-    static createData(dataClass: string, data: Data): Promise {
+    static createData(dataClass: string, data: Data | Data[]): Promise {
         return new Promise((resolve, reject) => {
             const storageEntry: StorageData = {};
-            if (!data.storageId) {
-                data.storageId = Prefix.createStorageId(dataClass);
+            if (Array.isArray(data)) {
+                data.forEach((dataEntry, idx) => {
+                    prepareData(dataEntry, () => Prefix.createStorageId(dataClass, idx), storageEntry);
+                });
+            } else {
+                prepareData(data, () => Prefix.createStorageId(dataClass), storageEntry);
             }
-            storageEntry[data.storageId] = data;
+
             chrome.storage.sync.set(storageEntry, () => {
                 chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(data);
-                chrome.runtime.sendMessage({ reload: true });
-            });
-        });
-    }
-
-    static batchCreate(dataClass: string, dataArray: Array<Data>): Promise {
-        return new Promise((resolve, reject) => {
-            const storageEntry: StorageData = {};
-            dataArray.forEach((data, idx) => {
-                if (!data.storageId) {
-                    data.storageId = Prefix.createStorageId(dataClass, idx);
-                }
-                storageEntry[data.storageId] = data;
-            });
-            chrome.storage.sync.set(storageEntry, () => {
-                chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(dataArray);
                 chrome.runtime.sendMessage({ reload: true });
             });
         });
@@ -154,12 +150,8 @@ class StorageService {
         return getStorageData(id).then(storageData => storageData[id]);
     }
 
-    static updateData(data: Data): Promise {
+    static updateData(data: Data | Data[]): Promise {
         return this.createData(null, data);
-    }
-
-    static batchUpdate(dataArray: Array<Data>): Promise {
-        return this.batchCreate(null, dataArray);
     }
 
     /**
@@ -230,6 +222,8 @@ class StorageService {
             if (listMap.length === 0) {
                 return result;
             }
+
+            // check existing ordering info
 
             const monsterMap: Map<string, MonsterData[]> = findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
             listMap.forEach(lists => lists.forEach(list => list.monsters = monsterMap.get(list.storageId)));

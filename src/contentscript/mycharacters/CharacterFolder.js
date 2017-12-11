@@ -65,10 +65,10 @@ class CharacterFolder extends Component {
 
     /**
      * Builds the content of the modals to remove/add characters from folders
-     * @param {Array<CharacterData>} charList List of chars that are options
+     * @param {CharacterData[]} charList List of chars that are options
      * @param {string} selectProp target property of state object that should be updated with the selection
      */
-    baseCharacterModalContent = (charList: Array<CharacterData>, selectProp: string) => {
+    baseCharacterModalContent = (charList: CharacterData[], selectProp: string) => {
         let handleSelected = (e) => {
             const options = e.target.options;
             const value = [];
