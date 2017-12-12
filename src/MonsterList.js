@@ -8,7 +8,6 @@ import Monster from './Monster';
 import MonsterData from './data/MonsterData';
 import MonsterListData from './data/MonsterListData';
 import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
-import StorageService from './services/StorageService';
 
 class MonsterList extends Component {
     headerTextColor = () => {

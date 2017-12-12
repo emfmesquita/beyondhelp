@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import MonsterContentData from "./MonsterContentData";
+import MonsterStorageService from '../../services/storage/MonsterStorageService';
 import NotificationService from "../../services/NotificationService";
-import StorageService from '../../services/StorageService';
 
 class AddMonsterButton extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class AddMonsterButton extends Component {
 
     addMonster() {
         // creates a new monster on storage and send a message to the background page to create a notification
-        StorageService.createMonster(this.props.monsterdata.id, this.props.monsterdata.name, this.props.monsterdata.hp)
+        MonsterStorageService.createMonster(this.props.monsterdata.id, this.props.monsterdata.name, this.props.monsterdata.hp)
             .then(monster => NotificationService.notifyNewMonster(this.props.monsterdata.name, monster))
             .catch(e => { throw e; });
     }

@@ -11,13 +11,16 @@ import Link from './monsterbuttons/Link';
 import ListOptionsModal from "./modals/ListOptionsModal";
 import MonsterData from './data/MonsterData';
 import MonsterEncounterData from './data/MonsterEncounterData';
+import MonsterEncounterStorageService from './services/storage/MonsterEncounterStorageService';
 import MonsterList from './MonsterList';
 import MonsterListData from './data/MonsterListData';
+import MonsterListStorageService from './services/storage/MonsterListStorageService';
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import MonsterOptionsModal from "./modals/MonsterOptionsModal";
+import MonsterStorageService from './services/storage/MonsterStorageService';
 import NewEncounterModal from "./modals/NewEncounterModal";
 import Select from 'react-select';
-import StorageService from './services/StorageService';
+import StorageService from './services/storage/StorageService';
 import { Well } from 'react-bootstrap';
 import { throttle } from 'lodash';
 
@@ -75,7 +78,7 @@ class App extends Component {
     }
 
     init = () => {
-        return StorageService.getMonsterEncounters().then(({ active, all }) => {
+        return MonsterEncounterStorageService.getMonsterEncounters().then(({ active, all }) => {
             this.setState({
                 encounters: all,
                 activeEncounter: active,
@@ -144,7 +147,7 @@ class App extends Component {
      * onSave of new encounter modal
      */
     handleNewEncounter = (name: string) => {
-        StorageService.createEncounter(name).then(() => {
+        MonsterEncounterStorageService.createEncounter(name).then(() => {
             this.setState({ showNewEncounterModal: false }, () => this.init().then(BadgeService.updateBadgeCount));
         });
     }
@@ -192,7 +195,7 @@ class App extends Component {
         this.closeMonsterOptions();
         $(monsterEl).fadeOut(400, () => {
             const toDeleteId = toDeleteMonster.storageId;
-            StorageService.deleteMonster(toDeleteMonster).then(() => {
+            MonsterStorageService.deleteMonster(toDeleteMonster).then(() => {
                 this.setState((prevState) => {
                     prevState.activeEncounter.lists.forEach((list, metaIndex) => {
                         list.monsters.forEach((monster, monsterIndex) => {
@@ -265,7 +268,7 @@ class App extends Component {
         this.closeListOptions();
         $(listEl).fadeOut(400, () => {
             const toDeleteId = toDeleteList.storageId;
-            StorageService.deleteList(toDeleteList).then(() => {
+            MonsterListStorageService.deleteList(toDeleteList).then(() => {
                 this.setState((prevState) => {
                     prevState.activeEncounter.lists.forEach((list, listIndex) => {
                         if (list.storageId !== toDeleteId) return;
@@ -341,7 +344,7 @@ class App extends Component {
 
     handleDeleteEncounter = () => {
         const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
-        StorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
+        MonsterEncounterStorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
             return this.init();
         }).then(BadgeService.updateBadgeCount);
     }

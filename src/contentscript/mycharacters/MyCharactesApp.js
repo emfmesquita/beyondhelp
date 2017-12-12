@@ -5,10 +5,10 @@ import CharacterData from "../../data/CharacterData";
 import CharacterFolder from "./CharacterFolder";
 import CharacterFolderData from "../../data/CharacterFolderData";
 import CharacterFoldersData from "../../data/CharacterFoldersData";
+import CharacterFoldersStorageService from "../../services/storage/CharacterFoldersStorageService";
 import CharacterList from "./CharacterList";
 import CreateFolderButton from "./CreateFolderButton";
 import ReactDOM from 'react-dom';
-import StorageService from "../../services/StorageService";
 
 class MyCharactesApp extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class MyCharactesApp extends Component {
         });
 
         // load folders from storage
-        StorageService.getMyCharacterFolders(this.props.owner).then(this.updateState);
+        CharacterFoldersStorageService.getMyCharacterFolders(this.props.owner).then(this.updateState);
     }
 
     updateState = (foldersData: CharacterFoldersData) => {
@@ -56,7 +56,7 @@ class MyCharactesApp extends Component {
      * @param {CharacterFoldersData} data 
      */
     saveData = (data: CharacterFoldersData) => {
-        StorageService.saveMyCharactesFolders(data, this.props.owner).then(this.updateState);
+        CharacterFoldersStorageService.saveMyCharactesFolders(data, this.props.owner).then(this.updateState);
     }
 
     /**
