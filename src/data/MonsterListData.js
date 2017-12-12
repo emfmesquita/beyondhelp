@@ -9,6 +9,7 @@ class MonsterListData extends Data {
         this.name = name;
         this.lastNumber = lastNumber;
         this.order = 0;
+        this.hpexp = null;
         this.collapsed = false;
         this.color = null;
         this.textColor = null;

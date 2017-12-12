@@ -314,6 +314,14 @@ class App extends Component {
         list.headerColor = headerColor;
         this.update(list, () => this.closeListOptions());
     }
+
+    handleAddCustomMonster = () => {
+        const list: MonsterData = this.state.listOptions.list;
+        MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(monster => {
+            this.closeListOptions();
+            this.init();
+        }).catch((e) => { throw new Error(e); });
+    }
     //#endregion
 
     //#region encounter options
@@ -321,7 +329,7 @@ class App extends Component {
         this.setState({ encounterOptions: { show: true, deleteEnabled: this.canDeleteEncounter() } });
     }
 
-    closeCloseEncounterOptions = () => {
+    closeEncounterOptions = () => {
         this.setState({ encounterOptions: { show: false, deleteEnabled: false } });
     }
 
@@ -338,26 +346,26 @@ class App extends Component {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         let monsters = [];
         encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
-        this.fullHealMonsters(monsters, () => this.closeCloseEncounterOptions());
+        this.fullHealMonsters(monsters, () => this.closeEncounterOptions());
     }
 
     handleKillEncounter = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         let monsters = [];
         encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
-        this.killMonsters(monsters, () => this.closeCloseEncounterOptions());
+        this.killMonsters(monsters, () => this.closeEncounterOptions());
     }
 
     handleColapseEncounter = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         encounter.lists.forEach(list => list.collapsed = true);
-        this.update(encounter.lists, () => this.closeCloseEncounterOptions());
+        this.update(encounter.lists, () => this.closeEncounterOptions());
     }
 
     handleExpandEncounter = () => {
         const encounter: MonsterEncounterData = this.state.activeEncounter;
         encounter.lists.forEach(list => list.collapsed = false);
-        this.update(encounter.lists, () => this.closeCloseEncounterOptions());
+        this.update(encounter.lists, () => this.closeEncounterOptions());
     }
 
     openDeleteEncounterDialog = () => {
@@ -380,7 +388,18 @@ class App extends Component {
         encounter.name = name;
         encounter.color = color;
         encounter.textColor = textColor;
-        this.update(encounter, () => this.closeCloseEncounterOptions());
+        this.update(encounter, () => this.closeEncounterOptions());
+    }
+
+    handleNewCustomMonsterSave = ({ name, hpexp }) => {
+        let list: MonsterListData;
+        MonsterListStorageService.createCustomList(name, hpexp, this.state.activeEncounter).then(newList => {
+            list = newList;
+            return MonsterStorageService.createMonster(list.monsterId, list.name, hpexp);
+        }).then(monster => {
+            this.closeEncounterOptions();
+            this.init();
+        }).catch((e) => { throw new Error(e); });
     }
     //#endregion
 
@@ -458,13 +477,14 @@ class App extends Component {
                     show={this.state.encounterOptions.show}
                     context={this.state.encounterOptions}
                     encounter={this.state.activeEncounter}
-                    onHide={this.closeCloseEncounterOptions}
+                    onHide={this.closeEncounterOptions}
                     onDelete={this.openDeleteEncounterDialog}
                     onFullHeal={this.handleFullHealEncounter}
                     onKill={this.handleKillEncounter}
                     onCollapse={this.handleColapseEncounter}
                     onExpand={this.handleExpandEncounter}
                     onCustomizeSave={this.handleEncounterCustomizeSave}
+                    onNewMonserSave={this.handleNewCustomMonsterSave}
                 />
                 <ListOptionsModal
                     key={"list-option-modal-" + this.state.listOptions.show}
@@ -478,6 +498,7 @@ class App extends Component {
                     onFullHeal={this.handleFullHealList}
                     onKill={this.handleKillList}
                     onCustomizeSave={this.handleListCustomizeSave}
+                    onAddCustomMonster={this.handleAddCustomMonster}
                 />
                 <MonsterOptionsModal
                     key={"monster-option-modal-" + this.state.monsterOptions.show}

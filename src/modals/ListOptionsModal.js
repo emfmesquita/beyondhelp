@@ -45,6 +45,12 @@ class ListOptionsModal extends Component {
         return encounter.lists.indexOf(list) === encounter.lists.length - 1;
     }
 
+    isCustom = () => {
+        const list: MonsterListData = this.props.context.list;
+        if (!list || !list.monsterId) return false;
+        return list.monsterId.startsWith("bh-");
+    }
+
     toCustomizeOptions = () => {
         this.setState({ showCustomize: true });
     }
@@ -66,7 +72,8 @@ class ListOptionsModal extends Component {
         return (
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
-                <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>
+                {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
+                {this.isCustom() && <OptionLine onClick={this.props.onAddCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
                 <OptionLine onClick={this.props.onUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
                 <OptionLine onClick={this.props.onDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
                 <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill All (0HP)</OptionLine>

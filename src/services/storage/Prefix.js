@@ -24,6 +24,10 @@ class Prefix {
         }
         return Prefix.getStoragePrefix(dataClass) + (new Date().getTime() + increment);
     }
+
+    static createCustomMonsterId() {
+        return "bh-custom-" + new Date().getTime();
+    }
 }
 
 export default Prefix;

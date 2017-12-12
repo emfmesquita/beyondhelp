@@ -22,7 +22,7 @@ class MonsterOptionsModal extends Component {
             showCustomize: false,
             showColorPicker: false,
             showTextColorPicker: false,
-            name: monster && monster.name,
+            name: monster && monster.name || "",
             hp: monster && monster.hp,
             color: monster && monster.color,
             textColor: monster && monster.textColor
@@ -90,10 +90,10 @@ class MonsterOptionsModal extends Component {
                     <SampleHpBar label={this.sampleLabel()} color={this.sampleColor()} textColor={this.sampleTextColor()} />
                 </OptionLine>
                 <OptionLine>
-                    <TextField label="Name" value={this.state.name} valuePropName="name" onEnter={this.saveCustomize} container={this} />
+                    <TextField label="Name" value={this.state.name} valuePropName="name" maxLength="20" onEnter={this.saveCustomize} container={this} />
                 </OptionLine>
                 <OptionLine>
-                    <TextField label="Max HP" value={this.state.hp} valuePropName="hp" onEnter={this.saveCustomize} validationState={this.validateCustomize()} container={this} />
+                    <TextField label="Max HP" value={this.state.hp} valuePropName="hp" maxLength="7" onEnter={this.saveCustomize} validationState={this.validateCustomize()} container={this} />
                 </OptionLine>
                 <OptionLine>
                     <ColorPicker
