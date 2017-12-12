@@ -7,14 +7,7 @@ class MonsterEncounterData extends Data {
         this.name = name;
         this.color = null;
         this.textColor = null;
-    }
-
-    get lists() {
-        return this.lists;
-    }
-
-    set lists(value: MonsterData[]) {
-        this.lists = value;
+        this.lists = [];
     }
 }
 

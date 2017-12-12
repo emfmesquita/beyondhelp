@@ -1,6 +1,6 @@
 import CharacterFoldersData from '../../data/CharacterFoldersData';
 import Q from "./Q";
-import StorageService from "./StorageService"
+import StorageService from "./StorageService";
 
 class CharacterFoldersStorageService {
     /**

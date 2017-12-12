@@ -1,8 +1,10 @@
 import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
+import MonsterEncounterStorageService from "./MonsterEncounterStorageService";
 import MonsterListData from '../../data/MonsterListData';
+import MonsterListStorageService from "./MonsterListStorageService";
 import Q from "./Q";
-import StorageService from "./StorageService"
+import StorageService from "./StorageService";
 
 class MonsterStorageService {
     /**
@@ -21,15 +23,12 @@ class MonsterStorageService {
                 const activeEncounter = StorageService.findSingle(storageData, Q.clazz("MonsterEncounterData"), Q.eq("storageId", config.activeEncounterId));
                 return Promise.resolve(activeEncounter);
             }
-            return StorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
-                config.activeEncounterId = encounter.storageId;
-                return StorageService.updateData(config).then(() => encounter);
-            });
+            return MonsterEncounterStorageService.createEncounter("My New Encounter", config);
         }).then(result => {
             encounter = result;
             // if there is not list for the monster type creates it
             list = StorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounter.storageId), Q.eq("monsterId", monsterId));
-            return list ? Promise.resolve(list) : StorageService.createData("MonsterListData", new MonsterListData(null, encounter.storageId, monsterId, name, 0));
+            return list ? Promise.resolve(list) : MonsterListStorageService.createList(name, monsterId, encounter.storageId, storageData);
         }).then(result => {
             list = result;
             // creates the monster
@@ -80,10 +79,8 @@ class MonsterStorageService {
             const monsterOfSameList = StorageService.find(storageData, Q.clazz("MonsterData"), Q.eq("listId", monster.listId));
             if (monsterOfSameList.length > 0) return Promise.resolve();
 
-            const list = StorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", monster.listId));
-            if (!list) return Promise.resolve();
-
-            return StorageService.deleteData(list);
+            const list = MonsterListStorageService.findList(monster.listId, storageData);
+            return MonsterListStorageService.deleteList(list);
         });
     }
 }

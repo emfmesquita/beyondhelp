@@ -6,6 +6,7 @@ import C from "../Constants";
 import ColorPicker from "./ColorPicker";
 import ColorService from "../services/ColorService";
 import LinkService from "../services/LinkService";
+import MonsterEncounterData from '../data/MonsterEncounterData';
 import MonsterListData from '../data/MonsterListData';
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
@@ -30,6 +31,20 @@ class ListOptionsModal extends Component {
         this.toMonsterPageHandler = LinkService.toNewTabHandler(`https://www.dndbeyond.com/monsters/${list.monsterId}`);
     }
 
+    isFirst = () => {
+        const list: MonsterListData = this.props.context.list;
+        if (!list) return false;
+        const encounter: MonsterEncounterData = this.props.encounter;
+        return encounter.lists.indexOf(list) === 0;
+    }
+
+    isLast = () => {
+        const list: MonsterListData = this.props.context.list;
+        if (!list) return false;
+        const encounter: MonsterEncounterData = this.props.encounter;
+        return encounter.lists.indexOf(list) === encounter.lists.length - 1;
+    }
+
     toCustomizeOptions = () => {
         this.setState({ showCustomize: true });
     }
@@ -52,6 +67,8 @@ class ListOptionsModal extends Component {
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
                 <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>
+                <OptionLine onClick={this.props.onUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
+                <OptionLine onClick={this.props.onDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
                 <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill All (0HP)</OptionLine>
                 <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal All</OptionLine>
                 <hr />

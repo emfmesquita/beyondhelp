@@ -241,6 +241,32 @@ class App extends Component {
         this.setState({ listOptions: { show: false, list: null, listEl: null } });
     }
 
+    handleMoveList = (delta: number) => {
+        const list: MonsterListData = this.state.listOptions.list;
+        const encounter: MonsterEncounterData = this.state.activeEncounter;
+        const idx = encounter.lists.indexOf(list);
+        const newIdx = idx + delta;
+        if (newIdx < 0 || newIdx >= encounter.lists.length) {
+            this.closeListOptions();
+            return;
+        }
+        const toSwapList = encounter.lists[newIdx];
+        const tempOrder = list.order;
+        list.order = toSwapList.order;
+        toSwapList.order = tempOrder;
+        encounter.lists[idx] = toSwapList;
+        encounter.lists[newIdx] = list;
+        this.update([list, toSwapList], () => this.closeListOptions());
+    }
+
+    handleMoveListUp = () => {
+        this.handleMoveList(-1);
+    }
+
+    handleMoveListDown = () => {
+        this.handleMoveList(1);
+    }
+
     handleFullHealList = () => {
         this.fullHealMonsters(this.state.listOptions.list.monsters, () => this.closeListOptions());
     }
@@ -447,6 +473,8 @@ class App extends Component {
                     encounter={this.state.activeEncounter}
                     onHide={this.closeListOptions}
                     onDelete={this.openDeleteListDialog}
+                    onUp={this.handleMoveListUp}
+                    onDown={this.handleMoveListDown}
                     onFullHeal={this.handleFullHealList}
                     onKill={this.handleKillList}
                     onCustomizeSave={this.handleListCustomizeSave}

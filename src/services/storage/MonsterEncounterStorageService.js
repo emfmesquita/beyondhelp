@@ -1,3 +1,4 @@
+import Configuration from '../../data/Configuration';
 import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterListData from '../../data/MonsterListData';
@@ -17,11 +18,8 @@ class MonsterEncounterStorageService {
         }).then(config => {
             // if there is no encounter creates it, updates the config and returns because there is no more data to be gathered
             if (!config.activeEncounterId) {
-                return StorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, "My New Encounter")).then(encounter => {
-                    config.activeEncounterId = encounter.storageId;
-                    return StorageService.updateData(config).then(() => {
-                        return { active: encounter, all: [encounter] };
-                    });
+                return this.createEncounter("My New Encounter", config).then((encounter) => {
+                    return { active: encounter, all: [encounter] };
                 });
             }
 
@@ -39,7 +37,7 @@ class MonsterEncounterStorageService {
             // check existing ordering info
             const firstList: MonsterListData = StorageService.findSingle(storageData, Q.clazz("MonsterListData"));
             let checkOrderPromise = Promise.resolve();
-            if (firstList.order === null || firstList.order === undefined) {
+            if (firstList && (firstList.order === null || firstList.order === undefined)) {
                 const toSaveLists = [];
                 for (var encounterId of listMap.keys()) {
                     let lists = listMap.get(encounterId);
@@ -65,14 +63,19 @@ class MonsterEncounterStorageService {
         });
     }
 
-    static createEncounter(name: string): Promise {
+    static getEncounterLists(encounterId: string, storageData): MonsterListData[] {
+        return StorageService.find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounterId));
+    }
+
+    static createEncounter(name: string, optionalConfig: Configuration): Promise<MonsterEncounterData> {
         let config;
-        return StorageService.getConfig().then(result => {
+        const configPromise = optionalConfig ? Promise.resolve(optionalConfig) : StorageService.getConfig();
+        return configPromise.then(result => {
             config = result;
             return StorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, name));
         }).then(newEncounter => {
             config.activeEncounterId = newEncounter.storageId;
-            return StorageService.updateData(config);
+            return StorageService.updateData(config).then(() => newEncounter);
         });
     }
 

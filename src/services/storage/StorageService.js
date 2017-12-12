@@ -1,4 +1,5 @@
 import Configuration from '../../data/Configuration';
+import Constants from "../../Constants";
 import Data from "../../data/Data";
 import MonsterData from '../../data/MonsterData';
 import MonsterListData from '../../data/MonsterListData';
@@ -7,7 +8,6 @@ import Prefix from "./Prefix";
 /* global chrome */
 
 type StorageData = { [key: string]: Data }
-const ConfigurationId = "bh-config";
 
 const getStorageData = function (id: string): Promise<StorageData> {
     return new Promise((resolve, reject) => {
@@ -97,8 +97,8 @@ const deleteData = function (data: Data | Data[]): Promise<Data> {
 };
 
 const getConfig = function (): Promise<Configuration> {
-    return getData(ConfigurationId).then(config => {
-        return config ? Promise.resolve(config) : this.createData("Configuration", new Configuration());
+    return getData(Constants.ConfigurationId).then(config => {
+        return config ? Promise.resolve(config) : createData("Configuration", new Configuration());
     });
 };
 

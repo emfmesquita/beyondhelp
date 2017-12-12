@@ -5,6 +5,8 @@ const presetMonsterTextColor = [defaultMonsterTextColor];
 const defaultListHeaderColor = "#333";
 const presetListHeaderColor = [defaultListHeaderColor];
 
+const configurationId = "bh-config";
+
 class Constants {
     static get DefaultMonsterColor() {
         return defaultMonsterColor;
@@ -23,6 +25,10 @@ class Constants {
     }
     static get PresetListHeaderColor() {
         return presetListHeaderColor;
+    }
+
+    static get ConfigurationId() {
+        return configurationId;
     }
 }
 

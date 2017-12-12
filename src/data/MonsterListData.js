@@ -13,14 +13,7 @@ class MonsterListData extends Data {
         this.color = null;
         this.textColor = null;
         this.headerColor = null;
-    }
-
-    get monsters() {
-        return this.monsters;
-    }
-
-    set monsters(value: MonsterData[]) {
-        this.monsters = value;
+        this.monsters = [];
     }
 }
 
