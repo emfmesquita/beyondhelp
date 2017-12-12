@@ -13,5 +13,6 @@
         "build/": true
     },
     "workbench.iconTheme": "vscode-icons",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "sort-imports.on-save": false
 }

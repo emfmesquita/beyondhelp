@@ -1,13 +1,16 @@
 import { Button, FormControl, FormGroup, Glyphicon, InputGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
 import React, { Component } from 'react';
 
+import BadgeService from "../services/BadgeService";
 import BhModal from "./BhModal";
 import C from "../Constants";
 import ColorPicker from "./ColorPicker";
 import ColorService from "../services/ColorService";
 import MonsterData from '../data/MonsterData';
+import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
+import StorageService from "../services/storage/StorageService";
 import TextField from "./TextField";
 
 const maxHpRegex = /^[0-9]+$/i;
@@ -57,28 +60,55 @@ class MonsterOptionsModal extends Component {
         this.setState({ showCustomize: true });
     }
 
-    saveCustomize = () => {
-        if (this.validateCustomize() === "error") return;
-        this.props.onCustomizeSave({
-            name: this.state.name,
-            hp: parseInt(this.state.hp),
-            color: this.state.color,
-            textColor: this.state.textColor
+    validateCustomize = () => {
+        return !this.state.hp || !maxHpRegex.test(this.state.hp) ? "error" : "success";
+    }
+
+    deleteMonster = () => {
+        const monster: MonsterData = this.props.context.monster;
+        const monsterEl = this.props.context.monsterEl;
+        this.props.onHide();
+        $(monsterEl).fadeOut(400, () => {
+            MonsterStorageService.deleteMonster(monster).then(() => {
+                BadgeService.updateBadgeCount();
+                this.props.onChange();
+            });
         });
     }
 
-    validateCustomize = () => {
-        return !this.state.hp || !maxHpRegex.test(this.state.hp) ? "error" : "success";
+    fullHealMonster = () => {
+        const monster: MonsterData = this.props.context.monster;
+        monster.currentHp = monster.hp;
+        StorageService.updateData(monster).then(this.props.onChange);
+    }
+
+    killMonster = () => {
+        const monster: MonsterData = this.props.context.monster;
+        monster.currentHp = 0;
+        StorageService.updateData(monster).then(this.props.onChange);
+    }
+
+    saveCustomize = () => {
+        if (this.validateCustomize() === "error") return;
+        const monster: MonsterData = this.props.context.monster;
+        monster.name = this.state.name;
+        monster.color = this.state.color;
+        monster.textColor = this.state.textColor;
+        monster.hp = parseInt(this.state.hp);
+        if (monster.currentHp > monster.hp) {
+            monster.currentHp = monster.hp;
+        }
+        StorageService.updateData(monster).then(this.props.onChange);
     }
 
     renderBaseOptions = () => {
         return (
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
-                <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill (0HP)</OptionLine>
-                <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal</OptionLine>
+                <OptionLine onClick={this.killMonster} icon="thumbs-down">Kill (0HP)</OptionLine>
+                <OptionLine onClick={this.fullHealMonster} icon="heart">Full Heal</OptionLine>
                 <hr />
-                <OptionLine onClick={this.props.onDelete} icon="trash">Delete</OptionLine>
+                <OptionLine onClick={this.deleteMonster} icon="trash">Delete</OptionLine>
             </ListGroup>
         );
     }

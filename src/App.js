@@ -113,34 +113,13 @@ class App extends Component {
         return this.state.encounters && this.state.encounters.length > 1;
     }
 
-    /**
-     * Updates data or an array of data on storage and updates state.
-     */
-    update = (dataArray: Data | Data[], callback: Function): Promise => {
-        return StorageService.updateData(dataArray).then(() => {
+    reloadHandler = (beforeReload: Function) => {
+        return () => {
+            if (beforeReload) beforeReload();
             BadgeService.updateBadgeCount();
-        }).then(() => {
-            callback();
-            const encounters = this.state.encounters.sort((a, b) => a.name.localeCompare(b.name));
-            this.setState({ activeEncounter: this.state.activeEncounter, encounters });
-        }).catch((e) => { throw new Error(e); });
+            this.init();
+        };
     }
-
-    /**
-     * Kills an array of monsters, saves and updates state.
-     */
-    killMonsters = (monsters: MonsterData[], callback: Function) => {
-        monsters.forEach(monster => monster.currentHp = 0);
-        this.update(monsters, callback);
-    };
-
-    /**
-     * Full heal an array of monsters, saves and updates state.
-     */
-    fullHealMonsters = (monsters: MonsterData[], callback: Function) => {
-        monsters.forEach(monster => monster.currentHp = monster.hp);
-        this.update(monsters, callback);
-    };
 
     //#region children event handlers
     /**
@@ -185,51 +164,6 @@ class App extends Component {
     closeMonsterOptions = () => {
         this.setState({ monsterOptions: { show: false, monster: null, monsterEl: null, list: null } });
     }
-
-    /**
-     * onClick of delete of monsters options
-     */
-    handleDeleteMonster = () => {
-        const toDeleteMonster = this.state.monsterOptions.monster;
-        const monsterEl = this.state.monsterOptions.monsterEl;
-        this.closeMonsterOptions();
-        $(monsterEl).fadeOut(400, () => {
-            const toDeleteId = toDeleteMonster.storageId;
-            MonsterStorageService.deleteMonster(toDeleteMonster).then(() => {
-                this.setState((prevState) => {
-                    prevState.activeEncounter.lists.forEach((list, metaIndex) => {
-                        list.monsters.forEach((monster, monsterIndex) => {
-                            if (monster.storageId !== toDeleteId) return;
-                            list.monsters.splice(monsterIndex, 1);
-                            if (list.monsters.length === 0) prevState.activeEncounter.lists.splice(metaIndex, 1);
-                        });
-                    });
-                    return { activeEncounter: prevState.activeEncounter };
-                });
-                BadgeService.updateBadgeCount();
-            });
-        });
-    }
-
-    handleFullHealMonster = () => {
-        this.fullHealMonsters([this.state.monsterOptions.monster], () => this.closeMonsterOptions());
-    }
-
-    handleKillMonster = () => {
-        this.killMonsters([this.state.monsterOptions.monster], () => this.closeMonsterOptions());
-    }
-
-    handleMonsterCustomizeSave = ({ name, color, textColor, hp }) => {
-        const monster: MonsterData = this.state.monsterOptions.monster;
-        monster.name = name;
-        monster.color = color;
-        monster.textColor = textColor;
-        monster.hp = hp;
-        if (monster.currentHp > hp) {
-            monster.currentHp = hp;
-        }
-        this.update(monster, () => this.closeMonsterOptions());
-    }
     //#endregion
 
     //#region list options
@@ -239,40 +173,6 @@ class App extends Component {
 
     closeListOptions = () => {
         this.setState({ listOptions: { show: false, list: null, listEl: null } });
-    }
-
-    handleMoveList = (delta: number) => {
-        const list: MonsterListData = this.state.listOptions.list;
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        const idx = encounter.lists.indexOf(list);
-        const newIdx = idx + delta;
-        if (newIdx < 0 || newIdx >= encounter.lists.length) {
-            this.closeListOptions();
-            return;
-        }
-        const toSwapList = encounter.lists[newIdx];
-        const tempOrder = list.order;
-        list.order = toSwapList.order;
-        toSwapList.order = tempOrder;
-        encounter.lists[idx] = toSwapList;
-        encounter.lists[newIdx] = list;
-        this.update([list, toSwapList], () => this.closeListOptions());
-    }
-
-    handleMoveListUp = () => {
-        this.handleMoveList(-1);
-    }
-
-    handleMoveListDown = () => {
-        this.handleMoveList(1);
-    }
-
-    handleFullHealList = () => {
-        this.fullHealMonsters(this.state.listOptions.list.monsters, () => this.closeListOptions());
-    }
-
-    handleKillList = () => {
-        this.killMonsters(this.state.listOptions.list.monsters, () => this.closeListOptions());
     }
 
     openDeleteListDialog = () => {
@@ -288,39 +188,15 @@ class App extends Component {
     }
 
     handleDeleteList = () => {
-        this.setState({ showDeleteListDialog: false });
         const toDeleteList: MonsterListData = this.state.listOptions.list;
         const listEl = this.state.listOptions.listEl;
-        this.closeListOptions();
+        this.setState({ showDeleteListDialog: false });
         $(listEl).fadeOut(400, () => {
-            const toDeleteId = toDeleteList.storageId;
             MonsterListStorageService.deleteList(toDeleteList).then(() => {
-                this.setState((prevState) => {
-                    prevState.activeEncounter.lists.forEach((list, listIndex) => {
-                        if (list.storageId !== toDeleteId) return;
-                        prevState.activeEncounter.lists.splice(listIndex, 1);
-                    });
-                    return { activeEncounter: prevState.activeEncounter };
-                });
                 BadgeService.updateBadgeCount();
+                this.reloadHandler(this.closeListOptions)();
             });
         });
-    }
-
-    handleListCustomizeSave = ({ color, textColor, headerColor }) => {
-        const list: MonsterData = this.state.listOptions.list;
-        list.color = color;
-        list.textColor = textColor;
-        list.headerColor = headerColor;
-        this.update(list, () => this.closeListOptions());
-    }
-
-    handleAddCustomMonster = () => {
-        const list: MonsterData = this.state.listOptions.list;
-        MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(monster => {
-            this.closeListOptions();
-            this.init();
-        }).catch((e) => { throw new Error(e); });
     }
     //#endregion
 
@@ -331,41 +207,6 @@ class App extends Component {
 
     closeEncounterOptions = () => {
         this.setState({ encounterOptions: { show: false, deleteEnabled: false } });
-    }
-
-    updateEncounterHp = (encounter: MonsterEncounterData) => {
-        this.setState({ activeEncounter: this.state.activeEncounter }, () => {
-            StorageService.updateData(list.monsters).then(() => {
-                BadgeService.updateBadgeCount();
-            }).catch((e) => { throw new Error(e); });
-            this.closeListOptions();
-        });
-    }
-
-    handleFullHealEncounter = () => {
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        let monsters = [];
-        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
-        this.fullHealMonsters(monsters, () => this.closeEncounterOptions());
-    }
-
-    handleKillEncounter = () => {
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        let monsters = [];
-        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
-        this.killMonsters(monsters, () => this.closeEncounterOptions());
-    }
-
-    handleColapseEncounter = () => {
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        encounter.lists.forEach(list => list.collapsed = true);
-        this.update(encounter.lists, () => this.closeEncounterOptions());
-    }
-
-    handleExpandEncounter = () => {
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        encounter.lists.forEach(list => list.collapsed = false);
-        this.update(encounter.lists, () => this.closeEncounterOptions());
     }
 
     openDeleteEncounterDialog = () => {
@@ -381,25 +222,6 @@ class App extends Component {
         MonsterEncounterStorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
             return this.init();
         }).then(BadgeService.updateBadgeCount);
-    }
-
-    handleEncounterCustomizeSave = ({ name, color, textColor }) => {
-        const encounter: MonsterEncounterData = this.state.activeEncounter;
-        encounter.name = name;
-        encounter.color = color;
-        encounter.textColor = textColor;
-        this.update(encounter, () => this.closeEncounterOptions());
-    }
-
-    handleNewCustomMonsterSave = ({ name, hpexp }) => {
-        let list: MonsterListData;
-        MonsterListStorageService.createCustomList(name, hpexp, this.state.activeEncounter).then(newList => {
-            list = newList;
-            return MonsterStorageService.createMonster(list.monsterId, list.name, hpexp);
-        }).then(monster => {
-            this.closeEncounterOptions();
-            this.init();
-        }).catch((e) => { throw new Error(e); });
     }
     //#endregion
 
@@ -478,13 +300,8 @@ class App extends Component {
                     context={this.state.encounterOptions}
                     encounter={this.state.activeEncounter}
                     onHide={this.closeEncounterOptions}
+                    onChange={this.reloadHandler(this.closeEncounterOptions)}
                     onDelete={this.openDeleteEncounterDialog}
-                    onFullHeal={this.handleFullHealEncounter}
-                    onKill={this.handleKillEncounter}
-                    onCollapse={this.handleColapseEncounter}
-                    onExpand={this.handleExpandEncounter}
-                    onCustomizeSave={this.handleEncounterCustomizeSave}
-                    onNewMonserSave={this.handleNewCustomMonsterSave}
                 />
                 <ListOptionsModal
                     key={"list-option-modal-" + this.state.listOptions.show}
@@ -492,13 +309,8 @@ class App extends Component {
                     context={this.state.listOptions}
                     encounter={this.state.activeEncounter}
                     onHide={this.closeListOptions}
+                    onChange={this.reloadHandler(this.closeListOptions)}
                     onDelete={this.openDeleteListDialog}
-                    onUp={this.handleMoveListUp}
-                    onDown={this.handleMoveListDown}
-                    onFullHeal={this.handleFullHealList}
-                    onKill={this.handleKillList}
-                    onCustomizeSave={this.handleListCustomizeSave}
-                    onAddCustomMonster={this.handleAddCustomMonster}
                 />
                 <MonsterOptionsModal
                     key={"monster-option-modal-" + this.state.monsterOptions.show}
@@ -506,10 +318,7 @@ class App extends Component {
                     context={this.state.monsterOptions}
                     encounter={this.state.activeEncounter}
                     onHide={this.closeMonsterOptions}
-                    onDelete={this.handleDeleteMonster}
-                    onFullHeal={this.handleFullHealMonster}
-                    onKill={this.handleKillMonster}
-                    onCustomizeSave={this.handleMonsterCustomizeSave}
+                    onChange={this.reloadHandler(this.closeMonsterOptions)}
                 />
             </div>
         );

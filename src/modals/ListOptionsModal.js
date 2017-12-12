@@ -8,8 +8,10 @@ import ColorService from "../services/ColorService";
 import LinkService from "../services/LinkService";
 import MonsterEncounterData from '../data/MonsterEncounterData';
 import MonsterListData from '../data/MonsterListData';
+import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
+import StorageService from "../services/storage/StorageService";
 import TextField from "./TextField";
 
 class ListOptionsModal extends Component {
@@ -60,12 +62,55 @@ class ListOptionsModal extends Component {
         this.props.onHide();
     }
 
+    moveList = (delta: number) => {
+        const list: MonsterListData = this.props.context.list;
+        const encounter: MonsterEncounterData = this.props.encounter;
+        const idx = encounter.lists.indexOf(list);
+        const newIdx = idx + delta;
+        if (newIdx < 0 || newIdx >= encounter.lists.length) {
+            this.props.onHide();
+            return;
+        }
+        const toSwapList = encounter.lists[newIdx];
+        const tempOrder = list.order;
+        list.order = toSwapList.order;
+        toSwapList.order = tempOrder;
+        encounter.lists[idx] = toSwapList;
+        encounter.lists[newIdx] = list;
+        StorageService.updateData([list, toSwapList]).then(this.props.onChange);
+    }
+
+    moveListUp = () => {
+        this.moveList(-1);
+    }
+
+    moveListDown = () => {
+        this.moveList(1);
+    }
+
+    fullHealList = () => {
+        const list: MonsterListData = this.props.context.list;
+        list.monsters.forEach(monster => monster.currentHp = monster.hp);
+        StorageService.updateData(list.monsters).then(this.props.onChange);
+    }
+
+    killList = () => {
+        const list: MonsterListData = this.props.context.list;
+        list.monsters.forEach(monster => monster.currentHp = 0);
+        StorageService.updateData(list.monsters).then(this.props.onChange);
+    }
+
+    addCustomMonster = () => {
+        const list: MonsterListData = this.props.context.list;
+        MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(this.props.onChange);
+    }
+
     saveCustomize = () => {
-        this.props.onCustomizeSave({
-            color: this.state.color,
-            textColor: this.state.textColor,
-            headerColor: this.state.headerColor
-        });
+        const list: MonsterListData = this.props.context.list;
+        list.color = this.state.color;
+        list.textColor = this.state.textColor;
+        list.headerColor = this.state.headerColor;
+        StorageService.updateData(list).then(this.props.onChange);
     }
 
     renderBaseOptions = () => {
@@ -73,11 +118,11 @@ class ListOptionsModal extends Component {
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
                 {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
-                {this.isCustom() && <OptionLine onClick={this.props.onAddCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
-                <OptionLine onClick={this.props.onUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
-                <OptionLine onClick={this.props.onDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
-                <OptionLine onClick={this.props.onKill} icon="thumbs-down">Kill All (0HP)</OptionLine>
-                <OptionLine onClick={this.props.onFullHeal} icon="heart">Full Heal All</OptionLine>
+                {this.isCustom() && <OptionLine onClick={this.addCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
+                <OptionLine onClick={this.moveListUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
+                <OptionLine onClick={this.moveListDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
+                <OptionLine onClick={this.killList} icon="thumbs-down">Kill All (0HP)</OptionLine>
+                <OptionLine onClick={this.fullHealList} icon="heart">Full Heal All</OptionLine>
                 <hr />
                 <OptionLine onClick={this.props.onDelete} icon="trash">Delete All</OptionLine>
             </ListGroup>

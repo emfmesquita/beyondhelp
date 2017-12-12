@@ -8,8 +8,11 @@ import ColorService from "../services/ColorService";
 import DiceExp from "../services/DiceExp";
 import LinkService from "../services/LinkService";
 import MonsterEncounterData from '../data/MonsterEncounterData';
+import MonsterListStorageService from "../services/storage/MonsterListStorageService";
+import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
+import StorageService from "../services/storage/StorageService";
 import TextField from "./TextField";
 
 class EncounterOptionsModal extends Component {
@@ -36,21 +39,73 @@ class EncounterOptionsModal extends Component {
         return this.props.encounter && this.props.encounter.name;
     }
 
+    //#region base options
     hasLists = () => {
         return this.props.encounter && this.props.encounter.lists && this.props.encounter.lists.length > 0;
     }
+
+    fullHealEncounter = () => {
+        const encounter: MonsterEncounterData = this.props.encounter;
+        let monsters = [];
+        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
+        monsters.forEach(monster => monster.currentHp = monster.hp);
+        StorageService.updateData(monsters).then(this.props.onChange);
+    }
+
+    KillEncounter = () => {
+        const encounter: MonsterEncounterData = this.props.encounter;
+        let monsters = [];
+        encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
+        monsters.forEach(monster => monster.currentHp = 0);
+        StorageService.updateData(monsters).then(this.props.onChange);
+    }
+
+    colapseEncounter = () => {
+        const encounter: MonsterEncounterData = this.props.encounter;
+        encounter.lists.forEach(list => list.collapsed = true);
+        StorageService.updateData(encounter.lists).then(this.props.onChange);
+    }
+
+    expandEncounter = () => {
+        const encounter: MonsterEncounterData = this.props.encounter;
+        encounter.lists.forEach(list => list.collapsed = false);
+        StorageService.updateData(encounter.lists).then(this.props.onChange);
+    }
+
+    renderBaseOptions = () => {
+        return (
+            <ListGroup>
+                <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
+                <OptionLine onClick={this.toNewMonsterOptions} icon="file">New Custom Monster</OptionLine>
+                <OptionLine onClick={this.colapseEncounter} disabled={!this.hasLists()} icon="resize-small">Collapse All</OptionLine>
+                <OptionLine onClick={this.expandEncounter} disabled={!this.hasLists()} icon="resize-full">Expand All</OptionLine>
+                <OptionLine onClick={this.KillEncounter} disabled={!this.hasLists()} icon="thumbs-down">Kill All (0HP)</OptionLine>
+                <OptionLine onClick={this.fullHealEncounter} disabled={!this.hasLists()} icon="heart">Full Heal All</OptionLine>
+                <hr />
+                <OptionLine onClick={this.props.onDelete} disabled={!this.props.context.deleteEnabled} icon="trash">
+                    Delete Encounter
+                    </OptionLine>
+            </ListGroup>
+        );
+    }
+    //#endregion
 
     //#region customizations
     toCustomizeOptions = () => {
         this.setState({ showCustomize: true });
     }
 
+    validateEncounterName = () => {
+        return !this.state.name || !this.state.name.trim() ? "error" : "success";
+    }
+
     saveCustomize = () => {
-        this.props.onCustomizeSave({
-            name: this.state.name,
-            color: this.state.color,
-            textColor: this.state.textColor
-        });
+        if (this.validateEncounterName() === "error") return;
+        const encounter: MonsterEncounterData = this.props.encounter;
+        encounter.name = this.state.name;
+        encounter.color = this.state.color;
+        encounter.textColor = this.state.textColor;
+        StorageService.updateData(encounter).then(this.props.onChange);
     }
 
     renderCustomize = () => {
@@ -60,7 +115,12 @@ class EncounterOptionsModal extends Component {
                     <SampleHpBar label="#1 100 / 100" color={this.state.color} textColor={this.state.textColor} />
                 </OptionLine>
                 <OptionLine>
-                    <TextField label="Name" value={this.state.name} valuePropName="name" maxLength="30" onEnter={this.saveCustomize} container={this} />
+                    <TextField
+                        label="Name" value={this.state.name}
+                        valuePropName="name" maxLength="30"
+                        validationState={this.validateEncounterName()}
+                        onEnter={this.saveCustomize} container={this}
+                    />
                 </OptionLine>
                 <OptionLine>
                     <ColorPicker
@@ -91,7 +151,7 @@ class EncounterOptionsModal extends Component {
     renderCustomizeFooter = () => {
         return (
             <div>
-                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize}>Save</Button>
+                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize} disabled={this.validateEncounterName() === "error"}>Save</Button>
                 <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
             </div>
         );
@@ -117,10 +177,12 @@ class EncounterOptionsModal extends Component {
 
     saveNewMonster = () => {
         if (!this.isValidMonster()) return;
-        this.props.onNewMonserSave({
-            name: this.state.monsterName,
-            hpexp: this.state.monsterHp
-        });
+        const encounter: MonsterEncounterData = this.props.encounter;
+        const name = this.state.monsterName;
+        const hp = this.state.monsterHp;
+        MonsterListStorageService.createCustomList(name, hp, encounter).then(list => {
+            return MonsterStorageService.createMonster(list.monsterId, list.name, hp);
+        }).then(this.props.onChange);
     }
 
     renderNewMonster = () => {
@@ -155,23 +217,6 @@ class EncounterOptionsModal extends Component {
         );
     }
     //#endregion
-
-    renderBaseOptions = () => {
-        return (
-            <ListGroup>
-                <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
-                <OptionLine onClick={this.toNewMonsterOptions} icon="file">New Custom Monster</OptionLine>
-                <OptionLine onClick={this.props.onCollapse} disabled={!this.hasLists()} icon="resize-small">Collapse All</OptionLine>
-                <OptionLine onClick={this.props.onExpand} disabled={!this.hasLists()} icon="resize-full">Expand All</OptionLine>
-                <OptionLine onClick={this.props.onKill} disabled={!this.hasLists()} icon="thumbs-down">Kill All (0HP)</OptionLine>
-                <OptionLine onClick={this.props.onFullHeal} disabled={!this.hasLists()} icon="heart">Full Heal All</OptionLine>
-                <hr />
-                <OptionLine onClick={this.props.onDelete} disabled={!this.props.context.deleteEnabled} icon="trash">
-                    Delete Encounter
-                </OptionLine>
-            </ListGroup>
-        );
-    }
 
     renderBody = () => {
         if (this.state.showCustomize) return this.renderCustomize();
