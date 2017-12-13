@@ -1,9 +1,10 @@
 import $ from "jquery";
 import AddMonsterButton from './addmonsters/AddMonsterButton';
+import CampaignCharactersService from "./characters/CampaignCharactersService";
 import FavIconService from "./FavIconService";
 import MonsterParseData from "./addmonsters/MonsterParseData";
 import MonsterParseService from "./addmonsters/MonsterParseService";
-import MyCharactersService from "./mycharacters/MyCharactersService";
+import MyCharactersService from "./characters/MyCharactersService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TableRollService from "./tableroll/TableRollService";
@@ -35,3 +36,6 @@ FavIconService.changeFavIcon();
 
 // change my characters page
 MyCharactersService.init();
+
+// change campaign page
+CampaignCharactersService.init();

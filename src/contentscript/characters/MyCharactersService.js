@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-
 import $ from "jquery";
-import MyCharactersParseService from "./MyCharactersParseService";
-import MyCharactesApp from "./MyCharactesApp";
+import CharactersApp from "./CharactersApp";
+import CharactersService from "./CharactersService";
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 /* global chrome */
@@ -18,7 +17,7 @@ class MyCharactersService {
             if (!username) return;
 
             // parses and sort characters by name
-            let characters = MyCharactersParseService.parseCharacters();
+            let characters = CharactersService.parseCharacters();
             characters = characters.sort((a, b) => a.name > b.name);
 
             // adds the container of characters folders on content page
@@ -29,7 +28,7 @@ class MyCharactersService {
             $(".ddb-characters-listing-body").detach();
 
             // renders the character folder structure on content page
-            ReactDOM.render(<MyCharactesApp allCharacters={characters} owner={username} />, jqFoldersContainer[0]);
+            ReactDOM.render(<CharactersApp allCharacters={characters} owner={username} />, jqFoldersContainer[0]);
         });
     }
 }

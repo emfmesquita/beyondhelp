@@ -7,10 +7,11 @@ import CharacterFolderData from "../../data/CharacterFolderData";
 import CharacterFoldersData from "../../data/CharacterFoldersData";
 import CharacterFoldersStorageService from "../../services/storage/CharacterFoldersStorageService";
 import CharacterList from "./CharacterList";
+import CharactersService from "./CharactersService";
 import CreateFolderButton from "./CreateFolderButton";
 import ReactDOM from 'react-dom';
 
-class MyCharactesApp extends Component {
+class CharactersApp extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,35 +21,33 @@ class MyCharactesApp extends Component {
     }
 
     componentDidMount() {
-        // renders both of the buttons to create folders on content page
-        const temp = document.createElement("div");
-        ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-character" onCreateFolder={this.handleCreateFolder} />, temp, () => {
-            $(".ddb-page-header .more-links .links").append(temp.children[0]);
-        });
 
-        const temp2 = document.createElement("div");
-        ReactDOM.render(<CreateFolderButton buttonClasses="button" onCreateFolder={this.handleCreateFolder} />, temp2, () => {
-            $(".ddb-characters-listing-header-secondary").append(temp2.children[0]);
-        });
+        if (!this.props.campaign) {
+            // renders both of the buttons to create folders on content page
+            const temp = document.createElement("div");
+            ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-character" onCreateFolder={this.handleCreateFolder} />, temp, () => {
+                $(".ddb-page-header .more-links .links").append(temp.children[0]);
+            });
+
+            const temp2 = document.createElement("div");
+            ReactDOM.render(<CreateFolderButton buttonClasses="button" onCreateFolder={this.handleCreateFolder} />, temp2, () => {
+                $(".ddb-characters-listing-header-secondary").append(temp2.children[0]);
+            });
+        } else {
+            const temp3 = document.createElement("div");
+            ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-default" onCreateFolder={this.handleCreateFolder} />, temp3, () => {
+                $(".ddb-page-header .more-links .links").append(temp3.children[0]);
+            });
+        }
 
         // load folders from storage
-        CharacterFoldersStorageService.getMyCharacterFolders(this.props.owner).then(this.updateState);
+        CharacterFoldersStorageService.getCharacterFolders(this.props.owner, this.props.campaign).then(this.updateState);
     }
 
     updateState = (foldersData: CharacterFoldersData) => {
         // calcs the characters that are not on folders
-        const buildCharactersNotOnFolders = () => {
-            if (!this.props.allCharacters || this.props.allCharacters.length === 0) {
-                return [];
-            }
-            let idsOfCharsOnFolders = [];
-            const folders = foldersData ? foldersData.folders : [];
-            folders.forEach(folder => {
-                idsOfCharsOnFolders = idsOfCharsOnFolders.concat(folder.characterIds);
-            });
-            return this.props.allCharacters.filter(character => idsOfCharsOnFolders.indexOf(character.id) === -1);
-        };
-        this.setState({ foldersData, charactersNotOnFolders: buildCharactersNotOnFolders() });
+        const charactersNotOnFolders = CharactersService.charactersNotOnFolders(foldersData, this.props.allCharacters);
+        this.setState({ foldersData, charactersNotOnFolders });
     }
 
     /**
@@ -56,7 +55,7 @@ class MyCharactesApp extends Component {
      * @param {CharacterFoldersData} data 
      */
     saveData = (data: CharacterFoldersData) => {
-        CharacterFoldersStorageService.saveMyCharactesFolders(data, this.props.owner).then(this.updateState);
+        CharacterFoldersStorageService.saveCharacterFolders(data, this.props.owner, this.props.campaign).then(this.updateState);
     }
 
     /**
@@ -84,10 +83,7 @@ class MyCharactesApp extends Component {
      * @param {number} delta 
      */
     move = (folder: CharacterFolderData, delta: number) => {
-        const folders: CharacterFolderData[] = this.state.foldersData.folders;
-        const idx = folders.indexOf(folder);
-        folders.splice(idx, 1);
-        folders.splice(idx + delta, 0, folder);
+        CharactersService.moveFolder(folder, delta, this.state.foldersData.folders);
         this.saveData(this.state.foldersData);
     }
 
@@ -186,4 +182,4 @@ class MyCharactesApp extends Component {
     }
 }
 
-export default MyCharactesApp;
+export default CharactersApp;
