@@ -5,6 +5,7 @@ import BhModal from "./BhModal";
 import C from "../Constants";
 import ColorPicker from "./ColorPicker";
 import ColorService from "../services/ColorService";
+import DiceExp from "../services/DiceExp";
 import LinkService from "../services/LinkService";
 import MonsterEncounterData from '../data/MonsterEncounterData';
 import MonsterListData from '../data/MonsterListData';
@@ -27,7 +28,9 @@ class ListOptionsModal extends Component {
             showHeaderColorPicker: false,
             color: list.color,
             textColor: list.textColor,
-            headerColor: list.headerColor
+            headerColor: list.headerColor,
+            customMonsterName: list.name,
+            customMonsterHp: list.hpexp
         };
 
         this.toMonsterPageHandler = LinkService.toNewTabHandler(`https://www.dndbeyond.com/monsters/${list.monsterId}`);
@@ -45,16 +48,6 @@ class ListOptionsModal extends Component {
         if (!list) return false;
         const encounter: MonsterEncounterData = this.props.encounter;
         return encounter.lists.indexOf(list) === encounter.lists.length - 1;
-    }
-
-    isCustom = () => {
-        const list: MonsterListData = this.props.context.list;
-        if (!list || !list.monsterId) return false;
-        return list.monsterId.startsWith("bh-");
-    }
-
-    toCustomizeOptions = () => {
-        this.setState({ showCustomize: true });
     }
 
     toDetailsPage = (e: MouseEvent) => {
@@ -100,33 +93,74 @@ class ListOptionsModal extends Component {
         StorageService.updateData(list.monsters).then(this.props.onChange);
     }
 
+    //#region custom monster
+    isCustom = () => {
+        const list: MonsterListData = this.props.context.list;
+        if (!list || !list.monsterId) return false;
+        return list.monsterId.startsWith("bh-");
+    }
+
+    validateMonsterName = () => {
+        return !this.state.customMonsterHp || !this.state.customMonsterHp.trim() ? "error" : "success";
+    }
+
+    validateHpExp = () => {
+        return !this.state.customMonsterHp || this.state.customMonsterHp === "0" || !DiceExp.isDiceExp(this.state.customMonsterHp) ? "error" : "success";
+    }
+
+    isValidMonster = () => {
+        return this.validateMonsterName() === "success" && this.validateHpExp() === "success";
+    }
+
     addCustomMonster = () => {
         const list: MonsterListData = this.props.context.list;
         MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(this.props.onChange);
     }
 
+    renderCustomMonsterOptions = () => {
+        if (!this.isCustom()) return null;
+
+        return [
+            <OptionLine>
+                <TextField
+                    label="Name" value={this.state.customMonsterName}
+                    valuePropName="customMonsterName" maxLength="40"
+                    validationState={this.validateMonsterName()}
+                    onEnter={this.saveCustomize} container={this}
+                />
+            </OptionLine>,
+            <OptionLine>
+                <TextField
+                    label="HP Expression" value={this.state.customMonsterHp}
+                    valuePropName="customMonsterHp" maxLength="10"
+                    validationState={this.validateHpExp()}
+                    onEnter={this.saveCustomize} container={this}
+                />
+            </OptionLine>
+        ];
+    }
+    //#endregion
+
+    //#region customizations
+    toCustomizeOptions = () => {
+        this.setState({ showCustomize: true });
+    }
+
+    isSaveDisabled = () => {
+        return this.isCustom() && !this.isValidMonster();
+    }
+
     saveCustomize = () => {
+        if (this.isSaveDisabled()) return;
         const list: MonsterListData = this.props.context.list;
         list.color = this.state.color;
         list.textColor = this.state.textColor;
         list.headerColor = this.state.headerColor;
+        if (this.isCustom()) {
+            list.name = this.state.customMonsterName;
+            list.hpexp = this.state.customMonsterHp;
+        }
         StorageService.updateData(list).then(this.props.onChange);
-    }
-
-    renderBaseOptions = () => {
-        return (
-            <ListGroup>
-                <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
-                {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
-                {this.isCustom() && <OptionLine onClick={this.addCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
-                <OptionLine onClick={this.moveListUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
-                <OptionLine onClick={this.moveListDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
-                <OptionLine onClick={this.killList} icon="thumbs-down">Kill All (0HP)</OptionLine>
-                <OptionLine onClick={this.fullHealList} icon="heart">Full Heal All</OptionLine>
-                <hr />
-                <OptionLine onClick={this.props.onDelete} icon="trash">Delete All</OptionLine>
-            </ListGroup>
-        );
     }
 
     renderCustomize = () => {
@@ -138,6 +172,7 @@ class ListOptionsModal extends Component {
                     </div>
                     <SampleHpBar label="#1 100 / 100" color={this.state.color || this.props.encounter.color} textColor={this.state.textColor || this.props.encounter.textColor} />
                 </OptionLine>
+                {this.renderCustomMonsterOptions()}
                 <OptionLine>
                     <ColorPicker
                         label="Hp Bar Color"
@@ -178,9 +213,26 @@ class ListOptionsModal extends Component {
     renderCustomizeFooter = () => {
         return (
             <div>
-                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize}>Save</Button>
+                <Button bsSize="small" bsStyle="primary" onClick={this.saveCustomize} disabled={this.isSaveDisabled()}>Save</Button>
                 <Button bsSize="small" onClick={this.props.onHide}>Cancel</Button>
             </div>
+        );
+    }
+    //#endregion
+
+    renderBaseOptions = () => {
+        return (
+            <ListGroup>
+                <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
+                {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
+                {this.isCustom() && <OptionLine onClick={this.addCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
+                <OptionLine onClick={this.moveListUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
+                <OptionLine onClick={this.moveListDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
+                <OptionLine onClick={this.killList} icon="thumbs-down">Kill All (0HP)</OptionLine>
+                <OptionLine onClick={this.fullHealList} icon="heart">Full Heal All</OptionLine>
+                <hr />
+                <OptionLine onClick={this.props.onDelete} icon="trash">Delete All</OptionLine>
+            </ListGroup>
         );
     }
 

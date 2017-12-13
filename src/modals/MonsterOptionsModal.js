@@ -6,6 +6,7 @@ import BhModal from "./BhModal";
 import C from "../Constants";
 import ColorPicker from "./ColorPicker";
 import ColorService from "../services/ColorService";
+import LinkService from "../services/LinkService";
 import MonsterData from '../data/MonsterData';
 import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "./OptionLine";
@@ -19,17 +20,20 @@ class MonsterOptionsModal extends Component {
     constructor(props) {
         super(props);
 
-        const monster: MonsterData = props.context.monster;
+        const monster: MonsterData = props.context.monster || {};
+        const list: MonsterListData = props.context.list || {};
 
         this.state = {
             showCustomize: false,
             showColorPicker: false,
             showTextColorPicker: false,
-            name: monster && monster.name || "",
-            hp: monster && monster.hp,
-            color: monster && monster.color,
-            textColor: monster && monster.textColor
+            name: monster.name || "",
+            hp: monster.hp,
+            color: monster.color,
+            textColor: monster.textColor
         };
+
+        this.toMonsterPageHandler = LinkService.toNewTabHandler(`https://www.dndbeyond.com/monsters/${list.monsterId}`);
     }
 
     buildTitle = () => {
@@ -54,6 +58,22 @@ class MonsterOptionsModal extends Component {
     sampleTextColor = () => {
         const list = this.props.context.list;
         return this.state.textColor || list && list.textColor || this.props.encounter.textColor;
+    }
+
+    isCustom = () => {
+        const list: MonsterListData = this.props.context.list;
+        if (!list || !list.monsterId) return false;
+        return list.monsterId.startsWith("bh-");
+    }
+
+    toDetailsPage = (e: MouseEvent) => {
+        this.toMonsterPageHandler(e);
+        this.props.onHide();
+    }
+
+    addCustomMonster = () => {
+        const list: MonsterListData = this.props.context.list;
+        MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(this.props.onChange);
     }
 
     toCustomizeOptions = () => {
@@ -105,6 +125,8 @@ class MonsterOptionsModal extends Component {
         return (
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
+                {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
+                {this.isCustom() && <OptionLine onClick={this.addCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
                 <OptionLine onClick={this.killMonster} icon="thumbs-down">Kill (0HP)</OptionLine>
                 <OptionLine onClick={this.fullHealMonster} icon="heart">Full Heal</OptionLine>
                 <hr />
