@@ -4,7 +4,7 @@ import $ from "jquery";
 import CharacterFolderData from "../../data/CharacterFolderData";
 import ContentModal from "../dialogs/ContentModal";
 import ReactDOM from 'react-dom';
-import TextFieldService from "../../services/TextFieldService";
+import FieldService from "../../services/FieldService";
 
 /**
  * Button to create a new folder.
@@ -43,8 +43,8 @@ class CreateFolderButton extends Component {
                         className="builder-field-value"
                         maxLength="40" ref={(el) => this.nameInput = el}
                         value={this.state.newFolderName}
-                        onChange={TextFieldService.onChangeFunc("newFolderName", this)}
-                        onKeyDown={TextFieldService.onEnterFunc(this.handleConfirm, this)}
+                        onChange={FieldService.onChangeFunc("newFolderName", this)}
+                        onKeyDown={FieldService.onEnterFunc(this.handleConfirm, this)}
                     />
                 </span>
             </div>

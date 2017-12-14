@@ -2,7 +2,7 @@ import { FormControl, FormGroup } from 'react-bootstrap';
 import React, { Component } from "react";
 
 import FieldLabel from "./FieldLabel";
-import TextFieldService from "../services/TextFieldService";
+import FieldService from "../services/FieldService";
 
 class TextField extends Component {
     render() {
@@ -14,8 +14,8 @@ class TextField extends Component {
                         type="text"
                         style={{ height: "32px" }}
                         value={this.props.value}
-                        onChange={TextFieldService.onChangeFunc(this.props.valuePropName, this.props.container)}
-                        onKeyDown={TextFieldService.onEnterFunc(this.props.onEnter, this.props.container)}
+                        onChange={FieldService.onChangeFunc(this.props.valuePropName, this.props.container)}
+                        onKeyDown={FieldService.onEnterFunc(this.props.onEnter, this.props.container)}
                         maxLength={this.props.maxLength}
                     />
                 </FormGroup>

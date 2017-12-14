@@ -3,7 +3,6 @@ import "./ColorPicker.scss";
 import { FormControl, InputGroup } from 'react-bootstrap';
 import React, { Component } from "react";
 
-import ColorService from "../services/ColorService";
 import FieldLabel from "./FieldLabel";
 import MonsterMenuButton from "../monsterbuttons/MonsterMenuButton";
 import { SketchPicker } from "react-color";

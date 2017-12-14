@@ -5,11 +5,11 @@ import BadgeService from "../services/BadgeService";
 import BhModal from "./BhModal";
 import C from "../Constants";
 import ColorPicker from "../forms/ColorPicker";
-import ColorService from "../services/ColorService";
+import FieldService from "../services/FieldService";
 import LinkService from "../services/LinkService";
 import MonsterData from '../data/MonsterData';
 import MonsterStorageService from "../services/storage/MonsterStorageService";
-import OptionLine from "./OptionLine";
+import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
 import StorageService from "../services/storage/StorageService";
 import TextField from "../forms/TextField";
@@ -151,22 +151,22 @@ class MonsterOptionsModal extends Component {
                     <ColorPicker
                         label="Hp Bar Color"
                         showPicker={this.state.showColorPicker}
-                        onTogglePicker={ColorService.onToggleFunc("showColorPicker", this)}
+                        onTogglePicker={FieldService.onToggleFunc("showColorPicker", this)}
                         color={this.state.color}
                         defaultColor={C.DefaultMonsterColor}
                         presetColors={C.PresetMonsterColor}
-                        onChange={ColorService.onChangeFunc("color", this)}
+                        onChange={FieldService.onColorChangeFunc("color", this)}
                     />
                 </OptionLine>
                 <OptionLine>
                     <ColorPicker
                         label="Hp Bar Text Color"
                         showPicker={this.state.showTextColorPicker}
-                        onTogglePicker={ColorService.onToggleFunc("showTextColorPicker", this)}
+                        onTogglePicker={FieldService.onToggleFunc("showTextColorPicker", this)}
                         color={this.state.textColor}
                         defaultColor={C.DefaultMonsterTextColor}
                         presetColors={C.PresetMonsterTextColor}
-                        onChange={ColorService.onChangeFunc("textColor", this)}
+                        onChange={FieldService.onColorChangeFunc("textColor", this)}
                     />
                 </OptionLine>
             </ListGroup>

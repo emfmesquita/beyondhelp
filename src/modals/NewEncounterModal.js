@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import BhModal from "./BhModal";
 import TextField from "../forms/TextField";
-import TextFieldService from "../services/TextFieldService";
+import FieldService from "../services/FieldService";
 
 class NewEncounterModal extends Component {
     constructor(props) {

@@ -1,6 +1,8 @@
 import $ from "jquery";
 import AddMonsterButton from './addmonsters/AddMonsterButton';
 import CampaignCharactersService from "./characters/CampaignCharactersService";
+import ConfigStorageService from "../services/storage/ConfigStorageService";
+import Configuration from "../data/Configuration";
 import FavIconService from "./FavIconService";
 import MonsterParseData from "./addmonsters/MonsterParseData";
 import MonsterParseService from "./addmonsters/MonsterParseService";
@@ -15,27 +17,31 @@ const createButton = function (id: string, name: string, hp: string) {
     return buttonSpan;
 };
 
-const init = function () {
+const init = function (config: Configuration) {
     // render the add monster buttons
-    MonsterParseService.parseMonsters().forEach(data => {
+    MonsterParseService.parseMonsters(config).forEach(data => {
         const buttonsDiv = document.createElement("div");
         const monster = data.monsterData;
         buttonsDiv.appendChild(createButton(monster.id, monster.name, monster.hp, data.insert));
         buttonsDiv.appendChild(createButton(monster.id, monster.name, monster.diceHp, data.insert));
         data.insert(buttonsDiv);
     });
+
     // inits the table rollers
-    TableRollService.init();
+    if (config.tableroll) TableRollService.init();
 };
 
-chrome.runtime.onMessage.addListener(() => init());
-init();
+chrome.runtime.onMessage.addListener(() => ConfigStorageService.getConfig().then(init));
 
-// change fav icon of char page
-FavIconService.changeFavIcon();
+ConfigStorageService.getConfig().then((config: Configuration) => {
+    init(config);
 
-// change my characters page
-MyCharactersService.init();
+    // change fav icon of char page
+    if (config.charfavicon) FavIconService.changeFavIcon();
 
-// change campaign page
-CampaignCharactersService.init();
+    // change my characters page
+    if (config.mycharacterfolders) MyCharactersService.init();
+
+    // change campaign page
+    if (config.campaigncharacterfolders) CampaignCharactersService.init();
+});

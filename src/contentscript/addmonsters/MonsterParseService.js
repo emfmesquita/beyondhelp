@@ -1,4 +1,5 @@
 import $ from "jquery";
+import Configuration from "../../data/Configuration";
 import MonsterContentData from "./MonsterContentData";
 import MonsterParseData from "./MonsterParseData";
 
@@ -54,16 +55,20 @@ const parseDetail = function (): MonsterParseData[] {
 };
 
 class MonsterParseService {
-    static parseMonsters(): MonsterParseData[] {
+    static parseMonsters(config: Configuration): MonsterParseData[] {
         const path = window.location.pathname;
-
         const isMonsterList = isOnMonsterList(path);
         const isHomebrew = isOnHomebrew(path);
-        if (isMonsterList || isHomebrew) {
+
+        if (isMonsterList && config.addmonsteronlist) {
             return parseList(isHomebrew);
         }
 
-        if (isOnMonsterDetail(path)) {
+        if (isHomebrew && config.addmonsteronhlist) {
+            return parseList(isHomebrew);
+        }
+
+        if (isOnMonsterDetail(path) && config.addmonsterondetail) {
             return parseDetail();
         }
 
