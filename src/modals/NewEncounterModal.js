@@ -2,7 +2,7 @@ import { Button, FormControl, FormGroup, Modal } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 import BhModal from "./BhModal";
-import TextField from "./TextField";
+import TextField from "../forms/TextField";
 import TextFieldService from "../services/TextFieldService";
 
 class NewEncounterModal extends Component {

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import BadgeService from "../services/BadgeService";
 import BhModal from "./BhModal";
 import C from "../Constants";
-import ColorPicker from "./ColorPicker";
+import ColorPicker from "../forms/ColorPicker";
 import ColorService from "../services/ColorService";
 import LinkService from "../services/LinkService";
 import MonsterData from '../data/MonsterData';
@@ -12,7 +12,7 @@ import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "./OptionLine";
 import SampleHpBar from '../SampleHpBar';
 import StorageService from "../services/storage/StorageService";
-import TextField from "./TextField";
+import TextField from "../forms/TextField";
 
 const maxHpRegex = /^[0-9]+$/i;
 

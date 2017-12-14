@@ -32,5 +32,17 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.html, plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
+    plugins: [plugins.popupHtml, plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
+}, {
+    entry: './src/optionspage/optionspage.js',
+    output: {
+        filename: 'optionspage.js',
+        path: paths.buildDir
+    },
+    module: {
+        rules: [rules.lint, {
+            oneOf: [rules.static, rules.js, rules.css, rules.file]
+        }]
+    },
+    plugins: [plugins.optsHtml, plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
 }];

@@ -12,6 +12,7 @@ module.exports.config = (isProd) => {
     result.paths.buildDir = path.resolve(__dirname, '../build');
     result.paths.publicDir = path.resolve(__dirname, '../public');
     result.paths.popupHtml = path.resolve(__dirname, '../public/extensionpopup.html');
+    result.paths.optsHtml = path.resolve(__dirname, '../public/optionspage.html');
 
     fs.emptyDirSync(result.paths.buildDir);
     fs.copySync(result.paths.publicDir, result.paths.buildDir, {
@@ -78,10 +79,15 @@ module.exports.config = (isProd) => {
     };
 
     result.plugins = {
-        html: new HtmlWebpackPlugin({
+        popupHtml: new HtmlWebpackPlugin({
             inject: true,
             template: result.paths.popupHtml,
             filename: "extensionpopup.html"
+        }),
+        optsHtml: new HtmlWebpackPlugin({
+            inject: true,
+            template: result.paths.optsHtml,
+            filename: "optionspage.html"
         }),
         provideJquery: new webpack.ProvidePlugin({
             $: "jquery",

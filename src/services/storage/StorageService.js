@@ -96,20 +96,7 @@ const deleteData = function (data: Data | Data[]): Promise<Data> {
     });
 };
 
-const getConfig = function (): Promise<Configuration> {
-    return getData(Constants.ConfigurationId).then(config => {
-        return config ? Promise.resolve(config) : createData("Configuration", new Configuration());
-    });
-};
-
 class StorageService {
-
-    /**
-     * Gets or creates the configuration data.
-     */
-    static getConfig(): Promise<Configuration> {
-        return getConfig();
-    }
 
     static getData(id: string): Promise<Data> {
         return getData(id);

@@ -33,5 +33,18 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.html, plugins.provideJquery]
+    plugins: [plugins.popupHtml, plugins.provideJquery]
+}, {
+    entry: './src/optionspage/optionspage.js',
+    output: {
+        filename: 'optionspage.js',
+        path: paths.buildDir
+    },
+    devtool: "cheap-module-eval-source-map",
+    module: {
+        rules: [rules.lint, {
+            oneOf: [rules.static, rules.js, rules.css, rules.file]
+        }]
+    },
+    plugins: [plugins.optsHtml, plugins.provideJquery]
 }];

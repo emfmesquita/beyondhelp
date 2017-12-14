@@ -21,6 +21,10 @@
             ]
         }
     ],
+    "options_ui": {
+        "page": "optionspage.html",
+        "chrome_style": true
+    },
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {

@@ -1,3 +1,4 @@
+import ConfigStorageService from "./ConfigStorageService";
 import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterEncounterStorageService from "./MonsterEncounterStorageService";
@@ -14,7 +15,7 @@ class MonsterStorageService {
         let storageData, config, encounter, list;
         return StorageService.getStorageData().then(result => {
             storageData = result;
-            return StorageService.getConfig();
+            return ConfigStorageService.getConfig();
         }).then(result => {
             config = result;
 
@@ -50,7 +51,7 @@ class MonsterStorageService {
         const empty = { total: 0, alive: 0 };
         return StorageService.getStorageData().then(result => {
             storageData = result;
-            return StorageService.getConfig();
+            return ConfigStorageService.getConfig();
         }).then(config => {
             if (!config.activeEncounterId) {
                 return empty;

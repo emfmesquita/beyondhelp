@@ -1,3 +1,4 @@
+import ConfigStorageService from "./ConfigStorageService";
 import Configuration from '../../data/Configuration';
 import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
@@ -14,7 +15,7 @@ class MonsterEncounterStorageService {
 
         return StorageService.getStorageData().then(result => {
             storageData = result;
-            return StorageService.getConfig();
+            return ConfigStorageService.getConfig();
         }).then(config => {
             // if there is no encounter creates it, updates the config and returns because there is no more data to be gathered
             if (!config.activeEncounterId) {
@@ -69,7 +70,7 @@ class MonsterEncounterStorageService {
 
     static createEncounter(name: string, optionalConfig: Configuration): Promise<MonsterEncounterData> {
         let config;
-        const configPromise = optionalConfig ? Promise.resolve(optionalConfig) : StorageService.getConfig();
+        const configPromise = optionalConfig ? Promise.resolve(optionalConfig) : ConfigStorageService.getConfig();
         return configPromise.then(result => {
             config = result;
             return StorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, name));
@@ -84,7 +85,7 @@ class MonsterEncounterStorageService {
      */
     static deleteEncounter(oldEncounter: MonsterEncounterData, newActiveEncounter: MonsterEncounterData): Promise {
         const toDelete = [];
-        return StorageService.getConfig().then(config => {
+        return ConfigStorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
             return StorageService.updateData(config);
         }).then(() => {

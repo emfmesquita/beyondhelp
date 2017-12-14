@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import $ from "jquery";
 import BadgeService from './services/BadgeService';
 import C from "./Constants";
+import ConfigStorageService from './services/storage/ConfigStorageService';
 import ConfirmDialog from "./modals/ConfirmDialog";
 import EncounterOptionsModal from "./modals/EncounterOptionsModal";
 import Link from './monsterbuttons/Link';
@@ -101,7 +102,7 @@ class App extends Component {
      * onChange of encounter select
      */
     activeEncounterChange = (newActiveEncounter: MonsterEncounterData) => {
-        StorageService.getConfig().then(config => {
+        ConfigStorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
             return StorageService.updateData(config);
         }).then(() => {
