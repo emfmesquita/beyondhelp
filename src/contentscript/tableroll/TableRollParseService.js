@@ -46,6 +46,11 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
                 new RollableData("Swamp", "d100", [3], columnHeaders[3])
             ]);
         }
+    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/compendium/rules/ttp/the-tortle-package")) {
+        return new RollableTableData([
+            new RollableData("Land", "d100", [1], columnHeaders[1]),
+            new RollableData("Water", "d100", [2], columnHeaders[2])
+        ]);
     } else if (checkSpecial(firstColumnHeaderText, "d100*", "/compendium/rules/xgte/character-options-this-is-your-life")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d100");
     } else if (checkSpecial(firstColumnHeaderText, "3d6 +Cha mod", "/compendium/rules/xgte/character-options-this-is-your-life")) {
