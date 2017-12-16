@@ -30,7 +30,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
-### Enhanced "My Characters Page"
+### Enhanced My Characters Page
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
 
@@ -44,14 +44,22 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
 
-### Gloabal Options
+### Global Options
 - Turn on/off features of Beyond Help (right click on extension icon, then click on options).
 
 ## Some screenshots
 
-![Add From Monster Listing](http://i.imgur.com/pU5WvoG.png)
-![Add From Monsters Detail Page](http://i.imgur.com/c9usntG.png)
-![Add From Homebrew](http://i.imgur.com/rEZXS8P.png)
-![Progress Bar Tooltip](http://i.imgur.com/KH3Xzbn.png)
-![Scroll to Damage](http://i.imgur.com/BxiMxPU.png)
-![Select of Encounters](http://i.imgur.com/PYYdsMW.png)
+### Monster Hp Tracker
+![Monster Hp Tracker](http://i.imgur.com/ny8dadX.png)
+
+### Enhanced "My Characters Page"
+![Enhanced My Characters Page](http://i.imgur.com/OfrTahJ.png)
+
+### Roll on Tables
+![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
+
+### Character Page Favicon
+![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
+
+### Global Options
+![Global Options](http://i.imgur.com/o7XwcNG.png)
