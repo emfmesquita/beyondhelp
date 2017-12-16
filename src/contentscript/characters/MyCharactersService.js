@@ -18,7 +18,7 @@ class MyCharactersService {
 
             // parses and sort characters by name
             let characters = CharactersService.parseCharacters();
-            characters = characters.sort((a, b) => a.name > b.name);
+            characters = characters.sort((a, b) => a.name.localeCompare(b.name));
 
             // adds the container of characters folders on content page
             const jqFoldersContainer = $("<div></div>");

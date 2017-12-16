@@ -22,7 +22,7 @@ class CampaignCharactersService {
 
             // parses and sort characters by name
             let characters = CharactersService.parseCharacters(!isDm);
-            characters = characters.sort((a, b) => a.name > b.name);
+            characters = characters.sort((a, b) => a.name.localeCompare(b.name));
 
             if (isDm) {
                 // adds the container of characters folders on content page

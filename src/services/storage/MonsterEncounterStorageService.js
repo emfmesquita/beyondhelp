@@ -41,11 +41,11 @@ class MonsterEncounterStorageService {
 
             listMap.forEach(lists => lists.forEach(list => {
                 list.monsters = monsterMap.get(list.storageId);
-                list.monsters && list.monsters.sort((a: MonsterData, b: MonsterData) => a.order > b.order);
+                if (list.monsters) list.monsters = list.monsters.sort((a: MonsterData, b: MonsterData) => a.order - b.order);
             }));
             encounters.forEach(encounter => {
                 encounter.lists = listMap.get(encounter.storageId);
-                encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.order > b.order);
+                if (encounter.lists) encounter.lists = encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.order - b.order);
             });
 
             return result;
