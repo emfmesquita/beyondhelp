@@ -4,6 +4,7 @@ import MonsterListData from '../../data/MonsterListData';
 import Prefix from "./Prefix";
 import Q from "./Q";
 import StorageService from "./StorageService";
+import MonsterData from '../../data/MonsterData';
 
 const getCurrentOrderValue = function (encounterId: string, storageData): number {
     const lists = MonsterEncounterStorageService.getEncounterLists(encounterId, storageData);
@@ -50,6 +51,10 @@ class MonsterListStorageService {
         }
 
         return checkOrderPromise.then(() => listMap);
+    }
+
+    static getListMonsters(listId: string, storageData): MonsterData[] {
+        return StorageService.find(storageData, Q.clazz("MonsterData"), Q.eq("listId", listId));
     }
 
     static createList(name: string, monsterId: string, encounterId: string, storageData): Promise<MonsterListData> {

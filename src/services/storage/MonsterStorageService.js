@@ -7,6 +7,16 @@ import MonsterListStorageService from "./MonsterListStorageService";
 import Q from "./Q";
 import StorageService from "./StorageService";
 
+const getCurrentOrderValue = function (listId: string, storageData): number {
+    const monsters = MonsterListStorageService.getListMonsters(listId, storageData);
+    if (!monsters || monsters.length === 0) return 0;
+    let maxOrder = 0;
+    monsters.forEach(monster => {
+        if (maxOrder < monster.order) maxOrder = monster.order;
+    });
+    return maxOrder + 1;
+};
+
 class MonsterStorageService {
 
     static findMonstersGroupedByList(storageData): Promise<Map<string, MonsterData[]>> {
@@ -57,6 +67,7 @@ class MonsterStorageService {
             list = result;
             // creates the monster
             const newMonster = new MonsterData(null, list.storageId, hp, list.lastNumber + 1);
+            newMonster.order = getCurrentOrderValue(list.storageId, storageData);
             return StorageService.createData("MonsterData", newMonster);
         }).then((monster) => {
             // updates list last monster number and possible name change
