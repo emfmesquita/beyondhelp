@@ -32,3 +32,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 BadgeService.updateBadgeCount();
+
+// functions for existing data testing
+window.bhdump = function () {
+    chrome.storage.sync.get(undefined, storageData => console.log(JSON.stringify(storageData)));
+}
+window.bhload = function (data: string) {
+    chrome.storage.sync.clear(() => chrome.storage.sync.set(JSON.parse(data)));
+}
