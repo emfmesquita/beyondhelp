@@ -22,8 +22,10 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - The monsters can be added with average HP or calculated one;
 - Creation of independent encounters. This allows to prepare the encounters before hand and quickly swap from one to another;
 - Change the monsters current HP by clicking and typing the new value or by scrolling to damage or heal;
-- Customize individual monster name, max hp, hp bar/text color;
-- Links to each monster added to their details page on dndbeyond.com (middle click to open on a new tab);
+- Customize monsters name, max hp.
+- Customize hp bar/text color on encounter, list and monsters levels;
+- Add custom monsters, with hp expressions (ex.: 2d12 + 2);
+- Links to each monster added to their details page on dndbeyond.com;
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
@@ -31,11 +33,17 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
 
+### New Campaign Page
+- On campaigns that you are the DM charactes are sorted by name. Also it is possible to create collapsible folders and add characters to them.
+
 ### Roll on Tables
-- Enables click to roll on most of the tables of the compendium and description pages.\
+- Enables click to roll on most of the tables of the compendium and description pages.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
+
+### Gloabal Options
+- Turn on/off features of Beyond Help (right click on extension icon, then click on options).
 
 ## Some screenshots
 
