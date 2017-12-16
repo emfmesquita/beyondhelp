@@ -30,7 +30,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
-### Enhanced "My Characters Page":
+### Enhanced "My Characters Page"
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
 
