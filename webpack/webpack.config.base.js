@@ -112,7 +112,7 @@ module.exports.config = (isProd) => {
     };
 
     if (isProd) {
-        result.plugins.html.minify = {
+        const minify = {
             removeComments: true,
             collapseWhitespace: true,
             removeRedundantAttributes: true,
@@ -124,6 +124,8 @@ module.exports.config = (isProd) => {
             minifyCSS: true,
             minifyURLs: true,
         }
+        result.plugins.popupHtml.minify = minify;
+        result.plugins.optsHtml.minify = minify;
     }
 
     return result;
