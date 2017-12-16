@@ -25,16 +25,18 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Customize monsters name, max hp.
 - Customize hp bar/text color on encounter, list and monsters levels;
 - Add custom monsters, with hp expressions (ex.: 2d12 + 2);
+- Reorder monsters and lists of monsters;
 - Links to each monster added to their details page on dndbeyond.com;
 - Local offline usage of all encounters already created;
 - All changes are auto saved and synchronized to google account and accessible from all chromes the account is logged in (unfortunately no support for chrome extensions on mobile).
 
-### New "My Characters Page":
+### Enhanced "My Characters Page":
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
 
-### New Campaign Page
-- On campaigns that you are the DM charactes are sorted by name. Also it is possible to create collapsible folders and add characters to them.
+### Enhanced Campaign Page
+- Characters are sorted by name;
+- On campaigns that you are the DM it is possible to create collapsible folders and add characters to them.
 
 ### Roll on Tables
 - Enables click to roll on most of the tables of the compendium and description pages.
