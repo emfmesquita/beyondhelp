@@ -5,16 +5,18 @@ import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterListData from '../../data/MonsterListData';
 import Q from "./Q";
 import StorageService from "./StorageService";
+import MonsterListStorageService from "./MonsterListStorageService";
+import MonsterStorageService from "./MonsterStorageService";
 
 class MonsterEncounterStorageService {
     /**
      * Gets all the encounters trees of data.
      */
     static getMonsterEncounters(): Promise<{ active: MonsterEncounterData, all: MonsterEncounterData[] }> {
-        let storageData;
+        let storageData, result, listMap: Map<string, MonsterListData[]>, encounters: MonsterEncounterData[];
 
-        return StorageService.getStorageData().then(result => {
-            storageData = result;
+        return StorageService.getStorageData().then(foundData => {
+            storageData = foundData;
             return ConfigStorageService.getConfig();
         }).then(config => {
             // if there is no encounter creates it, updates the config and returns because there is no more data to be gathered
@@ -25,42 +27,28 @@ class MonsterEncounterStorageService {
             }
 
             // mounts the tree of data of each encounter
-            const encounters: MonsterEncounterData[] = StorageService.find(storageData, Q.clazz("MonsterEncounterData"))
+            encounters = StorageService.find(storageData, Q.clazz("MonsterEncounterData"))
                 .sort((a: MonsterEncounterData, b: MonsterEncounterData) => a.name.localeCompare(b.name));
             const activeEncounter = encounters.find(encounter => encounter.storageId === config.activeEncounterId);
-            const result = { active: activeEncounter, all: encounters };
+            result = { active: activeEncounter, all: encounters };
 
-            const listMap: Map<string, MonsterListData[]> = StorageService.findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
-            if (listMap.length === 0) {
-                return result;
-            }
-
-            // check existing ordering info
-            const firstList: MonsterListData = StorageService.findSingle(storageData, Q.clazz("MonsterListData"));
-            let checkOrderPromise = Promise.resolve();
-            if (firstList && (firstList.order === null || firstList.order === undefined)) {
-                const toSaveLists = [];
-                for (var encounterId of listMap.keys()) {
-                    let lists = listMap.get(encounterId);
-                    if (!lists || lists.length === 0) return;
-                    lists = lists.sort((a: MonsterListData, b: MonsterListData) => a.name.localeCompare(b.name));
-                    lists.forEach((list, idx) => {
-                        list.order = idx;
-                        toSaveLists.push(list);
-                    });
-                }
-                checkOrderPromise = StorageService.updateData(toSaveLists);
-            }
-
-            return checkOrderPromise.then(() => {
-                const monsterMap: Map<string, MonsterData[]> = StorageService.findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
-                listMap.forEach(lists => lists.forEach(list => list.monsters = monsterMap.get(list.storageId)));
-                encounters.forEach(encounter => {
-                    encounter.lists = listMap.get(encounter.storageId);
-                    encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.order > b.order);
-                });
-                return result;
+            return MonsterListStorageService.findListGroupedByEncounter(storageData).then((map) => {
+                listMap = map;
+                return listMap.length === 0 ? null : MonsterStorageService.findMonstersGroupedByList(storageData);
             });
+        }).then(monsterMap => {
+            if (!monsterMap) return result;
+
+            listMap.forEach(lists => lists.forEach(list => {
+                list.monsters = monsterMap.get(list.storageId);
+                list.monsters && list.monsters.sort((a: MonsterData, b: MonsterData) => a.order > b.order);
+            }));
+            encounters.forEach(encounter => {
+                encounter.lists = listMap.get(encounter.storageId);
+                encounter.lists && encounter.lists.sort((a: MonsterListData, b: MonsterListData) => a.order > b.order);
+            });
+
+            return result;
         });
     }
 

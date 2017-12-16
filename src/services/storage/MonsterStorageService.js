@@ -8,6 +8,29 @@ import Q from "./Q";
 import StorageService from "./StorageService";
 
 class MonsterStorageService {
+
+    static findMonstersGroupedByList(storageData): Promise<Map<string, MonsterData[]>> {
+        const monsterMap = StorageService.findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
+
+        // check existing ordering info
+        const firstMonster: MonsterData = StorageService.findSingle(storageData, Q.clazz("MonsterData"));
+        let checkOrderPromise = Promise.resolve();
+        if (firstMonster && (firstMonster.order === null || firstMonster.order === undefined)) {
+            const toSaveMonsters = [];
+            for (var listId of monsterMap.keys()) {
+                let monsters = monsterMap.get(listId);
+                if (!monsters || monsters.length === 0) continue;
+                monsters.forEach((monster, idx) => {
+                    monster.order = idx;
+                    toSaveMonsters.push(monster);
+                });
+            }
+            checkOrderPromise = StorageService.updateData(toSaveMonsters);
+        }
+
+        return checkOrderPromise.then(() => monsterMap);
+    }
+
     /**
      * Creates a monster and all the parent date related to it.
      */

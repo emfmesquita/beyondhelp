@@ -37,18 +37,24 @@ class ListOptionsModal extends Component {
         this.toMonsterPageHandler = LinkService.toNewTabHandler(`https://www.dndbeyond.com/monsters/${list.monsterId}`);
     }
 
-    isFirst = () => {
+    title = () => {
+        const list: MonsterListData = this.props.context.list || {};
+        return `List - ${list.name}`;
+    }
+
+    isFirstOrLast = (first: boolean) => {
         const list: MonsterListData = this.props.context.list;
         if (!list) return false;
         const encounter: MonsterEncounterData = this.props.encounter;
-        return encounter.lists.indexOf(list) === 0;
+        return encounter.lists.indexOf(list) === first ? 0 : encounter.lists.length - 1;
+    }
+
+    isFirst = () => {
+        this.isFirstOrLast(true);
     }
 
     isLast = () => {
-        const list: MonsterListData = this.props.context.list;
-        if (!list) return false;
-        const encounter: MonsterEncounterData = this.props.encounter;
-        return encounter.lists.indexOf(list) === encounter.lists.length - 1;
+        this.isFirstOrLast(false);
     }
 
     toDetailsPage = (e: MouseEvent) => {
@@ -242,7 +248,7 @@ class ListOptionsModal extends Component {
             <BhModal
                 show={this.props.show}
                 onHide={this.props.onHide}
-                title={this.props.context.list && this.props.context.list.name}
+                title={this.title()}
                 body={this.state.showCustomize ? this.renderCustomize() : this.renderBaseOptions()}
                 footer={this.state.showCustomize ? this.renderCustomizeFooter() : null}
             />

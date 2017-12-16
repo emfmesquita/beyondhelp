@@ -6,19 +6,26 @@ class CharactersService {
     /**
      * Parse characters from my characters page and campaign page as a Array of CharacterData.
      */
-    static parseCharacters(): CharacterData[] {
+    static parseCharacters(nameOnly: boolean): CharacterData[] {
         const characters = [];
         $(".ddb-campaigns-character-card-wrapper").each((index, charWrapperEl) => {
+            let character: CharacterData;
             const jqcharWrapperEl = $(charWrapperEl);
+
             const name = jqcharWrapperEl.find(".ddb-campaigns-character-card-header-upper-character-info-primary").text();
-            const [lvl, race, classes] = jqcharWrapperEl.find(".ddb-campaigns-character-card-header-upper-character-info-secondary").first().text().split("|");
-            const viewUrl = jqcharWrapperEl.find(".ddb-campaigns-character-card-footer-links-item-view").attr("href");
-            const [, , , , id] = viewUrl.split("/");
+            if (nameOnly) {
+                character = new CharacterData(null, name, null, null, null, jqcharWrapperEl[0]);
+            } else {
+                const [lvl, race, classes] = jqcharWrapperEl.find(".ddb-campaigns-character-card-header-upper-character-info-secondary").first().text().split("|");
+                const viewUrl = jqcharWrapperEl.find(".ddb-campaigns-character-card-footer-links-item-view").attr("href");
+                const [, , , , id] = viewUrl.split("/");
+                character = new CharacterData(id, name, lvl, race, classes, jqcharWrapperEl[0]);
+            }
 
             // workaround for modal links - for some reason the stop to work when the char elements are moved on DOM
             jqcharWrapperEl.find("a.modal-link").attr("onclick", "Cobalt.Forms.handleModalLinks.apply(this, [event])");
 
-            characters.push(new CharacterData(id, name, lvl, race, classes, jqcharWrapperEl[0]));
+            characters.push(character);
         });
         return characters;
     }

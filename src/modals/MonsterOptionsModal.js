@@ -13,6 +13,7 @@ import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
 import StorageService from "../services/storage/StorageService";
 import TextField from "../forms/TextField";
+import MonsterListData from '../data/MonsterListData';
 
 const maxHpRegex = /^[0-9]+$/i;
 
@@ -42,6 +43,21 @@ class MonsterOptionsModal extends Component {
         if (!list || !mon) return "";
         if (mon.name) return mon.name;
         return `${list.name} #${mon.number}`;
+    }
+
+    isFirstOrLast = (first: boolean) => {
+        const monster: MonsterData = this.props.context.monster;
+        if (!monster) return false;
+        const list: MonsterListData = this.props.context.list;
+        return list.monsters.indexOf(monster) === first ? 0 : list.monsters.length - 1;
+    }
+
+    isFirst = () => {
+        this.isFirstOrLast(true);
+    }
+
+    isLast = () => {
+        this.isFirstOrLast(false);
     }
 
     sampleLabel = () => {
@@ -74,6 +90,32 @@ class MonsterOptionsModal extends Component {
     addCustomMonster = () => {
         const list: MonsterListData = this.props.context.list;
         MonsterStorageService.createMonster(list.monsterId, list.name, list.hpexp).then(this.props.onChange);
+    }
+
+    move = (delta: number) => {
+        const monster: MonsterData = this.props.context.monster;
+        const list: MonsterListData = this.props.context.list;
+        const idx = list.monsters.indexOf(monster);
+        const newIdx = idx + delta;
+        if (newIdx < 0 || newIdx >= list.monsters.length) {
+            this.props.onHide();
+            return;
+        }
+        const toSwapMonster = list.monsters[newIdx];
+        const tempOrder = monster.order;
+        monster.order = toSwapMonster.order;
+        toSwapMonster.order = tempOrder;
+        list.monsters[idx] = toSwapMonster;
+        list.monsters[newIdx] = monster;
+        StorageService.updateData([monster, toSwapMonster]).then(this.props.onChange);
+    }
+
+    moveUp = () => {
+        this.move(-1);
+    }
+
+    moveDown = () => {
+        this.move(1);
     }
 
     toCustomizeOptions = () => {
@@ -127,6 +169,8 @@ class MonsterOptionsModal extends Component {
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
                 {!this.isCustom() && <OptionLine onClick={this.toDetailsPage} icon="list-alt">Open Details Page</OptionLine>}
                 {this.isCustom() && <OptionLine onClick={this.addCustomMonster} icon="plus-sign">Add Monster</OptionLine>}
+                <OptionLine onClick={this.moveUp} disabled={this.isFirst()} icon="arrow-up">Move Up</OptionLine>
+                <OptionLine onClick={this.moveDown} disabled={this.isLast()} icon="arrow-down">Move Down</OptionLine>
                 <OptionLine onClick={this.killMonster} icon="thumbs-down">Kill (0HP)</OptionLine>
                 <OptionLine onClick={this.fullHealMonster} icon="heart">Full Heal</OptionLine>
                 <hr />

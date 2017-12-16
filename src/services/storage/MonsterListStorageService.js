@@ -26,6 +26,32 @@ class MonsterListStorageService {
         return StorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", storageId));
     }
 
+    static findListGroupedByEncounter(storageData): Promise<Map<string, MonsterListData[]>> {
+        const listMap: Map<string, MonsterListData[]> = StorageService.findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
+        if (listMap.length === 0) {
+            return Promise.resolve(listMap);
+        }
+
+        // check existing ordering info
+        const firstList: MonsterListData = StorageService.findSingle(storageData, Q.clazz("MonsterListData"));
+        let checkOrderPromise = Promise.resolve();
+        if (firstList && (firstList.order === null || firstList.order === undefined)) {
+            const toSaveLists = [];
+            for (var encounterId of listMap.keys()) {
+                let lists = listMap.get(encounterId);
+                if (!lists || lists.length === 0) continue;
+                lists = lists.sort((a: MonsterListData, b: MonsterListData) => a.name.localeCompare(b.name));
+                lists.forEach((list, idx) => {
+                    list.order = idx;
+                    toSaveLists.push(list);
+                });
+            }
+            checkOrderPromise = StorageService.updateData(toSaveLists);
+        }
+
+        return checkOrderPromise.then(() => listMap);
+    }
+
     static createList(name: string, monsterId: string, encounterId: string, storageData): Promise<MonsterListData> {
         const newList = new MonsterListData(null, encounterId, monsterId, name, 0);
         newList.order = getCurrentOrderValue(encounterId, storageData);
