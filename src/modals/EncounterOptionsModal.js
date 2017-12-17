@@ -44,6 +44,21 @@ class EncounterOptionsModal extends Component {
         return this.props.encounter && this.props.encounter.lists && this.props.encounter.lists.length > 0;
     }
 
+    areAllCollapsedExpanded = (collapsed: boolean) => {
+        const encounter: MonsterEncounterData = this.props.encounter;
+        if (!encounter) return false;
+        if (!encounter.lists) return true;
+        return encounter.lists.every(list => collapsed && list.collapsed || !collapsed && !list.collapsed);
+    }
+
+    areAllCollapsed = () => {
+        return this.areAllCollapsedExpanded(true);
+    }
+
+    areAllExpanded = () => {
+        return this.areAllCollapsedExpanded(false);
+    }
+
     fullHealEncounter = () => {
         const encounter: MonsterEncounterData = this.props.encounter;
         let monsters = [];
@@ -77,8 +92,8 @@ class EncounterOptionsModal extends Component {
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
                 <OptionLine onClick={this.toNewMonsterOptions} icon="file">New Custom Monster</OptionLine>
-                <OptionLine onClick={this.colapseEncounter} disabled={!this.hasLists()} icon="resize-small">Collapse All</OptionLine>
-                <OptionLine onClick={this.expandEncounter} disabled={!this.hasLists()} icon="resize-full">Expand All</OptionLine>
+                <OptionLine onClick={this.colapseEncounter} disabled={!this.hasLists() || this.areAllCollapsed()} icon="resize-small">Collapse All</OptionLine>
+                <OptionLine onClick={this.expandEncounter} disabled={!this.hasLists() || this.areAllExpanded()} icon="resize-full">Expand All</OptionLine>
                 <OptionLine onClick={this.KillEncounter} disabled={!this.hasLists()} icon="thumbs-down">Kill All (0HP)</OptionLine>
                 <OptionLine onClick={this.fullHealEncounter} disabled={!this.hasLists()} icon="heart">Full Heal All</OptionLine>
                 <hr />

@@ -22,7 +22,8 @@ class MonsterEncounterStorageService {
             // if there is no encounter creates it, updates the config and returns because there is no more data to be gathered
             if (!config.activeEncounterId) {
                 return this.createEncounter("My New Encounter", config).then((encounter) => {
-                    return { active: encounter, all: [encounter] };
+                    result = { active: encounter, all: [encounter] };
+                    return null;
                 });
             }
 

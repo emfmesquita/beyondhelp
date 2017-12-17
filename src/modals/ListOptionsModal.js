@@ -46,15 +46,15 @@ class ListOptionsModal extends Component {
         const list: MonsterListData = this.props.context.list;
         if (!list) return false;
         const encounter: MonsterEncounterData = this.props.encounter;
-        return encounter.lists.indexOf(list) === first ? 0 : encounter.lists.length - 1;
+        return encounter.lists.indexOf(list) === (first ? 0 : encounter.lists.length - 1);
     }
 
     isFirst = () => {
-        this.isFirstOrLast(true);
+        return this.isFirstOrLast(true);
     }
 
     isLast = () => {
-        this.isFirstOrLast(false);
+        return this.isFirstOrLast(false);
     }
 
     toDetailsPage = (e: MouseEvent) => {

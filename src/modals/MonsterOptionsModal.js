@@ -49,15 +49,15 @@ class MonsterOptionsModal extends Component {
         const monster: MonsterData = this.props.context.monster;
         if (!monster) return false;
         const list: MonsterListData = this.props.context.list;
-        return list.monsters.indexOf(monster) === first ? 0 : list.monsters.length - 1;
+        return list.monsters.indexOf(monster) === (first ? 0 : list.monsters.length - 1);
     }
 
     isFirst = () => {
-        this.isFirstOrLast(true);
+        return this.isFirstOrLast(true);
     }
 
     isLast = () => {
-        this.isFirstOrLast(false);
+        return this.isFirstOrLast(false);
     }
 
     sampleLabel = () => {
