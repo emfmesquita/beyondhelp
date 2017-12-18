@@ -6,9 +6,12 @@ class CharactersService {
     /**
      * Parse characters from my characters page and campaign page as a Array of CharacterData.
      */
-    static parseCharacters(nameOnly: boolean): CharacterData[] {
+    static parseCharacters(nameOnly: boolean, container: HTMLElement): CharacterData[] {
         const characters = [];
-        $(".ddb-campaigns-character-card-wrapper").each((index, charWrapperEl) => {
+
+        const selector = ".ddb-campaigns-character-card-wrapper";
+        const jqCharacters = container ? $(container).find(selector) : $(selector);
+        jqCharacters.each((index, charWrapperEl) => {
             let character: CharacterData;
             const jqcharWrapperEl = $(charWrapperEl);
 
