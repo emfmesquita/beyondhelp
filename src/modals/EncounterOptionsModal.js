@@ -65,7 +65,7 @@ class EncounterOptionsModal extends Component {
 
     handleOpenDetails = () => {
         const tabCount = MonstersService.notCustomMonsterLists(this.props.encounter).length;
-        if (tabCount > 3) {
+        if (tabCount > 5) {
             this.props.onOpenDetailsPages();
             return;
         }
