@@ -19,6 +19,7 @@ import MonsterListStorageService from './services/storage/MonsterListStorageServ
 import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import MonsterOptionsModal from "./modals/MonsterOptionsModal";
 import MonsterStorageService from './services/storage/MonsterStorageService';
+import MonstersService from './services/MonstersService';
 import NewEncounterModal from "./modals/NewEncounterModal";
 import Select from 'react-select';
 import StorageService from './services/storage/StorageService';
@@ -53,6 +54,7 @@ class App extends Component {
             showNewEncounterModal: false,
             showDeleteEncounterDialog: false,
             showDeleteListDialog: false,
+            showOpenAllDetailsDialog: false,
             monsterOptions: {
                 show: false,
                 monster: null,
@@ -210,6 +212,19 @@ class App extends Component {
         this.setState({ encounterOptions: { show: false, deleteEnabled: false } });
     }
 
+    openDetailsPagesDialog = () => {
+        this.setState(prev => {
+            const encounterOptions = prev.encounterOptions;
+            encounterOptions.show = false;
+            return { encounterOptions, showOpenAllDetailsDialog: true };
+        });
+    }
+
+    handleOpenDetailsPages = () => {
+        this.setState({ showOpenAllDetailsDialog: false });
+        MonstersService.openDetailsPages(this.state.activeEncounter);
+    }
+
     openDeleteEncounterDialog = () => {
         this.setState(prev => {
             const encounterOptions = prev.encounterOptions;
@@ -295,6 +310,14 @@ class App extends Component {
                     confirmLabel="Delete"
                     onConfirm={this.handleDeleteList}
                 />
+                <ConfirmDialog
+                    show={this.state.showOpenAllDetailsDialog}
+                    message={`Are you sure you want to open ${MonstersService.notCustomMonsterLists(this.state.activeEncounter).length} new tabs with details pages?`}
+                    onCancel={() => this.setState({ showOpenAllDetailsDialog: false })}
+                    confirmButtonStyle="primary"
+                    confirmLabel="Yes"
+                    onConfirm={this.handleOpenDetailsPages}
+                />
                 <EncounterOptionsModal
                     key={"encounter-option-modal-" + this.state.encounterOptions.show}
                     show={this.state.encounterOptions.show}
@@ -302,6 +325,7 @@ class App extends Component {
                     encounter={this.state.activeEncounter}
                     onHide={this.closeEncounterOptions}
                     onChange={this.reloadHandler(this.closeEncounterOptions)}
+                    onOpenDetailsPages={this.openDetailsPagesDialog}
                     onDelete={this.openDeleteEncounterDialog}
                 />
                 <ListOptionsModal

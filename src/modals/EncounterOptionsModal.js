@@ -6,10 +6,10 @@ import C from "../Constants";
 import ColorPicker from "../forms/ColorPicker";
 import DiceExp from "../services/DiceExp";
 import FieldService from "../services/FieldService";
-import LinkService from "../services/LinkService";
 import MonsterEncounterData from '../data/MonsterEncounterData';
 import MonsterListStorageService from "../services/storage/MonsterListStorageService";
 import MonsterStorageService from "../services/storage/MonsterStorageService";
+import MonstersService from "../services/MonstersService";
 import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
 import StorageService from "../services/storage/StorageService";
@@ -59,6 +59,22 @@ class EncounterOptionsModal extends Component {
         return this.areAllCollapsedExpanded(false);
     }
 
+    openDetailsDisabled = () => {
+        return MonstersService.notCustomMonsterLists(this.props.encounter).length === 0;
+    }
+
+    handleOpenDetails = () => {
+        const tabCount = MonstersService.notCustomMonsterLists(this.props.encounter).length;
+        if (tabCount > 3) {
+            this.props.onOpenDetailsPages();
+            return;
+        }
+
+        this.props.onHide();
+        MonstersService.openDetailsPages(this.props.encounter);
+        return;
+    }
+
     fullHealEncounter = () => {
         const encounter: MonsterEncounterData = this.props.encounter;
         let monsters = [];
@@ -92,6 +108,7 @@ class EncounterOptionsModal extends Component {
             <ListGroup>
                 <OptionLine onClick={this.toCustomizeOptions} icon="pencil">Customize</OptionLine>
                 <OptionLine onClick={this.toNewMonsterOptions} icon="file">New Custom Monster</OptionLine>
+                <OptionLine onClick={this.handleOpenDetails} disabled={this.openDetailsDisabled()} icon="list-alt">Open All Details Pages</OptionLine>
                 <OptionLine onClick={this.colapseEncounter} disabled={!this.hasLists() || this.areAllCollapsed()} icon="resize-small">Collapse All</OptionLine>
                 <OptionLine onClick={this.expandEncounter} disabled={!this.hasLists() || this.areAllExpanded()} icon="resize-full">Expand All</OptionLine>
                 <OptionLine onClick={this.KillEncounter} disabled={!this.hasLists()} icon="thumbs-down">Kill All (0HP)</OptionLine>
