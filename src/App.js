@@ -21,6 +21,7 @@ import MonsterOptionsModal from "./modals/MonsterOptionsModal";
 import MonsterStorageService from './services/storage/MonsterStorageService';
 import MonstersService from './services/MonstersService';
 import NewEncounterModal from "./modals/NewEncounterModal";
+import ScrollService from './services/ScrollService';
 import Select from 'react-select';
 import StorageService from './services/storage/StorageService';
 import { Well } from 'react-bootstrap';
@@ -28,6 +29,7 @@ import { throttle } from 'lodash';
 
 /* global chrome */
 
+ScrollService.loadScrollPosition().then(ScrollService.watchScrollChange);
 
 /**
  * Handler called after toggle, updates the list on storage.
@@ -72,15 +74,15 @@ class App extends Component {
             }
         };
 
-        this.init();
+        this.load();
 
         // listen when a monster is added from AddMonsterButton, reloads
         chrome.runtime.onMessage.addListener((request, sender) => {
-            this.init();
+            this.load();
         });
     }
 
-    init = () => {
+    load = () => {
         return MonsterEncounterStorageService.getMonsterEncounters().then(({ active, all }) => {
             this.setState({
                 encounters: all,
@@ -120,7 +122,7 @@ class App extends Component {
         return () => {
             if (beforeReload) beforeReload();
             BadgeService.updateBadgeCount();
-            this.init();
+            this.load();
         };
     }
 
@@ -130,7 +132,7 @@ class App extends Component {
      */
     handleNewEncounter = (name: string) => {
         MonsterEncounterStorageService.createEncounter(name).then(() => {
-            this.setState({ showNewEncounterModal: false }, () => this.init().then(BadgeService.updateBadgeCount));
+            this.setState({ showNewEncounterModal: false }, () => this.load().then(BadgeService.updateBadgeCount));
         });
     }
 
@@ -236,7 +238,7 @@ class App extends Component {
     handleDeleteEncounter = () => {
         const nextActiveEncounter = this.state.encounters.find((encounter) => encounter.storageId !== this.state.activeEncounter.storageId);
         MonsterEncounterStorageService.deleteEncounter(this.state.activeEncounter, nextActiveEncounter).then(() => {
-            return this.init();
+            return this.load();
         }).then(BadgeService.updateBadgeCount);
     }
     //#endregion
@@ -351,7 +353,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className={this.dialogOpenClass()} onContextMenu={(e) => e.preventDefault()}>
+            <div id="bhroot" className={this.dialogOpenClass()} onContextMenu={(e) => e.preventDefault()}>
                 <div className="Monster-encounter-menu">
                     <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
                     <MonsterMenuButton className="btn" icon="glyphicon-cog" title="Encounter Options" onClick={this.openEncounterOptions} />

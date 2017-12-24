@@ -11,6 +11,9 @@ class Configuration extends Data {
         this.charfavicon = true;
         this.mycharacterfolders = true;
         this.campaigncharacterfolders = true;
+
+        this.scrollyoffset = 0;
+        this.scrollpageheight = 0;
     }
 }
 
