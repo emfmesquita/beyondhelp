@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 class CampaignCharactersService {
     static init() {
         const path = window.location.pathname;
-        if (!path.startsWith("/campaigns/")) return;
+        if (!path.startsWith("/campaigns/") || path.startsWith("/campaigns/join/")) return;
 
         // have private notes, is the dm of campaign
         var isDm = !!$(".ddb-campaigns-detail-body-dm-notes-private").length;
