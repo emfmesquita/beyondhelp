@@ -38,7 +38,7 @@ module.exports.config = (isProd) => {
         js: {
             test: /\.(js|jsx)$/,
             loader: 'babel-loader',
-            exclude: /node_modules/,
+            exclude: [/node_modules/, /clientfiles/],
             options: {
                 babelrc: false,
                 presets: ['env', 'flow', 'react'],
@@ -47,6 +47,10 @@ module.exports.config = (isProd) => {
                 compact: !!isProd,
                 cacheDirectory: !isProd
             }
+        },
+        clientfiles: {
+            test: /clientfiles.*\.js$/,
+            loader: 'raw-loader'
         },
         css: {
             test: /\.(css|scss)$/,
@@ -79,15 +83,10 @@ module.exports.config = (isProd) => {
     };
 
     result.plugins = {
-        popupHtml: new HtmlWebpackPlugin({
+        html: (filename) => new HtmlWebpackPlugin({
             inject: true,
             template: result.paths.popupHtml,
-            filename: "extensionpopup.html"
-        }),
-        optsHtml: new HtmlWebpackPlugin({
-            inject: true,
-            template: result.paths.optsHtml,
-            filename: "optionspage.html"
+            filename
         }),
         provideJquery: new webpack.ProvidePlugin({
             $: "jquery",
@@ -124,8 +123,12 @@ module.exports.config = (isProd) => {
             minifyCSS: true,
             minifyURLs: true,
         }
-        result.plugins.popupHtml.minify = minify;
-        result.plugins.optsHtml.minify = minify;
+        const original = result.plugins.html;
+        result.plugins.html = (filename) => {
+            const plugin = original(filename);
+            plugin.minify = minify;
+            return plugin;
+        };
     }
 
     return result;

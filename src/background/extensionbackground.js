@@ -1,4 +1,6 @@
 import BadgeService from "../services/BadgeService";
+import C from "../Constants";
+import MessageService from "../services/MessageService";
 import NotificationService from "../services/NotificationService";
 import UserService from "../services/UserService";
 
@@ -6,7 +8,7 @@ import UserService from "../services/UserService";
 
 // listen the dndbeyound request to gather a more info
 // sends a message to the content script to render the add monster buttons and parse roll tables
-chrome.webRequest.onCompleted.addListener((details) => chrome.tabs.sendMessage(details.tabId, details), {
+chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(details.tabId, C.RowLoadedMessage), {
     urls: [
         "https://www.dndbeyond.com/magic-items/*/more-info",
         "https://www.dndbeyond.com/monsters/*/more-info",
@@ -17,18 +19,15 @@ chrome.webRequest.onCompleted.addListener((details) => chrome.tabs.sendMessage(d
 });
 
 // listen when a monster is added from AddMonsterButton, adds a notification
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    // if it's a reload request just ignores
-    if (request.reload) return;
-
-    // request to fetch the current user username
-    if (request.username) {
-        UserService.getCurrentUsername().then(sendResponse);
-        return true;
-    }
-
-    NotificationService.createNotification(request.notificationid, request.notification);
+MessageService.listen(C.AddMonsterMessage, (message) => {
+    NotificationService.createNotification(message.notificationid, message.notification);
     BadgeService.updateBadgeCount();
+});
+
+// listen the request to get the username
+MessageService.listen(C.UsernameMessage, (message, callback: Function) => {
+    UserService.getCurrentUsername().then(callback);
+    return true;
 });
 
 BadgeService.updateBadgeCount();

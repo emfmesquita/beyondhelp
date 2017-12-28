@@ -19,7 +19,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [rules.lint, rules.js, rules.css]
+        rules: [rules.lint, rules.js, rules.css, rules.clientfiles]
     }
 }, {
     entry: './src/extensionpopup.js',
@@ -33,7 +33,7 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.popupHtml, plugins.provideJquery]
+    plugins: [plugins.html("extensionpopup.html"), plugins.provideJquery]
 }, {
     entry: './src/optionspage/optionspage.js',
     output: {
@@ -46,5 +46,18 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.optsHtml, plugins.provideJquery]
+    plugins: [plugins.html("optionspage.html"), plugins.provideJquery]
+}, {
+    entry: './src/contentscript/tinymce/tinymcebhdialog.js',
+    output: {
+        filename: 'tinymcebhdialog.js',
+        path: paths.buildDir
+    },
+    devtool: "cheap-module-eval-source-map",
+    module: {
+        rules: [rules.lint, {
+            oneOf: [rules.static, rules.js, rules.css, rules.file]
+        }]
+    },
+    plugins: [plugins.html("tinymcebhdialog.html"), plugins.provideJquery]
 }];

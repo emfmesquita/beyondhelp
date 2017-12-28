@@ -1,12 +1,12 @@
 import { debounce, throttle } from 'lodash';
 
-import ConfigStorageService from "./storage/ConfigStorageService"
-import StorageService from "./storage/StorageService"
+import ConfigStorageService from "./storage/ConfigStorageService";
+import StorageService from "./storage/StorageService";
 
 const clrearLoadTimeHeight = function () {
     document.body.style.height = null;
     document.body.removeEventListener("mouseenter", clrearLoadTimeHeight);
-}
+};
 
 // clears the temporary height of page used to scroll before the page render
 document.body.addEventListener("mouseenter", clrearLoadTimeHeight);

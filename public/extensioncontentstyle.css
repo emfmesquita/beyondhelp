@@ -62,4 +62,21 @@ a.BH-homebrew-character-action:visited {
     .BH-Table-roll-tip .qtip-content {
         text-align: center !important;
     }
+    .BH-Tinymce-loading .loading-message-wrapper {
+        min-height: 256px !important;
+    }
+    .BH-Tinymce-loading .loading-message {
+        display: block !important;
+    }
+    .BH-Tinymce-loading .mce-tinymce {
+        display: none !important;
+    }
+    .mce-window {
+        height: auto !important;
+        width: auto !important;
+    }
+    .mce-window iframe[src$='tinymcebhdialog.html'] {
+        height: 99% !important;
+        width: 99% !important;
+    }
 }

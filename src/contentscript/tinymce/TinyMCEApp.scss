@@ -1,0 +1,16 @@
+#root {
+    .bh-content-panel {
+        padding: 8px;
+    }
+    .bh-cancel-button {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+    }
+    .Select-input {
+        width: 100%;
+        input {
+            width: 100% !important;
+        }
+    }
+}

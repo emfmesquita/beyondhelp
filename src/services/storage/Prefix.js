@@ -1,4 +1,4 @@
-import Constants from "../../Constants";
+import C from "../../Constants";
 
 /**
  * Class that handles storage data ids prefixes.
@@ -18,7 +18,7 @@ class Prefix {
     }
 
     static createStorageId(dataClass: string, increment: number) {
-        if (dataClass === "Configuration") return Constants.ConfigurationId;
+        if (dataClass === "Configuration") return C.ConfigurationId;
         if (!increment) {
             increment = 0;
         }

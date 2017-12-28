@@ -1,6 +1,8 @@
 import $ from "jquery";
+import C from "../../Constants";
 import CharactersApp from "./CharactersApp";
 import CharactersService from "./CharactersService";
+import MessageService from "../../services/MessageService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -13,7 +15,7 @@ class MyCharactersService {
         const path = window.location.pathname;
         if (path !== "/my-content/characters" && !pathRegex.test(path)) return;
 
-        chrome.runtime.sendMessage({ username: true }, {}, (username: string) => {
+        MessageService.send(C.UsernameMessage, {}, (username: string) => {
             if (!username) return;
 
             // parses and sort characters by name

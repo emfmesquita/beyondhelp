@@ -1,6 +1,7 @@
 import Configuration from '../../data/Configuration';
-import Constants from "../../Constants";
+import C from "../../Constants";
 import Data from "../../data/Data";
+import MessageService from "../MessageService";
 import MonsterData from '../../data/MonsterData';
 import MonsterListData from '../../data/MonsterListData';
 import Prefix from "./Prefix";
@@ -77,7 +78,7 @@ const createData = function (dataClass: string, data: Data | Data[]): Promise {
 
         chrome.storage.sync.set(storageEntry, () => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(data);
-            chrome.runtime.sendMessage({ reload: true });
+            MessageService.send(C.ReloadMessage);
         });
     });
 };
@@ -91,7 +92,7 @@ const deleteData = function (data: Data | Data[]): Promise<Data> {
         const toDelete = Array.isArray(data) ? data.map((d) => d.storageId) : data.storageId;
         chrome.storage.sync.remove(toDelete, (error) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
-            chrome.runtime.sendMessage({ reload: true });
+            MessageService.send(C.ReloadMessage);
         });
     });
 };

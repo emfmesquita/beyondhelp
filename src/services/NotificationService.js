@@ -1,10 +1,12 @@
+import C from "../Constants";
+import MessageService from "./MessageService";
 import MonsterData from "../data/MonsterData";
 
 /* global chrome */
 
 class NotificationService {
     static notifyNewMonster(name: string, monster: MonsterData) {
-        chrome.runtime.sendMessage({
+        MessageService.send(C.AddMonsterMessage, {
             notificationid: monster.storageId,
             notification: {
                 type: "basic",

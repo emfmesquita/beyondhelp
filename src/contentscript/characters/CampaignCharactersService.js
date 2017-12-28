@@ -1,7 +1,9 @@
 import $ from "jquery";
+import C from "../../Constants";
 import CharacterList from "./CharacterList";
 import CharactersApp from "./CharactersApp";
 import CharactersService from "./CharactersService";
+import MessageService from "../../services/MessageService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -17,7 +19,7 @@ class CampaignCharactersService {
 
         const campaign = path.substring(11);
 
-        chrome.runtime.sendMessage({ username: true }, {}, (username: string) => {
+        MessageService.send(C.UsernameMessage, {}, (username: string) => {
             if (!username) return;
 
             const charListContainers = $(".listing-container");

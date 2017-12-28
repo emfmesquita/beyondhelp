@@ -7,6 +7,13 @@ const presetListHeaderColor = [defaultListHeaderColor];
 
 const configurationId = "bh-config";
 
+const addMonsterMessage = "addmonstermessage";
+const closeTinyMessage = "closetinymessage";
+const addContentToTinyMessage = "addcontenttotinymessage";
+const reloadMessage = "reloadmessage";
+const rowLoadedMessage = "rowloadedmessage";
+const usernameMessage = "usernamemessage";
+
 class Constants {
     static get DefaultMonsterColor() {
         return defaultMonsterColor;
@@ -29,6 +36,25 @@ class Constants {
 
     static get ConfigurationId() {
         return configurationId;
+    }
+
+    static get AddMonsterMessage() {
+        return addMonsterMessage;
+    }
+    static get CloseTinyMessage() {
+        return closeTinyMessage;
+    }
+    static get AddContentToTinyMessage() {
+        return addContentToTinyMessage;
+    }
+    static get ReloadMessage() {
+        return reloadMessage;
+    }
+    static get RowLoadedMessage() {
+        return rowLoadedMessage;
+    }
+    static get UsernameMessage() {
+        return usernameMessage;
     }
 }
 

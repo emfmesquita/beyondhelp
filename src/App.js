@@ -6,6 +6,7 @@ import $ from "jquery";
 import BadgeService from './services/BadgeService';
 import C from "./Constants";
 import ConfigStorageService from './services/storage/ConfigStorageService';
+import MessageService from './services/MessageService';
 import ConfirmDialog from "./modals/ConfirmDialog";
 import EncounterOptionsModal from "./modals/EncounterOptionsModal";
 import Link from './monsterbuttons/Link';
@@ -77,9 +78,7 @@ class App extends Component {
         this.load();
 
         // listen when a monster is added from AddMonsterButton, reloads
-        chrome.runtime.onMessage.addListener((request, sender) => {
-            this.load();
-        });
+        MessageService.listen(C.ReloadMessage, () => this.load());
     }
 
     load = () => {

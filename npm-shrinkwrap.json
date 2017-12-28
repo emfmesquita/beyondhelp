@@ -1,6 +1,6 @@
 {
     "name": "beyondhelp",
-    "version": "0.6.4",
+    "version": "0.7.0",
     "lockfileVersion": 1,
     "requires": true,
     "dependencies": {
@@ -2346,6 +2346,11 @@
             "resolved": "https://registry.npmjs.org/date-now/-/date-now-0.1.4.tgz",
             "integrity": "sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=",
             "dev": true
+        },
+        "debounce-promise": {
+            "version": "3.0.2",
+            "resolved": "https://registry.npmjs.org/debounce-promise/-/debounce-promise-3.0.2.tgz",
+            "integrity": "sha512-QRCoXLmsGg8FtS3fzhsKVyI66kCEfUr63vw6Kt+IftQH4/RKMcCulCX7GGiaiUXP9isnI70xXzRrGUVHZMlIIw=="
         },
         "debug": {
             "version": "2.6.9",
@@ -6873,6 +6878,12 @@
             "requires": {
                 "safe-buffer": "5.1.1"
             }
+        },
+        "raw-loader": {
+            "version": "0.5.1",
+            "resolved": "https://registry.npmjs.org/raw-loader/-/raw-loader-0.5.1.tgz",
+            "integrity": "sha1-DD0L6u2KAclm2Xh793goElKpeao=",
+            "dev": true
         },
         "react": {
             "version": "16.0.0",
