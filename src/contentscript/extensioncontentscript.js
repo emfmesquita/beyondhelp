@@ -46,12 +46,7 @@ MessageService.listen(C.RowLoadedMessage, () => ConfigStorageService.getConfig()
 MessageService.listen(C.CloseTinyMessage, () => PageScriptService.run("tinymce.activeEditor.windowManager.close()"));
 
 // listen the message to add content to tinymce
-MessageService.listen(C.AddContentToTinyMessage, (message) => {
-    PageScriptService.run(`
-        tinymce.activeEditor.insertContent("${message.content}");
-        tinymce.activeEditor.windowManager.close();
-    `);
-});
+MessageService.listen(C.AddContentToTinyMessage, (message) => PageScriptService.run(`tinymce.activeEditor.insertContent(\`${message.content}\`)`));
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
     init(config);

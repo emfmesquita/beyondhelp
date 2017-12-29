@@ -11,8 +11,8 @@ tinymce.PluginManager.add('beyondhelp', function (editor, url) {
                 title: 'Beyond Help',
                 url: url + "/tinymcebhdialog.html",
                 bodyType: 'tabpanel',
-                width: 500,
-                height: 350
+                width: 400,
+                height: 400
             });
         }
     });

@@ -1,3 +1,4 @@
+import $ from "jquery";
 import C from "../../Constants";
 import MessageService from "../../services/MessageService";
 import PageScriptService from "../../services/PageScriptService";
