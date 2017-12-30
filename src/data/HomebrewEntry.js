@@ -3,6 +3,7 @@ class HomebrewEntry {
         this.name = name;
         this.path = path;
         this.author = author;
+        this.version = null;
     }
 }
 

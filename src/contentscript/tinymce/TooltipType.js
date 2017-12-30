@@ -10,9 +10,15 @@ const wprop = "wprop";
 const hmonster = "hmonster";
 const hspell = "hspell";
 const hmitem = "hmitem";
-const hcreation = "hcreation";
+const hcollectionmonster = "hcollectionmonster";
+const hcollectionspell = "hcollectionspell";
+const hcollectionitem = "hcollectionitem";
 
-const hTypes = [hmonster, hspell, hmitem, hcreation];
+const hListTypes = [hmonster, hspell, hmitem];
+const hCollectionTypes = [hcollectionmonster, hcollectionspell, hcollectionitem];
+const hTypes = hListTypes.concat(hCollectionTypes);
+const allTypes = [monster, spell, equip, mitem, action, condition, sense, skill, wprop, hmonster, hspell, hmitem, hcollectionmonster, hcollectionspell, hcollectionitem];
+const searchableTypes = [monster, spell, equip, mitem].concat(hTypes);
 
 class TooltipType {
     static get Monster(): string {
@@ -51,8 +57,18 @@ class TooltipType {
     static get HomebrewMagicItem(): string {
         return hmitem;
     }
-    static get HomebrewCreation(): string {
-        return hcreation;
+    static get HomebrewCollectionMonster(): string {
+        return hcollectionmonster;
+    }
+    static get HomebrewCollectionSpell(): string {
+        return hcollectionspell;
+    }
+    static get HomebrewCollectionMagicItem(): string {
+        return hcollectionitem;
+    }
+
+    static allTypes(): string[] {
+        return allTypes.map(type => type);
     }
 
     static getTag(type: string): string {
@@ -84,13 +100,24 @@ class TooltipType {
         return hTypes.some(hType => hType === type);
     }
 
+    static isHomebrewCollection(type: string): boolean {
+        return hCollectionTypes.some(hType => hType === type);
+    }
+
+    static isSearchable(type: string): boolean {
+        return searchableTypes.some(hType => hType === type);
+    }
+
     static getHomebrewClassName(type: string): string {
         switch (type) {
             case TooltipType.HomebrewMagicItem:
+            case TooltipType.HomebrewCollectionMagicItem:
                 return "magic-item-tooltip";
             case TooltipType.HomebrewMonster:
+            case TooltipType.HomebrewCollectionMonster:
                 return "monster-tooltip";
             case TooltipType.HomebrewSpell:
+            case TooltipType.HomebrewCollectionSpell:
                 return "spell-tooltip";
             default:
                 return "";

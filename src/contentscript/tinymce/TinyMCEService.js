@@ -5,9 +5,15 @@ import PageScriptService from "../../services/PageScriptService";
 import loadtinymcebhplugin from "../clientfiles/loadtinymcebhplugin.js";
 
 class TinyMCEService {
+    /**
+     * loads bh tinymce plugin on content page
+     */
     static init() {
-        // loads bh tinymce plugin on content page
         PageScriptService.run(loadtinymcebhplugin);
+    }
+
+    static homebrewSpellTooltipWorkaround() {
+        $(".tooltip-hover[href^='https://www.dndbeyond.com/spells/']").addClass("spell-tooltip");
     }
 }
 

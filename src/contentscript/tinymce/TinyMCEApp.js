@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './TinyMCEApp.scss';
 
-import { Button, ButtonToolbar, ControlLabel, FormGroup, Nav, NavItem } from 'react-bootstrap';
+import { Alert, Button, ButtonToolbar, ControlLabel, FormGroup, Nav, NavItem } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 import C from "../../Constants";
@@ -15,7 +15,7 @@ import SearchField from "./SearchField";
 import Select from 'react-select';
 import SelectField from "./SelectField";
 import TooltipOptions from "./TooltipOptions";
-import TooltipType from "./TooltipType";
+import Type from "./TooltipType";
 import debounce from "debounce-promise";
 
 /* global chrome */
@@ -32,7 +32,9 @@ const baseGetOptionsSearcher = function (ddbSearcher: Function, isHomebrew: bool
                     if (!isHomebrew) {
                         label = r;
                     } else {
-                        label = r.name + (r.author ? " - " + r.author : "");
+                        const autorSufix = r.author ? " - " + r.author : "";
+                        const versionSufix = r.version ? " - v" + r.version : "";
+                        label = r.name + autorSufix + versionSufix;
                     }
                     return { label, value: r };
                 }),
@@ -57,15 +59,15 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
         }
 
         let toAddContent = null;
-        if (!TooltipType.isHomebrew(type)) {
-            const tag = TooltipType.getTag(type);
+        if (!Type.isHomebrew(type)) {
+            const tag = Type.getTag(type);
             toAddContent = `[${tag}]${selected.value}[/${tag}]`;
         } else {
             const entry: HomebrewEntry = selected.value;
-            const clazz = TooltipType.getHomebrewClassName(type);
+            const clazz = Type.getHomebrewClassName(type);
 
-            const [, action, compositeId] = entry.path.split("/");
-            const [id] = compositeId.split("-");
+            const [, action, slug] = entry.path.split("/");
+            const [id] = slug.split("-");
             const tooltipPath = `/${action}/${id}-tooltip`;
 
             toAddContent = `<a class="${clazz} bh-tooltip tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${entry.name}</a>`;
@@ -74,13 +76,18 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
     };
 };
 
-const equipSearcher = baseGetOptionsSearcher(DDBSearchService.equipment, false, 30);
-const magicItemSearcher = baseGetOptionsSearcher(DDBSearchService.magicItems);
-const monsterSearcher = baseGetOptionsSearcher(DDBSearchService.monsters);
-const spellSearcher = baseGetOptionsSearcher(DDBSearchService.spells);
-const hMonsterSearcher = baseGetOptionsSearcher(DDBSearchService.homebrewMonsters, true);
-const hMagicItemSearcher = baseGetOptionsSearcher(DDBSearchService.homebrewMagicItems, true);
-const hSpellSearcher = baseGetOptionsSearcher(DDBSearchService.homebrewSpells, true);
+const searchers = {
+    [Type.Equipment]: baseGetOptionsSearcher(DDBSearchService.equipment, false, 30),
+    [Type.MagicItem]: baseGetOptionsSearcher(DDBSearchService.magicItems),
+    [Type.Monster]: baseGetOptionsSearcher(DDBSearchService.monsters),
+    [Type.Spell]: baseGetOptionsSearcher(DDBSearchService.spells),
+    [Type.HomebrewMagicItem]: baseGetOptionsSearcher(DDBSearchService.homebrewMagicItems, true),
+    [Type.HomebrewMonster]: baseGetOptionsSearcher(DDBSearchService.homebrewMonsters, true),
+    [Type.HomebrewSpell]: baseGetOptionsSearcher(DDBSearchService.homebrewSpells, true),
+    [Type.HomebrewCollectionMagicItem]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionMagicItems, true),
+    [Type.HomebrewCollectionMonster]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionMonsters, true),
+    [Type.HomebrewCollectionSpell]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionSpells, true)
+};
 
 class TinyMCEApp extends Component {
     constructor(props) {
@@ -97,33 +104,28 @@ class TinyMCEApp extends Component {
         this.options = {};
         const addOptions = (type) => this.options[type] = TooltipOptions.getOptions(type);
         const addGetOptions = (type, searcher) => this.options[type] = baseGetOptions(searcher);
-        addOptions(TooltipType.Action);
-        addOptions(TooltipType.Condition);
-        addGetOptions(TooltipType.Equipment, equipSearcher);
-        addGetOptions(TooltipType.MagicItem, magicItemSearcher);
-        addGetOptions(TooltipType.Monster, monsterSearcher);
-        addOptions(TooltipType.Sense);
-        addOptions(TooltipType.Skill);
-        addGetOptions(TooltipType.Spell, spellSearcher);
-        addOptions(TooltipType.WeaponProperty);
-        addGetOptions(TooltipType.HomebrewMonster, hMonsterSearcher);
-        addGetOptions(TooltipType.HomebrewMagicItem, hMagicItemSearcher);
-        addGetOptions(TooltipType.HomebrewSpell, hSpellSearcher);
+        Type.allTypes().forEach(type => Type.isSearchable(type) ? addGetOptions(type, searchers[type]) : addOptions(type));
 
         this.tooltipSelected = {};
-        const addHandler = (type) => this.tooltipSelected[type] = baseOptionSelected(type, this);
-        addHandler(TooltipType.Action);
-        addHandler(TooltipType.Condition);
-        addHandler(TooltipType.Equipment);
-        addHandler(TooltipType.MagicItem);
-        addHandler(TooltipType.Monster);
-        addHandler(TooltipType.Sense);
-        addHandler(TooltipType.Skill);
-        addHandler(TooltipType.Spell);
-        addHandler(TooltipType.WeaponProperty);
-        addHandler(TooltipType.HomebrewMonster);
-        addHandler(TooltipType.HomebrewMagicItem);
-        addHandler(TooltipType.HomebrewSpell);
+        Type.allTypes().forEach(type => this.tooltipSelected[type] = baseOptionSelected(type, this));
+
+        this.placeHolders = {
+            [Type.Action]: "Choose an Action",
+            [Type.Condition]: "Choose a Condition",
+            [Type.Equipment]: "Names, Types, Attributes, Tags, or Notes",
+            [Type.MagicItem]: "Search Item Names",
+            [Type.Monster]: "Search Monster Names",
+            [Type.Sense]: "Choose a Sense",
+            [Type.Skill]: "Choose a Skill",
+            [Type.Spell]: "Search Spell Names",
+            [Type.WeaponProperty]: "Choose a Weapon Property",
+            [Type.HomebrewCollectionMagicItem]: "Search Item Names",
+            [Type.HomebrewCollectionMonster]: "Search Monster Names",
+            [Type.HomebrewCollectionSpell]: "Search Spell Names",
+            [Type.HomebrewMagicItem]: "Search Item Names",
+            [Type.HomebrewMonster]: "Search Monster Names",
+            [Type.HomebrewSpell]: "Search Spell Names"
+        };
     }
 
     componentDidMount() {
@@ -153,42 +155,24 @@ class TinyMCEApp extends Component {
         this.setState({ tooltipType: value, toAddContent: null });
     }
 
+    renderAlerts = () => {
+        if (!this.state.tooltipType) return null;
+        const type = this.state.tooltipType.value;
+        return (
+            <div>
+                {Type.isHomebrew(type) && <Alert bsStyle="warning">Homebrew tooltips may cease to work if the implementation of tooltips changes on DDB.</Alert>}
+                {Type.isHomebrewCollection(type) && <Alert bsStyle="danger">Private homebrews are only viewable by the author. Use them in private only.</Alert>}
+            </div>
+        );
+    }
+
     renderTooltips = () => {
         if (!this.state.tooltipType) return null;
         const type = this.state.tooltipType.value;
-        switch (type) {
-            case TooltipType.Action:
-                return <SelectField options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Choose an Action" />;
-            case TooltipType.Condition:
-                return <SelectField options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Choose a Condition" />;
-            case TooltipType.Equipment:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Names, Types, Attributes, Tags, or Notes" />;
-            case TooltipType.MagicItem:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Item Names" />;
-            case TooltipType.Monster:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Monster Names" />;
-            case TooltipType.Sense:
-                return <SelectField options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Choose a Sense" />;
-            case TooltipType.Skill:
-                return <SelectField options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Choose a Skill" />;
-            case TooltipType.Spell:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Spell Names" />;
-            case TooltipType.WeaponProperty:
-                return <SelectField options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Choose a Weapon Property" />;
-            case TooltipType.HomebrewMonster:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Monster Names" />;
-            case TooltipType.HomebrewMagicItem:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Item Names" />;
-            case TooltipType.HomebrewSpell:
-                return <SearchField loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder="Search Spell Names" />;
-            default:
-                return null;
+        if (Type.isSearchable(type)) {
+            return <SearchField key={type} loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
         }
-    }
-
-    renderTooltipSelector = () => {
-        if (this.state.activeTab === tooltipsTabId) return this.renderTooltips();
-        return null;
+        return <SelectField key={type} options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
     }
 
     render() {
@@ -203,26 +187,29 @@ class TinyMCEApp extends Component {
                         <Select
                             onChange={this.tooltipTypeSelected}
                             options={[
-                                { label: "Action", value: TooltipType.Action },
-                                { label: "Condition", value: TooltipType.Condition },
-                                { label: "Equipment", value: TooltipType.Equipment },
-                                { label: "Magic Item", value: TooltipType.MagicItem },
-                                { label: "Monster", value: TooltipType.Monster },
-                                { label: "Sense", value: TooltipType.Sense },
-                                { label: "Skill", value: TooltipType.Skill },
-                                { label: "Spell", value: TooltipType.Spell },
-                                { label: "Weapon Property", value: TooltipType.WeaponProperty },
-                                { label: "Homebrew Creation", value: TooltipType.HomebrewCreation },
-                                { label: "Homebrew Magic Item", value: TooltipType.HomebrewMagicItem },
-                                { label: "Homebrew Monster", value: TooltipType.HomebrewMonster },
-                                { label: "Homebrew Spell", value: TooltipType.HomebrewSpell }
+                                { label: "Action", value: Type.Action },
+                                { label: "Condition", value: Type.Condition },
+                                { label: "Equipment", value: Type.Equipment },
+                                { label: "Magic Item", value: Type.MagicItem },
+                                { label: "Monster", value: Type.Monster },
+                                { label: "Sense", value: Type.Sense },
+                                { label: "Skill", value: Type.Skill },
+                                { label: "Spell", value: Type.Spell },
+                                { label: "Weapon Property", value: Type.WeaponProperty },
+                                { label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem },
+                                { label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster },
+                                { label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell },
+                                { label: "Homebrew Magic Item (Beta)", value: Type.HomebrewMagicItem },
+                                { label: "Homebrew Monster (Beta)", value: Type.HomebrewMonster },
+                                { label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell }
                             ]}
                             value={this.state.tooltipType}
                             placeholder="Select Tooltip Type"
                             ref={(el) => this.tooltipSelect = el}
                         />
                     </FormGroup>
-                    {this.renderTooltipSelector()}
+                    {this.renderTooltips()}
+                    {this.renderAlerts()}
                 </form>
 
                 <ButtonToolbar className="bh-button-toolbar">

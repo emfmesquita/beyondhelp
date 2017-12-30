@@ -17,7 +17,7 @@ import TinyMCEService from "./tinymce/TinyMCEService";
 
 /* global chrome */
 
-PageScriptService.run(`window.beyondhelpid = "${chrome.runtime.id}";`);
+PageScriptService.run(`window.BeyondHelp = { id : "${chrome.runtime.id}"}`);
 
 const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");
@@ -37,6 +37,9 @@ const init = function (config: Configuration) {
 
     // inits the table rollers
     if (config.tableroll) TableRollService.init();
+
+    // workaround for homebrew spell tooltips that sever removes classes
+    TinyMCEService.homebrewSpellTooltipWorkaround();
 };
 
 // listen a row loaded message to add monster buttons and parse tables

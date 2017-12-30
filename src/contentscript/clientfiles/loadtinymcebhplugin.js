@@ -28,9 +28,10 @@
             tinymce.remove();
             Cobalt.TinyMCE.initialized = false;
             Cobalt.TinyMCE.optionsOverridden = true;
+
             Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,beyondhelp";
             if (!Cobalt.TinyMCE.options.external_plugins) Cobalt.TinyMCE.options.external_plugins = {};
-            Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${window.beyondhelpid}/tinymcebhplugin.js`;
+            Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${BeyondHelp.id}/tinymcebhplugin.js`;
 
             Cobalt.TinyMCE.initialize();
             executeWhenConditionMet(tinyLoaded, () => jqMarkupRoots.removeClass("BH-Tinymce-loading"));

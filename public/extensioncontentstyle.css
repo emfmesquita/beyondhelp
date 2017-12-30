@@ -69,7 +69,8 @@ a.BH-homebrew-character-action:visited {
         display: block !important;
     }
     .BH-Tinymce-loading .mce-tinymce {
-        display: none !important;
+        visibility: hidden !important;
+        height: 0px !important;
     }
     .mce-window {
         height: auto !important;
