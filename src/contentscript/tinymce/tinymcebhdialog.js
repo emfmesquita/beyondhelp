@@ -17,7 +17,7 @@ const disableScrollOutsideFrame = function () {
         curScrollPos = curScrollPos > 0 ? Math.ceil(curScrollPos) : Math.floor(curScrollPos);
         const scrollableDist = jqSelectMenu[0].scrollHeight - jqSelectMenu.outerHeight();
 
-        // only trap events once we've scrolled to the end or beginning
+        // only trap events once scrolled to the end or beginning
         if (dy > 0 && curScrollPos >= scrollableDist || dy < 0 && curScrollPos <= 0) {
             return false;
         }

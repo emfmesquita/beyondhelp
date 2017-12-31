@@ -21,18 +21,22 @@
 
         const tinyLoaded = () => typeof tinymce !== "undefined" && tinymce.editors.length > 0;
 
+        // hide all editors untill load BH stuff too
         const jqMarkupRoots = jqEditors.parents(".markup-editor");
         jqMarkupRoots.addClass("BH-Tinymce-loading");
 
         executeWhenConditionMet(tinyLoaded, () => {
+            // destroy all tinymce editors
             tinymce.remove();
             Cobalt.TinyMCE.initialized = false;
             Cobalt.TinyMCE.optionsOverridden = true;
 
+            // adds BH button on toolbar and BH tinymce plugin
             Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,beyondhelp";
             if (!Cobalt.TinyMCE.options.external_plugins) Cobalt.TinyMCE.options.external_plugins = {};
             Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${BeyondHelp.id}/tinymcebhplugin.js`;
 
+            // reloads all editors and shows them
             Cobalt.TinyMCE.initialize();
             executeWhenConditionMet(tinyLoaded, () => jqMarkupRoots.removeClass("BH-Tinymce-loading"));
         });

@@ -18,10 +18,18 @@ const errorMessage = `
 `;
 
 class TooltipsService {
+    /**
+     * Workaround that adds the spell tooltip class to homebrew tooltips. 
+     * For some reason after custom classes are removed on server after save the spell-tooltip is removed too.
+     * And this do not happen with monsters and magic items.
+     */
     static homebrewSpellTooltipWorkaround() {
         $(".tooltip-hover[href^='https://www.dndbeyond.com/spells/']").addClass("spell-tooltip");
     }
 
+    /**
+     * Listen for error on tooltip loading and gives a propper message.
+     */
     static listenTooltipError() {
         MessageService.listen(C.TooltipErrorMessage, (message) => {
             var tooltip = JSON.stringify({

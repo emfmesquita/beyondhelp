@@ -11,9 +11,9 @@ import DDBSearchService from "../../services/DDBSearchService";
 import HomebrewEntry from "../../data/HomebrewEntry";
 import MessageService from "../../services/MessageService";
 import ReactDOM from 'react-dom';
-import SearchField from "./SearchField";
+import SearchField from "../../forms/SearchField";
 import Select from 'react-select';
-import SelectField from "./SelectField";
+import SelectField from "../../forms/SelectField";
 import TooltipOptions from "../../services/tooltips/TooltipOptions";
 import Type from "../../services/tooltips/TooltipType";
 import debounce from "debounce-promise";
@@ -22,6 +22,9 @@ import debounce from "debounce-promise";
 
 const tooltipsTabId = "tooltips";
 
+/**
+ * Builds a debounced option searcher.
+ */
 const baseGetOptionsSearcher = function (ddbSearcher: Function, isHomebrew: boolean, pageSize = 20) {
     return debounce((input) => {
         return ddbSearcher(input).then(results => {
@@ -58,6 +61,8 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
             return;
         }
 
+        // builds the content to add to editor
+        // tag if normal and anchor if homebrew
         let toAddContent = null;
         if (!Type.isHomebrew(type)) {
             const tag = Type.getTag(type);
