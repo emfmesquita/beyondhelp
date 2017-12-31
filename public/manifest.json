@@ -64,5 +64,6 @@
         "tinymcebhdialog.js",
         "tinymcebhplugin.js"
     ],
+    "incognito": "split",
     "manifest_version": 2
 }

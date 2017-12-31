@@ -1,4 +1,3 @@
-import Configuration from '../../data/Configuration';
 import C from "../../Constants";
 import Data from "../../data/Data";
 import MessageService from "../MessageService";

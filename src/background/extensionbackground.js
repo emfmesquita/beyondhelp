@@ -10,11 +10,21 @@ import UserService from "../services/UserService";
 // sends a message to the content script to render the add monster buttons and parse roll tables
 chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(details.tabId, C.RowLoadedMessage), {
     urls: [
-        "https://www.dndbeyond.com/magic-items/*/more-info",
-        "https://www.dndbeyond.com/monsters/*/more-info",
-        "https://www.dndbeyond.com/spells/*/more-info",
-        "https://www.dndbeyond.com/characters/backgrounds/*/more-info",
-        "https://www.dndbeyond.com/characters/feats/*/more-info"
+        "*://*.dndbeyond.com/magic-items/*/more-info",
+        "*://*.dndbeyond.com/monsters/*/more-info",
+        "*://*.dndbeyond.com/spells/*/more-info",
+        "*://*.dndbeyond.com/characters/backgrounds/*/more-info",
+        "*://*.dndbeyond.com/characters/feats/*/more-info"
+    ]
+});
+
+// listen tooltip request errors
+// sends a message to the content script to handle it
+chrome.webRequest.onErrorOccurred.addListener((details) => MessageService.sendToTab(details.tabId, C.TooltipErrorMessage, details), {
+    urls: [
+        "*://*.dndbeyond.com/magic-items/*/tooltip*",
+        "*://*.dndbeyond.com/monsters/*/tooltip*",
+        "*://*.dndbeyond.com/spells/*/tooltip*"
     ]
 });
 

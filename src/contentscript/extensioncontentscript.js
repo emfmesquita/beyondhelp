@@ -9,11 +9,13 @@ import MessageService from "../services/MessageService";
 import MonsterParseData from "./addmonsters/MonsterParseData";
 import MonsterParseService from "./addmonsters/MonsterParseService";
 import MyCharactersService from "./characters/MyCharactersService";
+import Opt from "../Options";
 import PageScriptService from "../services/PageScriptService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
+import TooltipsService from "../services/tooltips/TooltipsService";
 
 /* global chrome */
 
@@ -36,10 +38,10 @@ const init = function (config: Configuration) {
     });
 
     // inits the table rollers
-    if (config.tableroll) TableRollService.init();
+    if (config[Opt.TableRolls]) TableRollService.init();
 
     // workaround for homebrew spell tooltips that sever removes classes
-    TinyMCEService.homebrewSpellTooltipWorkaround();
+    if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
 };
 
 // listen a row loaded message to add monster buttons and parse tables
@@ -55,13 +57,17 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     init(config);
 
     // change fav icon of char page
-    if (config.charfavicon) FavIconService.changeFavIcon();
+    if (config[Opt.CharacterFavIcon]) FavIconService.changeFavIcon();
 
     // change my characters page
-    if (config.mycharacterfolders) MyCharactersService.init();
+    if (config[Opt.MyCharactersFolders]) MyCharactersService.init();
 
     // change campaign page
-    if (config.campaigncharacterfolders) CampaignCharactersService.init();
+    if (config[Opt.CampaignCharactersFolders]) CampaignCharactersService.init();
 
-    TinyMCEService.init();
+    // adds the Beyond Help plugin to tiny editors on page
+    if (config[Opt.EditorButton]) TinyMCEService.init();
+
+    // handles errors loading tooltips 
+    if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
 });

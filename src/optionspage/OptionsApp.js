@@ -3,10 +3,12 @@ import "./OptionsApp.scss";
 import { Form, ListGroup } from 'react-bootstrap';
 import React, { Component } from 'react';
 
+import C from "../Constants";
 import CheckBoxField from "../forms/CheckBoxField";
 import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import FieldService from "../services/FieldService";
+import Opt from "../Options";
 import OptionLine from "../forms/OptionLine";
 import StorageService from "../services/storage/StorageService";
 
@@ -14,40 +16,24 @@ class OptionsApp extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            addmonsteronlist: false,
-            addmonsteronhlist: false,
-            addmonsterondetail: false,
-            tableroll: false,
-            charfavicon: false,
-            mycharacterfolders: false,
-            campaigncharacterfolders: false
-        };
+
+        this.state = {};
+        Opt.AllOptions.forEach(opt => this.state[opt] = false);
+
         this.init();
     }
 
     init = () => {
         ConfigStorageService.getConfig().then((config: Configuration) => {
-            const addmonsteronlist = config.addmonsteronlist;
-            const addmonsteronhlist = config.addmonsteronhlist;
-            const addmonsterondetail = config.addmonsterondetail;
-            const tableroll = config.tableroll;
-            const charfavicon = config.charfavicon;
-            const mycharacterfolders = config.mycharacterfolders;
-            const campaigncharacterfolders = config.campaigncharacterfolders;
-            this.setState({ addmonsteronlist, addmonsteronhlist, addmonsterondetail, tableroll, charfavicon, mycharacterfolders, campaigncharacterfolders });
+            const newState = {};
+            Opt.AllOptions.forEach(opt => newState[opt] = config[opt]);
+            this.setState(newState);
         });
     }
 
     updateConfig = () => {
         ConfigStorageService.getConfig().then((config: Configuration) => {
-            config.addmonsteronlist = this.state.addmonsteronlist;
-            config.addmonsteronhlist = this.state.addmonsteronhlist;
-            config.addmonsterondetail = this.state.addmonsterondetail;
-            config.tableroll = this.state.tableroll;
-            config.charfavicon = this.state.charfavicon;
-            config.mycharacterfolders = this.state.mycharacterfolders;
-            config.campaigncharacterfolders = this.state.campaigncharacterfolders;
+            Opt.AllOptions.forEach(opt => config[opt] = this.state[opt]);
             return StorageService.updateData(config);
         });
     }
@@ -60,44 +46,22 @@ class OptionsApp extends Component {
         };
     }
 
+    optionField = (label: string, option: string) => {
+        return <CheckBoxField checkText={label} value={this.state[option]} onChange={this.changeOptionHandler(option)} />;
+    }
+
     render() {
         return (
             <Form>
-                <CheckBoxField
-                    checkText="Show buttons to add monsters on monsters listing pages."
-                    value={this.state.addmonsteronlist}
-                    onChange={this.changeOptionHandler("addmonsteronlist")}
-                />
-                <CheckBoxField
-                    checkText="Show buttons to add monsters on monsters details pages."
-                    value={this.state.addmonsterondetail}
-                    onChange={this.changeOptionHandler("addmonsterondetail")}
-                />
-                <CheckBoxField
-                    checkText="Show buttons to add monsters on homebrew pages."
-                    value={this.state.addmonsteronhlist}
-                    onChange={this.changeOptionHandler("addmonsteronhlist")}
-                />
-                <CheckBoxField
-                    checkText="Enable roll on tables."
-                    value={this.state.tableroll}
-                    onChange={this.changeOptionHandler("tableroll")}
-                />
-                <CheckBoxField
-                    checkText="Change character pages favicon."
-                    value={this.state.charfavicon}
-                    onChange={this.changeOptionHandler("charfavicon")}
-                />
-                <CheckBoxField
-                    checkText="Enable folders and sort on 'My Characters' page."
-                    value={this.state.mycharacterfolders}
-                    onChange={this.changeOptionHandler("mycharacterfolders")}
-                />
-                <CheckBoxField
-                    checkText="Enable folders and sort on campaign pages."
-                    value={this.state.campaigncharacterfolders}
-                    onChange={this.changeOptionHandler("campaigncharacterfolders")}
-                />
+                {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
+                {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
+                {this.optionField("Show buttons to add monsters on homebrew pages.", Opt.AddMonsterOnHomebrewList)}
+                {this.optionField("Enable roll on tables.", Opt.TableRolls)}
+                {this.optionField("Change character pages favicon.", Opt.CharacterFavIcon)}
+                {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
+                {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
+                {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
+                {this.optionField("Enable Homebrew Tooltips extra handling (style and errors).", Opt.HomebrewTooltips)}
             </Form>
         );
     }

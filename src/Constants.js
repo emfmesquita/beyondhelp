@@ -13,6 +13,7 @@ const addContentToTinyMessage = "addcontenttotinymessage";
 const reloadMessage = "reloadmessage";
 const rowLoadedMessage = "rowloadedmessage";
 const usernameMessage = "usernamemessage";
+const tooltipErrorMessage = "tooltiperrormessage";
 
 class Constants {
     static get DefaultMonsterColor() {
@@ -55,6 +56,9 @@ class Constants {
     }
     static get UsernameMessage() {
         return usernameMessage;
+    }
+    static get TooltipErrorMessage() {
+        return tooltipErrorMessage;
     }
 }
 

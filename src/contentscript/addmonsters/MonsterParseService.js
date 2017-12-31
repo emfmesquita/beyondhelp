@@ -2,6 +2,7 @@ import $ from "jquery";
 import Configuration from "../../data/Configuration";
 import MonsterContentData from "./MonsterContentData";
 import MonsterParseData from "./MonsterParseData";
+import Opt from "../../Options";
 
 const isOnMonsterList = function (path: string) {
     return path === "/monsters";
@@ -60,15 +61,15 @@ class MonsterParseService {
         const isMonsterList = isOnMonsterList(path);
         const isHomebrew = isOnHomebrew(path);
 
-        if (isMonsterList && config.addmonsteronlist) {
+        if (isMonsterList && config[Opt.AddMonsterOnList]) {
             return parseList(isHomebrew);
         }
 
-        if (isHomebrew && config.addmonsteronhlist) {
+        if (isHomebrew && config[Opt.AddMonsterOnHomebrewList]) {
             return parseList(isHomebrew);
         }
 
-        if (isOnMonsterDetail(path) && config.addmonsterondetail) {
+        if (isOnMonsterDetail(path) && config[Opt.AddMonsterOnDetail]) {
             return parseDetail();
         }
 

@@ -14,8 +14,8 @@ import ReactDOM from 'react-dom';
 import SearchField from "./SearchField";
 import Select from 'react-select';
 import SelectField from "./SelectField";
-import TooltipOptions from "./TooltipOptions";
-import Type from "./TooltipType";
+import TooltipOptions from "../../services/tooltips/TooltipOptions";
+import Type from "../../services/tooltips/TooltipType";
 import debounce from "debounce-promise";
 
 /* global chrome */
@@ -196,12 +196,12 @@ class TinyMCEApp extends Component {
                                 { label: "Skill", value: Type.Skill },
                                 { label: "Spell", value: Type.Spell },
                                 { label: "Weapon Property", value: Type.WeaponProperty },
-                                { label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem },
-                                { label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster },
-                                { label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell },
                                 { label: "Homebrew Magic Item (Beta)", value: Type.HomebrewMagicItem },
                                 { label: "Homebrew Monster (Beta)", value: Type.HomebrewMonster },
-                                { label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell }
+                                { label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell },
+                                { label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem },
+                                { label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster },
+                                { label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell }
                             ]}
                             value={this.state.tooltipType}
                             placeholder="Select Tooltip Type"
