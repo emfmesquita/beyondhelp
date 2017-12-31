@@ -42,7 +42,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Enables click to roll on most of the tables of the compendium and description pages.
 
 ### Add Tooltips Plugin
-- Extra button on all editors of the site that enables add all kinds of tooltips. Also a beta feature that enable to add tooltips for homebrew magic items, monsters and spells.
+- Extra button on all editors of the site that enables to add all kinds of tooltips (including beta of homebrew magic items, monsters and spells).
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
