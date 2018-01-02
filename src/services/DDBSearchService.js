@@ -2,9 +2,10 @@
 import $ from "jquery";
 import TooltipEntry from "../data/TooltipEntry";
 
-const url = (name: string, path: string) => `https://www.dndbeyond.com/${path}?filter-search=${encodeURI(name)}&sort=name`;
-const collectionUrl = (name: string, type: string) => `https://www.dndbeyond.com/homebrew/collection?filter-type=${type}&filter-name=${name}&sort=name`;
+const url = (name: string, path: string) => `https://www.dndbeyond.com/${path}?filter-search=${encodeURI(trim(name))}&sort=name`;
+const collectionUrl = (name: string, type: string) => `https://www.dndbeyond.com/homebrew/collection?filter-type=${type}&filter-name=${encodeURI(trim(name))}&sort=name`;
 const characterUrl = (type: string) => `https://www.dndbeyond.com/characters/${type}`;
+const hCharacterUrl = (name: string, path: string) => `https://www.dndbeyond.com/${path}?filter-name=${encodeURI(trim(name))}&sort=name`;
 
 const trim = (value: string) => value ? value.trim() : "";
 
@@ -28,6 +29,7 @@ const characterParse = function (el: HTMLElement): TooltipEntry {
 const homebrewCollectionParse = function (el: HTMLElement): TooltipEntry {
     const entry = characterParse(el);
 
+    const jqRow = $(el).closest(".list-row");
     const authorText = jqRow.find(".list-row-name-secondary-text").text();
     entry.author = trim(authorText.substring(0, authorText.lastIndexOf("-")));
 
@@ -75,6 +77,14 @@ class DDBSearchService {
         return commonSearch(url(name, "spells"), ".spell-name a");
     }
 
+    static homebrewBackgrounds(name: string): Promise<TooltipEntry[]> {
+        return homebreListSearch(hCharacterUrl(name, "homebrew/backgrounds"));
+    }
+
+    static homebrewFeats(name: string): Promise<TooltipEntry[]> {
+        return homebreListSearch(hCharacterUrl(name, "homebrew/feats"));
+    }
+
     static homebrewMagicItems(name: string): Promise<TooltipEntry[]> {
         return homebreListSearch(url(name, "homebrew/magic-items"));
     }
@@ -89,6 +99,14 @@ class DDBSearchService {
 
     static homebrewCollectionMagicItems(name: string): Promise<TooltipEntry[]> {
         return homebreCollectionSearch(collectionUrl(name, "112130694"));
+    }
+
+    static homebrewCollectionBackgrounds(name: string): Promise<TooltipEntry[]> {
+        return homebreCollectionSearch(collectionUrl(name, "1669830167"));
+    }
+
+    static homebrewCollectionFeats(name: string): Promise<TooltipEntry[]> {
+        return homebreCollectionSearch(collectionUrl(name, "1088085227"));
     }
 
     static homebrewCollectionMonsters(name: string): Promise<TooltipEntry[]> {

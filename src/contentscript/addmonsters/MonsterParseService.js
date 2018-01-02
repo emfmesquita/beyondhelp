@@ -19,9 +19,12 @@ const isOnMonsterDetail = function (path: string) {
 const parseList = function (isHomebrew): MonsterParseData[] {
     const parseDataArray = [];
     $(".more-info-monster:not(.bh-processed)").find(".mon-stat-block").each((idx, el) => {
-        // gather monster info from page
+        // gathers monster info from page
         const moreInfoDiv = $(el).closest(".more-info-monster");
+
+        // to not process the same monster twice
         moreInfoDiv.addClass("bh-processed");
+
         const rowDiv = moreInfoDiv.prev();
 
         const id = rowDiv.attr("data-slug");
@@ -43,6 +46,10 @@ const parseList = function (isHomebrew): MonsterParseData[] {
 };
 
 const parseDetail = function (): MonsterParseData[] {
+    // to not process the same monster twice
+    if ($(".mon-stat-block.bh-processed").length > 0) return [];
+    $(".mon-stat-block").addClass("bh-processed");
+
     const path = window.location.pathname;
     const id = path.substring(path.lastIndexOf("/") + 1);
     const name = $(".mon-stat-block__name-link").text().trim();

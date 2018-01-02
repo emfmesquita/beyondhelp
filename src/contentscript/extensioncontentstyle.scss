@@ -5,6 +5,7 @@ $feat-color: #ee8600;
 $feat-color-border: #ffc478;
 $monster-color: #bc0f0f;
 $table-roll-color: #0f5cbc;
+// used for action links and tooltips
 @mixin link($color, $font-style) {
     &,
     &:hover,

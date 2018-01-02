@@ -61,7 +61,8 @@ class OptionsApp extends Component {
                 {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
                 {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
                 {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
-                {this.optionField("Enable Homebrew Tooltips extra handling (style and errors).", Opt.HomebrewTooltips)}
+                {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}
+                {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.ExtraTooltips)}
             </Form>
         );
     }

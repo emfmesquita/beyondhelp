@@ -1,10 +1,12 @@
 @media print {
+    // hides add button from printing
     .BH-Monster-button {
         display: none !important;
     }
 }
 
 @media screen {
+    // add button style
     .BH-Monster-button {
         display: inline-block !important;
         margin-right: 10px !important;

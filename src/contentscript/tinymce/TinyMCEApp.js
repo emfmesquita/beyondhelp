@@ -92,9 +92,13 @@ const searchers = {
     [Type.MagicItem]: baseGetOptionsSearcher(DDBSearchService.magicItems),
     [Type.Monster]: baseGetOptionsSearcher(DDBSearchService.monsters),
     [Type.Spell]: baseGetOptionsSearcher(DDBSearchService.spells),
+    [Type.HomebrewFeat]: baseGetOptionsSearcher(DDBSearchService.homebrewFeats, true),
+    [Type.HomebrewBackground]: baseGetOptionsSearcher(DDBSearchService.homebrewBackgrounds, true),
     [Type.HomebrewMagicItem]: baseGetOptionsSearcher(DDBSearchService.homebrewMagicItems, true),
     [Type.HomebrewMonster]: baseGetOptionsSearcher(DDBSearchService.homebrewMonsters, true),
     [Type.HomebrewSpell]: baseGetOptionsSearcher(DDBSearchService.homebrewSpells, true),
+    [Type.HomebrewCollectionBackground]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionBackgrounds, true),
+    [Type.HomebrewCollectionFeat]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionFeats, true),
     [Type.HomebrewCollectionMagicItem]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionMagicItems, true),
     [Type.HomebrewCollectionMonster]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionMonsters, true),
     [Type.HomebrewCollectionSpell]: baseGetOptionsSearcher(DDBSearchService.homebrewCollectionSpells, true)
@@ -112,37 +116,43 @@ class TinyMCEApp extends Component {
 
         this.tooltipSelect = null;
 
+        // for each type of tooltip builds option list or getOptions function
         this.options = {};
         const addOptions = (type) => this.options[type] = TooltipOptions.getOptions(type);
         const addGetOptions = (type, searcher) => this.options[type] = baseGetOptions(searcher);
         Type.allTypes().forEach(type => Type.isSearchable(type) ? addGetOptions(type, searchers[type]) : addOptions(type));
 
+        // for each type of tooltip builds the option selected handler
         this.tooltipSelected = {};
         Type.allTypes().forEach(type => this.tooltipSelected[type] = baseOptionSelected(type, this));
 
-        const backgroundLabel = "Search Background Names";
-        const featLabel = "Search Feat Names";
-        const magicItemLabel = "Search Item Names";
-        const monsterLabel = "Search Monster Names";
-        const spellLabel = "Search Spell Names";
+        const backgroundPh = "Search Background Names";
+        const featPh = "Search Feat Names";
+        const magicItemPh = "Search Item Names";
+        const monsterPh = "Search Monster Names";
+        const spellPh = "Search Spell Names";
         this.placeHolders = {
             [Type.Action]: "Choose an Action",
-            [Type.Background]: backgroundLabel,
+            [Type.Background]: backgroundPh,
             [Type.Condition]: "Choose a Condition",
             [Type.Equipment]: "Names, Types, Attributes, Tags, or Notes",
-            [Type.Feat]: featLabel,
-            [Type.MagicItem]: magicItemLabel,
-            [Type.Monster]: monsterLabel,
+            [Type.Feat]: featPh,
+            [Type.MagicItem]: magicItemPh,
+            [Type.Monster]: monsterPh,
             [Type.Sense]: "Choose a Sense",
             [Type.Skill]: "Choose a Skill",
-            [Type.Spell]: spellLabel,
+            [Type.Spell]: spellPh,
             [Type.WeaponProperty]: "Choose a Weapon Property",
-            [Type.HomebrewCollectionMagicItem]: magicItemLabel,
-            [Type.HomebrewCollectionMonster]: monsterLabel,
-            [Type.HomebrewCollectionSpell]: spellLabel,
-            [Type.HomebrewMagicItem]: magicItemLabel,
-            [Type.HomebrewMonster]: monsterLabel,
-            [Type.HomebrewSpell]: spellLabel
+            [Type.HomebrewBackground]: backgroundPh,
+            [Type.HomebrewFeat]: featPh,
+            [Type.HomebrewMagicItem]: magicItemPh,
+            [Type.HomebrewMonster]: monsterPh,
+            [Type.HomebrewSpell]: spellPh,
+            [Type.HomebrewCollectionBackground]: backgroundPh,
+            [Type.HomebrewCollectionFeat]: featPh,
+            [Type.HomebrewCollectionMagicItem]: magicItemPh,
+            [Type.HomebrewCollectionMonster]: monsterPh,
+            [Type.HomebrewCollectionSpell]: spellPh
         };
     }
 
@@ -173,13 +183,30 @@ class TinyMCEApp extends Component {
         this.setState({ tooltipType: value, toAddContent: null });
     }
 
+    showCollectionAlert = (type: string): boolean => {
+        return Type.isHomebrewCollection(type) || Type.HomebrewCollectionBackground === type || Type.HomebrewCollectionFeat === type;
+    }
+
+    renderCeaseToWorkAlert = (type: string) => {
+        if (!Type.isCustom(type) && !Type.isHomebrew(type)) return null;
+        let label = "";
+        if (Type.isHomebrew(type)) {
+            label = "Homebrew";
+        } else if ([Type.Background, Type.HomebrewBackground, Type.HomebrewCollectionBackground].some(b => b === type)) {
+            label = "Background";
+        } else {
+            label = "Feat";
+        }
+        return <Alert bsStyle="warning">{label} tooltips may cease to work if the implementation of tooltips changes on DDB.</Alert>;
+    }
+
     renderAlerts = () => {
         if (!this.state.tooltipType) return null;
         const type = this.state.tooltipType.value;
         return (
             <div>
-                {Type.isHomebrew(type) && <Alert bsStyle="warning">Homebrew tooltips may cease to work if the implementation of tooltips changes on DDB.</Alert>}
-                {Type.isHomebrewCollection(type) && <Alert bsStyle="danger">Private homebrews are only viewable by the author. Use them in private only.</Alert>}
+                {this.renderCeaseToWorkAlert(type)}
+                {this.showCollectionAlert(type) && <Alert bsStyle="danger">Private homebrews are only viewable by the author. Use them in private only.</Alert>}
             </div>
         );
     }
@@ -207,19 +234,23 @@ class TinyMCEApp extends Component {
                             onChange={this.tooltipTypeSelected}
                             options={[
                                 { label: "Action", value: Type.Action },
-                                { label: "Background", value: Type.Background },
+                                { label: "Background (Beta)", value: Type.Background },
                                 { label: "Condition", value: Type.Condition },
                                 { label: "Equipment", value: Type.Equipment },
-                                { label: "Feat", value: Type.Feat },
+                                { label: "Feat (Beta)", value: Type.Feat },
                                 { label: "Magic Item", value: Type.MagicItem },
                                 { label: "Monster", value: Type.Monster },
                                 { label: "Sense", value: Type.Sense },
                                 { label: "Skill", value: Type.Skill },
                                 { label: "Spell", value: Type.Spell },
                                 { label: "Weapon Property", value: Type.WeaponProperty },
+                                { label: "Homebrew Background (Beta)", value: Type.HomebrewBackground },
+                                { label: "Homebrew Feat (Beta)", value: Type.HomebrewFeat },
                                 { label: "Homebrew Magic Item (Beta)", value: Type.HomebrewMagicItem },
                                 { label: "Homebrew Monster (Beta)", value: Type.HomebrewMonster },
                                 { label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell },
+                                { label: "Homebrew Collection Background (Beta)", value: Type.HomebrewCollectionBackground },
+                                { label: "Homebrew Collection Feat (Beta)", value: Type.HomebrewCollectionFeat },
                                 { label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem },
                                 { label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster },
                                 { label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell }

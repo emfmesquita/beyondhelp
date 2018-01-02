@@ -1,4 +1,6 @@
 (function (BeyondHelp) {
+
+    // parses tooltip info from tooltip anchor
     const parseTooltipInfo = function (tooltipEl) {
         const tokens = tooltipEl.getAttribute("href").split("/");
         return {
@@ -9,6 +11,11 @@
         }
     }
 
+    // inits a tooltip including:
+    // - adds the tooltip classname
+    // - adds a mouse over events that parses tooltip info and adds to global BeyondHelp object
+    // - adds the get tooltip url
+    // - calls Waterdeep api to watch mouseover
     const initTooltips = function (selector, className) {
         const els = [];
         $(`${selector}:not(.${className})`)

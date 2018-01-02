@@ -6,6 +6,7 @@ import loadbhtooltips from "../../clientfiles/loadbhtooltips.js";
 
 /* global chrome */
 
+// message when an error occurs when loading a homebrew tooltip, probably a private homebrew of another user.
 const errorMessage = `
     <div class="ddb-blocked-content">
         <div class="ddb-blocked-content-body">
@@ -30,6 +31,9 @@ class TooltipsService {
         $(".tooltip-hover[href^='https://www.dndbeyond.com/spells/']").addClass("spell-tooltip");
     }
 
+    /**
+     * Inits extra tooltips on content page.
+     */
     static bhTooltipsInit() {
         PageScriptService.run(loadbhtooltips);
     }

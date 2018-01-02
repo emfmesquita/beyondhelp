@@ -1,7 +1,16 @@
+// tooltip style inside monster stat block
+@mixin monster-stat-tooltip($type, $color) {
+    .mon-stat-block .tooltip-hover.BH-#{$type}-tooltip {
+        text-decoration: underline solid $color !important;
+    }
+}
+
+// tooltip style both links and open tooltip identifier
 @mixin tooltip($type, $color, $border-color, $font-style) {
     .tooltip-hover.BH-#{$type}-tooltip {
         @include link($color, $font-style);
     }
+    @include monster-stat-tooltip($type, $color);
     .BH-#{$type}-tooltip-identifier {
         background-color: $color !important;
         border-color: $border-color !important;
