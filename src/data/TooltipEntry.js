@@ -1,4 +1,4 @@
-class HomebrewEntry {
+class TooltipEntry {
     constructor(name: string, path: string, author: string) {
         this.name = name;
         this.path = path;
@@ -7,4 +7,4 @@ class HomebrewEntry {
     }
 }
 
-export default HomebrewEntry;
+export default TooltipEntry;

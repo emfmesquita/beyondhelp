@@ -1,7 +1,10 @@
 import $ from "jquery";
 import C from "../../Constants";
-import MessageService from "../MessageService";
-import PageScriptService from "../PageScriptService";
+import MessageService from "../../services/MessageService";
+import PageScriptService from "../../services/PageScriptService";
+import loadbhtooltips from "../../clientfiles/loadbhtooltips.js";
+
+/* global chrome */
 
 const errorMessage = `
     <div class="ddb-blocked-content">
@@ -25,6 +28,10 @@ class TooltipsService {
      */
     static homebrewSpellTooltipWorkaround() {
         $(".tooltip-hover[href^='https://www.dndbeyond.com/spells/']").addClass("spell-tooltip");
+    }
+
+    static bhTooltipsInit() {
+        PageScriptService.run(loadbhtooltips);
     }
 
     /**

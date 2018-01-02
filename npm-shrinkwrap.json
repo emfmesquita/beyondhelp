@@ -1,6 +1,6 @@
 {
     "name": "beyondhelp",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "lockfileVersion": 1,
     "requires": true,
     "dependencies": {
@@ -2129,16 +2129,6 @@
                 "sha.js": "2.4.9"
             }
         },
-        "create-react-class": {
-            "version": "15.6.2",
-            "resolved": "https://registry.npmjs.org/create-react-class/-/create-react-class-15.6.2.tgz",
-            "integrity": "sha1-zx7RXxKq1/FO9fLf4F5sQvke8Co=",
-            "requires": {
-                "fbjs": "0.8.16",
-                "loose-envify": "1.3.1",
-                "object-assign": "4.1.1"
-            }
-        },
         "cross-spawn": {
             "version": "5.1.0",
             "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz",
@@ -3015,6 +3005,18 @@
             "dev": true,
             "requires": {
                 "is-extglob": "1.0.0"
+            }
+        },
+        "extract-text-webpack-plugin": {
+            "version": "3.0.2",
+            "resolved": "https://registry.npmjs.org/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.2.tgz",
+            "integrity": "sha512-bt/LZ4m5Rqt/Crl2HiKuAl/oqg0psx1tsTLkvWbJen1CtD+fftkZhMaQ9HOtY2gWsl2Wq+sABmMVi9z3DhKWQQ==",
+            "dev": true,
+            "requires": {
+                "async": "2.5.0",
+                "loader-utils": "1.1.0",
+                "schema-utils": "0.3.0",
+                "webpack-sources": "1.0.1"
             }
         },
         "extsprintf": {
@@ -6938,11 +6940,10 @@
             }
         },
         "react-input-autosize": {
-            "version": "2.0.1",
-            "resolved": "https://registry.npmjs.org/react-input-autosize/-/react-input-autosize-2.0.1.tgz",
-            "integrity": "sha1-6SGQSXtAJsJ4CtDy/XA8g1ugPjM=",
+            "version": "2.1.2",
+            "resolved": "https://registry.npmjs.org/react-input-autosize/-/react-input-autosize-2.1.2.tgz",
+            "integrity": "sha512-uAfIE4XEfBNXqjqQvd31Eoo20UkVk0xHJpfgP8HRT8gLczaN4LEmB1e2d8CJ5ziEt4clWnsk/1+QhTN27iO/EA==",
             "requires": {
-                "create-react-class": "15.6.2",
                 "prop-types": "15.6.0"
             }
         },
@@ -6967,13 +6968,13 @@
             }
         },
         "react-select": {
-            "version": "1.0.0-rc.10",
-            "resolved": "https://registry.npmjs.org/react-select/-/react-select-1.0.0-rc.10.tgz",
-            "integrity": "sha1-8Tc0YlD5JVyXn7+iGGCJmSh3I1A=",
+            "version": "1.1.0",
+            "resolved": "https://registry.npmjs.org/react-select/-/react-select-1.1.0.tgz",
+            "integrity": "sha512-c4CdxweEHN9ra85HGWjSjIMBlJ5c0fsIXOymLFZS5UbZEQCiJGHnZTVLTt6/wDh8RKQnxl85gHUwzhG5XZLcyw==",
             "requires": {
                 "classnames": "2.2.5",
                 "prop-types": "15.6.0",
-                "react-input-autosize": "2.0.1"
+                "react-input-autosize": "2.1.2"
             }
         },
         "reactcss": {

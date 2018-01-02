@@ -19,8 +19,9 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [rules.lint, rules.js, rules.css, rules.clientfiles]
-    }
+        rules: [rules.lint, rules.js, rules.separateCss, rules.clientfiles]
+    },
+    plugins: [plugins.separateCss("extensioncontentstyle.css")]
 }, {
     entry: './src/extensionpopup.js',
     output: {

@@ -1,0 +1,20 @@
+@media screen {
+    .BH-Table-roll-dice {
+        cursor: pointer;
+        color: $table-roll-color;
+        user-select: none;
+    }
+    .BH-Table-roll-cell-left {
+        border-left-style: solid !important;
+        border-left-width: 3px !important;
+        border-left-color: $table-roll-color !important;
+    }
+    .BH-Table-roll-cell-right {
+        border-right-style: solid !important;
+        border-right-width: 2px !important;
+        border-right-color: $table-roll-color !important;
+    }
+    .BH-Table-roll-tip .qtip-content {
+        text-align: center !important;
+    }
+}

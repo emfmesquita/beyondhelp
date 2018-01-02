@@ -1,0 +1,12 @@
+@mixin tooltip($type, $color, $border-color, $font-style) {
+    .tooltip-hover.BH-#{$type}-tooltip {
+        @include link($color, $font-style);
+    }
+    .BH-#{$type}-tooltip-identifier {
+        background-color: $color !important;
+        border-color: $border-color !important;
+    }
+}
+
+@include tooltip("background", $background-color, $background-color-border, inherit);
+@include tooltip("feat", $feat-color, $feat-color-border, italic);

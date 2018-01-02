@@ -15,7 +15,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
-import TooltipsService from "../services/tooltips/TooltipsService";
+import TooltipsService from "./tooltips/TooltipsService";
+
+import "./extensioncontentstyle.scss";
 
 /* global chrome */
 
@@ -42,6 +44,8 @@ const init = function (config: Configuration) {
 
     // workaround for homebrew spell tooltips that sever removes classes
     if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
+
+    TooltipsService.bhTooltipsInit();
 };
 
 // listen a row loaded message to add monster buttons and parse tables
@@ -70,4 +74,6 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
+
+    TooltipsService.bhTooltipsInit();
 });

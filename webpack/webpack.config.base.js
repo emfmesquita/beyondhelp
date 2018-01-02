@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports.config = (isProd) => {
     const result = {
@@ -73,6 +74,24 @@ module.exports.config = (isProd) => {
                 }
             }]
         },
+        separateCss: {
+            test: /\.(css|scss)$/,
+            use: ExtractTextPlugin.extract({
+                use: [{
+                    loader: "css-loader", // translates CSS into CommonJS
+                    options: {
+                        importLoaders: 1,
+                        minimize: !!isProd,
+                        sourceMap: !isProd
+                    }
+                }, {
+                    loader: "sass-loader", // compiles Sass to CSS
+                    options: {
+                        sourceMap: !isProd
+                    }
+                }]
+            })
+        },
         file: {
             exclude: [/\.js$/, /\.html$/, /\.json$/],
             loader: 'file-loader',
@@ -97,6 +116,7 @@ module.exports.config = (isProd) => {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
+        separateCss: (filename) => new ExtractTextPlugin(filename),
         uglify: new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,

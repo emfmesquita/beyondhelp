@@ -1,6 +1,6 @@
 {
     "name": "Beyond Help",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
     "background": {
         "scripts": [
@@ -58,6 +58,7 @@
     },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "web_accessible_resources": [
+        "beyondHelpTooltip.js",
         "icon-black.svg",
         "icon-white.svg",
         "tinymcebhdialog.html",

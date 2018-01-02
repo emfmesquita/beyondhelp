@@ -1,6 +1,6 @@
 import $ from "jquery";
 import PageScriptService from "../../services/PageScriptService";
-import loadtinymcebhplugin from "../clientfiles/loadtinymcebhplugin.js";
+import loadtinymcebhplugin from "../../clientfiles/loadtinymcebhplugin.js";
 
 class TinyMCEService {
     /**

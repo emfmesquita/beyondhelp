@@ -21,7 +21,7 @@ class SearchField extends Component {
                 <Async
                     autoload={false}
                     onBlurResetsInput={false}
-                    filterOptions={false}
+                    filterOptions={!!this.props.filter}
                     loadOptions={this.props.loadOptions}
                     onChange={this.onChange}
                     placeholder={this.props.placeholder}

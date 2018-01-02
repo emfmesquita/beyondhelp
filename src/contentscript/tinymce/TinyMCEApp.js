@@ -8,14 +8,14 @@ import React, { Component } from 'react';
 
 import C from "../../Constants";
 import DDBSearchService from "../../services/DDBSearchService";
-import HomebrewEntry from "../../data/HomebrewEntry";
 import MessageService from "../../services/MessageService";
 import ReactDOM from 'react-dom';
 import SearchField from "../../forms/SearchField";
 import Select from 'react-select';
 import SelectField from "../../forms/SelectField";
-import TooltipOptions from "../../services/tooltips/TooltipOptions";
-import Type from "../../services/tooltips/TooltipType";
+import TooltipEntry from "../../data/TooltipEntry";
+import TooltipOptions from "../tooltips/TooltipOptions";
+import Type from "../tooltips/TooltipType";
 import debounce from "debounce-promise";
 
 /* global chrome */
@@ -25,14 +25,14 @@ const tooltipsTabId = "tooltips";
 /**
  * Builds a debounced option searcher.
  */
-const baseGetOptionsSearcher = function (ddbSearcher: Function, isHomebrew: boolean, pageSize = 20) {
+const baseGetOptionsSearcher = function (ddbSearcher: Function, isHomebrewOrCustom: boolean, pageSize = 20) {
     return debounce((input) => {
         return ddbSearcher(input).then(results => {
             results = results || [];
             return {
                 options: results.map(r => {
                     let label = null;
-                    if (!isHomebrew) {
+                    if (!isHomebrewOrCustom) {
                         label = r;
                     } else {
                         const autorSufix = r.author ? " - " + r.author : "";
@@ -62,27 +62,33 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
         }
 
         // builds the content to add to editor
-        // tag if normal and anchor if homebrew
-        let toAddContent = null;
-        if (!Type.isHomebrew(type)) {
+        // tag if normal and anchor if homebrew or custom
+        let toAddContent = "";
+        if (Type.isCommon(type)) {
             const tag = Type.getTag(type);
             toAddContent = `[${tag}]${selected.value}[/${tag}]`;
-        } else {
-            const entry: HomebrewEntry = selected.value;
+        } else if (Type.isHomebrew(type)) {
+            const hEntry: TooltipEntry = selected.value;
             const clazz = Type.getHomebrewClassName(type);
 
-            const [, action, slug] = entry.path.split("/");
+            const [, action, slug] = hEntry.path.split("/");
             const [id] = slug.split("-");
             const tooltipPath = `/${action}/${id}-tooltip`;
 
-            toAddContent = `<a class="${clazz} bh-tooltip tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${entry.name}</a>`;
+            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${hEntry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${hEntry.name}</a>`;
+        } else if (Type.isCustom(type)) {
+            const cEntry: TooltipEntry = selected.value;
+            toAddContent = `<a class="tooltip-hover" href="https://www.dndbeyond.com${cEntry.path}">${cEntry.name}</a>`;
         }
+
         app.setState({ toAddContent });
     };
 };
 
 const searchers = {
-    [Type.Equipment]: baseGetOptionsSearcher(DDBSearchService.equipment, false, 30),
+    [Type.Background]: baseGetOptionsSearcher(DDBSearchService.backgrounds, true, Number.MAX_SAFE_INTEGER),
+    [Type.Equipment]: baseGetOptionsSearcher(DDBSearchService.equipments, false, 30),
+    [Type.Feat]: baseGetOptionsSearcher(DDBSearchService.feats, true, Number.MAX_SAFE_INTEGER),
     [Type.MagicItem]: baseGetOptionsSearcher(DDBSearchService.magicItems),
     [Type.Monster]: baseGetOptionsSearcher(DDBSearchService.monsters),
     [Type.Spell]: baseGetOptionsSearcher(DDBSearchService.spells),
@@ -114,22 +120,29 @@ class TinyMCEApp extends Component {
         this.tooltipSelected = {};
         Type.allTypes().forEach(type => this.tooltipSelected[type] = baseOptionSelected(type, this));
 
+        const backgroundLabel = "Search Background Names";
+        const featLabel = "Search Feat Names";
+        const magicItemLabel = "Search Item Names";
+        const monsterLabel = "Search Monster Names";
+        const spellLabel = "Search Spell Names";
         this.placeHolders = {
             [Type.Action]: "Choose an Action",
+            [Type.Background]: backgroundLabel,
             [Type.Condition]: "Choose a Condition",
             [Type.Equipment]: "Names, Types, Attributes, Tags, or Notes",
-            [Type.MagicItem]: "Search Item Names",
-            [Type.Monster]: "Search Monster Names",
+            [Type.Feat]: featLabel,
+            [Type.MagicItem]: magicItemLabel,
+            [Type.Monster]: monsterLabel,
             [Type.Sense]: "Choose a Sense",
             [Type.Skill]: "Choose a Skill",
-            [Type.Spell]: "Search Spell Names",
+            [Type.Spell]: spellLabel,
             [Type.WeaponProperty]: "Choose a Weapon Property",
-            [Type.HomebrewCollectionMagicItem]: "Search Item Names",
-            [Type.HomebrewCollectionMonster]: "Search Monster Names",
-            [Type.HomebrewCollectionSpell]: "Search Spell Names",
-            [Type.HomebrewMagicItem]: "Search Item Names",
-            [Type.HomebrewMonster]: "Search Monster Names",
-            [Type.HomebrewSpell]: "Search Spell Names"
+            [Type.HomebrewCollectionMagicItem]: magicItemLabel,
+            [Type.HomebrewCollectionMonster]: monsterLabel,
+            [Type.HomebrewCollectionSpell]: spellLabel,
+            [Type.HomebrewMagicItem]: magicItemLabel,
+            [Type.HomebrewMonster]: monsterLabel,
+            [Type.HomebrewSpell]: spellLabel
         };
     }
 
@@ -175,7 +188,8 @@ class TinyMCEApp extends Component {
         if (!this.state.tooltipType) return null;
         const type = this.state.tooltipType.value;
         if (Type.isSearchable(type)) {
-            return <SearchField key={type} loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
+            const filter = Type.Background === type || Type.Feat === type;
+            return <SearchField key={type} filter={filter} loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
         }
         return <SelectField key={type} options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
     }
@@ -193,8 +207,10 @@ class TinyMCEApp extends Component {
                             onChange={this.tooltipTypeSelected}
                             options={[
                                 { label: "Action", value: Type.Action },
+                                { label: "Background", value: Type.Background },
                                 { label: "Condition", value: Type.Condition },
                                 { label: "Equipment", value: Type.Equipment },
+                                { label: "Feat", value: Type.Feat },
                                 { label: "Magic Item", value: Type.MagicItem },
                                 { label: "Monster", value: Type.Monster },
                                 { label: "Sense", value: Type.Sense },

@@ -1,3 +1,4 @@
+// common
 const monster = "monster";
 const spell = "spell";
 const equip = "equip";
@@ -7,37 +8,54 @@ const condition = "condition";
 const sense = "sense";
 const skill = "skill";
 const wprop = "wprop";
+const common = [monster, spell, equip, mitem, action, condition, sense, skill, wprop];
+
+// homebrew lists
 const hmonster = "hmonster";
 const hspell = "hspell";
 const hmitem = "hmitem";
+const hListTypes = [hmonster, hspell, hmitem];
+
+// homebrew collections
 const hcollectionmonster = "hcollectionmonster";
 const hcollectionspell = "hcollectionspell";
 const hcollectionitem = "hcollectionitem";
-
-const hListTypes = [hmonster, hspell, hmitem];
 const hCollectionTypes = [hcollectionmonster, hcollectionspell, hcollectionitem];
+
+// custom
+const background = "background";
+const feat = "feat";
+const hbackground = "hbackground";
+const hfeat = "hfeat";
+const hcbackground = "hcbackground";
+const hcfeat = "hcfeat";
+const custom = [background, feat, hbackground, hfeat, hcbackground, hcfeat];
+
 const hTypes = hListTypes.concat(hCollectionTypes);
-const allTypes = [monster, spell, equip, mitem, action, condition, sense, skill, wprop, hmonster, hspell, hmitem, hcollectionmonster, hcollectionspell, hcollectionitem];
-const searchableTypes = [monster, spell, equip, mitem].concat(hTypes);
+const allTypes = common.concat(hTypes).concat(custom);
+const searchableTypes = [monster, spell, equip, mitem].concat(hTypes).concat(custom);
 
 class TooltipType {
-    static get Monster(): string {
-        return monster;
+    static get Action(): string {
+        return action;
     }
-    static get Spell(): string {
-        return spell;
+    static get Background(): string {
+        return background;
+    }
+    static get Condition(): string {
+        return condition;
     }
     static get Equipment(): string {
         return equip;
     }
+    static get Feat(): string {
+        return feat;
+    }
     static get MagicItem(): string {
         return mitem;
     }
-    static get Action(): string {
-        return action;
-    }
-    static get Condition(): string {
-        return condition;
+    static get Monster(): string {
+        return monster;
     }
     static get Sense(): string {
         return sense;
@@ -45,8 +63,20 @@ class TooltipType {
     static get Skill(): string {
         return skill;
     }
+    static get Spell(): string {
+        return spell;
+    }
     static get WeaponProperty(): string {
         return wprop;
+    }
+    static get HomebrewBackground(): string {
+        return hbackground;
+    }
+    static get HomebrewFeat(): string {
+        return hfeat;
+    }
+    static get HomebrewMagicItem(): string {
+        return hmitem;
     }
     static get HomebrewMonster(): string {
         return hmonster;
@@ -54,17 +84,20 @@ class TooltipType {
     static get HomebrewSpell(): string {
         return hspell;
     }
-    static get HomebrewMagicItem(): string {
-        return hmitem;
+    static get HomebrewCollectionBackground(): string {
+        return hcbackground;
+    }
+    static get HomebrewCollectionFeat(): string {
+        return hcfeat;
+    }
+    static get HomebrewCollectionMagicItem(): string {
+        return hcollectionitem;
     }
     static get HomebrewCollectionMonster(): string {
         return hcollectionmonster;
     }
     static get HomebrewCollectionSpell(): string {
         return hcollectionspell;
-    }
-    static get HomebrewCollectionMagicItem(): string {
-        return hcollectionitem;
     }
 
     static allTypes(): string[] {
@@ -96,12 +129,20 @@ class TooltipType {
         }
     }
 
+    static isCommon(type: string): boolean {
+        return common.some(cType => cType === type);
+    }
+
     static isHomebrew(type: string): boolean {
         return hTypes.some(hType => hType === type);
     }
 
     static isHomebrewCollection(type: string): boolean {
         return hCollectionTypes.some(hType => hType === type);
+    }
+
+    static isCustom(type: string): boolean {
+        return custom.some(cType => cType === type);
     }
 
     static isSearchable(type: string): boolean {

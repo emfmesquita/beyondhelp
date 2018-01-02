@@ -1,0 +1,15 @@
+.BH-character-list {
+    list-style: none !important;
+    list-style-image: none !important;
+    padding: 0 !important;
+}
+
+a.BH-homebrew-character-action {
+    @include link($character-color, inherit);
+}
+
+.BH-character-multiple-select {
+    font-size: 15px !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
