@@ -4,7 +4,7 @@
     // is loading this info can change on the global BeyondHelp object.
     const info = BeyondHelp.tooltip;
 
-    const moreInfoUrl = `https://www.dndbeyond.com/characters/${info.type}/${info.slug}/more-info`;
+    const moreInfoUrl = `${window.location.protocol}//www.dndbeyond.com/characters/${info.type}/${info.slug}/more-info`;
 
     // common tooltip template
     const tooltipContent = (name, typeLabel, content) => `
@@ -73,7 +73,7 @@
         // if other error type is found just gives a unknown error message
         const jqError = jqHtml.find(".error-page");
         if (jqError.length > 0) {
-            tooltip.Tooltip = locked("Unknown error.");
+            tooltip.Tooltip = lockedtooltipContent("Unknown error.");
             Waterdeep.CurseTip.handleTooltipData(tooltip);
             return;
         }
@@ -91,13 +91,12 @@
                 typeLabel = "";
         }
 
-        const content = jqHtml.find(".more-info-body-description").html();
+        const content = jqHtml.find(".more-info-body").html();
         tooltip.Tooltip = tooltipContent(info.name, typeLabel, content);
         Waterdeep.CurseTip.handleTooltipData(tooltip);
     }).fail(() => {
-        tooltip.Tooltip = locked("Unknown error.");
-        Waterdeep.CurseTip.handleTooltipData(tooltip)
+        tooltip.Tooltip = lockedtooltipContent("Unknown error.");
+        Waterdeep.CurseTip.handleTooltipData(tooltip);
     });
-
 
 })(BeyondHelp);
