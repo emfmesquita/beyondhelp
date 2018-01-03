@@ -1,7 +1,8 @@
+import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import TinyMCEApp from "./TinyMCEApp";
+import Opt from "../../Options";
 
 // disables scroll outside tinymce window iframe when cursor on it
 const disableScrollOutsideFrame = function () {
@@ -28,4 +29,7 @@ const disableScrollOutsideFrame = function () {
 
 disableScrollOutsideFrame();
 
-ReactDOM.render(<TinyMCEApp />, document.getElementById('root'));
+ConfigStorageService.getConfig().then(config => {
+    ReactDOM.render(<TinyMCEApp addHomebrew={config[Opt.HomebrewTooltips]} addCustom={config[Opt.CustomTooltips]} />, document.getElementById('root'));
+});
+

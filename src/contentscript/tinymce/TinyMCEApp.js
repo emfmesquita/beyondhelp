@@ -54,6 +54,7 @@ const baseGetOptions = function (searcher: Function) {
     };
 };
 
+// called when the user selects a tooltip
 const baseOptionSelected = function (type: string, app: TinyMCEApp) {
     return (selected) => {
         if (!selected) {
@@ -85,6 +86,7 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
     };
 };
 
+// array of searcers, they are responsible to search options on ddb pages
 const searchers = {
     [Type.Background]: baseGetOptionsSearcher(DDBSearchService.backgrounds, true, Number.MAX_SAFE_INTEGER),
     [Type.Equipment]: baseGetOptionsSearcher(DDBSearchService.equipments, false, 30),
@@ -114,7 +116,7 @@ class TinyMCEApp extends Component {
             tooltipType: null
         };
 
-        this.tooltipSelect = null;
+        this.tooltipTypeSelect = null;
 
         // for each type of tooltip builds option list or getOptions function
         this.options = {};
@@ -154,10 +156,38 @@ class TinyMCEApp extends Component {
             [Type.HomebrewCollectionMonster]: monsterPh,
             [Type.HomebrewCollectionSpell]: spellPh
         };
+
+        // tooltip types options - some may not show due to config off
+        const selOpts = [];
+        const addHB = props.addHomebrew;
+        const addCust = props.addCustom;
+        selOpts.push({ label: "Action", value: Type.Action });
+        addCust && selOpts.push({ label: "Background (Beta)", value: Type.Background });
+        selOpts.push({ label: "Condition", value: Type.Condition });
+        selOpts.push({ label: "Equipment", value: Type.Equipment });
+        addCust && selOpts.push({ label: "Feat (Beta)", value: Type.Feat });
+        selOpts.push({ label: "Magic Item", value: Type.MagicItem });
+        selOpts.push({ label: "Monster", value: Type.Monster });
+        selOpts.push({ label: "Sense", value: Type.Sense });
+        selOpts.push({ label: "Skill", value: Type.Skill });
+        selOpts.push({ label: "Spell", value: Type.Spell });
+        selOpts.push({ label: "Weapon Property", value: Type.WeaponProperty });
+        addHB && addCust && selOpts.push({ label: "Homebrew Background (Beta)", value: Type.HomebrewBackground });
+        addHB && addCust && selOpts.push({ label: "Homebrew Feat (Beta)", value: Type.HomebrewFeat });
+        addHB && selOpts.push({ label: "Homebrew Magic Item (Beta)", value: Type.HomebrewMagicItem });
+        addHB && selOpts.push({ label: "Homebrew Monster (Beta)", value: Type.HomebrewMonster });
+        addHB && selOpts.push({ label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell });
+        addHB && addCust && selOpts.push({ label: "Homebrew Collection Background (Beta)", value: Type.HomebrewCollectionBackground });
+        addHB && addCust && selOpts.push({ label: "Homebrew Collection Feat (Beta)", value: Type.HomebrewCollectionFeat });
+        addHB && selOpts.push({ label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem });
+        addHB && selOpts.push({ label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster });
+        addHB && selOpts.push({ label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell });
+        this.typeSelectOptions = selOpts;
     }
 
+    // focus type selector on mount
     componentDidMount() {
-        if (this.tooltipSelect) this.tooltipSelect.focus();
+        if (this.tooltipTypeSelect) this.tooltipTypeSelect.focus();
     }
 
     isAddDisabled = () => {
@@ -179,6 +209,7 @@ class TinyMCEApp extends Component {
         chrome.tabs.getCurrent(tab => MessageService.sendToTab(tab.id, C.CloseTinyMessage));
     }
 
+    // clears content on type select
     tooltipTypeSelected = (value) => {
         this.setState({ tooltipType: value, toAddContent: null });
     }
@@ -232,32 +263,10 @@ class TinyMCEApp extends Component {
                         <ControlLabel>Type</ControlLabel>
                         <Select
                             onChange={this.tooltipTypeSelected}
-                            options={[
-                                { label: "Action", value: Type.Action },
-                                { label: "Background (Beta)", value: Type.Background },
-                                { label: "Condition", value: Type.Condition },
-                                { label: "Equipment", value: Type.Equipment },
-                                { label: "Feat (Beta)", value: Type.Feat },
-                                { label: "Magic Item", value: Type.MagicItem },
-                                { label: "Monster", value: Type.Monster },
-                                { label: "Sense", value: Type.Sense },
-                                { label: "Skill", value: Type.Skill },
-                                { label: "Spell", value: Type.Spell },
-                                { label: "Weapon Property", value: Type.WeaponProperty },
-                                { label: "Homebrew Background (Beta)", value: Type.HomebrewBackground },
-                                { label: "Homebrew Feat (Beta)", value: Type.HomebrewFeat },
-                                { label: "Homebrew Magic Item (Beta)", value: Type.HomebrewMagicItem },
-                                { label: "Homebrew Monster (Beta)", value: Type.HomebrewMonster },
-                                { label: "Homebrew Spell (Beta)", value: Type.HomebrewSpell },
-                                { label: "Homebrew Collection Background (Beta)", value: Type.HomebrewCollectionBackground },
-                                { label: "Homebrew Collection Feat (Beta)", value: Type.HomebrewCollectionFeat },
-                                { label: "Homebrew Collection Magic Item (Beta)", value: Type.HomebrewCollectionMagicItem },
-                                { label: "Homebrew Collection Monster (Beta)", value: Type.HomebrewCollectionMonster },
-                                { label: "Homebrew Collection Spell (Beta)", value: Type.HomebrewCollectionSpell }
-                            ]}
+                            options={this.typeSelectOptions}
                             value={this.state.tooltipType}
                             placeholder="Select Tooltip Type"
-                            ref={(el) => this.tooltipSelect = el}
+                            ref={(el) => this.tooltipTypeSelect = el}
                         />
                     </FormGroup>
                     {this.renderTooltips()}

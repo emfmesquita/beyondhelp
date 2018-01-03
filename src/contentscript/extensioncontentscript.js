@@ -45,8 +45,8 @@ const init = function (config: Configuration) {
     // workaround for homebrew spell tooltips that sever removes classes
     if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
 
-    // inits extra tooltips (backgrounds and feats)
-    if (config[Opt.ExtraTooltips]) TooltipsService.bhTooltipsInit();
+    // inits custom tooltips (backgrounds and feats)
+    if (config[Opt.CustomTooltips]) TooltipsService.bhTooltipsInit();
 };
 
 // listen a row loaded message to add monster buttons and parse tables

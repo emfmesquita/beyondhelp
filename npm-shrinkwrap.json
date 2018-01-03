@@ -6968,9 +6968,9 @@
             }
         },
         "react-select": {
-            "version": "1.1.0",
-            "resolved": "https://registry.npmjs.org/react-select/-/react-select-1.1.0.tgz",
-            "integrity": "sha512-c4CdxweEHN9ra85HGWjSjIMBlJ5c0fsIXOymLFZS5UbZEQCiJGHnZTVLTt6/wDh8RKQnxl85gHUwzhG5XZLcyw==",
+            "version": "1.0.0-rc.10",
+            "resolved": "https://registry.npmjs.org/react-select/-/react-select-1.0.0-rc.10.tgz",
+            "integrity": "sha1-8Tc0YlD5JVyXn7+iGGCJmSh3I1A=",
             "requires": {
                 "classnames": "2.2.5",
                 "prop-types": "15.6.0",

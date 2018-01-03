@@ -17,8 +17,9 @@ class OptionsApp extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
-        Opt.AllOptions.forEach(opt => this.state[opt] = false);
+        const initState = {};
+        Opt.AllOptions.forEach(opt => initState[opt] = false);
+        this.state = initState;
 
         this.init();
     }
@@ -62,7 +63,7 @@ class OptionsApp extends Component {
                 {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
                 {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
                 {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}
-                {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.ExtraTooltips)}
+                {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.CustomTooltips)}
             </Form>
         );
     }

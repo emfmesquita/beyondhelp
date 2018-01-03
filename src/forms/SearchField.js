@@ -20,9 +20,10 @@ class SearchField extends Component {
             <FormGroup>
                 <Async
                     autoload={false}
-                    onBlurResetsInput={false}
                     filterOptions={!!this.props.filter}
                     loadOptions={this.props.loadOptions}
+                    onBlurResetsInput={false}
+                    onCloseResetsInput={false}
                     onChange={this.onChange}
                     placeholder={this.props.placeholder}
                     searchPromptText="No results."

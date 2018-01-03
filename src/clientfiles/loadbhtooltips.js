@@ -8,8 +8,8 @@
             slug: tokens[tokens.length - 1],
             type: tokens[tokens.length - 2],
             url: tooltipEl.dataset.tooltipHref
-        }
-    }
+        };
+    };
 
     // inits a tooltip including:
     // - adds the tooltip classname
@@ -31,7 +31,7 @@
                 els.push(el);
             });
         Waterdeep.CurseTip._watchElements(els);
-    }
+    };
 
     initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/characters/feats/']", "BH-feat-tooltip");
     initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/characters/backgrounds/']", "BH-background-tooltip");

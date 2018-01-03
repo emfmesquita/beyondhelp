@@ -21,6 +21,7 @@ class SelectField extends Component {
                 <Select
                     autoload={false}
                     onBlurResetsInput={false}
+                    onCloseResetsInput={false}
                     options={this.props.options}
                     onChange={this.onChange}
                     placeholder={this.props.placeholder}
