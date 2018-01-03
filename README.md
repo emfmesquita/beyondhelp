@@ -42,7 +42,12 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Enables click to roll on most of the tables of the compendium and description pages.
 
 ### Add Tooltips Plugin
-- Extra button on all editors of the site that enables to add all kinds of tooltips (including beta of homebrew magic items, monsters and spells).
+- Extra button on all editors of the site that enables to add all kinds of tooltips:
+    - Actions, Conditions, Equipments, Magic Items, Monsters, Senses, Skills, Spells and Weapon Properties;
+    - (Beta) Backgrounds and Feats;
+    - (Beta) Homebrew: Backgrounds, Feats, Magic Items, Monsters and Spells. Both from lists and personal collection.
+
+P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips change on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
@@ -63,6 +68,8 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 
 ### Add Tooltips Plugin
 ![Add Tooltips Plugin](http://i.imgur.com/3Ln9zfJ.png)
+
+![Extra Tooltips](http://i.imgur.com/02ECiOJ.png)
 
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
