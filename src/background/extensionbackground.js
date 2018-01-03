@@ -28,6 +28,14 @@ chrome.webRequest.onErrorOccurred.addListener((details) => MessageService.sendTo
     ]
 });
 
+// listen comment created, edited, deleted, undeleted
+// sends a message to the content script to handle it - basically to init tooltips on it
+chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(details.tabId, C.CommentChangedMessage), {
+    urls: [
+        "*://*.dndbeyond.com/comments/*"
+    ]
+});
+
 // listen when a monster is added from AddMonsterButton, adds a notification
 MessageService.listen(C.AddMonsterMessage, (message) => {
     NotificationService.createNotification(message.notificationid, message.notification);

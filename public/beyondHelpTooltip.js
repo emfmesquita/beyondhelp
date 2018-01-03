@@ -80,7 +80,7 @@
 
         // for the common case just gets the more-info content and adds to the tooltip template
         let typeLabel;
-        switch (BeyondHelp.tooltip.type) {
+        switch (info.type) {
             case "backgrounds":
                 typeLabel = "Background";
                 break;

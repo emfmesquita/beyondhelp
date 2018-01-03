@@ -29,6 +29,14 @@ const createButton = function (id: string, name: string, hp: string) {
     return buttonSpan;
 };
 
+const tooltipsInit = function (config: Configuration) {
+    // workaround for homebrew spell tooltips that sever removes classes
+    if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
+
+    // inits custom tooltips (backgrounds and feats)
+    if (config[Opt.CustomTooltips]) TooltipsService.bhTooltipsInit();
+};
+
 const init = function (config: Configuration) {
     // render the add monster buttons
     MonsterParseService.parseMonsters(config).forEach(data => {
@@ -42,11 +50,7 @@ const init = function (config: Configuration) {
     // inits the table rollers
     if (config[Opt.TableRolls]) TableRollService.init();
 
-    // workaround for homebrew spell tooltips that sever removes classes
-    if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
-
-    // inits custom tooltips (backgrounds and feats)
-    if (config[Opt.CustomTooltips]) TooltipsService.bhTooltipsInit();
+    tooltipsInit(config);
 };
 
 // listen a row loaded message to add monster buttons and parse tables
@@ -57,6 +61,10 @@ MessageService.listen(C.CloseTinyMessage, () => PageScriptService.run("tinymce.a
 
 // listen the message to add content to tinymce
 MessageService.listen(C.AddContentToTinyMessage, (message) => PageScriptService.run(`tinymce.activeEditor.insertContent(\`${message.content}\`)`));
+
+// listen the message of comment changed
+MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getConfig().then(tooltipsInit));
+
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
     init(config);
