@@ -47,7 +47,7 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
     - (Beta) Backgrounds and Feats;
     - (Beta) Homebrew: Backgrounds, Feats, Magic Items, Monsters and Spells. Both from lists and personal collection.
 
-P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips change on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
+P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips changes on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
