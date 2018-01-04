@@ -1,21 +1,33 @@
 import $ from "jquery";
 
+/* global chrome */
+
 const guid = function () {
     const s4 = () => Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 };
 
-const id = () => `bh-${guid()}`;
+const uidClass = () => `bh-${guid()}`;
+const autoRemove = (className: string) => `\n$(".${className}").remove();`;
 
 class PageScriptService {
     /**
-     * Runs a scripts on page that auto removes itself when done.
+     * Runs a script on client page that auto removes itself when done.
      * @param {string} script 
      */
     static run(script: string) {
-        const currentId = id();
-        const autoRemove = `\n$("#${currentId}").detach();`;
-        $("body").append(`<script id="${currentId}">${script}${autoRemove}</script>`);
+        const className = uidClass();
+        $("body").append(`<script class="${className}">${script}${autoRemove(className)}</script>`);
+    }
+
+    /**
+     * Runs a script file  on client page that auto removes itself when done. The file needs to be on webaccessible folder.
+     * @param {string} fileName 
+     */
+    static runFile(fileName: string) {
+        const className = uidClass();
+        $("body").append(`<script class="${className}" src="chrome-extension://${chrome.runtime.id}/webaccessible/${fileName}">${autoRemove(className)}</script>`);
+        $("body").append(`<script class="${className}">${autoRemove(className)}</script>`);
     }
 }
 

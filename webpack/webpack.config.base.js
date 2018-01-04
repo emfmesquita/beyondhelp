@@ -39,7 +39,7 @@ module.exports.config = (isProd) => {
         js: {
             test: /\.(js|jsx)$/,
             loader: 'babel-loader',
-            exclude: [/node_modules/, /clientfiles/],
+            exclude: [/node_modules/],
             options: {
                 babelrc: false,
                 presets: ['env', 'flow', 'react'],
@@ -48,10 +48,6 @@ module.exports.config = (isProd) => {
                 compact: !!isProd,
                 cacheDirectory: !isProd
             }
-        },
-        clientfiles: {
-            test: /clientfiles.*\.js$/,
-            loader: 'raw-loader'
         },
         css: {
             test: /\.(css|scss)$/,

@@ -34,7 +34,7 @@
             // adds BH button on toolbar and BH tinymce plugin
             Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,beyondhelp";
             if (!Cobalt.TinyMCE.options.external_plugins) Cobalt.TinyMCE.options.external_plugins = {};
-            Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${BeyondHelp.id}/tinymcebhplugin.js`;
+            Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${BeyondHelp.id}/webaccessible/tinymcebhplugin.js`;
 
             // reloads all editors and shows them
             Cobalt.TinyMCE.initialize();

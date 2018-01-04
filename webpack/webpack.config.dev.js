@@ -19,7 +19,7 @@ module.exports = [{
     },
     devtool: "cheap-module-eval-source-map",
     module: {
-        rules: [rules.lint, rules.js, rules.separateCss, rules.clientfiles]
+        rules: [rules.lint, rules.js, rules.separateCss]
     },
     plugins: [plugins.separateCss("extensioncontentstyle.css")]
 }, {
@@ -52,7 +52,7 @@ module.exports = [{
     entry: './src/contentscript/tinymce/tinymcebhdialog.js',
     output: {
         filename: 'tinymcebhdialog.js',
-        path: paths.buildDir
+        path: paths.buildDir + "/webaccessible"
     },
     devtool: "cheap-module-eval-source-map",
     module: {

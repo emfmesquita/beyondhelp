@@ -69,17 +69,17 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
             const tag = Type.getTag(type);
             toAddContent = `[${tag}]${selected.value}[/${tag}]`;
         } else if (Type.isHomebrew(type)) {
-            const hEntry: TooltipEntry = selected.value;
+            const entry: TooltipEntry = selected.value;
             const clazz = Type.getHomebrewClassName(type);
 
-            const [, action, slug] = hEntry.path.split("/");
+            const [, action, slug] = entry.path.split("/");
             const [id] = slug.split("-");
             const tooltipPath = `/${action}/${id}-tooltip`;
 
-            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${hEntry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${hEntry.name}</a>`;
+            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${hEntry.name}</a>`;
         } else if (Type.isCustom(type)) {
-            const cEntry: TooltipEntry = selected.value;
-            toAddContent = `<a class="tooltip-hover" href="https://www.dndbeyond.com${cEntry.path}">${cEntry.name}</a>`;
+            const entry: TooltipEntry = selected.value;
+            toAddContent = `<a class="tooltip-hover" href="https://www.dndbeyond.com${entry.path}">${entry.name}</a>`;
         }
 
         app.setState({ toAddContent });

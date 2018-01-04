@@ -18,7 +18,7 @@ module.exports = [{
         path: paths.buildDir
     },
     module: {
-        rules: [rules.lint, rules.js, rules.separateCss, rules.clientfiles]
+        rules: [rules.lint, rules.js, rules.separateCss]
     },
     plugins: [plugins.react, plugins.uglify, plugins.merge, plugins.separateCss("extensioncontentstyle.css")]
 }, {
@@ -49,7 +49,7 @@ module.exports = [{
     entry: './src/contentscript/tinymce/tinymcebhdialog.js',
     output: {
         filename: 'tinymcebhdialog.js',
-        path: paths.buildDir
+        path: paths.buildDir + "/webaccessible"
     },
     module: {
         rules: [rules.lint, {

@@ -20,14 +20,13 @@
         const els = [];
         $(`${selector}:not(.${className})`)
             .addClass(className)
-            .attr("data-tooltip-href", `chrome-extension://${BeyondHelp.id}/beyondHelpTooltip.js`)
             .on("mouseover", function (e) {
                 BeyondHelp.tooltip = parseTooltipInfo(this);
                 BeyondHelp.tooltip.itentifierClass = className + "-identifier";
             }).each((idx, el) => {
                 const info = parseTooltipInfo(el);
                 el.dataset.tooltipCustom = "true";
-                el.dataset.tooltipHref = `chrome-extension://${BeyondHelp.id}/beyondHelpTooltip.js?type=${info.type}&slug=${info.slug}`;
+                el.dataset.tooltipHref = `chrome-extension://${BeyondHelp.id}/webaccessible/beyondHelpTooltip.js?type=${info.type}&slug=${info.slug}`;
                 els.push(el);
             });
         Waterdeep.CurseTip._watchElements(els);

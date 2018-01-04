@@ -2,13 +2,14 @@ import BadgeService from "../services/BadgeService";
 import C from "../Constants";
 import MessageService from "../services/MessageService";
 import NotificationService from "../services/NotificationService";
+import TooltipsService from "../contentscript/tooltips/TooltipsService";
 import UserService from "../services/UserService";
 
 /* global chrome */
 
 // listen the dndbeyound request to gather a more info
 // sends a message to the content script to render the add monster buttons and parse roll tables
-chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(details.tabId, C.RowLoadedMessage), {
+chrome.webRequest.onCompleted.addListener((details) => details.tabId >= 0 && MessageService.sendToTab(details.tabId, C.RowLoadedMessage), {
     urls: [
         "*://*.dndbeyond.com/magic-items/*/more-info",
         "*://*.dndbeyond.com/monsters/*/more-info",
@@ -20,7 +21,7 @@ chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(
 
 // listen tooltip request errors
 // sends a message to the content script to handle it
-chrome.webRequest.onErrorOccurred.addListener((details) => MessageService.sendToTab(details.tabId, C.TooltipErrorMessage, details), {
+chrome.webRequest.onErrorOccurred.addListener((details) => details.tabId >= 0 && MessageService.sendToTab(details.tabId, C.TooltipErrorMessage, details), {
     urls: [
         "*://*.dndbeyond.com/magic-items/*/tooltip*",
         "*://*.dndbeyond.com/monsters/*/tooltip*",
@@ -30,7 +31,7 @@ chrome.webRequest.onErrorOccurred.addListener((details) => MessageService.sendTo
 
 // listen comment created, edited, deleted, undeleted
 // sends a message to the content script to handle it - basically to init tooltips on it
-chrome.webRequest.onCompleted.addListener((details) => MessageService.sendToTab(details.tabId, C.CommentChangedMessage), {
+chrome.webRequest.onCompleted.addListener((details) => details.tabId >= 0 && MessageService.sendToTab(details.tabId, C.CommentChangedMessage), {
     urls: [
         "*://*.dndbeyond.com/comments/*"
     ]
@@ -45,6 +46,12 @@ MessageService.listen(C.AddMonsterMessage, (message) => {
 // listen the request to get the username
 MessageService.listen(C.UsernameMessage, (message, callback: Function) => {
     UserService.getCurrentUsername().then(callback);
+    return true;
+});
+
+// listen the request from client page to build a custom tooltip content
+MessageService.listenFromExternal(C.BuildTooltipMessage, (tooltipInfo, callback) => {
+    TooltipsService.buildCustomTooltipContent(tooltipInfo).then(callback);
     return true;
 });
 

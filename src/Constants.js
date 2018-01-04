@@ -15,6 +15,7 @@ const rowLoadedMessage = "rowloadedmessage";
 const usernameMessage = "usernamemessage";
 const tooltipErrorMessage = "tooltiperrormessage";
 const commentChangedMessage = "commentchangedmessage";
+const buildTooltipMessage = "buildtooltipmessage";
 
 class Constants {
     static get DefaultMonsterColor() {
@@ -63,6 +64,9 @@ class Constants {
     }
     static get CommentChangedMessage() {
         return commentChangedMessage;
+    }
+    static get BuildTooltipMessage() {
+        return buildTooltipMessage;
     }
 }
 

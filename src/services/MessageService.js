@@ -9,6 +9,14 @@ class MessageService {
         });
     }
 
+    static listenFromExternal(action: string, handler: (message, callback: Function) => boolean) {
+        chrome.runtime.onMessageExternal.addListener((request, sender, callback) => {
+            if (request.action === action) {
+                return handler(request, callback);
+            }
+        });
+    }
+
     static send(action: string, message: object, callback: Function) {
         message = message || {};
         if (!callback) {
