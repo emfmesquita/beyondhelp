@@ -9,7 +9,7 @@
         Waterdeep.CurseTip.handleTooltipData({
             SimpleOrAdvanced: "simple",
             Tooltip: content,
-            Url: document.location.protocol + info.url
+            Url: document.location.protocol + info.cacheUrl
         });
     });
 })();

@@ -1,10 +1,8 @@
-$background-color: #ee8600;
-$background-color-border: #ffc478;
-$character-color: #ee8600;
-$feat-color: #ee8600;
-$feat-color-border: #ffc478;
-$monster-color: #bc0f0f;
-$table-roll-color: #0f5cbc;
+$ddb-gray: #979aa4;
+$ddb-orange: #ee8600;
+$ddb-red: #bc0f0f;
+$ddb-dark-blue: #0f5cbc;
+$orange-border: #ffc478;
 // used for action links and tooltips
 @mixin link($color, $font-style) {
     &,
@@ -17,8 +15,17 @@ $table-roll-color: #0f5cbc;
     }
 }
 
+.BH-qtip .qtip-content {
+    text-align: center !important;
+}
+
+.tooltip-header {
+    background-position-y: 71px !important;
+}
+
 @import "addmonsters/addmonsters";
 @import "characters/characters";
+@import "references/references";
 @import "tableroll/tableroll";
 @import "tinymce/tinymce";
 @import "tooltips/tooltips";

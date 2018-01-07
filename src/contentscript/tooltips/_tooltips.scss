@@ -17,5 +17,5 @@
     }
 }
 
-@include tooltip("background", $background-color, $background-color-border, inherit);
-@include tooltip("feat", $feat-color, $feat-color-border, italic);
+@include tooltip("background", $ddb-orange, $orange-border, inherit);
+@include tooltip("feat", $ddb-orange, $orange-border, italic);

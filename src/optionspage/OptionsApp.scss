@@ -1,3 +1,23 @@
 body {
     padding: 8px;
 }
+
+.BH-option-group {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    .BH-option-group-label {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        .glyphicon {
+            float: right;
+        }
+    }
+    .BH-option-group-content {
+        display: none;
+        padding-left: 20px;
+        &.expanded {
+            display: block;
+        }
+    }
+}

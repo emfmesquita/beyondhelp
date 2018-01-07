@@ -1,0 +1,44 @@
+@mixin reference($size, $margin) {
+    &:hover .BH-copy-reference {
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: visible;
+    }
+    .BH-copy-reference {
+        background-image: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-black.svg");
+        background-size: cover;
+        display: inline-block;
+        height: $size;
+        opacity: 0;
+        margin-left: $margin;
+        transition: visibility 0.5s, opacity 0.5s linear;
+        visibility: hidden;
+        width: $size;
+    }
+}
+
+@media screen {
+    h1 {
+        @include reference(24px,
+        10px);
+    }
+    h2 {
+        @include reference(18px,
+        8px);
+    }
+    h3 {
+        @include reference(14px,
+        8px);
+    }
+    h4,
+    h5 {
+        @include reference(12px,
+        6px);
+    }
+    .BH-tooltip-reference-body {
+        .p-article-a,
+        .p-article-content {
+            margin-bottom: 0px !important;
+        }
+    }
+}

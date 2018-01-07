@@ -8,6 +8,8 @@ const campaigncharacterfolders = "campaigncharacterfolders";
 const editorButton = "editorButton";
 const homebrewTooltips = "homebrewtooltips";
 const customTooltips = "customTooltips";
+const refTooltips = "refTooltips";
+const refButtons = "refButtons";
 
 const allOptions = [
     addmonsteronlist,
@@ -19,7 +21,9 @@ const allOptions = [
     campaigncharacterfolders,
     editorButton,
     homebrewTooltips,
-    customTooltips
+    customTooltips,
+    refTooltips,
+    refButtons
 ];
 
 class Options {
@@ -52,6 +56,12 @@ class Options {
     }
     static get CustomTooltips(): string {
         return customTooltips;
+    }
+    static get RefTooltips(): string {
+        return refTooltips;
+    }
+    static get RefButtons(): string {
+        return refButtons;
     }
 
     static get AllOptions(): string[] {

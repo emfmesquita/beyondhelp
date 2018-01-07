@@ -6,6 +6,7 @@ import C from "../Constants";
 import CampaignCharactersService from "./characters/CampaignCharactersService";
 import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
+import ContentScriptService from "./ContentScriptService";
 import FavIconService from "./FavIconService";
 import MessageService from "../services/MessageService";
 import MonsterParseData from "./addmonsters/MonsterParseData";
@@ -15,13 +16,10 @@ import Opt from "../Options";
 import PageScriptService from "../services/PageScriptService";
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReferencesService from "./references/ReferencesService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
-
-/* global chrome */
-
-PageScriptService.run(`window.BeyondHelp = { id : "${chrome.runtime.id}"}`);
 
 const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");
@@ -33,8 +31,8 @@ const tooltipsInit = function (config: Configuration) {
     // workaround for homebrew spell tooltips that sever removes classes
     if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
 
-    // inits custom tooltips (backgrounds and feats)
-    if (config[Opt.CustomTooltips]) TooltipsService.bhTooltipsInit();
+    // inits custom tooltips (backgrounds and feats) and ref tooltips
+    if (config[Opt.CustomTooltips] || config[Opt.RefTooltips]) TooltipsService.bhTooltipsInit();
 };
 
 const init = function (config: Configuration) {
@@ -67,6 +65,8 @@ MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getCon
 
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
+    ContentScriptService.init(config);
+
     init(config);
 
     // change fav icon of char page
@@ -83,4 +83,7 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
+
+    // inits the refs on compendium pages
+    if (config[Opt.RefButtons]) ReferencesService.init();
 });

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import $ from "jquery";
 import DiceExp from "../../services/DiceExp";
+import QTipService from "../QTipService";
 import ReactDOM from 'react-dom';
 import RollableData from "./RollableData";
 import RollableTableData from "./RollableTableData";
@@ -77,11 +78,7 @@ const throttledRoll = throttle((data: RollableData, rollEl: HTMLElement) => {
 
     // makes a roll and shows the tooltip
     const rolled = DiceExp.calcValue(data.diceValue);
-    jqRollEl.hide();
-    jqRollEl.fadeIn(300);
-    const id = "bh-table-roll-" + new Date().getTime();
-    jqRollEl.attr("id", id);
-    showQtip(jqRollEl, id, rolled);
+    QTipService.AnimateIntoQTip(jqRollEl, rolled + "");
 
     // tries to find the cell with the rolled vavlue and show in it the result
     rows.each((index, row: HTMLElement) => {

@@ -8,7 +8,7 @@ const guid = function () {
 };
 
 const uidClass = () => `bh-${guid()}`;
-const autoRemove = (className: string) => `\n$(".${className}").remove();`;
+const autoRemove = (className: string) => `$(".${className}").remove();`;
 
 class PageScriptService {
     /**
@@ -17,7 +17,14 @@ class PageScriptService {
      */
     static run(script: string) {
         const className = uidClass();
-        $("body").append(`<script class="${className}">${script}${autoRemove(className)}</script>`);
+        $("body").append(`
+            <script class="${className}">
+                (function() {
+                    ${script}
+                    ${autoRemove(className)}
+                })();
+            </script>
+        `);
     }
 
     /**
@@ -26,7 +33,7 @@ class PageScriptService {
      */
     static runFile(fileName: string) {
         const className = uidClass();
-        $("body").append(`<script class="${className}" src="chrome-extension://${chrome.runtime.id}/webaccessible/${fileName}">${autoRemove(className)}</script>`);
+        $("body").append(`<script class="${className}" src="chrome-extension://${chrome.runtime.id}/webaccessible/${fileName}"/>`);
         $("body").append(`<script class="${className}">${autoRemove(className)}</script>`);
     }
 }

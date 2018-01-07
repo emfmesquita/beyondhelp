@@ -51,7 +51,7 @@ MessageService.listen(C.UsernameMessage, (message, callback: Function) => {
 
 // listen the request from client page to build a custom tooltip content
 MessageService.listenFromExternal(C.BuildTooltipMessage, (tooltipInfo, callback) => {
-    TooltipsService.buildCustomTooltipContent(tooltipInfo).then(callback);
+    TooltipsService.buildCustomTooltipContent(tooltipInfo).then(callback).catch(callback);
     return true;
 });
 
