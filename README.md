@@ -49,6 +49,9 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 
 P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips changes on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
 
+### Compendium References
+- Extra buttons on all compendium pages that enables the user to copy references that can be pasted on editors. After saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip.
+
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
 
@@ -70,6 +73,16 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ![Add Tooltips Plugin](http://i.imgur.com/3Ln9zfJ.png)
 
 ![Extra Tooltips](http://i.imgur.com/02ECiOJ.png)
+
+### Compendium References
+##### First copy the reference
+![Reference Copy](http://i.imgur.com/iafiMdY.png)
+
+##### Then paste on editor
+![Paste on Editor](http://i.imgur.com/GWwZ74L.png)
+
+##### Result
+![Reference result](http://i.imgur.com/fm2Y59O.png)
 
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
