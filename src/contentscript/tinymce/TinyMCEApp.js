@@ -76,7 +76,7 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
             const [id] = slug.split("-");
             const tooltipPath = `/${action}/${id}-tooltip`;
 
-            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${hEntry.name}</a>`;
+            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${entry.name}</a>`;
         } else if (Type.isCustom(type)) {
             const entry: TooltipEntry = selected.value;
             toAddContent = `<a class="tooltip-hover" href="https://www.dndbeyond.com${entry.path}">${entry.name}</a>`;

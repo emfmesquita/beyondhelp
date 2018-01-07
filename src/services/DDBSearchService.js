@@ -61,6 +61,7 @@ class DDBSearchService {
     static equipments(name: string): Promise<string[]> {
         return commonSearch(url(name, "equipment"), ".list-row-name-primary-text a");
     }
+
     static feats(): Promise<TooltipEntry[]> {
         return characterSearch(characterUrl("feats"));
     }
