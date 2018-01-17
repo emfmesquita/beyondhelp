@@ -41,11 +41,14 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 ### Roll on Tables
 - Enables click to roll on most of the tables of the compendium and description pages.
 
-### Add Tooltips Plugin
-- Extra button on all editors of the site that enables to add all kinds of tooltips:
-    - Actions, Conditions, Equipments, Magic Items, Monsters, Senses, Skills, Spells and Weapon Properties;
-    - (Beta) Backgrounds and Feats;
-    - (Beta) Homebrew: Backgrounds, Feats, Magic Items, Monsters and Spells. Both from lists and personal collection.
+### Editor Plugin
+- Extra button on all editors of the site that enables:
+    - To add all kinds of tooltips:
+        - Actions, Conditions, Equipments, Magic Items, Monsters, Senses, Skills, Spells and Weapon Properties;
+        - (Beta) Backgrounds and Feats;
+        - (Beta) Homebrew: Backgrounds, Feats, Magic Items, Monsters and Spells. Both from lists and personal collection.
+    - To add rollable tables;
+- Extra button on all editors that enables fullscreen mode.
 
 P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips changes on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
 
@@ -69,10 +72,16 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Roll on Tables
 ![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
 
-### Add Tooltips Plugin
+### Editor Plugin
 ![Add Tooltips Plugin](http://i.imgur.com/3Ln9zfJ.png)
 
 ![Extra Tooltips](http://i.imgur.com/02ECiOJ.png)
+
+![Tables Tab](http://i.imgur.com/vlQjZyY.png)
+
+![Table Added](http://i.imgur.com/zwHUaMO.png)
+
+![Table Result](http://i.imgur.com/dgL6ev2.png)
 
 ### Compendium References
 ##### First copy the reference
