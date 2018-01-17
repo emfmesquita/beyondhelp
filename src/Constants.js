@@ -10,6 +10,8 @@ const configurationId = "bh-config";
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
 const addContentToTinyMessage = "addcontenttotinymessage";
+const getSelectedTableTinyMessage = "selectedtablemessage";
+const updateSelectedTableTinyMessage = "updateselectedtablemessage";
 const reloadMessage = "reloadmessage";
 const rowLoadedMessage = "rowloadedmessage";
 const usernameMessage = "usernamemessage";
@@ -49,6 +51,12 @@ class Constants {
     }
     static get AddContentToTinyMessage() {
         return addContentToTinyMessage;
+    }
+    static get GetSelectedTableTinyMessage() {
+        return getSelectedTableTinyMessage;
+    }
+    static get UpdateSelectedTableTinyMessage() {
+        return updateSelectedTableTinyMessage;
     }
     static get ReloadMessage() {
         return reloadMessage;

@@ -12,11 +12,11 @@ import { throttle } from 'lodash';
 /**
  * regex to catch normal values from cells
  */
-const cellRegex = /^[0-9]+$/i;
+const cellRegex = /^\s*[0-9]+\s*$/i;
 /**
  * regex to catch range values from cells
  */
-const cellRangeRegex = /^[0-9]+[-–][0-9]+$/i;
+const cellRangeRegex = /^\s*[0-9]+\s*[-–]\s*[0-9]+\s*$/i;
 /**
  * regex to catch value or more like: 
  *  16+

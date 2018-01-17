@@ -7,6 +7,50 @@
         bottom: 8px;
         right: 8px;
     }
+    .bh-tables-tab {
+        .bh-tables-add-row {
+            margin-left: 20px;
+        }
+        .bh-tables-rows {
+            height: 250px;
+            overflow-y: auto;
+        }
+        .bh-tables-result-column .form-group {
+            width: calc(100% - 230px);
+        }
+        .bh-tables-remove-row {
+            color: #000 !important;
+            display: inline;
+            margin-left: 18px;
+            opacity: .4;
+            padding: 0px 4px 0px 0px;
+            position: relative;
+            top: 2px;
+            &:focus,
+            &:hover {
+                cursor: pointer;
+                filter: alpha(opacity=70);
+                text-decoration: none;
+                opacity: .7;
+            }
+            &.disabled {
+                opacity: .15;
+            }
+        }
+        .bh-tables-min-max {
+            padding-top: 16px;
+            padding-left: 8px;
+        }
+        input {
+            margin: 8px;
+            &[type=number] {
+                width: 72px;
+            }
+            &[type=text] {
+                width: 100%;
+            }
+        }
+    }
     .Select-input {
         width: 100%;
         input {

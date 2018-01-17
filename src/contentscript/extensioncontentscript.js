@@ -54,12 +54,6 @@ const init = function (config: Configuration) {
 // listen a row loaded message to add monster buttons and parse tables
 MessageService.listen(C.RowLoadedMessage, () => ConfigStorageService.getConfig().then(init));
 
-// listen the message to close tinymce dialog
-MessageService.listen(C.CloseTinyMessage, () => PageScriptService.run("tinymce.activeEditor.windowManager.close()"));
-
-// listen the message to add content to tinymce
-MessageService.listen(C.AddContentToTinyMessage, (message) => PageScriptService.run(`tinymce.activeEditor.insertContent(\`${message.content}\`)`));
-
 // listen the message of comment changed
 MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getConfig().then(tooltipsInit));
 

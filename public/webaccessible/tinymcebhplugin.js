@@ -7,7 +7,7 @@
                 title: "Beyond Help",
                 url: url + "/tinymcebhdialog.html",
                 bodyType: "tabpanel",
-                width: 400,
+                width: 800,
                 height: 400
             });
         }
@@ -16,9 +16,24 @@
             image: url + "/icon-black.svg",
             context: "tools",
             tooltip: "Beyond Help (Alt + B)",
-            onclick: openBhWindow
+            onclick: openBhWindow,
+            onPostRender: function () {
+                const ctrl = this;
+                editor.on("NodeChange", e => {
+                    const jqNode = $(editor.selection.getNode());
+                    ctrl.active(jqNode.closest("table.compendium-left-aligned-table").length > 0);
+                });
+            }
+        });
+
+        editor.addButton("bhfullscreen", {
+            icon: "fullscreen",
+            context: "tools",
+            tooltip: "Toggle Fullscreen (Alt + F)",
+            onclick: () => editor.execCommand("mceFullscreen")
         });
 
         editor.shortcuts.add("alt+b", "Opens Beyond Help Window.", openBhWindow);
+        editor.shortcuts.add("alt+f", "Toggle Fullscreen.", "mceFullscreen");
     });
 })();

@@ -8,13 +8,14 @@ class FieldService {
      */
     static onEnterFunc(saveFunc: Function, caller: Component) {
         if (!saveFunc) return () => { };
-        let func = function (e: KeyboardEvent) {
+        const func = function (e: KeyboardEvent) {
             if (e.which === 13 || e.keyCode === 13) {
+                e.preventDefault();
+                e.stopPropagation();
                 saveFunc && saveFunc();
             }
         };
-        func = func.bind(caller);
-        return func;
+        return func.bind(caller);
     }
 
     /**
@@ -23,11 +24,10 @@ class FieldService {
      * @param {Component} caller 
      */
     static onChangeFunc(stateKey: string, caller: Component) {
-        let func = function (e) {
+        const func = function (e) {
             this.setState({ [stateKey]: e.target.value });
         };
-        func = func.bind(caller);
-        return func;
+        return func.bind(caller);
     }
 
     /**
@@ -36,11 +36,10 @@ class FieldService {
      * @param {Component} caller 
      */
     static onColorChangeFunc(stateKey: string, caller: Component) {
-        let func = function (c) {
+        const func = function (c) {
             this.setState({ [stateKey]: c.hex });
         };
-        func = func.bind(caller);
-        return func;
+        return func.bind(caller);
     }
 
     /**
@@ -49,11 +48,26 @@ class FieldService {
      * @param {Component} caller 
      */
     static onToggleFunc(stateKey: string, caller: Component) {
-        let func = function (e) {
+        const func = function (e) {
             this.setState((prev) => ({ [stateKey]: !prev[stateKey] }));
         };
-        func = func.bind(caller);
-        return func;
+        return func.bind(caller);
+    }
+
+    static onWheelFunc(stateKey: string, caller: Component) {
+        const func = function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            let intValue = Number.parseInt(caller.state[stateKey]);
+            if (isNaN(intValue)) intValue = 0;
+
+            const delta = e.deltaY;
+            const change = delta > 0 ? -1 : 1;
+
+            this.setState({ [stateKey]: intValue + change });
+        };
+        return func.bind(caller);
     }
 }
 

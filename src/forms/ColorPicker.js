@@ -18,7 +18,7 @@ class ColorPicker extends Component {
 
     render() {
         return (
-            <div>
+            <span>
                 <FieldLabel label={this.props.label} />
                 <InputGroup bsSize="small" style={{ marginBottom: this.props.showPicker ? "300px" : "0px" }}>
                     <div className="Color-picker-container">
@@ -39,7 +39,7 @@ class ColorPicker extends Component {
                         <MonsterMenuButton icon="glyphicon-erase" title="Erase" onClick={() => this.props.onChange({ hex: null })} />
                     </div>
                 </InputGroup>
-            </div>
+            </span>
         );
     }
 }

@@ -29,7 +29,7 @@ class MessageService {
      */
     static listenFromClientPage(action: string, handler: (message) => void) {
         window.addEventListener("message", function (event) {
-            if (event.source !== window) return;
+            if (!event.origin.endsWith("dndbeyond.com")) return;
             const message = event.data;
             if (!message || message.id !== chrome.runtime.id || message.action !== action) return;
             handler(message);
