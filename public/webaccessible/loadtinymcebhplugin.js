@@ -31,12 +31,22 @@
             Cobalt.TinyMCE.initialized = false;
             Cobalt.TinyMCE.optionsOverridden = true;
 
-            // adds BH button on toolbar and BH tinymce plugin
-            //Cobalt.TinyMCE.options.table_toolbar = "tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol";
-            Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,beyondhelp,|,bhfullscreen";
+            // adds BH tinymce plugin
             if (!Cobalt.TinyMCE.options.external_plugins) Cobalt.TinyMCE.options.external_plugins = {};
             Cobalt.TinyMCE.options.external_plugins.beyondhelp = `chrome-extension://${BeyondHelp.id}/webaccessible/tinymcebhplugin.js`;
-            Cobalt.TinyMCE.options.plugins = Cobalt.TinyMCE.options.plugins + ",fullscreen";
+
+            // adds BH button on toolbar
+            if (BeyondHelp.config.editorButton && (BeyondHelp.config.tooltipsTab || BeyondHelp.config.tablesTab)) {
+                Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,beyondhelp";
+            }
+
+            // adds fullscreen button on toolbar
+            if (BeyondHelp.config.fullscreenButton) {
+                Cobalt.TinyMCE.options.toolbar = Cobalt.TinyMCE.options.toolbar + ",|,bhfullscreen";
+                Cobalt.TinyMCE.options.plugins = Cobalt.TinyMCE.options.plugins + ",fullscreen";
+            }
+
+            //Cobalt.TinyMCE.options.table_toolbar = "tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol";
 
             // reloads all editors and shows them
             Cobalt.TinyMCE.initialize();

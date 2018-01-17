@@ -6,6 +6,9 @@ const charfavicon = "charfavicon";
 const mycharacterfolders = "mycharacterfolders";
 const campaigncharacterfolders = "campaigncharacterfolders";
 const editorButton = "editorButton";
+const fullscreenButton = "fullscreenButton";
+const tooltipsTab = "tooltipsTab";
+const tablesTab = "tablesTab";
 const homebrewTooltips = "homebrewtooltips";
 const customTooltips = "customTooltips";
 const refTooltips = "refTooltips";
@@ -20,6 +23,9 @@ const allOptions = [
     mycharacterfolders,
     campaigncharacterfolders,
     editorButton,
+    fullscreenButton,
+    tooltipsTab,
+    tablesTab,
     homebrewTooltips,
     customTooltips,
     refTooltips,
@@ -50,6 +56,15 @@ class Options {
     }
     static get EditorButton(): string {
         return editorButton;
+    }
+    static get FullscreenButton(): string {
+        return fullscreenButton;
+    }
+    static get TooltipsTab(): string {
+        return tooltipsTab;
+    }
+    static get TablesTab(): string {
+        return tablesTab;
     }
     static get HomebrewTooltips(): string {
         return homebrewTooltips;

@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 
 import C from "../../Constants";
 import MessageService from "../../services/MessageService";
+import Opt from "../../Options";
 import TinyMCETablesTab from "./TinyMCETablesTab";
 import TinyMCETooltipsTab from "./TinyMCETooltipsTab";
 
@@ -19,7 +20,7 @@ class TinyMCEApp extends Component {
         super(props);
 
         this.state = {
-            activeTab: props.tableHtml ? tablesTabId : tooltipsTabId
+            activeTab: props.tableHtml || !props.config[Opt.TooltipsTab] ? tablesTabId : tooltipsTabId
         };
     }
 
@@ -36,24 +37,35 @@ class TinyMCEApp extends Component {
         return this.state.activeTab === tabId ? {} : { display: "none" };
     }
 
+    renderTooltipsTab = () => {
+        if (!this.props.config[Opt.TooltipsTab]) return null;
+        return (
+            <span style={this.tabStyle(tooltipsTabId)}>
+                <TinyMCETooltipsTab config={this.props.config} shouldFocus={!this.props.tableHtml} onAdd={this.add} onClose={this.close} />
+            </span>
+        );
+    }
+
+    renderTablesTab = () => {
+        if (!this.props.config[Opt.TablesTab]) return null;
+        return (
+            <span style={this.tabStyle(tablesTabId)}>
+                <TinyMCETablesTab onAdd={this.add} onClose={this.close} tableHtml={this.props.tableHtml} />
+            </span>
+        );
+    }
+
     render() {
         return (
             <div className="bh-tinymce-dialog">
                 <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={(activeTab) => this.setState({ activeTab })}>
-                    <NavItem eventKey={tooltipsTabId} title="Add Tooltips">Tooltips</NavItem>
-                    <NavItem eventKey={tablesTabId} title="Add Rollable Tables">Rollable Tables</NavItem>
+                    {this.props.config[Opt.TooltipsTab] && <NavItem eventKey={tooltipsTabId} title="Add Tooltips">Tooltips</NavItem>}
+                    {this.props.config[Opt.TablesTab] && <NavItem eventKey={tablesTabId} title="Add Rollable Tables">Rollable Tables</NavItem>}
                     {/* <NavDropdown title="Extra">
                     </NavDropdown> */}
                 </Nav>
-                <span style={this.tabStyle(tooltipsTabId)}>
-                    <TinyMCETooltipsTab
-                        addHomebrew={this.props.addHomebrew} addCustom={this.props.addCustom}
-                        shouldFocus={!this.props.tableHtml} onAdd={this.add} onClose={this.close}
-                    />
-                </span>
-                <span style={this.tabStyle(tablesTabId)}>
-                    <TinyMCETablesTab onAdd={this.add} onClose={this.close} tableHtml={this.props.tableHtml} />
-                </span>
+                {this.renderTooltipsTab()}
+                {this.renderTablesTab()}
             </div >
         );
     }

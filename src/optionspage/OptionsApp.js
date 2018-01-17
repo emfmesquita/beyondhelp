@@ -59,6 +59,12 @@ class OptionsApp extends Component {
                     {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
                     {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
                 </OptionGroup>
+                <OptionGroup label="Editor">
+                    {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
+                    {this.optionField("Enable Tooltips Tab on Beyond Help Editor Dialog.", Opt.TooltipsTab)}
+                    {this.optionField("Enable Rollable Tables Tab on Beyond Help Editor Dialog.", Opt.TablesTab)}
+                    {this.optionField("Enable Fullscreen button on editors.", Opt.FullscreenButton)}
+                </OptionGroup>
                 <OptionGroup label="Favicons">
                     {this.optionField("Change character pages favicon.", Opt.CharacterFavIcon)}
                 </OptionGroup>
@@ -73,7 +79,6 @@ class OptionsApp extends Component {
                     {this.optionField("Enable Reference Tooltips.", Opt.RefTooltips)}
                 </OptionGroup>
                 {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
-                {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
                 {this.optionField("Enable roll on tables.", Opt.TableRolls)}
             </Form>
         );

@@ -35,6 +35,11 @@ const tooltipsInit = function (config: Configuration) {
     if (config[Opt.CustomTooltips] || config[Opt.RefTooltips]) TooltipsService.bhTooltipsInit();
 };
 
+// inits the table rollers
+const tablesInit = function (config: Configuration) {
+    if (config[Opt.TableRolls]) TableRollService.init();
+};
+
 const init = function (config: Configuration) {
     // render the add monster buttons
     MonsterParseService.parseMonsters(config).forEach(data => {
@@ -45,9 +50,7 @@ const init = function (config: Configuration) {
         data.insert(buttonsDiv);
     });
 
-    // inits the table rollers
-    if (config[Opt.TableRolls]) TableRollService.init();
-
+    tablesInit(config);
     tooltipsInit(config);
 };
 
@@ -55,7 +58,10 @@ const init = function (config: Configuration) {
 MessageService.listen(C.RowLoadedMessage, () => ConfigStorageService.getConfig().then(init));
 
 // listen the message of comment changed
-MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getConfig().then(tooltipsInit));
+MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getConfig().then(config => {
+    tablesInit(config);
+    tooltipsInit(config);
+}));
 
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
@@ -73,7 +79,7 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     if (config[Opt.CampaignCharactersFolders]) CampaignCharactersService.init();
 
     // adds the Beyond Help plugin to tiny editors on page
-    if (config[Opt.EditorButton]) TinyMCEService.init();
+    if (config[Opt.EditorButton] || config[Opt.FullscreenButton]) TinyMCEService.init();
 
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();

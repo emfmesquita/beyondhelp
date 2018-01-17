@@ -31,12 +31,14 @@ const disableScrollOutsideFrame = function () {
 
 disableScrollOutsideFrame();
 
-// listen for the response of selected table request
-MessageService.listenFromClientPage(C.GetSelectedTableTinyMessage, message => {
-    ConfigStorageService.getConfig().then(config => {
-        ReactDOM.render(<TinyMCEApp addHomebrew={config[Opt.HomebrewTooltips]} addCustom={config[Opt.CustomTooltips]} tableHtml={message.tableHtml} />, document.getElementById('root'));
-    });
+ConfigStorageService.getConfig().then(config => {
+    const renderDialog = (tableHtml: string) => ReactDOM.render(<TinyMCEApp config={config} tableHtml={tableHtml} />, document.getElementById('root'));
+    if (config[Opt.TablesTab]) {
+        // listen for the response of selected table request
+        MessageService.listenFromClientPage(C.GetSelectedTableTinyMessage, message => renderDialog(message.tableHtml));
+        // makes a selected table request
+        window.top.postMessage({ action: C.GetSelectedTableTinyMessage }, "*");
+    } else {
+        renderDialog("");
+    }
 });
-
-// makes a selected table request
-window.top.postMessage({ action: C.GetSelectedTableTinyMessage }, "*");

@@ -46,6 +46,10 @@ const buildContent = function (diceExp: string, rows: object[]) {
     `;
 };
 
+/**
+ * Parses the existing table content to bh dialog.
+ * @param {*} tableHtml 
+ */
 const parseTable = function (tableHtml) {
     if (!tableHtml) return { diceExp: "", rows: [] };
 

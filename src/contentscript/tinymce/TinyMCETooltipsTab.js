@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import C from "../../Constants";
 import DDBSearchService from "../../services/DDBSearchService";
+import Opt from "../../Options";
 import ReactDOM from 'react-dom';
 import SearchField from "../../forms/SearchField";
 import Select from 'react-select';
@@ -148,8 +149,8 @@ class TinyMCETooltipsTab extends Component {
 
         // tooltip types options - some may not show due to config off
         const selOpts = [];
-        const addHB = props.addHomebrew;
-        const addCust = props.addCustom;
+        const addHB = props.config[Opt.HomebrewTooltips];
+        const addCust = props.config[Opt.CustomTooltips];
         selOpts.push({ label: "Action", value: Type.Action });
         addCust && selOpts.push({ label: "Background (Beta)", value: Type.Background });
         selOpts.push({ label: "Condition", value: Type.Condition });
