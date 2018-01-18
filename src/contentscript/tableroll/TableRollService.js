@@ -178,6 +178,7 @@ const showQtip = function (target, targetId: string, rolled: number) {
 
 class TableRollService {
     static init() {
+        $("body.body-forum, body.body-user, body.body-devtracker").find("table.compendium-left-aligned-table:not(.mceLayout)").addClass("mceLayout");
         $("table:not(.bh-processed)").each((index, table) => initTable(table, index));
     }
 }
