@@ -13,6 +13,7 @@ const homebrewTooltips = "homebrewtooltips";
 const customTooltips = "customTooltips";
 const refTooltips = "refTooltips";
 const refButtons = "refButtons";
+const mapRefs = "mapRefs";
 
 const allOptions = [
     addmonsteronlist,
@@ -29,7 +30,8 @@ const allOptions = [
     homebrewTooltips,
     customTooltips,
     refTooltips,
-    refButtons
+    refButtons,
+    mapRefs
 ];
 
 class Options {
@@ -77,6 +79,9 @@ class Options {
     }
     static get RefButtons(): string {
         return refButtons;
+    }
+    static get MapRefs(): string {
+        return mapRefs;
     }
 
     static get AllOptions(): string[] {

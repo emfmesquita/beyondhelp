@@ -8,6 +8,7 @@ import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import ContentScriptService from "./ContentScriptService";
 import FavIconService from "./favicon/FavIconService";
+import MapsService from "./maps/MapsService";
 import MessageService from "../services/MessageService";
 import MonsterParseData from "./addmonsters/MonsterParseData";
 import MonsterParseService from "./addmonsters/MonsterParseService";
@@ -83,6 +84,9 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
+
+    // inits map references
+    if (config[Opt.MapRefs]) MapsService.init();
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();

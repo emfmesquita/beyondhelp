@@ -80,6 +80,7 @@ class OptionsApp extends Component {
                 </OptionGroup>
                 {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
                 {this.optionField("Enable roll on tables.", Opt.TableRolls)}
+                {this.optionField("Add references on adventure maps.", Opt.MapRefs)}
             </Form>
         );
     }
