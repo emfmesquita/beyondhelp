@@ -55,6 +55,9 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Compendium References
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on editors. After saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip.
 
+### Adventure Map References
+- Hoverable tooltips on "Lost Mine of Phandelver" maps (other adventures will be added later).
+
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
 
