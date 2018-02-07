@@ -58,7 +58,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Adventure Map References
 - These features applies to "Lost Mine of Phandelver" and "Hoard of the Dragon Queen" (other adventures will be added later):
     - Hoverable tooltips on maps that can be clicked to redirect to the area description;
-    - Links on the area description header back to the corresponding map.
+    - Links on the areas description header back to the corresponding map.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
@@ -97,6 +97,11 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ##### Result
 ![Reference result](http://i.imgur.com/fm2Y59O.png)
+
+### Adventure Map References
+![Reference to area description](http://i.imgur.com/IscRyQk.png)
+
+![Link back to Map](http://i.imgur.com/BKoUP53.png)
 
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
