@@ -1,0 +1,25 @@
+@mixin mapLink($size, $margin) {
+    a.tooltip-hover.BH-map-link {
+        margin-left: $margin;
+        font-weight: normal !important;
+        font-size: $size !important;
+        color: #000 !important;
+    }
+    @include showOnHover("BH-map-link");
+}
+
+@media screen {
+    h1 {
+        @include mapLink(24px, 10px);
+    }
+    h2 {
+        @include mapLink(18px, 8px);
+    }
+    h3 {
+        @include mapLink(14px, 8px);
+    }
+    h4,
+    h5 {
+        @include mapLink(12px, 6px);
+    }
+}

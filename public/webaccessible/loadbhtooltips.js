@@ -40,15 +40,27 @@
         // parses reference tooltip info from tooltip anchor
         const parseReference = function (referenceEl) {
             const tokens = referenceEl.pathname.split("/");
-            const refId = referenceEl.hash.substring(1);
             const src = tokens[3];
-
             const page = tokens[tokens.length - 1];
+
+            let refId, contentId;
+            const fragmentTokens = referenceEl.hash.substring(1).split(":");
+            if (referenceEl.hash.startsWith("#cid:")) {
+                refId = fragmentTokens[1];
+                contentId = fragmentTokens[2];
+            } else {
+                refId = fragmentTokens[0];
+            }
+
+            let slug = src + "-" + page + "-" + refId;
+            if (contentId) slug += "-" + contentId;
+
             return {
                 cacheUrl: referenceEl.dataset.tooltipHref,
+                contentId: contentId,
                 refId: refId,
                 refUrl: referenceEl.href,
-                slug: src + "-" + page + "-" + refId,
+                slug: slug,
                 src: src,
                 subSrc: tokens.length === 6 ? tokens[4] : null,
                 type: tokens[1]

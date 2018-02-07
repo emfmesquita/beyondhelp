@@ -1,11 +1,12 @@
-import MapInfoEntry from "./MapInfoEntry";
+import MapAreaInfo from "./MapAreaInfo";
 
 class MapInfo {
-    constructor(page: string, name: string, entries: MapInfoEntry[]) {
+    constructor(page: string, name: string, contentId: string, areas: MapAreaInfo[], extraMapLinkSelectors: string[]) {
         this.page = page;
-        this.name = name;
-        this.id = name.replace(/\W/g, "");
-        this.entries = entries;
+        this.name = name; // map file name
+        this.contentId = contentId; // content id of the paragraph that contains the map, used on the tooltips of links to map
+        this.areas = areas;
+        this.extraMapLinkSelectors = extraMapLinkSelectors;
     }
 }
 

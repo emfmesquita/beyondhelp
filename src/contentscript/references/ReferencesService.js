@@ -21,7 +21,11 @@ const setupHeaders = function (headers: HTMLElement[], index: Number) {
     const header = headers[index];
     const jqContainer = $("<span/>");
     $(header).append(jqContainer);
-    ReactDOM.render(<ReferenceApp label={header.textContent} refId={header.id} />, jqContainer[0]);
+
+    // only the header label, do not include children
+    const label = $(header).clone().children().remove().end().text();
+
+    ReactDOM.render(<ReferenceApp label={label} refId={header.id} />, jqContainer[0]);
     if (index >= headers.length - 1) return;
     setTimeout(() => setupHeaders(headers, index + 1), 0);
 };

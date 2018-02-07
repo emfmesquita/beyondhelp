@@ -1,6 +1,6 @@
 {
     "name": "beyondhelp",
-    "version": "0.10.0",
+    "version": "0.10.1",
     "private": true,
     "dependencies": {
         "bootstrap": "^3.3.7",
@@ -43,6 +43,7 @@
     },
     "scripts": {
         "build": "webpack --config ./webpack/webpack.config.dev.js",
+        "watch": "webpack --config ./webpack/webpack.config.dev.js -w",
         "release": "webpack --config ./webpack/webpack.config.prod.js"
     }
 }

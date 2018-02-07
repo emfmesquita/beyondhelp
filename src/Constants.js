@@ -7,6 +7,8 @@ const presetListHeaderColor = [defaultListHeaderColor];
 
 const configurationId = "bh-config";
 
+const advPage = "https://www.dndbeyond.com/compendium/adventures/";
+
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
 const addContentToTinyMessage = "addcontenttotinymessage";
@@ -41,6 +43,10 @@ class Constants {
 
     static get ConfigurationId() {
         return configurationId;
+    }
+
+    static get AdventuresPage() {
+        return advPage;
     }
 
     static get AddMonsterMessage() {
