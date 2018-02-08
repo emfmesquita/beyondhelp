@@ -4,10 +4,11 @@ import React, { Component } from 'react';
 import $ from "jquery";
 import MapAreaInfo from "./MapAreaInfo";
 import MapAreas from "./MapAreas";
-import MapLink from "./MapLink";
 import MapInfo from "./MapInfo";
-import MapsLMoP from "./adventures/MapsLMoP";
+import MapLink from "./MapLink";
 import MapsHotDQ from "./adventures/MapsHotDQ";
+import MapsLMoP from "./adventures/MapsLMoP";
+import MapsRoT from "./adventures/MapsRoT";
 import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
 
@@ -54,9 +55,10 @@ const scrollToContentIdReference = function () {
 
 class MapsService {
     static init() {
-        // inits all maps of the page
+        // inits all maps of the current page
         MapsLMoP.maps.forEach(processMap);
         MapsHotDQ.maps.forEach(processMap);
+        MapsRoT.maps.forEach(processMap);
 
         // listen hash changes to scroll to refs with contentId
         window.addEventListener("hashchange", scrollToContentIdReference, false);
