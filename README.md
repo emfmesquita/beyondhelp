@@ -56,7 +56,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on editors. After saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip.
 
 ### Adventure Map References
-- These features applies to "Lost Mine of Phandelver" and "Hoard of the Dragon Queen" (other adventures will be added later):
+- These features applies to "Lost Mine of Phandelver", "Hoard of the Dragon Queen" and "Rise of Tiamat" (other adventures will be added later):
     - Hoverable tooltips on maps that can be clicked to redirect to the area description;
     - Links on the areas description header back to the corresponding map.
 
