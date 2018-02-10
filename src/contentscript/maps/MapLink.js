@@ -2,6 +2,7 @@ import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
 
 import C from "../../Constants";
+import MapLinksInfo from "./MapLinksInfo";
 
 class MapLink extends Component {
     click = (e: MouseEvent, href: string) => {
@@ -16,8 +17,8 @@ class MapLink extends Component {
     }
 
     render() {
-        const map = this.props.map;
-        const href = `${C.AdventuresPage}${map.page}${FragmentService.formatContentOnly(map.contentId)}`;
+        const info: MapLinksInfo = this.props.info;
+        const href = `${C.AdventuresPage}${info.toPage}${FragmentService.formatContentOnly(info.mapContentId)}`;
         return <a className="BH-map-link tooltip-hover" href={href} onClick={(e) => this.click(e, href)}>🌎︎</a>;
     }
 }

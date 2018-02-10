@@ -163,8 +163,12 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId 
                 const jqContent = cacheEntry.jqHTML.find(`[data-content-chunk-id='${contentId}']`);
 
                 // max height to fit on tooltip container
-                jqContent.css("max-height", "400px");
+                jqContent.css("max-height", "400px").removeClass("");
                 jqContent.find("*").css("max-height", "400px");
+
+                // if contains a right or left image changes to center
+                jqContent.find(".compendium-image-right").removeClass("compendium-image-right").addClass("compendium-image-center");
+                jqContent.find(".compendium-image-left").removeClass("compendium-image-left").addClass("compendium-image-center");
 
                 if (jqContent.length > 0) contentArray.push(jqContent[0].outerHTML);
             } else {

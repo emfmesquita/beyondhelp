@@ -1,5 +1,6 @@
-import MapInfo from "../MapInfo";
 import MapAreaInfo from "../MapAreaInfo";
+import MapInfo from "../MapInfo";
+import MapRefs from "../MapRefs";
 
 const maps = [
     new MapInfo("hotdq/greenest-in-flames", "hotdq-01-02.jpg", "bdde01a3-cdca-4282-a7ff-b9c14c74972e", [
@@ -270,9 +271,17 @@ const maps = [
     ])
 ];
 
-class MapsHotDQ {
+class MapsHotDQ extends MapRefs {
+    static get path() {
+        return "hotdq/";
+    }
+
     static get maps() {
         return maps;
+    }
+
+    static get extraMapLinks() {
+        return [];
     }
 }
 

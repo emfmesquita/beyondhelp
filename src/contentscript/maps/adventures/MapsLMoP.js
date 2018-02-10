@@ -1,5 +1,6 @@
-import MapInfo from "../MapInfo";
 import MapAreaInfo from "../MapAreaInfo";
+import MapInfo from "../MapInfo";
+import MapRefs from "../MapRefs";
 
 const maps = [
     new MapInfo("lmop/introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
@@ -113,9 +114,17 @@ const maps = [
     ], ["#Part4WaveEchoCave", "#WanderingMonsters", "#GeneralFeatures"])
 ];
 
-class MapsLMoP {
+class MapsLMoP extends MapRefs {
+    static get path() {
+        return "lmop/";
+    }
+
     static get maps() {
         return maps;
+    }
+
+    static get extraMapLinks() {
+        return [];
     }
 }
 

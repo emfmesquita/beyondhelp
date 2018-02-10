@@ -1,5 +1,6 @@
-import MapInfo from "../MapInfo";
 import MapAreaInfo from "../MapAreaInfo";
+import MapInfo from "../MapInfo";
+import MapRefs from "../MapRefs";
 
 const maps = [
     new MapInfo("rot/the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
@@ -158,9 +159,17 @@ const maps = [
     ], ["#TheTempleofTiamat", "#TiamatsTemple", "#PerformingtheRitual"])
 ];
 
-class MapsRoT {
+class MapsRoT extends MapRefs {
+    static get path() {
+        return "rot/";
+    }
+
     static get maps() {
         return maps;
+    }
+
+    static get extraMapLinks() {
+        return [];
     }
 }
 
