@@ -148,7 +148,7 @@ const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass
     });
 };
 
-const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId }) {
+const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId, contentOnly }) {
     return new Promise((resolve, reject) => {
         // resets clear cache time
         resetClearRefTooltipsCacheTimeout();
@@ -158,7 +158,7 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId 
 
         const innerBuildRef = (cacheEntry: RefTooltipCacheEntry) => {
             const contentArray = [];
-            if (contentId && refId === "co") {
+            if (contentOnly) {
                 // includes just the element with the content id
                 const jqContent = cacheEntry.jqHTML.find(`[data-content-chunk-id='${contentId}']`);
 

@@ -22,8 +22,8 @@ class MapAreas extends Component {
 
     renderAreas = () => {
         return this.props.map.areas.map(area => {
-            const href = `${C.AdventuresPage}${area.page || this.props.map.page}${FragmentService.format(area.id, area.contentId)}`;
-            return <area key={area.cords} className="tooltip-hover" shape="rect" coords={area.cords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
+            const href = `${C.AdventuresPage}${area.page || this.props.map.page}${FragmentService.format(area.id, area.contentId, area.contentOnly)}`;
+            return <area key={area.coords} className={`tooltip-hover${area.highlight ? " BH-area-highlight" : ""}`} shape="rect" coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
         });
     }
 

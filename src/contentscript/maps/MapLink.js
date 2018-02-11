@@ -18,7 +18,7 @@ class MapLink extends Component {
 
     render() {
         const info: MapLinksInfo = this.props.info;
-        const href = `${C.AdventuresPage}${info.toPage}${FragmentService.formatContentOnly(info.mapContentId)}`;
+        const href = `${C.AdventuresPage}${info.toPage}${FragmentService.format(info.toPage, info.mapContentId, true)}`;
         return <a className="BH-map-link tooltip-hover" href={href} onClick={(e) => this.click(e, href)}>🌎︎</a>;
     }
 }

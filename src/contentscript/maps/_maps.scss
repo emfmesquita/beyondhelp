@@ -23,3 +23,8 @@
         @include mapLink(12px, 6px);
     }
 }
+
+.compendium-image-center>div.ddb-lightbox-inner {
+    transform: translateX(-50%);
+    left: 50%;
+}

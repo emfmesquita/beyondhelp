@@ -7,12 +7,8 @@ class FragmentData {
 }
 
 class FragmentService {
-    static format(id: string, contentId: string) {
-        return contentId ? `#cid:${id}:${contentId}` : `#${id}`;
-    }
-
-    static formatContentOnly(contentId: string) {
-        return `#cid:co:${contentId}`;
+    static format(id: string, contentId: string, contentOnly = false) {
+        return contentId ? `#cid:${contentOnly ? "co:" : ""}${id}:${contentId}` : `#${id}`;
     }
 
     static parse(hash: string): FragmentData {
@@ -20,7 +16,7 @@ class FragmentService {
         const fragment = hash.substring(1);
         if (!hash.startsWith("#cid:")) return new FragmentData(fragment);
         const tokens = fragment.split(":");
-        if (tokens[1] === "co") return new FragmentData(null, tokens[2], true);
+        if (tokens[1] === "co") return new FragmentData(tokens[2], tokens[3], true);
         return new FragmentData(tokens[1], tokens[2]);
     }
 }

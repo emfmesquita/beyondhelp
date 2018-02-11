@@ -75,7 +75,6 @@ const maps = [
     ], ["#NeronvainsStronghold", "#GeneralFeatures[data-content-chunk-id='42b421c6-c9fa-4ac4-a44e-ae0b221aeffe']"]),
     new MapInfo("rot/xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
         new MapAreaInfo("1TheSundial", "128,69,153,94"),
-        new MapAreaInfo("1TheSundial", "35,73,131,167"),
         new MapAreaInfo("2ChuulPool", "185,183,210,208"),
         new MapAreaInfo("3CyclopesPasture", "438,185,463,210"),
         new MapAreaInfo("4CarnivorousGarden", "384,385,409,410"),
@@ -140,22 +139,24 @@ const maps = [
         new MapAreaInfo("23NorthernExits", "255,254,275,274"),
         new MapAreaInfo("23NorthernExits", "353,267,373,287"),
         new MapAreaInfo("24TempleExit", "261,424,281,444"),
-        new MapAreaInfo("TiamatsTemple", "262,343,356,422", null, "23ce74de-a7f5-42ce-ba6a-aa676dd240c6")
+        new MapAreaInfo("TiamatsTemple", "292,363,332,403", null, "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", false, true)
     ], ["#LavaTubesandWarrens", "#GeneralFeatures[data-content-chunk-id='cf80f0a2-889c-46d5-9962-daf34a2d8e9c']", "#WithintheWellofDragons"]),
     new MapInfo("rot/tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
-        new MapAreaInfo("KeytoTiamatsTemple", "334,86,354,106"),
-        new MapAreaInfo("KeytoTiamatsTemple", "293,271,313,291"),
-        new MapAreaInfo("KeytoTiamatsTemple", "429,183,449,203"),
-        new MapAreaInfo("KeytoTiamatsTemple", "442,415,462,435"),
-        new MapAreaInfo("KeytoTiamatsTemple", "148,390,168,410"),
-        new MapAreaInfo("KeytoTiamatsTemple", "127,176,147,196"),
-        new MapAreaInfo("KeytoTiamatsTemple", "202,631,222,651"),
-        new MapAreaInfo("KeytoTiamatsTemple", "214,551,234,571"),
-        new MapAreaInfo("KeytoTiamatsTemple", "283,579,303,599"),
-        new MapAreaInfo("KeytoTiamatsTemple", "309,696,329,716"),
-        new MapAreaInfo("KeytoTiamatsTemple", "120,694,140,714"),
-        new MapAreaInfo("KeytoTiamatsTemple", "117,623,137,643"),
-        new MapAreaInfo("KeytoTiamatsTemple", "461,563,481,583")
+        new MapAreaInfo("KeytoTiamatsTemple", "336,90,356,110"),
+        new MapAreaInfo("KeytoTiamatsTemple", "295,275,315,295"),
+        new MapAreaInfo("KeytoTiamatsTemple", "431,187,451,207"),
+        new MapAreaInfo("KeytoTiamatsTemple", "444,419,464,439"),
+        new MapAreaInfo("KeytoTiamatsTemple", "150,394,170,411"),
+        new MapAreaInfo("KeytoTiamatsTemple", "129,180,149,200"),
+        new MapAreaInfo("KeytoTiamatsTemple", "204,635,224,655"),
+        new MapAreaInfo("KeytoTiamatsTemple", "216,555,236,575"),
+        new MapAreaInfo("KeytoTiamatsTemple", "285,583,305,603"),
+        new MapAreaInfo("KeytoTiamatsTemple", "311,700,331,720"),
+        new MapAreaInfo("KeytoTiamatsTemple", "122,698,142,718"),
+        new MapAreaInfo("KeytoTiamatsTemple", "119,627,139,647"),
+        new MapAreaInfo("KeytoTiamatsTemple", "463,567,483,587"),
+        new MapAreaInfo("TheWellofDragons", "225,369,245,389", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true),
+        new MapAreaInfo("TheWellofDragons", "285,58,305,78", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true)
     ], ["#TheTempleofTiamat", "#TiamatsTemple", "#PerformingtheRitual"])
 ];
 

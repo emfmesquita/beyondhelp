@@ -1,3 +1,5 @@
+import "maphilight";
+
 import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
 
@@ -59,7 +61,22 @@ const processMap = function (map: MapInfo) {
     const jqMapContainer = jqMapImg.parent();
     const jqAreasContainer = $("<div></div>");
     jqMapContainer.append(jqAreasContainer);
-    ReactDOM.render(<MapAreas map={map} />, jqAreasContainer[0]);
+    ReactDOM.render(<MapAreas map={map} />, jqAreasContainer[0], () => {
+        // handle map ref highlights
+        jqMapImg.maphilight();
+
+        // unfortunatelly the maphilight may use timeouts if the img is not loaded
+        // so as a workaround we have to do the same until the highlight is processed
+        const setupMouseOver = () => {
+            if (jqMapImg.hasClass("maphilighted")) {
+                const jqAreas = jqMapContainer.find("area");
+                jqMapImg.mouseover(() => jqAreas.mouseover()).mouseout(() => jqAreas.mouseout());
+            } else {
+                window.setTimeout(setupMouseOver, 200);
+            }
+        };
+        setupMouseOver();
+    });
 
     // renders links to map on headers both from defined areas and extra links
     processMapLinks(map.mapLinks);

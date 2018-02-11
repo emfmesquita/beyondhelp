@@ -43,9 +43,13 @@
             const src = tokens[3];
             const page = tokens[tokens.length - 1];
 
-            let refId, contentId;
+            let refId, contentId, contentOnly = false;
             const fragmentTokens = referenceEl.hash.substring(1).split(":");
-            if (referenceEl.hash.startsWith("#cid:")) {
+            if (referenceEl.hash.startsWith("#cid:co:")) {
+                contentOnly = true;
+                refId = fragmentTokens[2];
+                contentId = fragmentTokens[3];
+            } else if (referenceEl.hash.startsWith("#cid:")) {
                 refId = fragmentTokens[1];
                 contentId = fragmentTokens[2];
             } else {
@@ -58,6 +62,7 @@
             return {
                 cacheUrl: referenceEl.dataset.tooltipHref,
                 contentId: contentId,
+                contentOnly: contentOnly,
                 refId: refId,
                 refUrl: referenceEl.href,
                 slug: slug,
