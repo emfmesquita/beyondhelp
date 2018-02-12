@@ -40,7 +40,8 @@ const maps = [
         new MapAreaInfo("ImportantNPCs", "461,190,481,207"),
         new MapAreaInfo("ImportantNPCs", "217,295,245,316"),
         new MapAreaInfo("ImportantNPCs", "313,430,341,445"),
-        new MapAreaInfo("ImportantNPCs", "439,321,467,340")
+        new MapAreaInfo("ImportantNPCs", "439,321,467,340"),
+        new MapAreaInfo("RedbrandHideout", "733,252,748,267", null, "871feea4-42a7-4301-a560-12276fce191b", false, true)
     ], ["#Part2Phandalin", "#EncountersinPhandalin", "#RoleplayingPhandalinNPCs", "#TownDescription",
             "#RedbrandRuffians", "#Confrontation"]),
     new MapInfo("lmop/phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
@@ -55,7 +56,12 @@ const maps = [
         new MapAreaInfo("9GuardBarracks", "114,479,144,509"),
         new MapAreaInfo("10CommonRoom", "113,282,143,312"),
         new MapAreaInfo("11WizardsWorkshop", "114,140,144,170"),
-        new MapAreaInfo("12GlasstaffsQuarters", "199,111,229,141")
+        new MapAreaInfo("12GlasstaffsQuarters", "199,111,229,141"),
+        new MapAreaInfo("GeneralFeatures", "556,512,576,532", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
+        new MapAreaInfo("GeneralFeatures", "441,88,461,108", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
+        new MapAreaInfo("GeneralFeatures", "302,144,322,164", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
+        new MapAreaInfo("GeneralFeatures", "274,88,294,108", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
+        new MapAreaInfo("Part2Phandalin", "798,422,828,452", null, "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", false, true)
     ], ["#RedbrandHideout", "#GeneralFeatures"]),
     new MapInfo("lmop/the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
         new MapAreaInfo("1WesternmostCottage", "85,168,115,198"),
@@ -85,6 +91,7 @@ const maps = [
         new MapAreaInfo("9GoblinShrine", "342,119,372,149"),
         new MapAreaInfo("10PosternGate", "315,471,345,501"),
         new MapAreaInfo("11RuinedTower", "450,146,480,176"),
+        new MapAreaInfo("11RuinedTower", "457,70,477,90"),
         new MapAreaInfo("12GuardBarracks", "558,309,588,339"),
         new MapAreaInfo("13OwlbearTower", "531,417,561,447"),
         new MapAreaInfo("14KingsQuarters", "639,146,669,176")
@@ -111,7 +118,8 @@ const maps = [
         new MapAreaInfo("18CollapsedCavern", "210,162,230,182"),
         new MapAreaInfo("19TempleofDumathoin", "66,97,86,117"),
         new MapAreaInfo("20PriestsQuarters", "130,65,150,85")
-    ], ["#Part4WaveEchoCave", "#WanderingMonsters", "#GeneralFeatures"])
+    ], ["#Part4WaveEchoCave", "#CharacterLevel", "#ExperiencePointAwards", "#KeyedEncounters",
+            "#WanderingMonsters", "#GeneralFeatures", "#Conclusion"])
 ];
 
 class MapsLMoP extends MapRefs {

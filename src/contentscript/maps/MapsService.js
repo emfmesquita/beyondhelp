@@ -41,7 +41,7 @@ const processMapLinks = function (mapLinks: MapLinksInfo) {
     mapLinks.targetSelectors.forEach(selector => {
         const jqTarget = $(selector);
         if (jqTarget.length === 0) return;
-        const jqLinkContainer = $("<span></span>");
+        const jqLinkContainer = $("<span class='BH-map-link-container'></span>");
         jqTarget.append(jqLinkContainer);
         ReactDOM.render(<MapLink info={mapLinks} />, jqLinkContainer[0]);
     });

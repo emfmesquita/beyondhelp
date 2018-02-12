@@ -19,11 +19,14 @@ const handleRefCopy = function (e: ClipboardEvent) {
 // renders in queue the copy ref buttons
 const setupHeaders = function (headers: HTMLElement[], index: Number) {
     const header = headers[index];
+
+    // only the header label, do not include map links
+    const headerClone = $(header).clone();
+    headerClone.find(".BH-map-link-container").remove();
+    const label = headerClone.text();
+
     const jqContainer = $("<span/>");
     $(header).append(jqContainer);
-
-    // only the header label, do not include children
-    const label = $(header).clone().children().remove().end().text();
 
     ReactDOM.render(<ReferenceApp label={label} refId={header.id} />, jqContainer[0]);
     if (index >= headers.length - 1) return;
