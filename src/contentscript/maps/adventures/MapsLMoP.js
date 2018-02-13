@@ -1,6 +1,7 @@
 import MapAreaInfo from "../MapAreaInfo";
 import MapInfo from "../MapInfo";
 import MapRefs from "../MapRefs";
+import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
     new MapInfo("TheForgottenRealms", "lmop/introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
@@ -41,7 +42,7 @@ const maps = [
         new MapAreaInfo("ImportantNPCs", "217,295,245,316"),
         new MapAreaInfo("ImportantNPCs", "313,430,341,445"),
         new MapAreaInfo("ImportantNPCs", "439,321,467,340"),
-        new MapAreaInfo("RedbrandHideout", "733,252,748,267", null, "871feea4-42a7-4301-a560-12276fce191b", false, true)
+        new MapToMapAreaInfo("lmop04.jpg", "741,260,7")
     ], ["#EncountersinPhandalin", "#TownDescription", "#RoleplayingPhandalinNPCs", "#RedbrandRuffians", "#Confrontation"]),
     new MapInfo("RedbrandHideout", "lmop/phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
         new MapAreaInfo("1Cellar", "678,452,708,482"),
@@ -60,7 +61,7 @@ const maps = [
         new MapAreaInfo("GeneralFeatures", "441,88,461,108", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
         new MapAreaInfo("GeneralFeatures", "302,144,322,164", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
         new MapAreaInfo("GeneralFeatures", "274,88,294,108", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
-        new MapAreaInfo("Part2Phandalin", "798,422,828,452", null, "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", false, true)
+        new MapToMapAreaInfo("lmop03.jpg", "809,437,15")
     ], ["#GeneralFeatures"]),
     new MapInfo("RuinsofThundertree", "lmop/the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
         new MapAreaInfo("1WesternmostCottage", "85,168,115,198"),
@@ -118,6 +119,8 @@ const maps = [
         new MapAreaInfo("20PriestsQuarters", "130,65,150,85")
     ], ["#CharacterLevel", "#ExperiencePointAwards", "#KeyedEncounters", "#WanderingMonsters", "#GeneralFeatures", "#Conclusion"])
 ];
+
+MapRefs.processMapToMapRefs(maps);
 
 class MapsLMoP extends MapRefs {
     static get path() {

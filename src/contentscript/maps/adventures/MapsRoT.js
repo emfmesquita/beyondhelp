@@ -1,6 +1,7 @@
 import MapAreaInfo from "../MapAreaInfo";
 import MapInfo from "../MapInfo";
 import MapRefs from "../MapRefs";
+import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
     new MapInfo("IceCaves", "rot/the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
@@ -141,7 +142,7 @@ const maps = [
         new MapAreaInfo("23NorthernExits", "255,254,275,274"),
         new MapAreaInfo("23NorthernExits", "353,267,373,287"),
         new MapAreaInfo("24TempleExit", "261,424,281,444"),
-        new MapAreaInfo("TiamatsTemple", "292,363,332,403", null, "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", false, true)
+        new MapToMapAreaInfo("rot-08-04.jpg", "307,386,20")
     ], ["#LavaTubesandWarrens", "#GeneralFeatures[data-content-chunk-id='cf80f0a2-889c-46d5-9962-daf34a2d8e9c']", "#WithintheWellofDragons"]),
     new MapInfo("TiamatsTemple", "rot/tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
         new MapAreaInfo("KeytoTiamatsTemple", "336,90,356,110"),
@@ -157,10 +158,12 @@ const maps = [
         new MapAreaInfo("KeytoTiamatsTemple", "122,698,142,718"),
         new MapAreaInfo("KeytoTiamatsTemple", "119,627,139,647"),
         new MapAreaInfo("KeytoTiamatsTemple", "463,567,483,587"),
-        new MapAreaInfo("TheWellofDragons", "225,369,245,389", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true),
-        new MapAreaInfo("TheWellofDragons", "285,58,305,78", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true)
+        new MapToMapAreaInfo("rot-08-02.jpg", "233,379,10"),
+        new MapToMapAreaInfo("rot-08-02.jpg", "296,68,10")
     ], ["#TheTempleofTiamat", "#TempleLayout", "#PerformingtheRitual"])
 ];
+
+MapRefs.processMapToMapRefs(maps);
 
 class MapsRoT extends MapRefs {
     static get path() {

@@ -163,7 +163,7 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                 const jqContent = cacheEntry.jqHTML.find(`[data-content-chunk-id='${contentId}']`);
 
                 // max height to fit on tooltip container
-                jqContent.css("max-height", "400px").removeClass("");
+                jqContent.css("max-height", "400px").css("min-height", "400px");
                 jqContent.find("*").css("max-height", "400px");
 
                 // if contains a right or left image changes to center
