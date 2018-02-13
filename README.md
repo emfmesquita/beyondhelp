@@ -58,7 +58,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Adventure Map References
 - These features applies to "Lost Mine of Phandelver", "Hoard of the Dragon Queen", "Rise of Tiamat" and "Princes of the Apocalypse" (other adventures will be added later):
     - Hoverable tooltips on maps that can be clicked to redirect to the area description or other maps;
-    - Links on compedium menus to the maps of the current page;
+    - Links on compendium menus to the maps on the current page;
     - Links on the areas description header back to the corresponding map.
 
 ### Character Page Favicon
