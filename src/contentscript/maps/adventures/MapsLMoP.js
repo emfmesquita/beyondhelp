@@ -3,7 +3,7 @@ import MapInfo from "../MapInfo";
 import MapRefs from "../MapRefs";
 
 const maps = [
-    new MapInfo("lmop/introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
+    new MapInfo("TheForgottenRealms", "lmop/introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
         new MapAreaInfo("Part1GoblinArrows", "113,381,184,422", "lmop/goblin-arrows"),
         new MapAreaInfo("CragmawHideout", "243,547,292,593", "lmop/goblin-arrows"),
         new MapAreaInfo("Part2Phandalin", "301,626,360,660", "lmop/phandalin"),
@@ -15,7 +15,7 @@ const maps = [
         new MapAreaInfo("CragmawCastle", "277,467,344,506", "lmop/the-spiders-web"),
         new MapAreaInfo("Part4WaveEchoCave", "364,598,414,637", "lmop/wave-echo-cave")
     ]),
-    new MapInfo("lmop/goblin-arrows", "lmop02.jpg", "fa674c90-e57f-415d-abf2-bbb34a9a2ec8", [
+    new MapInfo("CragmawHideout", "lmop/goblin-arrows", "lmop02.jpg", "fa674c90-e57f-415d-abf2-bbb34a9a2ec8", [
         new MapAreaInfo("1CaveMouth", "226,451,256,481"),
         new MapAreaInfo("2GoblinBlind", "395,423,425,453"),
         new MapAreaInfo("3Kennel", "423,309,453,339"),
@@ -24,8 +24,8 @@ const maps = [
         new MapAreaInfo("6GoblinDen", "112,167,142,197"),
         new MapAreaInfo("7TwinPoolsCave", "650,225,680,255"),
         new MapAreaInfo("8KlargsCave", "706,366,736,396")
-    ], ["#CragmawHideout", "#GeneralFeatures"]),
-    new MapInfo("lmop/phandalin", "lmop03.jpg", "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", [
+    ], ["#GeneralFeatures"]),
+    new MapInfo("Part2Phandalin", "lmop/phandalin", "lmop03.jpg", "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", [
         new MapAreaInfo("StonehillInn", "368,217,403,250"),
         new MapAreaInfo("BarthensProvisions", "420,147,464,195"),
         new MapAreaInfo("EdermathOrchard", "209,161,240,193"),
@@ -42,9 +42,8 @@ const maps = [
         new MapAreaInfo("ImportantNPCs", "313,430,341,445"),
         new MapAreaInfo("ImportantNPCs", "439,321,467,340"),
         new MapAreaInfo("RedbrandHideout", "733,252,748,267", null, "871feea4-42a7-4301-a560-12276fce191b", false, true)
-    ], ["#Part2Phandalin", "#EncountersinPhandalin", "#RoleplayingPhandalinNPCs", "#TownDescription",
-            "#RedbrandRuffians", "#Confrontation"]),
-    new MapInfo("lmop/phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
+    ], ["#EncountersinPhandalin", "#TownDescription", "#RoleplayingPhandalinNPCs", "#RedbrandRuffians", "#Confrontation"]),
+    new MapInfo("RedbrandHideout", "lmop/phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
         new MapAreaInfo("1Cellar", "678,452,708,482"),
         new MapAreaInfo("2Barracks", "481,394,511,424"),
         new MapAreaInfo("3TrappedHall", "735,310,765,340"),
@@ -62,10 +61,10 @@ const maps = [
         new MapAreaInfo("GeneralFeatures", "302,144,322,164", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
         new MapAreaInfo("GeneralFeatures", "274,88,294,108", null, "e40ed89b-ab88-495d-a155-fdff84772c99"),
         new MapAreaInfo("Part2Phandalin", "798,422,828,452", null, "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", false, true)
-    ], ["#RedbrandHideout", "#GeneralFeatures"]),
-    new MapInfo("lmop/the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
+    ], ["#GeneralFeatures"]),
+    new MapInfo("RuinsofThundertree", "lmop/the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
         new MapAreaInfo("1WesternmostCottage", "85,168,115,198"),
-        new MapAreaInfo("2BlightedCottages", "197,253,227,273"),
+        new MapAreaInfo("2BlightedCottages", "197,253,227,283"),
         new MapAreaInfo("3TheBrownHorse", "254,55,284,85"),
         new MapAreaInfo("4DruidsWatch", "197,394,227,424"),
         new MapAreaInfo("5BlightedFarmhouse", "311,480,341,510"),
@@ -77,8 +76,8 @@ const maps = [
         new MapAreaInfo("11OldGarrison", "706,83,736,113"),
         new MapAreaInfo("12WeaversCottage", "649,253,679,283"),
         new MapAreaInfo("13DragonCultists", "733,450,763,480")
-    ], ["#RuinsofThundertree", "#GeneralFeatures", "#AreasoftheRuins"]),
-    new MapInfo("lmop/the-spiders-web", "lmop06.jpg", "e439ffb6-c94a-4319-b207-75a414a85f0d", [
+    ], ["#GeneralFeatures", "#AreasoftheRuins"]),
+    new MapInfo("CragmawCastle", "lmop/the-spiders-web", "lmop06.jpg", "e439ffb6-c94a-4319-b207-75a414a85f0d", [
         new MapAreaInfo("1CastleEntrance", "99,309,129,339"),
         new MapAreaInfo("2TrappedHall", "206,254,236,284"),
         new MapAreaInfo("3ArcherPost", "153,390,183,420"),
@@ -95,9 +94,8 @@ const maps = [
         new MapAreaInfo("12GuardBarracks", "558,309,588,339"),
         new MapAreaInfo("13OwlbearTower", "531,417,561,447"),
         new MapAreaInfo("14KingsQuarters", "639,146,669,176")
-    ], ["#CragmawCastle", "#GeneralFeatures[data-content-chunk-id='dc4878aa-5c53-46c8-b66e-5d6f5c6b0b3b']",
-            "#AreasoftheCastle", "#ReturningWarBand"]),
-    new MapInfo("lmop/wave-echo-cave", "lmop07.jpg", "d9a00d84-9469-4e1f-a53a-933c54bf40ef", [
+    ], ["#GeneralFeatures[data-content-chunk-id='dc4878aa-5c53-46c8-b66e-5d6f5c6b0b3b']", "#AreasoftheCastle", "#ReturningWarBand"]),
+    new MapInfo("Part4WaveEchoCave", "lmop/wave-echo-cave", "lmop07.jpg", "d9a00d84-9469-4e1f-a53a-933c54bf40ef", [
         new MapAreaInfo("1CaveEntrance", "130,613,150,633"),
         new MapAreaInfo("2MineTunnels", "146,484,166,504"),
         new MapAreaInfo("3OldEntrance", "291,613,311,633"),
@@ -118,8 +116,7 @@ const maps = [
         new MapAreaInfo("18CollapsedCavern", "210,162,230,182"),
         new MapAreaInfo("19TempleofDumathoin", "66,97,86,117"),
         new MapAreaInfo("20PriestsQuarters", "130,65,150,85")
-    ], ["#Part4WaveEchoCave", "#CharacterLevel", "#ExperiencePointAwards", "#KeyedEncounters",
-            "#WanderingMonsters", "#GeneralFeatures", "#Conclusion"])
+    ], ["#CharacterLevel", "#ExperiencePointAwards", "#KeyedEncounters", "#WanderingMonsters", "#GeneralFeatures", "#Conclusion"])
 ];
 
 class MapsLMoP extends MapRefs {

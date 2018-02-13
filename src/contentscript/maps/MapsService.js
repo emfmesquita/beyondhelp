@@ -9,12 +9,14 @@ import MapAreas from "./MapAreas";
 import MapInfo from "./MapInfo";
 import MapLink from "./MapLink";
 import MapLinksInfo from "./MapLinksInfo";
+import MapMenuLink from "./MapMenuLink";
 import MapRefs from "./MapRefs";
 import MapsHotDQ from "./adventures/MapsHotDQ";
 import MapsLMoP from "./adventures/MapsLMoP";
 import MapsPotA from "./adventures/MapsPotA";
 import MapsRoT from "./adventures/MapsRoT";
 import PageScriptService from "../../services/PageScriptService";
+import ReferencesUtils from "../../services/ReferencesUtils";
 import ReactDOM from 'react-dom';
 
 const check = (path: string) => window.location.pathname.startsWith("/compendium/adventures/" + path);
@@ -23,8 +25,13 @@ const check = (path: string) => window.location.pathname.startsWith("/compendium
 const processMapRefs = function (refsClass: typeof MapRefs) {
     if (!check(refsClass.path)) return;
 
-    // map refs + map links already defined on maps
+    // map refs + map links already defined on maps + map menu links
     refsClass.maps.forEach(processMap);
+
+    // const jqMenuLi = $(".quick-menu.quick-menu-tier-2 > li.quick-menu-item");
+    // if (jqMenuLi.length > 16) {
+    //     jqMenuLi.find(".quick-menu-item-link").addClass("BH-small-menu-link");
+    // }
 
     // extra map links 
     if (!refsClass.extraMapLinks) return;
@@ -32,6 +39,19 @@ const processMapRefs = function (refsClass: typeof MapRefs) {
         // chek if it is on the from page of the map links
         if (check(extraMapLinks.fromPage)) processMapLinks(extraMapLinks);
     });
+};
+
+// add links to maps on page menu
+const processMenuMapLink = function (map: MapInfo) {
+    const jqMenu = $(".quick-menu.quick-menu-tier-1, .quick-menu.quick-menu-tier-2");
+    if (jqMenu.length === 0) return;
+
+    const jqMenuAnchor = jqMenu.find(`a[href='#${map.headerId}']`);
+    if (jqMenuAnchor.length === 0) return;
+
+    const jqLinkContainer = $("<span></span>");
+    jqMenuAnchor.before(jqLinkContainer);
+    ReactDOM.render(<MapMenuLink map={map} />, jqLinkContainer[0]);
 };
 
 // add a hoverable tooltip link to a map for every target with the corresponding selector
@@ -77,6 +97,9 @@ const processMap = function (map: MapInfo) {
         };
         setupMouseOver();
     });
+
+    // renders a link to the map on menu
+    processMenuMapLink(map);
 
     // renders links to map on headers both from defined areas and extra links
     processMapLinks(map.mapLinks);

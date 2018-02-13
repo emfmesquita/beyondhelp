@@ -2,6 +2,7 @@ import $ from "jquery";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReferenceApp from "./ReferenceApp";
+import ReferencesUtils from "../../services/ReferencesUtils";
 
 const headersSelector = ".primary-content h1[id], .primary-content h2[id], .primary-content h3[id], .primary-content h4[id], .primary-content h5[id]";
 
@@ -20,13 +21,11 @@ const handleRefCopy = function (e: ClipboardEvent) {
 const setupHeaders = function (headers: HTMLElement[], index: Number) {
     const header = headers[index];
 
-    // only the header label, do not include map links
-    const headerClone = $(header).clone();
-    headerClone.find(".BH-map-link-container").remove();
-    const label = headerClone.text();
+    const jqHeader = $(header);
+    const jqContainer = $("<span id='BH-ref-button-container'/>");
+    jqHeader.append(jqContainer);
 
-    const jqContainer = $("<span/>");
-    $(header).append(jqContainer);
+    const label = ReferencesUtils.headerLabel(jqHeader);
 
     ReactDOM.render(<ReferenceApp label={label} refId={header.id} />, jqContainer[0]);
     if (index >= headers.length - 1) return;

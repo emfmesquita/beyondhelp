@@ -8,6 +8,20 @@
     @include showOnHover("BH-map-link");
 }
 
+@mixin menuMapLink($marginLeft, $marginRight) {
+    a.BH-map-menu-link {
+        padding-right: 0px !important;
+        margin-left: $marginLeft !important;
+        margin-right: $marginRight !important;
+        &.quick-menu-item-link.tooltip-hover {
+            color: #000 !important;
+            &:hover {
+                color: $ddb-green !important;
+            }
+        }
+    }
+}
+
 @media screen {
     h1 {
         @include mapLink(24px, 10px);
@@ -21,6 +35,24 @@
     h4,
     h5 {
         @include mapLink(12px, 6px);
+    }
+    .quick-menu.quick-menu-tier-1 {
+        @include menuMapLink(-6px, -4px);
+    }
+    .quick-menu.quick-menu-tier-2 {
+        @include menuMapLink(0px, -8px);
+    }
+}
+
+@media print {
+    .BH-map-link-container {
+        display: none;
+    }
+    div.ddb-lightbox-inner {
+        background-image: none !important;
+        img {
+            opacity: unset !important;
+        }
     }
 }
 

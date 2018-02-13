@@ -3,7 +3,7 @@ import MapInfo from "../MapInfo";
 import MapRefs from "../MapRefs";
 
 const maps = [
-    new MapInfo("rot/the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
+    new MapInfo("IceCaves", "rot/the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
         new MapAreaInfo("1EntrancefromHut", "444,190,474,220"),
         new MapAreaInfo("2EntrancefromtheVillageHall", "275,258,305,288"),
         new MapAreaInfo("3Larder", "300,323,330,353"),
@@ -25,10 +25,10 @@ const maps = [
         new MapAreaInfo("18bTheThroat", "316,679,346,709"),
         new MapAreaInfo("19ThePerch", "209,550,239,580"),
         new MapAreaInfo("20ArauthatorsAbyss", "98,665,128,695")
-    ], ["#IceCaves", "#GeneralFeatures", "#RandomEncounters[data-content-chunk-id='34c6bfea-0aee-4252-b97c-6f110a1a193b']",
+    ], ["#GeneralFeatures", "#AreasoftheCaves", "#RandomEncounters[data-content-chunk-id='34c6bfea-0aee-4252-b97c-6f110a1a193b']",
             "#ArauthatorsLair", "#GeneralFeatures[data-content-chunk-id='efc979a9-3dd3-4074-9a82-5e9d6c8ed4d8']",
-            "#AreasoftheLair", "#Developments"]),
-    new MapInfo("rot/death-to-the-wyrmspeakers", "rot-03-02.jpg", "d50b8095-dbcb-47ea-91d2-2611447ee518", [
+            "#AreasoftheLair", "#Developments", "#LeavingOyaviggaton", "#ArauthatorsTreasure", "#Conclusion"]),
+    new MapInfo("TombofDiderius", "rot/death-to-the-wyrmspeakers", "rot-03-02.jpg", "d50b8095-dbcb-47ea-91d2-2611447ee518", [
         new MapAreaInfo("1EntrancePlaza", "217,160,247,190"),
         new MapAreaInfo("2Antechamber", "277,159,307,189"),
         new MapAreaInfo("3WatchfulStatues", "375,161,405,191"),
@@ -56,9 +56,10 @@ const maps = [
         new MapAreaInfo("22Temple", "493,476,523,506"),
         new MapAreaInfo("22Temple", "458,527,478,547", null, "bd346519-cde2-41c7-ac1f-4a37d611f7f4"),
         new MapAreaInfo("22Temple", "559,435,579,455", null, "bd346519-cde2-41c7-ac1f-4a37d611f7f4")
-    ], ["#TombofDiderius", "#GeneralFeatures[data-content-chunk-id='45aaacdd-3ffa-4b73-bd1a-b00a4ff2819e']", "#Sstckal",
-            "#GeneralFeatures[data-content-chunk-id='00e1e9f9-9e4f-4e2f-88e9-9c8190ac1097']", "#AreasoftheCavern"]),
-    new MapInfo("rot/death-to-the-wyrmspeakers", "rot-03-05.jpg", "0b02d7d7-9d5c-4700-a8a2-e12ba1dd5f91", [
+    ], ["#AreasoftheTomb", "#GeneralFeatures[data-content-chunk-id='45aaacdd-3ffa-4b73-bd1a-b00a4ff2819e']", "#Sstckal",
+            "#GeneralFeatures[data-content-chunk-id='00e1e9f9-9e4f-4e2f-88e9-9c8190ac1097']", "#AreasoftheCavern",
+            "#Conclusion[data-content-chunk-id='bb9b7258-1523-4dd3-b7bf-7ebe94fe1cdb']"]),
+    new MapInfo("NeronvainsStronghold", "rot/death-to-the-wyrmspeakers", "rot-03-05.jpg", "0b02d7d7-9d5c-4700-a8a2-e12ba1dd5f91", [
         new MapAreaInfo("1Pool", "63,53,93,83"),
         new MapAreaInfo("2IslandChamber", "309,296,339,326"),
         new MapAreaInfo("3EttinLair", "120,323,150,353"),
@@ -72,8 +73,9 @@ const maps = [
         new MapAreaInfo("GeneralFeatures", "160,227,190,257", null, "849a5c01-7756-480b-8e40-f2014efc1e22"),
         new MapAreaInfo("GeneralFeatures", "641,338,671,368", null, "849a5c01-7756-480b-8e40-f2014efc1e22"),
         new MapAreaInfo("8NeronvainsChambers", "584,278,614,308", null, "fa753c7c-aaad-4cda-b38d-7eabf7c3a670")
-    ], ["#NeronvainsStronghold", "#GeneralFeatures[data-content-chunk-id='42b421c6-c9fa-4ac4-a44e-ae0b221aeffe']"]),
-    new MapInfo("rot/xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
+    ], ["#AreasoftheStronghold", "#GeneralFeatures[data-content-chunk-id='42b421c6-c9fa-4ac4-a44e-ae0b221aeffe']",
+            "#Conclusion[data-content-chunk-id='6b340ee5-bb5b-488c-925d-268005a1c662']"]),
+    new MapInfo("Episode7XonthalsTower", "rot/xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
         new MapAreaInfo("1TheSundial", "128,69,153,94"),
         new MapAreaInfo("2ChuulPool", "185,183,210,208"),
         new MapAreaInfo("3CyclopesPasture", "438,185,463,210"),
@@ -108,15 +110,15 @@ const maps = [
         new MapAreaInfo("GeneralFeatures", "326,761,346,781", null, "718bd34b-a401-452a-b234-138d595351b1")
     ], ["#TheMaze", "#GeneralFeatures[data-content-chunk-id='0df472e1-8e5c-4467-83f4-d88c520480ce']", "#RescueMission",
             "#TheTower", "#GeneralFeatures[data-content-chunk-id='48f3bf14-d9ff-42b2-9784-c824fd5b3657']",
-            "#Dungeon", "#GeneralFeatures[data-content-chunk-id='54e1f60d-a25b-4728-88fe-b2f87f955e0a']", "#ExitingXonthalsTower"]),
-    new MapInfo("rot/tiamats-return", "rot-08-02.jpg", "52a8065e-eaa7-4758-b0d0-b87395d35d3b", [
+            "#Dungeon", "#GeneralFeatures[data-content-chunk-id='54e1f60d-a25b-4728-88fe-b2f87f955e0a']", "#ExitingXonthalsTower", "#Conclusion"]),
+    new MapInfo("TheWellofDragons", "rot/tiamats-return", "rot-08-02.jpg", "52a8065e-eaa7-4758-b0d0-b87395d35d3b", [
         new MapAreaInfo("1A1B1CNorthEntrances", "63,99,83,119"),
         new MapAreaInfo("1A1B1CNorthEntrances", "371,89,391,109"),
         new MapAreaInfo("1A1B1CNorthEntrances", "459,168,479,188"),
         new MapAreaInfo("2A2B2CEastEntrances", "509,243,529,263"),
         new MapAreaInfo("2A2B2CEastEntrances", "527,407,547,427"),
         new MapAreaInfo("2A2B2CEastEntrances", "485,743,505,763"),
-        new MapAreaInfo("3ForgottenEntrance", "213,709,233,729"),
+        new MapAreaInfo("3ForgottenEntrance", "213,702,233,722"),
         new MapAreaInfo("4NaergothBladelordsChamber", "219,156,239,176"),
         new MapAreaInfo("5UnusedChamber", "260,123,280,143"),
         new MapAreaInfo("6MainTreasureChamber", "115,245,135,265"),
@@ -141,7 +143,7 @@ const maps = [
         new MapAreaInfo("24TempleExit", "261,424,281,444"),
         new MapAreaInfo("TiamatsTemple", "292,363,332,403", null, "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", false, true)
     ], ["#LavaTubesandWarrens", "#GeneralFeatures[data-content-chunk-id='cf80f0a2-889c-46d5-9962-daf34a2d8e9c']", "#WithintheWellofDragons"]),
-    new MapInfo("rot/tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
+    new MapInfo("TiamatsTemple", "rot/tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
         new MapAreaInfo("KeytoTiamatsTemple", "336,90,356,110"),
         new MapAreaInfo("KeytoTiamatsTemple", "295,275,315,295"),
         new MapAreaInfo("KeytoTiamatsTemple", "431,187,451,207"),
@@ -157,7 +159,7 @@ const maps = [
         new MapAreaInfo("KeytoTiamatsTemple", "463,567,483,587"),
         new MapAreaInfo("TheWellofDragons", "225,369,245,389", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true),
         new MapAreaInfo("TheWellofDragons", "285,58,305,78", null, "52a8065e-eaa7-4758-b0d0-b87395d35d3b", false, true)
-    ], ["#TheTempleofTiamat", "#TiamatsTemple", "#PerformingtheRitual"])
+    ], ["#TheTempleofTiamat", "#TempleLayout", "#PerformingtheRitual"])
 ];
 
 class MapsRoT extends MapRefs {
