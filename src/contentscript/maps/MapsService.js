@@ -28,11 +28,6 @@ const processMapRefs = function (refsClass: typeof MapRefs) {
     // map refs + map links already defined on maps + map menu links
     refsClass.maps.forEach(processMap);
 
-    // const jqMenuLi = $(".quick-menu.quick-menu-tier-2 > li.quick-menu-item");
-    // if (jqMenuLi.length > 16) {
-    //     jqMenuLi.find(".quick-menu-item-link").addClass("BH-small-menu-link");
-    // }
-
     // extra map links 
     if (!refsClass.extraMapLinks) return;
     refsClass.extraMapLinks.forEach(extraMapLinks => {
