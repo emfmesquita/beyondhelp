@@ -11,13 +11,15 @@ import MapLink from "./MapLink";
 import MapLinksInfo from "./MapLinksInfo";
 import MapMenuLink from "./MapMenuLink";
 import MapRefs from "./MapRefs";
+import MapsCoS from "./adventures/MapsCoS";
 import MapsHotDQ from "./adventures/MapsHotDQ";
 import MapsLMoP from "./adventures/MapsLMoP";
+import MapsOotA from "./adventures/MapsOotA";
 import MapsPotA from "./adventures/MapsPotA";
 import MapsRoT from "./adventures/MapsRoT";
 import PageScriptService from "../../services/PageScriptService";
-import ReferencesUtils from "../../services/ReferencesUtils";
 import ReactDOM from 'react-dom';
+import ReferencesUtils from "../../services/ReferencesUtils";
 
 const check = (path: string) => window.location.pathname.startsWith("/compendium/adventures/" + path);
 
@@ -118,6 +120,8 @@ class MapsService {
         processMapRefs(MapsHotDQ);
         processMapRefs(MapsRoT);
         processMapRefs(MapsPotA);
+        processMapRefs(MapsOotA);
+        processMapRefs(MapsCoS);
 
         // listen hash changes to scroll to refs with contentId
         window.addEventListener("hashchange", scrollToContentIdReference, false);
