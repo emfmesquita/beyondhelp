@@ -61,7 +61,7 @@ const maps = [
         new MapAreaInfo("5Rooms", "479,330,499,350"),
         new MapAreaInfo("5Rooms", "479,378,499,398"),
         new MapAreaInfo("6BogLucksRoom", "71,397,91,417"),
-        new MapAreaInfo("7ArdredBriferhewsRoom", "693,107,713,127"),
+        new MapAreaInfo("7ArdredBriferhewsRoom", "102,107,122,127"),
         new MapAreaInfo("8Kitchen", "731,359,751,379")
     ], ["#EssentialIngredients", "#TrackingtheLoad", "#GrudgeMatch"]),
     new MapInfo("GroundFloor", "hotdq/castle-naerytar", "episode-6-castle-naerytar-ground-level.jpg", "ae988e89-dfca-47fe-b641-8f0723717f37", [
@@ -71,7 +71,7 @@ const maps = [
         new MapAreaInfo("3Longhouses", "410,301,440,331"),
         new MapAreaInfo("4Huts", "143,140,173,170"),
         new MapAreaInfo("4Huts", "304,114,334,144"),
-        new MapAreaInfo("5Moat", "490,301,520,331"),
+        new MapAreaInfo("5Moat", "482,314,512,344"),
         new MapAreaInfo("6MainGate", "344,368,374,398"),
         new MapAreaInfo("1ABarbican", "330,461,360,491"),
         new MapAreaInfo("1BCauseway", "491,461,521,491"),

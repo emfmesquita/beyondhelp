@@ -63,6 +63,7 @@ const baseErrorContent = (content) => `
 const privateErrorContent = baseErrorContent("Error loading tooltip. This content is probably a private homebrew creation. If not try again reloading the page.");
 const unknownErrorContent = baseErrorContent("Unknown error.");
 const lockedMessage = (src: string) => `This content is part of the <span class="source">${src}</span> digital content pack. Please visit the marketplace for purchasing options.`;
+const contentIdSelector = (contentId: string) => `[data-content-chunk-id='${contentId}']`;
 
 const styleBodyBackgroundRegex = /body\s*{[^{}]+}/igm;
 
@@ -160,7 +161,7 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
             const contentArray = [];
             if (contentOnly) {
                 // includes just the element with the content id
-                const jqContent = cacheEntry.jqHTML.find(`[data-content-chunk-id='${contentId}']`);
+                const jqContent = cacheEntry.jqHTML.find(contentIdSelector(contentId));
 
                 // max height to fit on tooltip container
                 jqContent.css("max-height", "400px").css("min-height", "400px");
@@ -172,8 +173,12 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
 
                 if (jqContent.length > 0) contentArray.push(jqContent[0].outerHTML);
             } else {
+                const jqContent = contentId ? cacheEntry.jqHTML.find(contentIdSelector(contentId)) : null;
+
                 // finds the header of the reference
-                const jqHeader = cacheEntry.jqHTML.find("#" + refId);
+                const isContentHeader = jqContent && !refId;
+                const jqHeader = isContentHeader ? jqContent : cacheEntry.jqHTML.find("#" + refId);
+
                 const header = jqHeader[0];
                 contentArray.push(header.outerHTML);
 
@@ -195,10 +200,15 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                 }
 
                 // if content id present start by the element with the content id
-                const jqContentTarget = contentId ? cacheEntry.jqHTML.find(`[data-content-chunk-id='${contentId}']`) : jqHeader;
-                if (contentId) contentArray.push(jqContentTarget[0].outerHTML);
+                let jqContentStart;
+                if (jqContent && !isContentHeader) {
+                    jqContentStart = jqContent;
+                    contentArray.push(jqContent[0].outerHTML);
+                } else {
+                    jqContentStart = jqHeader;
+                }
 
-                jqContentTarget.nextUntil(untilSelector).each((idx, el) => {
+                jqContentStart.nextUntil(untilSelector).each((idx, el) => {
                     if (idx >= 29) return false;
                     if (el.tagName === "IMG") return;
                     $(el).find("img, .ddb-lightbox-outer").remove();

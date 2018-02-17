@@ -7,6 +7,8 @@ const maps = [];
 
 const extraMapLinks = [];
 
+MapRefs.processMapToMapRefs(maps);
+
 class MapsCoS extends MapRefs {
     static get path() {
         return "cos/";
