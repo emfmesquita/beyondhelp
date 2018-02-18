@@ -195,8 +195,10 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                     untilSelector = "h1, h2, h3";
                 } else if (tagName === "H4") {
                     untilSelector = "h1, h2, h3, h4";
-                } else {
+                } else if (tagName === "H5") {
                     untilSelector = "h1, h2, h3, h4, h5";
+                } else {
+                    untilSelector = "*";
                 }
 
                 // if content id present start by the element with the content id
