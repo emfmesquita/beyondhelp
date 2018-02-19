@@ -149,7 +149,7 @@ const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass
     });
 };
 
-const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId, contentOnly }) {
+const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId, untilContentId, contentOnly }) {
     return new Promise((resolve, reject) => {
         // resets clear cache time
         resetClearRefTooltipsCacheTimeout();
@@ -187,7 +187,9 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                 // also adds the next 29 siblings from the header
                 // or until finds a header of same type or bigger
                 let untilSelector = "";
-                if (tagName === "H1") {
+                if (untilContentId) {
+                    untilSelector = contentIdSelector(untilContentId);
+                } else if (tagName === "H1") {
                     untilSelector = "h1";
                 } else if (tagName === "H2") {
                     untilSelector = "h1, h2";

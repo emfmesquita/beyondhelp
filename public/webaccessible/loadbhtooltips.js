@@ -43,7 +43,7 @@
             const src = tokens[3];
             const page = tokens[tokens.length - 1];
 
-            let refId, contentId, contentOnly = false;
+            let refId, contentId, untilContentId, contentOnly = false;
             const fragmentTokens = referenceEl.hash.substring(1).split(":");
             if (referenceEl.hash.startsWith("#cid:co:")) {
                 contentOnly = true;
@@ -52,6 +52,7 @@
             } else if (referenceEl.hash.startsWith("#cid:")) {
                 refId = fragmentTokens[1];
                 contentId = fragmentTokens[2];
+                untilContentId = fragmentTokens[3];
             } else {
                 refId = fragmentTokens[0];
             }
@@ -68,7 +69,8 @@
                 slug: slug,
                 src: src,
                 subSrc: tokens.length === 6 ? tokens[4] : null,
-                type: tokens[1]
+                type: tokens[1],
+                untilContentId: untilContentId
             };
         };
 

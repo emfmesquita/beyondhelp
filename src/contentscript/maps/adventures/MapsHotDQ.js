@@ -4,6 +4,10 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
+    new MapInfo("Overview", "hotdq/introduction", "hotdq-00-04.jpg", "fa02f69a-6d97-421f-8dbf-bfddad32d60b", [
+        new MapAreaInfo("Episode1GreenestinFlames", "512,1094,532,1114", "hotdq/greenest-in-flames"),
+        new MapToMapAreaInfo("hotdq-01-02.jpg", "499,1104,10")
+    ], []),
     new MapInfo("Episode1GreenestinFlames", "hotdq/greenest-in-flames", "hotdq-01-02.jpg", "bdde01a3-cdca-4282-a7ff-b9c14c74972e", [
         new MapAreaInfo("SeektheKeep", "438,319,468,349"),
         new MapAreaInfo("TheOldTunnel", "513,372,543,402"),
@@ -12,13 +16,13 @@ const maps = [
     ], ["#CharacterHooks", "#TheApproach", "#GeneralFeatures", "#ImportantCharacters", "#WanderingEncounters",
             "#Missions", "#TheSallyPort", "#DragonAttack", "#Prisoners", "#HalfDragonChampion"]),
     new MapInfo("Episode2RaidersCamp", "hotdq/raiders-camp", "hotdq-02-03.jpg", "d2749d0d-8ce3-4e6a-99af-22b39fb68c78", [
-        new MapAreaInfo("GeneralFeatures", "354,464,384,494", null, "a88e2ce8-27db-4d21-b7f2-65411bab6521"),
-        new MapAreaInfo("GeneralFeatures", "662,347,692,377", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
+        new MapAreaInfo("", "354,464,384,494", null, "a88e2ce8-27db-4d21-b7f2-65411bab6521"),
+        new MapAreaInfo("", "662,347,692,377", null, "1e0f561d-cb1a-4b77-956a-b644dc5bfa62"),
         new MapAreaInfo("LeosinErlanthar", "601,443,631,473"),
-        new MapAreaInfo("ExploringtheCamp", "721,383,751,413", null, "2f3c656f-f6ae-4798-a3d7-b8156fa0b35f"),
-        new MapAreaInfo("GeneralFeatures", "156,195,256,225", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
-        new MapAreaInfo("GeneralFeatures", "574,387,674,417", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
-        new MapAreaInfo("TheCamp", "692,142,792,172"),
+        new MapAreaInfo("", "721,383,751,413", null, "2f3c656f-f6ae-4798-a3d7-b8156fa0b35f"),
+        new MapAreaInfo("", "156,195,256,225", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
+        new MapAreaInfo("", "574,387,674,417", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
+        new MapAreaInfo("", "692,142,792,172", null, "41334c84-d454-4862-b038-f3e8414be730"),
         new MapToMapAreaInfo("episode-3-dragon-hatchery.jpg", "769,393,15")
     ], ["#GeneralFeatures", "#CampAlertness", "#ExploringtheCamp", "#Rewards"]),
     new MapInfo("Episode3DragonHatchery", "hotdq/dragon-hatchery", "episode-3-dragon-hatchery.jpg", "9cc74f50-90b8-465c-ac7e-7dcff1297559", [
@@ -37,6 +41,8 @@ const maps = [
         new MapAreaInfo("11FrulamMondathsChamber", "322,529,352,559"),
         new MapAreaInfo("12GuardBarracks", "161,540,191,570"),
         new MapAreaInfo("13TreasureStorage", "89,443,119,473"),
+        new MapAreaInfo("", "227,479,247,499", null, "4d18ffad-a7a7-41f5-bdb7-85cda3705246"),
+        new MapAreaInfo("TrappedStairs", "346,416,366,436"),
         new MapToMapAreaInfo("hotdq-02-03.jpg", "23,312,10")
     ], ["#GeneralFeatures", "#WanderingMonsters", "#AreasoftheHatchery", "#Rewards"]),
     new MapInfo("CarnathRoadhouse", "hotdq/construction-ahead", "hotdq-05-02.jpg", "86120207-bb8c-428b-ae28-46c31b4af991", [

@@ -22,7 +22,7 @@ class MapAreas extends Component {
 
     renderAreas = () => {
         return this.props.map.areas.map(area => {
-            const href = `${C.AdventuresPage}${area.page || this.props.map.page}${FragmentService.format(area.id, area.contentId, area.contentOnly)}`;
+            const href = `${C.AdventuresPage}${area.page || this.props.map.page}${FragmentService.format(area.id, area.contentId, area.untilContentId, area.contentOnly)}`;
             return <area key={area.coords} className={`tooltip-hover${area.highlight ? " BH-area-highlight" : ""}`} shape={area.isCircle ? "circle" : "rect"} coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
         });
     }

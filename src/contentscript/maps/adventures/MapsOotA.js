@@ -37,7 +37,7 @@ const maps = [
         new MapAreaInfo("WestPassage", "147,101,167,121"),
         new MapAreaInfo("SouthPassage", "60,552,80,572")
     ], ["#AreasofVelkynvelve", "#MeansofEscape", "#Acquisitions", "#JorlansGambit", "#AFlightofDemons",
-            "#LeavingVelkynvelve", "#NorthPassage", "#WestPassage", "#SouthPassage", "#XPAwards"]),
+            "#LeavingVelkynvelve", "#XPAwards"]),
     new MapInfo("UnderdarkTravel", "oota/into-darkness", "02-05.jpg", "760081cf-d4f8-483d-9c37-21f3ddfc5df3", [
         new MapToMapAreaInfo("01-04.jpg", "636,273,10"),
         new MapToMapAreaInfo("03-01.jpg", "590,242,10"),
@@ -67,16 +67,16 @@ const maps = [
         new MapAreaInfo("3Cornered", "688,555,718,585"),
         new MapAreaInfo("4HookHorrorNest", "743,610,773,640"),
         new MapAreaInfo("5GnollCamp", "334,474,364,504"),
-        new MapAreaInfo("HookHorrorHunt", "704,231,719,246", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "711,305,726,320", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "664,531,679,546", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "575,237,590,252", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "544,238,559,253", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "523,452,538,467", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "497,460,512,475", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "371,172,386,187", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("HookHorrorHunt", "366,210,381,225", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo("3Cornered", "717,587,734,604", null, "c3072947-7867-4f19-aa85-6d822634eaf7")
+        new MapAreaInfo("", "704,231,719,246", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "711,305,726,320", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "664,531,679,546", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "575,237,590,252", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "544,238,559,253", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "523,452,538,467", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "497,460,512,475", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "371,172,386,187", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "366,210,381,225", null, "d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo("", "717,587,734,604", null, "c3072947-7867-4f19-aa85-6d822634eaf7")
     ], []),
     new MapInfo("TheOozingTemple", "oota/into-darkness", "02-07.jpg", "5ca5abee-b6e6-4e07-b76c-8f6fc1e02df3", [
         new MapAreaInfo("1BoxedIn", "307,622,332,647"),
@@ -361,8 +361,27 @@ const maps = [
         new MapAreaInfo("WormNurseryGeneralFeatures", "633,477,658,502", null, "c6c27296-df4f-4c48-b933-9ddbb69b4c2f")
     ], []),
     new MapInfo("Menzoberranzan", "oota/the-city-of-spiders", "15-01.jpg", "dc132ec8-0272-4688-95ab-c72bca642fa0", [
-
-    ], [])
+        new MapAreaInfo("TheBazaar", "368,218,450,235"),
+        new MapAreaInfo("TheBraeryn", "618,292,708,310"),
+        new MapAreaInfo("Donigarten", "686,439,770,456"),
+        new MapAreaInfo("Duthcloim", "420,258,499,277"),
+        new MapAreaInfo("Eastmyr", "493,338,558,359"),
+        new MapAreaInfo("Kyorbblivvin", "287,367,378,400"),
+        new MapAreaInfo("Narbondel", "256,265,323,286"),
+        new MapAreaInfo("Narbondellyn", "255,302,362,327"),
+        new MapAreaInfo("Quellarzorl", "331,430,437,457"),
+        new MapAreaInfo("Clawrift", "573,240,624,286"),
+        new MapAreaInfo("Mistrift", "286,191,346,216"),
+        new MapAreaInfo("Westrift", "176,121,209,155"),
+        new MapAreaInfo("TierBreche", "476,137,531,168"),
+        new MapAreaInfo("WestWall", "218,125,296,145"),
+        new MapAreaInfo("WestWall", "139,218,220,252", null, "45adf9a9-0f4e-4598-8641-1cc41f521a26"),
+        new MapAreaInfo("HouseBaenre", "463,491,555,511"),
+        new MapAreaInfo("JarlaxleBaenreofBreganDaerthe", "89,117,154,148"),
+        new MapAreaInfo("Sorcere", "429,77,479,93")
+    ], ["#TheDarkDominion", "#TheRifts", "#UnexpectedAllies", "#BreganDaerthe", "#CouncilofSpiders",
+            "#PrivateMeetings", "#MatronMotherQuenthelBaenre", "#AChangeofHeart", "#GuardsandWards", "#RandomEncountersinSorcere",
+            "#GromphsOuterSanctum", "#GromphsInnerSanctum", "#Developments", "#CityLocations"])
 ];
 
 const extraMapLinks = [];

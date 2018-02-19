@@ -56,6 +56,7 @@ const processMapLinks = function (mapLinks: MapLinksInfo) {
     if (!mapLinks || !mapLinks.targetSelectors) return;
 
     mapLinks.targetSelectors.forEach(selector => {
+        console.log(selector);
         const jqTarget = $(selector);
         if (jqTarget.length === 0) return;
         const jqLinkContainer = $("<span class='BH-map-link-container'></span>");
@@ -70,7 +71,7 @@ const processMap = function (map: MapInfo) {
     if (!check(map.page)) return;
 
     // checks if map found
-    const jqMapImg = $(`img[src$='${map.name}']`);
+    const jqMapImg = $(`img[src$='/${map.name}']`);
     if (jqMapImg.length === 0) return;
 
     // renders map areas
