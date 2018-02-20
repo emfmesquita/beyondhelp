@@ -215,8 +215,9 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                 jqContentStart.nextUntil(untilSelector).each((idx, el) => {
                     if (idx >= 29) return false;
                     if (el.tagName === "IMG") return;
-                    $(el).find("img, .ddb-lightbox-outer").remove();
-                    contentArray.push(el.outerHTML);
+                    const clone = $(el).clone();
+                    clone.find("img, .ddb-lightbox-outer").remove();
+                    contentArray.push(clone[0].outerHTML);
                 });
             }
 

@@ -5,8 +5,24 @@ import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
     new MapInfo("Overview", "hotdq/introduction", "hotdq-00-04.jpg", "fa02f69a-6d97-421f-8dbf-bfddad32d60b", [
-        new MapAreaInfo("Episode1GreenestinFlames", "512,1094,532,1114", "hotdq/greenest-in-flames"),
-        new MapToMapAreaInfo("hotdq-01-02.jpg", "499,1104,10")
+        new MapAreaInfo("Episode1GreenestinFlames", "515,1097,529,1111", "hotdq/greenest-in-flames"),
+        new MapAreaInfo("TheCamp", "515,1121,529,1135", "hotdq/raiders-camp").content("41334c84-d454-4862-b038-f3e8414be730", "3556358a-42c4-4be1-893b-5d2af79ca157"),
+        new MapAreaInfo("Episode3DragonHatchery", "515,1135,529,1149", "hotdq/dragon-hatchery"),
+        new MapAreaInfo("Elturel", "491,946,505,960", "hotdq/on-the-road"),
+        new MapAreaInfo("BaldursGate", "348,940,362,954", "hotdq/on-the-road"),
+        new MapAreaInfo("Waterdeep", "257,564,271,578", "hotdq/construction-ahead"),
+        new MapAreaInfo("CarnathRoadhouse", "218,462,232,476", "hotdq/construction-ahead").content("2b142c76-82eb-4106-851f-5c23a8a6a706", "ec6f2da3-7b1c-4ee1-b725-a8db2735ac38"),
+        new MapAreaInfo("CastleNaerytar", "206,439,220,453", "hotdq/castle-naerytar"),
+        new MapAreaInfo("Episode7HuntingLodge", "622,621,636,635", "hotdq/hunting-lodge"),
+        new MapAreaInfo("SkyreachCastle", "655,629,669,643", "hotdq/castle-in-the-clouds"),
+        new MapToMapAreaInfo("hotdq-01-02.jpg", "505,1104,7"),
+        new MapToMapAreaInfo("hotdq-02-03.jpg", "505,1128,7"),
+        new MapToMapAreaInfo("episode-3-dragon-hatchery.jpg", "505,1142,7"),
+        new MapToMapAreaInfo("hotdq-05-02.jpg", "242,469,7"),
+        new MapToMapAreaInfo("episode-6-castle-naerytar-ground-level.jpg", "196,446,7"),
+        new MapToMapAreaInfo("episode-7-hunting-lodge-ground-floor.jpg", "612,628,7"),
+        new MapToMapAreaInfo("parnast-village.jpg", "651,624,7"),
+        new MapToMapAreaInfo("skyreach-castle.jpg", "679,636,7")
     ], []),
     new MapInfo("Episode1GreenestinFlames", "hotdq/greenest-in-flames", "hotdq-01-02.jpg", "bdde01a3-cdca-4282-a7ff-b9c14c74972e", [
         new MapAreaInfo("SeektheKeep", "438,319,468,349"),
@@ -14,17 +30,17 @@ const maps = [
         new MapAreaInfo("Sanctuary", "751,412,781,442"),
         new MapAreaInfo("SavetheMill", "40,432,70,462")
     ], ["#CharacterHooks", "#TheApproach", "#GeneralFeatures", "#ImportantCharacters", "#WanderingEncounters",
-            "#Missions", "#TheSallyPort", "#DragonAttack", "#Prisoners", "#HalfDragonChampion"]),
+            "#Missions", "#TheSallyPort", "#DragonAttack", "#Prisoners", "#HalfDragonChampion"]).chMap(),
     new MapInfo("Episode2RaidersCamp", "hotdq/raiders-camp", "hotdq-02-03.jpg", "d2749d0d-8ce3-4e6a-99af-22b39fb68c78", [
-        new MapAreaInfo("", "354,464,384,494", null, "a88e2ce8-27db-4d21-b7f2-65411bab6521"),
-        new MapAreaInfo("", "662,347,692,377", null, "1e0f561d-cb1a-4b77-956a-b644dc5bfa62"),
+        new MapAreaInfo().rect("354,464,384,494").content("a88e2ce8-27db-4d21-b7f2-65411bab6521"),
+        new MapAreaInfo().rect("662,347,692,377").content("1e0f561d-cb1a-4b77-956a-b644dc5bfa62"),
         new MapAreaInfo("LeosinErlanthar", "601,443,631,473"),
-        new MapAreaInfo("", "721,383,751,413", null, "2f3c656f-f6ae-4798-a3d7-b8156fa0b35f"),
-        new MapAreaInfo("", "156,195,256,225", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
-        new MapAreaInfo("", "574,387,674,417", null, "8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
-        new MapAreaInfo("", "692,142,792,172", null, "41334c84-d454-4862-b038-f3e8414be730"),
+        new MapAreaInfo().rect("721,383,751,413").content("2f3c656f-f6ae-4798-a3d7-b8156fa0b35f"),
+        new MapAreaInfo().rect("156,195,256,225").content("8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
+        new MapAreaInfo().rect("574,387,674,417").content("8a1b615f-4ae2-4aa7-b2a3-0aa2612f9021"),
+        new MapAreaInfo().rect("692,142,792,172").content("41334c84-d454-4862-b038-f3e8414be730"),
         new MapToMapAreaInfo("episode-3-dragon-hatchery.jpg", "769,393,15")
-    ], ["#GeneralFeatures", "#CampAlertness", "#ExploringtheCamp", "#Rewards"]),
+    ], ["#GeneralFeatures", "#CampAlertness", "#ExploringtheCamp", "#Rewards"]).chMap(),
     new MapInfo("Episode3DragonHatchery", "hotdq/dragon-hatchery", "episode-3-dragon-hatchery.jpg", "9cc74f50-90b8-465c-ac7e-7dcff1297559", [
         new MapAreaInfo("1CaveEntrance", "108,305,138,335"),
         new MapAreaInfo("2ConcealedPassage", "258,444,288,474"),
@@ -41,10 +57,10 @@ const maps = [
         new MapAreaInfo("11FrulamMondathsChamber", "322,529,352,559"),
         new MapAreaInfo("12GuardBarracks", "161,540,191,570"),
         new MapAreaInfo("13TreasureStorage", "89,443,119,473"),
-        new MapAreaInfo("", "227,479,247,499", null, "4d18ffad-a7a7-41f5-bdb7-85cda3705246"),
+        new MapAreaInfo().rect("227,479,247,499").content("4d18ffad-a7a7-41f5-bdb7-85cda3705246"),
         new MapAreaInfo("TrappedStairs", "346,416,366,436"),
         new MapToMapAreaInfo("hotdq-02-03.jpg", "23,312,10")
-    ], ["#GeneralFeatures", "#WanderingMonsters", "#AreasoftheHatchery", "#Rewards"]),
+    ], ["#GeneralFeatures", "#WanderingMonsters", "#AreasoftheHatchery", "#Rewards"]).chMap(),
     new MapInfo("CarnathRoadhouse", "hotdq/construction-ahead", "hotdq-05-02.jpg", "86120207-bb8c-428b-ae28-46c31b4af991", [
         new MapAreaInfo("1Courtyard", "207,281,227,301"),
         new MapAreaInfo("2Stables", "195,447,215,467"),
@@ -229,7 +245,7 @@ const maps = [
         new MapAreaInfo("4ShrineofAxes", "229,333,259,363"),
         new MapAreaInfo("5VillageWellandSquare", "284,221,314,251"),
         new MapToMapAreaInfo("skyreach-castle.jpg", "107,701,15")
-    ], ["#RumorsandInformation"]),
+    ], ["#RumorsandInformation"]).chMap(),
     new MapInfo("SkyreachCastle", "hotdq/castle-in-the-clouds", "skyreach-castle.jpg", "86ce3b45-ab6f-4a35-ba5e-ab7a87c504b7", [
         new MapAreaInfo("6MainGate", "277,689,302,709"),
         new MapAreaInfo("6AGatewayandGolems", "255,694,275,714"),
@@ -238,10 +254,6 @@ const maps = [
         new MapAreaInfo("7LowerCourtyard", "350,648,370,668"),
         new MapAreaInfo("7LowerCourtyard", "296,665,416,680"),
         new MapAreaInfo("7LowerCourtyard", "360,446,408,464"),
-        new MapAreaInfo("7LowerCourtyard", "367,212,387,232", null, "ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
-        new MapAreaInfo("7LowerCourtyard", "319,217,364,232", null, "ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
-        new MapAreaInfo("7LowerCourtyard", "539,687,559,707", null, "ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
-        new MapAreaInfo("7LowerCourtyard", "527,659,577,682", null, "ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
         new MapAreaInfo("8Stables", "288,600,308,620"),
         new MapAreaInfo("8Stables", "305,620,344,635"),
         new MapAreaInfo("9CultistBarracks", "368,742,388,762"),
@@ -269,7 +281,11 @@ const maps = [
         new MapAreaInfo("23GiantGuestChambers", "322,268,372,283"),
         new MapAreaInfo("24ServantBarracks", "250,242,270,262"),
         new MapAreaInfo("24ServantBarracks", "266,226,311,246"),
-        new MapAreaInfo("25MainVault", "138,415,213,440")
+        new MapAreaInfo("25MainVault", "138,415,213,440"),
+        new MapAreaInfo().rect("367,212,387,232").content("ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
+        new MapAreaInfo().rect("319,217,364,232").content("ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
+        new MapAreaInfo().rect("539,687,559,707").content("ec6eb232-e55a-4d66-ab27-4a1e9978b52a"),
+        new MapAreaInfo().rect("527,659,577,682").content("ec6eb232-e55a-4d66-ab27-4a1e9978b52a")
     ], ["#ImportantNonplayerCharacters", "#GeneralFeatures", "#AreasoftheCastle"])
 ];
 

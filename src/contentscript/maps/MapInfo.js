@@ -20,6 +20,16 @@ class MapInfo {
 
         this.mapLinks = new MapLinksInfo(page, page, contentId, mapLinksSelectors);
     }
+
+    chMap(): MapInfo {
+        this.isChapterMap = true;
+        return this;
+    }
+
+    tocHId(tocHeaderId: string): MapInfo {
+        this.tocHeaderId = tocHeaderId;
+        return this;
+    }
 }
 
 export default MapInfo;

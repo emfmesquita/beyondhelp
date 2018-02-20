@@ -25,6 +25,12 @@ const check = (path: string) => window.location.pathname.startsWith("/compendium
 
 // creates both map refs and map links
 const processMapRefs = function (refsClass: typeof MapRefs) {
+    // is on toc
+    if (window.location.pathname + "/" === "/compendium/adventures/" + refsClass.path) {
+        processTocMapLinks(refsClass);
+        return;
+    }
+
     if (!check(refsClass.path)) return;
 
     // map refs + map links already defined on maps + map menu links
@@ -38,17 +44,28 @@ const processMapRefs = function (refsClass: typeof MapRefs) {
     });
 };
 
+// adds a menu map link before a target anchor
+const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElement>, after: boolean) {
+    if (jqTargetAnchor.length === 0) return;
+    const jqLinkContainer = $("<span></span>");
+    after ? jqTargetAnchor.after(jqLinkContainer) : jqTargetAnchor.before(jqLinkContainer);
+    ReactDOM.render(<MapMenuLink map={map} />, jqLinkContainer[0]);
+};
+
+// add links to maps on toc
+const processTocMapLinks = function (refsClass: typeof MapRefs) {
+    refsClass.maps.forEach(map => {
+        const headerId = map.tocHeaderId || map.headerId;
+        const selector = `.article-main a[href$='${map.isChapterMap ? map.page : "#" + headerId}']`;
+        addMenuMapLink(map, $(selector), true);
+    });
+};
+
 // add links to maps on page menu
 const processMenuMapLink = function (map: MapInfo) {
     const jqMenu = $(".quick-menu.quick-menu-tier-1, .quick-menu.quick-menu-tier-2");
     if (jqMenu.length === 0) return;
-
-    const jqMenuAnchor = jqMenu.find(`a[href='#${map.headerId}']`);
-    if (jqMenuAnchor.length === 0) return;
-
-    const jqLinkContainer = $("<span></span>");
-    jqMenuAnchor.before(jqLinkContainer);
-    ReactDOM.render(<MapMenuLink map={map} />, jqLinkContainer[0]);
+    addMenuMapLink(map, jqMenu.find(`a[href='#${map.headerId}']`));
 };
 
 // add a hoverable tooltip link to a map for every target with the corresponding selector
@@ -56,7 +73,6 @@ const processMapLinks = function (mapLinks: MapLinksInfo) {
     if (!mapLinks || !mapLinks.targetSelectors) return;
 
     mapLinks.targetSelectors.forEach(selector => {
-        console.log(selector);
         const jqTarget = $(selector);
         if (jqTarget.length === 0) return;
         const jqLinkContainer = $("<span class='BH-map-link-container'></span>");
