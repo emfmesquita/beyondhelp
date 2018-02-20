@@ -160,8 +160,8 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
         const innerBuildRef = (cacheEntry: RefTooltipCacheEntry) => {
             const contentArray = [];
             if (contentOnly) {
-                // includes just the element with the content id
-                const jqContent = cacheEntry.jqHTML.find(contentIdSelector(contentId));
+                // includes just the element with the content id - clones to not affect the cache
+                const jqContent = cacheEntry.jqHTML.find(contentIdSelector(contentId)).clone();
 
                 // max height to fit on tooltip container
                 jqContent.css("max-height", "400px").css("min-height", "400px");
@@ -214,9 +214,14 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
 
                 jqContentStart.nextUntil(untilSelector).each((idx, el) => {
                     if (idx >= 29) return false;
+
+                    // if image just ignores
                     if (el.tagName === "IMG") return;
+
+                    // clone the element to not affect the cache and removes the images and image containers 
                     const clone = $(el).clone();
                     clone.find("img, .ddb-lightbox-outer").remove();
+
                     contentArray.push(clone[0].outerHTML);
                 });
             }
