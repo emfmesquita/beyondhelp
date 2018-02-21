@@ -4,6 +4,7 @@ import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
 
 import $ from "jquery";
+import Configuration from "../../data/Configuration";
 import MapAreaInfo from "./MapAreaInfo";
 import MapAreas from "./MapAreas";
 import MapInfo from "./MapInfo";
@@ -17,6 +18,7 @@ import MapsLMoP from "./adventures/MapsLMoP";
 import MapsOotA from "./adventures/MapsOotA";
 import MapsPotA from "./adventures/MapsPotA";
 import MapsRoT from "./adventures/MapsRoT";
+import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
 import ReferencesUtils from "../../services/ReferencesUtils";
@@ -24,9 +26,10 @@ import ReferencesUtils from "../../services/ReferencesUtils";
 const check = (path: string) => window.location.pathname.startsWith("/compendium/adventures/" + path);
 
 // creates both map refs and map links
-const processMapRefs = function (refsClass: typeof MapRefs) {
+const processMapRefs = function (refsClass: typeof MapRefs, config: Configuration) {
     // is on toc
-    if (window.location.pathname + "/" === "/compendium/adventures/" + refsClass.path) {
+    const isOnToc = window.location.pathname + "/" === "/compendium/adventures/" + refsClass.path;
+    if (isOnToc && config[Opt.MapTocLinks]) {
         processTocMapLinks(refsClass);
         return;
     }
@@ -34,10 +37,10 @@ const processMapRefs = function (refsClass: typeof MapRefs) {
     if (!check(refsClass.path)) return;
 
     // map refs + map links already defined on maps + map menu links
-    refsClass.maps.forEach(processMap);
+    refsClass.maps.forEach(map => processMap(map, config));
 
     // extra map links 
-    if (!refsClass.extraMapLinks) return;
+    if (!refsClass.extraMapLinks || !config[Opt.MapLinks]) return;
     refsClass.extraMapLinks.forEach(extraMapLinks => {
         // chek if it is on the from page of the map links
         if (check(extraMapLinks.fromPage)) processMapLinks(extraMapLinks);
@@ -45,11 +48,11 @@ const processMapRefs = function (refsClass: typeof MapRefs) {
 };
 
 // adds a menu map link before a target anchor
-const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElement>, after: boolean) {
+const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElement>, tocLink: boolean) {
     if (jqTargetAnchor.length === 0) return;
-    const jqLinkContainer = $("<span></span>");
-    after ? jqTargetAnchor.after(jqLinkContainer) : jqTargetAnchor.before(jqLinkContainer);
-    ReactDOM.render(<MapMenuLink map={map} />, jqLinkContainer[0]);
+    const jqLinkContainer = $("<span class='BH-map-link-container'></span>");
+    tocLink ? jqTargetAnchor.after(jqLinkContainer) : jqTargetAnchor.before(jqLinkContainer);
+    ReactDOM.render(<MapMenuLink map={map} tocLink={tocLink} />, jqLinkContainer[0]);
 };
 
 // add links to maps on toc
@@ -82,7 +85,7 @@ const processMapLinks = function (mapLinks: MapLinksInfo) {
 };
 
 // creates the map areas for a map, that shows a tooltip
-const processMap = function (map: MapInfo) {
+const processMap = function (map: MapInfo, config: Configuration) {
     // chek if it is on the map page
     if (!check(map.page)) return;
 
@@ -95,7 +98,7 @@ const processMap = function (map: MapInfo) {
     const jqMapContainer = jqMapImg.parent();
     const jqAreasContainer = $("<div></div>");
     jqMapContainer.append(jqAreasContainer);
-    ReactDOM.render(<MapAreas map={map} />, jqAreasContainer[0], () => {
+    ReactDOM.render(<MapAreas map={map} config={config} />, jqAreasContainer[0], () => {
         // handle map ref highlights
         jqMapImg.maphilight();
 
@@ -113,10 +116,10 @@ const processMap = function (map: MapInfo) {
     });
 
     // renders a link to the map on menu
-    processMenuMapLink(map);
+    if (config[Opt.MapMenuLinks]) processMenuMapLink(map);
 
     // renders links to map on headers both from defined areas and extra links
-    processMapLinks(map.mapLinks);
+    if (config[Opt.MapLinks]) processMapLinks(map.mapLinks);
 };
 
 const scrollToContentIdReference = function () {
@@ -128,17 +131,17 @@ const scrollToContentIdReference = function () {
 };
 
 class MapsService {
-    static init() {
+    static init(config: Configuration) {
         const path = window.location.pathname;
         if (!check("")) return;
 
         // inits all maps of the current page
-        processMapRefs(MapsLMoP);
-        processMapRefs(MapsHotDQ);
-        processMapRefs(MapsRoT);
-        processMapRefs(MapsPotA);
-        processMapRefs(MapsOotA);
-        processMapRefs(MapsCoS);
+        processMapRefs(MapsLMoP, config);
+        processMapRefs(MapsHotDQ, config);
+        processMapRefs(MapsRoT, config);
+        processMapRefs(MapsPotA, config);
+        processMapRefs(MapsOotA, config);
+        processMapRefs(MapsCoS, config);
 
         // listen hash changes to scroll to refs with contentId
         window.addEventListener("hashchange", scrollToContentIdReference, false);

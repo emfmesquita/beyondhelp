@@ -9,6 +9,10 @@ const configurationId = "bh-config";
 
 const advPage = "https://www.dndbeyond.com/compendium/adventures/";
 
+const mapAreaRect = "rect";
+const mapAreaCircle = "circle";
+const mapAreaRhombus = "rhombus";
+
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
 const addContentToTinyMessage = "addcontenttotinymessage";
@@ -47,6 +51,16 @@ class Constants {
 
     static get AdventuresPage() {
         return advPage;
+    }
+
+    static get MapAreaRect() {
+        return mapAreaRect;
+    }
+    static get MapAreaCircle() {
+        return mapAreaCircle;
+    }
+    static get MapAreaRhombus() {
+        return mapAreaRhombus;
     }
 
     static get AddMonsterMessage() {

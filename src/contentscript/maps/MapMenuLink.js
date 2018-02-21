@@ -7,7 +7,8 @@ class MapMenuLink extends Component {
     render() {
         const map: MapInfo = this.props.map;
         const href = MapLinksUtils.href(map.page, map.contentId);
-        return <a className="BH-map-menu-link quick-menu-item-link tooltip-hover" href={href} onClick={(e) => MapLinksUtils.click(e, href)}>🌎︎</a>;
+        const className = `${this.props.tocLink ? "BH-map-toc-link" : "BH-map-menu-link quick-menu-item-link"} tooltip-hover`;
+        return <a className={className} href={href} onClick={(e) => MapLinksUtils.click(e, href)}>🌎︎</a>;
     }
 }
 

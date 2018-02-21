@@ -68,6 +68,15 @@ class OptionsApp extends Component {
                 <OptionGroup label="Favicons">
                     {this.optionField("Change character pages favicon.", Opt.CharacterFavIcon)}
                 </OptionGroup>
+                <OptionGroup label="Map References">
+                    {this.optionField("Global enable map references.", Opt.MapRefs)}
+                    {this.optionField("Enable main map references (rectangular references).", Opt.MapRefsRect)}
+                    {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc)}
+                    {this.optionField("Enable extra map references (diamond shape references).", Opt.MapRefsRho)}
+                    {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks)}
+                    {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
+                    {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
+                </OptionGroup>
                 <OptionGroup label="Monster Buttons">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
@@ -77,10 +86,15 @@ class OptionsApp extends Component {
                     {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}
                     {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.CustomTooltips)}
                     {this.optionField("Enable Reference Tooltips.", Opt.RefTooltips)}
+                    {this.optionField("Add tooltips to main map references (rectangular ones) .", Opt.MapRefsRectTooltips)}
+                    {this.optionField("Add tooltips to map to map references (circle ones).", Opt.MapRefsCircTooltips)}
+                    {this.optionField("Add tooltips to extra map references (diamond shape ones).", Opt.MapRefsRhoTooltips)}
+                    {this.optionField("Add tooltips to links on compendium headers.", Opt.MapLinksTooltips)}
+                    {this.optionField("Add tooltips to links on compendium menus.", Opt.MapMenuLinksTooltips)}
+                    {this.optionField("Add tooltips to links compendium table of contents.", Opt.MapTocLinksTooltips)}
                 </OptionGroup>
                 {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
                 {this.optionField("Enable roll on tables.", Opt.TableRolls)}
-                {this.optionField("Add references on adventure maps.", Opt.MapRefs)}
             </Form>
         );
     }

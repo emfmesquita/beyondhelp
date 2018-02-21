@@ -2,8 +2,10 @@ import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
 
 import C from "../../Constants";
+import Configuration from "../../data/Configuration";
 import MapAreaInfo from "./MapAreaInfo";
 import MapInfo from "./MapInfo";
+import Opt from "../../Options";
 
 class MapAreas extends Component {
     postProcessArea = (el: HTMLElement, href: string, hash: string) => {
@@ -21,9 +23,16 @@ class MapAreas extends Component {
     }
 
     renderAreas = () => {
-        return this.props.map.areas.map(area => {
-            const href = `${C.AdventuresPage}${area.page || this.props.map.page}${FragmentService.format(area.id, area.contentId, area.untilContentId, area.contentOnly)}`;
-            return <area key={area.coords} className={`tooltip-hover${area.highlight ? " BH-area-highlight" : ""}`} shape={area.shape} coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
+        const mapInfo: MapInfo = this.props.map;
+        const config: Configuration = this.props.config;
+        return mapInfo.areas.map(area => {
+            if (area.shape === C.MapAreaRect && !config[Opt.MapRefsRect]) return;
+            if (area.shape === C.MapAreaCircle && !config[Opt.MapRefsCirc]) return;
+            if (area.shape === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
+            const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
+            const href = `${C.AdventuresPage}${area.page || mapInfo.page}${FragmentService.format(area.id, area.contentId, area.untilContentId, area.contentOnly)}`;
+            const className = `tooltip-hover BH-map-ref BH-map-ref-${area.shape} ${area.highlight ? " BH-area-highlight" : ""}`;
+            return <area key={area.coords} className={className} shape={shape} coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
         });
     }
 

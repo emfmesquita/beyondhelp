@@ -1,4 +1,6 @@
 (function (BeyondHelp) {
+    const config = BeyondHelp.config;
+
     // inits a tooltip including:
     // - adds the tooltip classname
     // - adds a mouse over events that parses tooltip info and adds to global BeyondHelp object
@@ -36,44 +38,60 @@
         initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/characters/backgrounds/']", "BH-background-tooltip", parseTooltipInfo);
     }
 
-    if (BeyondHelp.config.refTooltips) {
-        // parses reference tooltip info from tooltip anchor
-        const parseReference = function (referenceEl) {
-            const tokens = referenceEl.pathname.split("/");
-            const src = tokens[3];
-            const page = tokens[tokens.length - 1];
 
-            let refId, contentId, untilContentId, contentOnly = false;
-            const fragmentTokens = referenceEl.hash.substring(1).split(":");
-            if (referenceEl.hash.startsWith("#cid:co:")) {
-                contentOnly = true;
-                refId = fragmentTokens[2];
-                contentId = fragmentTokens[3];
-            } else if (referenceEl.hash.startsWith("#cid:")) {
-                refId = fragmentTokens[1];
-                contentId = fragmentTokens[2];
-                untilContentId = fragmentTokens[3];
-            } else {
-                refId = fragmentTokens[0];
-            }
+    // parses reference tooltip info from tooltip anchor
+    const parseReference = function (referenceEl) {
+        const tokens = referenceEl.pathname.split("/");
+        const src = tokens[3];
+        const page = tokens[tokens.length - 1];
 
-            let slug = src + "-" + page + "-" + refId;
-            if (contentId) slug += "-" + contentId;
+        let refId, contentId, untilContentId, contentOnly = false;
+        const fragmentTokens = referenceEl.hash.substring(1).split(":");
+        if (referenceEl.hash.startsWith("#cid:co:")) {
+            contentOnly = true;
+            refId = fragmentTokens[2];
+            contentId = fragmentTokens[3];
+        } else if (referenceEl.hash.startsWith("#cid:")) {
+            refId = fragmentTokens[1];
+            contentId = fragmentTokens[2];
+            untilContentId = fragmentTokens[3];
+        } else {
+            refId = fragmentTokens[0];
+        }
 
-            return {
-                cacheUrl: referenceEl.dataset.tooltipHref,
-                contentId: contentId,
-                contentOnly: contentOnly,
-                refId: refId,
-                refUrl: referenceEl.href,
-                slug: slug,
-                src: src,
-                subSrc: tokens.length === 6 ? tokens[4] : null,
-                type: tokens[1],
-                untilContentId: untilContentId
-            };
+        let slug = src + "-" + page + "-" + refId;
+        if (contentId) slug += "-" + contentId;
+
+        return {
+            cacheUrl: referenceEl.dataset.tooltipHref,
+            contentId: contentId,
+            contentOnly: contentOnly,
+            refId: refId,
+            refUrl: referenceEl.href,
+            slug: slug,
+            src: src,
+            subSrc: tokens.length === 6 ? tokens[4] : null,
+            type: tokens[1],
+            untilContentId: untilContentId
         };
+    };
 
-        initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/compendium/']", "BH-reference-tooltip", parseReference);
-    }
+    const initRefTooltips = function (typeSelector) {
+        initTooltips(`${typeSelector}.tooltip-hover[href^='https://www.dndbeyond.com/compendium/']`, "BH-reference-tooltip", parseReference);
+    };
+
+    // compendium references tooltips
+    if (config.refTooltips) initRefTooltips(":not(.BH-map-ref):not(.BH-map-link):not(.BH-map-menu-link):not(.BH-map-toc-link)");
+    // tooltips of main map references
+    if (config.mapRefsRectTooltips) initRefTooltips(".BH-map-ref-rect");
+    // tooltips of map to map references
+    if (config.mapRefsCircTooltips) initRefTooltips(".BH-map-ref-circle");
+    // tooltips of extra map references
+    if (config.mapRefsRhoTooltips) initRefTooltips(".BH-map-ref-rhombus");
+    // tooltips of header to map links
+    if (config.mapLinksTooltips) initRefTooltips(".BH-map-link");
+    // tooltips of menu to map links
+    if (config.mapMenuLinksTooltips) initRefTooltips(".BH-map-menu-link");
+    // tooltips of toc to map links
+    if (config.mapTocLinksTooltips) initRefTooltips(".BH-map-toc-link");
 })(BeyondHelp);

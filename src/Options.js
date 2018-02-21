@@ -13,7 +13,22 @@ const homebrewTooltips = "homebrewtooltips";
 const customTooltips = "customTooltips";
 const refTooltips = "refTooltips";
 const refButtons = "refButtons";
+
+//#region maps
 const mapRefs = "mapRefs";
+const mapRefsRectTooltips = "mapRefsRectTooltips";
+const mapRefsRect = "mapRefsRect";
+const mapRefsCircTooltips = "mapRefsCircTooltips";
+const mapRefsCirc = "mapRefsCirc";
+const mapRefsRhoTooltips = "mapRefsRhoTooltips";
+const mapRefsRho = "mapRefsRho";
+const mapLinksTooltips = "mapLinksTooltips";
+const mapLinks = "mapLinks";
+const mapMenuLinksTooltips = "mapMenuLinksTooltips";
+const mapMenuLinks = "mapMenuLinks";
+const mapTocLinksTooltips = "mapTocLinksTooltips";
+const mapTocLinks = "mapTocLinks";
+//#endregion
 
 const allOptions = [
     addmonsteronlist,
@@ -31,7 +46,21 @@ const allOptions = [
     customTooltips,
     refTooltips,
     refButtons,
-    mapRefs
+    //#region maps
+    mapRefs,
+    mapRefsRectTooltips,
+    mapRefsRect,
+    mapRefsCircTooltips,
+    mapRefsCirc,
+    mapRefsRhoTooltips,
+    mapRefsRho,
+    mapLinksTooltips,
+    mapLinks,
+    mapMenuLinksTooltips,
+    mapMenuLinks,
+    mapTocLinksTooltips,
+    mapTocLinks
+    //#endregion
 ];
 
 class Options {
@@ -80,9 +109,48 @@ class Options {
     static get RefButtons(): string {
         return refButtons;
     }
+
+    //#region maps
     static get MapRefs(): string {
         return mapRefs;
     }
+    static get MapRefsRectTooltips(): string {
+        return mapRefsRectTooltips;
+    }
+    static get MapRefsRect(): string {
+        return mapRefsRect;
+    }
+    static get MapRefsCircTooltips(): string {
+        return mapRefsCircTooltips;
+    }
+    static get MapRefsCirc(): string {
+        return mapRefsCirc;
+    }
+    static get MapRefsRhoTooltips(): string {
+        return mapRefsRhoTooltips;
+    }
+    static get MapRefsRho(): string {
+        return mapRefsRho;
+    }
+    static get MapLinksTooltips(): string {
+        return mapLinksTooltips;
+    }
+    static get MapLinks(): string {
+        return mapLinks;
+    }
+    static get MapMenuLinksTooltips(): string {
+        return mapMenuLinksTooltips;
+    }
+    static get MapMenuLinks(): string {
+        return mapMenuLinks;
+    }
+    static get MapTocLinksTooltips(): string {
+        return mapTocLinksTooltips;
+    }
+    static get MapTocLinks(): string {
+        return mapTocLinks;
+    }
+    //#endregion
 
     static get AllOptions(): string[] {
         return allOptions.map(option => option);

@@ -22,6 +22,20 @@
     }
 }
 
+@mixin tocMapLink($marginLeft, $marginRight) {
+    a.BH-map-toc-link {
+        padding-right: 0px !important;
+        margin-left: $marginLeft !important;
+        margin-right: $marginRight !important;
+        &.tooltip-hover {
+            color: #000 !important;
+            &:hover {
+                color: $ddb-green !important;
+            }
+        }
+    }
+}
+
 @media screen {
     h1 {
         @include mapLink(24px, 10px);
@@ -43,7 +57,7 @@
         @include menuMapLink(0px, -8px);
     }
     .compendium-toc-full-text {
-        @include menuMapLink(4px, 0px);
+        @include tocMapLink(4px, 0px);
     }
 }
 
