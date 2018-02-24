@@ -18,6 +18,7 @@ import MapsLMoP from "./adventures/MapsLMoP";
 import MapsOotA from "./adventures/MapsOotA";
 import MapsPotA from "./adventures/MapsPotA";
 import MapsRoT from "./adventures/MapsRoT";
+import MapsTftYP from "./adventures/MapsTftYP";
 import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
@@ -57,9 +58,10 @@ const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElemen
 
 // add links to maps on toc
 const processTocMapLinks = function (refsClass: typeof MapRefs) {
-    refsClass.maps.forEach(map => {
-        const headerId = map.tocHeaderId || map.headerId;
-        const selector = `.article-main a[href$='${map.isChapterMap ? map.page : "#" + headerId}']`;
+    // reversed because links are added with before, so if there is more than one link they still will be in order
+    refsClass.maps.reverse().forEach(map => {
+        const headerSelector = map.tocHeaderSelector || "#" + map.headerId;
+        const selector = `.article-main a[href$='${map.isChapterMap ? map.page : headerSelector}']`;
         addMenuMapLink(map, $(selector), true);
     });
 };
@@ -142,6 +144,7 @@ class MapsService {
         processMapRefs(MapsPotA, config);
         processMapRefs(MapsOotA, config);
         processMapRefs(MapsCoS, config);
+        processMapRefs(MapsTftYP, config);
 
         // listen hash changes to scroll to refs with contentId
         window.addEventListener("hashchange", scrollToContentIdReference, false);

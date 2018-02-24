@@ -26,8 +26,8 @@ class MapInfo {
         return this;
     }
 
-    tocHId(tocHeaderId: string): MapInfo {
-        this.tocHeaderId = tocHeaderId;
+    tocHSel(tocHeaderSelector: string): MapInfo {
+        this.tocHeaderSelector = tocHeaderSelector;
         return this;
     }
 }

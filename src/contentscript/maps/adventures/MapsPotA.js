@@ -412,7 +412,7 @@ const maps = [
         new MapAreaInfo().rect("429,383,449,403").content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
         new MapAreaInfo().rect("335,317,355,337").content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
         new MapToMapAreaInfo("05-01.jpg", "307,224,7")
-    ], ["#TorrentsFeatures", "#AreasoftheTorrents"]).tocHId("ThePlungingTorrent"),
+    ], ["#TorrentsFeatures", "#AreasoftheTorrents"]).tocHSel("#ThePlungingTorrent"),
     new MapInfo("TheBlackGeode", "pota/temple-of-the-elder-elemental-eye", "05-04.jpg", "0b40b5b9-5f7a-4afd-84d4-24e9e73d3850", [
         new MapAreaInfo("G1HalloftheGuardians", "429,671,459,686"),
         new MapAreaInfo("G2KeltarandGorx", "299,613,329,628"),

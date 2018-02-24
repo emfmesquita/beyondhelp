@@ -56,6 +56,9 @@
     .quick-menu.quick-menu-tier-2 {
         @include menuMapLink(0px, -8px);
     }
+    .quick-menu.quick-menu-tier-3 {
+        @include menuMapLink(0px, -23px);
+    }
     .compendium-toc-full-text {
         @include tocMapLink(4px, 0px);
     }
