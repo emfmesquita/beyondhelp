@@ -117,15 +117,15 @@ const maps = [
         new MapToMapAreaInfo("totyp-01-02.jpg", "102,398,10")
     ], ["#LocationsontheGroveLevel"]),
     new MapInfo("ApproachingKhundrukar", "tftyp/a2/the-forge-of-fury", "totyp-02-02.png", "88c15f8d-0ef0-484f-a998-b6448ed3989f", [
-        new MapAreaInfo().rect("325,487,350,512").content("d954ae5d-de1b-4fb6-a176-7a9305f6f05e"),
-        new MapAreaInfo().rect("355,509,380,534").content("c9f667e0-c3aa-4e91-9c27-d0f0657ffcb9", "de7caf93-f168-4bdb-804d-4b024259c7d9"),
-        new MapAreaInfo().rect("389,388,414,413").content("de7caf93-f168-4bdb-804d-4b024259c7d9", "4916a9be-e2c3-4881-848c-e6e31d63d27e"),
-        new MapAreaInfo().rect("300,409,325,434").content("4916a9be-e2c3-4881-848c-e6e31d63d27e"),
-        new MapAreaInfo().rect("475,430,500,455").content("88ff4c2c-4b5b-4374-a623-b61c5e61cf9e", "2895b554-6213-45b8-b3d9-a39c485ad140"),
+        new MapAreaInfo().rect(325, 487, 350, 512).content("d954ae5d-de1b-4fb6-a176-7a9305f6f05e"),
+        new MapAreaInfo().rect(355, 509, 380, 534).content("c9f667e0-c3aa-4e91-9c27-d0f0657ffcb9", "de7caf93-f168-4bdb-804d-4b024259c7d9"),
+        new MapAreaInfo().rect(389, 388, 414, 413).content("de7caf93-f168-4bdb-804d-4b024259c7d9", "4916a9be-e2c3-4881-848c-e6e31d63d27e"),
+        new MapAreaInfo().rect(300, 409, 325, 434).content("4916a9be-e2c3-4881-848c-e6e31d63d27e"),
+        new MapAreaInfo().rect(475, 430, 500, 455).content("88ff4c2c-4b5b-4374-a623-b61c5e61cf9e", "2895b554-6213-45b8-b3d9-a39c485ad140"),
         new MapToMapAreaInfo("totyp-02-03.png", "308,499,12"),
         new MapToMapAreaInfo("totyp-02-03.png", "367,550,12"),
-        new MapToMapAreaInfo("totyp-02-03.png", "401,371,12"),
-        new MapToMapAreaInfo("totyp-02-03.png", "516,442,12")
+        new MapToMapAreaInfo("totyp-02-07.png", "401,371,12"),
+        new MapToMapAreaInfo("totyp-02-13.png", "516,442,12")
     ], ["#TheStoneTooth"]),
     new MapInfo("TheMountainDoor", "tftyp/a2/the-forge-of-fury", "totyp-02-03.png", "0b6d4b16-d131-4a7b-bfb1-4c1ab3dc76b0", [
         new MapAreaInfo("1EndoftheTrail", "153,171,173,191"),
@@ -172,7 +172,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-02.png", "96,328,10"),
         new MapToMapAreaInfo("totyp-02-02.png", "578,337,10"),
         new MapToMapAreaInfo("totyp-02-07.png", "754,256,10")
-    ], []).tocHSel("#TheForgeofFury"),
+    ], []).tocHId("TheForgeofFury"),
     new MapInfo("TheGlitterhame", "tftyp/a2/the-forge-of-fury", "totyp-02-07.png", "cd39e344-5e06-4d5d-8ad3-42cff9244e24", [
         new MapAreaInfo("15TheColdStream", "132,93,152,113"),
         new MapAreaInfo("15aStirgeColony", "231,137,256,157"),
@@ -209,11 +209,12 @@ const maps = [
         new MapAreaInfo().rho(502, 678, 516, 692).content("6cbd36fa-6731-44ac-a345-59873c8f8fc1"), // 25 - waterfall
         new MapAreaInfo().rho(659, 354, 673, 368).content("a9cdb0ac-fab2-4950-b63f-6b9a232faa54"), // 26 - treasure
         new MapAreaInfo().rho(729, 511, 743, 525).content("fbace9a8-68f2-4d98-a94d-3b9ebbdcb5f9", "3b83ea9e-dbbb-49e6-abed-ba5ed0fa8861"), // 27 - Iron Door
+        new MapToMapAreaInfo("totyp-02-02.png", "413,98,10"),
         new MapToMapAreaInfo("totyp-02-03.png", "57,93,10"),
         new MapToMapAreaInfo("totyp-02-08.png", "536,667,10"),
         new MapToMapAreaInfo("totyp-02-08.png", "587,649,10"),
         new MapToMapAreaInfo("totyp-02-11.png", "774,371,10")
-    ], []).tocHSel("#TheForgeofFury"),
+    ], []).tocHId("TheForgeofFury"),
     new MapInfo("TheSinkhole", "tftyp/a2/the-forge-of-fury", "totyp-02-08.png", "1780dd4c-c571-45e2-8315-9d438c153d34", [
         new MapAreaInfo("28WaterfallCavern", "149,180,169,200"),
         new MapAreaInfo("29RiverCavern", "307,316,327,336"),
@@ -233,7 +234,7 @@ const maps = [
         new MapAreaInfo().rho(622, 62, 636, 76).content("81b09134-6e01-4f8f-8b07-8c98c5bffd8d"), // 34 - treasure
         new MapToMapAreaInfo("totyp-02-07.png", "135,80,10"),
         new MapToMapAreaInfo("totyp-02-07.png", "293,51,10")
-    ], []).tocHSel("#TheForgeofFury"),
+    ], []).tocHId("TheForgeofFury"),
     new MapInfo("TheFoundry", "tftyp/a2/the-forge-of-fury", "totyp-02-11.png", "272c833b-8549-4956-866a-a3be417ea042", [
         new MapAreaInfo("35ChamberofStatues", "136,252,156,272"),
         new MapAreaInfo("36TheGreatHall", "296,292,316,312"),
@@ -259,14 +260,115 @@ const maps = [
         new MapAreaInfo("47ArundilsChambers", "427,145,447,165"),
         new MapAreaInfo("48LootedArmory", "669,139,689,159"),
         new MapAreaInfo("49IdallasDen", "703,214,723,234"),
-        new MapAreaInfo().rect("798,175,823,195").content("c01dd06c-d14e-49ca-89af-567d1789b063"), // 49a
+        new MapAreaInfo().rect(798, 175, 823, 195).content("c01dd06c-d14e-49ca-89af-567d1789b063"), // 49a
         new MapAreaInfo().rho(104, 249, 118, 263).content("2f44a7b5-7af7-4d4a-b70d-6333b5a6444b"), // 35 - sound, track
         new MapAreaInfo().rho(80, 201, 94, 215).content("8f51ad60-8506-4ee9-87ab-96cb7e7e51e5", "f73340c1-f604-48a9-9e3e-b0c9e855ddfa"), // 35 - trap
         new MapAreaInfo().rho(127, 199, 141, 213).content("8f51ad60-8506-4ee9-87ab-96cb7e7e51e5", "f73340c1-f604-48a9-9e3e-b0c9e855ddfa"), // 35 - trap
         new MapAreaInfo().rho(141, 226, 155, 240).content("f73340c1-f604-48a9-9e3e-b0c9e855ddfa"), // 35 - secret
         new MapAreaInfo().rho(166, 226, 180, 240).content("5a1583ea-b625-40b8-af10-3d046b0c5646"), // 35 - alarm
+        new MapAreaInfo().rho(315, 332, 329, 346).content("a5791f20-550d-4fdc-80e3-e9b3a8aad2a7"), // 37 - treasure
+        new MapAreaInfo().rho(627, 361, 641, 375).content("ddcd56d5-beb0-4178-bcdb-d7be71b7342f"), // 38 - chasm
+        new MapAreaInfo().rho(637, 205, 651, 219).content("b49d23b5-e5c0-439f-abce-5b9fae1857b3"), // 40 - secret
+        new MapAreaInfo().rho(227, 138, 241, 152).content("5e267dca-0b22-43b1-a7d0-1467b75283e1"), // 42 - door
+        new MapAreaInfo().rho(139, 128, 153, 142).content("78a4bcda-f30e-4555-9c32-43a3fc959916"), // 42 - treasure
+        new MapAreaInfo().rho(284, 145, 298, 159).content("3c4d7bd3-eab1-4e71-b0b1-853faa80fd56"), // 45 - treasure
+        new MapAreaInfo().rho(451, 181, 465, 195).content("8bd92cc6-d758-4227-9306-3cb5a5dffa89"), // 47 - treasure
+        new MapAreaInfo().rho(624, 114, 638, 128).content("60d6819e-723c-4b71-8e29-537648b179c7"), // 48 - door
+        new MapAreaInfo().rho(792, 200, 806, 214).content("7c69e0e9-702a-47e9-9435-f50e408baa49"), // 49a - treasure
         new MapToMapAreaInfo("totyp-02-07.png", "111,322,10"),
-    ], []).tocHSel("#TheForgeofFury"),
+        new MapToMapAreaInfo("totyp-02-13.png", "699,374,10")
+    ], []).tocHId("TheForgeofFury"),
+    new MapInfo("TheBlackLake", "tftyp/a2/the-forge-of-fury", "totyp-02-13.png", "ae1225ca-d399-4930-8cf7-15e71e2f8945", [
+        new MapAreaInfo("50TheCascade", "210,238,230,258"),
+        new MapAreaInfo("51DwarvenBridges", "333,67,353,87"),
+        new MapAreaInfo("52NightscalesLair", "436,227,456,247"),
+        new MapAreaInfo("53NightscalesHoard", "559,217,579,237"),
+        new MapAreaInfo("54TheDragonsPassage", "671,105,691,125"),
+        new MapAreaInfo().rho(269, 198, 283, 212).content("81de67cf-17dc-4e8f-b2d3-7ca2570cb0fe"), // 50 - tracks
+        new MapAreaInfo().rho(378, 133, 392, 147).content("40dddcfd-2426-41e6-b29d-beeb71aa5763", "d3c696e4-95c7-4d78-8d30-983037a33db9"), // 51 - bridge
+        new MapAreaInfo().rho(231, 124, 245, 138).content("d6017122-5789-4804-af95-4ee859eb5267", "76eff8db-a773-4f34-bfe8-d2ce48e6fac8"), // 51 - fast-flowing water
+        new MapAreaInfo().rho(524, 261, 538, 275).content("b735ee79-5ca1-40d3-a003-634e8b49acc6"), // 53 - stealth
+        new MapAreaInfo().rho(596, 193, 610, 207).content("d93a4243-a01b-4379-8c18-7b9a3c6b9a63"), // 53 - treasure
+        new MapToMapAreaInfo("totyp-02-11.png", "252,237,10"),
+        new MapToMapAreaInfo("totyp-02-11.png", "292,166,10"),
+        new MapToMapAreaInfo("totyp-02-02.png", "777,107,10")
+    ], []).tocHId("TheForgeofFury"),
+    new MapInfo("TheHiddenShrineofTamoachan", "tftyp/a3/the-hidden-shrine-of-tamoachan", "hs01.png", "cd0f8252-bbf2-4f97-a811-7d841807fca4", [
+        new MapAreaInfo("1TheVaultofChicomoztoc", "795,372,805,382"),
+        new MapAreaInfo("2TheHallofThrashingCanes", "773,326,783,336"),
+        new MapAreaInfo("3RoostoftheConch", "713,317,723,327"),
+        new MapAreaInfo("4MudFilledDoorway", "685,326,695,336"),
+        new MapAreaInfo("5TombStoneandWetLime", "713,281,723,291"),
+        new MapAreaInfo("6RubbleFilledStaircase", "684,263,694,273"),
+        new MapAreaInfo("7TheSepulcherofTloquesPopolocas", "768,271,778,281"),
+        new MapAreaInfo("8CoursesoftheGods", "713,404,723,414"),
+        new MapAreaInfo("9StoneStatue", "697,430,707,440"),
+        new MapAreaInfo("10SecretPassage", "677,389,687,399"),
+        new MapAreaInfo("11TheCourtofCemanahuac", "641,436,651,446"),
+        new MapAreaInfo("11TheCourtofCemanahuac", "666,427,676,437").content("18e03364-0b29-4587-9877-d34e18d7d9d0", "6b3f3771-cdd5-4dee-894e-9353d074715e"), // 11a - Eastern Alcove
+        new MapAreaInfo("11TheCourtofCemanahuac", "666,444,676,454").content("6b3f3771-cdd5-4dee-894e-9353d074715e"), // 11a - Western Alcove
+        new MapAreaInfo("12TheTombofHurakan", "609,399,619,409"),
+        new MapAreaInfo("12a", "586,399,596,409"),
+        new MapAreaInfo("12BTombSouthEntrance", "642,354,652,364"),
+        new MapAreaInfo("13ChildofZotzilaha", "636,326,646,336"),
+        new MapAreaInfo("14FloodedHall", "636,263,646,273"),
+        new MapAreaInfo("15TheGreatHall", "582,299,592,309"),
+        new MapAreaInfo("16SecretDoor", "562,318,572,328"),
+        new MapAreaInfo("17HalloftheGreatSpirits", "527,317,537,327"),
+        new MapAreaInfo("18HallwayoftheAncestors", "494,290,504,300"),
+        new MapAreaInfo("19SilverCoffer", "526,390,536,400"),
+        new MapAreaInfo("20SpiritGuardofAyocuan", "408,427,418,437"),
+        new MapAreaInfo("20a", "462,371,472,381"),
+        new MapAreaInfo("21StoneBlock", "367,371,377,381"),
+        new MapAreaInfo("22ChamberoftheNacehual", "449,295,459,305"),
+        new MapAreaInfo("23LightAhead", "559,263,569,273"),
+        new MapAreaInfo("23ATriangularStone", "499,226,509,236"),
+        new MapAreaInfo("24Sandbox", "432,226,442,236"),
+        new MapAreaInfo("25TheNestoftheWarriors", "394,254,404,264"),
+        new MapAreaInfo("26Ramp", "267,372,277,382"),
+        new MapAreaInfo("27Stairs", "288,243,298,253"),
+        new MapAreaInfo("28TheArcofNanahuatcin", "258,290,268,300"),
+        new MapAreaInfo("29TheTombofPelota", "221,399,231,409"),
+        new MapAreaInfo("30TheGuardianBeast", "112,354,122,364"),
+        new MapAreaInfo("31CalendarStone", "84,377,94,387"),
+        new MapAreaInfo("32ThePortaltoDeath", "76,395,86,405"),
+        new MapAreaInfo("33TheTombofTlacaelel", "71,413,81,423"),
+        new MapAreaInfo("33ASacrificetotheSun", "48,417,58,427"),
+        new MapAreaInfo("34GuardiansBartheWay", "80,363,90,373"),
+        new MapAreaInfo("35XipesAudienceChamber", "47,363,57,373"),
+        new MapAreaInfo("36ApartmentoftheDustofAges", "194,358,204,368"),
+        new MapAreaInfo("37BedofXilonen", "94,264,104,274"),
+        new MapAreaInfo("38BarredPit", "138,342,148,352"),
+        new MapAreaInfo("39ChamberoftheSecondSun", "176,263,186,273"),
+        new MapAreaInfo("40DragonBreath", "230,318,240,328"),
+        new MapAreaInfo("40DragonBreath", "380,120,390,130"),
+        new MapAreaInfo("41FreeGold", "345,199,355,209"),
+        new MapAreaInfo("42TheChapelofKukulkan", "376,206,386,216"),
+        new MapAreaInfo("43TheSmokingMirrors", "312,189,322,199"),
+        new MapAreaInfo("44SunofMotion", "315,164,325,174"),
+        new MapAreaInfo("45Mictlan", "344,126,354,136"),
+        new MapAreaInfo("46Tlazoteotl", "349,92,359,102"),
+        new MapAreaInfo("47SpiderinHiding", "290,109,300,119"),
+        new MapAreaInfo("48HoundoftheBat", "269,124,279,134"),
+        new MapAreaInfo("49SacredChitzaAtlan", "258,147,268,157"),
+        new MapAreaInfo("50JadeWall", "265,166,275,176"),
+        new MapAreaInfo("51WindTunnel", "239,194,249,204"),
+        new MapAreaInfo("52TheHiddenRoomofNahual", "252,175,262,185"),
+        new MapAreaInfo("53TheValve", "199,162,209,172"),
+        new MapAreaInfo("54TempleRuin", "61,149,71,159")
+    ], ["#RunningtheAdventure", "#TheRuinsoftheShrine", "#TheRuinsGeneralFeatures", "#RandomEncounters",
+            "#LocationsintheLowerChambers", "#LocationsontheFirstTier", "#LocationsontheSecondTier",
+            "#LocationsontheThirdTier", "#TempleGrounds"]).chMap()
+    // new MapInfo("DungeonGeneralFeatures", "tftyp/a4/white-plume-mountain", "wpm01.png", "d97e4076-3f77-419e-89ce-73de60e31c2c", [
+    // ], []).tocHId("LocationsintheDungeon"),
+    // new MapInfo("Map42WhitePlumeMountain", "tftyp/a4/white-plume-mountain", "wpm02.png", "ce06b1b6-1bca-476d-8414-52747a5856bd", [
+    // ], []).tocHId("LocationsintheDungeon"),
+    // new MapInfo("Map43GeysersandChains", "tftyp/a4/white-plume-mountain", "wpm03.png", "50d37f17-0eb8-4306-bf56-96194c157470", [
+    // ], []).tocHId("LocationsintheDungeon"),
+    // new MapInfo("Map44BoilingLake", "tftyp/a4/white-plume-mountain", "wpm04.png", "40ff75a6-3be8-49e1-a80a-e530514420aa", [
+    // ], []).tocHId("LocationsintheDungeon"),
+    // new MapInfo("Map45AquariumandPrison", "tftyp/a4/white-plume-mountain", "wpm05.png", "f100978f-ff39-42b8-ae75-92349483ef95", [
+    // ], []).tocHId("LocationsintheDungeon"),
 ];
 
 const extraMapLinks = [];

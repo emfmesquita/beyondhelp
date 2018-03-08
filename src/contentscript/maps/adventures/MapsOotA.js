@@ -74,16 +74,16 @@ const maps = [
         new MapAreaInfo("3Cornered", "688,555,718,585"),
         new MapAreaInfo("4HookHorrorNest", "743,610,773,640"),
         new MapAreaInfo("5GnollCamp", "334,474,364,504"),
-        new MapAreaInfo().rect("704,231,719,246").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("711,305,726,320").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("664,531,679,546").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("575,237,590,252").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("544,238,559,253").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("523,452,538,467").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("497,460,512,475").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("371,172,386,187").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("366,210,381,225").content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect("717,587,734,604").content("c3072947-7867-4f19-aa85-6d822634eaf7")
+        new MapAreaInfo().rect(704, 231, 719, 246).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(711, 305, 726, 320).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(664, 531, 679, 546).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(575, 237, 590, 252).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(544, 238, 559, 253).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(523, 452, 538, 467).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(497, 460, 512, 475).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(371, 172, 386, 187).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(366, 210, 381, 225).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rect(717, 587, 734, 604).content("c3072947-7867-4f19-aa85-6d822634eaf7")
     ], []),
     new MapInfo("TheOozingTemple", "oota/into-darkness", "02-07.jpg", "5ca5abee-b6e6-4e07-b76c-8f6fc1e02df3", [
         new MapAreaInfo("1BoxedIn", "307,622,332,647"),
@@ -123,8 +123,8 @@ const maps = [
         new MapAreaInfo("CityGates", "731,273,751,293"),
         new MapAreaInfo("CityGates", "728,175,748,195"),
         new MapAreaInfo("CityGates", "727,118,747,138"),
-        new MapAreaInfo().rect("385,135,451,155").content("31e45e23-afbc-4fa8-b945-c3301592b9a6"),
-        new MapAreaInfo().rect("451,135,517,155").content("957ae86b-8de3-4aaa-9901-3aa92efd7f1a"),
+        new MapAreaInfo().rect(385, 135, 451, 155).content("31e45e23-afbc-4fa8-b945-c3301592b9a6"),
+        new MapAreaInfo().rect(451, 135, 517, 155).content("957ae86b-8de3-4aaa-9901-3aa92efd7f1a"),
         new MapAreaInfo("DarklakeDistrict", "366,205,528,248"),
         new MapAreaInfo("BladeBazaar", "501,177,557,201"),
         new MapAreaInfo("DarklakeBrewery", "641,91,718,118"),
@@ -312,19 +312,19 @@ const maps = [
         new MapAreaInfo("7ZhentarimEnclave", "247,212,277,242").content("39db6144-65b0-48bb-958f-9d4724b9beac", "b1c5aa30-0c35-4941-80be-fd9c6846fd07"),
         new MapAreaInfo("7aZhentarimEncampment", "283,212,313,242"),
         new MapAreaInfo("7bZhentarimWarehouse", "173,82,203,112"),
-        new MapAreaInfo().rect("341,62,359,80").content("68b1c272-4b24-48ae-9741-d9f090603f3a"), // 7 - Ghazrim’s Shed
-        new MapAreaInfo().rect("214,47,232,65").content("ba4de3af-db9b-4ac3-a3e9-fd25fade54a2"), // 7 - 1
-        new MapAreaInfo().rect("258,48,276,66").content("3e17c6d2-163f-4f74-8be0-6eef933e8282"), // 7 - 2
-        new MapAreaInfo().rect("296,48,314,66").content("49364db2-4502-4bfa-9c43-c2a2d3295281"), // 7 - 3
-        new MapAreaInfo().rect("215,82,233,100").content("b462b3b6-ed37-45e5-8d92-d47d336c8358"), // 7 - 4
-        new MapAreaInfo().rect("238,83,256,101").content("0b8642d0-3f77-432f-b58f-53aa93bab210"), // 7 - 5
-        new MapAreaInfo().rect("261,83,279,101").content("fd4be872-8275-4fac-8f12-ade74a85b66f"), // 7 - 6
-        new MapAreaInfo().rect("286,84,304,102").content("9b745d67-7a6b-4550-aa0f-5cbd89be9099"), // 7 - 7
-        new MapAreaInfo().rect("309,84,327,102").content("4935a728-8777-4d96-a80d-136aaa968ee5"), // 7 - 8
-        new MapAreaInfo().rect("343,89,361,107").content("0c1cd8bd-7de7-44c6-ba84-f5f2d889a9ac"), // 7 - 9
-        new MapAreaInfo().rect("215,114,233,132").content("c8327a62-6ea3-4c8e-93f2-99338efadf0b"), // 7 - 10
-        new MapAreaInfo().rect("249,114,267,132").content("44f39a0d-443e-424d-b96f-ac81545f1b12"), // 7 - 11
-        new MapAreaInfo().rect("294,110,312,128").content("0c04af33-210b-464d-ba68-a96ff3e02f86") // 7 - 12
+        new MapAreaInfo().rect(341, 62, 359, 80).content("68b1c272-4b24-48ae-9741-d9f090603f3a"), // 7 - Ghazrim’s Shed
+        new MapAreaInfo().rect(214, 47, 232, 65).content("ba4de3af-db9b-4ac3-a3e9-fd25fade54a2"), // 7 - 1
+        new MapAreaInfo().rect(258, 48, 276, 66).content("3e17c6d2-163f-4f74-8be0-6eef933e8282"), // 7 - 2
+        new MapAreaInfo().rect(296, 48, 314, 66).content("49364db2-4502-4bfa-9c43-c2a2d3295281"), // 7 - 3
+        new MapAreaInfo().rect(215, 82, 233, 100).content("b462b3b6-ed37-45e5-8d92-d47d336c8358"), // 7 - 4
+        new MapAreaInfo().rect(238, 83, 256, 101).content("0b8642d0-3f77-432f-b58f-53aa93bab210"), // 7 - 5
+        new MapAreaInfo().rect(261, 83, 279, 101).content("fd4be872-8275-4fac-8f12-ade74a85b66f"), // 7 - 6
+        new MapAreaInfo().rect(286, 84, 304, 102).content("9b745d67-7a6b-4550-aa0f-5cbd89be9099"), // 7 - 7
+        new MapAreaInfo().rect(309, 84, 327, 102).content("4935a728-8777-4d96-a80d-136aaa968ee5"), // 7 - 8
+        new MapAreaInfo().rect(343, 89, 361, 107).content("0c1cd8bd-7de7-44c6-ba84-f5f2d889a9ac"), // 7 - 9
+        new MapAreaInfo().rect(215, 114, 233, 132).content("c8327a62-6ea3-4c8e-93f2-99338efadf0b"), // 7 - 10
+        new MapAreaInfo().rect(249, 114, 267, 132).content("44f39a0d-443e-424d-b96f-ac81545f1b12"), // 7 - 11
+        new MapAreaInfo().rect(294, 110, 312, 128).content("0c04af33-210b-464d-ba68-a96ff3e02f86") // 7 - 12
     ], ["#ImportantNPCs", "#LeavingMantolDerith", "#FollowUpEncounters"]),
     new MapInfo("TroglodyteLair", "oota/the-wormwrithings", "13-01.jpg", "c57818fb-e7b7-4bfa-85d3-186619046c88", [
         new MapAreaInfo("1EntranceTunnel", "368,585,398,615"),
@@ -342,10 +342,10 @@ const maps = [
         new MapAreaInfo("13EmptyCave", "130,254,160,284"),
         new MapAreaInfo("14RallyPoint", "110,120,140,150"),
         new MapAreaInfo("15ExitTunnel", "202,40,232,70"),
-        new MapAreaInfo().rect("412,589,437,614").content("1b300013-ea13-4ad2-b98c-f551335ba966"), // 1 - secret
-        new MapAreaInfo().rect("602,541,627,566").content("8022756a-dd28-4115-8852-885d2f5503d5"), // 5 - secret
-        new MapAreaInfo().rect("117,216,142,241").content("56678c42-d29f-4525-a833-f8a1bd1a8230"), // 13 - secret 
-        new MapAreaInfo().rect("111,169,136,194").content("2f19eda0-b6d9-465f-a42b-0d5784b6875d") // 14 - secret
+        new MapAreaInfo().rect(412, 589, 437, 614).content("1b300013-ea13-4ad2-b98c-f551335ba966"), // 1 - secret
+        new MapAreaInfo().rect(602, 541, 627, 566).content("8022756a-dd28-4115-8852-885d2f5503d5"), // 5 - secret
+        new MapAreaInfo().rect(117, 216, 142, 241).content("56678c42-d29f-4525-a833-f8a1bd1a8230"), // 13 - secret 
+        new MapAreaInfo().rect(111, 169, 136, 194).content("2f19eda0-b6d9-465f-a42b-0d5784b6875d") // 14 - secret
     ], ["#ResolvingtheStandoff"]),
     new MapInfo("WormNursery", "oota/the-wormwrithings", "13-02.jpg", "d8124621-73b1-4f65-b77f-ba1d27f6ad03", [
         new MapAreaInfo("1EntryCavern", "50,303,75,328"),
@@ -363,9 +363,9 @@ const maps = [
         new MapAreaInfo("11SpiderNest", "704,203,729,228"),
         new MapAreaInfo("12Chasm", "650,365,675,390"),
         new MapAreaInfo("13ExitTunnel", "809,281,834,306"),
-        new MapAreaInfo().rect("255,314,280,339").content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166"), // t1
-        new MapAreaInfo().rect("620,424,645,449").content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166"), // t2
-        new MapAreaInfo().rect("633,477,658,502").content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166") // t3
+        new MapAreaInfo().rect(255, 314, 280, 339).content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166"), // t1
+        new MapAreaInfo().rect(620, 424, 645, 449).content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166"), // t2
+        new MapAreaInfo().rect(633, 477, 658, 502).content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166") // t3
     ], []),
     new MapInfo("Menzoberranzan", "oota/the-city-of-spiders", "15-01.jpg", "dc132ec8-0272-4688-95ab-c72bca642fa0", [
         new MapAreaInfo("TheBazaar", "368,218,450,235"),
@@ -382,7 +382,7 @@ const maps = [
         new MapAreaInfo("Westrift", "176,121,209,155"),
         new MapAreaInfo("TierBreche", "476,137,531,168"),
         new MapAreaInfo("WestWall", "218,125,296,145"),
-        new MapAreaInfo().rect("139,218,220,252").content("45adf9a9-0f4e-4598-8641-1cc41f521a26"), // Lolth’s Web
+        new MapAreaInfo().rect(139, 218, 220, 252).content("45adf9a9-0f4e-4598-8641-1cc41f521a26"), // Lolth’s Web
         new MapAreaInfo("HouseBaenre", "463,491,555,511"),
         new MapAreaInfo("JarlaxleBaenreofBreganDaerthe", "89,117,154,148"),
         new MapAreaInfo("Sorcere", "429,77,479,93")

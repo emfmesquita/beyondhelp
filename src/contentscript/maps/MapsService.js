@@ -60,8 +60,13 @@ const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElemen
 const processTocMapLinks = function (refsClass: typeof MapRefs) {
     // reversed because links are added with before, so if there is more than one link they still will be in order
     refsClass.maps.reverse().forEach(map => {
-        const headerSelector = map.tocHeaderSelector || "#" + map.headerId;
-        const selector = `.article-main a[href$='${map.isChapterMap ? map.page : headerSelector}']`;
+        if (map.tocHeaderSelector) {
+            addMenuMapLink(map, $(map.tocHeaderSelector), true);
+            return;
+        }
+
+        const headerId = map.tocHeaderId || map.headerId;
+        const selector = `.article-main a[href$='${map.isChapterMap ? map.page : "#" + headerId}']`;
         addMenuMapLink(map, $(selector), true);
     });
 };

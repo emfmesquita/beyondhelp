@@ -1,66 +1,80 @@
-@mixin mapLink($size, $margin) {
+@mixin mapLinkIcon($size) {
+    i.fa.fa-map {
+        background: url("chrome-extension://__MSG_@@extension_id__/webaccessible/map.svg") no-repeat;
+        width: $size !important;
+        height: $size !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        color: #000 !important;
+    }
+}
+
+@mixin mapLink($size,
+$margin) {
     a.tooltip-hover.BH-map-link {
         margin-left: $margin;
-        font-weight: normal !important;
-        font-size: $size !important;
-        color: #000 !important;
+        @include mapLinkIcon($size);
     }
     @include showOnHover("BH-map-link");
 }
 
-@mixin menuMapLink($marginLeft, $marginRight) {
+@mixin menuMapLink($marginLeft,
+$marginRight) {
     a.BH-map-menu-link {
         padding-right: 0px !important;
         margin-left: $marginLeft !important;
         margin-right: $marginRight !important;
-        &.quick-menu-item-link.tooltip-hover {
-            color: #000 !important;
-            &:hover {
-                color: $ddb-green !important;
-            }
-        }
+        @include mapLinkIcon(16px);
     }
 }
 
-@mixin tocMapLink($marginLeft, $marginRight) {
+@mixin tocMapLink($marginLeft,
+$marginRight) {
     a.BH-map-toc-link {
         padding-right: 0px !important;
         margin-left: $marginLeft !important;
         margin-right: $marginRight !important;
-        &.tooltip-hover {
-            color: #000 !important;
-            &:hover {
-                color: $ddb-green !important;
-            }
-        }
+        @include mapLinkIcon(16px);
     }
 }
 
 @media screen {
     h1 {
-        @include mapLink(24px, 10px);
+        @include mapLink(24px,
+        10px);
     }
     h2 {
-        @include mapLink(18px, 8px);
+        @include mapLink(18px,
+        8px);
     }
     h3 {
-        @include mapLink(14px, 8px);
+        @include mapLink(14px,
+        8px);
     }
     h4,
     h5 {
-        @include mapLink(12px, 6px);
+        @include mapLink(12px,
+        6px);
     }
     .quick-menu.quick-menu-tier-1 {
-        @include menuMapLink(-6px, -4px);
+        @include menuMapLink(-6px,
+        -4px);
     }
     .quick-menu.quick-menu-tier-2 {
-        @include menuMapLink(0px, -8px);
+        @include menuMapLink(0px,
+        -8px);
     }
     .quick-menu.quick-menu-tier-3 {
-        @include menuMapLink(0px, -23px);
+        @include menuMapLink(0px,
+        -23px);
+    }
+    .quick-menu.quick-menu-tier-4 {
+        @include menuMapLink(0px,
+        -38px);
     }
     .compendium-toc-full-text {
-        @include tocMapLink(4px, 0px);
+        @include tocMapLink(4px,
+        0px);
     }
 }
 

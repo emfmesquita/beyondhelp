@@ -221,6 +221,7 @@ const buildReferenceTooltip = function ({ refId, refUrl, src, subSrc, contentId,
                     // clone the element to not affect the cache and removes the images and image containers 
                     const clone = $(el).clone();
                     clone.find("img, .ddb-lightbox-outer").remove();
+                    clone.removeClass("adventure-read-aloud-text-truncated");
 
                     contentArray.push(clone[0].outerHTML);
                 });

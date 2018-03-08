@@ -1,0 +1,1 @@
+[map icon](https://fontawesome.com/icons/map?style=regular) by [Font Awesome](https://github.com/FortAwesome/Font-Awesome) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)
