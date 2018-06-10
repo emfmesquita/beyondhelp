@@ -92,6 +92,8 @@ srcTitleMap.set("tftypa5", "Dead in Thay");
 srcTitleMap.set("tftypa6", "Against the Giants");
 srcTitleMap.set("tftypa7", "Tomb of Horrors");
 srcTitleMap.set("toa", "Tomb of Annihilation");
+srcTitleMap.set("mtof", "Mordenkainen's Tome of Foes");
+srcTitleMap.set("ddia-mord", "Rrakkma");
 
 const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass }) {
     return new Promise((resolve, reject) => {
