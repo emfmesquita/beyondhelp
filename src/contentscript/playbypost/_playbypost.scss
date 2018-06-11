@@ -1,0 +1,15 @@
+// tooltip style inside monster stat block
+@mixin expando($type, $color, $border-color, $font-style) {
+    a.pbp-#{$type}-open {
+        text-color: 'green';
+        font-style: $font-style;
+        border-color: $border-color !important;
+    }
+    a.pbp-#{$type}-closed {
+        font-style: $font-style;
+        border-color: $border-color !important;
+    }
+}
+
+@include expando("notes-action-open", $ddb-orange, $orange-border, inherit);
+@include expando("notes-action-closed", $ddb-dark-blue, $orange-border, inherit);
