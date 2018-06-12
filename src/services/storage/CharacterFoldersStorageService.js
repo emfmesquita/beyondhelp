@@ -1,6 +1,6 @@
 import CharacterFoldersData from '../../data/CharacterFoldersData';
 import Q from "./Q";
-import StorageService from "./StorageService";
+import SyncStorageService from "./SyncStorageService";
 
 const id = (owner: string, campaign: string) => "bh-charfolders-" + owner + (campaign ? "-" + campaign : "");
 
@@ -15,7 +15,7 @@ class CharacterFoldersStorageService {
         if (!folders.storageId) {
             folders.storageId = id(owner, campaign);
         }
-        return StorageService.createData(null, folders);
+        return SyncStorageService.createData(null, folders);
     }
 
     /**
@@ -24,7 +24,7 @@ class CharacterFoldersStorageService {
      * @param {string} campaign id of the campaign.
      */
     static getCharacterFolders(owner: string, campaign: string): Promise<CharacterFoldersData> {
-        return StorageService.getData(id(owner, campaign));
+        return SyncStorageService.getData(id(owner, campaign));
     }
 }
 

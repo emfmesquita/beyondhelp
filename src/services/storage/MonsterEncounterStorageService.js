@@ -4,7 +4,7 @@ import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterListData from '../../data/MonsterListData';
 import Q from "./Q";
-import StorageService from "./StorageService";
+import SyncStorageService from "./SyncStorageService";
 import MonsterListStorageService from "./MonsterListStorageService";
 import MonsterStorageService from "./MonsterStorageService";
 
@@ -15,7 +15,7 @@ class MonsterEncounterStorageService {
     static getMonsterEncounters(): Promise<{ active: MonsterEncounterData, all: MonsterEncounterData[] }> {
         let storageData, result, listMap: Map<string, MonsterListData[]>, encounters: MonsterEncounterData[];
 
-        return StorageService.getStorageData().then(foundData => {
+        return SyncStorageService.getStorageData().then(foundData => {
             storageData = foundData;
             return ConfigStorageService.getConfig();
         }).then(config => {
@@ -28,7 +28,7 @@ class MonsterEncounterStorageService {
             }
 
             // mounts the tree of data of each encounter
-            encounters = StorageService.find(storageData, Q.clazz("MonsterEncounterData"))
+            encounters = SyncStorageService.find(storageData, Q.clazz("MonsterEncounterData"))
                 .sort((a: MonsterEncounterData, b: MonsterEncounterData) => a.name.localeCompare(b.name));
             const activeEncounter = encounters.find(encounter => encounter.storageId === config.activeEncounterId);
             result = { active: activeEncounter, all: encounters };
@@ -54,7 +54,7 @@ class MonsterEncounterStorageService {
     }
 
     static getEncounterLists(encounterId: string, storageData): MonsterListData[] {
-        return StorageService.find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounterId));
+        return SyncStorageService.find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounterId));
     }
 
     static createEncounter(name: string, optionalConfig: Configuration): Promise<MonsterEncounterData> {
@@ -62,10 +62,10 @@ class MonsterEncounterStorageService {
         const configPromise = optionalConfig ? Promise.resolve(optionalConfig) : ConfigStorageService.getConfig();
         return configPromise.then(result => {
             config = result;
-            return StorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, name));
+            return SyncStorageService.createData("MonsterEncounterData", new MonsterEncounterData(null, name));
         }).then(newEncounter => {
             config.activeEncounterId = newEncounter.storageId;
-            return StorageService.updateData(config).then(() => newEncounter);
+            return SyncStorageService.updateData(config).then(() => newEncounter);
         });
     }
 
@@ -76,18 +76,18 @@ class MonsterEncounterStorageService {
         const toDelete = [];
         return ConfigStorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
-            return StorageService.updateData(config);
+            return SyncStorageService.updateData(config);
         }).then(() => {
             const toDelete = [];
             toDelete.push(oldEncounter);
 
-            if (!oldEncounter.lists) return StorageService.deleteData(toDelete);
+            if (!oldEncounter.lists) return SyncStorageService.deleteData(toDelete);
 
             oldEncounter.lists.forEach(list => {
                 toDelete.push(list);
                 if (list.monsters) list.monsters.forEach(monster => toDelete.push(monster));
             });
-            return StorageService.deleteData(toDelete);
+            return SyncStorageService.deleteData(toDelete);
         });
     }
 }

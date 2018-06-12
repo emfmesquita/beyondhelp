@@ -4,25 +4,25 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
-    new MapInfo("TheForgottenRealms", "lmop/introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
-        new MapAreaInfo("Part1GoblinArrows", "124,385,144,405", "lmop/goblin-arrows"),
-        new MapAreaInfo("CragmawHideout", "249,574,269,594", "lmop/goblin-arrows"),
-        new MapAreaInfo("Part2Phandalin", "334,624,354,644", "lmop/phandalin"),
-        new MapAreaInfo("TriboarTrail", "363,497,405,532", "lmop/the-spiders-web"),
-        new MapAreaInfo("ConyberryandAgathasLair", "465,419,485,439", "lmop/the-spiders-web"),
-        new MapAreaInfo("ConyberryandAgathasLair", "490,424,510,444", "lmop/the-spiders-web"),
-        new MapAreaInfo("OldOwlWell", "542,490,562,510", "lmop/the-spiders-web"),
-        new MapAreaInfo("RuinsofThundertree", "238,372,258,392", "lmop/the-spiders-web"),
-        new MapAreaInfo("WyvernTor", "544,547,564,567", "lmop/the-spiders-web"),
-        new MapAreaInfo("CragmawCastle", "323,486,343,506", "lmop/the-spiders-web"),
-        new MapAreaInfo("Part4WaveEchoCave", "397,620,417,640", "lmop/wave-echo-cave"),
+    new MapInfo("TheForgottenRealms", "introduction", "lmop01.jpg", "ae56f101-0094-492f-95d7-11d9884069a0", [
+        new MapAreaInfo("Part1GoblinArrows", "124,385,144,405", "goblin-arrows"),
+        new MapAreaInfo("CragmawHideout", "249,574,269,594", "goblin-arrows"),
+        new MapAreaInfo("Part2Phandalin", "334,624,354,644", "phandalin"),
+        new MapAreaInfo("TriboarTrail", "363,497,405,532", "the-spiders-web"),
+        new MapAreaInfo("ConyberryandAgathasLair", "465,419,485,439", "the-spiders-web"),
+        new MapAreaInfo("ConyberryandAgathasLair", "490,424,510,444", "the-spiders-web"),
+        new MapAreaInfo("OldOwlWell", "542,490,562,510", "the-spiders-web"),
+        new MapAreaInfo("RuinsofThundertree", "238,372,258,392", "the-spiders-web"),
+        new MapAreaInfo("WyvernTor", "544,547,564,567", "the-spiders-web"),
+        new MapAreaInfo("CragmawCastle", "323,486,343,506", "the-spiders-web"),
+        new MapAreaInfo("Part4WaveEchoCave", "397,620,417,640", "wave-echo-cave"),
         new MapToMapAreaInfo("lmop02.jpg", "282,584,10"),
         new MapToMapAreaInfo("lmop03.jpg", "321,634,10"),
         new MapToMapAreaInfo("lmop05.jpg", "271,382,10"),
         new MapToMapAreaInfo("lmop06.jpg", "333,473,10"),
         new MapToMapAreaInfo("lmop07.jpg", "384,630,10")
     ]),
-    new MapInfo("CragmawHideout", "lmop/goblin-arrows", "lmop02.jpg", "fa674c90-e57f-415d-abf2-bbb34a9a2ec8", [
+    new MapInfo("CragmawHideout", "goblin-arrows", "lmop02.jpg", "fa674c90-e57f-415d-abf2-bbb34a9a2ec8", [
         new MapAreaInfo("1CaveMouth", "226,451,256,481"),
         new MapAreaInfo("2GoblinBlind", "395,423,425,453"),
         new MapAreaInfo("3Kennel", "423,309,453,339"),
@@ -43,7 +43,7 @@ const maps = [
         new MapAreaInfo().rho(569, 340, 589, 360).content("b3f02362-5e1f-4b88-97c6-13cc1507e91d"), // 8 - Natural Chimney
         new MapAreaInfo().rho(712, 453, 732, 473).content("24335813-1db6-4622-a7b0-5656f06d7f34", "529c6c0d-fa15-4234-95c2-8152b1682d6f") // 8 - Supplies
     ], ["#GeneralFeatures"]),
-    new MapInfo("Part2Phandalin", "lmop/phandalin", "lmop03.jpg", "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", [
+    new MapInfo("Part2Phandalin", "phandalin", "lmop03.jpg", "94bb7a72-912e-4fcc-8c16-cd48d3d888a2", [
         new MapAreaInfo("StonehillInn", "368,217,403,250"),
         new MapAreaInfo("BarthensProvisions", "420,147,464,195"),
         new MapAreaInfo("EdermathOrchard", "209,161,240,193"),
@@ -62,7 +62,7 @@ const maps = [
         new MapToMapAreaInfo("lmop04.jpg", "741,260,7")
     ], ["#EncountersinPhandalin", "#TownDescription", "#RoleplayingPhandalinNPCs", "#RedbrandRuffians",
             "#Confrontation"]).chMap(),
-    new MapInfo("RedbrandHideout", "lmop/phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
+    new MapInfo("RedbrandHideout", "phandalin", "lmop04.jpg", "871feea4-42a7-4301-a560-12276fce191b", [
         new MapAreaInfo("1Cellar", "678,452,708,482"),
         new MapAreaInfo("2Barracks", "481,394,511,424"),
         new MapAreaInfo("3TrappedHall", "735,310,765,340"),
@@ -105,7 +105,7 @@ const maps = [
         new MapAreaInfo().rho(220, 148, 240, 168).content("65dd4195-294a-4990-b95f-6adfb589933b"), // 12 - Treasure
         new MapToMapAreaInfo("lmop03.jpg", "809,437,15")
     ], ["#GeneralFeatures"]),
-    new MapInfo("RuinsofThundertree", "lmop/the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
+    new MapInfo("RuinsofThundertree", "the-spiders-web", "lmop05.jpg", "1aef539a-51d4-4126-9015-dba35c5a6a28", [
         new MapAreaInfo("1WesternmostCottage", "85,168,115,198"),
         new MapAreaInfo("2BlightedCottages", "197,253,227,283"),
         new MapAreaInfo("3TheBrownHorse", "254,55,284,85"),
@@ -133,7 +133,7 @@ const maps = [
         new MapAreaInfo().rho(753, 405, 773, 425).content("49a88624-1f6d-44cd-a254-c8257d482625"), // 13 - doors
         new MapAreaInfo().rho(738, 486, 758, 506).content("c174e393-dc67-44b4-a00c-c176a25cad83") // 13 - treasure
     ], ["#GeneralFeatures", "#AreasoftheRuins"]),
-    new MapInfo("CragmawCastle", "lmop/the-spiders-web", "lmop06.jpg", "e439ffb6-c94a-4319-b207-75a414a85f0d", [
+    new MapInfo("CragmawCastle", "the-spiders-web", "lmop06.jpg", "e439ffb6-c94a-4319-b207-75a414a85f0d", [
         new MapAreaInfo("1CastleEntrance", "99,309,129,339"),
         new MapAreaInfo("2TrappedHall", "206,254,236,284"),
         new MapAreaInfo("3ArcherPost", "153,390,183,420"),
@@ -166,7 +166,7 @@ const maps = [
         new MapAreaInfo().rho(617, 233, 637, 253).content("a1560108-9fb6-4bc5-a372-c1e6e9b096bf"), // 14 - dwarf
         new MapAreaInfo().rho(623, 98, 643, 118).content("95554e91-2fd0-468a-a4ac-4826402a1bc4") // 14 - treasure
     ], ["#GeneralFeatures[data-content-chunk-id='dc4878aa-5c53-46c8-b66e-5d6f5c6b0b3b']", "#AreasoftheCastle", "#ReturningWarBand"]),
-    new MapInfo("Part4WaveEchoCave", "lmop/wave-echo-cave", "lmop07.jpg", "d9a00d84-9469-4e1f-a53a-933c54bf40ef", [
+    new MapInfo("Part4WaveEchoCave", "wave-echo-cave", "lmop07.jpg", "d9a00d84-9469-4e1f-a53a-933c54bf40ef", [
         new MapAreaInfo("1CaveEntrance", "130,613,150,633"),
         new MapAreaInfo("2MineTunnels", "146,484,166,504"),
         new MapAreaInfo("3OldEntrance", "291,613,311,633"),
@@ -212,11 +212,13 @@ const maps = [
             "#GeneralFeatures", "#Conclusion"]).chMap()
 ];
 
-MapRefs.processMapToMapRefs(maps);
+const path = "adventures/lmop/";
+
+MapRefs.processMaps(maps, [], path);
 
 class MapsLMoP extends MapRefs {
     static get path() {
-        return "lmop/";
+        return path;
     }
 
     static get maps() {

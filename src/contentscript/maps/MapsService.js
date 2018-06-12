@@ -4,7 +4,11 @@ import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
 
 import $ from "jquery";
+import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import Configuration from "../../data/Configuration";
+import FormMapRefsData from "../../data/FormMapRefsData";
+import FormMapsService from "./FormMapsService";
+import LocationService from "../../services/LocationService";
 import MapAreaInfo from "./MapAreaInfo";
 import MapAreas from "./MapAreas";
 import MapInfo from "./MapInfo";
@@ -12,30 +16,28 @@ import MapLink from "./MapLink";
 import MapLinksInfo from "./MapLinksInfo";
 import MapMenuLink from "./MapMenuLink";
 import MapRefs from "./MapRefs";
-import MapsCoS from "./adventures/MapsCoS";
-import MapsHotDQ from "./adventures/MapsHotDQ";
-import MapsLMoP from "./adventures/MapsLMoP";
-import MapsOotA from "./adventures/MapsOotA";
-import MapsPotA from "./adventures/MapsPotA";
-import MapsRoT from "./adventures/MapsRoT";
-import MapsTftYP from "./adventures/MapsTftYP";
+import MapsCoS from "./compendiums/MapsCoS";
+import MapsHotDQ from "./compendiums/MapsHotDQ";
+import MapsLMoP from "./compendiums/MapsLMoP";
+import MapsOotA from "./compendiums/MapsOotA";
+import MapsPotA from "./compendiums/MapsPotA";
+import MapsRoT from "./compendiums/MapsRoT";
+import MapsTftYP from "./compendiums/MapsTftYP";
 import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
 import ReferencesUtils from "../../services/ReferencesUtils";
 
-const check = (path: string) => window.location.pathname.startsWith("/compendium/adventures/" + path);
-
 // creates both map refs and map links
 const processMapRefs = function (refsClass: typeof MapRefs, config: Configuration) {
     // is on toc
-    const isOnToc = window.location.pathname + "/" === "/compendium/adventures/" + refsClass.path;
-    if (isOnToc && config[Opt.MapTocLinks]) {
+    if (LocationService.isOnToc(refsClass.path) && config[Opt.MapTocLinks]) {
         processTocMapLinks(refsClass);
         return;
     }
 
-    if (!check(refsClass.path)) return;
+    // if not on compendium page just returns
+    if (!LocationService.isOnCompendium(refsClass.path)) return;
 
     // map refs + map links already defined on maps + map menu links
     refsClass.maps.forEach(map => processMap(map, config));
@@ -43,8 +45,8 @@ const processMapRefs = function (refsClass: typeof MapRefs, config: Configuratio
     // extra map links 
     if (!refsClass.extraMapLinks || !config[Opt.MapLinks]) return;
     refsClass.extraMapLinks.forEach(extraMapLinks => {
-        // chek if it is on the from page of the map links
-        if (check(extraMapLinks.fromPage)) processMapLinks(extraMapLinks);
+        // check if it is on the from page of the map links
+        if (LocationService.isOnCompendium(extraMapLinks.fromPage)) processMapLinks(extraMapLinks);
     });
 };
 
@@ -65,7 +67,7 @@ const processTocMapLinks = function (refsClass: typeof MapRefs) {
             return;
         }
 
-        const headerId = map.tocHeaderId || map.headerId;
+        const headerId = map.tocHeaderId || map.menuHeaderId;
         const selector = `.article-main a[href$='${map.isChapterMap ? map.page : "#" + headerId}']`;
         addMenuMapLink(map, $(selector), true);
     });
@@ -75,7 +77,7 @@ const processTocMapLinks = function (refsClass: typeof MapRefs) {
 const processMenuMapLink = function (map: MapInfo) {
     const jqMenu = $(".quick-menu.quick-menu-tier-1, .quick-menu.quick-menu-tier-2");
     if (jqMenu.length === 0) return;
-    addMenuMapLink(map, jqMenu.find(`a[href='#${map.headerId}']`));
+    addMenuMapLink(map, jqMenu.find(`a[href='#${map.menuHeaderId}']`));
 };
 
 // add a hoverable tooltip link to a map for every target with the corresponding selector
@@ -94,14 +96,14 @@ const processMapLinks = function (mapLinks: MapLinksInfo) {
 // creates the map areas for a map, that shows a tooltip
 const processMap = function (map: MapInfo, config: Configuration) {
     // chek if it is on the map page
-    if (!check(map.page)) return;
+    if (!LocationService.isOnCompendium(map.page)) return;
 
     // checks if map found
-    const jqMapImg = $(`img[src$='/${map.name}']`);
+    const jqMapImg = $(`img[src$='/${map.mapImageName}']`);
     if (jqMapImg.length === 0) return;
 
     // renders map areas
-    jqMapImg.attr("usemap", `#${map.name}`);
+    jqMapImg.attr("usemap", `#${map.mapImageName}`);
     const jqMapContainer = jqMapImg.parent();
     const jqAreasContainer = $("<div></div>");
     jqMapContainer.append(jqAreasContainer);
@@ -140,21 +142,33 @@ const scrollToContentIdReference = function () {
 class MapsService {
     static init(config: Configuration) {
         const path = window.location.pathname;
-        if (!check("")) return;
+        if (!LocationService.isOnCompendium("")) return;
 
-        // inits all maps of the current page
-        processMapRefs(MapsLMoP, config);
-        processMapRefs(MapsHotDQ, config);
-        processMapRefs(MapsRoT, config);
-        processMapRefs(MapsPotA, config);
-        processMapRefs(MapsOotA, config);
-        processMapRefs(MapsCoS, config);
-        processMapRefs(MapsTftYP, config);
+        ConfigStorageService.getFormMapRefs().then(formMapRefsData => {
+            // inits all maps of the current page
+            processMapRefs(MapsLMoP, config);
+            processMapRefs(MapsHotDQ, config);
+            processMapRefs(MapsRoT, config);
+            processMapRefs(MapsPotA, config);
+            processMapRefs(MapsOotA, config);
+            processMapRefs(MapsCoS, config);
+            processMapRefs(MapsTftYP, config);
 
-        // listen hash changes to scroll to refs with contentId
-        window.addEventListener("hashchange", scrollToContentIdReference, false);
-        // scroll to ref with contentId
-        scrollToContentIdReference();
+            // create map refs from form data added on options page
+            FormMapsService.buildMapRefs(formMapRefsData).forEach(mapRefs => {
+                try {
+                    processMapRefs(mapRefs, config);
+                } catch (e) {
+                    console.error(`Beyond Help: Failed to load map references from ${mapRefs.path}.`);
+                    console.error(e);
+                }
+            });
+
+            // listen hash changes to scroll to refs with contentId
+            window.addEventListener("hashchange", scrollToContentIdReference, false);
+            // scroll to ref with contentId
+            scrollToContentIdReference();
+        });
     }
 }
 

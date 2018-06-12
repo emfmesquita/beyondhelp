@@ -1,9 +1,13 @@
 import MapAreaInfo from "./MapAreaInfo";
+import C from "../../Constants";
 
 class MapToMapAreaInfo extends MapAreaInfo {
-    constructor(targetName: string, coords: string) {
-        super("", coords, null, null, false, true, "circle");
-        this.targetName = targetName;
+    constructor(targetImageName: string, coords: string) {
+        super("", coords);
+        this.addBackLink = false;
+        this.contentOnly = true;
+        this.shape = C.MapAreaCircle;
+        this.targetImageName = targetImageName;
     }
 }
 

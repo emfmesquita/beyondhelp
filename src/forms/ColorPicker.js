@@ -4,7 +4,7 @@ import { FormControl, InputGroup } from 'react-bootstrap';
 import React, { Component } from "react";
 
 import FieldLabel from "./FieldLabel";
-import MonsterMenuButton from "../monsterbuttons/MonsterMenuButton";
+import MenuButton from "../buttons/MenuButton";
 import { SketchPicker } from "react-color";
 import reactCSS from "reactcss";
 
@@ -36,7 +36,7 @@ class ColorPicker extends Component {
                                 />
                             </div> : null}
                         </div>
-                        <MonsterMenuButton icon="glyphicon-erase" title="Erase" onClick={() => this.props.onChange({ hex: null })} />
+                        <MenuButton icon="glyphicon-erase" title="Erase" onClick={() => this.props.onChange({ hex: null })} />
                     </div>
                 </InputGroup>
             </span>

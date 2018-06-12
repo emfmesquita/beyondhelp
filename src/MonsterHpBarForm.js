@@ -3,7 +3,7 @@ import './MonsterHpBarForm.css';
 import { FormControl, FormGroup, InputGroup } from 'react-bootstrap';
 import React, { Component } from 'react';
 
-import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import MenuButton from "./buttons/MenuButton";
 
 class MonsterHpBarForm extends Component {
     constructor(props) {
@@ -62,8 +62,8 @@ class MonsterHpBarForm extends Component {
             <FormGroup validationState={this.validate()} onBlur={this.props.onCancel}>
                 <InputGroup bsSize="small">
                     <InputGroup.Addon>
-                        <MonsterMenuButton icon="glyphicon-remove" onClick={this.props.onCancel} title="Cancel" />
-                        <MonsterMenuButton icon="glyphicon-ok" onClick={this.okClick} title="Change Hp" />
+                        <MenuButton icon="glyphicon-remove" onClick={this.props.onCancel} title="Cancel" />
+                        <MenuButton icon="glyphicon-ok" onClick={this.okClick} title="Change Hp" />
                     </InputGroup.Addon>
                     <FormControl type="text" value={this.state.value} onChange={this.changeValue} onKeyDown={this.keyDown} inputRef={this.inputRendered} />
                     <InputGroup.Addon>
