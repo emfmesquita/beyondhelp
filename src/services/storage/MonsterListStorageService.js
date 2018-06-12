@@ -3,7 +3,7 @@ import MonsterEncounterStorageService from "./MonsterEncounterStorageService";
 import MonsterListData from '../../data/MonsterListData';
 import Prefix from "./Prefix";
 import Q from "./Q";
-import StorageService from "./StorageService";
+import SyncStorageService from "./SyncStorageService";
 import MonsterData from '../../data/MonsterData';
 
 const getCurrentOrderValue = function (encounterId: string, storageData): number {
@@ -24,17 +24,17 @@ const getCurrentOrderWithEncounter = function (encounter: MonsterEncounterData):
 
 class MonsterListStorageService {
     static findList(storageId: string, storageData): MonsterListData {
-        return StorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", storageId));
+        return SyncStorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", storageId));
     }
 
     static findListGroupedByEncounter(storageData): Promise<Map<string, MonsterListData[]>> {
-        const listMap: Map<string, MonsterListData[]> = StorageService.findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
+        const listMap: Map<string, MonsterListData[]> = SyncStorageService.findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
         if (listMap.length === 0) {
             return Promise.resolve(listMap);
         }
 
         // check existing ordering info
-        const firstList: MonsterListData = StorageService.findSingle(storageData, Q.clazz("MonsterListData"));
+        const firstList: MonsterListData = SyncStorageService.findSingle(storageData, Q.clazz("MonsterListData"));
         let checkOrderPromise = Promise.resolve();
         if (firstList && (firstList.order === null || firstList.order === undefined)) {
             const toSaveLists = [];
@@ -47,20 +47,20 @@ class MonsterListStorageService {
                     toSaveLists.push(list);
                 });
             }
-            checkOrderPromise = StorageService.updateData(toSaveLists);
+            checkOrderPromise = SyncStorageService.updateData(toSaveLists);
         }
 
         return checkOrderPromise.then(() => listMap);
     }
 
     static getListMonsters(listId: string, storageData): MonsterData[] {
-        return StorageService.find(storageData, Q.clazz("MonsterData"), Q.eq("listId", listId));
+        return SyncStorageService.find(storageData, Q.clazz("MonsterData"), Q.eq("listId", listId));
     }
 
     static createList(name: string, monsterId: string, encounterId: string, storageData): Promise<MonsterListData> {
         const newList = new MonsterListData(null, encounterId, monsterId, name, 0);
         newList.order = getCurrentOrderValue(encounterId, storageData);
-        return StorageService.createData("MonsterListData", newList);
+        return SyncStorageService.createData("MonsterListData", newList);
     }
 
     static createCustomList(name: string, hpexp: string, encounter: MonsterEncounterData): Promise<MonsterListData> {
@@ -69,7 +69,7 @@ class MonsterListStorageService {
         const newList = new MonsterListData(newLisId, encounter.storageId, customMonsterId, name, 0);
         newList.order = getCurrentOrderWithEncounter(encounter);
         newList.hpexp = hpexp;
-        return StorageService.createData(null, newList);
+        return SyncStorageService.createData(null, newList);
     }
 
     static deleteList(list: MonsterListData): Promise {
@@ -77,7 +77,7 @@ class MonsterListStorageService {
         const toDelete = [];
         toDelete.push(list);
         if (list.monsters) list.monsters.forEach(monster => toDelete.push(monster));
-        return StorageService.deleteData(toDelete);
+        return SyncStorageService.deleteData(toDelete);
     }
 }
 

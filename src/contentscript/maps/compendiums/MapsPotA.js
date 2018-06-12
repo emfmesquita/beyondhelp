@@ -5,7 +5,7 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
-    new MapInfo("RedLarch", "pota/the-dessarin-valley", "02-02.jpg", "e29f8904-2e95-4794-b7a3-e70ef71ce0b2", [
+    new MapInfo("RedLarch", "the-dessarin-valley", "02-02.jpg", "e29f8904-2e95-4794-b7a3-e70ef71ce0b2", [
         new MapAreaInfo("1AllfaithsShrine", "339,244,364,269"),
         new MapAreaInfo("2TheSwingingSword", "311,193,336,218"),
         new MapAreaInfo("3TheHelmatHighsun", "533,148,558,173"),
@@ -32,7 +32,7 @@ const maps = [
         new MapToMapAreaInfo("06-03.jpg", "537,347,7")
     ], ["#ImportantRedLarchers", "#TheBelievers", "#AdventureinRedLarch",
             "#RumorsofEvil", "#RedLarchLocations", "#ScandalandRebuilding"]),
-    new MapInfo("ExploringtheValley", "pota/the-dessarin-valley", "02-01.jpg", "fe5bf95b-c3b5-4881-9866-ba6bb7b8bc68", [
+    new MapInfo("ExploringtheValley", "the-dessarin-valley", "02-01.jpg", "fe5bf95b-c3b5-4881-9866-ba6bb7b8bc68", [
         new MapAreaInfo("Amphail", "130,991,148,1009"),
         new MapAreaInfo("BargewrightInn", "349,867,367,885"),
         new MapAreaInfo("Beliard", "487,529,505,547"),
@@ -62,8 +62,8 @@ const maps = [
         new MapAreaInfo("Homesteads", "599,475,617,493"),
         new MapAreaInfo("Homesteads", "687,452,705,470"),
         new MapAreaInfo("Homesteads", "334,364,352,382"),
-        new MapAreaInfo("ShallowGraves", "353,703,371,721", "pota/secret-of-the-sumber-hills"),
-        new MapAreaInfo("TheDessarinRoad", "462,580,480,598", "pota/secret-of-the-sumber-hills"),
+        new MapAreaInfo("ShallowGraves", "353,703,371,721", "secret-of-the-sumber-hills"),
+        new MapAreaInfo("TheDessarinRoad", "462,580,480,598", "secret-of-the-sumber-hills"),
         new MapToMapAreaInfo("02-02.jpg", "235,676,5"),
         new MapToMapAreaInfo("03-01.jpg", "310,669,5"),
         new MapToMapAreaInfo("03-03.jpg", "452,652,5"),
@@ -78,7 +78,7 @@ const maps = [
         new MapToMapAreaInfo("06-09.jpg", "574,619,5")
     ], ["#Travel", "#RandomEncounters", "#EarlyTravels", "#RiverTravels", "#LaterTravels",
             "#ValleySites", "#HauntedKeeps", "#Neverwinter", "#Waterdeep"]),
-    new MapInfo("FeathergaleSpire", "pota/secret-of-the-sumber-hills", "03-01.jpg", "99af7c86-1f99-41cd-aaba-ae245ff09ba1", [
+    new MapInfo("FeathergaleSpire", "secret-of-the-sumber-hills", "03-01.jpg", "99af7c86-1f99-41cd-aaba-ae245ff09ba1", [
         new MapAreaInfo("S1StableLevel", "130,655,155,670"),
         new MapAreaInfo("S2FrontHall", "105,493,130,508"),
         new MapAreaInfo("S3WeaponsLocker", "116,520,141,535"),
@@ -98,7 +98,7 @@ const maps = [
         new MapAreaInfo("S11Pinnacle", "144,171,169,186"),
         new MapToMapAreaInfo("03-02.jpg", "66,500,10")
     ], ["#SpireApproach", "#SpireFeatures", "#FeathergaleMoat", "#AreasoftheSpire"]),
-    new MapInfo("SighingValley", "pota/secret-of-the-sumber-hills", "03-02.jpg", "779112a6-be6a-43ab-ae98-42e48789bd77", [
+    new MapInfo("SighingValley", "secret-of-the-sumber-hills", "03-02.jpg", "779112a6-be6a-43ab-ae98-42e48789bd77", [
         new MapAreaInfo("V1FeathergaleSpire", "173,131,208,156"),
         new MapAreaInfo("V2DeadRocks", "307,141,342,166"),
         new MapAreaInfo("V3KnifepointGully", "452,162,487,187"),
@@ -111,7 +111,7 @@ const maps = [
         new MapToMapAreaInfo("03-01.jpg", "159,173,10"),
         new MapToMapAreaInfo("04-01.jpg", "537,158,10")
     ], ["#Features", "#AreasoftheValley"]),
-    new MapInfo("RivergardKeep", "pota/secret-of-the-sumber-hills", "03-03.jpg", "1e392996-5a6b-47ed-9bc8-7e1b640cc254", [
+    new MapInfo("RivergardKeep", "secret-of-the-sumber-hills", "03-03.jpg", "1e392996-5a6b-47ed-9bc8-7e1b640cc254", [
         new MapAreaInfo("K1FrontGate", "291,396,321,416"),
         new MapAreaInfo("K2Gatehouse", "340,466,370,486"),
         new MapAreaInfo("K3GatehouseUpperFloor", "100,346,130,366"),
@@ -139,7 +139,7 @@ const maps = [
         new MapAreaInfo().rect(96, 83, 111, 98).content("c67bf4b3-2754-434b-a90d-fa44263a6c53") // 19 - secret
     ], ["#InvestigatingRivergard", "#KeepFeatures", "#RaisingtheAlarm", "#AreasoftheKeep",
             "#Conclusion[data-content-chunk-id='e7adb907-6627-404c-8fcf-bd47fc9090f1']"]),
-    new MapInfo("SacredStoneMonastery", "pota/secret-of-the-sumber-hills", "03-04.jpg", "460b0128-bf86-4fca-b896-75e957df0402", [
+    new MapInfo("SacredStoneMonastery", "secret-of-the-sumber-hills", "03-04.jpg", "460b0128-bf86-4fca-b896-75e957df0402", [
         new MapAreaInfo("M1PassageofStone", "217,357,247,372"),
         new MapAreaInfo("M2BasaltHall", "217,306,247,321"),
         new MapAreaInfo("M3SouthDormitory", "159,314,189,329"),
@@ -169,7 +169,7 @@ const maps = [
         new MapToMapAreaInfo("04-03.jpg", "107,466,8")
     ], ["#InvestigatingtheMonastery", "#MonasteryFeatures", "#AreasoftheMonastery",
             "#Conclusion[data-content-chunk-id='a7186188-9c4b-4c75-ad9f-667b62b4f05d']"]),
-    new MapInfo("ScarletMoonHall", "pota/secret-of-the-sumber-hills", "03-05.jpg", "0a4bb389-5e2c-454c-8057-749adb2d8ba3", [
+    new MapInfo("ScarletMoonHall", "secret-of-the-sumber-hills", "03-05.jpg", "0a4bb389-5e2c-454c-8057-749adb2d8ba3", [
         new MapAreaInfo("Hc1DruidCamp", "167,488,197,503"),
         new MapAreaInfo("Hc2CultCamp", "394,470,424,485"),
         new MapAreaInfo("Hc3WerewolfCamp", "184,330,214,345"),
@@ -188,7 +188,7 @@ const maps = [
         new MapAreaInfo("H9BatsintheAttic", "703,145,733,160"),
         new MapToMapAreaInfo("04-04.jpg", "715,508,13")
     ], ["#AreaFeatures", "#AscendingtheSlope", "#AreasoftheHall", "#Conclusion[data-content-chunk-id='21ae871e-00d0-4615-8bbb-61a633d53d26']"]),
-    new MapInfo("TempleofHowlingHatred", "pota/air-earth-fire-and-water", "04-01.jpg", "ddcc6bed-90f4-410d-8344-591468d49634", [
+    new MapInfo("TempleofHowlingHatred", "air-earth-fire-and-water", "04-01.jpg", "ddcc6bed-90f4-410d-8344-591468d49634", [
         new MapAreaInfo("A1PalaceQuarterEntrance", "39,727,64,742"),
         new MapAreaInfo("A2Gatehouse", "125,695,150,710"),
         new MapAreaInfo("A3MachineChamber", "326,576,351,591"),
@@ -224,7 +224,7 @@ const maps = [
         new MapToMapAreaInfo("05-02.jpg", "541,248,10")
     ], ["#TempleFeatures[data-content-chunk-id='02c47328-f6b2-440b-b73d-73bfb4316681']",
             "#AreasoftheAirTemple", "#Conclusion[data-content-chunk-id='9bd73af5-7abe-41fd-89c6-7fb8a5bb3733']"]),
-    new MapInfo("TempleoftheCrushingWave", "pota/air-earth-fire-and-water", "04-02.jpg", "5df69135-caa9-4457-8117-1860e492c22a", [
+    new MapInfo("TempleoftheCrushingWave", "air-earth-fire-and-water", "04-02.jpg", "5df69135-caa9-4457-8117-1860e492c22a", [
         new MapAreaInfo("C1LakeLanding", "496,641,521,656"),
         new MapAreaInfo("C2Canals", "446,508,471,523"),
         new MapAreaInfo("C2Canals", "227,563,252,578"),
@@ -260,7 +260,7 @@ const maps = [
         new MapToMapAreaInfo("05-01.jpg", "60,195,8")
     ], ["#TheDarkStream", "#TempleFeatures[data-content-chunk-id='44f480df-2418-4ca8-9b13-f703153997cb']",
             "#AreasoftheWaterTemple", "#Conclusion[data-content-chunk-id='8120bfd2-962b-479c-ad0f-a0554344cddd']"]),
-    new MapInfo("TempleofBlackEarth", "pota/air-earth-fire-and-water", "04-03.jpg", "2f49eeab-9095-4356-8374-99a4e5c81bab", [
+    new MapInfo("TempleofBlackEarth", "air-earth-fire-and-water", "04-03.jpg", "2f49eeab-9095-4356-8374-99a4e5c81bab", [
         new MapAreaInfo("B1GargoyleChasm", "502,119,527,134"),
         new MapAreaInfo("B2NorthChasm", "325,117,350,132"),
         new MapAreaInfo("B3RuinedGates", "457,213,482,228"),
@@ -293,7 +293,7 @@ const maps = [
         new MapToMapAreaInfo("05-01.jpg", "110,450,7")
     ], ["#TheAncientStair", "#TempleFeatures[data-content-chunk-id='8c22d4d4-04f9-4512-83de-73b18c4e776d']",
             "#AreasoftheEarthTemple", "#Conclusion[data-content-chunk-id='719aeebd-a0aa-4b38-8e45-8bff7e6deea2']"]),
-    new MapInfo("TempleofEternalFlame", "pota/air-earth-fire-and-water", "04-04.jpg", "3bb5243a-4744-46d6-9204-360a87baf43e", [
+    new MapInfo("TempleofEternalFlame", "air-earth-fire-and-water", "04-04.jpg", "3bb5243a-4744-46d6-9204-360a87baf43e", [
         new MapAreaInfo("E1Entrance", "137,95,162,110"),
         new MapAreaInfo("E2ColumnedChamber", "238,94,263,109"),
         new MapAreaInfo("E3NicheHall", "402,84,427,99"),
@@ -333,7 +333,7 @@ const maps = [
         new MapToMapAreaInfo("05-01.jpg", "463,405,8")
     ], ["#LavaTubes", "#TempleFeatures[data-content-chunk-id='04b27d5e-013e-4ce3-8b54-846c7f107ab3']",
             "#AreasoftheFireTemple", "#Conclusion[data-content-chunk-id='c92ab260-a08a-48bf-a8c1-3181caba57a2']"]),
-    new MapInfo("FaneoftheEye", "pota/temple-of-the-elder-elemental-eye", "05-01.jpg", "6ed2ba96-a7a7-4169-afb7-20a84dda4695", [
+    new MapInfo("FaneoftheEye", "temple-of-the-elder-elemental-eye", "05-01.jpg", "6ed2ba96-a7a7-4169-afb7-20a84dda4695", [
         new MapAreaInfo("F1WormsStair", "167,686,192,701"),
         new MapAreaInfo("F2HowlingPit", "59,528,84,543"),
         new MapAreaInfo("F3WindPrison", "282,604,307,619"),
@@ -364,7 +364,7 @@ const maps = [
         new MapToMapAreaInfo("05-04.jpg", "471,228,7"),
         new MapToMapAreaInfo("05-05.jpg", "97,135,7")
     ], ["#FaneFeatures", "#AreasoftheFane", "#Conclusion[data-content-chunk-id='588feb41-80d0-4b96-b9ad-d1169d5bc8ef']"]),
-    new MapInfo("TheHowlingCaves", "pota/temple-of-the-elder-elemental-eye", "05-02.jpg", "baeb48a7-55aa-4bde-83fe-218cacd5005e", [
+    new MapInfo("TheHowlingCaves", "temple-of-the-elder-elemental-eye", "05-02.jpg", "baeb48a7-55aa-4bde-83fe-218cacd5005e", [
         new MapAreaInfo("N1Entrance", "198,438,228,463"),
         new MapAreaInfo("N2DeadlyPool", "246,240,276,265"),
         new MapAreaInfo("N3Oubliette", "274,126,304,151"),
@@ -387,7 +387,7 @@ const maps = [
         new MapAreaInfo("N19AirPortal", "729,98,769,123"),
         new MapToMapAreaInfo("05-01.jpg", "198,401,8")
     ], ["#CaveFeatures", "#AreasoftheCaves"]),
-    new MapInfo("ThePlungingTorrents", "pota/temple-of-the-elder-elemental-eye", "05-03.jpg", "5cfb5219-3715-4fe4-85c3-06584cb3d4c4", [
+    new MapInfo("ThePlungingTorrents", "temple-of-the-elder-elemental-eye", "05-03.jpg", "5cfb5219-3715-4fe4-85c3-06584cb3d4c4", [
         new MapAreaInfo("P1WaterfallBasin", "293,145,318,165"),
         new MapAreaInfo("P2PlungingPassage", "208,105,233,125"),
         new MapAreaInfo("P3Nets", "95,230,120,250"),
@@ -413,7 +413,7 @@ const maps = [
         new MapAreaInfo().rect(335, 317, 355, 337).content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
         new MapToMapAreaInfo("05-01.jpg", "307,224,7")
     ], ["#TorrentsFeatures", "#AreasoftheTorrents"]).tocHId("ThePlungingTorrent"),
-    new MapInfo("TheBlackGeode", "pota/temple-of-the-elder-elemental-eye", "05-04.jpg", "0b40b5b9-5f7a-4afd-84d4-24e9e73d3850", [
+    new MapInfo("TheBlackGeode", "temple-of-the-elder-elemental-eye", "05-04.jpg", "0b40b5b9-5f7a-4afd-84d4-24e9e73d3850", [
         new MapAreaInfo("G1HalloftheGuardians", "429,671,459,686"),
         new MapAreaInfo("G2KeltarandGorx", "299,613,329,628"),
         new MapAreaInfo("G3RoperDen", "473,570,503,585"),
@@ -435,7 +435,7 @@ const maps = [
         new MapAreaInfo().rect(201, 649, 216, 664).content("883751bb-baeb-4779-b0f6-370ced95fb02"), // 4 - secret
         new MapToMapAreaInfo("05-01.jpg", "569,670,7")
     ], ["#GeodeFeatures", "#AreasoftheGeode"]),
-    new MapInfo("TheWeepingColossus", "pota/temple-of-the-elder-elemental-eye", "05-05.jpg", "557cf502-a32a-4c9f-a636-f257fdd82e88", [
+    new MapInfo("TheWeepingColossus", "temple-of-the-elder-elemental-eye", "05-05.jpg", "557cf502-a32a-4c9f-a636-f257fdd82e88", [
         new MapAreaInfo("W1VolcanicShaft", "113,680,143,695"),
         new MapAreaInfo("W2SentryChamber", "87,558,117,573"),
         new MapAreaInfo("W3Causeway", "196,604,226,619"),
@@ -455,7 +455,7 @@ const maps = [
         new MapAreaInfo().rect(113, 469, 128, 484).content("6018e0d8-e1a9-4f41-a113-971ab69b49fc"), // d
         new MapToMapAreaInfo("05-01.jpg", "166,688,10")
     ], ["#ColossusFeatures", "#AreasoftheColossus"]),
-    new MapInfo("TroubleinRedLarch", "pota/alarums-and-excursions", "06-01.jpg", "0054d732-e312-4acd-8b6e-807204bae534", [
+    new MapInfo("TroubleinRedLarch", "alarums-and-excursions", "06-01.jpg", "0054d732-e312-4acd-8b6e-807204bae534", [
         new MapAreaInfo("LanceRock", "92,145,122,175"),
         new MapAreaInfo("BearsandBows", "117,386,147,416"),
         new MapAreaInfo("HauntedTomb", "278,353,308,383"),
@@ -466,7 +466,7 @@ const maps = [
         new MapToMapAreaInfo("03-01.jpg", "154,782,10"),
         new MapToMapAreaInfo("03-05.jpg", "361,780,10")
     ], ["#ArrivalinRedLarch", "#IntotheWilderness"]),
-    new MapInfo("NecromancersCave", "pota/alarums-and-excursions", "06-02.jpg", "b2703f0f-ecd2-48e0-8e69-c178694b2291", [
+    new MapInfo("NecromancersCave", "alarums-and-excursions", "06-02.jpg", "b2703f0f-ecd2-48e0-8e69-c178694b2291", [
         new MapAreaInfo("L1EntryCave", "439,697,469,727"),
         new MapAreaInfo("L2GuardCave", "423,470,453,500"),
         new MapAreaInfo("L3CorpseCave", "511,435,541,465"),
@@ -475,7 +475,7 @@ const maps = [
         new MapAreaInfo("L6Study", "424,103,454,133"),
         new MapToMapAreaInfo("06-01.jpg", "212,712,15")
     ], []),
-    new MapInfo("TombofMovingStones", "pota/alarums-and-excursions", "06-03.jpg", "532eb525-2dbb-40d7-9f08-c855463cc2f1", [
+    new MapInfo("TombofMovingStones", "alarums-and-excursions", "06-03.jpg", "532eb525-2dbb-40d7-9f08-c855463cc2f1", [
         new MapAreaInfo("T1EntryCavern", "114,334,139,359"),
         new MapAreaInfo("T2StoneSentinels", "234,345,259,370"),
         new MapAreaInfo("T3CageTrap", "348,344,373,369"),
@@ -491,14 +491,14 @@ const maps = [
         new MapToMapAreaInfo("02-02.jpg", "169,33,7"),
         new MapToMapAreaInfo("02-02.jpg", "816,509,7")
     ], ["#Sinkhole", "#Conclusion[data-content-chunk-id='fd884ea4-7d19-4d91-9061-c35637f5d0be']"]),
-    new MapInfo("NewManagement", "pota/alarums-and-excursions", "06-04.jpg", "5e0d324f-bc46-4f7e-ba4d-b3821ca738c0", [
+    new MapInfo("NewManagement", "alarums-and-excursions", "06-04.jpg", "5e0d324f-bc46-4f7e-ba4d-b3821ca738c0", [
     ], ["#Setup[data-content-chunk-id='e65a5c50-5f40-414b-a433-1632ea7f6254']", "#KeyDuty", "#SearchfortheKeys",
             "#StrongRoomBurglary", "#GeneralAlarm", "#Conclusion[data-content-chunk-id='108d18ac-0934-49ca-bd66-5e5ea8333fbf']"]),
-    new MapInfo("DellmonRanch", "pota/alarums-and-excursions", "06-05.jpg", "5b430fb5-5a6f-4b83-99ee-30a1220a7e3b", [
+    new MapInfo("DellmonRanch", "alarums-and-excursions", "06-05.jpg", "5b430fb5-5a6f-4b83-99ee-30a1220a7e3b", [
     ], ["#RunningtheSiege", "#Conclusion[data-content-chunk-id='e8c5fe46-85c2-4167-8c8a-4c3e0abce064']"]),
-    new MapInfo("BarrowMound", "pota/alarums-and-excursions", "06-06.jpg", "4930d97b-36bb-423c-a833-223294a202d1", [
+    new MapInfo("BarrowMound", "alarums-and-excursions", "06-06.jpg", "4930d97b-36bb-423c-a833-223294a202d1", [
     ], ["#UthgardtVengeance"]),
-    new MapInfo("ShrineoftheTenderOath", "pota/alarums-and-excursions", "06-07.jpg", "e0c22939-2e27-4702-95f8-352f5f1faf3a", [
+    new MapInfo("ShrineoftheTenderOath", "alarums-and-excursions", "06-07.jpg", "e0c22939-2e27-4702-95f8-352f5f1faf3a", [
         new MapAreaInfo("D1Switchbacks", "388,653,423,683"),
         new MapAreaInfo("D2ShrineEntrance", "315,442,350,472"),
         new MapAreaInfo("D3Courtyard", "317,368,352,398"),
@@ -508,11 +508,11 @@ const maps = [
         new MapAreaInfo("D7Temple", "167,646,202,676")
     ], ["#Setup[data-content-chunk-id='a571bbcf-ec5a-4dbe-a401-da15874b6d7d']",
             "#Conclusion[data-content-chunk-id='b7318e2a-61c0-4ab7-8c8f-7711652380da']"]),
-    new MapInfo("DarkDealingsinYartar", "pota/alarums-and-excursions", "06-08.jpg", "d2b46f27-42ce-4fe7-ba66-03e1bd78539a", [
+    new MapInfo("DarkDealingsinYartar", "alarums-and-excursions", "06-08.jpg", "d2b46f27-42ce-4fe7-ba66-03e1bd78539a", [
     ], ["#Background[data-content-chunk-id='8d48f244-b2ad-4c6d-a387-c0522423d8b0']",
             "#Setup[data-content-chunk-id='f8889f1f-1d32-49b9-80a9-c2a459a45b11']", "#ArrivalinYartar", "#TheWinkandKiss",
             "#MeetingattheTomb", "#Conclusion[data-content-chunk-id='022307cb-a386-4a20-9e11-69371b3a1784']"]),
-    new MapInfo("HallsoftheHuntingAxe", "pota/alarums-and-excursions", "06-09.jpg", "fc40fcb9-c4b4-4659-b839-4ebc2be5a8b0", [
+    new MapInfo("HallsoftheHuntingAxe", "alarums-and-excursions", "06-09.jpg", "fc40fcb9-c4b4-4659-b839-4ebc2be5a8b0", [
         new MapAreaInfo("X1OwlbearGreetings", "275,543,310,563"),
         new MapAreaInfo("X2CrumblingArch", "195,447,230,467"),
         new MapAreaInfo("X3Watchtower", "416,431,451,451"),
@@ -530,16 +530,18 @@ const maps = [
 ];
 
 const extraMapLinks = [
-    new MapLinksInfo("pota/secret-of-the-sumber-hills", "pota/the-dessarin-valley", "fe5bf95b-c3b5-4881-9866-ba6bb7b8bc68", [
+    new MapLinksInfo("secret-of-the-sumber-hills", "the-dessarin-valley", "fe5bf95b-c3b5-4881-9866-ba6bb7b8bc68", [
         "#ShallowGraves"
     ])
 ];
 
-MapRefs.processMapToMapRefs(maps);
+const path = "adventures/pota/";
+
+MapRefs.processMaps(maps, extraMapLinks, path);
 
 class MapsPotA extends MapRefs {
     static get path() {
-        return "pota/";
+        return path;
     }
 
     static get maps() {

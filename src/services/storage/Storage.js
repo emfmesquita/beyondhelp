@@ -9,16 +9,16 @@ import Prefix from "./Prefix";
 
 type StorageData = { [key: string]: Data }
 
-const getStorageData = function (id: string): Promise<StorageData> {
+const getStorageData = function (id: string, storage): Promise<StorageData> {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.get(id ? id : null, (storageData: StorageData) => {
+        storage.get(id ? id : null, (storageData: StorageData) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(storageData);
         });
     });
 };
 
-const getData = function (id: string): Promise<Data> {
-    return getStorageData(id).then(storageData => storageData[id]);
+const getData = function (id: string, storage): Promise<Data> {
+    return getStorageData(id, storage).then(storageData => storageData[id]);
 };
 
 const innerFind = function (data: Data, queries): boolean {
@@ -64,7 +64,7 @@ const prepareData = function (data: Data, storageIdHandler: Function, storageEnt
     storageEntry[clone.storageId] = clone;
 };
 
-const createData = function (dataClass: string, data: Data | Data[]): Promise {
+const createData = function (dataClass: string, data: Data | Data[], storage): Promise {
     return new Promise((resolve, reject) => {
         const storageEntry: StorageData = {};
         if (Array.isArray(data)) {
@@ -75,63 +75,67 @@ const createData = function (dataClass: string, data: Data | Data[]): Promise {
             prepareData(data, () => Prefix.createStorageId(dataClass), storageEntry);
         }
 
-        chrome.storage.sync.set(storageEntry, () => {
+        storage.set(storageEntry, () => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(data);
             MessageService.send(C.ReloadMessage);
         });
     });
 };
 
-const updateData = function (data: Data | Data[]): Promise {
-    return createData(null, data);
+const updateData = function (data: Data | Data[], storage): Promise {
+    return createData(null, data, storage);
 };
 
-const deleteData = function (data: Data | Data[]): Promise<Data> {
+const deleteData = function (data: Data | Data[], storage): Promise<Data> {
     return new Promise((resolve, reject) => {
         const toDelete = Array.isArray(data) ? data.map((d) => d.storageId) : data.storageId;
-        chrome.storage.sync.remove(toDelete, (error) => {
+        storage.remove(toDelete, (error) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve();
             MessageService.send(C.ReloadMessage);
         });
     });
 };
 
-class StorageService {
+class Storage {
 
-    static getData(id: string): Promise<Data> {
-        return getData(id);
+    constructor(storage) {
+        this.storage = storage;
+    }
+
+    getData(id: string): Promise<Data> {
+        return getData(id, this.storage);
     }
 
     /**
      * @param {string} id If null get all entries.
      */
-    static getStorageData(id: string): Promise<StorageData> {
-        return getStorageData(id);
+    getStorageData(id: string): Promise<StorageData> {
+        return getStorageData(id, this.storage);
     }
 
-    static findSingle(storageData: StorageData, ...queries): Data {
+    findSingle(storageData: StorageData, ...queries): Data {
         return findSingle(storageData, ...queries);
     }
 
-    static find(storageData: StorageData, ...queries): Data[] {
+    find(storageData: StorageData, ...queries): Data[] {
         return find(storageData, ...queries);
     }
 
-    static findGroupedBy(storageData: StorageData, groupProp: string, ...queries): Map<string, Data[]> {
+    findGroupedBy(storageData: StorageData, groupProp: string, ...queries): Map<string, Data[]> {
         return findGroupedBy(storageData, groupProp, ...queries);
     }
 
-    static createData(dataClass: string, data: Data | Data[]): Promise {
-        return createData(dataClass, data);
+    createData(dataClass: string, data: Data | Data[]): Promise {
+        return createData(dataClass, data, this.storage);
     }
 
-    static updateData(data: Data | Data[]): Promise {
-        return updateData(data);
+    updateData(data: Data | Data[]): Promise {
+        return updateData(data, this.storage);
     }
 
-    static deleteData(data: Data | Data[]): Promise<Data> {
-        return deleteData(data);
+    deleteData(data: Data | Data[]): Promise<Data> {
+        return deleteData(data, this.storage);
     }
 }
 
-export default StorageService;
+export default Storage;

@@ -4,7 +4,7 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
-    new MapInfo("IceCaves", "rot/the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
+    new MapInfo("IceCaves", "the-sea-of-moving-ice", "rot-02-03.jpg", "e3fea37a-8d3e-4a7c-9a51-a780b8bf643e", [
         new MapAreaInfo("1EntrancefromHut", "444,190,474,220"),
         new MapAreaInfo("2EntrancefromtheVillageHall", "275,258,305,288"),
         new MapAreaInfo("3Larder", "300,323,330,353"),
@@ -29,7 +29,7 @@ const maps = [
     ], ["#GeneralFeatures", "#AreasoftheCaves", "#RandomEncounters[data-content-chunk-id='34c6bfea-0aee-4252-b97c-6f110a1a193b']",
             "#ArauthatorsLair", "#GeneralFeatures[data-content-chunk-id='efc979a9-3dd3-4074-9a82-5e9d6c8ed4d8']",
             "#AreasoftheLair", "#Developments", "#LeavingOyaviggaton", "#ArauthatorsTreasure", "#Conclusion"]),
-    new MapInfo("TombofDiderius", "rot/death-to-the-wyrmspeakers", "rot-03-02.jpg", "d50b8095-dbcb-47ea-91d2-2611447ee518", [
+    new MapInfo("TombofDiderius", "death-to-the-wyrmspeakers", "rot-03-02.jpg", "d50b8095-dbcb-47ea-91d2-2611447ee518", [
         new MapAreaInfo("1EntrancePlaza", "217,160,247,190"),
         new MapAreaInfo("2Antechamber", "277,159,307,189"),
         new MapAreaInfo("3WatchfulStatues", "375,161,405,191"),
@@ -60,7 +60,7 @@ const maps = [
     ], ["#AreasoftheTomb", "#GeneralFeatures[data-content-chunk-id='45aaacdd-3ffa-4b73-bd1a-b00a4ff2819e']", "#Sstckal",
             "#GeneralFeatures[data-content-chunk-id='00e1e9f9-9e4f-4e2f-88e9-9c8190ac1097']", "#AreasoftheCavern",
             "#Conclusion[data-content-chunk-id='bb9b7258-1523-4dd3-b7bf-7ebe94fe1cdb']"]),
-    new MapInfo("NeronvainsStronghold", "rot/death-to-the-wyrmspeakers", "rot-03-05.jpg", "0b02d7d7-9d5c-4700-a8a2-e12ba1dd5f91", [
+    new MapInfo("NeronvainsStronghold", "death-to-the-wyrmspeakers", "rot-03-05.jpg", "0b02d7d7-9d5c-4700-a8a2-e12ba1dd5f91", [
         new MapAreaInfo("1Pool", "63,53,93,83"),
         new MapAreaInfo("2IslandChamber", "309,296,339,326"),
         new MapAreaInfo("3EttinLair", "120,323,150,353"),
@@ -76,7 +76,7 @@ const maps = [
         new MapAreaInfo().rect(584, 278, 614, 308).content("fa753c7c-aaad-4cda-b38d-7eabf7c3a670") // 8 - secret
     ], ["#AreasoftheStronghold", "#GeneralFeatures[data-content-chunk-id='42b421c6-c9fa-4ac4-a44e-ae0b221aeffe']",
             "#Conclusion[data-content-chunk-id='6b340ee5-bb5b-488c-925d-268005a1c662']"]),
-    new MapInfo("Episode7XonthalsTower", "rot/xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
+    new MapInfo("Episode7XonthalsTower", "xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
         new MapAreaInfo("1TheSundial", "128,69,153,94"),
         new MapAreaInfo("2ChuulPool", "185,183,210,208"),
         new MapAreaInfo("3CyclopesPasture", "438,185,463,210"),
@@ -113,7 +113,7 @@ const maps = [
             "#TheTower", "#GeneralFeatures[data-content-chunk-id='48f3bf14-d9ff-42b2-9784-c824fd5b3657']",
             "#Dungeon", "#GeneralFeatures[data-content-chunk-id='54e1f60d-a25b-4728-88fe-b2f87f955e0a']",
             "#ExitingXonthalsTower", "#Conclusion"]).chMap(),
-    new MapInfo("TheWellofDragons", "rot/tiamats-return", "rot-08-02.jpg", "52a8065e-eaa7-4758-b0d0-b87395d35d3b", [
+    new MapInfo("TheWellofDragons", "tiamats-return", "rot-08-02.jpg", "52a8065e-eaa7-4758-b0d0-b87395d35d3b", [
         new MapAreaInfo("1A1B1CNorthEntrances", "63,99,83,119"),
         new MapAreaInfo("1A1B1CNorthEntrances", "371,89,391,109"),
         new MapAreaInfo("1A1B1CNorthEntrances", "459,168,479,188"),
@@ -145,7 +145,7 @@ const maps = [
         new MapAreaInfo("24TempleExit", "261,424,281,444"),
         new MapToMapAreaInfo("rot-08-04.jpg", "307,386,20")
     ], ["#LavaTubesandWarrens", "#GeneralFeatures[data-content-chunk-id='cf80f0a2-889c-46d5-9962-daf34a2d8e9c']", "#WithintheWellofDragons"]),
-    new MapInfo("TiamatsTemple", "rot/tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
+    new MapInfo("TiamatsTemple", "tiamats-return", "rot-08-04.jpg", "23ce74de-a7f5-42ce-ba6a-aa676dd240c6", [
         new MapAreaInfo("KeytoTiamatsTemple", "336,90,356,110"),
         new MapAreaInfo("KeytoTiamatsTemple", "295,275,315,295"),
         new MapAreaInfo("KeytoTiamatsTemple", "431,187,451,207"),
@@ -164,11 +164,13 @@ const maps = [
     ], ["#TheTempleofTiamat", "#TempleLayout", "#PerformingtheRitual"])
 ];
 
-MapRefs.processMapToMapRefs(maps);
+const path = "adventures/rot/";
+
+MapRefs.processMaps(maps, [], path);
 
 class MapsRoT extends MapRefs {
     static get path() {
-        return "rot/";
+        return path;
     }
 
     static get maps() {

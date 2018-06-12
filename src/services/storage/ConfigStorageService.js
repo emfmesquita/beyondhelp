@@ -1,7 +1,9 @@
 import C from "../../Constants";
-import Opt from "../../Options";
 import Configuration from "../../data/Configuration";
-import StorageService from "./StorageService";
+import FormMapRefsData from "../../data/FormMapRefsData";
+import LocalStorageService from "./LocalStorageService";
+import Opt from "../../Options";
+import SyncStorageService from "./SyncStorageService";
 
 class ConfigStorageService {
 
@@ -9,8 +11,8 @@ class ConfigStorageService {
      * Gets or creates the configuration data.
      */
     static getConfig(): Promise<Configuration> {
-        return StorageService.getData(C.ConfigurationId).then((config: Configuration) => {
-            if (!config) return StorageService.createData("Configuration", new Configuration());
+        return SyncStorageService.getData(C.ConfigurationId).then((config: Configuration) => {
+            if (!config) return SyncStorageService.createData("Configuration", new Configuration());
 
             // fallback to created props
             Opt.AllOptions.forEach(opt => {
@@ -18,6 +20,27 @@ class ConfigStorageService {
             });
 
             return Promise.resolve(config);
+        });
+    }
+
+    /**
+     * Gets or creates the data from extra map refs of options page.
+     */
+    static getFormMapRefs(): Promise<FormMapRefsData> {
+        return LocalStorageService.getData(C.FormMapRefsId).then((formMapRefs: FormMapRefsData) => {
+            if (!formMapRefs) return LocalStorageService.createData(null, new FormMapRefsData(""));
+            return Promise.resolve(formMapRefs);
+        });
+    }
+
+    /**
+     * Updates the data from extra map refs of options page.
+     * @param {*} content 
+     */
+    static saveFormMapRefs(content: string): Promise<FormMapRefsData> {
+        return ConfigStorageService.getFormMapRefs().then((formMapRefs: FormMapRefsData) => {
+            formMapRefs.content = content;
+            return LocalStorageService.updateData(formMapRefs);
         });
     }
 }

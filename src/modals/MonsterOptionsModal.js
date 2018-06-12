@@ -11,7 +11,7 @@ import MonsterData from '../data/MonsterData';
 import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
-import StorageService from "../services/storage/StorageService";
+import SyncStorageService from "../services/storage/SyncStorageService";
 import TextField from "../forms/TextField";
 import MonsterListData from '../data/MonsterListData';
 
@@ -107,7 +107,7 @@ class MonsterOptionsModal extends Component {
         toSwapMonster.order = tempOrder;
         list.monsters[idx] = toSwapMonster;
         list.monsters[newIdx] = monster;
-        StorageService.updateData([monster, toSwapMonster]).then(this.props.onChange);
+        SyncStorageService.updateData([monster, toSwapMonster]).then(this.props.onChange);
     }
 
     moveUp = () => {
@@ -141,13 +141,13 @@ class MonsterOptionsModal extends Component {
     fullHealMonster = () => {
         const monster: MonsterData = this.props.context.monster;
         monster.currentHp = monster.hp;
-        StorageService.updateData(monster).then(this.props.onChange);
+        SyncStorageService.updateData(monster).then(this.props.onChange);
     }
 
     killMonster = () => {
         const monster: MonsterData = this.props.context.monster;
         monster.currentHp = 0;
-        StorageService.updateData(monster).then(this.props.onChange);
+        SyncStorageService.updateData(monster).then(this.props.onChange);
     }
 
     saveCustomize = () => {
@@ -160,7 +160,7 @@ class MonsterOptionsModal extends Component {
         if (monster.currentHp > monster.hp) {
             monster.currentHp = monster.hp;
         }
-        StorageService.updateData(monster).then(this.props.onChange);
+        SyncStorageService.updateData(monster).then(this.props.onChange);
     }
 
     renderBaseOptions = () => {

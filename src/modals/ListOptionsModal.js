@@ -13,7 +13,7 @@ import MonsterListData from '../data/MonsterListData';
 import MonsterStorageService from "../services/storage/MonsterStorageService";
 import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
-import StorageService from "../services/storage/StorageService";
+import SyncStorageService from "../services/storage/SyncStorageService";
 import TextField from "../forms/TextField";
 
 class ListOptionsModal extends Component {
@@ -77,7 +77,7 @@ class ListOptionsModal extends Component {
         toSwapList.order = tempOrder;
         encounter.lists[idx] = toSwapList;
         encounter.lists[newIdx] = list;
-        StorageService.updateData([list, toSwapList]).then(this.props.onChange);
+        SyncStorageService.updateData([list, toSwapList]).then(this.props.onChange);
     }
 
     moveListUp = () => {
@@ -91,13 +91,13 @@ class ListOptionsModal extends Component {
     fullHealList = () => {
         const list: MonsterListData = this.props.context.list;
         list.monsters.forEach(monster => monster.currentHp = monster.hp);
-        StorageService.updateData(list.monsters).then(this.props.onChange);
+        SyncStorageService.updateData(list.monsters).then(this.props.onChange);
     }
 
     killList = () => {
         const list: MonsterListData = this.props.context.list;
         list.monsters.forEach(monster => monster.currentHp = 0);
-        StorageService.updateData(list.monsters).then(this.props.onChange);
+        SyncStorageService.updateData(list.monsters).then(this.props.onChange);
     }
 
     //#region custom monster
@@ -167,7 +167,7 @@ class ListOptionsModal extends Component {
             list.name = this.state.customMonsterName;
             list.hpexp = this.state.customMonsterHp;
         }
-        StorageService.updateData(list).then(this.props.onChange);
+        SyncStorageService.updateData(list).then(this.props.onChange);
     }
 
     renderCustomize = () => {

@@ -5,13 +5,13 @@ import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [];
 
-const extraMapLinks = [];
+const path = "adventures/cos/";
 
-MapRefs.processMapToMapRefs(maps);
+MapRefs.processMaps(maps, [], path);
 
 class MapsCoS extends MapRefs {
     static get path() {
-        return "cos/";
+        return path;
     }
 
     static get maps() {
@@ -19,7 +19,7 @@ class MapsCoS extends MapRefs {
     }
 
     static get extraMapLinks() {
-        return extraMapLinks;
+        return [];
     }
 }
 

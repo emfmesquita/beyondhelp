@@ -4,7 +4,7 @@ import C from "../../Constants";
 
 class MapLinksUtils {
     static href(page: string, contentId: string) {
-        return `${C.AdventuresPage}${page}${FragmentService.format("", contentId, "", true)}`;
+        return `${C.CompendiumPage}${page}${FragmentService.format("", contentId, "", true)}`;
     }
 
     static click(e: MouseEvent, href: string) {

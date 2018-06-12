@@ -25,12 +25,13 @@ class MapAreas extends Component {
     renderAreas = () => {
         const mapInfo: MapInfo = this.props.map;
         const config: Configuration = this.props.config;
+        if (!mapInfo.areas) return null;
         return mapInfo.areas.map(area => {
             if (area.shape === C.MapAreaRect && !config[Opt.MapRefsRect]) return;
             if (area.shape === C.MapAreaCircle && !config[Opt.MapRefsCirc]) return;
             if (area.shape === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
             const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
-            const href = `${C.AdventuresPage}${area.page || mapInfo.page}${FragmentService.format(area.id, area.contentId, area.untilContentId, area.contentOnly)}`;
+            const href = `${C.CompendiumPage}${area.page || mapInfo.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}`;
             const className = `tooltip-hover BH-map-ref BH-map-ref-${area.shape} ${area.highlight ? " BH-area-highlight" : ""}`;
             return <area key={area.coords} className={className} shape={shape} coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
         });
@@ -38,7 +39,7 @@ class MapAreas extends Component {
 
     render() {
         return (
-            <map name={this.props.map.name}>
+            <map name={this.props.map.mapImageName}>
                 {this.renderAreas()}
             </map>
         );

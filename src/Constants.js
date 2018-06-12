@@ -6,8 +6,9 @@ const defaultListHeaderColor = "#333";
 const presetListHeaderColor = [defaultListHeaderColor];
 
 const configurationId = "bh-config";
+const formMapRefsId = "bh-form-map-refs";
 
-const advPage = "https://www.dndbeyond.com/compendium/adventures/";
+const compendiumPage = "https://www.dndbeyond.com/compendium/";
 
 const mapAreaRect = "rect";
 const mapAreaCircle = "circle";
@@ -48,9 +49,12 @@ class Constants {
     static get ConfigurationId() {
         return configurationId;
     }
+    static get FormMapRefsId() {
+        return formMapRefsId;
+    }
 
-    static get AdventuresPage() {
-        return advPage;
+    static get CompendiumPage() {
+        return compendiumPage;
     }
 
     static get MapAreaRect() {

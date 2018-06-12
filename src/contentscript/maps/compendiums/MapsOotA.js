@@ -4,7 +4,7 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
-    new MapInfo("Velkynvelve", "oota/prisoners-of-the-drow", "01-04.jpg", "f8534d91-4379-4e00-a779-9fc4ca970376", [
+    new MapInfo("Velkynvelve", "prisoners-of-the-drow", "01-04.jpg", "f8534d91-4379-4e00-a779-9fc4ca970376", [
         new MapAreaInfo("1SouthernWatchPost", "124,489,144,509"),
         new MapAreaInfo("2Barracks", "222,510,242,530"),
         new MapAreaInfo("3MainHall", "296,407,316,427"),
@@ -38,27 +38,27 @@ const maps = [
         new MapAreaInfo("SouthPassage", "60,552,80,572")
     ], ["#AreasofVelkynvelve", "#MeansofEscape", "#Acquisitions", "#JorlansGambit", "#AFlightofDemons",
             "#LeavingVelkynvelve", "#XPAwards"]),
-    new MapInfo("UnderdarkTravel", "oota/into-darkness", "02-05.jpg", "760081cf-d4f8-483d-9c37-21f3ddfc5df3", [
-        new MapAreaInfo("Velkynvelve", "626,263,646,283", "oota/prisoners-of-the-drow"),
-        new MapAreaInfo("Chapter3TheDarklake", "445,219,579,266", "oota/the-darklake"),
-        new MapAreaInfo("Sloobludop", "580,232,600,252", "oota/the-darklake").content("d54905b5-b71a-402b-a085-e6f4aae6967f", "0c11c824-2b5e-4c0b-b5a0-38951c51d258"),
-        new MapAreaInfo("EntmochsBoon", "467,145,480,158", "oota/blingdenstone"),
-        new MapAreaInfo("Gracklstugh", "436,291,456,311", "oota/gracklstugh").content("765a9ffc-5c2f-4d95-a4ec-2e80348e9023", "47c0df07-14e6-4294-af86-979f3c7cf8ff"),
-        new MapAreaInfo("NeverlightGrove", "396,225,416,245", "oota/neverlight-grove").content("e7cfe5a3-1efe-4e2a-b459-f76831c0bfd0", "2073697a-9520-498b-8df0-309ee82df96e"),
-        new MapAreaInfo("Chapter6Blingdenstone", "480,141,500,161", "oota/blingdenstone"),
-        new MapAreaInfo("Gauntlgrym", "89,224,109,244", "oota/audience-in-gauntlgrym"),
-        new MapAreaInfo("MantolDerith", "522,161,542,181", "oota/mantol-derith").content("a7d4782c-d789-408c-aa5d-23452b6d1fc6", "374ce314-efe8-4daa-827e-544e986f6e5f"),
-        new MapAreaInfo("Chapter11Gravenhollow", "157,131,177,151", "oota/gravenhollow"),
-        new MapAreaInfo("Chapter12TheTowerofVengeance", "468,73,488,93", "oota/the-tower-of-vengeance"),
-        new MapAreaInfo("Chapter13TheWormwrithings", "242,57,379,166", "oota/the-wormwrithings").content("52e3bf8a-9643-42f6-80b8-8f2e8c7a5e01", "b96dae26-e683-456a-b9c3-7af9267bf487"),
-        new MapAreaInfo("TheVastOblivium", "391,87,411,107", "oota/the-wormwrithings").content("4171a739-f5af-43bb-9758-9d4cc5f87bb8", "ebbdaf5c-b8c0-4026-8307-0a9cd56e149e"),
-        new MapAreaInfo("Chapter14TheLabyrinth", "290,421,330,461", "oota/the-labyrinth"),
-        new MapAreaInfo("SpiraloftheHornedKing", "325,292,345,312", "oota/the-labyrinth"),
-        new MapAreaInfo("GalleryofAngels", "340,386,360,406", "oota/the-labyrinth"),
-        new MapAreaInfo("Filthriddens", "289,355,309,375", "oota/the-labyrinth"),
-        new MapAreaInfo("TheMazeEngine", "341,447,361,467", "oota/the-labyrinth"),
-        new MapAreaInfo("Menzoberranzan", "538,114,558,134", "oota/the-city-of-spiders").content("40d7a649-076c-485b-8bb9-0ca29ac5b8ad", "dc132ec8-0272-4688-95ab-c72bca642fa0"),
-        new MapAreaInfo("Araumycos", "584,371,743,441", "oota/the-fetid-wedding"),
+    new MapInfo("UnderdarkTravel", "into-darkness", "02-05.jpg", "760081cf-d4f8-483d-9c37-21f3ddfc5df3", [
+        new MapAreaInfo("Velkynvelve", "626,263,646,283", "prisoners-of-the-drow"),
+        new MapAreaInfo("Chapter3TheDarklake", "445,219,579,266", "the-darklake"),
+        new MapAreaInfo("Sloobludop", "580,232,600,252", "the-darklake").content("d54905b5-b71a-402b-a085-e6f4aae6967f", "0c11c824-2b5e-4c0b-b5a0-38951c51d258"),
+        new MapAreaInfo("EntmochsBoon", "467,145,480,158", "blingdenstone"),
+        new MapAreaInfo("Gracklstugh", "436,291,456,311", "gracklstugh").content("765a9ffc-5c2f-4d95-a4ec-2e80348e9023", "47c0df07-14e6-4294-af86-979f3c7cf8ff"),
+        new MapAreaInfo("NeverlightGrove", "396,225,416,245", "neverlight-grove").content("e7cfe5a3-1efe-4e2a-b459-f76831c0bfd0", "2073697a-9520-498b-8df0-309ee82df96e"),
+        new MapAreaInfo("Chapter6Blingdenstone", "480,141,500,161", "blingdenstone"),
+        new MapAreaInfo("Gauntlgrym", "89,224,109,244", "audience-in-gauntlgrym"),
+        new MapAreaInfo("MantolDerith", "522,161,542,181", "mantol-derith").content("a7d4782c-d789-408c-aa5d-23452b6d1fc6", "374ce314-efe8-4daa-827e-544e986f6e5f"),
+        new MapAreaInfo("Chapter11Gravenhollow", "157,131,177,151", "gravenhollow"),
+        new MapAreaInfo("Chapter12TheTowerofVengeance", "468,73,488,93", "the-tower-of-vengeance"),
+        new MapAreaInfo("Chapter13TheWormwrithings", "242,57,379,166", "the-wormwrithings").content("52e3bf8a-9643-42f6-80b8-8f2e8c7a5e01", "b96dae26-e683-456a-b9c3-7af9267bf487"),
+        new MapAreaInfo("TheVastOblivium", "391,87,411,107", "the-wormwrithings").content("4171a739-f5af-43bb-9758-9d4cc5f87bb8", "ebbdaf5c-b8c0-4026-8307-0a9cd56e149e"),
+        new MapAreaInfo("Chapter14TheLabyrinth", "290,421,330,461", "the-labyrinth"),
+        new MapAreaInfo("SpiraloftheHornedKing", "325,292,345,312", "the-labyrinth"),
+        new MapAreaInfo("GalleryofAngels", "340,386,360,406", "the-labyrinth"),
+        new MapAreaInfo("Filthriddens", "289,355,309,375", "the-labyrinth"),
+        new MapAreaInfo("TheMazeEngine", "341,447,361,467", "the-labyrinth"),
+        new MapAreaInfo("Menzoberranzan", "538,114,558,134", "the-city-of-spiders").content("40d7a649-076c-485b-8bb9-0ca29ac5b8ad", "dc132ec8-0272-4688-95ab-c72bca642fa0"),
+        new MapAreaInfo("Araumycos", "584,371,743,441", "the-fetid-wedding"),
         new MapToMapAreaInfo("01-04.jpg", "613,273,10"),
         new MapToMapAreaInfo("03-01.jpg", "590,219,10"),
         new MapToMapAreaInfo("04-01.jpg", "423,301,10"),
@@ -67,7 +67,7 @@ const maps = [
         new MapToMapAreaInfo("09-01.jpg", "555,171,10"),
         new MapToMapAreaInfo("15-01.jpg", "548,101,10")
     ], []),
-    new MapInfo("HookHorrorHunt", "oota/into-darkness", "02-06.jpg", "2b3dbc4a-424c-4866-919e-1cba67e36fd3", [
+    new MapInfo("HookHorrorHunt", "into-darkness", "02-06.jpg", "2b3dbc4a-424c-4866-919e-1cba67e36fd3", [
         new MapAreaInfo("1HookHorrors", "716,258,746,288"),
         new MapAreaInfo("2AGnollHunters", "664,201,694,231"),
         new MapAreaInfo("2BGnollHunters", "361,257,391,287"),
@@ -85,7 +85,7 @@ const maps = [
         new MapAreaInfo().rect(366, 210, 381, 225).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
         new MapAreaInfo().rect(717, 587, 734, 604).content("c3072947-7867-4f19-aa85-6d822634eaf7")
     ], []),
-    new MapInfo("TheOozingTemple", "oota/into-darkness", "02-07.jpg", "5ca5abee-b6e6-4e07-b76c-8f6fc1e02df3", [
+    new MapInfo("TheOozingTemple", "into-darkness", "02-07.jpg", "5ca5abee-b6e6-4e07-b76c-8f6fc1e02df3", [
         new MapAreaInfo("1BoxedIn", "307,622,332,647"),
         new MapAreaInfo("2DrippingDeath", "166,473,191,498"),
         new MapAreaInfo("2DrippingDeath", "89,67,114,92"),
@@ -98,14 +98,14 @@ const maps = [
         new MapAreaInfo("5FountainofMadness", "263,336,288,361"),
         new MapAreaInfo("6WaterChamber", "564,257,589,282")
     ], []),
-    new MapInfo("LostTombofKhaem", "oota/into-darkness", "02-08.jpg", "ab500804-4ea4-4959-bbcb-464db9c7b748", [
+    new MapInfo("LostTombofKhaem", "into-darkness", "02-08.jpg", "ab500804-4ea4-4959-bbcb-464db9c7b748", [
         new MapAreaInfo("1EntranceRoom", "107,132,132,157"),
         new MapAreaInfo("2Shrine", "432,296,457,321"),
         new MapAreaInfo("3ServantsSarcophagi", "596,320,621,345"),
         new MapAreaInfo("4FalseTomb", "433,507,458,532"),
         new MapAreaInfo("5TrueTomb", "736,506,761,531")
     ], []),
-    new MapInfo("Sloobludop", "oota/the-darklake", "03-01.jpg", "7b389063-80db-4e10-ae3b-2bb1e836c511", [
+    new MapInfo("Sloobludop", "the-darklake", "03-01.jpg", "7b389063-80db-4e10-ae3b-2bb1e836c511", [
         new MapAreaInfo("1Gate", "18,325,48,355"),
         new MapAreaInfo("1Gate", "814,342,844,372"),
         new MapAreaInfo("2Docks", "572,171,602,201"),
@@ -113,7 +113,7 @@ const maps = [
         new MapAreaInfo("3ShrineoftheSeaMother", "475,396,505,426"),
         new MapAreaInfo("4AltaroftheDeepFather", "389,285,419,315")
     ], ["#SlouchingTowardSloobludop", "#NotableKuotoainSloobludop", "#TheDaysCatch", "#TheOffering", "#TheRitual", "#DemogorgonRises", "#XPAwards"]),
-    new MapInfo("Gracklstugh", "oota/gracklstugh", "04-01.jpg", "719b0f54-fecb-4fa6-b645-dfb7e331ecdd", [
+    new MapInfo("Gracklstugh", "gracklstugh", "04-01.jpg", "719b0f54-fecb-4fa6-b645-dfb7e331ecdd", [
         new MapAreaInfo("CityGates", "53,151,73,171"),
         new MapAreaInfo("CityGates", "209,539,229,559"),
         new MapAreaInfo("CityGates", "241,589,261,609"),
@@ -146,7 +146,7 @@ const maps = [
     ], ["#WelcometotheCityofBlades", "#RampagingGiant", "#GuestsoftheStoneGuard", "#DarklakeDocks[data-content-chunk-id='31e45e23-afbc-4fa8-b945-c3301592b9a6']",
             "#DarklakeDocks[data-content-chunk-id='957ae86b-8de3-4aaa-9901-3aa92efd7f1a']", "#EnteringDerroTerritory",
             "#AudiencewiththeStonespeaker", "#AgentsoftheWyrmsmith", "#LeavingGracklstugh", "#AudiencewiththeDeepking"]),
-    new MapInfo("WhorlstoneTunnels", "oota/gracklstugh", "04-03.jpg", "340e1c98-a857-4950-b50e-dcf6c3e55c0a", [
+    new MapInfo("WhorlstoneTunnels", "gracklstugh", "04-03.jpg", "340e1c98-a857-4950-b50e-dcf6c3e55c0a", [
         new MapAreaInfo("1Entrance", "88,351,108,371"),
         new MapAreaInfo("1aPoolBypass", "110,322,130,342"),
         new MapAreaInfo("1bBuppidosLair", "155,382,175,402"),
@@ -181,7 +181,7 @@ const maps = [
         new MapAreaInfo("RedDragonEgg", "209,508,224,523"),
         new MapToMapAreaInfo("04-01.jpg", "14,377,10")
     ], ["#AreasoftheTunnels"]),
-    new MapInfo("NeverlightGrove", "oota/neverlight-grove", "05-01.jpg", "c1a16556-369d-4598-af7a-dd06230f1040", [
+    new MapInfo("NeverlightGrove", "neverlight-grove", "05-01.jpg", "c1a16556-369d-4598-af7a-dd06230f1040", [
         new MapAreaInfo("1FungalWilds", "339,480,369,510"),
         new MapAreaInfo("2NorthernTerraces", "260,198,290,228"),
         new MapAreaInfo("3CentralBasin", "374,361,404,391"),
@@ -189,7 +189,7 @@ const maps = [
         new MapAreaInfo("5GardenofWelcome", "504,338,534,368"),
         new MapAreaInfo("Yggmorgus", "594,93,777,145")
     ], ["#WeddingRehearsal", "#GiantMushroomTower", "#LeavingNeverlightGrove"]),
-    new MapInfo("Chapter6Blingdenstone", "oota/blingdenstone", "06-02.jpg", "e35367c6-91bb-42cc-8d61-1189bd7a0ee7", [
+    new MapInfo("Chapter6Blingdenstone", "blingdenstone", "06-02.jpg", "e35367c6-91bb-42cc-8d61-1189bd7a0ee7", [
         new MapAreaInfo("1Stairs", "64,238,94,268"),
         new MapAreaInfo("1aCartLift", "87,188,117,218"),
         new MapAreaInfo("2MainGate", "133,237,163,267"),
@@ -233,7 +233,7 @@ const maps = [
         new MapAreaInfo("ThePuddingCourt", "520,93,540,113")
     ], ["#BattleforBlingdenstone", "#BlingdenstoneFactions", "#TaskList", "#CryHavoc", "#OozingRoyalty",
             "#ThePuddingKing", "#LeavingBlingdenstone"]).chMap(),
-    new MapInfo("OuterBlingdenstone", "oota/blingdenstone", "ooa06-03.png", "b8636a85-5316-4ffd-9193-ec3cf073c905", [
+    new MapInfo("OuterBlingdenstone", "blingdenstone", "ooa06-03.png", "b8636a85-5316-4ffd-9193-ec3cf073c905", [
         new MapAreaInfo("1Stairs", "46,170,66,190"),
         new MapAreaInfo("1aCartLift", "64,135,84,155"),
         new MapAreaInfo("2MainGate", "95,169,115,189"),
@@ -242,7 +242,7 @@ const maps = [
         new MapAreaInfo("27SecretTunnel", "179,125,199,145"),
         new MapAreaInfo("OuterBlingdenstone", "32,234,47,249")
     ], []),
-    new MapInfo("InnerBlingdenstone", "oota/blingdenstone", "06-01.png", "26fd0963-b1a5-4fe4-99dd-5e87a38bbeef", [
+    new MapInfo("InnerBlingdenstone", "blingdenstone", "06-01.png", "26fd0963-b1a5-4fe4-99dd-5e87a38bbeef", [
         new MapAreaInfo("5ReceptionHall", "274,120,294,140"),
         new MapAreaInfo("6Barracks", "295,151,315,171"),
         new MapAreaInfo("7TradersGrotto", "337,118,357,138"),
@@ -260,7 +260,7 @@ const maps = [
         new MapAreaInfo("16TheFoamingMug", "94,354,114,374"),
         new MapAreaInfo("InnerBlingdenstone", "53,283,68,298")
     ], []),
-    new MapInfo("Rockblight", "oota/blingdenstone", "ooa06-05.png", "fe834076-85cd-47ac-a0a4-260fb9fdbd21", [
+    new MapInfo("Rockblight", "blingdenstone", "ooa06-05.png", "fe834076-85cd-47ac-a0a4-260fb9fdbd21", [
         new MapAreaInfo("17AbandonedResidences", "214,174,239,199"),
         new MapAreaInfo("18Overlook", "273,247,298,272"),
         new MapAreaInfo("19CrystalGarden", "267,106,292,131"),
@@ -269,7 +269,7 @@ const maps = [
         new MapAreaInfo("22SteadfastStone", "292,67,317,92"),
         new MapAreaInfo("Rockblight", "189,139,204,154")
     ], []),
-    new MapInfo("GoldwhiskerWarrens", "oota/blingdenstone", "ooa06-06.png", "e3fd0b50-a0cd-4f66-b00b-fdc2bc5c930e", [
+    new MapInfo("GoldwhiskerWarrens", "blingdenstone", "ooa06-06.png", "e3fd0b50-a0cd-4f66-b00b-fdc2bc5c930e", [
         new MapAreaInfo("23MainEntrance", "266,92,286,112"),
         new MapAreaInfo("24RefusePile", "319,95,339,115"),
         new MapAreaInfo("25HallofMiners", "158,56,178,76"),
@@ -278,13 +278,13 @@ const maps = [
         new MapAreaInfo("27SecretTunnel", "102,89,122,109"),
         new MapAreaInfo("GoldwhiskerWarrens", "118,52,133,67")
     ], []),
-    new MapInfo("ThePuddingCourt", "oota/blingdenstone", "ooa06-07.png", "b44b418a-2d5d-4a7c-940d-45dec2d9ff99", [
+    new MapInfo("ThePuddingCourt", "blingdenstone", "ooa06-07.png", "b44b418a-2d5d-4a7c-940d-45dec2d9ff99", [
         new MapAreaInfo("28HouseCenter", "210,153,235,178"),
         new MapAreaInfo("29RuinedStockade", "253,79,278,104"),
         new MapAreaInfo("30ThroneRoom", "324,121,349,146"),
         new MapAreaInfo("ThePuddingCourt", "122,80,137,95")
     ], []),
-    new MapInfo("MantolDerith", "oota/mantol-derith", "09-01.jpg", "268961d2-f944-49cd-9568-75cb5a3be678", [
+    new MapInfo("MantolDerith", "mantol-derith", "09-01.jpg", "268961d2-f944-49cd-9568-75cb5a3be678", [
         new MapAreaInfo("1SecretEntrances", "692,74,710,92").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
         new MapAreaInfo("1SecretEntrances", "638,339,656,357").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
         new MapAreaInfo("1SecretEntrances", "703,580,721,598").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
@@ -326,7 +326,7 @@ const maps = [
         new MapAreaInfo().rect(249, 114, 267, 132).content("44f39a0d-443e-424d-b96f-ac81545f1b12"), // 7 - 11
         new MapAreaInfo().rect(294, 110, 312, 128).content("0c04af33-210b-464d-ba68-a96ff3e02f86") // 7 - 12
     ], ["#ImportantNPCs", "#LeavingMantolDerith", "#FollowUpEncounters"]),
-    new MapInfo("TroglodyteLair", "oota/the-wormwrithings", "13-01.jpg", "c57818fb-e7b7-4bfa-85d3-186619046c88", [
+    new MapInfo("TroglodyteLair", "the-wormwrithings", "13-01.jpg", "c57818fb-e7b7-4bfa-85d3-186619046c88", [
         new MapAreaInfo("1EntranceTunnel", "368,585,398,615"),
         new MapAreaInfo("2CaveFloor", "428,400,458,430"),
         new MapAreaInfo("3Rise", "302,430,332,460"),
@@ -347,7 +347,7 @@ const maps = [
         new MapAreaInfo().rect(117, 216, 142, 241).content("56678c42-d29f-4525-a833-f8a1bd1a8230"), // 13 - secret 
         new MapAreaInfo().rect(111, 169, 136, 194).content("2f19eda0-b6d9-465f-a42b-0d5784b6875d") // 14 - secret
     ], ["#ResolvingtheStandoff"]),
-    new MapInfo("WormNursery", "oota/the-wormwrithings", "13-02.jpg", "d8124621-73b1-4f65-b77f-ba1d27f6ad03", [
+    new MapInfo("WormNursery", "the-wormwrithings", "13-02.jpg", "d8124621-73b1-4f65-b77f-ba1d27f6ad03", [
         new MapAreaInfo("1EntryCavern", "50,303,75,328"),
         new MapAreaInfo("2FungusCave", "120,134,145,159"),
         new MapAreaInfo("3Ossuary", "175,265,200,290"),
@@ -367,7 +367,7 @@ const maps = [
         new MapAreaInfo().rect(620, 424, 645, 449).content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166"), // t2
         new MapAreaInfo().rect(633, 477, 658, 502).content("c6c27296-df4f-4c48-b933-9ddbb69b4c2f", "9e17dd97-8b73-47ba-bd70-441fdcad5166") // t3
     ], []),
-    new MapInfo("Menzoberranzan", "oota/the-city-of-spiders", "15-01.jpg", "dc132ec8-0272-4688-95ab-c72bca642fa0", [
+    new MapInfo("Menzoberranzan", "the-city-of-spiders", "15-01.jpg", "dc132ec8-0272-4688-95ab-c72bca642fa0", [
         new MapAreaInfo("TheBazaar", "368,218,450,235"),
         new MapAreaInfo("TheBraeryn", "618,292,708,310"),
         new MapAreaInfo("Donigarten", "686,439,770,456"),
@@ -391,13 +391,13 @@ const maps = [
             "#GromphsOuterSanctum", "#GromphsInnerSanctum", "#Developments", "#CityLocations"])
 ];
 
-const extraMapLinks = [];
+const path = "adventures/oota/";
 
-MapRefs.processMapToMapRefs(maps);
+MapRefs.processMaps(maps, [], path);
 
 class MapsOotA extends MapRefs {
     static get path() {
-        return "oota/";
+        return path;
     }
 
     static get maps() {
@@ -405,7 +405,7 @@ class MapsOotA extends MapRefs {
     }
 
     static get extraMapLinks() {
-        return extraMapLinks;
+        return [];
     }
 }
 

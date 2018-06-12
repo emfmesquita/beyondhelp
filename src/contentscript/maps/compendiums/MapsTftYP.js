@@ -4,7 +4,7 @@ import MapRefs from "../MapRefs";
 import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [
-    new MapInfo("TheCitadel", "tftyp/a1/the-sunless-citadel", "totyp-01-02.jpg", "52fdd2ad-0587-4753-b621-2fc3d670fd44", [
+    new MapInfo("TheCitadel", "a1/the-sunless-citadel", "totyp-01-02.jpg", "52fdd2ad-0587-4753-b621-2fc3d670fd44", [
         new MapAreaInfo("1Ledge", "227,38,237,48"),
         new MapAreaInfo("2SwitchbackStairs", "92,124,102,134"),
         new MapAreaInfo("3CrumbledCourtyard", "276,499,286,509"),
@@ -66,7 +66,7 @@ const maps = [
         new MapAreaInfo().rho(31, 335, 41, 345).content("e59ec522-6e9a-4ec0-b6ee-8078469fcc07", "8e5005b5-9fc5-4ceb-ac24-f92722a95334"), // 41 - chest
         new MapToMapAreaInfo("totyp-01-08.jpg", "44,350,5")
     ], ["#LocationsontheFortressLevel"]),
-    new MapInfo("TheCitadel", "tftyp/a1/the-sunless-citadel", "totyp-01-08.jpg", "dd3e180d-827e-4a14-ab11-5e1d8cacdd45", [
+    new MapInfo("TheCitadel", "a1/the-sunless-citadel", "totyp-01-08.jpg", "dd3e180d-827e-4a14-ab11-5e1d8cacdd45", [
         new MapAreaInfo("42CentralGarden", "124,420,139,435"),
         new MapAreaInfo("43TheGreatHuntersAbode", "88,257,103,272"),
         new MapAreaInfo("44Rift", "139,494,154,509"),
@@ -116,7 +116,7 @@ const maps = [
         new MapAreaInfo().rho(384, 638, 398, 652).content("4fb3e2bc-7ecb-4f42-9e9c-ae7ccbd33903", "ea132a78-8f13-441f-a0c6-b9ca96313d35"), // 56 - tree
         new MapToMapAreaInfo("totyp-01-02.jpg", "102,398,10")
     ], ["#LocationsontheGroveLevel"]),
-    new MapInfo("ApproachingKhundrukar", "tftyp/a2/the-forge-of-fury", "totyp-02-02.png", "88c15f8d-0ef0-484f-a998-b6448ed3989f", [
+    new MapInfo("ApproachingKhundrukar", "a2/the-forge-of-fury", "totyp-02-02.png", "88c15f8d-0ef0-484f-a998-b6448ed3989f", [
         new MapAreaInfo().rect(325, 487, 350, 512).content("d954ae5d-de1b-4fb6-a176-7a9305f6f05e"),
         new MapAreaInfo().rect(355, 509, 380, 534).content("c9f667e0-c3aa-4e91-9c27-d0f0657ffcb9", "de7caf93-f168-4bdb-804d-4b024259c7d9"),
         new MapAreaInfo().rect(389, 388, 414, 413).content("de7caf93-f168-4bdb-804d-4b024259c7d9", "4916a9be-e2c3-4881-848c-e6e31d63d27e"),
@@ -127,7 +127,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-07.png", "401,371,12"),
         new MapToMapAreaInfo("totyp-02-13.png", "516,442,12")
     ], ["#TheStoneTooth"]),
-    new MapInfo("TheMountainDoor", "tftyp/a2/the-forge-of-fury", "totyp-02-03.png", "0b6d4b16-d131-4a7b-bfb1-4c1ab3dc76b0", [
+    new MapInfo("TheMountainDoor", "a2/the-forge-of-fury", "totyp-02-03.png", "0b6d4b16-d131-4a7b-bfb1-4c1ab3dc76b0", [
         new MapAreaInfo("1EndoftheTrail", "153,171,173,191"),
         new MapAreaInfo("2TheDwarfDoor", "251,231,271,251"),
         new MapAreaInfo("3TheRiftHall", "309,320,329,340"),
@@ -173,7 +173,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-02.png", "578,337,10"),
         new MapToMapAreaInfo("totyp-02-07.png", "754,256,10")
     ], []).tocHId("TheForgeofFury"),
-    new MapInfo("TheGlitterhame", "tftyp/a2/the-forge-of-fury", "totyp-02-07.png", "cd39e344-5e06-4d5d-8ad3-42cff9244e24", [
+    new MapInfo("TheGlitterhame", "a2/the-forge-of-fury", "totyp-02-07.png", "cd39e344-5e06-4d5d-8ad3-42cff9244e24", [
         new MapAreaInfo("15TheColdStream", "132,93,152,113"),
         new MapAreaInfo("15aStirgeColony", "231,137,256,157"),
         new MapAreaInfo("16HighCavern", "175,232,195,252"),
@@ -215,7 +215,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-08.png", "587,649,10"),
         new MapToMapAreaInfo("totyp-02-11.png", "774,371,10")
     ], []).tocHId("TheForgeofFury"),
-    new MapInfo("TheSinkhole", "tftyp/a2/the-forge-of-fury", "totyp-02-08.png", "1780dd4c-c571-45e2-8315-9d438c153d34", [
+    new MapInfo("TheSinkhole", "a2/the-forge-of-fury", "totyp-02-08.png", "1780dd4c-c571-45e2-8315-9d438c153d34", [
         new MapAreaInfo("28WaterfallCavern", "149,180,169,200"),
         new MapAreaInfo("29RiverCavern", "307,316,327,336"),
         new MapAreaInfo("30OldStoreroom", "387,41,407,61"),
@@ -235,7 +235,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-07.png", "135,80,10"),
         new MapToMapAreaInfo("totyp-02-07.png", "293,51,10")
     ], []).tocHId("TheForgeofFury"),
-    new MapInfo("TheFoundry", "tftyp/a2/the-forge-of-fury", "totyp-02-11.png", "272c833b-8549-4956-866a-a3be417ea042", [
+    new MapInfo("TheFoundry", "a2/the-forge-of-fury", "totyp-02-11.png", "272c833b-8549-4956-866a-a3be417ea042", [
         new MapAreaInfo("35ChamberofStatues", "136,252,156,272"),
         new MapAreaInfo("36TheGreatHall", "296,292,316,312"),
         new MapAreaInfo("37TheBladeworks", "474,323,494,343"),
@@ -278,7 +278,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-07.png", "111,322,10"),
         new MapToMapAreaInfo("totyp-02-13.png", "699,374,10")
     ], []).tocHId("TheForgeofFury"),
-    new MapInfo("TheBlackLake", "tftyp/a2/the-forge-of-fury", "totyp-02-13.png", "ae1225ca-d399-4930-8cf7-15e71e2f8945", [
+    new MapInfo("TheBlackLake", "a2/the-forge-of-fury", "totyp-02-13.png", "ae1225ca-d399-4930-8cf7-15e71e2f8945", [
         new MapAreaInfo("50TheCascade", "210,238,230,258"),
         new MapAreaInfo("51DwarvenBridges", "333,67,353,87"),
         new MapAreaInfo("52NightscalesLair", "436,227,456,247"),
@@ -293,7 +293,7 @@ const maps = [
         new MapToMapAreaInfo("totyp-02-11.png", "292,166,10"),
         new MapToMapAreaInfo("totyp-02-02.png", "777,107,10")
     ], []).tocHId("TheForgeofFury"),
-    new MapInfo("TheHiddenShrineofTamoachan", "tftyp/a3/the-hidden-shrine-of-tamoachan", "hs01.png", "cd0f8252-bbf2-4f97-a811-7d841807fca4", [
+    new MapInfo("TheHiddenShrineofTamoachan", "a3/the-hidden-shrine-of-tamoachan", "hs01.png", "cd0f8252-bbf2-4f97-a811-7d841807fca4", [
         new MapAreaInfo("1TheVaultofChicomoztoc", "795,372,805,382"),
         new MapAreaInfo("2TheHallofThrashingCanes", "773,326,783,336"),
         new MapAreaInfo("3RoostoftheConch", "713,317,723,327"),
@@ -359,25 +359,25 @@ const maps = [
     ], ["#RunningtheAdventure", "#TheRuinsoftheShrine", "#TheRuinsGeneralFeatures", "#RandomEncounters",
             "#LocationsintheLowerChambers", "#LocationsontheFirstTier", "#LocationsontheSecondTier",
             "#LocationsontheThirdTier", "#TempleGrounds"]).chMap()
-    // new MapInfo("DungeonGeneralFeatures", "tftyp/a4/white-plume-mountain", "wpm01.png", "d97e4076-3f77-419e-89ce-73de60e31c2c", [
+    // new MapInfo("DungeonGeneralFeatures", "a4/white-plume-mountain", "wpm01.png", "d97e4076-3f77-419e-89ce-73de60e31c2c", [
     // ], []).tocHId("LocationsintheDungeon"),
-    // new MapInfo("Map42WhitePlumeMountain", "tftyp/a4/white-plume-mountain", "wpm02.png", "ce06b1b6-1bca-476d-8414-52747a5856bd", [
+    // new MapInfo("Map42WhitePlumeMountain", "a4/white-plume-mountain", "wpm02.png", "ce06b1b6-1bca-476d-8414-52747a5856bd", [
     // ], []).tocHId("LocationsintheDungeon"),
-    // new MapInfo("Map43GeysersandChains", "tftyp/a4/white-plume-mountain", "wpm03.png", "50d37f17-0eb8-4306-bf56-96194c157470", [
+    // new MapInfo("Map43GeysersandChains", "a4/white-plume-mountain", "wpm03.png", "50d37f17-0eb8-4306-bf56-96194c157470", [
     // ], []).tocHId("LocationsintheDungeon"),
-    // new MapInfo("Map44BoilingLake", "tftyp/a4/white-plume-mountain", "wpm04.png", "40ff75a6-3be8-49e1-a80a-e530514420aa", [
+    // new MapInfo("Map44BoilingLake", "a4/white-plume-mountain", "wpm04.png", "40ff75a6-3be8-49e1-a80a-e530514420aa", [
     // ], []).tocHId("LocationsintheDungeon"),
-    // new MapInfo("Map45AquariumandPrison", "tftyp/a4/white-plume-mountain", "wpm05.png", "f100978f-ff39-42b8-ae75-92349483ef95", [
+    // new MapInfo("Map45AquariumandPrison", "a4/white-plume-mountain", "wpm05.png", "f100978f-ff39-42b8-ae75-92349483ef95", [
     // ], []).tocHId("LocationsintheDungeon"),
 ];
 
-const extraMapLinks = [];
+const path = "adventures/tftyp/";
 
-MapRefs.processMapToMapRefs(maps);
+MapRefs.processMaps(maps, [], path);
 
 class MapsTftYP extends MapRefs {
     static get path() {
-        return "tftyp/";
+        return path;
     }
 
     static get maps() {
@@ -385,7 +385,7 @@ class MapsTftYP extends MapRefs {
     }
 
     static get extraMapLinks() {
-        return extraMapLinks;
+        return [];
     }
 }
 

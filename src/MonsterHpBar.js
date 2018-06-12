@@ -8,7 +8,7 @@ import ColorService from "./services/ColorService";
 import MonsterData from './data/MonsterData';
 import MonsterHpBarForm from "./MonsterHpBarForm";
 import MonsterHpBarPop from "./MonsterHpBarPop";
-import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import MenuButton from "./buttons/MenuButton";
 
 /**
  * Limits a HP value between zero and max HP.

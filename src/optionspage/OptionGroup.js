@@ -13,6 +13,11 @@ class OptionGroup extends Component {
         this.setState({ expanded: !this.state.expanded });
     }
 
+    renderContent = () => {
+        if (!this.state.expanded) return null;
+        return this.props.children;
+    }
+
     render() {
         return (
             <div className="BH-option-group">
@@ -21,7 +26,7 @@ class OptionGroup extends Component {
                     <Glyphicon glyph={this.state.expanded ? "chevron-down" : "chevron-right"} />
                 </div>
                 <div className={"BH-option-group-content" + (this.state.expanded ? " expanded" : "")}>
-                    {this.props.children}
+                    {this.renderContent()}
                 </div>
             </div>
         );
