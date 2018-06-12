@@ -34,7 +34,7 @@ const tooltipsInit = function (config: Configuration) {
     if (config[Opt.HomebrewTooltips]) TooltipsService.homebrewSpellTooltipWorkaround();
 
     // inits custom tooltips (backgrounds and feats) and ref tooltips
-    if (config[Opt.CustomTooltips] || config[Opt.RefTooltips]) TooltipsService.bhTooltipsInit();
+    TooltipsService.bhTooltipsInit();
 };
 
 // inits the table rollers
@@ -90,7 +90,7 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
 
     // inits map references
-    if (config[Opt.MapRefs]) MapsService.init();
+    if (config[Opt.MapRefs]) MapsService.init(config);
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();

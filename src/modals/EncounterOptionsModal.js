@@ -12,7 +12,7 @@ import MonsterStorageService from "../services/storage/MonsterStorageService";
 import MonstersService from "../services/MonstersService";
 import OptionLine from "../forms/OptionLine";
 import SampleHpBar from '../SampleHpBar';
-import StorageService from "../services/storage/StorageService";
+import SyncStorageService from "../services/storage/SyncStorageService";
 import TextField from "../forms/TextField";
 
 class EncounterOptionsModal extends Component {
@@ -80,7 +80,7 @@ class EncounterOptionsModal extends Component {
         let monsters = [];
         encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
         monsters.forEach(monster => monster.currentHp = monster.hp);
-        StorageService.updateData(monsters).then(this.props.onChange);
+        SyncStorageService.updateData(monsters).then(this.props.onChange);
     }
 
     KillEncounter = () => {
@@ -88,19 +88,19 @@ class EncounterOptionsModal extends Component {
         let monsters = [];
         encounter.lists.forEach(list => monsters = monsters.concat(list.monsters));
         monsters.forEach(monster => monster.currentHp = 0);
-        StorageService.updateData(monsters).then(this.props.onChange);
+        SyncStorageService.updateData(monsters).then(this.props.onChange);
     }
 
     colapseEncounter = () => {
         const encounter: MonsterEncounterData = this.props.encounter;
         encounter.lists.forEach(list => list.collapsed = true);
-        StorageService.updateData(encounter.lists).then(this.props.onChange);
+        SyncStorageService.updateData(encounter.lists).then(this.props.onChange);
     }
 
     expandEncounter = () => {
         const encounter: MonsterEncounterData = this.props.encounter;
         encounter.lists.forEach(list => list.collapsed = false);
-        StorageService.updateData(encounter.lists).then(this.props.onChange);
+        SyncStorageService.updateData(encounter.lists).then(this.props.onChange);
     }
 
     renderBaseOptions = () => {
@@ -137,7 +137,7 @@ class EncounterOptionsModal extends Component {
         encounter.name = this.state.name;
         encounter.color = this.state.color;
         encounter.textColor = this.state.textColor;
-        StorageService.updateData(encounter).then(this.props.onChange);
+        SyncStorageService.updateData(encounter).then(this.props.onChange);
     }
 
     renderCustomize = () => {

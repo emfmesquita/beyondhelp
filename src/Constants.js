@@ -6,6 +6,13 @@ const defaultListHeaderColor = "#333";
 const presetListHeaderColor = [defaultListHeaderColor];
 
 const configurationId = "bh-config";
+const formMapRefsId = "bh-form-map-refs";
+
+const compendiumPage = "https://www.dndbeyond.com/compendium/";
+
+const mapAreaRect = "rect";
+const mapAreaCircle = "circle";
+const mapAreaRhombus = "rhombus";
 
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
@@ -41,6 +48,23 @@ class Constants {
 
     static get ConfigurationId() {
         return configurationId;
+    }
+    static get FormMapRefsId() {
+        return formMapRefsId;
+    }
+
+    static get CompendiumPage() {
+        return compendiumPage;
+    }
+
+    static get MapAreaRect() {
+        return mapAreaRect;
+    }
+    static get MapAreaCircle() {
+        return mapAreaCircle;
+    }
+    static get MapAreaRhombus() {
+        return mapAreaRhombus;
     }
 
     static get AddMonsterMessage() {

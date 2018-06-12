@@ -1,7 +1,7 @@
 import { debounce, throttle } from 'lodash';
 
 import ConfigStorageService from "./storage/ConfigStorageService";
-import StorageService from "./storage/StorageService";
+import SyncStorageService from "./storage/SyncStorageService";
 
 const clrearLoadTimeHeight = function () {
     document.body.style.height = null;
@@ -16,7 +16,7 @@ const updateScroll = debounce(() => {
         config.scrollyoffset = window.pageYOffset || 0;
         // saves the current height of page to be able to scroll on load before render the page
         config.scrollpageheight = document.getElementById("bhroot").offsetHeight;
-        StorageService.updateData(config);
+        SyncStorageService.updateData(config);
     });
 }, 300);
 

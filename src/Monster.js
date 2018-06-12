@@ -3,7 +3,7 @@ import './Monster.css';
 import React, { Component } from 'react';
 
 import MonsterHpBar from "./MonsterHpBar";
-import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import MenuButton from "./buttons/MenuButton";
 import { Row } from 'react-bootstrap';
 
 class Monster extends Component {
@@ -38,7 +38,7 @@ class Monster extends Component {
                         onMonsterHpChange={this.props.onMonsterHpChange}
                     />
                     <span className="Monster-config-button">
-                        <MonsterMenuButton hidden={false} icon="glyphicon-cog" onClick={this.handleOptionsClick} title="Monster Options" />
+                        <MenuButton hidden={false} icon="glyphicon-cog" onClick={this.handleOptionsClick} title="Monster Options" />
                     </span>
                 </Row>
             </div>

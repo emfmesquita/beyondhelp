@@ -7,7 +7,7 @@ import ColorService from './services/ColorService';
 import Monster from './Monster';
 import MonsterData from './data/MonsterData';
 import MonsterListData from './data/MonsterListData';
-import MonsterMenuButton from "./monsterbuttons/MonsterMenuButton";
+import MenuButton from "./buttons/MenuButton";
 
 class MonsterList extends Component {
     headerTextColor = () => {
@@ -66,12 +66,12 @@ class MonsterList extends Component {
         return (
             <div ref={(el) => this.element = el}>
                 <div className="Monster-list-header-container" onMouseDown={this.handleClick}>
-                    <MonsterMenuButton icon="glyphicon-cog" title="List Options" onClick={this.handleOptionsClick} />
+                    <MenuButton icon="glyphicon-cog" title="List Options" onClick={this.handleOptionsClick} />
                     <div className="Monster-list-header" title={title} onClick={this.toggle} style={{ color: this.headerTextColor() }}>
                         <div className="Monster-list-header-text">{`(${numberOfMonsters}) ${this.props.list.name}`}</div>
                     </div>
                     <span className="Monster-list-header-collapsible" title={title} onClick={this.toggle}>
-                        <MonsterMenuButton icon={icon} onClick={() => { }} />
+                        <MenuButton icon={icon} onClick={() => { }} />
                     </span>
                 </div>
                 {grid}

@@ -6,25 +6,26 @@ import $ from "jquery";
 import BadgeService from './services/BadgeService';
 import C from "./Constants";
 import ConfigStorageService from './services/storage/ConfigStorageService';
-import MessageService from './services/MessageService';
 import ConfirmDialog from "./modals/ConfirmDialog";
 import EncounterOptionsModal from "./modals/EncounterOptionsModal";
-import Link from './monsterbuttons/Link';
+import Link from './buttons/Link';
+import LinkService from "./services/LinkService";
 import ListOptionsModal from "./modals/ListOptionsModal";
+import MenuButton from './buttons/MenuButton';
+import MessageService from './services/MessageService';
 import MonsterData from './data/MonsterData';
 import MonsterEncounterData from './data/MonsterEncounterData';
 import MonsterEncounterStorageService from './services/storage/MonsterEncounterStorageService';
 import MonsterList from './MonsterList';
 import MonsterListData from './data/MonsterListData';
 import MonsterListStorageService from './services/storage/MonsterListStorageService';
-import MonsterMenuButton from './monsterbuttons/MonsterMenuButton';
 import MonsterOptionsModal from "./modals/MonsterOptionsModal";
 import MonsterStorageService from './services/storage/MonsterStorageService';
 import MonstersService from './services/MonstersService';
 import NewEncounterModal from "./modals/NewEncounterModal";
 import ScrollService from './services/ScrollService';
 import Select from 'react-select';
-import StorageService from './services/storage/StorageService';
+import SyncStorageService from './services/storage/SyncStorageService';
 import { Well } from 'react-bootstrap';
 import { throttle } from 'lodash';
 
@@ -36,14 +37,14 @@ ScrollService.loadScrollPosition().then(ScrollService.watchScrollChange);
  * Handler called after toggle, updates the list on storage.
  */
 const saveToggle = throttle((list: MonsterListData) => {
-    StorageService.updateData(list).catch((e) => { throw new Error(e); });
+    SyncStorageService.updateData(list).catch((e) => { throw new Error(e); });
 }, 500);
 
 /**
  * Handler called after hp changes, updates the monster on storage.
  */
 const saveHpChanged = throttle((monster: MonsterData) => {
-    StorageService.updateData(monster).then(() => {
+    SyncStorageService.updateData(monster).then(() => {
         BadgeService.updateBadgeCount();
     }).catch((e) => { throw new Error(e); });
 }, 500);
@@ -107,7 +108,7 @@ class App extends Component {
     activeEncounterChange = (newActiveEncounter: MonsterEncounterData) => {
         ConfigStorageService.getConfig().then(config => {
             config.activeEncounterId = newActiveEncounter.storageId;
-            return StorageService.updateData(config);
+            return SyncStorageService.updateData(config);
         }).then(() => {
             this.setState({ activeEncounter: newActiveEncounter }, BadgeService.updateBadgeCount);
         });
@@ -354,8 +355,9 @@ class App extends Component {
         return (
             <div id="bhroot" className={this.dialogOpenClass()} onContextMenu={(e) => e.preventDefault()}>
                 <div className="Monster-encounter-menu">
-                    <MonsterMenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
-                    <MonsterMenuButton className="btn" icon="glyphicon-cog" title="Encounter Options" onClick={this.openEncounterOptions} />
+                    <MenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
+                    <MenuButton className="btn" icon="glyphicon-cog" title="Encounter Options" onClick={this.openEncounterOptions} />
+                    <MenuButton className="btn" icon="glyphicon-wrench" title="Extension Options" onClick={LinkService.toNewTabHandler("chrome://extensions/?options=" + chrome.runtime.id, true)} />
                     <Select
                         className="Monster-encounter-select"
                         labelKey="name"

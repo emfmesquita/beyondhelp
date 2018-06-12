@@ -74,7 +74,6 @@ class CharacterFolder extends Component {
             const value = [];
             Array.from(options).forEach(option => { if (option.selected) value.push(option.value); });
             this.setState({ [selectProp]: value });
-            console.log(value);
         };
         handleSelected = handleSelected.bind(this);
 

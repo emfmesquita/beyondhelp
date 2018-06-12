@@ -1,20 +1,13 @@
 @mixin reference($size, $margin) {
-    &:hover .BH-copy-reference {
-        opacity: 1;
-        transition: visibility 0s, opacity 0.5s linear;
-        visibility: visible;
-    }
     .BH-copy-reference {
         background-image: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-black.svg");
         background-size: cover;
         display: inline-block;
         height: $size;
-        opacity: 0;
         margin-left: $margin;
-        transition: visibility 0.5s, opacity 0.5s linear;
-        visibility: hidden;
         width: $size;
     }
+    @include showOnHover("BH-copy-reference");
 }
 
 @media screen {

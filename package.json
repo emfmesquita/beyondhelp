@@ -1,13 +1,15 @@
 {
     "name": "beyondhelp",
-    "version": "0.10.0",
+    "version": "0.10.5",
     "private": true,
     "dependencies": {
         "bootstrap": "^3.3.7",
         "debounce-promise": "^3.0.2",
         "jquery": "^3.2.1",
         "lodash": "^4.17.4",
+        "maphilight": "^1.4.0",
         "react": "^16.0.0",
+        "react-ace": "^6.1.1",
         "react-bootstrap": "^0.31.3",
         "react-color": "^2.13.8",
         "react-dom": "^16.0.0",
@@ -43,6 +45,7 @@
     },
     "scripts": {
         "build": "webpack --config ./webpack/webpack.config.dev.js",
+        "watch": "webpack --config ./webpack/webpack.config.dev.js -w",
         "release": "webpack --config ./webpack/webpack.config.prod.js"
     }
 }

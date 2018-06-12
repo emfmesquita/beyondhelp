@@ -56,7 +56,11 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on editors. After saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip.
 
 ### Adventure Map References
-- Hoverable tooltips on "Lost Mine of Phandelver" maps (other adventures will be added later).
+- These features applies to "Lost Mine of Phandelver", "Hoard of the Dragon Queen", "Rise of Tiamat", "Princes of the Apocalypse" and "Out of the Abyss" (other adventures will be added later):
+    - Hoverable tooltips on maps that can be clicked to redirect to the area description or other maps;
+    - Tooltip links on compendium menus to the maps on the current page;
+    - Tooltip links on adventures table of contents to the adventure maps;
+    - Tooltip links on the areas description header back to the corresponding map.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
@@ -95,6 +99,11 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ##### Result
 ![Reference result](http://i.imgur.com/fm2Y59O.png)
+
+### Adventure Map References
+![Reference to area description](http://i.imgur.com/IscRyQk.png)
+
+![Link back to Map](http://i.imgur.com/BKoUP53.png)
 
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)

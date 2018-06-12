@@ -8,10 +8,11 @@ import CheckBoxField from "../forms/CheckBoxField";
 import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import FieldService from "../services/FieldService";
+import MapTooltipForm from "./MapTooltipForm";
 import Opt from "../Options";
 import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
-import StorageService from "../services/storage/StorageService";
+import SyncStorageService from "../services/storage/SyncStorageService";
 
 class OptionsApp extends Component {
 
@@ -36,7 +37,7 @@ class OptionsApp extends Component {
     updateConfig = () => {
         ConfigStorageService.getConfig().then((config: Configuration) => {
             Opt.AllOptions.forEach(opt => config[opt] = this.state[opt]);
-            return StorageService.updateData(config);
+            return SyncStorageService.updateData(config);
         });
     }
 
@@ -55,32 +56,51 @@ class OptionsApp extends Component {
     render() {
         return (
             <Form>
-                <OptionGroup label="Character Folders">
-                    {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
-                    {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
-                </OptionGroup>
-                <OptionGroup label="Editor">
-                    {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
-                    {this.optionField("Enable Tooltips Tab on Beyond Help Editor Dialog.", Opt.TooltipsTab)}
-                    {this.optionField("Enable Rollable Tables Tab on Beyond Help Editor Dialog.", Opt.TablesTab)}
-                    {this.optionField("Enable Fullscreen button on editors.", Opt.FullscreenButton)}
-                </OptionGroup>
-                <OptionGroup label="Favicons">
-                    {this.optionField("Change character pages favicon.", Opt.CharacterFavIcon)}
-                </OptionGroup>
-                <OptionGroup label="Monster Buttons">
-                    {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
-                    {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
-                    {this.optionField("Show buttons to add monsters on homebrew pages.", Opt.AddMonsterOnHomebrewList)}
-                </OptionGroup>
-                <OptionGroup label="Tooltips">
-                    {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}
-                    {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.CustomTooltips)}
-                    {this.optionField("Enable Reference Tooltips.", Opt.RefTooltips)}
-                </OptionGroup>
-                {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
-                {this.optionField("Enable roll on tables.", Opt.TableRolls)}
-                {this.optionField("Add references on adventure maps.", Opt.MapRefs)}
+                <div>
+                    <OptionGroup label="Character Folders">
+                        {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
+                        {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
+                    </OptionGroup>
+                    <OptionGroup label="Editor">
+                        {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
+                        {this.optionField("Enable Tooltips Tab on Beyond Help Editor Dialog.", Opt.TooltipsTab)}
+                        {this.optionField("Enable Rollable Tables Tab on Beyond Help Editor Dialog.", Opt.TablesTab)}
+                        {this.optionField("Enable Fullscreen button on editors.", Opt.FullscreenButton)}
+                    </OptionGroup>
+                    <OptionGroup label="Favicons">
+                        {this.optionField("Change character pages favicon.", Opt.CharacterFavIcon)}
+                    </OptionGroup>
+                    <OptionGroup label="Map References">
+                        {this.optionField("Global enable map references.", Opt.MapRefs)}
+                        {this.optionField("Enable main map references (rectangular references).", Opt.MapRefsRect)}
+                        {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc)}
+                        {this.optionField("Enable extra map references (diamond shape references).", Opt.MapRefsRho)}
+                        {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks)}
+                        {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
+                        {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
+                    </OptionGroup>
+                    <OptionGroup label="Extra Map References Form">
+                        <MapTooltipForm />
+                    </OptionGroup>
+                    <OptionGroup label="Monster Buttons">
+                        {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
+                        {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
+                        {this.optionField("Show buttons to add monsters on homebrew pages.", Opt.AddMonsterOnHomebrewList)}
+                    </OptionGroup>
+                    <OptionGroup label="Tooltips">
+                        {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}
+                        {this.optionField("Enable Extra Tooltips (backgrounds and feats).", Opt.CustomTooltips)}
+                        {this.optionField("Enable Reference Tooltips.", Opt.RefTooltips)}
+                        {this.optionField("Add tooltips to main map references (rectangular ones) .", Opt.MapRefsRectTooltips)}
+                        {this.optionField("Add tooltips to map to map references (circle ones).", Opt.MapRefsCircTooltips)}
+                        {this.optionField("Add tooltips to extra map references (diamond shape ones).", Opt.MapRefsRhoTooltips)}
+                        {this.optionField("Add tooltips to links on compendium headers.", Opt.MapLinksTooltips)}
+                        {this.optionField("Add tooltips to links on compendium menus.", Opt.MapMenuLinksTooltips)}
+                        {this.optionField("Add tooltips to links compendium table of contents.", Opt.MapTocLinksTooltips)}
+                    </OptionGroup>
+                    {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
+                    {this.optionField("Enable roll on tables.", Opt.TableRolls)}
+                </div>
             </Form>
         );
     }
