@@ -9,6 +9,7 @@ import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import FieldService from "../services/FieldService";
 import MapTooltipForm from "./MapTooltipForm";
+import PbpEntriesForm from "./PbpEntriesForm";
 import Opt from "../Options";
 import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
@@ -97,6 +98,10 @@ class OptionsApp extends Component {
                         {this.optionField("Add tooltips to links on compendium headers.", Opt.MapLinksTooltips)}
                         {this.optionField("Add tooltips to links on compendium menus.", Opt.MapMenuLinksTooltips)}
                         {this.optionField("Add tooltips to links compendium table of contents.", Opt.MapTocLinksTooltips)}
+                    </OptionGroup>
+                    <OptionGroup label="Play by Post">
+                        {this.optionField("Enable Campaign Notes on PbP pages.", Opt.PbpNotes)}
+                        <PbpEntriesForm />
                     </OptionGroup>
                     {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
                     {this.optionField("Enable roll on tables.", Opt.TableRolls)}

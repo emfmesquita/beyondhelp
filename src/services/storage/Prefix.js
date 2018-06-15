@@ -1,3 +1,4 @@
+
 import C from "../../Constants";
 
 /**
@@ -12,6 +13,8 @@ class Prefix {
                 return "bh-monsterlist-";
             case "MonsterEncounterData":
                 return "bh-monsterencounter-";
+            case "PlayByPostData":
+                return C.PbpRefsId;
             default:
                 return undefined;
         }
@@ -19,6 +22,7 @@ class Prefix {
 
     static createStorageId(dataClass: string, increment: number) {
         if (dataClass === "Configuration") return C.ConfigurationId;
+        if (dataClass === "PlayByPostData") return C.PbpRefsId;
         if (!increment) {
             increment = 0;
         }

@@ -13,6 +13,7 @@ const homebrewTooltips = "homebrewtooltips";
 const customTooltips = "customTooltips";
 const refTooltips = "refTooltips";
 const refButtons = "refButtons";
+const pbpNotes = "pbpNotes";
 
 //#region maps
 const mapRefs = "mapRefs";
@@ -46,6 +47,7 @@ const allOptions = [
     customTooltips,
     refTooltips,
     refButtons,
+    pbpNotes,
     //#region maps
     mapRefs,
     mapRefsRectTooltips,
@@ -109,7 +111,9 @@ class Options {
     static get RefButtons(): string {
         return refButtons;
     }
-
+    static get PbpNotes(): string {
+        return pbpNotes;
+    }
     //#region maps
     static get MapRefs(): string {
         return mapRefs;
