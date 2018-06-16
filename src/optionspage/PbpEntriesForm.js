@@ -1,7 +1,7 @@
 import "./OptionsApp.scss";
 
 import React, { Component } from 'react';
-
+import { Glyphicon } from 'react-bootstrap';
 import { debounce } from 'lodash';
 import PlayByPostStorageService from "../services/storage/PlayByPostStorageService";
 
@@ -12,7 +12,13 @@ class PbpEntriesForm extends Component {
             loaded: false,
             playByPostData: null
         };
+    }
 
+    componentDidMount() {
+        this.initData();
+    }
+
+    initData() {
         PlayByPostStorageService.getAllCampaignNotes().then((playByPostData: PlayByPostData[]) => {
             this.setState({playByPostData: playByPostData});
         });
@@ -21,7 +27,7 @@ class PbpEntriesForm extends Component {
     deleteData(playByPostData: PlayByPostData) {
         PlayByPostStorageService.deleteCampaignNotes(playByPostData);
         PlayByPostStorageService.getAllCampaignNotes().then((playByPostData: PlayByPostData[]) => {
-            this.setState({playByPostData: playByPostData});
+            this.initData();
         });
     }
 
@@ -40,13 +46,17 @@ class PbpEntriesForm extends Component {
     renderEditor = () => {
         if (!this.state.playByPostData) return null;
         return (
-            <div>
-                <table>
+            <div style={{border: '1px black solid', padding: '2px', height: '80px', overflow:"scroll"}}>
+                <table width="100%">
+                    <tr>
+                        <th colspan="2">{this.state.playByPostData.length} campaign{this.state.playByPostData.length !== 1 ? "s" : ""}</th>
+                        <th><Glyphicon glyph="refresh" onClick={() => this.initData()}/></th>
+                    </tr>
                     {this.state.playByPostData.map((data, idx) => (
                         <tr>
-                            <td><a href={this.threadUrl(data)}>{data.name}</a></td>
-                            <td><a onClick={() => { this.exportData(data)} }>Export</a></td>
-                            <td><a onClick={() => { this.deleteData(data)} }>Delete</a></td>
+                            <td width="80%"><a href={this.threadUrl(data)}>{data.name}</a></td>
+                            <td width="10%"><Glyphicon glyph="download" onClick={() => { this.exportData(data)}}/></td>
+                            <td width="10%"><Glyphicon glyph="remove" onClick={() => { this.deleteData(data)}}/></td>
                         </tr>
                     ))}
                 </table>

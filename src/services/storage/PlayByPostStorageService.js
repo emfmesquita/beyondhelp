@@ -6,7 +6,7 @@ import SyncStorageService from "./SyncStorageService";
 
 const id = (owner: string, threadid: string, threadname: string) => C.PbpRefsId + '-' + owner + "-" + threadid + "-" + threadname;
 
-let storage = SyncStorageService;
+let storage = LocalStorageService;
 
 class PlayByPostStorageService {
 
@@ -27,9 +27,8 @@ class PlayByPostStorageService {
                             storage = SyncStorageService;
                         }
                         storage.createData(null, data);
-                    })
-                })
-
+                    });
+                });
                 break;
             default:
                 //no-op

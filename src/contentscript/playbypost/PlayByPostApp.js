@@ -55,9 +55,9 @@ class PlayByPostApp extends Component {
     render() {
         return (
             <div>
-            <a href="javascript:void(0)" className="pbp-notes-action-open" onClick={this.toggleCampaignNotes}>
+            <h6 onClick={this.toggleCampaignNotes}>
                 {this.state.shownotes === true ? " | Hide" : "+ Show"} Campaign Notes
-            </a>
+            </h6>
             {this.state.shownotes && (
             <textarea style={{width:"100%", height:"250px"}} defaultValue={this.state.playByPostData === null ? '' : this.state.playByPostData.notes}
                 onChange ={this.saveNotes}/>
