@@ -32,7 +32,7 @@ class PbpEntriesForm extends Component {
     }
 
     exportData(playByPostData: PlayByPostData) {
-        const url = `data:text/plain,Url: ${this.threadUrl(playByPostData)}\n\n${playByPostData.notes}`;
+        const url = `data:text/plain,Campaign: ${playByPostData.name}\n\nUrl: ${this.threadUrl(playByPostData)}\n\n${playByPostData.notes}`;
         chrome.downloads.download({
             url: url,
             filename: `${playByPostData.urlSafeThreadName}.txt`

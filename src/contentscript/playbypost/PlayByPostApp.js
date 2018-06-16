@@ -18,8 +18,8 @@ class PlayByPostApp extends Component {
                 if (!data) {
                     data = new PlayByPostData();
                 }
-                if (!data.notes || data.notes.length === 0) {
-                    data.notes = this.props.name + '\n\n';
+                if (!data.notes) {
+                    data.notes = '';
                 }
                 return data;
             })
