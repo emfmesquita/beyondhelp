@@ -7,6 +7,7 @@ const presetListHeaderColor = [defaultListHeaderColor];
 
 const configurationId = "bh-config";
 const formMapRefsId = "bh-form-map-refs";
+const pbpRefsId = "pbp-thread";
 
 const compendiumPage = "https://www.dndbeyond.com/compendium/";
 
@@ -51,6 +52,10 @@ class Constants {
     }
     static get FormMapRefsId() {
         return formMapRefsId;
+    }
+
+    static get PbpRefsId() {
+        return pbpRefsId;
     }
 
     static get CompendiumPage() {

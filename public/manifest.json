@@ -57,6 +57,7 @@
         "activeTab",
         "commands",
         "cookies",
+        "downloads",
         "notifications",
         "storage",
         "tabs",
