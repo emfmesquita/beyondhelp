@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-import { throttle } from 'lodash';
 import PlayByPostData from "../../data/PlayByPostData";
 import PlayByPostStorageService from "../../services/storage/PlayByPostStorageService";
+import { throttle } from 'lodash';
+
 class PlayByPostApp extends Component {
     constructor(props) {
         super(props);
         this.state = {
             shownotes: false,
-            playByPostData: null,
+            playByPostData: null
         };
     }
 
@@ -49,19 +50,21 @@ class PlayByPostApp extends Component {
     }, 1000);
 
     toggleCampaignNotes = () => {
-        this.setState({ shownotes: this.state.shownotes !== true});
+        this.setState({ shownotes: this.state.shownotes !== true });
     }
 
     render() {
         return (
-            <div>
-            <h6 onClick={this.toggleCampaignNotes}>
-                {this.state.shownotes === true ? " | Hide" : "+ Show"} Campaign Notes
-            </h6>
-            {this.state.shownotes && (
-            <textarea style={{width:"100%", height:"250px"}} defaultValue={this.state.playByPostData === null ? '' : this.state.playByPostData.notes}
-                onChange ={this.saveNotes}/>
-            )}
+            <div className="BH-pbp-area">
+                <h6 className="BH-pbp-area-header" onClick={this.toggleCampaignNotes}>
+                    {this.state.shownotes === true ? " | Hide" : "+ Show"} Campaign Notes
+                </h6>
+                {this.state.shownotes &&
+                    <textarea
+                        defaultValue={this.state.playByPostData === null ? '' : this.state.playByPostData.notes}
+                        onChange={this.saveNotes}
+                    />
+                }
             </div>
         );
     }

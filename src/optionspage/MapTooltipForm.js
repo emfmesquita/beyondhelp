@@ -1,4 +1,4 @@
-import "./OptionsApp.scss";
+import "./MapTooltipForm.scss";
 
 import React, { Component } from 'react';
 
@@ -58,6 +58,7 @@ class MapTooltipForm extends Component {
                     wrapEnabled
                     focus
                     width="100%"
+                    height="300px"
                     showPrintMargin={false}
                     tabSize={2}
                     setOptions={{
@@ -65,7 +66,7 @@ class MapTooltipForm extends Component {
                     }}
                     onChange={this.handleChange}
                 />
-                <textarea className="BH-option-form-width-hack" />
+                <textarea className="BH-option-mapref-width-hack" />
             </div>
         );
     }

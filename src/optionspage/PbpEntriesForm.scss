@@ -1,0 +1,25 @@
+.BH-pbp-form {
+    padding: 2px;
+    padding-right: 20px;
+    .glyphicon {
+        cursor: pointer;
+        padding-right: 4px;
+        padding-top: 4px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .BH-pbp-form-row {
+        display: flex;
+        &:hover {
+            background: rgb(225, 225, 232);
+        }
+    }
+    .BH-pbp-form-row-info {
+        display: inline-block;
+        width: calc(100% - 40px);
+        padding: 4px;
+    }
+    .BH-pbp-form-header {
+        font-weight: bold;
+    }
+}
