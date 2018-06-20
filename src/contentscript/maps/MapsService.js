@@ -23,6 +23,7 @@ import MapsOotA from "./compendiums/MapsOotA";
 import MapsPotA from "./compendiums/MapsPotA";
 import MapsRoT from "./compendiums/MapsRoT";
 import MapsTftYP from "./compendiums/MapsTftYP";
+import MapsToA from "./compendiums/MapsToA";
 import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
@@ -78,6 +79,9 @@ const processMenuMapLink = function (map: MapInfo) {
     const jqMenu = $(".quick-menu.quick-menu-tier-1, .quick-menu.quick-menu-tier-2");
     if (jqMenu.length === 0) return;
     addMenuMapLink(map, jqMenu.find(`a[href='#${map.menuHeaderId}']`));
+    if (map.extraMenuHeaderIds) {
+        map.extraMenuHeaderIds.forEach(menuHeaderId => addMenuMapLink(map, jqMenu.find(`a[href='#${menuHeaderId}']`)));
+    }
 };
 
 // add a hoverable tooltip link to a map for every target with the corresponding selector
@@ -153,6 +157,7 @@ class MapsService {
             processMapRefs(MapsOotA, config);
             processMapRefs(MapsCoS, config);
             processMapRefs(MapsTftYP, config);
+            processMapRefs(MapsToA, config);
 
             // create map refs from form data added on options page
             FormMapsService.buildMapRefs(formMapRefsData).forEach(mapRefs => {

@@ -2,13 +2,14 @@ import MapAreaInfo from "./MapAreaInfo";
 import MapLinksInfo from "./MapLinksInfo";
 
 class MapInfo {
-    constructor(menuHeaderId: string, page: string, mapImageName: string, contentId: string, areas: MapAreaInfo[], extraMapLinkSelectors: string[]) {
+    constructor(menuHeaderId: string, page: string, mapImageName: string, contentId: string, areas: MapAreaInfo[], extraMapLinkSelectors: string[], extraMenuHeaderIds: string[]) {
         this.menuHeaderId = menuHeaderId;
         this.page = page;
         this.mapImageName = mapImageName; // map file name
         this.contentId = contentId; // content id of the paragraph that contains the map, used on the tooltips of links to map
         this.areas = areas;
         this.extraMapLinkSelectors = extraMapLinkSelectors;
+        this.extraMenuHeaderIds = extraMenuHeaderIds;
         this.mapLinks = MapInfo.processMapLinks(this);
     }
 
@@ -38,6 +39,9 @@ class MapInfo {
         const areasWithLinks: Set<string> = new Set();
         if (mapInfo.areas) mapInfo.areas.forEach(area => area.addBackLink && areasWithLinks.add("#" + area.headerId));
         if (mapInfo.menuHeaderId) areasWithLinks.add("#" + mapInfo.menuHeaderId);
+        if (mapInfo.extraMenuHeaderIds) {
+            mapInfo.extraMenuHeaderIds.forEach(menuHeaderId => areasWithLinks.add("#" + menuHeaderId));
+        }
         extraMapLinkSelectors = extraMapLinkSelectors.concat(Array.from(areasWithLinks));
 
         return new MapLinksInfo(mapInfo.page, mapInfo.page, mapInfo.contentId, extraMapLinkSelectors);
