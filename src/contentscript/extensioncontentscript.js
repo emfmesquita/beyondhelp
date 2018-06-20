@@ -92,6 +92,6 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();
 
-    // inits campaign notes textarea on pbp pages
-    if (config[Opt.PbpNotes]) PlayByPostService.init();
+    // // inits campaign notes textarea on pbp pages
+    // if (config[Opt.PbpNotes]) PlayByPostService.init();
 });

@@ -77,9 +77,9 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
                 </OptionGroup>
-                <OptionGroup label="Extra Map References" startExpanded>
+                {/* <OptionGroup label="Extra Map References" startExpanded>
                     <MapTooltipForm />
-                </OptionGroup>
+                </OptionGroup> */}
                 <OptionGroup label="Monster Buttons">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
@@ -96,10 +96,10 @@ class OptionsApp extends Component {
                     {this.optionField("Add tooltips to links on compendium menus.", Opt.MapMenuLinksTooltips)}
                     {this.optionField("Add tooltips to links compendium table of contents.", Opt.MapTocLinksTooltips)}
                 </OptionGroup>
-                <OptionGroup label="Play by Post">
+                {/* <OptionGroup label="Play by Post">
                     {this.optionField("Enable Campaign Notes on PbP pages.", Opt.PbpNotes)}
                     <PbpEntriesForm />
-                </OptionGroup>
+                </OptionGroup> */}
                 {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
                 {this.optionField("Enable roll on tables.", Opt.TableRolls)}
                 <textarea className="BH-option-form-width-hack" />
