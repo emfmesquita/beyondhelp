@@ -1,0 +1,41 @@
+.BH-extramaps-add {
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.BH-extramaps-object-array {
+    .BH-extramaps-object-delete {
+        font-size: 10px;
+        line-height: 10px;
+        float: right;
+        margin-top: -10px;
+        margin-right: -10px;
+    }
+    ul[role="tablist"] {
+        border-bottom: 0px !important;
+    }
+}
+
+.BH-extramaps-simple-array {
+    .BH-extramaps-simple-array-row {
+        padding-left: 15px;
+        width: calc(100% - 40px);
+        display: inline-block;
+    }
+    .BH-extramaps-simple-delete {
+        font-size: 10px;
+        line-height: 10px;
+        float: right;
+        margin-top: 6px;
+        margin-right: 14px;
+    }
+}
+
+.BH-extramaps-title {
+    font-weight: bold;
+    &>a {
+        color: $options-black !important;
+        padding-left: 0px !important;
+        padding-right: 4px !important;
+    }
+}

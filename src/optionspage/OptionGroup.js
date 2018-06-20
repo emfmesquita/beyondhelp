@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
+import OptionButton from "./OptionButton";
 
 class OptionGroup extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            expanded: false
+            expanded: !!props.startExpanded
         };
     }
 
@@ -23,7 +24,7 @@ class OptionGroup extends Component {
             <div className="BH-option-group">
                 <div className="BH-option-group-label" onClick={this.toggle}>
                     {this.props.label}
-                    <Glyphicon glyph={this.state.expanded ? "chevron-down" : "chevron-right"} />
+                    <OptionButton icon={this.state.expanded ? "chevron-down" : "chevron-right"} />
                 </div>
                 <div className={"BH-option-group-content" + (this.state.expanded ? " expanded" : "")}>
                     {this.renderContent()}

@@ -1,0 +1,8 @@
+.Bh-option-button {
+    cursor: pointer;
+    padding-right: 4px;
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    @include hoverColor();
+}

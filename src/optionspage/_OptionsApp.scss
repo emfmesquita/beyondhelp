@@ -1,10 +1,15 @@
 body {
     padding: 16px;
+    color: $options-black;
 }
 
 .BH-option-form-width-hack {
     visibility: hidden;
     width: 664px;
+}
+
+.BH-option-field {
+    @include hoverColor();
 }
 
 .BH-option-group {
@@ -16,6 +21,9 @@ body {
         cursor: pointer;
         .glyphicon {
             float: right;
+        }
+        &:hover {
+            color: $options-dark-gray;
         }
     }
     .BH-option-group-content {

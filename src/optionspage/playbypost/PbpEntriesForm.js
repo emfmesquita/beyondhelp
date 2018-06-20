@@ -1,9 +1,8 @@
-import "./PbpEntriesForm.scss";
-
 import React, { Component } from 'react';
-import { Glyphicon } from 'react-bootstrap';
+
+import OptionButton from "../OptionButton";
+import PlayByPostStorageService from "../../services/storage/PlayByPostStorageService";
 import { debounce } from 'lodash';
-import PlayByPostStorageService from "../services/storage/PlayByPostStorageService";
 
 class PbpEntriesForm extends Component {
     constructor(props) {
@@ -49,9 +48,8 @@ class PbpEntriesForm extends Component {
                 <span className="BH-pbp-form-row-info">
                     <a href={this.threadUrl(data)}>{data.name}</a>
                 </span>
-                <Glyphicon glyph="download" title="Download" onClick={() => { this.exportData(data); }} />
-                <Glyphicon glyph="remove" title="Delete" onClick={() => { this.deleteData(data); }} />
-
+                <OptionButton icon="download" title="Download Notes" onClick={() => this.exportData(data)} />
+                <OptionButton icon="remove" title="Delete Notes" onClick={() => this.deleteData(data)} />
             </div>
         );
     }
@@ -64,8 +62,7 @@ class PbpEntriesForm extends Component {
                     <span className="BH-pbp-form-header BH-pbp-form-row-info">
                         {this.state.playByPostData.length} Campaign{this.state.playByPostData.length !== 1 ? "s" : ""}
                     </span>
-                    <Glyphicon glyph="refresh" title="Refresh" onClick={() => this.initData()} />
-
+                    <OptionButton icon="refresh" title="Refresh Campaign List" onClick={() => this.initData()} />
                 </div>
                 {this.state.playByPostData.map(this.renderRows)}
             </div>

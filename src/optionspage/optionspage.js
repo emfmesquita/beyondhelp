@@ -1,8 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap-theme.css";
+import "./optionspage.scss";
 
-import OptionsApp from './OptionsApp';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import OptionsApp from "./OptionsApp";
+import React from "react";
+import { render } from "react-dom";
 
-ReactDOM.render(<OptionsApp />, document.getElementById('root'));
+render(<OptionsApp />, document.getElementById("root"));

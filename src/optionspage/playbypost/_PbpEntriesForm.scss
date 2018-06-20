@@ -1,0 +1,18 @@
+.BH-pbp-form {
+    padding: 2px;
+    padding-right: 20px;
+    .BH-pbp-form-row {
+        display: flex;
+        @include hoverBackground();
+        border-radius: 4px;
+    }
+    .BH-pbp-form-row-info {
+        display: inline-block;
+        width: calc(100% - 46px);
+        margin-left: 4px;
+        padding: 4px;
+    }
+    .BH-pbp-form-header {
+        font-weight: bold;
+    }
+}

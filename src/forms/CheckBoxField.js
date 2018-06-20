@@ -1,5 +1,3 @@
-import "./CheckBoxField.scss";
-
 import { Checkbox, FormGroup } from 'react-bootstrap';
 import React, { Component } from "react";
 
