@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Form from "react-jsonschema-form";
-import { debounce } from 'lodash';
-import { Glyphicon } from 'react-bootstrap';
+import DateFormat from "dateformat";
+import { debounce } from "lodash";
+import { Glyphicon, FieldGroup } from "react-bootstrap";
 
 // DO NOT CHANGE THIS IMPORT ORDER
-import AceEditor from 'react-ace';
-import brace from 'brace';
-import 'brace/mode/javascript';
-import 'brace/theme/monokai';
+import AceEditor from "react-ace";
+import brace from "brace";
+import "brace/mode/javascript";
+import "brace/theme/monokai";
 // DO NOT CHANGE THIS IMPORT ORDER
 
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
+import ConfirmDialog from "../../modals/ConfirmDialog";
 import FormMapRefsData from "../../data/FormMapRefsData";
+import OptionButton from "../OptionButton";
 import OptionGroup from "../OptionGroup";
 
-import ExtraMapRefsSchema from "./ExtraMapRefsSchema";
-import ExtraMapRefsUiSchema from "./ExtraMapRefsUiSchema";
 import ExtraMapRefsErrors from "./ExtraMapRefsErrors";
 import ExtraMapRefsFormArrayTemplate from "./ExtraMapRefsFormArrayTemplate";
+import ExtraMapRefsSchema from "./ExtraMapRefsSchema";
+import ExtraMapRefsUiSchema from "./ExtraMapRefsUiSchema";
 
 const noChangesMsg = "No changes.";
 const hasChangesMsg = "Has changes not saved.";
@@ -38,7 +41,8 @@ class ExtraMapRefsOptions extends Component {
             content: "",
             contentObj: {},
             loaded: false,
-            valid: true
+            valid: true,
+            showInportDialog: false
         };
 
         ConfigStorageService.getFormMapRefs().then((formMapRefsData: FormMapRefsData) => {
@@ -46,7 +50,7 @@ class ExtraMapRefsOptions extends Component {
         });
     }
 
-    handleCodeChange = (content: string, save: boolean) => {
+    handleCodeChange = (content: string, save: boolean, saveOnFail = true) => {
         const newState = { content, loaded: true };
         if (save) newState.saveMsg = hasChangesMsg;
         try {
@@ -56,7 +60,7 @@ class ExtraMapRefsOptions extends Component {
             newState.valid = false;
         }
         this.setState(newState);
-        if (save) this.save(content);
+        if (save && (saveOnFail || newState.valid)) this.save(content);
     }
 
     handleFormChange = (form: object) => {
@@ -76,6 +80,34 @@ class ExtraMapRefsOptions extends Component {
 
     handleEditorChange = (content: string) => {
         this.handleCodeChange(content, true);
+    }
+
+    handleExport = () => {
+        const filename = `bh_extra_map_refs_${DateFormat(new Date(), "yy-mm-dd_HH-MM-ss")}.json`;
+        chrome.downloads.download({
+            url: `data:text/plain,${this.state.content}`, filename
+        });
+    }
+
+    handleInportClick = () => {
+        this.setState({ showInportDialog: true });
+    }
+
+    handleInportConfirm = () => {
+        this.setState({ showInportDialog: false }, () => {
+            this.uploadInput.click();
+        });
+    }
+
+    handleInport = (e) => {
+        if (!e.target.files || e.target.files.length === 0) return;
+        const file = e.target.files[0];
+        var reader = new FileReader();
+        reader.onload = (ev) => {
+            this.uploadInput.value = "";
+            this.handleCodeChange(ev.target.result, true, false);
+        };
+        reader.readAsText(file);
     }
 
     renderEditor = () => {
@@ -106,10 +138,24 @@ class ExtraMapRefsOptions extends Component {
         const valid = this.state.valid;
         return (
             <div>
-                <OptionGroup label="JSON Editor">
+                <ConfirmDialog
+                    show={this.state.showInportDialog}
+                    message="Import a json will override your current extra map references. Are you sure?"
+                    onCancel={() => this.setState({ showInportDialog: false })}
+                    confirmButtonStyle="warning"
+                    confirmLabel="Import"
+                    onConfirm={this.handleInportConfirm}
+                />
+                <div>
+                    <OptionButton icon="save" title="Export Extra Map References" onClick={() => this.handleExport()} />
+                    <OptionButton icon="open" title="Import Extra Map References" onClick={() => this.handleInportClick()} />
+                    <span style={{ color: valid ? "green" : "red" }}>{valid ? validMsg : notValidMsg}</span>
+                    <input id="BH-extramaps-upload" type="file" accept=".json" ref={(el) => this.uploadInput = el} onChange={this.handleInport} />
+                </div>
+                {/* <OptionGroup label="JSON Editor">
                     <div><span style={{ color: valid ? "green" : "red" }}>{valid ? validMsg : notValidMsg}</span> - {this.state.saveMsg}</div>
                     {this.renderEditor()}
-                </OptionGroup>
+                </OptionGroup> */}
                 <OptionGroup label="Form" startExpanded>
                     <Form
                         schema={ExtraMapRefsSchema}

@@ -535,13 +535,9 @@ const extraMapLinks = [
     ])
 ];
 
-const path = "adventures/pota/";
-
-MapRefs.processMaps(maps, extraMapLinks, path);
-
 class MapsPotA extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/pota/";
     }
 
     static get maps() {

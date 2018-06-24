@@ -164,13 +164,9 @@ const maps = [
     ], ["#TheTempleofTiamat", "#TempleLayout", "#PerformingtheRitual"])
 ];
 
-const path = "adventures/rot/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsRoT extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/rot/";
     }
 
     static get maps() {

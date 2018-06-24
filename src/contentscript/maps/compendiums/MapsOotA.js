@@ -391,13 +391,9 @@ const maps = [
             "#GromphsOuterSanctum", "#GromphsInnerSanctum", "#Developments", "#CityLocations"])
 ];
 
-const path = "adventures/oota/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsOotA extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/oota/";
     }
 
     static get maps() {

@@ -44,10 +44,15 @@ const mapToMapsUi = {
     }
 };
 
-
 const extraLinksUi = {
     "items": {
         "ui:placeholder": "CSS selector of header element to add a link to the map."
+    }
+};
+
+const extraMenuLinksUi = {
+    "items": {
+        "ui:placeholder": "Html id attribute of extra menu elements related to map."
     }
 };
 
@@ -75,6 +80,7 @@ const mapsUi = {
         "areas": areasUi,
         "extraAreas": extraAreasUi,
         "mapToMaps": mapToMapsUi,
+        "extraMenuHeaderIds": extraMenuLinksUi,
         "extraLinks": extraLinksUi
     }
 };

@@ -212,13 +212,9 @@ const maps = [
             "#GeneralFeatures", "#Conclusion"]).chMap()
 ];
 
-const path = "adventures/lmop/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsLMoP extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/lmop/";
     }
 
     static get maps() {

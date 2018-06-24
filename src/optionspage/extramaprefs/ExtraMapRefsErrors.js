@@ -1,7 +1,7 @@
 import ExtraMapRefsPatterns from "./ExtraMapRefsPatterns";
 
 
-const attToErrorTitle = {
+const attToRequiredTitle = {
     compendiums: "Compendiums",
     path: "Path",
     maps: "Map",
@@ -33,10 +33,15 @@ const patternToMsg = {
 function transformErrors(errors) {
     return errors.map(error => {
         if (error.name === "required") {
-            error.message = `${attToErrorTitle[error.params.missingProperty]} is a required property`;
+            error.message = `${attToRequiredTitle[error.params.missingProperty]} is a required property`;
         }
-        if (error.name === "type" && error.property.indexOf("extraLinks") >= 0) {
-            error.message = "Empty CSS selector.";
+        if (error.name === "type") {
+            if (error.property.indexOf("extraLinks") >= 0) {
+                error.message = "Empty CSS selector.";
+            }
+            if (error.property.indexOf("extraMenuHeaderIds") >= 0) {
+                error.message = "Extra Menu Element Id is a required property";
+            }
         }
         if (error.name === "pattern") {
             const msg = patternToMsg[error.params.pattern];

@@ -25,8 +25,8 @@ const maps = [
         new MapAreaInfo("18NangnangsShrine", "523,318,537,332"),
         new MapAreaInfo("19ObolakasShrine", "482,444,496,458"),
         new MapAreaInfo("20RoyalPalace", "463,368,477,382"),
-        new MapAreaInfo().rect(444, 328, 464, 348).content("76ffb58a-364f-473c-8345-a9b6b3488923"), // 20a
-        new MapAreaInfo().rect(442, 409, 462, 429).content("e29d1616-9692-481f-bb30-2ffe5a88ce4e"), // 20b
+        new MapAreaInfo("20AMainEntrancetotheFane", "444,328,464,348"),
+        new MapAreaInfo("20BSecretEntrancetotheFane", "442,409,462,429"),
         new MapToMapAreaInfo("305.jpg", "122,558,7"), // 3. shrine
         new MapToMapAreaInfo("305.jpg", "269,582,7"), // 4. shrine
         new MapToMapAreaInfo("305.jpg", "417,545,7"), // 6. shrine
@@ -39,7 +39,7 @@ const maps = [
         new MapToMapAreaInfo("402.jpg", "433,339,8"), // fane-of-the-night-serpent
         new MapToMapAreaInfo("402.jpg", "431,419,8"), // fane-of-the-night-serpent
         new MapToMapAreaInfo("505.jpg", "298,166,8") // tomb-of-the-nine-gods
-    ], ["20AMainEntrancetotheFane", "20BSecretEntrancetotheFane"]),
+    ]),
     new MapInfo("3KubazansShrine", "dwellers-of-the-forbidden-city", "305.jpg", "b41d9c6c-d7b0-456b-bd5e-2f8f76e69a8b", [
         new MapAreaInfo().rect(73, 243, 88, 258).content("57e55e02-8000-4664-8d64-a1a1fe4e2388"), // 3a
         new MapAreaInfo().rect(105, 168, 120, 183).content("4318fa1b-854c-4097-94f3-e6b3f0ada52e"), // 3b
@@ -96,7 +96,7 @@ const maps = [
             "#16AShrineEntrance", "#16BMosaicFloor", "#16CChamberofCommand", "#16DHiddenRoom",
             "#18AShrineEntrance", "#18BChamberofGreed", "#18CPuzzleCube",
             "#19AShrineEntrance", "#19BGalleryofCarvings", "#19CSunPool", "#19DMoonPool", "#19EChamberofSacraments", "#19FSecretPassage"
-        ], [
+        ]).extraMenuLinks([
             "4ShagambisShrine", "6MoasShrine", "8UnkhsShrine", "10IjinsShrine",
             "12WongosShrine", "16PapazotlsShrine", "18NangnangsShrine", "19ObolakasShrine"
         ]),
@@ -109,13 +109,9 @@ const maps = [
     ])
 ];
 
-const path = "adventures/toa/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsToA extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/toa/";
     }
 
     static get maps() {

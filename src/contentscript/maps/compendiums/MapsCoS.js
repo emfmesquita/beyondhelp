@@ -5,13 +5,9 @@ import MapToMapAreaInfo from "../MapToMapAreaInfo";
 
 const maps = [];
 
-const path = "adventures/cos/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsCoS extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/cos/";
     }
 
     static get maps() {

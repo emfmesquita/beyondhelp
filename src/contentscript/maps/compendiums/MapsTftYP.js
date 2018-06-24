@@ -371,13 +371,9 @@ const maps = [
     // ], []).tocHId("LocationsintheDungeon"),
 ];
 
-const path = "adventures/tftyp/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsTftYP extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/tftyp/";
     }
 
     static get maps() {

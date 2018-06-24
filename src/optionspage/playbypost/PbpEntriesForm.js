@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import ConfirmDialog from '../../modals/ConfirmDialog';
 import OptionButton from "../OptionButton";
 import PlayByPostStorageService from "../../services/storage/PlayByPostStorageService";
 import { debounce } from 'lodash';
@@ -9,7 +10,9 @@ class PbpEntriesForm extends Component {
         super(props);
         this.state = {
             loaded: false,
-            playByPostData: null
+            playByPostData: null,
+            showDeleteDialog: false,
+            deleteDialogData: null
         };
     }
 
@@ -23,10 +26,20 @@ class PbpEntriesForm extends Component {
         });
     }
 
-    deleteData(playByPostData: PlayByPostData) {
-        PlayByPostStorageService.deleteCampaignNotes(playByPostData);
-        PlayByPostStorageService.getAllCampaignNotes().then((playByPostData: PlayByPostData[]) => {
-            this.initData();
+    handleDeleteClick = (playByPostData: PlayByPostData) => {
+        this.setState({
+            showDeleteDialog: true,
+            deleteDialogData: playByPostData
+        });
+    }
+
+    deleteData = () => {
+        const playByPostData = this.state.deleteDialogData;
+        this.setState({ showDeleteDialog: false, deleteDialogData: null }, () => {
+            PlayByPostStorageService.deleteCampaignNotes(playByPostData);
+            PlayByPostStorageService.getAllCampaignNotes().then((playByPostData: PlayByPostData[]) => {
+                this.initData();
+            });
         });
     }
 
@@ -48,8 +61,8 @@ class PbpEntriesForm extends Component {
                 <span className="BH-pbp-form-row-info">
                     <a href={this.threadUrl(data)}>{data.name}</a>
                 </span>
-                <OptionButton icon="download" title="Download Notes" onClick={() => this.exportData(data)} />
-                <OptionButton icon="remove" title="Delete Notes" onClick={() => this.deleteData(data)} />
+                <OptionButton icon="save" title="Download Notes" onClick={() => this.exportData(data)} />
+                <OptionButton icon="trash" title="Delete Notes" onClick={() => this.handleDeleteClick(data)} />
             </div>
         );
     }
@@ -62,7 +75,7 @@ class PbpEntriesForm extends Component {
                     <span className="BH-pbp-form-header BH-pbp-form-row-info">
                         {this.state.playByPostData.length} Campaign{this.state.playByPostData.length !== 1 ? "s" : ""}
                     </span>
-                    <OptionButton icon="refresh" title="Refresh Campaign List" onClick={() => this.initData()} />
+                    <OptionButton icon="retweet" title="Refresh Campaign List" onClick={() => this.initData()} />
                 </div>
                 {this.state.playByPostData.map(this.renderRows)}
             </div>
@@ -72,6 +85,14 @@ class PbpEntriesForm extends Component {
     render() {
         return (
             <div>
+                <ConfirmDialog
+                    show={this.state.showDeleteDialog}
+                    message="Are you sure to delete these PbP notes?"
+                    onCancel={() => this.setState({ showDeleteDialog: false })}
+                    confirmButtonStyle="danger"
+                    confirmLabel="Delete"
+                    onConfirm={this.deleteData}
+                />
                 {this.renderEditor()}
             </div>
         );

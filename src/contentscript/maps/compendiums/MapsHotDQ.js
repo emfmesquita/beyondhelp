@@ -289,13 +289,9 @@ const maps = [
     ], ["#ImportantNonplayerCharacters", "#GeneralFeatures", "#AreasoftheCastle"])
 ];
 
-const path = "adventures/hotdq/";
-
-MapRefs.processMaps(maps, [], path);
-
 class MapsHotDQ extends MapRefs {
     static get path() {
-        return path;
+        return "adventures/hotdq/";
     }
 
     static get maps() {

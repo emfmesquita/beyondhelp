@@ -81,6 +81,15 @@ const extraLinksSchema = {
     }
 };
 
+const extraMenuLinksSchema = {
+    "type": "array",
+    "title": "Extra Menu Element Ids",
+    "items": {
+        "pattern": ExtraMapRefsPatterns.htmlId,
+        "type": "string"
+    }
+};
+
 const mapsSchema = {
     "type": "array",
     "title": "Maps",
@@ -123,6 +132,7 @@ const mapsSchema = {
             "areas": areasSchema,
             "extraAreas": extraAreasSchema,
             "mapToMaps": mapToMapsSchema,
+            "extraMenuHeaderIds": extraMenuLinksSchema,
             "extraLinks": extraLinksSchema
         },
         "required": ["page", "mapImageName", "contentId", "menuHeaderId"]
