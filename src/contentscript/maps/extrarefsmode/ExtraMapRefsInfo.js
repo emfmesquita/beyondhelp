@@ -6,9 +6,9 @@ import $ from "jquery";
 import BeyondHelpIcon from "./BeyondHelpIcon";
 import ClipboardEntry from "../../../data/ClipboardEntry";
 import ClipboardService from "../../../services/ClipboardService";
+import HTMLUtils from "../../../services/HTMLUtils";
 import QTipService from "../../QTipService";
 
-const copied = `<span style="font-weight: bold">Copied!</span>`;
 const qTipTarget = (el: HTMLElement) => $(el).closest(".BH-extra-map-refs-page-info-row");
 const qTipOptions = {
     hide: { event: "mouseleave" },
@@ -29,7 +29,7 @@ class ExtraMapRefsInfo extends Component {
         // copies text on click and shows copied tooltip
         const handleClick = (e: MouseEvent) => ClipboardService.copy(
             [new ClipboardEntry("text/plain", row.text)],
-            () => QTipService.showQTip(qTipTarget(e.target), copied, qTipOptions)
+            () => QTipService.showQTip(qTipTarget(e.target), HTMLUtils.toBold("Copied!"), qTipOptions)
         );
 
         return (

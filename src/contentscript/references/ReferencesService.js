@@ -6,17 +6,6 @@ import ReferencesUtils from "../../services/ReferencesUtils";
 
 const headersSelector = ".primary-content h1[id], .primary-content h2[id], .primary-content h3[id], .primary-content h4[id], .primary-content h5[id]";
 
-// listens a copy event from a copy ref element and change the content
-// to be copied to the reference anchor
-const handleRefCopy = function (e: ClipboardEvent) {
-    if (!e.target || !e.target.classList || !e.target.classList.contains("BH-copy-reference")) return;
-
-    const refButton: HTMLElement = e.target;
-    const data: DataTransfer = e.clipboardData;
-    data.setData("text/html", refButton.dataset.refContent);
-    e.preventDefault();
-};
-
 // renders in queue the copy ref buttons
 const setupHeaders = function (headers: HTMLElement[], index: Number) {
     const header = headers[index];
@@ -37,7 +26,6 @@ class ReferencesService {
         const path = window.location.pathname;
         if (!path.startsWith("/compendium/") || path.split("/").length < 5) return;
 
-        document.addEventListener("copy", handleRefCopy);
         const headers = $(headersSelector);
 
         const headersArray = [];

@@ -1,11 +1,17 @@
 @mixin reference($size, $margin) {
     .BH-copy-reference {
-        background-image: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-black.svg");
+        mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-black.svg") no-repeat 50% 50%;
+        -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-black.svg") no-repeat 50% 50%;
+        -webkit-mask-size: 100% 100%;
         background-size: cover;
         display: inline-block;
         height: $size;
         margin-left: $margin;
         width: $size;
+        background-color: #000 !important;
+        &:hover {
+            background-color: $ddb-green !important;
+        }
     }
     @include showOnHover("BH-copy-reference");
 }
