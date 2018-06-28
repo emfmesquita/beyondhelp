@@ -77,12 +77,12 @@ const maps = [
         new MapAreaInfo().rect(459, 607, 474, 622).content("3ed8b853-fabc-4d85-af6c-7f0848da0ca0"), // 19d
         new MapAreaInfo().rect(460, 672, 475, 687).content("ac5f24c9-db88-400a-bbcd-77382945f903"), // 19e
         new MapAreaInfo().rect(427, 672, 442, 687).content("9f7dd89a-83d2-4388-b204-0d7ba81805a1"), // 19f
-        new MapToMapAreaInfo("304.jpg", "107,302,10"), // omu
-        new MapToMapAreaInfo("304.jpg", "301,302,10"), // omu
-        new MapToMapAreaInfo("304.jpg", "493,302,10"), // omu
-        new MapToMapAreaInfo("304.jpg", "113,544,10"), // omu
-        new MapToMapAreaInfo("304.jpg", "306,544,10"), // omu
-        new MapToMapAreaInfo("304.jpg", "484,544,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "107,298,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "301,298,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "493,298,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "113,539,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "306,539,10"), // omu
+        new MapToMapAreaInfo("304.jpg", "484,539,10"), // omu
         new MapToMapAreaInfo("304.jpg", "113,784,10"), // omu
         new MapToMapAreaInfo("304.jpg", "295,784,10"), // omu
         new MapToMapAreaInfo("304.jpg", "488,784,10") // omu

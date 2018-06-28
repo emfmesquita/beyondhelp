@@ -78,7 +78,7 @@ const throttledRoll = throttle((data: RollableData, rollEl: HTMLElement) => {
 
     // makes a roll and shows the tooltip
     const rolled = DiceExp.calcValue(data.diceValue);
-    QTipService.AnimateIntoQTip(jqRollEl, rolled + "");
+    QTipService.animateIntoQTip(jqRollEl, rolled + "");
 
     // tries to find the cell with the rolled vavlue and show in it the result
     rows.each((index, row: HTMLElement) => {

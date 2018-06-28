@@ -5,6 +5,14 @@ const presetMonsterTextColor = [defaultMonsterTextColor];
 const defaultListHeaderColor = "#333";
 const presetListHeaderColor = [defaultListHeaderColor];
 
+const ddbColors = Object.freeze({
+    gray: "#979aa4",
+    orange: "#ee8600",
+    red: "#bc0f0f",
+    green: "#47D18C",
+    darkBlue: "#0f5cbc"
+});
+
 const configurationId = "bh-config";
 const formMapRefsId = "bh-form-map-refs";
 const pbpRefsId = "pbp-thread";
@@ -45,6 +53,10 @@ class Constants {
     }
     static get PresetListHeaderColor() {
         return presetListHeaderColor;
+    }
+
+    static get DDBColors() {
+        return ddbColors;
     }
 
     static get ConfigurationId() {

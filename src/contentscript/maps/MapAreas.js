@@ -33,7 +33,25 @@ class MapAreas extends Component {
             const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
             const href = `${C.CompendiumPage}${area.page || mapInfo.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}`;
             const className = `tooltip-hover BH-map-ref BH-map-ref-${area.shape} ${area.highlight ? " BH-area-highlight" : ""}`;
-            return <area key={area.coords} className={className} shape={shape} coords={area.coords} href={href} ref={(el) => this.postProcessArea(el, href)} onMouseDown={(e) => this.toMapRef(e, href)} />;
+
+            const maphilightData = {
+                strokeWidth: 2
+            };
+            const color = area.color;
+            if (color) maphilightData.strokeColor = color.startsWith("#") ? color.substr(1) : color;
+
+            return (
+                <area
+                    key={area.coords}
+                    className={className}
+                    href={href}
+                    shape={shape}
+                    coords={area.coords}
+                    data-maphilight={JSON.stringify(maphilightData)}
+                    ref={(el) => this.postProcessArea(el, href)}
+                    onMouseDown={(e) => this.toMapRef(e, href)}
+                />
+            );
         });
     }
 

@@ -28,14 +28,14 @@ const preProcesMaptoMaps = (areas: MapAreaInfo[], basePath: string) => {
         const mapToMap: MapToMapAreaInfo = area;
         const targetMap = allMaps.find(map => map.mapImageName === mapToMap.targetImageName);
         if (!targetMap) return;
-        mapToMap.page = targetMap.page;
+        mapToMap.page = basePath + targetMap.page;
         mapToMap.contentId = targetMap.contentId;
     });
 };
 
 // adds base path to links
 const pathPreProcessLinks = (links: MapLinksInfo, basePath: string) => {
-    if (!links || !Array.isArray(links)) return;
+    if (!links) return;
     links.fromPage = basePath + links.fromPage;
     links.toPage = basePath + links.toPage;
 };
@@ -100,13 +100,16 @@ class MapsPreProcessService {
      */
     static preProcess(): MapRefsPreProcessed {
         toPreProcess.maps.forEach(map => {
-            map.page = map.basePath + map.page;
             if (toPreProcess.isOnToc) return;
             preProcessAreas(map.areas, map.basePath);
             preProcesMaptoMaps(map.areas, map.basePath);
             preProcessLinks(map, map.basePath);
         });
 
+        // adds base path at last to not interfere with areas pre processor
+        toPreProcess.maps.forEach(map => {
+            map.page = map.basePath + map.page;
+        });
 
         if (!toPreProcess.isOnToc) toPreProcess.extraMapLinks.forEach(mapLink => pathPreProcessLinks(mapLink, mapLink.basePath));
 

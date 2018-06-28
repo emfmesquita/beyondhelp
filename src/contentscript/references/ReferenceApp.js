@@ -24,7 +24,7 @@ class ReferenceApp extends Component {
         document.execCommand("Copy");
 
         // shows the tooltip indicating a successful ref copy
-        QTipService.AnimateIntoQTip(this.jqRefButton, "Reference Copied", 500);
+        QTipService.animateIntoQTip(this.jqRefButton, "Reference Copied", 500);
     }, 500);
 
     buildReferenceContent = () => {

@@ -135,8 +135,8 @@ const maps = [
         new MapAreaInfo("K21LordsChambers", "68,114,98,134"),
         new MapAreaInfo("K22SecretLanding", "107,466,142,486"),
         new MapToMapAreaInfo("04-02.jpg", "124,523,10"),
-        new MapAreaInfo().rect(377, 162, 392, 177).content("e47a1a99-ed3d-4f78-875f-e3147cf67bd9"), // 16 - secret
-        new MapAreaInfo().rect(96, 83, 111, 98).content("c67bf4b3-2754-434b-a90d-fa44263a6c53") // 19 - secret
+        new MapAreaInfo().rho(377, 162, 392, 177).content("e47a1a99-ed3d-4f78-875f-e3147cf67bd9"), // 16 - secret
+        new MapAreaInfo().rho(96, 83, 111, 98).content("c67bf4b3-2754-434b-a90d-fa44263a6c53") // 19 - secret
     ], ["#InvestigatingRivergard", "#KeepFeatures", "#RaisingtheAlarm", "#AreasoftheKeep",
             "#Conclusion[data-content-chunk-id='e7adb907-6627-404c-8fcf-bd47fc9090f1']"]),
     new MapInfo("SacredStoneMonastery", "secret-of-the-sumber-hills", "03-04.jpg", "460b0128-bf86-4fca-b896-75e957df0402", [
@@ -285,7 +285,7 @@ const maps = [
         new MapAreaInfo("B22EarthProphetsSanctum", "224,87,249,102"),
         new MapAreaInfo("B23ShrineofBleedingStone", "59,241,84,256"),
         new MapAreaInfo("B24SentinelsHall", "66,154,91,169"),
-        new MapAreaInfo().rect(278, 83, 298, 103).content("e30071a6-981e-4db7-b1b4-081b846c8762"), // 22 - secret
+        new MapAreaInfo().rho(278, 83, 298, 103).content("e30071a6-981e-4db7-b1b4-081b846c8762"), // 22 - secret
         new MapToMapAreaInfo("03-04.jpg", "575,43,7"),
         new MapToMapAreaInfo("04-02.jpg", "533,737,7"),
         new MapToMapAreaInfo("04-04.jpg", "24,635,7"),
@@ -325,7 +325,7 @@ const maps = [
         new MapAreaInfo("E29LyzziesQuarters", "186,668,211,683"),
         new MapAreaInfo("E30ChimeraLair", "479,651,504,666"),
         new MapAreaInfo("E31VanifersChamber", "399,711,424,726"),
-        new MapAreaInfo().rect(419, 102, 434, 117).content("17659190-e566-4329-99f0-f5881e4e7d8b"), // 3 - secret
+        new MapAreaInfo().rho(419, 102, 434, 117).content("17659190-e566-4329-99f0-f5881e4e7d8b"), // 3 - secret
         new MapToMapAreaInfo("03-05.jpg", "25,77,7"),
         new MapToMapAreaInfo("04-01.jpg", "73,735,8"),
         new MapToMapAreaInfo("04-03.jpg", "573,617,8"),
@@ -409,8 +409,8 @@ const maps = [
         new MapAreaInfo("P19aP19bVortexes", "118,491,158,511"),
         new MapAreaInfo("P19aP19bVortexes", "339,374,379,394"),
         new MapAreaInfo("P20WaterPortal", "334,570,364,590"),
-        new MapAreaInfo().rect(429, 383, 449, 403).content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
-        new MapAreaInfo().rect(335, 317, 355, 337).content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
+        new MapAreaInfo().rho(429, 383, 449, 403).content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
+        new MapAreaInfo().rho(335, 317, 355, 337).content("c176f61d-c3bf-47af-99b3-ff9057077160"), // 15 -secret
         new MapToMapAreaInfo("05-01.jpg", "307,224,7")
     ], ["#TorrentsFeatures", "#AreasoftheTorrents"]).tocHId("ThePlungingTorrent"),
     new MapInfo("TheBlackGeode", "temple-of-the-elder-elemental-eye", "05-04.jpg", "0b40b5b9-5f7a-4afd-84d4-24e9e73d3850", [
@@ -432,7 +432,7 @@ const maps = [
         new MapAreaInfo("G15ArcaneFoundry", "284,208,314,223"),
         new MapAreaInfo("G16CathedralofStone", "147,71,177,86"),
         new MapAreaInfo("G17EarthPortal", "428,107,458,122"),
-        new MapAreaInfo().rect(201, 649, 216, 664).content("883751bb-baeb-4779-b0f6-370ced95fb02"), // 4 - secret
+        new MapAreaInfo().rho(201, 649, 216, 664).content("883751bb-baeb-4779-b0f6-370ced95fb02"), // 4 - secret
         new MapToMapAreaInfo("05-01.jpg", "569,670,7")
     ], ["#GeodeFeatures", "#AreasoftheGeode"]),
     new MapInfo("TheWeepingColossus", "temple-of-the-elder-elemental-eye", "05-05.jpg", "557cf502-a32a-4c9f-a636-f257fdd82e88", [
@@ -448,11 +448,11 @@ const maps = [
         new MapAreaInfo("W10VanifersChamber", "242,270,272,285"),
         new MapAreaInfo("W11FlowingLava", "135,328,165,343"),
         new MapAreaInfo("W12FirePortal", "151,220,181,235"),
-        new MapAreaInfo().rect(143, 605, 158, 620).content("7acd49e3-3109-43cd-b2e0-f97489c8e3d3"), // a
-        new MapAreaInfo().rect(90, 704, 105, 719).content("7acd49e3-3109-43cd-b2e0-f97489c8e3d3"), // b
-        new MapAreaInfo().rect(57, 518, 72, 533).content("f4e7255b-17b8-40b9-a278-50593c031991"), // 2 - secret
-        new MapAreaInfo().rect(55, 483, 70, 498).content("6018e0d8-e1a9-4f41-a113-971ab69b49fc"), // c
-        new MapAreaInfo().rect(113, 469, 128, 484).content("6018e0d8-e1a9-4f41-a113-971ab69b49fc"), // d
+        new MapAreaInfo().rho(143, 605, 158, 620).content("7acd49e3-3109-43cd-b2e0-f97489c8e3d3"), // a
+        new MapAreaInfo().rho(90, 704, 105, 719).content("7acd49e3-3109-43cd-b2e0-f97489c8e3d3"), // b
+        new MapAreaInfo().rho(57, 518, 72, 533).content("f4e7255b-17b8-40b9-a278-50593c031991"), // 2 - secret
+        new MapAreaInfo().rho(55, 483, 70, 498).content("6018e0d8-e1a9-4f41-a113-971ab69b49fc"), // c
+        new MapAreaInfo().rho(113, 469, 128, 484).content("6018e0d8-e1a9-4f41-a113-971ab69b49fc"), // d
         new MapToMapAreaInfo("05-01.jpg", "166,688,10")
     ], ["#ColossusFeatures", "#AreasoftheColossus"]),
     new MapInfo("TroubleinRedLarch", "alarums-and-excursions", "06-01.jpg", "0054d732-e312-4acd-8b6e-807204bae534", [
@@ -485,8 +485,8 @@ const maps = [
         new MapAreaInfo("T7DwarfStatue", "525,363,550,388"),
         new MapAreaInfo("T8Approach", "597,344,622,369"),
         new MapAreaInfo("T9ChamberofMovingStones", "726,345,751,370"),
-        new MapAreaInfo().rect(801, 428, 821, 448).content("c860076e-8734-4137-8e89-e8bf72e52a0c", "af679329-6f18-4cbc-97c2-8a2165d427ed"), // 9 - secret
-        new MapAreaInfo().rect(797, 465, 817, 485).content("95915902-652c-4a77-9375-510065013552"), // 9 - x
+        new MapAreaInfo().rho(801, 428, 821, 448).content("c860076e-8734-4137-8e89-e8bf72e52a0c", "af679329-6f18-4cbc-97c2-8a2165d427ed"), // 9 - secret
+        new MapAreaInfo().rho(797, 465, 817, 485).content("95915902-652c-4a77-9375-510065013552"), // 9 - x
         new MapToMapAreaInfo("02-02.jpg", "98,350,14"),
         new MapToMapAreaInfo("02-02.jpg", "169,33,7"),
         new MapToMapAreaInfo("02-02.jpg", "816,509,7")
@@ -523,8 +523,8 @@ const maps = [
         new MapAreaInfo("X8HalloftheFallen", "663,223,698,243"),
         new MapAreaInfo("X9FalseCrypt", "545,220,580,240"),
         new MapAreaInfo("X10FalseTomb", "711,461,746,481"),
-        new MapAreaInfo().rect(589, 251, 604, 266).content("8d79b93d-5ba1-495b-bfb9-959a352697e5", "8f3d3eb8-8517-49cf-803a-7e81b13865a4"), // 9 - secret
-        new MapAreaInfo().rect(682, 496, 697, 511).content("9b6e6d0d-9e8e-4919-96a7-3bb56b25e357"), // 10 - secret
+        new MapAreaInfo().rho(589, 251, 604, 266).content("8d79b93d-5ba1-495b-bfb9-959a352697e5", "8f3d3eb8-8517-49cf-803a-7e81b13865a4"), // 9 - secret
+        new MapAreaInfo().rho(682, 496, 697, 511).content("9b6e6d0d-9e8e-4919-96a7-3bb56b25e357"), // 10 - secret
         new MapAreaInfo("X11TheTrueTombofKingTorhildFlametongue", "602,434,637,454")
     ], ["#TheRuins[data-content-chunk-id='0ad44212-93ed-420c-ac43-6d61990152dc']", "#Aftermath"])
 ];

@@ -1,0 +1,29 @@
+.BH-extra-map-refs-page-info {
+    font-style: normal !important;
+    text-align: left !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    h4 {
+        font-size: 12px !important;
+        font-weight: bold !important;
+        display: inline-block !important;
+        vertical-align: top !important;
+        padding-left: 4px !important;
+        margin-top: 2px !important;
+        margin-bottom: 0px !important;
+    }
+    .BH-extra-map-refs-page-info-row {
+        font-size: 12px;
+        span:first-child {
+            font-weight: bold;
+            padding-right: 4px;
+        }
+        span {
+            display: inline-block;
+        }
+        &:hover {
+            cursor: pointer;
+            color: #47D18C;
+        }
+    }
+}

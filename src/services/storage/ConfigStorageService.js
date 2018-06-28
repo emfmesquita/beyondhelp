@@ -16,7 +16,7 @@ class ConfigStorageService {
 
             // fallback to created props
             Opt.AllOptions.forEach(opt => {
-                if (config[opt] === undefined) config[opt] = true;
+                if (config[opt] === undefined) config[opt] = Configuration.initialValue(opt);
             });
 
             return Promise.resolve(config);

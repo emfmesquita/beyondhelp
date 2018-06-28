@@ -52,11 +52,11 @@ const maps = [
         new MapAreaInfo("20LizardfolkDen", "572,325,602,355"),
         new MapAreaInfo("21Prison", "623,512,653,542"),
         new MapAreaInfo("22Temple", "493,476,523,506"),
-        new MapAreaInfo().rect(442, 258, 462, 278).content("ddae9317-6ced-4619-a8ed-7729e2cdf8b1"), // 6 - secret
-        new MapAreaInfo().rect(726, 146, 746, 166).content("79478adc-b8de-4a36-8435-315bec5615f5"), // 13 - secret
-        new MapAreaInfo().rect(666, 518, 686, 538).content("78172d78-fbbd-45ee-9fa6-40357e193782"), // 17 - secret
-        new MapAreaInfo().rect(458, 527, 478, 547).content("2890818c-083b-4cc5-90ae-1c4af7467337"), // 22 - secret
-        new MapAreaInfo().rect(559, 435, 579, 455).content("2890818c-083b-4cc5-90ae-1c4af7467337") // 22 - secret
+        new MapAreaInfo().rho(442, 258, 462, 278).content("ddae9317-6ced-4619-a8ed-7729e2cdf8b1"), // 6 - secret
+        new MapAreaInfo().rho(726, 146, 746, 166).content("79478adc-b8de-4a36-8435-315bec5615f5"), // 13 - secret
+        new MapAreaInfo().rho(666, 518, 686, 538).content("78172d78-fbbd-45ee-9fa6-40357e193782"), // 17 - secret
+        new MapAreaInfo().rho(458, 527, 478, 547).content("2890818c-083b-4cc5-90ae-1c4af7467337"), // 22 - secret
+        new MapAreaInfo().rho(559, 435, 579, 455).content("2890818c-083b-4cc5-90ae-1c4af7467337") // 22 - secret
     ], ["#AreasoftheTomb", "#GeneralFeatures[data-content-chunk-id='45aaacdd-3ffa-4b73-bd1a-b00a4ff2819e']", "#Sstckal",
             "#GeneralFeatures[data-content-chunk-id='00e1e9f9-9e4f-4e2f-88e9-9c8190ac1097']", "#AreasoftheCavern",
             "#Conclusion[data-content-chunk-id='bb9b7258-1523-4dd3-b7bf-7ebe94fe1cdb']"]),
@@ -71,9 +71,9 @@ const maps = [
         new MapAreaInfo("8NeronvainsChambers", "556,241,586,271"),
         new MapAreaInfo("9SecretPassage", "606,308,636,338"),
         new MapAreaInfo("10ChuthsLair", "677,445,707,475"),
-        new MapAreaInfo().rect(160, 227, 190, 257).content("849a5c01-7756-480b-8e40-f2014efc1e22"), // 2 - secret
-        new MapAreaInfo().rect(641, 338, 671, 368).content("849a5c01-7756-480b-8e40-f2014efc1e22"), // 9 - secret
-        new MapAreaInfo().rect(584, 278, 614, 308).content("fa753c7c-aaad-4cda-b38d-7eabf7c3a670") // 8 - secret
+        new MapAreaInfo().rho(160, 227, 190, 257).content("849a5c01-7756-480b-8e40-f2014efc1e22"), // 2 - secret
+        new MapAreaInfo().rho(641, 338, 671, 368).content("849a5c01-7756-480b-8e40-f2014efc1e22"), // 9 - secret
+        new MapAreaInfo().rho(584, 278, 614, 308).content("fa753c7c-aaad-4cda-b38d-7eabf7c3a670") // 8 - secret
     ], ["#AreasoftheStronghold", "#GeneralFeatures[data-content-chunk-id='42b421c6-c9fa-4ac4-a44e-ae0b221aeffe']",
             "#Conclusion[data-content-chunk-id='6b340ee5-bb5b-488c-925d-268005a1c662']"]),
     new MapInfo("Episode7XonthalsTower", "xonthals-tower", "rot-06-02.jpg", "a7c8ecd1-3af5-49ca-b5ce-da5944d824cd", [
@@ -100,15 +100,15 @@ const maps = [
         new MapAreaInfo("21StorageCloset", "408,455,433,480"),
         new MapAreaInfo("22TaraztheFair", "488,473,513,498"),
         new MapAreaInfo("23TimeChamber", "340,508,365,533"),
-        new MapAreaInfo().rect(223, 544, 238, 559).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 8 - Teleport Circles
-        new MapAreaInfo().rect(84, 503, 99, 518).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"), // 9 - Teleport Circles
-        new MapAreaInfo().rect(85, 662, 100, 677).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 10 - Teleport Circles
-        new MapAreaInfo().rect(264, 626, 279, 641).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 11 - Teleport Circles
-        new MapAreaInfo().rect(257, 739, 272, 754).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 12 - Teleport Circles
-        new MapAreaInfo().rect(86, 770, 101, 787).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 13 - Teleport Circles
-        new MapAreaInfo().rect(326, 761, 346, 781).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 14 - Teleport Circles
-        new MapAreaInfo().rect(474, 576, 494, 596).content("baa4e830-b0b4-4861-ada2-25cfe767fb0c", "0ba29448-039a-4dd5-87d8-101c71b44424"), // 18 - secret
-        new MapAreaInfo().rect(480, 617, 500, 637).content("baa4e830-b0b4-4861-ada2-25cfe767fb0c", "0ba29448-039a-4dd5-87d8-101c71b44424") // 18 - secret
+        new MapAreaInfo().rho(223, 544, 238, 559).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 8 - Teleport Circles
+        new MapAreaInfo().rho(84, 503, 99, 518).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"), // 9 - Teleport Circles
+        new MapAreaInfo().rho(85, 662, 100, 677).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 10 - Teleport Circles
+        new MapAreaInfo().rho(264, 626, 279, 641).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 11 - Teleport Circles
+        new MapAreaInfo().rho(257, 739, 272, 754).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 12 - Teleport Circles
+        new MapAreaInfo().rho(86, 770, 101, 787).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 13 - Teleport Circles
+        new MapAreaInfo().rho(326, 761, 346, 781).content("718bd34b-a401-452a-b234-138d595351b1", "96c9d478-d055-46e1-b5d0-a2e678d3fb12"),// 14 - Teleport Circles
+        new MapAreaInfo().rho(474, 576, 494, 596).content("baa4e830-b0b4-4861-ada2-25cfe767fb0c", "0ba29448-039a-4dd5-87d8-101c71b44424"), // 18 - secret
+        new MapAreaInfo().rho(480, 617, 500, 637).content("baa4e830-b0b4-4861-ada2-25cfe767fb0c", "0ba29448-039a-4dd5-87d8-101c71b44424") // 18 - secret
     ], ["#TheMaze", "#GeneralFeatures[data-content-chunk-id='0df472e1-8e5c-4467-83f4-d88c520480ce']", "#RescueMission",
             "#TheTower", "#GeneralFeatures[data-content-chunk-id='48f3bf14-d9ff-42b2-9784-c824fd5b3657']",
             "#Dungeon", "#GeneralFeatures[data-content-chunk-id='54e1f60d-a25b-4728-88fe-b2f87f955e0a']",
@@ -150,7 +150,7 @@ const maps = [
         new MapAreaInfo("KeytoTiamatsTemple", "295,275,315,295"),
         new MapAreaInfo("KeytoTiamatsTemple", "431,187,451,207"),
         new MapAreaInfo("KeytoTiamatsTemple", "444,419,464,439"),
-        new MapAreaInfo("KeytoTiamatsTemple", "150,394,170,411"),
+        new MapAreaInfo("KeytoTiamatsTemple", "150,392,170,412"),
         new MapAreaInfo("KeytoTiamatsTemple", "129,180,149,200"),
         new MapAreaInfo("KeytoTiamatsTemple", "204,635,224,655"),
         new MapAreaInfo("KeytoTiamatsTemple", "216,555,236,575"),

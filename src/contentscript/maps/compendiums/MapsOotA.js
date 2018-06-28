@@ -74,16 +74,16 @@ const maps = [
         new MapAreaInfo("3Cornered", "688,555,718,585"),
         new MapAreaInfo("4HookHorrorNest", "743,610,773,640"),
         new MapAreaInfo("5GnollCamp", "334,474,364,504"),
-        new MapAreaInfo().rect(704, 231, 719, 246).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(711, 305, 726, 320).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(664, 531, 679, 546).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(575, 237, 590, 252).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(544, 238, 559, 253).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(523, 452, 538, 467).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(497, 460, 512, 475).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(371, 172, 386, 187).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(366, 210, 381, 225).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
-        new MapAreaInfo().rect(717, 587, 734, 604).content("c3072947-7867-4f19-aa85-6d822634eaf7")
+        new MapAreaInfo().rho(704, 231, 719, 246).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(711, 305, 726, 320).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(664, 531, 679, 546).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(575, 237, 590, 252).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(544, 238, 559, 253).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(523, 452, 538, 467).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(497, 460, 512, 475).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(371, 172, 386, 187).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(366, 210, 381, 225).content("d6aa7f38-4ec7-4667-8c1c-617010c5d017"),
+        new MapAreaInfo().rho(717, 587, 734, 604).content("c3072947-7867-4f19-aa85-6d822634eaf7")
     ], []),
     new MapInfo("TheOozingTemple", "into-darkness", "02-07.jpg", "5ca5abee-b6e6-4e07-b76c-8f6fc1e02df3", [
         new MapAreaInfo("1BoxedIn", "307,622,332,647"),
@@ -285,11 +285,11 @@ const maps = [
         new MapAreaInfo("ThePuddingCourt", "122,80,137,95")
     ], []),
     new MapInfo("MantolDerith", "mantol-derith", "09-01.jpg", "268961d2-f944-49cd-9568-75cb5a3be678", [
-        new MapAreaInfo("1SecretEntrances", "692,74,710,92").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
-        new MapAreaInfo("1SecretEntrances", "638,339,656,357").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
-        new MapAreaInfo("1SecretEntrances", "703,580,721,598").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
-        new MapAreaInfo("1SecretEntrances", "156,324,173,341").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
-        new MapAreaInfo("1SecretEntrances", "320,43,338,61").content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
+        new MapAreaInfo("1SecretEntrances").rho(692, 74, 710, 92).content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
+        new MapAreaInfo("1SecretEntrances").rho(638, 339, 656, 357).content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
+        new MapAreaInfo("1SecretEntrances").rho(703, 580, 721, 598).content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
+        new MapAreaInfo("1SecretEntrances").rho(156, 324, 173, 341).content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
+        new MapAreaInfo("1SecretEntrances").rho(320, 43, 338, 61).content("087425ed-e489-4cf5-ac94-3ca9ac2e05dd", "896d2c03-9920-4057-ace5-9eca16f9f009"),
         new MapAreaInfo("1aNorthwestEntrance", "714,55,738,79"),
         new MapAreaInfo("1bNorthEntrance", "618,297,648,327"),
         new MapAreaInfo("1cNortheastEntrance", "667,568,697,598"),
@@ -342,10 +342,10 @@ const maps = [
         new MapAreaInfo("13EmptyCave", "130,254,160,284"),
         new MapAreaInfo("14RallyPoint", "110,120,140,150"),
         new MapAreaInfo("15ExitTunnel", "202,40,232,70"),
-        new MapAreaInfo().rect(412, 589, 437, 614).content("1b300013-ea13-4ad2-b98c-f551335ba966"), // 1 - secret
-        new MapAreaInfo().rect(602, 541, 627, 566).content("8022756a-dd28-4115-8852-885d2f5503d5"), // 5 - secret
-        new MapAreaInfo().rect(117, 216, 142, 241).content("56678c42-d29f-4525-a833-f8a1bd1a8230"), // 13 - secret 
-        new MapAreaInfo().rect(111, 169, 136, 194).content("2f19eda0-b6d9-465f-a42b-0d5784b6875d") // 14 - secret
+        new MapAreaInfo().rho(412, 589, 437, 614).content("1b300013-ea13-4ad2-b98c-f551335ba966"), // 1 - secret
+        new MapAreaInfo().rho(602, 541, 627, 566).content("8022756a-dd28-4115-8852-885d2f5503d5"), // 5 - secret
+        new MapAreaInfo().rho(117, 216, 142, 241).content("56678c42-d29f-4525-a833-f8a1bd1a8230"), // 13 - secret 
+        new MapAreaInfo().rho(111, 169, 136, 194).content("2f19eda0-b6d9-465f-a42b-0d5784b6875d") // 14 - secret
     ], ["#ResolvingtheStandoff"]),
     new MapInfo("WormNursery", "the-wormwrithings", "13-02.jpg", "d8124621-73b1-4f65-b77f-ba1d27f6ad03", [
         new MapAreaInfo("1EntryCavern", "50,303,75,328"),

@@ -5,6 +5,9 @@ import MapAreaInfo from "./MapAreaInfo";
 import MapInfo from "./MapInfo";
 import MapRefs from "./MapRefs";
 import MapToMapAreaInfo from "./MapToMapAreaInfo";
+import C from "../../Constants";
+
+const defaultColor = C.DDBColors.green;
 
 const fourCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+,[0-9 ]+/;
 const threeCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+/;
@@ -48,7 +51,7 @@ const processCompendiumMap = (compendium, map) => {
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapAreaInfo(area.headerId, area.coords, area.page, area.contentId));
+                mapAreas.push(new MapAreaInfo(area.headerId, area.coords, area.page, area.contentId).chroma(defaultColor));
             }, `Failed to process area (${area.coords}) from map (${map.mapImageName}) from ${compendium.path}.`);
         });
     }
@@ -72,7 +75,7 @@ const processCompendiumMap = (compendium, map) => {
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapAreaInfo().rhoStr(extraArea.coords).content(extraArea.contentId));
+                mapAreas.push(new MapAreaInfo().rhoStr(extraArea.coords).content(extraArea.contentId).chroma(defaultColor));
             }, `Failed to process extra area (${extraArea.coords}) from map (${map.mapImageName}) from ${compendium.path}.`);
         });
     }
@@ -96,7 +99,7 @@ const processCompendiumMap = (compendium, map) => {
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords));
+                mapAreas.push(new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).chroma(defaultColor));
             }, `Failed to process map to map area (${mapToMap.coords}) from map (${map.mapImageName}) from ${compendium.path}.`);
         });
     }

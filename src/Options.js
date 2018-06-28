@@ -29,6 +29,7 @@ const mapMenuLinksTooltips = "mapMenuLinksTooltips";
 const mapMenuLinks = "mapMenuLinks";
 const mapTocLinksTooltips = "mapTocLinksTooltips";
 const mapTocLinks = "mapTocLinks";
+const extraMapRefsMode = "extraMapRefsMode";
 //#endregion
 
 const allOptions = [
@@ -61,7 +62,8 @@ const allOptions = [
     mapMenuLinksTooltips,
     mapMenuLinks,
     mapTocLinksTooltips,
-    mapTocLinks
+    mapTocLinks,
+    extraMapRefsMode
     //#endregion
 ];
 
@@ -153,6 +155,9 @@ class Options {
     }
     static get MapTocLinks(): string {
         return mapTocLinks;
+    }
+    static get ExtraMapRefsMode(): string {
+        return extraMapRefsMode;
     }
     //#endregion
 

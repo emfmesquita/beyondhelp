@@ -22,6 +22,7 @@ import ReferencesService from "./references/ReferencesService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
+import ExtraMapRefsMode from "./maps/extrarefsmode/ExtraMapRefsMode";
 
 const createButton = function (id: string, name: string, hp: string) {
     const buttonSpan = document.createElement("span");
@@ -88,6 +89,9 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // inits map references
     if (config[Opt.MapRefs]) MapsService.init(config);
+
+    // extra map references mode
+    if (config[Opt.ExtraMapRefsMode]) ExtraMapRefsMode.init();
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();

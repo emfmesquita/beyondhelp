@@ -69,10 +69,6 @@ const addMenuMapLink = function (map: MapInfo, jqTargetAnchor: JQuery<HTMLElemen
 };
 
 // add links to maps on toc
-const innerProcessTocMapLink = function (map: MapInfo, headerId: string, jqMenu: JQuery<HTMLElement>) {
-};
-
-// add links to maps on toc
 const processTocMapLinks = function (maps: MapInfo[]) {
     // reversed because links are added with before, so if there is more than one link they still will be in order
     maps.reverse().forEach(map => {
@@ -203,9 +199,8 @@ class MapsService {
             [
                 MapsLMoP,
                 MapsHotDQ,
-                MapsHotDQ,
+                MapsRoT,
                 MapsPotA,
-                MapsOotA,
                 MapsOotA,
                 MapsCoS,
                 MapsTftYP,

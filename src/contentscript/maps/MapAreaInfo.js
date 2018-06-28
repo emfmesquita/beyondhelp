@@ -9,6 +9,7 @@ class MapAreaInfo {
 
         this.headerId = headerId || "";
         this.coords = coords;
+        this.color = C.DDBColors.red;
         this.page = page;
         this.contentId = contentId;
         this.contentOnly = false;
@@ -42,6 +43,11 @@ class MapAreaInfo {
         const x2 = Number.parseInt(coordsSplited[2]);
         const y2 = Number.parseInt(coordsSplited[3]);
         this.rho(x1, y1, x2, y2);
+        return this;
+    }
+
+    chroma(color: string) {
+        this.color = color;
         return this;
     }
 }
