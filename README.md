@@ -88,9 +88,6 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Enhanced "My Characters Page"
 ![Enhanced My Characters Page](http://i.imgur.com/OfrTahJ.png)
 
-### Roll on Tables
-![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
-
 ### Editor Plugin
 ![Add Tooltips Plugin](http://i.imgur.com/3Ln9zfJ.png)
 
@@ -101,6 +98,11 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ![Table Added](http://i.imgur.com/zwHUaMO.png)
 
 ![Table Result](http://i.imgur.com/dgL6ev2.png)
+
+### Play-by-post Notes
+![Making Notes](http://i.imgur.com/9qYFhzv.png)
+
+![Checking Notes on Options Page](http://i.imgur.com/HBTbdoh.png)
 
 ### Compendium References
 ##### First copy the reference
@@ -122,3 +124,6 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ### Global Options
 ![Global Options](http://i.imgur.com/o7XwcNG.png)
+
+### Roll on Tables
+![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
