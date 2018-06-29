@@ -10,20 +10,22 @@
     .BH-Monster-button {
         display: inline-block !important;
         margin-right: 10px !important;
-        margin-bottom: 20px !important;
-        width: auto !important;
-        padding: 0 15px !important;
+        margin-bottom: 0px !important;
+        width: auto !important; // padding: 8 16px !important;
         border-color: $ddb-red !important;
-        span::before {
-            content: '';
-            display: inline-block;
-            height: 12px;
-            width: 12px;
-            background: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-white.svg") no-repeat;
-            background-size: cover;
-            margin-right: 10px;
-            -webkit-transform: translateY(1px);
-            transform: translateY(1px)
+        span {
+            padding: 8px 16px !important;
+            &::before {
+                content: '';
+                display: inline-block;
+                height: 12px;
+                width: 12px;
+                background: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon-white.svg") no-repeat;
+                background-size: cover;
+                margin-right: 10px;
+                -webkit-transform: translateY(1px);
+                transform: translateY(1px)
+            }
         }
     }
 }

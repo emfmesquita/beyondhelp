@@ -77,10 +77,10 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
                 </OptionGroup>
-                <OptionGroup label="Extra Map References">
+                {/* <OptionGroup label="Extra Map References">
                     {this.optionField("Enable extra map references mode (with visual helpers on compendium pages).", Opt.ExtraMapRefsMode)}
                     <MapTooltipForm />
-                </OptionGroup>
+                </OptionGroup> */}
                 <OptionGroup label="Monster Buttons">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}

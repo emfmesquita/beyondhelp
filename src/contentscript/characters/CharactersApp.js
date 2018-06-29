@@ -26,7 +26,7 @@ class CharactersApp extends Component {
             // renders both of the buttons to create folders on content page
             const temp = document.createElement("div");
             ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-character" onCreateFolder={this.handleCreateFolder} />, temp, () => {
-                $(".ddb-page-header .more-links .links").append(temp.children[0]);
+                $(".page-header .more-links__links").append(temp.children[0]);
             });
 
             const temp2 = document.createElement("div");
@@ -36,7 +36,7 @@ class CharactersApp extends Component {
         } else {
             const temp3 = document.createElement("div");
             ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-default" onCreateFolder={this.handleCreateFolder} />, temp3, () => {
-                $(".ddb-page-header .more-links .links").append(temp3.children[0]);
+                $(".page-header .more-links__links").append(temp3.children[0]);
             });
         }
 

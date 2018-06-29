@@ -19,15 +19,18 @@ class FavIconService {
         if (!shouldChangeFavIcon(characterRegex)) return;
 
         const checkAvatar = setInterval(function () {
-            const avatarEl = $(".character-builder-page-header-avatar, .character-tidbits-avatar");
+            const avatarEl = $(".character-builder-page-header-avatar, .ct-character-tidbits__avatar");
             if (!avatarEl || !avatarEl.length) return;
 
             clearInterval(checkAvatar);
 
-            const backImageCss = avatarEl.css("background-image");
+            let backImageCss = avatarEl.css("background-image");
             if (!backImageCss) return;
 
-            setFavicon(backImageCss.substring(5, backImageCss.length - 2));
+            backImageCss = backImageCss.substring(5, backImageCss.length - 2);
+            backImageCss = backImageCss.replace("http://", "https://");
+
+            setFavicon(backImageCss);
         }, 1000);
     }
 }
