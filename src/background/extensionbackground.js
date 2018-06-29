@@ -64,3 +64,9 @@ window.bhdump = function () {
 window.bhload = function (data: string) {
     chrome.storage.sync.clear(() => chrome.storage.sync.set(JSON.parse(data)));
 };
+window.bhldump = function () {
+    chrome.storage.local.get(undefined, storageData => console.log(JSON.stringify(storageData)));
+};
+window.bhlload = function (data: string) {
+    chrome.storage.local.clear(() => chrome.storage.sync.set(JSON.parse(data)));
+};
