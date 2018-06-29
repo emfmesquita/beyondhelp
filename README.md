@@ -38,9 +38,6 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 - Characters are sorted by name;
 - On campaigns that you are the DM it is possible to create collapsible folders and add characters to them.
 
-### Roll on Tables
-- Enables click to roll on most of the tables of the compendium and description pages.
-
 ### Editor Plugin
 - Extra button on all editors of the site that enables:
     - To add all kinds of tooltips:
@@ -52,8 +49,6 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 
 P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementation of tooltips changes on dndbeyond.com. Also tooltips of private creation are only viewable by the creator, not even by people that are on the same campaign with sharing enabled.
 
-### Compendium References
-- Extra buttons on all compendium pages that enables the user to copy references that can be pasted on editors. After saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip.
 
 ### Adventure Map References
 - These features applies to "Lost Mine of Phandelver", "Hoard of the Dragon Queen", "Rise of Tiamat", "Princes of the Apocalypse" and "Out of the Abyss" (other adventures will be added later):
@@ -61,6 +56,23 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
     - Tooltip links on compendium menus to the maps on the current page;
     - Tooltip links on adventures table of contents to the adventure maps;
     - Tooltip links on the areas description header back to the corresponding map.
+
+
+### Play-by-post Notes
+- Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
+- Colapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaing;
+- All data can be seen, deleted, downloaded on the extention configuration page;
+- Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extention is removed from chrome.
+    
+
+### Compendium References
+- Extra buttons on all compendium pages that enables the user to copy references that can be pasted on:
+    - D&D Beyond editors, and after saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip;
+    - Rich-text editors like Microsof Word, Google Doc, Gmail and it becomes a link to the compendium with the referenced header as text;
+    - Non rich-text editor as a link to the compendium.
+
+### Roll on Tables
+- Enables click to roll on most of the tables of the compendium and description pages.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
