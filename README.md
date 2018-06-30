@@ -60,8 +60,8 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ### Play-by-post Notes
 - Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
-- Colapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaing;
-- All data can be seen, deleted, downloaded on the extention configuration page;
+- Collapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaign;
+- All data can be seen, deleted, downloaded on the extension configuration page;
 - Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extention is removed from chrome.
     
 
@@ -78,7 +78,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Changes the favicon of character page and character builder page to the character avatar.
 
 ### Global Options
-- Turn on/off features of Beyond Help (right click on extension icon, then click on options).
+- Turn on/off features of Beyond Help (right click on extension icon, then click on options, or click on wrench icon on pop up page).
 
 ## Some screenshots
 
