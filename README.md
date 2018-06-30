@@ -68,7 +68,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ### Compendium References
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on:
     - D&D Beyond editors, and after saving the editor content the reference becomes a link to the compendium that also is hoverable and shows a tooltip;
-    - Rich-text editors like Microsof Word, Google Doc, Gmail and it becomes a link to the compendium with the referenced header as text;
+    - Rich-text editors like Microsoft Word, Google Doc, Gmail and it becomes a link to the compendium with the referenced header as text;
     - Non rich-text editor as a link to the compendium.
 
 ### Roll on Tables
