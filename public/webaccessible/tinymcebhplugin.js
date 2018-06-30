@@ -32,14 +32,29 @@
         }
 
         if (BeyondHelp.config.fullscreenButton) {
+            const toggleFullScreeen = function () {
+                editor.execCommand("mceFullscreen");
+
+                const isFullScreen = $(".mce-fullscreen").length;
+                const jqHeaders = $(".site-bar, header.main");
+
+                if (isFullScreen) {
+                    jqHeaders.each(function (idx, element) {
+                        element.style.setProperty("display", "none", "important");
+                    });
+                } else {
+                    jqHeaders.show();
+                }
+            }
+
             editor.addButton("bhfullscreen", {
                 icon: "fullscreen",
                 context: "tools",
                 tooltip: "Toggle Fullscreen (Alt + F)",
-                onclick: () => editor.execCommand("mceFullscreen")
+                onclick: toggleFullScreeen
             });
 
-            editor.shortcuts.add("alt+f", "Toggle Fullscreen.", "mceFullscreen");
+            editor.shortcuts.add("alt+f", "Toggle Fullscreen.", toggleFullScreeen);
         }
     });
 })();
