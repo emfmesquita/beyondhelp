@@ -36,7 +36,7 @@
                 editor.execCommand("mceFullscreen");
 
                 const isFullScreen = $(".mce-fullscreen").length;
-                const jqHeaders = $(".site-bar, header.main");
+                const jqHeaders = $(".site-bar, header.main, #notifications");
 
                 if (isFullScreen) {
                     jqHeaders.each(function (idx, element) {
