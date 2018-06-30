@@ -62,7 +62,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
 - Collapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaign;
 - All data can be seen, deleted, downloaded on the extension configuration page;
-- Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extention is removed from chrome.
+- Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extension is removed from chrome.
     
 
 ### Compendium References
