@@ -5,9 +5,10 @@ import MonsterEncounterStorageService from "./MonsterEncounterStorageService";
 import MonsterListData from '../../data/MonsterListData';
 import MonsterListStorageService from "./MonsterListStorageService";
 import Q from "./Q";
+import type StorageData from "../../data/StorageData";
 import SyncStorageService from "./SyncStorageService";
 
-const getCurrentOrderValue = function (listId: string, storageData): number {
+const getCurrentOrderValue = function (listId: string, storageData: StorageData): number {
     const monsters = MonsterListStorageService.getListMonsters(listId, storageData);
     if (!monsters || monsters.length === 0) return 0;
     let maxOrder = 0;
@@ -19,7 +20,7 @@ const getCurrentOrderValue = function (listId: string, storageData): number {
 
 class MonsterStorageService {
 
-    static findMonstersGroupedByList(storageData): Promise<Map<string, MonsterData[]>> {
+    static findMonstersGroupedByList(storageData: StorageData): Promise<Map<string, MonsterData[]>> {
         const monsterMap = SyncStorageService.findGroupedBy(storageData, "listId", Q.clazz("MonsterData"));
 
         // check existing ordering info
@@ -45,7 +46,7 @@ class MonsterStorageService {
      * Creates a monster and all the parent date related to it.
      */
     static createMonster(monsterId: string, name: string, hp: string): Promise<MonsterData> {
-        let storageData, config, encounter, list;
+        let storageData: StorageData, config, encounter, list;
         return SyncStorageService.getStorageData().then(result => {
             storageData = result;
             return ConfigStorageService.getConfig();
@@ -81,7 +82,7 @@ class MonsterStorageService {
      * Counts "alive / total" monster of active encounter.
      */
     static countActiveMonsters(): Promise<{ alive: number, total: number }> {
-        let storageData;
+        let storageData: StorageData;
         const empty = { total: 0, alive: 0 };
         return SyncStorageService.getStorageData().then(result => {
             storageData = result;

@@ -1,5 +1,4 @@
 import MapAreaInfo from "./MapAreaInfo";
-import MapLinksInfo from "./MapLinksInfo";
 
 class MapInfo {
     constructor(menuHeaderId: string, page: string, mapImageName: string, contentId: string, areas: MapAreaInfo[], extraMapLinkSelectors: string[]) {

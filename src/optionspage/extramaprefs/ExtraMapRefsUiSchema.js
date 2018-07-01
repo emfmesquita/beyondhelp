@@ -1,33 +1,50 @@
 
+const page = {
+    "ui:placeholder": "Url path after compendium path. E.g. a1/the-sunless-citadel."
+};
+
+const areaPage = {
+    "ui:placeholder": "Same as map page, only needed if points to another page content."
+};
+
+const contentId = {
+    "ui:placeholder": "Html 'data-content-chunk-id' attribute of target sub content."
+};
+
+const untilContentId = {
+    "ui:placeholder": `Should only be filled if multiples sub contents are desired.`
+};
+
+const targetImageName = {
+    "ui:placeholder": "Filename of target map image."
+};
+
+const coords = {
+    "ui:placeholder": "Coordinates of top left and bottom right points. E.g 100,40,110,50"
+};
+
 const areasUi = {
     "ui:arrayItemTitle": "Area",
     "ui:arrayTabProp": "coords",
     "items": {
-        "coords": {
-            "ui:placeholder": "Coordinates of top left and bottom right points. E.g 100,40,110,50"
-        },
+        "coords": coords,
         "headerId": {
             "ui:placeholder": "Html id attribute of the target header."
         },
-        "page": {
-            "ui:placeholder": "Same as map page, only needed if points to another page content."
-        },
-        "contentId": {
-            "ui:placeholder": "Html 'data-content-chunk-id' attribute of target sub content."
-        }
+        "page": areaPage,
+        "contentId": contentId,
+        "untilContentId": untilContentId
     }
 };
 
 const extraAreasUi = {
-    "ui:arrayItemTitle": "Extra Info Areas",
+    "ui:arrayItemTitle": "Extra Info Area",
     "ui:arrayTabProp": "coords",
     "items": {
-        "coords": {
-            "ui:placeholder": "Coordinates of top left and bottom right points. E.g 100,40,110,50"
-        },
-        "contentId": {
-            "ui:placeholder": "Html 'data-content-chunk-id' attribute of target sub content."
-        }
+        "coords": coords,
+        "contentId": contentId,
+        "untilContentId": untilContentId,
+        "page": areaPage
     }
 };
 
@@ -38,15 +55,7 @@ const mapToMapsUi = {
         "coords": {
             "ui:placeholder": "Coordinates center point plus the circle radius. E.g 100,40,10"
         },
-        "targetImageName": {
-            "ui:placeholder": "Html id attribute of the target header."
-        }
-    }
-};
-
-const extraLinksUi = {
-    "items": {
-        "ui:placeholder": "CSS selector of header element to add a link to the map."
+        "targetImageName": targetImageName
     }
 };
 
@@ -59,9 +68,7 @@ const extraMenuLinksUi = {
 const mapsUi = {
     "ui:arrayTabProp": "mapImageName",
     "items": {
-        "page": {
-            "ui:placeholder": "Url path after compendium path. E.g. a1/the-sunless-citadel."
-        },
+        "page": page,
         "mapImageName": {
             "ui:placeholder": "Filename of map image."
         },
@@ -80,8 +87,19 @@ const mapsUi = {
         "areas": areasUi,
         "extraAreas": extraAreasUi,
         "mapToMaps": mapToMapsUi,
-        "extraMenuHeaderIds": extraMenuLinksUi,
-        "extraLinks": extraLinksUi
+        "extraMenuHeaderIds": extraMenuLinksUi
+    }
+};
+
+const extraLinksUi = {
+    "ui:arrayItemTitle": "Link to Map",
+    "ui:arrayTabProp": "selector",
+    "items": {
+        "page": page,
+        "targetImageName": targetImageName,
+        "selector": {
+            "ui:placeholder": "CSS selector of header element to add a link to the map."
+        }
     }
 };
 
@@ -95,7 +113,8 @@ const uischema = {
             "path": {
                 "ui:placeholder": "Url path after /compendium. E.g. adventures/toa/"
             },
-            "maps": mapsUi
+            "maps": mapsUi,
+            "extraLinks": extraLinksUi
         }
     }
 };

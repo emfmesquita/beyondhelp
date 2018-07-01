@@ -3,17 +3,18 @@ import Configuration from '../../data/Configuration';
 import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterListData from '../../data/MonsterListData';
-import Q from "./Q";
-import SyncStorageService from "./SyncStorageService";
 import MonsterListStorageService from "./MonsterListStorageService";
 import MonsterStorageService from "./MonsterStorageService";
+import Q from "./Q";
+import type StorageData from "../../data/StorageData";
+import SyncStorageService from "./SyncStorageService";
 
 class MonsterEncounterStorageService {
     /**
      * Gets all the encounters trees of data.
      */
     static getMonsterEncounters(): Promise<{ active: MonsterEncounterData, all: MonsterEncounterData[] }> {
-        let storageData, result, listMap: Map<string, MonsterListData[]>, encounters: MonsterEncounterData[];
+        let storageData: StorageData, result, listMap: Map<string, MonsterListData[]>, encounters: MonsterEncounterData[];
 
         return SyncStorageService.getStorageData().then(foundData => {
             storageData = foundData;
@@ -53,7 +54,7 @@ class MonsterEncounterStorageService {
         });
     }
 
-    static getEncounterLists(encounterId: string, storageData): MonsterListData[] {
+    static getEncounterLists(encounterId: string, storageData: StorageData): MonsterListData[] {
         return SyncStorageService.find(storageData, Q.clazz("MonsterListData"), Q.eq("encounterId", encounterId));
     }
 

@@ -529,12 +529,6 @@ const maps = [
     ], ["#TheRuins[data-content-chunk-id='0ad44212-93ed-420c-ac43-6d61990152dc']", "#Aftermath"])
 ];
 
-const extraMapLinks = [
-    new MapLinksInfo("secret-of-the-sumber-hills", "the-dessarin-valley", "fe5bf95b-c3b5-4881-9866-ba6bb7b8bc68", [
-        "#ShallowGraves"
-    ])
-];
-
 class MapsPotA extends MapRefs {
     static get path() {
         return "adventures/pota/";
@@ -545,7 +539,9 @@ class MapsPotA extends MapRefs {
     }
 
     static get extraMapLinks() {
-        return extraMapLinks;
+        return [
+            new MapLinksInfo("secret-of-the-sumber-hills").map("02-01.jpg").selector("#ShallowGraves")
+        ];
     }
 }
 

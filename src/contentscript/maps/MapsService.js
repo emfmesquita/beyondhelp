@@ -7,8 +7,8 @@ import $ from "jquery";
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import Configuration from "../../data/Configuration";
 import E from "../../services/ErrorService";
-import FormMapRefsData from "../../data/FormMapRefsData";
-import FormMapsService from "./FormMapsService";
+import ExtraMapRefsData from "../../data/ExtraMapRefsData";
+import ExtraRefMapsService from "./ExtraRefMapsService";
 import LocationService from "../../services/LocationService";
 import MapAreaInfo from "./MapAreaInfo";
 import MapAreas from "./MapAreas";
@@ -32,26 +32,26 @@ import PageScriptService from "../../services/PageScriptService";
 import ReactDOM from 'react-dom';
 import ReferencesUtils from "../../services/ReferencesUtils";
 
-const fromMapMsg = (map) => `for map "${map.mapImageName}" from compendium "${map.basePath}"`;
+const fromMapMsg = (map) => map ? `for map "${map.mapImageName}" from compendium "${map.basePath}"` : "";
 
 // creates both map refs and map links
 const processMapRefs = function (mapRefs: MapRefsPreProcessed, config: Configuration) {
     const maps = mapRefs.maps;
     const extraMapLinks = mapRefs.extraMapLinks;
 
-    if (!maps || maps.length === 0) return;
+    if (maps && maps.length > 0) {
+        // is on toc
+        if (mapRefs.isOnToc) {
+            if (config[Opt.MapTocLinks]) processTocMapLinks(maps);
+            return;
+        }
 
-    // is on toc
-    if (mapRefs.isOnToc) {
-        if (config[Opt.MapTocLinks]) processTocMapLinks(maps);
-        return;
+        // map areas + map links already defined on maps + map menu links
+        maps.forEach(map => processMap(map, config));
     }
 
-    // map areas + map links already defined on maps + map menu links
-    maps.forEach(map => processMap(map, config));
-
     // extra map links 
-    if (extraMapLinks && config[Opt.MapLinks]) extraMapLinks.forEach(processMapLinks);
+    if (!mapRefs.isOnToc && extraMapLinks && config[Opt.MapLinks]) extraMapLinks.forEach(processMapLinks);
 };
 
 // adds a menu map link before a target anchor
@@ -122,8 +122,7 @@ const processMenuMapLink = function (map: MapInfo) {
 };
 
 // add a hoverable tooltip link to a map for every target with the corresponding selector
-const processMapLinks = function (map: MapInfo) {
-    const mapLinks = map.mapLinks;
+const processMapLinks = function (mapLinks: MapLinksInfo, map: MapInfo) {
     if (!mapLinks || !mapLinks.targetSelectors) return;
 
     mapLinks.targetSelectors.forEach(selector => {
@@ -179,7 +178,7 @@ const processMap = function (map: MapInfo, config: Configuration) {
     if (config[Opt.MapMenuLinks]) processMenuMapLink(map);
 
     // renders links to map on headers both from defined areas and extra links
-    if (config[Opt.MapLinks]) processMapLinks(map);
+    if (config[Opt.MapLinks]) processMapLinks(map.mapLinks);
 };
 
 const scrollToContentIdReference = function () {
@@ -194,7 +193,7 @@ class MapsService {
     static init(config: Configuration) {
         if (!LocationService.isOnCompendium("")) return;
 
-        ConfigStorageService.getFormMapRefs().then(formMapRefsData => {
+        ConfigStorageService.getAllExtraMapRefs().then(bundles => {
             // register all maps to pre process
             [
                 MapsLMoP,
@@ -208,7 +207,7 @@ class MapsService {
             ].forEach(MapsPreProcessService.register);
 
             // create map refs from form data added on options page
-            FormMapsService.buildMapRefs(formMapRefsData).forEach(mapRefs => {
+            ExtraRefMapsService.buildMapRefs(bundles).forEach(mapRefs => {
                 MapsPreProcessService.register(mapRefs);
             });
 

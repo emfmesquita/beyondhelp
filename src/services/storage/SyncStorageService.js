@@ -1,9 +1,8 @@
 import Data from "../../data/Data";
 import Storage from "./Storage";
+import type StorageData from "../../data/StorageData";
 
 /* global chrome */
-
-type StorageData = { [key: string]: Data }
 
 const storage = new Storage(chrome.storage.sync);
 

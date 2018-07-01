@@ -1,7 +1,8 @@
 import C from "../../Constants";
+import LocalStorageService from "./LocalStorageService";
 import PlayByPostData from '../../data/PlayByPostData';
 import Q from "./Q";
-import LocalStorageService from "./LocalStorageService";
+import type StorageData from "../../data/StorageData";
 import SyncStorageService from "./SyncStorageService";
 
 const id = (owner: string, threadid: string, threadname: string) => C.PbpRefsId + '-' + owner + "-" + threadid + "-" + threadname;
@@ -19,7 +20,7 @@ class PlayByPostStorageService {
             case "local":
             case "sync":
                 storage.getStorageData().then(result => {
-                    const pbpData = storage.find(storageData, Q.clazz('PlayByPostData'));
+                    const pbpData = storage.find(result, Q.clazz('PlayByPostData'));
                     storage.deleteData(phpData).then(data => {
                         if (type === 'local') {
                             storage = LocalStorageService;
@@ -31,9 +32,9 @@ class PlayByPostStorageService {
                 });
                 break;
             default:
-                //no-op
+            //no-op
         }
-   }
+    }
 
     /**
      * Get all campaign notes

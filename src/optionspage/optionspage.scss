@@ -16,6 +16,8 @@ $options-green: #0f9d58;
 }
 
 @import "OptionsApp";
+@import "OptionsGroup";
+@import "OptionsToolbar";
 @import "OptionButton";
 @import "extramaprefs/ExtraMapRefsOptions";
 @import "extramaprefs/ExtraMapRefsFormArrayTemplate";

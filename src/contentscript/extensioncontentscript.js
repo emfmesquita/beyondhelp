@@ -90,8 +90,8 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     // inits map references
     if (config[Opt.MapRefs]) MapsService.init(config);
 
-    // // extra map references mode
-    // if (config[Opt.ExtraMapRefsMode]) ExtraMapRefsMode.init();
+    // extra map references mode
+    if (config[Opt.ExtraMapRefsMode]) ExtraMapRefsMode.init();
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();

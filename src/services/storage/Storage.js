@@ -4,10 +4,9 @@ import MessageService from "../MessageService";
 import MonsterData from '../../data/MonsterData';
 import MonsterListData from '../../data/MonsterListData';
 import Prefix from "./Prefix";
+import type StorageData from "../../data/StorageData";
 
 /* global chrome */
-
-type StorageData = { [key: string]: Data }
 
 const getStorageData = function (id: string, storage): Promise<StorageData> {
     return new Promise((resolve, reject) => {

@@ -1,13 +1,9 @@
 import $ from "jquery";
+import UidService from "./UidService";
 
 /* global chrome */
 
-const guid = function () {
-    const s4 = () => Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-    return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-};
-
-const uidClass = () => `bh-${guid()}`;
+const uidClass = () => `bh-${UidService.id()}`;
 const autoRemove = (className: string) => `$(".${className}").remove();`;
 
 class PageScriptService {

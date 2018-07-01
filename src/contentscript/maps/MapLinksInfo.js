@@ -3,7 +3,17 @@ class MapLinksInfo {
         this.fromPage = fromPage;
         this.toPage = toPage;
         this.mapContentId = mapContentId;
-        this.targetSelectors = targetSelectors;
+        this.targetSelectors = targetSelectors || [];
+    }
+
+    map(targetImageName: string) {
+        this.targetImageName = targetImageName;
+        return this;
+    }
+
+    selector(selector: string) {
+        this.targetSelectors = [selector];
+        return this;
     }
 }
 

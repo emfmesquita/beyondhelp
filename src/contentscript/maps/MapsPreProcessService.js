@@ -60,6 +60,16 @@ const preProcessLinks = (map: MapInfo, basePath: string): MapLinksInfo => {
     pathPreProcessLinks(map.mapLinks, basePath);
 };
 
+const preProcessExtraLinks = (mapLinks: MapLinksInfo) => {
+    if (mapLinks.targetImageName) {
+        const targetMap = allMaps.find(map => map.mapImageName === mapLinks.targetImageName);
+        if (!targetMap) return;
+        mapLinks.mapContentId = targetMap.contentId;
+        mapLinks.toPage = targetMap.page;
+    }
+    pathPreProcessLinks(mapLinks, mapLinks.basePath);
+};
+
 class MapsPreProcessService {
     /**
      * Register map classes with maps to pre process.
@@ -99,6 +109,7 @@ class MapsPreProcessService {
      * Pre process registered maps of current page.
      */
     static preProcess(): MapRefsPreProcessed {
+
         toPreProcess.maps.forEach(map => {
             if (toPreProcess.isOnToc) return;
             preProcessAreas(map.areas, map.basePath);
@@ -106,12 +117,12 @@ class MapsPreProcessService {
             preProcessLinks(map, map.basePath);
         });
 
-        // adds base path at last to not interfere with areas pre processor
+        if (!toPreProcess.isOnToc) toPreProcess.extraMapLinks.forEach(preProcessExtraLinks);
+
+        // adds base path at last to not interfere with areas and extra links pre processors
         toPreProcess.maps.forEach(map => {
             map.page = map.basePath + map.page;
         });
-
-        if (!toPreProcess.isOnToc) toPreProcess.extraMapLinks.forEach(mapLink => pathPreProcessLinks(mapLink, mapLink.basePath));
 
         return toPreProcess;
     }

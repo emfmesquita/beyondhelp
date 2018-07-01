@@ -14,7 +14,6 @@ const ddbColors = Object.freeze({
 });
 
 const configurationId = "bh-config";
-const formMapRefsId = "bh-form-map-refs";
 const pbpRefsId = "pbp-thread";
 
 const compendiumPage = "https://www.dndbeyond.com/compendium/";
@@ -61,9 +60,6 @@ class Constants {
 
     static get ConfigurationId() {
         return configurationId;
-    }
-    static get FormMapRefsId() {
-        return formMapRefsId;
     }
 
     static get PbpRefsId() {

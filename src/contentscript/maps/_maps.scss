@@ -76,7 +76,8 @@ $marginRight) {
         @include menuMapLink(0px,
         -38px);
     }
-    .compendium-toc-full-text {
+    .compendium-toc-full-text,
+    .compendium-toc-block-text {
         @include tocMapLink(4px,
         0px);
     }

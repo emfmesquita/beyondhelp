@@ -5,8 +5,8 @@ import C from "../Constants";
 import CheckBoxField from "../forms/CheckBoxField";
 import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
+import ExtraMapRefsOptions from "./extramaprefs/ExtraMapRefsOptions";
 import FieldService from "../services/FieldService";
-import MapTooltipForm from "./extramaprefs/ExtraMapRefsOptions";
 import Opt from "../Options";
 import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
@@ -77,10 +77,10 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
                 </OptionGroup>
-                {/* <OptionGroup label="Extra Map References">
+                <OptionGroup label="Extra Map References">
+                    <ExtraMapRefsOptions />
                     {this.optionField("Enable extra map references mode (with visual helpers on compendium pages).", Opt.ExtraMapRefsMode)}
-                    <MapTooltipForm />
-                </OptionGroup> */}
+                </OptionGroup>
                 <OptionGroup label="Monster Buttons">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}

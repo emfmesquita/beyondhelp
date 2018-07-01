@@ -1,31 +1,54 @@
 import ExtraMapRefsPatterns from "./ExtraMapRefsPatterns";
 
+const page = {
+    "type": "string",
+    "title": "Page",
+    "pattern": ExtraMapRefsPatterns.page
+};
+
+const contentId = (title: string) => {
+    return {
+        "type": "string",
+        "title": title,
+        "pattern": ExtraMapRefsPatterns.contentId
+    };
+};
+
+const untilContentId = {
+    "type": "string",
+    "title": "Until Content Id (not including)",
+    "pattern": ExtraMapRefsPatterns.contentId
+};
+
+const targetImageName = {
+    "type": "string",
+    "title": "Target Map Image",
+    "pattern": ExtraMapRefsPatterns.imageName
+};
+
+const coords = (pattern) => {
+    return {
+        "type": "string",
+        "title": "Coords",
+        "pattern": pattern
+    };
+};
+
 const areasSchema = {
     "type": "array",
     "title": "Areas (squares)",
     "items": {
         "type": "object",
         "properties": {
-            "coords": {
-                "type": "string",
-                "title": "Coords",
-                "pattern": ExtraMapRefsPatterns.fourCoords
-            },
+            "coords": coords(ExtraMapRefsPatterns.fourCoords),
             "headerId": {
                 "type": "string",
                 "title": "Header Id",
                 "pattern": ExtraMapRefsPatterns.htmlId
             },
-            "page": {
-                "type": "string",
-                "title": "Page",
-                "pattern": ExtraMapRefsPatterns.page
-            },
-            "contentId": {
-                "type": "string",
-                "title": "Content Id",
-                "pattern": ExtraMapRefsPatterns.contentId
-            }
+            "page": page,
+            "contentId": contentId("From Content Id"),
+            "untilContentId": untilContentId
         },
         "required": ["coords"]
     }
@@ -37,16 +60,10 @@ const extraAreasSchema = {
     "items": {
         "type": "object",
         "properties": {
-            "coords": {
-                "type": "string",
-                "title": "Coords",
-                "pattern": ExtraMapRefsPatterns.fourCoords
-            },
-            "contentId": {
-                "type": "string",
-                "title": "Content Id",
-                "pattern": ExtraMapRefsPatterns.contentId
-            }
+            "coords": coords(ExtraMapRefsPatterns.fourCoords),
+            "contentId": contentId("From Content Id"),
+            "untilContentId": untilContentId,
+            "page": page
         },
         "required": ["coords", "contentId"]
     }
@@ -58,26 +75,10 @@ const mapToMapsSchema = {
     "items": {
         "type": "object",
         "properties": {
-            "coords": {
-                "type": "string",
-                "title": "Coords",
-                "pattern": ExtraMapRefsPatterns.threeCoords
-            },
-            "targetImageName": {
-                "type": "string",
-                "title": "Target Image",
-                "pattern": ExtraMapRefsPatterns.imageName
-            }
+            "coords": coords(ExtraMapRefsPatterns.threeCoords),
+            "targetImageName": targetImageName
         },
         "required": ["coords", "targetImageName"]
-    }
-};
-
-const extraLinksSchema = {
-    "type": "array",
-    "title": "Extra Header Links",
-    "items": {
-        "type": "string"
     }
 };
 
@@ -96,21 +97,13 @@ const mapsSchema = {
     "items": {
         "type": "object",
         "properties": {
-            "page": {
-                "type": "string",
-                "title": "Page",
-                "pattern": ExtraMapRefsPatterns.page
-            },
+            "page": page,
             "mapImageName": {
                 "type": "string",
                 "title": "Image Name",
                 "pattern": ExtraMapRefsPatterns.imageName
             },
-            "contentId": {
-                "type": "string",
-                "title": "Content Id",
-                "pattern": ExtraMapRefsPatterns.contentId
-            },
+            "contentId": contentId("Content Id"),
             "menuHeaderId": {
                 "type": "string",
                 "title": "Menu Element Id",
@@ -132,16 +125,37 @@ const mapsSchema = {
             "areas": areasSchema,
             "extraAreas": extraAreasSchema,
             "mapToMaps": mapToMapsSchema,
-            "extraMenuHeaderIds": extraMenuLinksSchema,
-            "extraLinks": extraLinksSchema
+            "extraMenuHeaderIds": extraMenuLinksSchema
         },
         "required": ["page", "mapImageName", "contentId", "menuHeaderId"]
+    }
+};
+
+const extraLinksSchema = {
+    "type": "array",
+    "title": "Extra Links to Maps",
+    "items": {
+        "type": "object",
+        "properties": {
+            "page": page,
+            "selector": {
+                "type": "string",
+                "title": "Header CSS Selector"
+            },
+            "targetImageName": targetImageName
+        },
+        "required": ["page", "selector", "targetImageName"]
     }
 };
 
 const schema = {
     "type": "object",
     "properties": {
+        "name": {
+            "title": "Bundle Name",
+            "type": "string",
+            "maxLength": 40
+        },
         "compendiums": {
             "title": "Compendiums",
             "type": "array",
@@ -153,14 +167,18 @@ const schema = {
                         "title": "Path",
                         "pattern": ExtraMapRefsPatterns.path
                     },
-                    "maps": mapsSchema
+                    "maps": mapsSchema,
+                    "extraLinks": extraLinksSchema
                 },
                 "required": [
                     "path"
                 ]
             }
         }
-    }
+    },
+    "required": [
+        "name"
+    ]
 };
 
 export default schema;

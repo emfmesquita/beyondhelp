@@ -9,12 +9,19 @@ class BhModal extends Component {
         return this.props.footer ? <Modal.Footer>{this.props.footer}</Modal.Footer> : null;
     }
 
+    renderHeader = () => {
+        if (!this.props.title) return null;
+        return (
+            <Modal.Header closeButton>
+                <Modal.Title>{this.props.title}</Modal.Title>
+            </Modal.Header>
+        );
+    }
+
     render() {
         return (
             <Modal className="BH-modal" show={this.props.show} onHide={this.props.onHide}>
-                <Modal.Header closeButton>
-                    <Modal.Title><h4>{this.props.title}</h4></Modal.Title>
-                </Modal.Header>
+                {this.renderHeader()}
                 <Modal.Body className={this.props.addPadding && "BH-modal-padding"}>{this.props.body}</Modal.Body>
                 {this.renderFooter()}
             </Modal>

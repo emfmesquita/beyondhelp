@@ -13,6 +13,8 @@ class Prefix {
                 return "bh-monsterlist-";
             case "MonsterEncounterData":
                 return "bh-monsterencounter-";
+            case "ExtraMapRefsData":
+                return "bh-extramaprefs-";
             case "PlayByPostData":
                 return C.PbpRefsId;
             default:

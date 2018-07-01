@@ -1,12 +1,13 @@
+import MonsterData from '../../data/MonsterData';
 import MonsterEncounterData from '../../data/MonsterEncounterData';
 import MonsterEncounterStorageService from "./MonsterEncounterStorageService";
 import MonsterListData from '../../data/MonsterListData';
 import Prefix from "./Prefix";
 import Q from "./Q";
+import type StorageData from "../../data/StorageData";
 import SyncStorageService from "./SyncStorageService";
-import MonsterData from '../../data/MonsterData';
 
-const getCurrentOrderValue = function (encounterId: string, storageData): number {
+const getCurrentOrderValue = function (encounterId: string, storageData: StorageData): number {
     const lists = MonsterEncounterStorageService.getEncounterLists(encounterId, storageData);
     if (!lists || lists.length === 0) return 0;
     let maxOrder = 0;
@@ -23,11 +24,11 @@ const getCurrentOrderWithEncounter = function (encounter: MonsterEncounterData):
 };
 
 class MonsterListStorageService {
-    static findList(storageId: string, storageData): MonsterListData {
+    static findList(storageId: string, storageData: StorageData): MonsterListData {
         return SyncStorageService.findSingle(storageData, Q.clazz("MonsterListData"), Q.eq("storageId", storageId));
     }
 
-    static findListGroupedByEncounter(storageData): Promise<Map<string, MonsterListData[]>> {
+    static findListGroupedByEncounter(storageData: StorageData): Promise<Map<string, MonsterListData[]>> {
         const listMap: Map<string, MonsterListData[]> = SyncStorageService.findGroupedBy(storageData, "encounterId", Q.clazz("MonsterListData"));
         if (listMap.length === 0) {
             return Promise.resolve(listMap);
@@ -53,11 +54,11 @@ class MonsterListStorageService {
         return checkOrderPromise.then(() => listMap);
     }
 
-    static getListMonsters(listId: string, storageData): MonsterData[] {
+    static getListMonsters(listId: string, storageData: StorageData): MonsterData[] {
         return SyncStorageService.find(storageData, Q.clazz("MonsterData"), Q.eq("listId", listId));
     }
 
-    static createList(name: string, monsterId: string, encounterId: string, storageData): Promise<MonsterListData> {
+    static createList(name: string, monsterId: string, encounterId: string, storageData: StorageData): Promise<MonsterListData> {
         const newList = new MonsterListData(null, encounterId, monsterId, name, 0);
         newList.order = getCurrentOrderValue(encounterId, storageData);
         return SyncStorageService.createData("MonsterListData", newList);

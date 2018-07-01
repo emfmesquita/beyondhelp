@@ -22,6 +22,11 @@ class MapAreaInfo {
         return this;
     }
 
+    fromPage(page: string): MapAreaInfo {
+        this.page = page;
+        return this;
+    }
+
     rect(x1: number, y1: number, x2: number, y2: number): MapAreaInfo {
         this.coords = [x1, y1, x2, y2].join(",");
         this.shape = C.MapAreaRect;
