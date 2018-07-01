@@ -115,7 +115,7 @@ const mapsSchema = {
             },
             "tocHeaderId": {
                 "type": "string",
-                "title": "Toc Link Element Id",
+                "title": "Toc Link Id",
                 "pattern": ExtraMapRefsPatterns.htmlId
             },
             "tocHeaderSelector": {

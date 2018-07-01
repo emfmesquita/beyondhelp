@@ -14,7 +14,7 @@ const attToRequiredTitle = {
     contentId: "Content Id",
     menuHeaderId: "Menu Element Id",
     isChapterMap: "Chapter Map on TOC",
-    tocHeaderId: "Toc Link Element Id",
+    tocHeaderId: "Toc Link Id",
     tocHeaderSelector: "Toc Link CSS Selector",
     coords: "Coords",
     headerId: "Header Id",

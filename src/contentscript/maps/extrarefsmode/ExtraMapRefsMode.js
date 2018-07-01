@@ -86,6 +86,18 @@ const addTooltipsOnOthers = () => {
     });
 };
 
+const addTooltipsOnToc = () => {
+    $(".compendium-toc-block-text a, .compendium-toc-full-text a").each((idx, el) => {
+        const jqEl = $(el);
+        const href = jqEl.attr("href");
+        if (!href || href.indexOf("#") < 0) return;
+
+        const tocId = href.substring(href.indexOf("#") + 1, href.length);
+        const info = new ExtraMapRefsModeTooltipInfo(jqEl).rightInfo("Toc Link Id", tocId);
+        ExtraMapRefsModeHelper.addCopyTooltip(info);
+    });
+};
+
 class ExtraMapRefsMode {
     static init() {
         if (!LocationService.isOnCompendium("")) return;
@@ -103,6 +115,8 @@ class ExtraMapRefsMode {
             addTooltipsOnMenuHeaders();
             addTooltipsOnHeaders();
             addTooltipsOnOthers();
+        } else {
+            addTooltipsOnToc();
         }
     }
 }
