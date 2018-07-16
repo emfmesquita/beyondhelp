@@ -149,7 +149,7 @@ class CharactersApp extends Component {
             const up = idx !== 0;
             const down = idx !== folders.length - 1;
             return (
-                <li key={folder.name}>
+                <li key={folder.name} className={`BH-character-folder-li ${folder.expanded ? "open" : "closed"}`}>
                     <CharacterFolder
                         data={folder}
                         characters={characters}
