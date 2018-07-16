@@ -13,3 +13,13 @@ a.BH-homebrew-character-action {
     height: 100% !important;
     overflow: hidden !important;
 }
+
+.BH-character-folder-li {
+    display: inline-block;
+    &.open {
+        width: 100%;
+    }
+    &.closed {
+        width: 33%;
+    }
+}
