@@ -19,7 +19,7 @@ import PlayByPostService from "./playbypost/PlayByPostService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReferencesService from "./references/ReferencesService";
-import TableOfContentsService from "./tableofcontents/TableOfContentsService";
+import TOCService from "./tableofcontents/TOCService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
@@ -88,6 +88,9 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
 
+    // intits the Table of Contents on compendium Pages
+    if (config[Opt.ToC]) TOCService.init();
+
     // inits map references
     if (config[Opt.MapRefs]) MapsService.init(config);
 
@@ -96,8 +99,6 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();
-
-    TableOfContentsService.init();
 
     // inits campaign notes textarea on pbp pages
     if (config[Opt.PbpNotes]) PlayByPostService.init();
