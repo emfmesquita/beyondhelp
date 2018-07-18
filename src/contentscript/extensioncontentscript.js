@@ -19,6 +19,7 @@ import PlayByPostService from "./playbypost/PlayByPostService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReferencesService from "./references/ReferencesService";
+import TableOfContentsService from "./tableofcontents/TableOfContentsService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
@@ -95,6 +96,8 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();
+
+    TableOfContentsService.init();
 
     // inits campaign notes textarea on pbp pages
     if (config[Opt.PbpNotes]) PlayByPostService.init();
