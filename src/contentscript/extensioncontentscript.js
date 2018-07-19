@@ -19,6 +19,7 @@ import PlayByPostService from "./playbypost/PlayByPostService";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReferencesService from "./references/ReferencesService";
+import TOCService from "./tableofcontents/TOCService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
@@ -86,6 +87,9 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
 
     // handles errors loading tooltips 
     if (config[Opt.HomebrewTooltips]) TooltipsService.listenTooltipError();
+
+    // intits the Table of Contents on compendium Pages
+    if (config[Opt.ToC]) TOCService.init();
 
     // inits map references
     if (config[Opt.MapRefs]) MapsService.init(config);

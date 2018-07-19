@@ -102,6 +102,7 @@ class OptionsApp extends Component {
                     <PbpEntriesForm />
                 </OptionGroup>
                 {this.optionField("Add buttons to copy references on compendium pages.", Opt.RefButtons)}
+                {this.optionField("Show table of contents on compendium pages.", Opt.ToC)}
                 {this.optionField("Enable roll on tables.", Opt.TableRolls)}
                 <textarea className="BH-option-form-width-hack" />
             </div>
