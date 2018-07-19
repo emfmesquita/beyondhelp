@@ -1,4 +1,5 @@
 const data = {
+    rules: [],
     adventures: [
         {
             title: "Princes of the Apocalypse", urlName: "adventures/pota", anchorName: "", subsections: [

@@ -30,6 +30,7 @@ class TOCService {
         if (pathComponents.length < 5 || pathComponents[1] !== "compendium") return;
         const subPath = pathComponents.slice(2).join('/');
         const book = TOCData.findBySubPath(pathComponents[2], pathComponents[3]);
+        if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
         menu.empty();
         ReactDOM.render(<TOCApp object={book} currentUrl={subPath} />, menu[0]);
