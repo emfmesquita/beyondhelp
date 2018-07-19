@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TOCApp from "./TOCApp";
 
-import data from "./TOCData.json";
+import TOCData from "./TOCData.js";
 
 class TOCService {
     static triggers() {
@@ -30,7 +30,7 @@ class TOCService {
         const pathComponents = path.split("/");
         if (pathComponents.length < 5 || pathComponents[1] !== "compendium") return;
         const subPath = pathComponents.slice(2).join('/');
-        const book = data[pathComponents[2]][pathComponents[3]];
+        const book = TOCData.getBook(pathComponents[2], pathComponents[3]);
         if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
         menu.empty();
