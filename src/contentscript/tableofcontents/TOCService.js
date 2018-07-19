@@ -1,8 +1,9 @@
 import $ from "jquery";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TOCData from "./TOCData";
 import TOCApp from "./TOCApp";
+
+import data from "./TOCData.json";
 
 class TOCService {
     static triggers() {
@@ -29,7 +30,7 @@ class TOCService {
         const pathComponents = path.split("/");
         if (pathComponents.length < 5 || pathComponents[1] !== "compendium") return;
         const subPath = pathComponents.slice(2).join('/');
-        const book = TOCData.findBySubPath(pathComponents[2], pathComponents[3]);
+        const book = data[pathComponents[2]][pathComponents[3]];
         if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
         menu.empty();
