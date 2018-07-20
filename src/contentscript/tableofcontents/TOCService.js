@@ -34,10 +34,12 @@ class TOCService {
         const book = TOCData.getBook(pathComponents[2], pathComponents[3]);
         if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
+        const active = menu.find('.quick-menu-item-active').find('a').first().attr('href');
         const kids = menu.children();
         menu.empty();
         try {
             ReactDOM.render(<TOCApp object={book} currentUrl={subPath} />, menu[0]);
+            $(`[href='${active}'`).parents('.quick-menu-item-closed').removeClass('quick-menu-item-closed').addClass('quick-menu-item-opened');
             this.triggers();
         } catch (e) {
             menu.append(kids);

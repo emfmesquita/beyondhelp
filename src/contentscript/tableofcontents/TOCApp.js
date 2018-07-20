@@ -6,12 +6,8 @@ import TOCElement from './TOCElement';
 export const handleHeight = throttle(evt => {
     const menu = $('.quick-menu-tier-1');
     const top = menu[0].getBoundingClientRect().top;
-    let contentHeight = 0;
-    menu.children().map((idx, e) => contentHeight += $(e).outerHeight());
     const availableSpace = $(window).height() - top - 20;
-    const newHeight = Math.min(contentHeight, availableSpace);
-    menu.height(newHeight);
-    menu.css('max-height', newHeight + 2);
+    menu.css('max-height', availableSpace);
 }, 100);
 
 class TOCApp extends Component {
