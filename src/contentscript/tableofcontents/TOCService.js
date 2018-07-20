@@ -39,7 +39,10 @@ class TOCService {
         menu.empty();
         try {
             ReactDOM.render(<TOCApp object={book} currentUrl={subPath} />, menu[0]);
-            $(`[href='${active}'`).parents('.quick-menu-item-closed').removeClass('quick-menu-item-closed').addClass('quick-menu-item-opened');
+            $(`[href='${active}'`).parents('.quick-menu-item-closed')
+                .removeClass('quick-menu-item-closed')
+                .addClass('quick-menu-item-opened')
+                .last().addClass('quick-menu-item-active');
             this.triggers();
         } catch (e) {
             menu.append(kids);
