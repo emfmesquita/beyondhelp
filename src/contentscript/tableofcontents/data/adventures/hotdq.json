@@ -1,0 +1,964 @@
+{
+    "title": "Hoard of the Dragon Queen",
+    "urlName": "adventures/hotdq",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Episode 1: Greenest in Flames",
+            "urlName": "adventures/hotdq/greenest-in-flames",
+            "anchorName": "#Episode1GreenestinFlames",
+            "subsections": [
+                {
+                    "title": "Character Hooks",
+                    "urlName": "adventures/hotdq/greenest-in-flames",
+                    "anchorName": "#CharacterHooks",
+                    "subsections": []
+                },
+                {
+                    "title": "The Approach",
+                    "urlName": "adventures/hotdq/greenest-in-flames",
+                    "anchorName": "#TheApproach",
+                    "subsections": []
+                },
+                {
+                    "title": "General Features",
+                    "urlName": "adventures/hotdq/greenest-in-flames",
+                    "anchorName": "#GeneralFeatures",
+                    "subsections": [
+                        {
+                            "title": "Important Characters",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#ImportantCharacters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Wandering Encounters",
+                    "urlName": "adventures/hotdq/greenest-in-flames",
+                    "anchorName": "#WanderingEncounters",
+                    "subsections": [
+                        {
+                            "title": "Seek the Keep",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#SeektheKeep",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Missions",
+                    "urlName": "adventures/hotdq/greenest-in-flames",
+                    "anchorName": "#Missions",
+                    "subsections": [
+                        {
+                            "title": "The Old Tunnel",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#TheOldTunnel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Sally Port",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#TheSallyPort",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dragon Attack",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#DragonAttack",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Prisoners",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#Prisoners",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Save the Mill",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#SavetheMill",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sanctuary",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#Sanctuary",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Half-Dragon Champion",
+                            "urlName": "adventures/hotdq/greenest-in-flames",
+                            "anchorName": "#HalfDragonChampion",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Episode 2: Raiders' Camp",
+            "urlName": "adventures/hotdq/raiders-camp",
+            "anchorName": "#Episode2RaidersCamp",
+            "subsections": [
+                {
+                    "title": "Tracking the Raiders",
+                    "urlName": "adventures/hotdq/raiders-camp",
+                    "anchorName": "#TrackingtheRaiders",
+                    "subsections": [
+                        {
+                            "title": "Stragglers",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#Stragglers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rearguard",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#Rearguard",
+                            "subsections": [
+                                {
+                                    "title": "Developments",
+                                    "urlName": "adventures/hotdq/raiders-camp",
+                                    "anchorName": "#Developments",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "The Camp",
+                    "urlName": "adventures/hotdq/raiders-camp",
+                    "anchorName": "#TheCamp",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Camp Alertness",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#CampAlertness",
+                            "subsections": [
+                                {
+                                    "title": "Captured!",
+                                    "urlName": "adventures/hotdq/raiders-camp",
+                                    "anchorName": "#Captured",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Exploring the Camp",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#ExploringtheCamp",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Leosin Erlanthar",
+                            "urlName": "adventures/hotdq/raiders-camp",
+                            "anchorName": "#LeosinErlanthar",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rewards",
+                    "urlName": "adventures/hotdq/raiders-camp",
+                    "anchorName": "#Rewards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 3: Dragon Hatchery",
+            "urlName": "adventures/hotdq/dragon-hatchery",
+            "anchorName": "#Episode3DragonHatchery",
+            "subsections": [
+                {
+                    "title": "Abandoned Camp",
+                    "urlName": "adventures/hotdq/dragon-hatchery",
+                    "anchorName": "#AbandonedCamp",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wandering Monsters",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#WanderingMonsters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of the Hatchery",
+                    "urlName": "adventures/hotdq/dragon-hatchery",
+                    "anchorName": "#AreasoftheHatchery",
+                    "subsections": [
+                        {
+                            "title": "1. Cave Entrance",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#1CaveEntrance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Concealed Passage",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#2ConcealedPassage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Fungus Garden",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#3FungusGarden",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Stirge Lair",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#4StirgeLair",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Troglodyte Incursion",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#5TroglodyteIncursion",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Meat Locker",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#6MeatLocker",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Drake Nursery",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#7DrakeNursery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. Kobold Barracks",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#8KoboldBarracks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "9. Dragon Shrine",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#9DragonShrine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "10. Dragon Hatchery",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#10DragonHatchery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11. Frulam Mondath’s Chamber",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#11FrulamMondathsChamber",
+                            "subsections": []
+                        },
+                        {
+                            "title": "12. Guard Barracks",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#12GuardBarracks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "13. Treasure Storage",
+                            "urlName": "adventures/hotdq/dragon-hatchery",
+                            "anchorName": "#13TreasureStorage",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rewards",
+                    "urlName": "adventures/hotdq/dragon-hatchery",
+                    "anchorName": "#Rewards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 4: On the Road",
+            "urlName": "adventures/hotdq/on-the-road",
+            "anchorName": "#Episode4OntheRoad",
+            "subsections": [
+                {
+                    "title": "Elturel",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#Elturel",
+                    "subsections": [
+                        {
+                            "title": "The Order of the Gauntlet",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#TheOrderoftheGauntlet",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Mission",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#TheMission",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Baldur’s Gate",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#BaldursGate",
+                    "subsections": [
+                        {
+                            "title": "Hiring Out",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#HiringOut",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Fellow Travelers",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#FellowTravelers",
+                    "subsections": [
+                        {
+                            "title": "Key Nonplayer Characters",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#KeyNonplayerCharacters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Nonplayer Characters",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#OtherNonplayerCharacters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Life on the Road",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#LifeontheRoad",
+                    "subsections": []
+                },
+                {
+                    "title": "Random Road Events",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#RandomRoadEvents",
+                    "subsections": [
+                        {
+                            "title": "Adventuring Life",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#AdventuringLife",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Animal Abuse",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#AnimalAbuse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bane of the Mountains",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#BaneoftheMountains",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Contraband",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#Contraband",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Everything Has a Price",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#EverythingHasaPrice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fungus Humongous",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#FungusHumongous",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Golden Stag",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#TheGoldenStag",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Payback",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#Payback",
+                            "subsections": []
+                        },
+                        {
+                            "title": "No Room at the Inn",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#NoRoomattheInn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Roadside Hospitality",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#RoadsideHospitality",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Spider Woods",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#SpiderWoods",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stranded",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#Stranded",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Planned Road Events",
+                    "urlName": "adventures/hotdq/on-the-road",
+                    "anchorName": "#PlannedRoadEvents",
+                    "subsections": [
+                        {
+                            "title": "Recognized!",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#Recognized",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Unwanted Attention",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#UnwantedAttention",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Who’s Your Friend?",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#WhosYourFriend",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Murder Most Foul",
+                            "urlName": "adventures/hotdq/on-the-road",
+                            "anchorName": "#MurderMostFoul",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Episode 5: Construction Ahead",
+            "urlName": "adventures/hotdq/construction-ahead",
+            "anchorName": "#Episode5ConstructionAhead",
+            "subsections": [
+                {
+                    "title": "Northbound, Again",
+                    "urlName": "adventures/hotdq/construction-ahead",
+                    "anchorName": "#NorthboundAgain",
+                    "subsections": [
+                        {
+                            "title": "Encounters North of Waterdeep",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#EncountersNorthofWaterdeep",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Carnath Roadhouse",
+                    "urlName": "adventures/hotdq/construction-ahead",
+                    "anchorName": "#CarnathRoadhouse",
+                    "subsections": [
+                        {
+                            "title": "Essential Ingredients",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#EssentialIngredients",
+                            "subsections": []
+                        },
+                        {
+                            "title": "1. Courtyard",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#1Courtyard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Stables",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#2Stables",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Warehouse",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#3Warehouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Strong Room",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#4StrongRoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Rooms",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#5Rooms",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Bog Luck’s Room",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#6BogLucksRoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Ardred Briferhew’s Room",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#7ArdredBriferhewsRoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. Kitchen",
+                            "urlName": "adventures/hotdq/construction-ahead",
+                            "anchorName": "#8Kitchen",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Tracking the Load",
+                    "urlName": "adventures/hotdq/construction-ahead",
+                    "anchorName": "#TrackingtheLoad",
+                    "subsections": []
+                },
+                {
+                    "title": "Grudge Match",
+                    "urlName": "adventures/hotdq/construction-ahead",
+                    "anchorName": "#GrudgeMatch",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 6: Castle Naerytar",
+            "urlName": "adventures/hotdq/castle-naerytar",
+            "anchorName": "#Episode6CastleNaerytar",
+            "subsections": [
+                {
+                    "title": "Traveling to the Castle",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#TravelingtotheCastle",
+                    "subsections": [
+                        {
+                            "title": "Mere of Dead Men Random Encounters",
+                            "urlName": "adventures/hotdq/castle-naerytar",
+                            "anchorName": "#MereofDeadMenRandomEncounters",
+                            "subsections": [
+                                {
+                                    "title": "Mere of Dead Men Encounters",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#MereofDeadMenEncounters",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Castle Naerytar",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#CastleNaerytar",
+                    "subsections": [
+                        {
+                            "title": "Factions",
+                            "urlName": "adventures/hotdq/castle-naerytar",
+                            "anchorName": "#Factions",
+                            "subsections": [
+                                {
+                                    "title": "Cult of the Dragon",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#CultoftheDragon",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bullywugs",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#Bullywugs",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lizardfolk",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#Lizardfolk",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Red Wizards",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#RedWizards",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Voaraghamanthar",
+                                    "urlName": "adventures/hotdq/castle-naerytar",
+                                    "anchorName": "#Voaraghamanthar",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Squaring Off Against the Cult of the Dragon",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#SquaringOffAgainsttheCultoftheDragon",
+                    "subsections": []
+                },
+                {
+                    "title": "Approaching Castle Naerytar",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#ApproachingCastleNaerytar",
+                    "subsections": []
+                },
+                {
+                    "title": "Outside Castle Naerytar",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#OutsideCastleNaerytar",
+                    "subsections": [
+                        {
+                            "title": "Areas Outside the Castle",
+                            "urlName": "adventures/hotdq/castle-naerytar",
+                            "anchorName": "#AreasOutsidetheCastle",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Inside Castle Naerytar",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#InsideCastleNaerytar",
+                    "subsections": []
+                },
+                {
+                    "title": "Ground Floor",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#GroundFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Second Floor",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#SecondFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Third Floor",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#ThirdFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Beneath the Castle",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#BeneaththeCastle",
+                    "subsections": [
+                        {
+                            "title": "General Features of the Cave",
+                            "urlName": "adventures/hotdq/castle-naerytar",
+                            "anchorName": "#GeneralFeaturesoftheCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Areas of the Cave",
+                            "urlName": "adventures/hotdq/castle-naerytar",
+                            "anchorName": "#AreasoftheCave",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rewards",
+                    "urlName": "adventures/hotdq/castle-naerytar",
+                    "anchorName": "#Rewards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 7: Hunting Lodge",
+            "urlName": "adventures/hotdq/hunting-lodge",
+            "anchorName": "#Episode7HuntingLodge",
+            "subsections": [
+                {
+                    "title": "General Features",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#GeneralFeatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Important Nonplayer Characters",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#ImportantNonplayerCharacters",
+                    "subsections": [
+                        {
+                            "title": "Talis",
+                            "urlName": "adventures/hotdq/hunting-lodge",
+                            "anchorName": "#Talis",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rezmir",
+                            "urlName": "adventures/hotdq/hunting-lodge",
+                            "anchorName": "#Rezmir",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Trepsin the Troll",
+                            "urlName": "adventures/hotdq/hunting-lodge",
+                            "anchorName": "#TrepsintheTroll",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Through the Gate",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#ThroughtheGate",
+                    "subsections": []
+                },
+                {
+                    "title": "Outside the Lodge",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#OutsidetheLodge",
+                    "subsections": [
+                        {
+                            "title": "Outdoor Patrol",
+                            "urlName": "adventures/hotdq/hunting-lodge",
+                            "anchorName": "#OutdoorPatrol",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Troll Pursuit",
+                            "urlName": "adventures/hotdq/hunting-lodge",
+                            "anchorName": "#TrollPursuit",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Lodge Ground Floor",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#LodgeGroundFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Lodge Upper Floor",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#LodgeUpperFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Traveling to Parnast",
+                    "urlName": "adventures/hotdq/hunting-lodge",
+                    "anchorName": "#TravelingtoParnast",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 8: Castle in the Clouds",
+            "urlName": "adventures/hotdq/castle-in-the-clouds",
+            "anchorName": "#Episode8CastleintheClouds",
+            "subsections": [
+                {
+                    "title": "Parnast",
+                    "urlName": "adventures/hotdq/castle-in-the-clouds",
+                    "anchorName": "#Parnast",
+                    "subsections": [
+                        {
+                            "title": "1. Village of Parnast",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#1VillageofParnast",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rumors and Information",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#RumorsandInformation",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. The Golden Tankard",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#2TheGoldenTankard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. The Stable",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#3TheStable",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Shrine of Axes",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#4ShrineofAxes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Village Well and Square",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#5VillageWellandSquare",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Skyreach Castle",
+                    "urlName": "adventures/hotdq/castle-in-the-clouds",
+                    "anchorName": "#SkyreachCastle",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Important Nonplayer Characters",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#ImportantNonplayerCharacters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Areas of the Castle",
+                            "urlName": "adventures/hotdq/castle-in-the-clouds",
+                            "anchorName": "#AreasoftheCastle",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Concluding the Adventure",
+                    "urlName": "adventures/hotdq/castle-in-the-clouds",
+                    "anchorName": "#ConcludingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Backgrounds",
+            "urlName": "adventures/hotdq/appendix-a-backgrounds",
+            "anchorName": "#AppendixABackgrounds",
+            "subsections": [
+                {
+                    "title": "Background Template",
+                    "urlName": "adventures/hotdq/appendix-a-backgrounds",
+                    "anchorName": "#BackgroundTemplate",
+                    "subsections": [
+                        {
+                            "title": "The Story Thus Far . . .",
+                            "urlName": "adventures/hotdq/appendix-a-backgrounds",
+                            "anchorName": "#TheStoryThusFar",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Optional Features",
+                    "urlName": "adventures/hotdq/appendix-a-backgrounds",
+                    "anchorName": "#OptionalFeatures",
+                    "subsections": [
+                        {
+                            "title": "Optional Feature: Cult of the Dragon Infiltrator",
+                            "urlName": "adventures/hotdq/appendix-a-backgrounds",
+                            "anchorName": "#OptionalFeatureCultoftheDragonInfiltrator",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Optional Feature: Dragon Scholar",
+                            "urlName": "adventures/hotdq/appendix-a-backgrounds",
+                            "anchorName": "#OptionalFeatureDragonScholar",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Monsters",
+            "urlName": "adventures/hotdq/appendix-b-monsters",
+            "anchorName": "#AppendixBMonsters",
+            "subsections": []
+        },
+        {
+            "title": "Appendix C: Magic Items",
+            "urlName": "adventures/hotdq/appendix-c-magic-items",
+            "anchorName": "#AppendixCMagicItems",
+            "subsections": [
+                {
+                    "title": "Black Dragon Mask",
+                    "urlName": "adventures/hotdq/appendix-c-magic-items",
+                    "anchorName": "#BlackDragonMask",
+                    "subsections": []
+                },
+                {
+                    "title": "Hazirawn",
+                    "urlName": "adventures/hotdq/appendix-c-magic-items",
+                    "anchorName": "#Hazirawn",
+                    "subsections": []
+                },
+                {
+                    "title": "Insignia of Claws",
+                    "urlName": "adventures/hotdq/appendix-c-magic-items",
+                    "anchorName": "#InsigniaofClaws",
+                    "subsections": []
+                },
+                {
+                    "title": "Wand of Winter",
+                    "urlName": "adventures/hotdq/appendix-c-magic-items",
+                    "anchorName": "#WandofWinter",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "adventures/hotdq/credits",
+            "anchorName": "#Credits",
+            "subsections": [
+                {
+                    "title": "Kobold Press",
+                    "urlName": "adventures/hotdq/credits",
+                    "anchorName": "#KoboldPress",
+                    "subsections": []
+                },
+                {
+                    "title": "Wizards of the Coast",
+                    "urlName": "adventures/hotdq/credits",
+                    "anchorName": "#WizardsoftheCoast",
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

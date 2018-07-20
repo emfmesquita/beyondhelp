@@ -50,6 +50,17 @@ function secondLevel(type, bookRefs, chapterRefs) {
 function topLevel(type, hrefs) {
     if (hrefs.length === 0) {
         if (type === 'adventures') run('rules');
+        else {
+            ['adventures', 'rules'].forEach(t => {
+                Object.keys(data[t]).forEach(e => {
+                    const a = document.createElement("a");
+                    var file = new Blob([JSON.stringify(data[t][e], null, '    ')], { type: 'application/json' });
+                    a.href = URL.createObjectURL(file);
+                    a.download = e + '.json';
+                    a.click();
+                });
+            });
+        }
         return;
     }
     var go = hrefs[0];
@@ -66,10 +77,11 @@ function topLevel(type, hrefs) {
                 const book = go.substr(go.lastIndexOf("/") + 1);
                 const title = $("h1.page-title", $(response)).text().trim();
                 data[type][book] = { title: title, urlName: `${type}/${book}`, anchorName: "", subsections: [] };
-                if (type === "adventures")
-                    refs = $('.adventure-chapter-header', $(response)).find('a').get().map(e => e.href);
-                if (type === "rules")
+                refs = $('.adventure-chapter-header', $(response)).find('a').get().map(e => e.href);
+                if (refs.length === 0)
                     refs = $("[data-chapter-slug]", $(response)).find('a').get().map(e => e.href);
+                if (refs.length === 0)
+                    refs = $('.compendium-toc-full-text').first().find('H4').find('a').get().map(e => e.href);
             }
             secondLevel(type, hrefs, refs);
         }

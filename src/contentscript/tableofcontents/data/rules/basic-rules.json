@@ -1,0 +1,2788 @@
+{
+    "title": "Basic Rules",
+    "urlName": "rules/basic-rules",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Step-By-Step Characters",
+            "urlName": "rules/basic-rules/step-by-step-characters",
+            "anchorName": "#StepByStepCharacters",
+            "subsections": [
+                {
+                    "title": "1. Choose a Race",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#1ChooseaRace",
+                    "subsections": []
+                },
+                {
+                    "title": "2. Choose a Class",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#2ChooseaClass",
+                    "subsections": [
+                        {
+                            "title": "Level",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#Level",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hit Points and Hit Dice",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#HitPointsandHitDice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Proficiency Bonus",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#ProficiencyBonus",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Determine Ability Scores",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#3DetermineAbilityScores",
+                    "subsections": [
+                        {
+                            "title": "Variant: Customizing Ability Scores",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#VariantCustomizingAbilityScores",
+                            "subsections": [
+                                {
+                                    "title": "Ability Score Point Cost",
+                                    "urlName": "rules/basic-rules/step-by-step-characters",
+                                    "anchorName": "#AbilityScorePointCost",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ability Score Summary",
+                                    "urlName": "rules/basic-rules/step-by-step-characters",
+                                    "anchorName": "#AbilityScoreSummary",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ability Scores and Modifiers",
+                                    "urlName": "rules/basic-rules/step-by-step-characters",
+                                    "anchorName": "#AbilityScoresandModifiers",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "4. Describe Your Character",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#4DescribeYourCharacter",
+                    "subsections": [
+                        {
+                            "title": "Your Character's Abilities",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#YourCharactersAbilities",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "5. Choose Equipment",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#5ChooseEquipment",
+                    "subsections": [
+                        {
+                            "title": "Armor Class",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#ArmorClass",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Weapons",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#Weapons",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "6. Come Together",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#6ComeTogether",
+                    "subsections": []
+                },
+                {
+                    "title": "Beyond 1st Level",
+                    "urlName": "rules/basic-rules/step-by-step-characters",
+                    "anchorName": "#Beyond1stLevel",
+                    "subsections": [
+                        {
+                            "title": "Class Features and Hit Dice",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#ClassFeaturesandHitDice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "XP and Proficiency Bonus Progression",
+                            "urlName": "rules/basic-rules/step-by-step-characters",
+                            "anchorName": "#XPandProficiencyBonusProgression",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Races",
+            "urlName": "rules/basic-rules/races",
+            "anchorName": "#Races",
+            "subsections": [
+                {
+                    "title": "Choosing a Race",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#ChoosingaRace",
+                    "subsections": []
+                },
+                {
+                    "title": "Racial Traits",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#RacialTraits",
+                    "subsections": [
+                        {
+                            "title": "Ability Score Increase",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#AbilityScoreIncrease",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Age",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Age",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Alignment",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Alignment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Size",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Size",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Speed",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Speed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Languages",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Languages",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Subraces",
+                            "urlName": "rules/basic-rules/races",
+                            "anchorName": "#Subraces",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Dwarf",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Dwarf",
+                    "subsections": []
+                },
+                {
+                    "title": "Elf",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Elf",
+                    "subsections": []
+                },
+                {
+                    "title": "Halfling",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Halfling",
+                    "subsections": []
+                },
+                {
+                    "title": "Human",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Human",
+                    "subsections": []
+                },
+                {
+                    "title": "Dragonborn",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Dragonborn",
+                    "subsections": []
+                },
+                {
+                    "title": "Gnome",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Gnome",
+                    "subsections": []
+                },
+                {
+                    "title": "Half-Elf",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#HalfElf",
+                    "subsections": []
+                },
+                {
+                    "title": "Half-Orc",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#HalfOrc",
+                    "subsections": []
+                },
+                {
+                    "title": "Tiefling",
+                    "urlName": "rules/basic-rules/races",
+                    "anchorName": "#Tiefling",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: Classes",
+            "urlName": "rules/basic-rules/classes",
+            "anchorName": "#Chapter3Classes",
+            "subsections": [
+                {
+                    "title": "Classes Summary",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#ClassesSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Barbarian",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Barbarian",
+                    "subsections": []
+                },
+                {
+                    "title": "Bard",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Bard",
+                    "subsections": []
+                },
+                {
+                    "title": "Cleric",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Cleric",
+                    "subsections": []
+                },
+                {
+                    "title": "Druid",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Druid",
+                    "subsections": []
+                },
+                {
+                    "title": "Fighter",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Fighter",
+                    "subsections": []
+                },
+                {
+                    "title": "Monk",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Monk",
+                    "subsections": []
+                },
+                {
+                    "title": "Paladin",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Paladin",
+                    "subsections": []
+                },
+                {
+                    "title": "Ranger",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Ranger",
+                    "subsections": []
+                },
+                {
+                    "title": "Rogue",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Rogue",
+                    "subsections": []
+                },
+                {
+                    "title": "Sorcerer",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Sorcerer",
+                    "subsections": []
+                },
+                {
+                    "title": "Warlock",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Warlock",
+                    "subsections": []
+                },
+                {
+                    "title": "Wizard",
+                    "urlName": "rules/basic-rules/classes",
+                    "anchorName": "#Wizard",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Personality and Background",
+            "urlName": "rules/basic-rules/personality-and-background",
+            "anchorName": "#PersonalityandBackground",
+            "subsections": [
+                {
+                    "title": "Character Details",
+                    "urlName": "rules/basic-rules/personality-and-background",
+                    "anchorName": "#CharacterDetails",
+                    "subsections": [
+                        {
+                            "title": "Height and Weight",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#HeightandWeight",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Physical Characteristics",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#OtherPhysicalCharacteristics",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Alignment",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Alignment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Languages",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Languages",
+                            "subsections": [
+                                {
+                                    "title": "Standard Languages",
+                                    "urlName": "rules/basic-rules/personality-and-background",
+                                    "anchorName": "#StandardLanguages",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Exotic Languages",
+                                    "urlName": "rules/basic-rules/personality-and-background",
+                                    "anchorName": "#",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Personal Characteristics",
+                    "urlName": "rules/basic-rules/personality-and-background",
+                    "anchorName": "#PersonalCharacteristics",
+                    "subsections": [
+                        {
+                            "title": "Personality Traits",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#PersonalityTraits",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ideals",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Ideals",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bonds",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Bonds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Flaws",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Flaws",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Inspiration",
+                    "urlName": "rules/basic-rules/personality-and-background",
+                    "anchorName": "#Inspiration",
+                    "subsections": [
+                        {
+                            "title": "Gaining Inspiration",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#GainingInspiration",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Using Inspiration",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#UsingInspiration",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Backgrounds",
+                    "urlName": "rules/basic-rules/personality-and-background",
+                    "anchorName": "#Backgrounds",
+                    "subsections": [
+                        {
+                            "title": "Proficiencies",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Proficiencies",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Additional Languages",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#AdditionalLanguages",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Equipment",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#Equipment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Suggested Characteristics",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#SuggestedCharacteristics",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Customizing a Background",
+                            "urlName": "rules/basic-rules/personality-and-background",
+                            "anchorName": "#CustomizingaBackground",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Equipment",
+            "urlName": "rules/basic-rules/equipment",
+            "anchorName": "#Equipment",
+            "subsections": [
+                {
+                    "title": "Starting Equipment",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#StartingEquipment",
+                    "subsections": []
+                },
+                {
+                    "title": "Wealth",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#Wealth",
+                    "subsections": [
+                        {
+                            "title": "Starting Wealth by Class",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#StartingWealthbyClass",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Coinage",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Coinage",
+                            "subsections": [
+                                {
+                                    "title": "Standard Exchange Rates",
+                                    "urlName": "rules/basic-rules/equipment",
+                                    "anchorName": "#StandardExchangeRates",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Selling Treasure",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#SellingTreasure",
+                    "subsections": [
+                        {
+                            "title": "Arms, Armor, and Other Equipment",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#ArmsArmorandOtherEquipment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Magic Items",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#MagicItems",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gems, Jewelry, and Art Objects",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#GemsJewelryandArtObjects",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Trade Goods and Other",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#TradeGoodsandOther",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Armor and Shields",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#ArmorandShields",
+                    "subsections": [
+                        {
+                            "title": "Light Armor",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#LightArmor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Medium Armor",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#MediumArmor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Heavy Armor",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#HeavyArmor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Shield",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Shield",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Getting Into and Out of Armor",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#GettingIntoandOutofArmor",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Weapons",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#Weapons",
+                    "subsections": [
+                        {
+                            "title": "Simple Melee Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SimpleMeleeWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Simple Ranged Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SimpleRangedWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Martial Melee Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#MartialMeleeWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Martial Ranged Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#MartialRangedWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Weapon Proficiency",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#WeaponProficiency",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Weapon Properties",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#WeaponProperties",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Improvised Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#ImprovisedWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Silvered Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SilveredWeapons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Weapons",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SpecialWeapons",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventuring Gear",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#AdventuringGear",
+                    "subsections": [
+                        {
+                            "title": "Ammunition",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Ammunition",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arcane Focus",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#ArcaneFocus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Druidic Focus",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#DruidicFocus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Holy Symbol",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#HolySymbol",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Adventuring Gear",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#OtherAdventuringGear",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Container Capacity",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#ContainerCapacity",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Equipment Packs",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#EquipmentPacks",
+                    "subsections": []
+                },
+                {
+                    "title": "Tools",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#Tools",
+                    "subsections": [
+                        {
+                            "title": "Artisan's Tools",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#ArtisansTools",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gaming Set",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#GamingSet",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Musical Instrument",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#MusicalInstrument",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Tools",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#OtherTools",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Mounts and Vehicles",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#MountsandVehicles",
+                    "subsections": [
+                        {
+                            "title": "Mounts",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Mounts",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Tack, Harness, and Drawn Vehicles",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#TackHarnessandDrawnVehicles",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Saddles",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Saddles",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Waterborne Vehicles",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#WaterborneVehicles",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Trade Goods",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#TradeGoods",
+                    "subsections": [
+                        {
+                            "title": "Regulation and Bartering",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#RegulationandBartering",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Trade Goods Table",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#TradeGoodsTable",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Expenses",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#Expenses",
+                    "subsections": [
+                        {
+                            "title": "Lifestyle Expenses",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#LifestyleExpenses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Food, Drink, and Lodging",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#FoodDrinkandLodging",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Services",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#Services",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Spellcasting Services",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SpellcastingServices",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Trinkets",
+                    "urlName": "rules/basic-rules/equipment",
+                    "anchorName": "#Trinkets",
+                    "subsections": [
+                        {
+                            "title": "Sample Trinkets",
+                            "urlName": "rules/basic-rules/equipment",
+                            "anchorName": "#SampleTrinkets",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Customization Options",
+            "urlName": "rules/basic-rules/customization-options",
+            "anchorName": "#CustomizationOptions",
+            "subsections": [
+                {
+                    "title": "Multiclassing",
+                    "urlName": "rules/basic-rules/customization-options",
+                    "anchorName": "#Multiclassing",
+                    "subsections": []
+                },
+                {
+                    "title": "Prerequisites",
+                    "urlName": "rules/basic-rules/customization-options",
+                    "anchorName": "#Prerequisites",
+                    "subsections": [
+                        {
+                            "title": "Experience Points",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#ExperiencePoints",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hit Points and Hit Dice",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#HitPointsandHitDice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Proficiency Bonus",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#ProficiencyBonus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Proficiencies",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#Proficiencies",
+                            "subsections": [
+                                {
+                                    "title": "Multiclassing Proficiencies",
+                                    "urlName": "rules/basic-rules/customization-options",
+                                    "anchorName": "#MulticlassingProficiencies",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Class Features",
+                    "urlName": "rules/basic-rules/customization-options",
+                    "anchorName": "#ClassFeatures",
+                    "subsections": [
+                        {
+                            "title": "Channel Divinity",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#ChannelDivinity",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Extra Attack",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#ExtraAttack",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Unarmored Defense",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#UnarmoredDefense",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Spellcasting",
+                    "urlName": "rules/basic-rules/customization-options",
+                    "anchorName": "#Spellcasting",
+                    "subsections": [
+                        {
+                            "title": "Multiclass Spellcaster",
+                            "urlName": "rules/basic-rules/customization-options",
+                            "anchorName": "#MulticlassSpellcaster",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Feats",
+                    "urlName": "rules/basic-rules/customization-options",
+                    "anchorName": "#Feats",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Using Ability Scores",
+            "urlName": "rules/basic-rules/using-ability-scores",
+            "anchorName": "#UsingAbilityScores",
+            "subsections": [
+                {
+                    "title": "Ability Scores and Modifiers",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#AbilityScoresandModifiers",
+                    "subsections": [
+                        {
+                            "title": "Ability Scores and Modifiers Table",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#AbilityScoresandModifiersTable",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Advantage and Disadvantage",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#AdvantageandDisadvantage",
+                    "subsections": []
+                },
+                {
+                    "title": "Proficiency Bonus",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#ProficiencyBonus",
+                    "subsections": []
+                },
+                {
+                    "title": "Ability Checks",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#AbilityChecks",
+                    "subsections": [
+                        {
+                            "title": "Typical Difficulty Classes",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#TypicalDifficultyClasses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Contests",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Contests",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Skills",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Skills",
+                            "subsections": [
+                                {
+                                    "title": "Variant: Skills with Different Abilities",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#VariantSkillswithDifferentAbilities",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Passive Checks",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#PassiveChecks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Working Together",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#WorkingTogether",
+                            "subsections": [
+                                {
+                                    "title": "Group Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#GroupChecks",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Using Each Ability",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#UsingEachAbility",
+                    "subsections": [
+                        {
+                            "title": "Strength",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Strength",
+                            "subsections": [
+                                {
+                                    "title": "Strength Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#StrengthChecks",
+                                    "subsections": [
+                                        {
+                                            "title": "Athletics",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Athletics",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Other Strength Checks",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#OtherStrengthChecks",
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Strength Attack Rolls and Damage",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#StrengthAttackRollsandDamage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lifting and Carrying",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#LiftingandCarrying",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Variant: Encumbrance",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#VariantEncumbrance",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Dexterity",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Dexterity",
+                            "subsections": [
+                                {
+                                    "title": "Dexterity Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#DexterityChecks",
+                                    "subsections": [
+                                        {
+                                            "title": "Acrobatics",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Acrobatics",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Sleight of Hand",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#SleightofHand",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Stealth",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Stealth",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Other Dexterity Checks",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#OtherDexterityChecks",
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Dexterity Attack Rolls and Damage",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#DexterityAttackRollsandDamage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Armor Class",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#ArmorClass",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Initiative",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#Initiative",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Constitution",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Constitution",
+                            "subsections": [
+                                {
+                                    "title": "Constitution Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#ConstitutionChecks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hit Points",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#HitPoints",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Intelligence",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Intelligence",
+                            "subsections": [
+                                {
+                                    "title": "Intelligence Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#IntelligenceChecks",
+                                    "subsections": [
+                                        {
+                                            "title": "Arcana",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Arcana",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "History",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#History",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Investigation",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Investigation",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Nature",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Nature",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Religion",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Religion",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Other Intelligence Checks",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#OtherIntelligenceChecks",
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Spellcasting Ability",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#SpellcastingAbility",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Wisdom",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Wisdom",
+                            "subsections": [
+                                {
+                                    "title": "Wisdom Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#WisdomChecks",
+                                    "subsections": [
+                                        {
+                                            "title": "Animal Handling",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#AnimalHandling",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Insight",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Insight",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Medicine",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Medicine",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Perception",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Perception",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Survival",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Survival",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Other Wisdom Checks",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#OtherWisdomChecks",
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Spellcasting Ability",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#SpellcastingAbility",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Charisma",
+                            "urlName": "rules/basic-rules/using-ability-scores",
+                            "anchorName": "#Charisma",
+                            "subsections": [
+                                {
+                                    "title": "Charisma Checks",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#CharismaChecks",
+                                    "subsections": [
+                                        {
+                                            "title": "Deception",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Deception",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Intimidation",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Intimidation",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Performance",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Performance",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Persuasion",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#Persuasion",
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "Other Charisma Checks",
+                                            "urlName": "rules/basic-rules/using-ability-scores",
+                                            "anchorName": "#OtherCharismaChecks",
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Spellcasting Ability",
+                                    "urlName": "rules/basic-rules/using-ability-scores",
+                                    "anchorName": "#SpellcastingAbility",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Saving Throws",
+                    "urlName": "rules/basic-rules/using-ability-scores",
+                    "anchorName": "#SavingThrows",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Adventuring",
+            "urlName": "rules/basic-rules/adventuring",
+            "anchorName": "#Adventuring",
+            "subsections": [
+                {
+                    "title": "Time",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#Time",
+                    "subsections": []
+                },
+                {
+                    "title": "Movement",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#Movement",
+                    "subsections": [
+                        {
+                            "title": "Speed",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Speed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Travel Pace",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#TravelPace",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Difficult Terrain",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#DifficultTerrain",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Types of Movement",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#SpecialTypesofMovement",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Climbing, Swimming, and Crawling",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#ClimbingSwimmingandCrawling",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jumping",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Jumping",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Activity While Traveling",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#ActivityWhileTraveling",
+                            "subsections": [
+                                {
+                                    "title": "Marching Order",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#MarchingOrder",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Stealth",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Stealth",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Noticing Threats",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#NoticingThreats",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Activities",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#OtherActivities",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Environment",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#TheEnvironment",
+                    "subsections": [
+                        {
+                            "title": "Falling",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Falling",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Suffocating",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Suffocating",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vision and Light",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#VisionandLight",
+                            "subsections": [
+                                {
+                                    "title": "Blindsight",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Blindsight",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Darkvision",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Darkvision",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Truesight",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Truesight",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Food and Water",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#FoodandWater",
+                            "subsections": [
+                                {
+                                    "title": "Food",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Food",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Water",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Water",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Interacting with Objects",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#InteractingwithObjects",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Social Interaction",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#SocialInteraction",
+                    "subsections": [
+                        {
+                            "title": "Roleplaying",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#Roleplaying",
+                            "subsections": [
+                                {
+                                    "title": "Descriptive Approach to Roleplaying",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#DescriptiveApproachtoRoleplaying",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Active Approach to Roleplaying",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#ActiveApproachtoRoleplaying",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Results of Roleplaying",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#ResultsofRoleplaying",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Ability Checks",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#AbilityChecks",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Resting",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#Resting",
+                    "subsections": [
+                        {
+                            "title": "Short Rest",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#ShortRest",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Long Rest",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#LongRest",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Between Adventures",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#BetweenAdventures",
+                    "subsections": [
+                        {
+                            "title": "Lifestyle Expenses",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#LifestyleExpenses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Downtime Activities",
+                            "urlName": "rules/basic-rules/adventuring",
+                            "anchorName": "#DowntimeActivities",
+                            "subsections": [
+                                {
+                                    "title": "Crafting",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Crafting",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Practicing a Profession",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#PracticingaProfession",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Recuperating",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Recuperating",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Researching",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Researching",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Training",
+                                    "urlName": "rules/basic-rules/adventuring",
+                                    "anchorName": "#Training",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Combat",
+            "urlName": "rules/basic-rules/combat",
+            "anchorName": "#Combat",
+            "subsections": [
+                {
+                    "title": "The Order of Combat",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#TheOrderofCombat",
+                    "subsections": [
+                        {
+                            "title": "Surprise",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Surprise",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Initiative",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Initiative",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Your Turn",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#YourTurn",
+                            "subsections": [
+                                {
+                                    "title": "Bonus Actions",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#BonusActions",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Other Activity on Your Turn",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#OtherActivityonYourTurn",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reactions",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#Reactions",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Movement and Position",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#MovementandPosition",
+                    "subsections": [
+                        {
+                            "title": "Breaking Up Your Move",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#BreakingUpYourMove",
+                            "subsections": [
+                                {
+                                    "title": "Moving Between Attacks",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#MovingBetweenAttacks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Using Different Speeds",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#UsingDifferentSpeeds",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Difficult Terrain",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#DifficultTerrain",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Being Prone",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#BeingProne",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Moving Around Other Creatures",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#MovingAroundOtherCreatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Flying Movement",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#FlyingMovement",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Creature Size",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#CreatureSize",
+                            "subsections": [
+                                {
+                                    "title": "Space",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#Space",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Squeezing into a Smaller Space",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#SqueezingintoaSmallerSpace",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Actions in Combat",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#ActionsinCombat",
+                    "subsections": [
+                        {
+                            "title": "Attack",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Attack",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cast a Spell",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#CastaSpell",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dash",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Dash",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Disengage",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Disengage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dodge",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Dodge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Help",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Help",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hide",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Hide",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ready",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Ready",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Search",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Search",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Use an Object",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#UseanObject",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Making an Attack",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#MakinganAttack",
+                    "subsections": [
+                        {
+                            "title": "Attack Rolls",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#AttackRolls",
+                            "subsections": [
+                                {
+                                    "title": "Modifiers to the Roll",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#ModifierstotheRoll",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rolling 1 or 20",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#Rolling1or20",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Unseen Attackers and Targets",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#UnseenAttackersandTargets",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ranged Attacks",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#RangedAttacks",
+                            "subsections": [
+                                {
+                                    "title": "Range",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#Range",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ranged Attacks in Close Combat",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#RangedAttacksinCloseCombat",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Melee Attacks",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#MeleeAttacks",
+                            "subsections": [
+                                {
+                                    "title": "Opportunity Attacks",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#OpportunityAttacks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Two-Weapon Fighting",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#TwoWeaponFighting",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contests in Combat",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#ContestsinCombat",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Grappling",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#Grappling",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Shoving a Creature",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#ShovingaCreature",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Cover",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#Cover",
+                    "subsections": [
+                        {
+                            "title": "Half Cover",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#HalfCover",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Three-Quarters Cover",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#ThreeQuartersCover",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Total Cover",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#TotalCover",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Damage and Healing",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#DamageandHealing",
+                    "subsections": [
+                        {
+                            "title": "Hit Points",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#HitPoints",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Damage Rolls",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#DamageRolls",
+                            "subsections": [
+                                {
+                                    "title": "Critical Hits",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#CriticalHits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Damage Types",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#DamageTypes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Damage Resistance and Vulnerability",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#DamageResistanceandVulnerability",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Healing",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Healing",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dropping to 0 Hit Points",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#Droppingto0HitPoints",
+                            "subsections": [
+                                {
+                                    "title": "Instant Death",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#InstantDeath",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Falling Unconscious",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#FallingUnconscious",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Death Saving Throws",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#DeathSavingThrows",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Stabilizing a Creature",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#StabilizingaCreature",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Monsters and Death",
+                                    "urlName": "rules/basic-rules/combat",
+                                    "anchorName": "#MonstersandDeath",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Knocking a Creature Out",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#KnockingaCreatureOut",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Temporary Hit Points",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#TemporaryHitPoints",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Mounted Combat",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#MountedCombat",
+                    "subsections": [
+                        {
+                            "title": "Mounting and Dismounting",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#MountingandDismounting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Controlling a Mount",
+                            "urlName": "rules/basic-rules/combat",
+                            "anchorName": "#ControllingaMount",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Underwater Combat",
+                    "urlName": "rules/basic-rules/combat",
+                    "anchorName": "#UnderwaterCombat",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Spellcasting",
+            "urlName": "rules/basic-rules/spellcasting",
+            "anchorName": "#Spellcasting",
+            "subsections": [
+                {
+                    "title": "What Is a Spell?",
+                    "urlName": "rules/basic-rules/spellcasting",
+                    "anchorName": "#WhatIsaSpell",
+                    "subsections": [
+                        {
+                            "title": "Spell Level",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#SpellLevel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Known and Prepared Spells",
+                    "urlName": "rules/basic-rules/spellcasting",
+                    "anchorName": "#KnownandPreparedSpells",
+                    "subsections": []
+                },
+                {
+                    "title": "Spell Slots",
+                    "urlName": "rules/basic-rules/spellcasting",
+                    "anchorName": "#SpellSlots",
+                    "subsections": [
+                        {
+                            "title": "Casting a Spell at a Higher Level",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#CastingaSpellataHigherLevel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cantrips",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#Cantrips",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rituals",
+                    "urlName": "rules/basic-rules/spellcasting",
+                    "anchorName": "#Rituals",
+                    "subsections": []
+                },
+                {
+                    "title": "Casting a Spell",
+                    "urlName": "rules/basic-rules/spellcasting",
+                    "anchorName": "#CastingaSpell",
+                    "subsections": [
+                        {
+                            "title": "Casting Time",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#CastingTime",
+                            "subsections": [
+                                {
+                                    "title": "Bonus Action",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#BonusAction",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reactions",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Reactions",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Longer Casting Times",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#LongerCastingTimes",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Range",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#Range",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Components",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#Components",
+                            "subsections": [
+                                {
+                                    "title": "Verbal (V)",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#VerbalV",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Somatic (S)",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#SomaticS",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Material (M)",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#MaterialM",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Duration",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#Duration",
+                            "subsections": [
+                                {
+                                    "title": "Instantaneous",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Instantaneous",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Concentration",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Concentration",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Targets",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#Targets",
+                            "subsections": [
+                                {
+                                    "title": "A Clear Path to the Target",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#AClearPathtotheTarget",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Targeting Yourself",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#TargetingYourself",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Areas of Effect",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#AreasofEffect",
+                            "subsections": [
+                                {
+                                    "title": "Cone",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Cone",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Cube",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Cube",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Cylinder",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Cylinder",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Line",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Line",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sphere",
+                                    "urlName": "rules/basic-rules/spellcasting",
+                                    "anchorName": "#Sphere",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Saving Throws",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#SavingThrows",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Attack Rolls",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#AttackRolls",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Combining Magical Effects",
+                            "urlName": "rules/basic-rules/spellcasting",
+                            "anchorName": "#CombiningMagicalEffects",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Monsters",
+            "urlName": "rules/basic-rules/monsters",
+            "anchorName": "#Monsters",
+            "subsections": [
+                {
+                    "title": "Monster Statistics",
+                    "urlName": "rules/basic-rules/monsters",
+                    "anchorName": "#MonsterStatistics",
+                    "subsections": [
+                        {
+                            "title": "Size",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Size",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Speed",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Speed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ability Scores",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#AbilityScores",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Saving Throws",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#SavingThrows",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Skills",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Skills",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vulnerabilities, Resistances, and Immunities",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#VulnerabilitiesResistancesandImmunities",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Senses",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Senses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Challenge",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Challenge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Traits",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#SpecialTraits",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Actions",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Actions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Reactions",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Reactions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Limited Usage",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#LimitedUsage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Grapple Rules for Monsters",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#GrappleRulesforMonsters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Equipment",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#Equipment",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Legendary Creatures",
+                    "urlName": "rules/basic-rules/monsters",
+                    "anchorName": "#LegendaryCreatures",
+                    "subsections": [
+                        {
+                            "title": "Legendary Actions",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#LegendaryActions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Legendary Creature's Lair",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#ALegendaryCreaturesLair",
+                            "subsections": [
+                                {
+                                    "title": "Lair Actions",
+                                    "urlName": "rules/basic-rules/monsters",
+                                    "anchorName": "#LairActions",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Regional Effects",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#RegionalEffects",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Nonplayer Characters",
+                    "urlName": "rules/basic-rules/monsters",
+                    "anchorName": "#NonplayerCharacters",
+                    "subsections": [
+                        {
+                            "title": "Customizing NPCs",
+                            "urlName": "rules/basic-rules/monsters",
+                            "anchorName": "#CustomizingNPCs",
+                            "subsections": [
+                                {
+                                    "title": "Racial Traits",
+                                    "urlName": "rules/basic-rules/monsters",
+                                    "anchorName": "#RacialTraits",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spell Swaps",
+                                    "urlName": "rules/basic-rules/monsters",
+                                    "anchorName": "#SpellSwaps",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Armor and Weapon Swaps",
+                                    "urlName": "rules/basic-rules/monsters",
+                                    "anchorName": "#ArmorandWeaponSwaps",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Magic Items",
+                                    "urlName": "rules/basic-rules/monsters",
+                                    "anchorName": "#MagicItems",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Magic Items",
+            "urlName": "rules/basic-rules/magic-items",
+            "anchorName": "#MagicItems",
+            "subsections": [
+                {
+                    "title": "Attunement",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#Attunement",
+                    "subsections": []
+                },
+                {
+                    "title": "Wearing and Wielding Items",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#WearingandWieldingItems",
+                    "subsections": [
+                        {
+                            "title": "Multiple Items of the Same Kind",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#MultipleItemsoftheSameKind",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Paired Items",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#PairedItems",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Activating an Item",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#ActivatinganItem",
+                    "subsections": [
+                        {
+                            "title": "Command Word",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#CommandWord",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Consumables",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#Consumables",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Spells",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#Spells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Charges",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#Charges",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Sentient Magic Items",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#SentientMagicItems",
+                    "subsections": [
+                        {
+                            "title": "Creating Sentient Magic Items",
+                            "urlName": "rules/basic-rules/magic-items",
+                            "anchorName": "#CreatingSentientMagicItems",
+                            "subsections": [
+                                {
+                                    "title": "Abilities",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#Abilities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Communication",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#Communication",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Senses",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#Senses",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Alignment",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#Alignment",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Special Purpose",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#SpecialPurpose",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Conflict",
+                                    "urlName": "rules/basic-rules/magic-items",
+                                    "anchorName": "#Conflict",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Running the Game",
+            "urlName": "rules/basic-rules/running-the-game",
+            "anchorName": "#RunningtheGame",
+            "subsections": [
+                {
+                    "title": "Building Combat Encounters",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#BuildingCombatEncounters",
+                    "subsections": [
+                        {
+                            "title": "Combat Encounter Difficulty",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#CombatEncounterDifficulty",
+                            "subsections": [
+                                {
+                                    "title": "XP Thresholds by Character Level",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#XPThresholdsbyCharacterLevel",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Evaluating Encounter Difficulty",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#EvaluatingEncounterDifficulty",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Modifying Encounter Difficulty",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#ModifyingEncounterDifficulty",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fun Combat Encounters",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#FunCombatEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Objects",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#Objects",
+                    "subsections": [
+                        {
+                            "title": "Statistics for Objects",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#StatisticsforObjects",
+                            "subsections": [
+                                {
+                                    "title": "Armor Class",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#ArmorClass",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hit Points",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#HitPoints",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Huge and Gargantuan Objects",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#HugeandGargantuanObjects",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Objects and Damage Types",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#ObjectsandDamageTypes",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Damage Threshold",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#DamageThreshold",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Traps",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#Traps",
+                    "subsections": [
+                        {
+                            "title": "Traps in Play",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#TrapsinPlay",
+                            "subsections": [
+                                {
+                                    "title": "Triggering a Trap",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#TriggeringaTrap",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Detecting and Disabling a Trap",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#DetectingandDisablingaTrap",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Trap Effects",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#TrapEffects",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Complex Traps",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#ComplexTraps",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Sample Traps",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#SampleTraps",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Poisons",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#Poisons",
+                    "subsections": [
+                        {
+                            "title": "Poison Types",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#PoisonTypes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sample Poisons",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#SamplePoisons",
+                            "subsections": [
+                                {
+                                    "title": "Poison Descriptions",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#PoisonDescriptions",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Diseases",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#Diseases",
+                    "subsections": [
+                        {
+                            "title": "Sample Diseases",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#SampleDiseases",
+                            "subsections": [
+                                {
+                                    "title": "Cackle Fever",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#CackleFever",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sewer Plague",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#SewerPlague",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sight Rot",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#SightRot",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Madness",
+                    "urlName": "rules/basic-rules/running-the-game",
+                    "anchorName": "#Madness",
+                    "subsections": [
+                        {
+                            "title": "Going Mad",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#GoingMad",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Madness Effects",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#MadnessEffects",
+                            "subsections": [
+                                {
+                                    "title": "Short-Term Madness",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#ShortTermMadness",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Long-Term Madness",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#LongTermMadness",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Indefinite Madness",
+                                    "urlName": "rules/basic-rules/running-the-game",
+                                    "anchorName": "#IndefiniteMadness",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Curing Madness",
+                            "urlName": "rules/basic-rules/running-the-game",
+                            "anchorName": "#CuringMadness",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Conditions",
+            "urlName": "rules/basic-rules/appendix-a-conditions",
+            "anchorName": "#AppendixAConditions",
+            "subsections": [
+                {
+                    "title": "Blinded",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Blinded",
+                    "subsections": []
+                },
+                {
+                    "title": "Charmed",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Charmed",
+                    "subsections": []
+                },
+                {
+                    "title": "Deafened",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Deafened",
+                    "subsections": []
+                },
+                {
+                    "title": "Exhaustion",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Exhaustion",
+                    "subsections": []
+                },
+                {
+                    "title": "Frightened",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Frightened",
+                    "subsections": []
+                },
+                {
+                    "title": "Grappled",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Grappled",
+                    "subsections": []
+                },
+                {
+                    "title": "Incapacitated",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Incapacitated",
+                    "subsections": []
+                },
+                {
+                    "title": "Invisible",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Invisible",
+                    "subsections": []
+                },
+                {
+                    "title": "Paralyzed",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Paralyzed",
+                    "subsections": []
+                },
+                {
+                    "title": "Petrified",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Petrified",
+                    "subsections": []
+                },
+                {
+                    "title": "Poisoned",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Poisoned",
+                    "subsections": []
+                },
+                {
+                    "title": "Prone",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Prone",
+                    "subsections": []
+                },
+                {
+                    "title": "Restrained",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Restrained",
+                    "subsections": []
+                },
+                {
+                    "title": "Stunned",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Stunned",
+                    "subsections": []
+                },
+                {
+                    "title": "Unconscious",
+                    "urlName": "rules/basic-rules/appendix-a-conditions",
+                    "anchorName": "#Unconscious",
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

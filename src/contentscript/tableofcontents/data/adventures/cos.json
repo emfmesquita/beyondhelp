@@ -1,0 +1,2068 @@
+{
+    "title": "Curse of Strahd",
+    "urlName": "adventures/cos",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Introduction",
+            "urlName": "adventures/cos/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Running the Adventure",
+                    "urlName": "adventures/cos/introduction",
+                    "anchorName": "#RunningtheAdventure",
+                    "subsections": [
+                        {
+                            "title": "Story Overview",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#StoryOverview",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Adventure Structure",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#AdventureStructure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Character Levels",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#CharacterLevels",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Marks of Horror",
+                    "urlName": "adventures/cos/introduction",
+                    "anchorName": "#MarksofHorror",
+                    "subsections": [
+                        {
+                            "title": "The Unknown",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#TheUnknown",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Foreshadowing",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Foreshadowing",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Age",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Age",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Light",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Light",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Personification",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Personification",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Details",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Details",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Humor",
+                            "urlName": "adventures/cos/introduction",
+                            "anchorName": "#Humor",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 1: Into the Mists",
+            "urlName": "adventures/cos/into-the-mists",
+            "anchorName": "#Chapter1IntotheMists",
+            "subsections": [
+                {
+                    "title": "Strahd von Zarovich",
+                    "urlName": "adventures/cos/into-the-mists",
+                    "anchorName": "#StrahdvonZarovich",
+                    "subsections": [
+                        {
+                            "title": "The Vampire’s History",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#TheVampiresHistory",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Strahd’s Goals",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#StrahdsGoals",
+                            "subsections": [
+                                {
+                                    "title": "Turn Ireena Kolyana",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#TurnIreenaKolyana",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Find Rudolph van Richten",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#FindRudolphvanRichten",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Search for a Successor or Consort",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#SearchforaSuccessororConsort",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Roleplaying Strahd",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#RoleplayingStrahd",
+                            "subsections": []
+                        },
+                        {
+                            "title": "When Strahd Attacks",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#WhenStrahdAttacks",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Fortunes of Ravenloft",
+                    "urlName": "adventures/cos/into-the-mists",
+                    "anchorName": "#FortunesofRavenloft",
+                    "subsections": [
+                        {
+                            "title": "Card Reading",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#CardReading",
+                            "subsections": [
+                                {
+                                    "title": "1. The Tome of Strahd",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#1TheTomeofStrahd",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. The Holy Symbol of Ravenkind",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#2TheHolySymbolofRavenkind",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. The Sunsword",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#3TheSunsword",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "4. Strahd’s Enemy",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#4StrahdsEnemy",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Strahd",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#5Strahd",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Treasure Locations",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#TreasureLocations",
+                            "subsections": [
+                                {
+                                    "title": "Swords (Spades)",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#SwordsSpades",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Stars (Clubs)",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#StarsClubs",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Coins (Diamonds)",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#CoinsDiamonds",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Glyphs (Hearts)",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#GlyphsHearts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Strahd’s Enemy",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#StrahdsEnemy",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Strahd’s Location in the Castle",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#StrahdsLocationintheCastle",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "adventures/cos/into-the-mists",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Plea for Help",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#PleaforHelp",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mysterious Visitors",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#MysteriousVisitors",
+                            "subsections": [
+                                {
+                                    "title": "The Dancing Fire",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#TheDancingFire",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Werewolves in the Mist",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#WerewolvesintheMist",
+                            "subsections": [
+                                {
+                                    "title": "Harpers",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#Harpers",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Order of the Gauntlet",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#OrderoftheGauntlet",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Emerald Enclave",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#EmeraldEnclave",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lords’ Alliance",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#LordsAlliance",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Zhentarim",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#Zhentarim",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Welcome to Barovia",
+                                    "urlName": "adventures/cos/into-the-mists",
+                                    "anchorName": "#WelcometoBarovia",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Creeping Fog",
+                            "urlName": "adventures/cos/into-the-mists",
+                            "anchorName": "#CreepingFog",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: The Lands of Barovia",
+            "urlName": "adventures/cos/the-lands-of-barovia",
+            "anchorName": "#Chapter2TheLandsofBarovia",
+            "subsections": [
+                {
+                    "title": "Lay of the Land",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#LayoftheLand",
+                    "subsections": [
+                        {
+                            "title": "Mists of Ravenloft",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#MistsofRavenloft",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sunlight in Barovia",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#SunlightinBarovia",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Alterations to Magic",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#AlterationstoMagic",
+                    "subsections": [
+                        {
+                            "title": "Cosmetic Spell Modifications",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#CosmeticSpellModifications",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Resurrection Madness",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#ResurrectionMadness",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Barovians",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#Barovians",
+                    "subsections": [
+                        {
+                            "title": "Souls and Shells",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#SoulsandShells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Barovians and Nonhumans",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#BaroviansandNonhumans",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Barovian Lore",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#BarovianLore",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Vistani",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#Vistani",
+                    "subsections": [
+                        {
+                            "title": "Strahd’s Vistani Servants",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#StrahdsVistaniServants",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vistani Lore",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#VistaniLore",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vistani Curses",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#VistaniCurses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Evil Eye",
+                            "urlName": "adventures/cos/the-lands-of-barovia",
+                            "anchorName": "#EvilEye",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Random Encounters",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#RandomEncounters",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of Barovia",
+                    "urlName": "adventures/cos/the-lands-of-barovia",
+                    "anchorName": "#AreasofBarovia",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: The Village of Barovia",
+            "urlName": "adventures/cos/the-village-of-barovia",
+            "anchorName": "#Chapter3TheVillageofBarovia",
+            "subsections": [
+                {
+                    "title": "Approaching the Village",
+                    "urlName": "adventures/cos/the-village-of-barovia",
+                    "anchorName": "#ApproachingtheVillage",
+                    "subsections": [
+                        {
+                            "title": "House Occupants",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#HouseOccupants",
+                            "subsections": [
+                                {
+                                    "title": "Rats",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#Rats",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Barovian Villagers",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#BarovianVillagers",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Strahd Zombies",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#StrahdZombies",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of the Village",
+                    "urlName": "adventures/cos/the-village-of-barovia",
+                    "anchorName": "#AreasoftheVillage",
+                    "subsections": [
+                        {
+                            "title": "E1. Bildrath’s Mercantile",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E1BildrathsMercantile",
+                            "subsections": []
+                        },
+                        {
+                            "title": "E2. Blood of the Vine Tavern",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E2BloodoftheVineTavern",
+                            "subsections": [
+                                {
+                                    "title": "Roleplaying Ismark",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#RoleplayingIsmark",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Roleplaying the Other NPCs",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#RoleplayingtheOtherNPCs",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "E3. Mad Mary’s Townhouse",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E3MadMarysTownhouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "E4. Burgomaster’s Mansion",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E4BurgomastersMansion",
+                            "subsections": [
+                                {
+                                    "title": "Roleplaying Ireena",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#RoleplayingIreena",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "E5. Church",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E5Church",
+                            "subsections": [
+                                {
+                                    "title": "E5a. Hall",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5aHall",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5b. Doru’s Bedroom",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5bDorusBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5c. Donavich’s Bedroom",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5cDonavichsBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5d. Trapdoor",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5dTrapdoor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5e. Office",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5eOffice",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5f. Chapel",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5fChapel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E5g. Undercroft",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#E5gUndercroft",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/the-village-of-barovia",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "E6. Cemetery",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E6Cemetery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "E7. Haunted House",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#E7HauntedHouse",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-village-of-barovia",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "March of the Dead",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#MarchoftheDead",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dream Pastries",
+                            "urlName": "adventures/cos/the-village-of-barovia",
+                            "anchorName": "#DreamPastries",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: Castle Ravenloft",
+            "urlName": "adventures/cos/castle-ravenloft",
+            "anchorName": "#Chapter4CastleRavenloft",
+            "subsections": [
+                {
+                    "title": "Random Encounters",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#RandomEncounters",
+                    "subsections": []
+                },
+                {
+                    "title": "Walls of Ravenloft",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#WallsofRavenloft",
+                    "subsections": []
+                },
+                {
+                    "title": "Main Floor",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#MainFloor",
+                    "subsections": []
+                },
+                {
+                    "title": "Court of the Count",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#CourtoftheCount",
+                    "subsections": []
+                },
+                {
+                    "title": "Rooms of Weeping",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#RoomsofWeeping",
+                    "subsections": []
+                },
+                {
+                    "title": "Spires of Ravenloft",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#SpiresofRavenloft",
+                    "subsections": []
+                },
+                {
+                    "title": "Larders of Ill Omen",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#LardersofIllOmen",
+                    "subsections": []
+                },
+                {
+                    "title": "Dungeon and Catacombs",
+                    "urlName": "adventures/cos/castle-ravenloft",
+                    "anchorName": "#DungeonandCatacombs",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 5: The Town of Vallaki",
+            "urlName": "adventures/cos/the-town-of-vallaki",
+            "anchorName": "#Chapter5TheTownofVallaki",
+            "subsections": [
+                {
+                    "title": "Approaching the Town",
+                    "urlName": "adventures/cos/the-town-of-vallaki",
+                    "anchorName": "#ApproachingtheTown",
+                    "subsections": [
+                        {
+                            "title": "Town Gates",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#TownGates",
+                            "subsections": []
+                        },
+                        {
+                            "title": "House Occupants",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#HouseOccupants",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vallaki Lore",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#VallakiLore",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of Vallaki",
+                    "urlName": "adventures/cos/the-town-of-vallaki",
+                    "anchorName": "#AreasofVallaki",
+                    "subsections": [
+                        {
+                            "title": "N1. St. Andral’s Church",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N1StAndralsChurch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N2. Blue Water Inn",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N2BlueWaterInn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N3. Burgomaster’s Mansion",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N3BurgomastersMansion",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N4. Wachterhaus",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N4Wachterhaus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N5. Arasek Stockyard",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N5ArasekStockyard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N6. Coffin Maker’s Shop",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N6CoffinMakersShop",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N7. Blinsky Toys",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N7BlinskyToys",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N8. Town Square",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N8TownSquare",
+                            "subsections": []
+                        },
+                        {
+                            "title": "N9. Vistani Camp",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#N9VistaniCamp",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-town-of-vallaki",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Festival of the Blazing Sun",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#FestivaloftheBlazingSun",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Tyger, Tyger",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#TygerTyger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lady Wachter’s Wish",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#LadyWachtersWish",
+                            "subsections": []
+                        },
+                        {
+                            "title": "St. Andral’s Feast",
+                            "urlName": "adventures/cos/the-town-of-vallaki",
+                            "anchorName": "#StAndralsFeast",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 6: Old Bonegrinder",
+            "urlName": "adventures/cos/old-bonegrinder",
+            "anchorName": "#Chapter6OldBonegrinder",
+            "subsections": [
+                {
+                    "title": "Morgantha’s Coven",
+                    "urlName": "adventures/cos/old-bonegrinder",
+                    "anchorName": "#MorganthasCoven",
+                    "subsections": []
+                },
+                {
+                    "title": "Dream Pastries",
+                    "urlName": "adventures/cos/old-bonegrinder",
+                    "anchorName": "#DreamPastries",
+                    "subsections": []
+                },
+                {
+                    "title": "Approaching the Windmill",
+                    "urlName": "adventures/cos/old-bonegrinder",
+                    "anchorName": "#ApproachingtheWindmill",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of the Windmill",
+                    "urlName": "adventures/cos/old-bonegrinder",
+                    "anchorName": "#AreasoftheWindmill",
+                    "subsections": [
+                        {
+                            "title": "O1. Ground Floor",
+                            "urlName": "adventures/cos/old-bonegrinder",
+                            "anchorName": "#O1GroundFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "O2. Bone Mill",
+                            "urlName": "adventures/cos/old-bonegrinder",
+                            "anchorName": "#O2BoneMill",
+                            "subsections": []
+                        },
+                        {
+                            "title": "O3. Bedroom",
+                            "urlName": "adventures/cos/old-bonegrinder",
+                            "anchorName": "#O3Bedroom",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/old-bonegrinder",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "O4. Domed Attic",
+                            "urlName": "adventures/cos/old-bonegrinder",
+                            "anchorName": "#O4DomedAttic",
+                            "subsections": [
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/old-bonegrinder",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "The Megaliths",
+                    "urlName": "adventures/cos/old-bonegrinder",
+                    "anchorName": "#TheMegaliths",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 7: Argynvostholt",
+            "urlName": "adventures/cos/argynvostholt",
+            "anchorName": "#Chapter7Argynvostholt",
+            "subsections": [
+                {
+                    "title": "The Order of the Silver Dragon",
+                    "urlName": "adventures/cos/argynvostholt",
+                    "anchorName": "#TheOrderoftheSilverDragon",
+                    "subsections": []
+                },
+                {
+                    "title": "Approaching the Mansion",
+                    "urlName": "adventures/cos/argynvostholt",
+                    "anchorName": "#ApproachingtheMansion",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of Argynvostholt",
+                    "urlName": "adventures/cos/argynvostholt",
+                    "anchorName": "#AreasofArgynvostholt",
+                    "subsections": [
+                        {
+                            "title": "Lighting the Beacon",
+                            "urlName": "adventures/cos/argynvostholt",
+                            "anchorName": "#LightingtheBeacon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fortunes of Ravenloft",
+                            "urlName": "adventures/cos/argynvostholt",
+                            "anchorName": "#FortunesofRavenloft",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/argynvostholt",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Special Delivery",
+                            "urlName": "adventures/cos/argynvostholt",
+                            "anchorName": "#SpecialDelivery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arrigal’s Hunt",
+                            "urlName": "adventures/cos/argynvostholt",
+                            "anchorName": "#ArrigalsHunt",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 8: The Village of Krezk",
+            "urlName": "adventures/cos/the-village-of-krezk",
+            "anchorName": "#Chapter8TheVillageofKrezk",
+            "subsections": [
+                {
+                    "title": "Areas of Krezk",
+                    "urlName": "adventures/cos/the-village-of-krezk",
+                    "anchorName": "#AreasofKrezk",
+                    "subsections": [
+                        {
+                            "title": "S1. Road Junction",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S1RoadJunction",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S2. Gatehouse",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S2Gatehouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S3. Village of Krezk",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S3VillageofKrezk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S4. Pool and Shrine",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S4PoolandShrine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S5. Winding Road",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S5WindingRoad",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of the Abbey",
+                    "urlName": "adventures/cos/the-village-of-krezk",
+                    "anchorName": "#AreasoftheAbbey",
+                    "subsections": [
+                        {
+                            "title": "S6. North Gate",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S6NorthGate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S7. Graveyard",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S7Graveyard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S8. Garden Gatehouse",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S8GardenGatehouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S9. Gardens",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S9Gardens",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S10. Abbey Entrance",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S10AbbeyEntrance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S11. Inner Gatehouses",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S11InnerGatehouses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S12. Courtyard",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S12Courtyard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S13. Main Hall",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S13MainHall",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S14. Foyer",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S14Foyer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S15. Madhouse",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S15Madhouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S16. Wine Cellar",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S16WineCellar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S17. Loft and Belfry",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S17LoftandBelfry",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S18. Curtain Wall",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S18CurtainWall",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S19. Barracks",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S19Barracks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S20. Upstairs Office",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S20UpstairsOffice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S21. Haunted Hospital",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S21HauntedHospital",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S22. Operating Room",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S22OperatingRoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S23. Nursery",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S23Nursery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "S24. Morgue",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#S24Morgue",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-village-of-krezk",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Something Old",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#SomethingOld",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Something New",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#SomethingNew",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Something Borrowed",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#SomethingBorrowed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Something Blue",
+                            "urlName": "adventures/cos/the-village-of-krezk",
+                            "anchorName": "#SomethingBlue",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 9: Tsolenka Pass",
+            "urlName": "adventures/cos/tsolenka-pass",
+            "anchorName": "#Chapter9TsolenkaPass",
+            "subsections": [
+                {
+                    "title": "Areas of the Pass",
+                    "urlName": "adventures/cos/tsolenka-pass",
+                    "anchorName": "#AreasofthePass",
+                    "subsections": [
+                        {
+                            "title": "T1. Gatehouse Portcullis",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T1GatehousePortcullis",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T2. Demon Statues",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T2DemonStatues",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T3. Curtain of Green Flame",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T3CurtainofGreenFlame",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T4. Guard Tower, Ground Floor",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T4GuardTowerGroundFloor",
+                            "subsections": [
+                                {
+                                    "title": "Teleport Destination",
+                                    "urlName": "adventures/cos/tsolenka-pass",
+                                    "anchorName": "#TeleportDestination",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "T5. Guard Tower, Upper Floor",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T5GuardTowerUpperFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T6. Guard Tower Rooftop",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T6GuardTowerRooftop",
+                            "subsections": [
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/tsolenka-pass",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "T7. Western Arch",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T7WesternArch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T8. Stone Bridge",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T8StoneBridge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "T9. Eastern Arch",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#T9EasternArch",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/tsolenka-pass",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Roc of Mount Ghakis",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#RocofMountGhakis",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bloodhorn’s Charge",
+                            "urlName": "adventures/cos/tsolenka-pass",
+                            "anchorName": "#BloodhornsCharge",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/tsolenka-pass",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 10: The Ruins of Berez",
+            "urlName": "adventures/cos/the-ruins-of-berez",
+            "anchorName": "#Chapter10TheRuinsofBerez",
+            "subsections": [
+                {
+                    "title": "Approaching the Ruins",
+                    "urlName": "adventures/cos/the-ruins-of-berez",
+                    "anchorName": "#ApproachingtheRuins",
+                    "subsections": [
+                        {
+                            "title": "Marsh Scarecrows",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#MarshScarecrows",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of Berez",
+                    "urlName": "adventures/cos/the-ruins-of-berez",
+                    "anchorName": "#AreasofBerez",
+                    "subsections": [
+                        {
+                            "title": "U1. Abandoned Cottages",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U1AbandonedCottages",
+                            "subsections": []
+                        },
+                        {
+                            "title": "U2. Ulrich Mansion",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U2UlrichMansion",
+                            "subsections": [
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Cellar",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#Cellar",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Garden",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#Garden",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Goat Pen",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#GoatPen",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "U3. Baba Lysaga’s Hut",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U3BabaLysagasHut",
+                            "subsections": [
+                                {
+                                    "title": "Giant Skull",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#GiantSkull",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hut Interior",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#HutInterior",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "U4. Churchyard",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U4Churchyard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "U5. Marina’s Monument",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U5MarinasMonument",
+                            "subsections": [
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "U6. Standing Stones",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#U6StandingStones",
+                            "subsections": [
+                                {
+                                    "title": "Circle of Standing Stones",
+                                    "urlName": "adventures/cos/the-ruins-of-berez",
+                                    "anchorName": "#CircleofStandingStones",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-ruins-of-berez",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Creeping Hut",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#CreepingHut",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lost Battlefield",
+                            "urlName": "adventures/cos/the-ruins-of-berez",
+                            "anchorName": "#LostBattlefield",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 11: Van Richten’s Tower",
+            "urlName": "adventures/cos/van-richtens-tower",
+            "anchorName": "#Chapter11VanRichtensTower",
+            "subsections": [
+                {
+                    "title": "Approaching the Tower",
+                    "urlName": "adventures/cos/van-richtens-tower",
+                    "anchorName": "#ApproachingtheTower",
+                    "subsections": [
+                        {
+                            "title": "Khazan’s Spell Drain",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#KhazansSpellDrain",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Areas of the Tower",
+                    "urlName": "adventures/cos/van-richtens-tower",
+                    "anchorName": "#AreasoftheTower",
+                    "subsections": [
+                        {
+                            "title": "V1. Ezmerelda’s Magic Wagon",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V1EzmereldasMagicWagon",
+                            "subsections": [
+                                {
+                                    "title": "Booby Trap",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#BoobyTrap",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "V2. Tower Door",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V2TowerDoor",
+                            "subsections": [
+                                {
+                                    "title": "Opening the Door",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#OpeningtheDoor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vestibule",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#Vestibule",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "V3. Rickety Scaffolding",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V3RicketyScaffolding",
+                            "subsections": []
+                        },
+                        {
+                            "title": "V4. Tower, First Floor",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V4TowerFirstFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "V5. Tower, Second Floor",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V5TowerSecondFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "V6. Tower, Third Floor",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V6TowerThirdFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "V7. Tower, Fourth Floor",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#V7TowerFourthFloor",
+                            "subsections": [
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/van-richtens-tower",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Pack Attack",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#PackAttack",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Ezmerelda’s Retreat",
+                            "urlName": "adventures/cos/van-richtens-tower",
+                            "anchorName": "#EzmereldasRetreat",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/van-richtens-tower",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 12: The Wizard of Wines",
+            "urlName": "adventures/cos/the-wizard-of-wines",
+            "anchorName": "#Chapter12TheWizardofWines",
+            "subsections": [
+                {
+                    "title": "Approaching the Vineyard",
+                    "urlName": "adventures/cos/the-wizard-of-wines",
+                    "anchorName": "#ApproachingtheVineyard",
+                    "subsections": [
+                        {
+                            "title": "The Martikov Family",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#TheMartikovFamily",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Approaching the Winery",
+                    "urlName": "adventures/cos/the-wizard-of-wines",
+                    "anchorName": "#ApproachingtheWinery",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of the Winery",
+                    "urlName": "adventures/cos/the-wizard-of-wines",
+                    "anchorName": "#AreasoftheWinery",
+                    "subsections": [
+                        {
+                            "title": "W1. Stables",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W1Stables",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W2. Loading Dock",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W2LoadingDock",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W3. Barrel Maker’s Workshop",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W3BarrelMakersWorkshop",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W4. Barrel Storage",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W4BarrelStorage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W5. Veranda",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W5Veranda",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W6. Well",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W6Well",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W7. Outhouse",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W7Outhouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W8. Storage",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W8Storage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W9. Fermentation Vats",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W9FermentationVats",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W10. Glassblower’s Workshop",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W10GlassblowersWorkshop",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W11. Spiral Staircase",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W11SpiralStaircase",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W12. Ramp",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W12Ramp",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W13. Back Staircase",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W13BackStaircase",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W14. Wine Cellar",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W14WineCellar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W15. Brown Mold",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W15BrownMold",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W16. Loading Winch",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W16LoadingWinch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W17. Master Bedroom",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W17MasterBedroom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W18. Kitchen and Dining Room",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W18KitchenandDiningRoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W19. Sleeping Quarters",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W19SleepingQuarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "W20. Printing Press",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#W20PrintingPress",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-wizard-of-wines",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Wine Delivery",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#WineDelivery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wintersplinter Attacks",
+                            "urlName": "adventures/cos/the-wizard-of-wines",
+                            "anchorName": "#WintersplinterAttacks",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 13: The Amber Temple",
+            "urlName": "adventures/cos/the-amber-temple",
+            "anchorName": "#Chapter13TheAmberTemple",
+            "subsections": [
+                {
+                    "title": "Areas of the Temple",
+                    "urlName": "adventures/cos/the-amber-temple",
+                    "anchorName": "#AreasoftheTemple",
+                    "subsections": []
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/the-amber-temple",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Rahadin’s Prayer",
+                            "urlName": "adventures/cos/the-amber-temple",
+                            "anchorName": "#RahadinsPrayer",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/the-amber-temple",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Kasimir’s Dark Gift",
+                            "urlName": "adventures/cos/the-amber-temple",
+                            "anchorName": "#KasimirsDarkGift",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/the-amber-temple",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 14: Yester Hill",
+            "urlName": "adventures/cos/yester-hill",
+            "anchorName": "#Chapter14YesterHill",
+            "subsections": [
+                {
+                    "title": "Areas of the Hill",
+                    "urlName": "adventures/cos/yester-hill",
+                    "anchorName": "#AreasoftheHill",
+                    "subsections": [
+                        {
+                            "title": "Y1. Trail",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#Y1Trail",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Y2. Berserker Cairns",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#Y2BerserkerCairns",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Y3. Druids’ Circle",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#Y3DruidsCircle",
+                            "subsections": [
+                                {
+                                    "title": "Wooden Statue",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#WoodenStatue",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hidden Graves",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#HiddenGraves",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Y4. Gulthias Tree",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#Y4GulthiasTree",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Y5. Wall of Fog",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#Y5WallofFog",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/yester-hill",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Druids’ Ritual",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#DruidsRitual",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Blood Spear of Kavan",
+                            "urlName": "adventures/cos/yester-hill",
+                            "anchorName": "#BloodSpearofKavan",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/yester-hill",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 15: Werewolf Den",
+            "urlName": "adventures/cos/werewolf-den",
+            "anchorName": "#Chapter15WerewolfDen",
+            "subsections": [
+                {
+                    "title": "Approaching the Den",
+                    "urlName": "adventures/cos/werewolf-den",
+                    "anchorName": "#ApproachingtheDen",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of the Den",
+                    "urlName": "adventures/cos/werewolf-den",
+                    "anchorName": "#AreasoftheDen",
+                    "subsections": [
+                        {
+                            "title": "Z1. Cave Mouth",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z1CaveMouth",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Z2. Guard Post",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z2GuardPost",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Z3. Wolf Den",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z3WolfDen",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Z4. Underground Spring",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z4UndergroundSpring",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Z5. Deep Caves",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z5DeepCaves",
+                            "subsections": [
+                                {
+                                    "title": "Z5a. South Cave",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Z5aSouthCave",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Z5b. North Cave",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Z5bNorthCave",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Z6. Kiril’s Cave",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z6KirilsCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Z7. Shrine of Mother Night",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z7ShrineofMotherNight",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fortunes of Ravenloft",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#FortunesofRavenloft",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Z8. Ring of Stone",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#Z8RingofStone",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Special Events",
+                    "urlName": "adventures/cos/werewolf-den",
+                    "anchorName": "#SpecialEvents",
+                    "subsections": [
+                        {
+                            "title": "Leader of the Pack",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#LeaderofthePack",
+                            "subsections": [
+                                {
+                                    "title": "Development",
+                                    "urlName": "adventures/cos/werewolf-den",
+                                    "anchorName": "#Development",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Die Kinder",
+                            "urlName": "adventures/cos/werewolf-den",
+                            "anchorName": "#DieKinder",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Epilogue",
+            "urlName": "adventures/cos/epilogue",
+            "anchorName": "#Epilogue",
+            "subsections": [
+                {
+                    "title": "Strahd Prevails",
+                    "urlName": "adventures/cos/epilogue",
+                    "anchorName": "#StrahdPrevails",
+                    "subsections": []
+                },
+                {
+                    "title": "Strahd Dies",
+                    "urlName": "adventures/cos/epilogue",
+                    "anchorName": "#StrahdDies",
+                    "subsections": [
+                        {
+                            "title": "Rahadin’s Revenge",
+                            "urlName": "adventures/cos/epilogue",
+                            "anchorName": "#RahadinsRevenge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sergei and Ireena",
+                            "urlName": "adventures/cos/epilogue",
+                            "anchorName": "#SergeiandIreena",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Escape from Barovia",
+                            "urlName": "adventures/cos/epilogue",
+                            "anchorName": "#EscapefromBarovia",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Aftermath",
+                            "urlName": "adventures/cos/epilogue",
+                            "anchorName": "#Aftermath",
+                            "subsections": [
+                                {
+                                    "title": "The Rise of Ismark",
+                                    "urlName": "adventures/cos/epilogue",
+                                    "anchorName": "#TheRiseofIsmark",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vistani Exodus",
+                                    "urlName": "adventures/cos/epilogue",
+                                    "anchorName": "#VistaniExodus",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vampire Hunters",
+                                    "urlName": "adventures/cos/epilogue",
+                                    "anchorName": "#VampireHunters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Consorts Unleashed",
+                                    "urlName": "adventures/cos/epilogue",
+                                    "anchorName": "#ConsortsUnleashed",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Strahd’s Return",
+                                    "urlName": "adventures/cos/epilogue",
+                                    "anchorName": "#StrahdsReturn",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Character Options",
+            "urlName": "adventures/cos/appendix-a-character-options",
+            "anchorName": "#AppendixACharacterOptions",
+            "subsections": [
+                {
+                    "title": "Haunted One",
+                    "urlName": "adventures/cos/appendix-a-character-options",
+                    "anchorName": "#HauntedOne",
+                    "subsections": [
+                        {
+                            "title": "Harrowing Event",
+                            "urlName": "adventures/cos/appendix-a-character-options",
+                            "anchorName": "#HarrowingEvent",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gothic Trinkets",
+                    "urlName": "adventures/cos/appendix-a-character-options",
+                    "anchorName": "#GothicTrinkets",
+                    "subsections": [
+                        {
+                            "title": "Trinkets",
+                            "urlName": "adventures/cos/appendix-a-character-options",
+                            "anchorName": "#Trinkets",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "adventures/cos/credits",
+            "anchorName": "#Credits",
+            "subsections": []
+        }
+    ]
+}

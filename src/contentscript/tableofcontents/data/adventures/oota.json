@@ -1,0 +1,2771 @@
+{
+    "title": "Out of the Abyss",
+    "urlName": "adventures/oota",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Chapter 1: Prisoners of the Drow",
+            "urlName": "adventures/oota/prisoners-of-the-drow",
+            "anchorName": "#Chapter1PrisonersoftheDrow",
+            "subsections": [
+                {
+                    "title": "Escape!",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#Escape",
+                    "subsections": [
+                        {
+                            "title": "Restraints",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#Restraints",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Adventure Begins",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#TheAdventureBegins",
+                    "subsections": []
+                },
+                {
+                    "title": "In the Slave Pen",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#IntheSlavePen",
+                    "subsections": [
+                        {
+                            "title": "Scavenged Possessions",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#ScavengedPossessions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fellow Prisoners",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#FellowPrisoners",
+                            "subsections": [
+                                {
+                                    "title": "A Motley Crew",
+                                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                                    "anchorName": "#AMotleyCrew",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "What the Prisoners Know",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#WhatthePrisonersKnow",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hard Labor",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#HardLabor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bad Dreams",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#BadDreams",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fight!",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#Fight",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Feeding Time",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#FeedingTime",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Drow",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#TheDrow",
+                    "subsections": []
+                },
+                {
+                    "title": "Velkynvelve",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#Velkynvelve",
+                    "subsections": [
+                        {
+                            "title": "Areas of Velkynvelve",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#AreasofVelkynvelve",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Means of Escape",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#MeansofEscape",
+                    "subsections": [
+                        {
+                            "title": "Acquisitions",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#Acquisitions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jorlan’s Gambit",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#JorlansGambit",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Flight of Demons",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#AFlightofDemons",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Leaving Velkynvelve",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#LeavingVelkynvelve",
+                    "subsections": [
+                        {
+                            "title": "North Passage",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#NorthPassage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "West Passage",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#WestPassage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "South Passage",
+                            "urlName": "adventures/oota/prisoners-of-the-drow",
+                            "anchorName": "#SouthPassage",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "XP Awards",
+                    "urlName": "adventures/oota/prisoners-of-the-drow",
+                    "anchorName": "#XPAwards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Into Darkness",
+            "urlName": "adventures/oota/into-darkness",
+            "anchorName": "#Chapter2IntoDarkness",
+            "subsections": [
+                {
+                    "title": "Underdark Travel",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#UnderdarkTravel",
+                    "subsections": []
+                },
+                {
+                    "title": "Equipment",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#Equipment",
+                    "subsections": []
+                },
+                {
+                    "title": "Madness",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#Madness",
+                    "subsections": []
+                },
+                {
+                    "title": "Death",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#Death",
+                    "subsections": []
+                },
+                {
+                    "title": "Fungi of the Underdark",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#FungioftheUnderdark",
+                    "subsections": []
+                },
+                {
+                    "title": "Narrating the Journey",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#NarratingtheJourney",
+                    "subsections": []
+                },
+                {
+                    "title": "Drow Pursuit",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#DrowPursuit",
+                    "subsections": []
+                },
+                {
+                    "title": "Random Encounters",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#RandomEncounters",
+                    "subsections": []
+                },
+                {
+                    "title": "Summarizing Travel",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#SummarizingTravel",
+                    "subsections": []
+                },
+                {
+                    "title": "Set Encounters",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#SetEncounters",
+                    "subsections": []
+                },
+                {
+                    "title": "The Silken Paths",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#TheSilkenPaths",
+                    "subsections": []
+                },
+                {
+                    "title": "Hook Horror Hunt",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#HookHorrorHunt",
+                    "subsections": []
+                },
+                {
+                    "title": "The Oozing Temple",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#TheOozingTemple",
+                    "subsections": []
+                },
+                {
+                    "title": "Lost Tomb of Khaem",
+                    "urlName": "adventures/oota/into-darkness",
+                    "anchorName": "#LostTombofKhaem",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: The Darklake",
+            "urlName": "adventures/oota/the-darklake",
+            "anchorName": "#Chapter3TheDarklake",
+            "subsections": [
+                {
+                    "title": "Traversing the Darklake",
+                    "urlName": "adventures/oota/the-darklake",
+                    "anchorName": "#TraversingtheDarklake",
+                    "subsections": [
+                        {
+                            "title": "Modes of Travel",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#ModesofTravel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Random Encounters",
+                    "urlName": "adventures/oota/the-darklake",
+                    "anchorName": "#RandomEncounters",
+                    "subsections": [
+                        {
+                            "title": "Darklake Terrain Encounters",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#DarklakeTerrainEncounters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Darklake Creature Encounters",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#DarklakeCreatureEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Sloobludop",
+                    "urlName": "adventures/oota/the-darklake",
+                    "anchorName": "#Sloobludop",
+                    "subsections": [
+                        {
+                            "title": "Slouching Toward Sloobludop",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#SlouchingTowardSloobludop",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Notable Kuo-toa in Sloobludop",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#NotableKuotoainSloobludop",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Day’s Catch",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#TheDaysCatch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "1. Gate",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#1Gate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Docks",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#2Docks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Shrine of the Sea Mother",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#3ShrineoftheSeaMother",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Altar of the Deep Father",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#4AltaroftheDeepFather",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Offering",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#TheOffering",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Ritual",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#TheRitual",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Demogorgon Rises!",
+                            "urlName": "adventures/oota/the-darklake",
+                            "anchorName": "#DemogorgonRises",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "XP Awards",
+                    "urlName": "adventures/oota/the-darklake",
+                    "anchorName": "#XPAwards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: Gracklstugh",
+            "urlName": "adventures/oota/gracklstugh",
+            "anchorName": "#Chapter4Gracklstugh",
+            "subsections": [
+                {
+                    "title": "Going to Gracklstugh",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#GoingtoGracklstugh",
+                    "subsections": [
+                        {
+                            "title": "Gracklstugh and Drow Pursuit",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#GracklstughandDrowPursuit",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arriving in Gracklstugh",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#ArrivinginGracklstugh",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Important NPCs",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#ImportantNPCs",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Factions of Gracklstugh",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#FactionsofGracklstugh",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Life in the City of Blades",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#LifeintheCityofBlades",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gracklstugh",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#Gracklstugh",
+                    "subsections": [
+                        {
+                            "title": "Welcome to the City of Blades",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#WelcometotheCityofBlades",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Darklake District",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#DarklakeDistrict",
+                    "subsections": [
+                        {
+                            "title": "Rampaging Giant",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#RampagingGiant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Guests of the Stone Guard",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#GuestsoftheStoneGuard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Blade Bazaar",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#BladeBazaar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Darklake Brewery",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#DarklakeBrewery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Darklake Docks",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#DarklakeDocks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Overlake Hold",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#OverlakeHold",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Shattered Spire",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#TheShatteredSpire",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Ghohlbrorn’s Lair",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#TheGhohlbrornsLair",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Laduguer’s Furrow",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#LaduguersFurrow",
+                    "subsections": [
+                        {
+                            "title": "Abandoned Guardhouses",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#AbandonedGuardhouses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Great Gates",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#GreatGates",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "West Cleft and East Cleft Districts",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#WestCleftandEastCleftDistricts",
+                    "subsections": [
+                        {
+                            "title": "Entering Derro Territory",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#EnteringDerroTerritory",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Halls of Sacred Spells",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#HallsofSacredSpells",
+                    "subsections": []
+                },
+                {
+                    "title": "Cairngorm Cavern",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#CairngormCavern",
+                    "subsections": [
+                        {
+                            "title": "Audience with the Stonespeaker",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#AudiencewiththeStonespeaker",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Themberchaud’s Lair",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#ThemberchaudsLair",
+                    "subsections": [
+                        {
+                            "title": "Agents of the Wyrmsmith",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#AgentsoftheWyrmsmith",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Whorlstone Tunnels",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#WhorlstoneTunnels",
+                    "subsections": [
+                        {
+                            "title": "Faerzress-Suffused Fungi",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#FaerzressSuffusedFungi",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Finding Droki",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#FindingDroki",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Areas of the Tunnels",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#AreasoftheTunnels",
+                            "subsections": [
+                                {
+                                    "title": "XP Awards",
+                                    "urlName": "adventures/oota/gracklstugh",
+                                    "anchorName": "#XPAwards",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Leaving Gracklstugh",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#LeavingGracklstugh",
+                    "subsections": []
+                },
+                {
+                    "title": "Hold of the Deepking",
+                    "urlName": "adventures/oota/gracklstugh",
+                    "anchorName": "#HoldoftheDeepking",
+                    "subsections": [
+                        {
+                            "title": "Audience with the Deepking",
+                            "urlName": "adventures/oota/gracklstugh",
+                            "anchorName": "#AudiencewiththeDeepking",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 5: Neverlight Grove",
+            "urlName": "adventures/oota/neverlight-grove",
+            "anchorName": "#Chapter5NeverlightGrove",
+            "subsections": [
+                {
+                    "title": "Going to Neverlight Grove",
+                    "urlName": "adventures/oota/neverlight-grove",
+                    "anchorName": "#GoingtoNeverlightGrove",
+                    "subsections": [
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Arriving at the Grove",
+                    "urlName": "adventures/oota/neverlight-grove",
+                    "anchorName": "#ArrivingattheGrove",
+                    "subsections": [
+                        {
+                            "title": "Important NPCs",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#ImportantNPCs",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Day in Neverlight Grove",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#ADayinNeverlightGrove",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Two Sovereigns",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#TwoSovereigns",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Circles",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#Circles",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Melding",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#Melding",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Neverlight Grove",
+                    "urlName": "adventures/oota/neverlight-grove",
+                    "anchorName": "#NeverlightGrove",
+                    "subsections": [
+                        {
+                            "title": "1. Fungal Wilds",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#1FungalWilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Northern Terraces",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#2NorthernTerraces",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Central Basin",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#3CentralBasin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Southern Terraces",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#4SouthernTerraces",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Garden of Welcome",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#5GardenofWelcome",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wedding Rehearsal",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#WeddingRehearsal",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Yggmorgus",
+                    "urlName": "adventures/oota/neverlight-grove",
+                    "anchorName": "#Yggmorgus",
+                    "subsections": [
+                        {
+                            "title": "Giant Mushroom Tower",
+                            "urlName": "adventures/oota/neverlight-grove",
+                            "anchorName": "#GiantMushroomTower",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Leaving Neverlight Grove",
+                    "urlName": "adventures/oota/neverlight-grove",
+                    "anchorName": "#LeavingNeverlightGrove",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 6: Blingdenstone",
+            "urlName": "adventures/oota/blingdenstone",
+            "anchorName": "#Chapter6Blingdenstone",
+            "subsections": [
+                {
+                    "title": "Going to Blingdenstone",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#GoingtoBlingdenstone",
+                    "subsections": [
+                        {
+                            "title": "Drow Pursuers",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#DrowPursuers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arriving at Blingdenstone",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#ArrivingatBlingdenstone",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Random Encounters in Blingdenstone",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#RandomEncountersinBlingdenstone",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Important NPCs",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#ImportantNPCs",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Settlers, Squatters, and Invaders",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#SettlersSquattersandInvaders",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Blingdenstone Outskirts",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#BlingdenstoneOutskirts",
+                    "subsections": [
+                        {
+                            "title": "Entémoch’s Boon",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#EntmochsBoon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Whiteshell Mine",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#WhiteshellMine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pickshine Mines",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#PickshineMines",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stoneheart Quarry",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#StoneheartQuarry",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Outer Blingdenstone",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#OuterBlingdenstone",
+                    "subsections": [
+                        {
+                            "title": "1. Stairs",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#1Stairs",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Main Gate",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#2MainGate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Maze",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#3Maze",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Gauntlet",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#4Gauntlet",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Inner Blingdenstone",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#InnerBlingdenstone",
+                    "subsections": [
+                        {
+                            "title": "5. Reception Hall",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#5ReceptionHall",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Barracks",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#6Barracks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Traders’ Grotto",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#7TradersGrotto",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. The Ruby in the Rough",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#8TheRubyintheRough",
+                            "subsections": []
+                        },
+                        {
+                            "title": "9. Cultivation Cave",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#9CultivationCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "10. Staging Area",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#10StagingArea",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11. Caves of Clatter",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#11CavesofClatter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "12. Residential Caves",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#12ResidentialCaves",
+                            "subsections": []
+                        },
+                        {
+                            "title": "13. Speaking Stones",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#13SpeakingStones",
+                            "subsections": []
+                        },
+                        {
+                            "title": "14. Diggermattock Hall",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#14DiggermattockHall",
+                            "subsections": []
+                        },
+                        {
+                            "title": "15. Singing Stones",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#15SingingStones",
+                            "subsections": []
+                        },
+                        {
+                            "title": "16. The Foaming Mug",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#16TheFoamingMug",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rockblight",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#Rockblight",
+                    "subsections": [
+                        {
+                            "title": "17. Abandoned Residences",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#17AbandonedResidences",
+                            "subsections": []
+                        },
+                        {
+                            "title": "18. Overlook",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#18Overlook",
+                            "subsections": []
+                        },
+                        {
+                            "title": "19. Crystal Garden",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#19CrystalGarden",
+                            "subsections": []
+                        },
+                        {
+                            "title": "20. Neheedra’s Lair",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#20NeheedrasLair",
+                            "subsections": []
+                        },
+                        {
+                            "title": "21. Drow Statues",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#21DrowStatues",
+                            "subsections": []
+                        },
+                        {
+                            "title": "22. Steadfast Stone",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#22SteadfastStone",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Goldwhisker Warrens",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#GoldwhiskerWarrens",
+                    "subsections": [
+                        {
+                            "title": "23. Main Entrance",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#23MainEntrance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "24. Refuse Pile",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#24RefusePile",
+                            "subsections": []
+                        },
+                        {
+                            "title": "25. Hall of Miners",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#25HallofMiners",
+                            "subsections": []
+                        },
+                        {
+                            "title": "26. Chipgrin’s Rise",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#26ChipgrinsRise",
+                            "subsections": []
+                        },
+                        {
+                            "title": "27. Secret Tunnel",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#27SecretTunnel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Pudding Court",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#ThePuddingCourt",
+                    "subsections": [
+                        {
+                            "title": "28. House Center",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#28HouseCenter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "29. Ruined Stockade",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#29RuinedStockade",
+                            "subsections": []
+                        },
+                        {
+                            "title": "30. Throne Room",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#30ThroneRoom",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Battle for Blingdenstone",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#BattleforBlingdenstone",
+                    "subsections": [
+                        {
+                            "title": "Blingdenstone Factions",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#BlingdenstoneFactions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Task List",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#TaskList",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cry Havoc!",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#CryHavoc",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Oozing Royalty",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#OozingRoyalty",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Pudding King",
+                            "urlName": "adventures/oota/blingdenstone",
+                            "anchorName": "#ThePuddingKing",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Leaving Blingdenstone",
+                    "urlName": "adventures/oota/blingdenstone",
+                    "anchorName": "#LeavingBlingdenstone",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 7: Escape from the Underdark",
+            "urlName": "adventures/oota/escape-from-the-underdark",
+            "anchorName": "#Chapter7EscapefromtheUnderdark",
+            "subsections": [
+                {
+                    "title": "The Way Out",
+                    "urlName": "adventures/oota/escape-from-the-underdark",
+                    "anchorName": "#TheWayOut",
+                    "subsections": [
+                        {
+                            "title": "Finding the Way",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#FindingtheWay",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gaining Access",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#GainingAccess",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Bidding Farewell",
+                    "urlName": "adventures/oota/escape-from-the-underdark",
+                    "anchorName": "#BiddingFarewell",
+                    "subsections": [
+                        {
+                            "title": "Underdark Natives",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#UnderdarkNatives",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Surface Dwellers",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#SurfaceDwellers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "With Friends Like These …",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#WithFriendsLikeThese",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Confronting the Drow",
+                    "urlName": "adventures/oota/escape-from-the-underdark",
+                    "anchorName": "#ConfrontingtheDrow",
+                    "subsections": [
+                        {
+                            "title": "Drow Chase",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#DrowChase",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stand and Fight",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#StandandFight",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Further Adventures",
+                    "urlName": "adventures/oota/escape-from-the-underdark",
+                    "anchorName": "#FurtherAdventures",
+                    "subsections": [
+                        {
+                            "title": "Overland Travel",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#OverlandTravel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Recovery and Downtime",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#RecoveryandDowntime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Resupply",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#Resupply",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warnings",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#Warnings",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Level Advancement",
+                            "urlName": "adventures/oota/escape-from-the-underdark",
+                            "anchorName": "#LevelAdvancement",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 8: Audience in Gauntlgrym",
+            "urlName": "adventures/oota/audience-in-gauntlgrym",
+            "anchorName": "#Chapter8AudienceinGauntlgrym",
+            "subsections": [
+                {
+                    "title": "Summoned by Bruenor",
+                    "urlName": "adventures/oota/audience-in-gauntlgrym",
+                    "anchorName": "#SummonedbyBruenor",
+                    "subsections": []
+                },
+                {
+                    "title": "Gauntlgrym",
+                    "urlName": "adventures/oota/audience-in-gauntlgrym",
+                    "anchorName": "#Gauntlgrym",
+                    "subsections": [
+                        {
+                            "title": "The Vault of Kings",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheVaultofKings",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Iron Tabernacle",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheIronTabernacle",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Great Forge",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheGreatForge",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Events in Gauntlgrym",
+                    "urlName": "adventures/oota/audience-in-gauntlgrym",
+                    "anchorName": "#EventsinGauntlgrym",
+                    "subsections": [
+                        {
+                            "title": "Audience with Bruenor",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#AudiencewithBruenor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Guests at the Feast",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#GuestsattheFeast",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bruenor’s Plan",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#BruenorsPlan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Enemies Among Us",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#EnemiesAmongUs",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Forging an Alliance",
+                    "urlName": "adventures/oota/audience-in-gauntlgrym",
+                    "anchorName": "#ForginganAlliance",
+                    "subsections": [
+                        {
+                            "title": "The Harpers",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheHarpers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Order of the Gauntlet",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheOrderoftheGauntlet",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Emerald Enclave",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheEmeraldEnclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Lords’ Alliance",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheLordsAlliance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Zhentarim",
+                            "urlName": "adventures/oota/audience-in-gauntlgrym",
+                            "anchorName": "#TheZhentarim",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Way Ahead",
+                    "urlName": "adventures/oota/audience-in-gauntlgrym",
+                    "anchorName": "#TheWayAhead",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 9: Mantol-Derith",
+            "urlName": "adventures/oota/mantol-derith",
+            "anchorName": "#Chapter9MantolDerith",
+            "subsections": [
+                {
+                    "title": "Fraz-Urb’luu’s Gem",
+                    "urlName": "adventures/oota/mantol-derith",
+                    "anchorName": "#FrazUrbluusGem",
+                    "subsections": []
+                },
+                {
+                    "title": "Reaching Mantol-Derith",
+                    "urlName": "adventures/oota/mantol-derith",
+                    "anchorName": "#ReachingMantolDerith",
+                    "subsections": []
+                },
+                {
+                    "title": "Mantol-Derith",
+                    "urlName": "adventures/oota/mantol-derith",
+                    "anchorName": "#MantolDerith",
+                    "subsections": [
+                        {
+                            "title": "Important NPCs",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#ImportantNPCs",
+                            "subsections": []
+                        },
+                        {
+                            "title": "1. Secret Entrances",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#1SecretEntrances",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Trench",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#2Trench",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Main Cavern",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#3MainCavern",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Drow Enclave",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#4DrowEnclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Duergar Enclave",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#5DuergarEnclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Svirfneblin Enclave",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#6SvirfneblinEnclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Zhentarim Enclave",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#7ZhentarimEnclave",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Leaving Mantol-Derith",
+                    "urlName": "adventures/oota/mantol-derith",
+                    "anchorName": "#LeavingMantolDerith",
+                    "subsections": [
+                        {
+                            "title": "Follow-Up Encounters",
+                            "urlName": "adventures/oota/mantol-derith",
+                            "anchorName": "#FollowUpEncounters",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 10: Descent into the Depths",
+            "urlName": "adventures/oota/descent-into-the-depths",
+            "anchorName": "#Chapter10DescentintotheDepths",
+            "subsections": [
+                {
+                    "title": "Fellow Travelers",
+                    "urlName": "adventures/oota/descent-into-the-depths",
+                    "anchorName": "#FellowTravelers",
+                    "subsections": [
+                        {
+                            "title": "Marching Orders",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#MarchingOrders",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Travel Pace",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#TravelPace",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Navigating",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Navigating",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Scouting",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Scouting",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "In Command",
+                    "urlName": "adventures/oota/descent-into-the-depths",
+                    "anchorName": "#InCommand",
+                    "subsections": [
+                        {
+                            "title": "Personalities",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Personalities",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Heart of Darkness",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#HeartofDarkness",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Loyalty",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Loyalty",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Provisions",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Provisions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Treasure",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Treasure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Maintaining Order",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#MaintainingOrder",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Random Events",
+                    "urlName": "adventures/oota/descent-into-the-depths",
+                    "anchorName": "#RandomEvents",
+                    "subsections": []
+                },
+                {
+                    "title": "Underdark Outposts",
+                    "urlName": "adventures/oota/descent-into-the-depths",
+                    "anchorName": "#UnderdarkOutposts",
+                    "subsections": [
+                        {
+                            "title": "New Downtime Activity: Establish an Outpost",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#NewDowntimeActivityEstablishanOutpost",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Retracing Steps",
+                    "urlName": "adventures/oota/descent-into-the-depths",
+                    "anchorName": "#RetracingSteps",
+                    "subsections": [
+                        {
+                            "title": "Blingdenstone",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Blingdenstone",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Darklake",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#TheDarklake",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gracklstugh",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Gracklstugh",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Menzoberranzan",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Menzoberranzan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neverlight Grove",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#NeverlightGrove",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Velkynvelve",
+                            "urlName": "adventures/oota/descent-into-the-depths",
+                            "anchorName": "#Velkynvelve",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 11: Gravenhollow",
+            "urlName": "adventures/oota/gravenhollow",
+            "anchorName": "#Chapter11Gravenhollow",
+            "subsections": [
+                {
+                    "title": "Going to Gravenhollow",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#GoingtoGravenhollow",
+                    "subsections": [
+                        {
+                            "title": "Finding the Way",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#FindingtheWay",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Veldyskar the Basilisk",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#VeldyskartheBasilisk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gates of Gravenhollow",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#GatesofGravenhollow",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Stone Library",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#TheStoneLibrary",
+                    "subsections": [
+                        {
+                            "title": "Residents",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#Residents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Echoes",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#Echoes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Living Quarters",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#LivingQuarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Walkways",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#Walkways",
+                            "subsections": [
+                                {
+                                    "title": "Gravenhollow: General Features",
+                                    "urlName": "adventures/oota/gravenhollow",
+                                    "anchorName": "#GravenhollowGeneralFeatures",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Archives",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#Archives",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Enemy of Our Enemy",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#TheEnemyofOurEnemy",
+                    "subsections": [
+                        {
+                            "title": "Approaching the Librarians",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#ApproachingtheLibrarians",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Stonespeaker Crystals",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#StonespeakerCrystals",
+                    "subsections": [
+                        {
+                            "title": "Possible Visions",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#PossibleVisions",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Returning to Vizeran",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#ReturningtoVizeran",
+                    "subsections": []
+                },
+                {
+                    "title": "Leaving Gravenhollow",
+                    "urlName": "adventures/oota/gravenhollow",
+                    "anchorName": "#LeavingGravenhollow",
+                    "subsections": [
+                        {
+                            "title": "XP Awards",
+                            "urlName": "adventures/oota/gravenhollow",
+                            "anchorName": "#XPAwards",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 12: The Tower of Vengeance",
+            "urlName": "adventures/oota/the-tower-of-vengeance",
+            "anchorName": "#Chapter12TheTowerofVengeance",
+            "subsections": [
+                {
+                    "title": "Reaching the Tower",
+                    "urlName": "adventures/oota/the-tower-of-vengeance",
+                    "anchorName": "#ReachingtheTower",
+                    "subsections": []
+                },
+                {
+                    "title": "Araj: Vizeran’s Tower",
+                    "urlName": "adventures/oota/the-tower-of-vengeance",
+                    "anchorName": "#ArajVizeransTower",
+                    "subsections": [
+                        {
+                            "title": "Meeting with Vizeran",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#MeetingwithVizeran",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Inhabitants",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#OtherInhabitants",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vizeran’s Scheme",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#VizeransScheme",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vizeran’s Plan",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#VizeransPlan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Victory without Vizeran",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#VictorywithoutVizeran",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stealing into Araj",
+                            "urlName": "adventures/oota/the-tower-of-vengeance",
+                            "anchorName": "#StealingintoAraj",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 13: The Wormwrithings",
+            "urlName": "adventures/oota/the-wormwrithings",
+            "anchorName": "#Chapter13TheWormwrithings",
+            "subsections": [
+                {
+                    "title": "The Worm Tunnels",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#TheWormTunnels",
+                    "subsections": [
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Troglodyte Lair",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#TroglodyteLair",
+                    "subsections": [
+                        {
+                            "title": "1. Entrance Tunnel",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#1EntranceTunnel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Cave Floor",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#2CaveFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Rise",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#3Rise",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Basin",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#4Basin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Supplies and Captives",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#5SuppliesandCaptives",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Steam Vent",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#6SteamVent",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Troglodyte Outpost",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#7TroglodyteOutpost",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. Roper Lair",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#8RoperLair",
+                            "subsections": []
+                        },
+                        {
+                            "title": "9. Sunken Pool",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#9SunkenPool",
+                            "subsections": []
+                        },
+                        {
+                            "title": "10. Ruins",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#10Ruins",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11. Spawning Pool",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#11SpawningPool",
+                            "subsections": []
+                        },
+                        {
+                            "title": "12. Geothermic Vents",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#12GeothermicVents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "13. Empty Cave",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#13EmptyCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "14. Rally Point",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#14RallyPoint",
+                            "subsections": []
+                        },
+                        {
+                            "title": "15. Exit Tunnel",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#15ExitTunnel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Resolving the Standoff",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#ResolvingtheStandoff",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Voice in the Dark",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#VoiceintheDark",
+                    "subsections": []
+                },
+                {
+                    "title": "Worm Nursery",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#WormNursery",
+                    "subsections": [
+                        {
+                            "title": "1. Entry Cavern",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#1EntryCavern",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Fungus Cave",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#2FungusCave",
+                            "subsections": [
+                                {
+                                    "title": "Worm Nursery: General Features",
+                                    "urlName": "adventures/oota/the-wormwrithings",
+                                    "anchorName": "#WormNurseryGeneralFeatures",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "3. Ossuary",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#3Ossuary",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Chasm",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#4Chasm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Echo Chambers",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#5EchoChambers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Caretaker’s Quarters",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#6CaretakersQuarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Entry Chamber",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#7EntryChamber",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. Egg Chamber",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#8EggChamber",
+                            "subsections": []
+                        },
+                        {
+                            "title": "9. Bat Cave",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#9BatCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "10. Slop Cave",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#10SlopCave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11. Spider Nest",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#11SpiderNest",
+                            "subsections": []
+                        },
+                        {
+                            "title": "12. Chasm",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#12Chasm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "13. Exit Tunnel",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#13ExitTunnel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Dark Hunters",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#TheDarkHunters",
+                    "subsections": [
+                        {
+                            "title": "Development",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#Development",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Vast Oblivium",
+                    "urlName": "adventures/oota/the-wormwrithings",
+                    "anchorName": "#TheVastOblivium",
+                    "subsections": [
+                        {
+                            "title": "Inhabitants",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#Inhabitants",
+                            "subsections": [
+                                {
+                                    "title": "The Vast Oblivium: General Features",
+                                    "urlName": "adventures/oota/the-wormwrithings",
+                                    "anchorName": "#TheVastObliviumGeneralFeatures",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Arrival",
+                            "urlName": "adventures/oota/the-wormwrithings",
+                            "anchorName": "#Arrival",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 14: The Labyrinth",
+            "urlName": "adventures/oota/the-labyrinth",
+            "anchorName": "#Chapter14TheLabyrinth",
+            "subsections": [
+                {
+                    "title": "Labyrinth Encounters",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#LabyrinthEncounters",
+                    "subsections": [
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adamantine Tower",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#AdamantineTower",
+                    "subsections": [
+                        {
+                            "title": "First Floor",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#FirstFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Second Floor",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#SecondFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Battlements",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#Battlements",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Spiral of the Horned King",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#SpiraloftheHornedKing",
+                    "subsections": [
+                        {
+                            "title": "Gash the Gnoll",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#GashtheGnoll",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Into the Maze",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#IntotheMaze",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Filthriddens",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#Filthriddens",
+                    "subsections": [
+                        {
+                            "title": "Grisha’s Greeting",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#GrishasGreeting",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "March to Nowhere",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#MarchtoNowhere",
+                    "subsections": []
+                },
+                {
+                    "title": "Yeenoghu’s Hunt",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#YeenoghusHunt",
+                    "subsections": [
+                        {
+                            "title": "Development",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#Development",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gallery of Angels",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#GalleryofAngels",
+                    "subsections": [
+                        {
+                            "title": "Fallen Angels",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#FallenAngels",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Development",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#Development",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Maze Engine",
+                    "urlName": "adventures/oota/the-labyrinth",
+                    "anchorName": "#TheMazeEngine",
+                    "subsections": [
+                        {
+                            "title": "Reaching the Engine",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#ReachingtheEngine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Activating the Engine",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#ActivatingtheEngine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Shaking Loose",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#ShakingLoose",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Shutting Down the Engine",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#ShuttingDowntheEngine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Maze Engine Effects",
+                            "urlName": "adventures/oota/the-labyrinth",
+                            "anchorName": "#MazeEngineEffects",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 15: The City of Spiders",
+            "urlName": "adventures/oota/the-city-of-spiders",
+            "anchorName": "#Chapter15TheCityofSpiders",
+            "subsections": [
+                {
+                    "title": "Goals",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#Goals",
+                    "subsections": [
+                        {
+                            "title": "Placing the “Dark Heart”",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#PlacingtheDarkHeart",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Obtaining Gromph’s Grimoire",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#ObtainingGromphsGrimoire",
+                            "subsections": [
+                                {
+                                    "title": "Statistical Modifications for Drow NPCs",
+                                    "urlName": "adventures/oota/the-city-of-spiders",
+                                    "anchorName": "#StatisticalModificationsforDrowNPCs",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Going to Menzoberranzan",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#GoingtoMenzoberranzan",
+                    "subsections": [
+                        {
+                            "title": "Vizeran’s Secret Route",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#VizeransSecretRoute",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Routes",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#OtherRoutes",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Menzoberranzan",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#Menzoberranzan",
+                    "subsections": [
+                        {
+                            "title": "The Dark Dominion",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#TheDarkDominion",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "City Locations",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#CityLocations",
+                    "subsections": [
+                        {
+                            "title": "The Bazaar",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#TheBazaar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Braeryn",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#TheBraeryn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Donigarten",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Donigarten",
+                            "subsections": [
+                                {
+                                    "title": "The Way of Lolth",
+                                    "urlName": "adventures/oota/the-city-of-spiders",
+                                    "anchorName": "#TheWayofLolth",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Duthcloim",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Duthcloim",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eastmyr",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Eastmyr",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Kyorbblivvin",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Kyorbblivvin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Narbondel",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Narbondel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Narbondellyn",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Narbondellyn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Qu’ellarz’orl",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#Quellarzorl",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Rifts",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#TheRifts",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Tier Breche",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#TierBreche",
+                            "subsections": []
+                        },
+                        {
+                            "title": "West Wall",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#WestWall",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Unexpected Allies",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#UnexpectedAllies",
+                    "subsections": [
+                        {
+                            "title": "House Baenre",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#HouseBaenre",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bregan D’aerthe",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#BreganDaerthe",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Council of Spiders",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#CouncilofSpiders",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Private Meetings",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#PrivateMeetings",
+                    "subsections": [
+                        {
+                            "title": "Matron Mother Quenthel Baenre",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#MatronMotherQuenthelBaenre",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jarlaxle Baenre of Bregan D’aerthe",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#JarlaxleBaenreofBreganDaerthe",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "A Change of Heart",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#AChangeofHeart",
+                    "subsections": []
+                },
+                {
+                    "title": "Sorcere",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#Sorcere",
+                    "subsections": [
+                        {
+                            "title": "Guards and Wards",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#GuardsandWards",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Random Encounters in Sorcere",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#RandomEncountersinSorcere",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gromph’s Outer Sanctum",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#GromphsOuterSanctum",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gromph’s Inner Sanctum",
+                            "urlName": "adventures/oota/the-city-of-spiders",
+                            "anchorName": "#GromphsInnerSanctum",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Developments",
+                    "urlName": "adventures/oota/the-city-of-spiders",
+                    "anchorName": "#Developments",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 16: The Fetid Wedding",
+            "urlName": "adventures/oota/the-fetid-wedding",
+            "anchorName": "#Chapter16TheFetidWedding",
+            "subsections": [
+                {
+                    "title": "Wedding Invitation",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#WeddingInvitation",
+                    "subsections": []
+                },
+                {
+                    "title": "Myconid March",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#MyconidMarch",
+                    "subsections": [
+                        {
+                            "title": "Uninvited Guests",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#UninvitedGuests",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Araumycos",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#Araumycos",
+                    "subsections": [
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Enter the Groom",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#EntertheGroom",
+                    "subsections": [
+                        {
+                            "title": "Basidia’s Aid",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#BasidiasAid",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ooze Spies",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#OozeSpies",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Across the Fungal Fields",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#AcrosstheFungalFields",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Into the Gray Dream",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#IntotheGrayDream",
+                    "subsections": [
+                        {
+                            "title": "The Mind of Araumycos",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#TheMindofAraumycos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wedding Crashers",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#WeddingCrashers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Sleeper Wakes",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#TheSleeperWakes",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Let Them Speak Now …",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#LetThemSpeakNow",
+                    "subsections": [
+                        {
+                            "title": "Retreat!",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#Retreat",
+                            "subsections": []
+                        },
+                        {
+                            "title": "To Battle!",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#ToBattle",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Fighting the Faceless Lord",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#FightingtheFacelessLord",
+                    "subsections": []
+                },
+                {
+                    "title": "Victory or Defeat",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#VictoryorDefeat",
+                    "subsections": [
+                        {
+                            "title": "Escaping Defeat",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#EscapingDefeat",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Achieving Victory",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#AchievingVictory",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Developments",
+                    "urlName": "adventures/oota/the-fetid-wedding",
+                    "anchorName": "#Developments",
+                    "subsections": [
+                        {
+                            "title": "Treasure",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#Treasure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "XP Awards",
+                            "urlName": "adventures/oota/the-fetid-wedding",
+                            "anchorName": "#XPAwards",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 17: Against the Demon Lords",
+            "urlName": "adventures/oota/against-the-demon-lords",
+            "anchorName": "#Chapter17AgainsttheDemonLords",
+            "subsections": [
+                {
+                    "title": "Readying the Plan",
+                    "urlName": "adventures/oota/against-the-demon-lords",
+                    "anchorName": "#ReadyingthePlan",
+                    "subsections": []
+                },
+                {
+                    "title": "Enacting the Plan",
+                    "urlName": "adventures/oota/against-the-demon-lords",
+                    "anchorName": "#EnactingthePlan",
+                    "subsections": [
+                        {
+                            "title": "Let This Be Their Battlefield",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#LetThisBeTheirBattlefield",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Confronting the Demon Lords",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#ConfrontingtheDemonLords",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rage of Demons",
+                    "urlName": "adventures/oota/against-the-demon-lords",
+                    "anchorName": "#RageofDemons",
+                    "subsections": [
+                        {
+                            "title": "Demon Showdown",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#DemonShowdown",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Against Demogorgon",
+                    "urlName": "adventures/oota/against-the-demon-lords",
+                    "anchorName": "#AgainstDemogorgon",
+                    "subsections": [
+                        {
+                            "title": "Wand of Orcus",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#WandofOrcus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Destroying Demogorgon",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#DestroyingDemogorgon",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Loose Threads",
+                    "urlName": "adventures/oota/against-the-demon-lords",
+                    "anchorName": "#LooseThreads",
+                    "subsections": [
+                        {
+                            "title": "Gromph’s Grimoire",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#GromphsGrimoire",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lingering Evil",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#LingeringEvil",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Into the Demonweb Pits",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#IntotheDemonwebPits",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Demon Lords Triumphant",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#DemonLordsTriumphant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gromph Baenre",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#GromphBaenre",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Menzoberranzan",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#Menzoberranzan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gauntlgrym",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#Gauntlgrym",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vizeran DeVir",
+                            "urlName": "adventures/oota/against-the-demon-lords",
+                            "anchorName": "#VizeranDeVir",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Modifying Backgrounds",
+            "urlName": "adventures/oota/appendix-a-modifying-backgrounds",
+            "anchorName": "#AppendixAModifyingBackgrounds",
+            "subsections": [
+                {
+                    "title": "Substitute Features",
+                    "urlName": "adventures/oota/appendix-a-modifying-backgrounds",
+                    "anchorName": "#SubstituteFeatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Substitute Bonds",
+                    "urlName": "adventures/oota/appendix-a-modifying-backgrounds",
+                    "anchorName": "#SubstituteBonds",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Magic Items",
+            "urlName": "adventures/oota/appendix-b-magic-items",
+            "anchorName": "#AppendixBMagicItems",
+            "subsections": [
+                {
+                    "title": "Dawnbringer",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#Dawnbringer",
+                    "subsections": []
+                },
+                {
+                    "title": "Piwafwi (Cloak of Elvenkind)",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#PiwafwiCloakofElvenkind",
+                    "subsections": []
+                },
+                {
+                    "title": "Piwafwi of Fire Resistance",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#PiwafwiofFireResistance",
+                    "subsections": []
+                },
+                {
+                    "title": "Spell Gem",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#SpellGem",
+                    "subsections": []
+                },
+                {
+                    "title": "Stonespeaker Crystal",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#StonespeakerCrystal",
+                    "subsections": []
+                },
+                {
+                    "title": "Wand of Viscid Globs",
+                    "urlName": "adventures/oota/appendix-b-magic-items",
+                    "anchorName": "#WandofViscidGlobs",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Creatures",
+            "urlName": "adventures/oota/appendix-c-creatures",
+            "anchorName": "#AppendixCCreatures",
+            "subsections": [
+                {
+                    "title": "Derro",
+                    "urlName": "adventures/oota/appendix-c-creatures",
+                    "anchorName": "#Derro",
+                    "subsections": []
+                },
+                {
+                    "title": "Ixitxachitl",
+                    "urlName": "adventures/oota/appendix-c-creatures",
+                    "anchorName": "#Ixitxachitl",
+                    "subsections": []
+                },
+                {
+                    "title": "Creature Variations",
+                    "urlName": "adventures/oota/appendix-c-creatures",
+                    "anchorName": "#CreatureVariations",
+                    "subsections": []
+                },
+                {
+                    "title": "Miscellaneous Creatures",
+                    "urlName": "adventures/oota/appendix-c-creatures",
+                    "anchorName": "#MiscellaneousCreatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Nonplayer Characters",
+                    "urlName": "adventures/oota/appendix-c-creatures",
+                    "anchorName": "#NonplayerCharacters",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix D: Demon Lords",
+            "urlName": "adventures/oota/appendix-d-demon-lords",
+            "anchorName": "#AppendixDDemonLords",
+            "subsections": [
+                {
+                    "title": "Baphomet",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Baphomet",
+                    "subsections": []
+                },
+                {
+                    "title": "Demogorgon",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Demogorgon",
+                    "subsections": []
+                },
+                {
+                    "title": "Fraz-Urb’luu",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#FrazUrbluu",
+                    "subsections": []
+                },
+                {
+                    "title": "Graz’zt",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Grazzt",
+                    "subsections": []
+                },
+                {
+                    "title": "Juiblex",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Juiblex",
+                    "subsections": []
+                },
+                {
+                    "title": "Orcus",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Orcus",
+                    "subsections": []
+                },
+                {
+                    "title": "Yeenoghu",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Yeenoghu",
+                    "subsections": []
+                },
+                {
+                    "title": "Zuggtmoy",
+                    "urlName": "adventures/oota/appendix-d-demon-lords",
+                    "anchorName": "#Zuggtmoy",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Afterword",
+            "urlName": "adventures/oota/afterword",
+            "anchorName": "#Afterword",
+            "subsections": []
+        },
+        {
+            "title": "Credits",
+            "urlName": "adventures/oota/credits",
+            "anchorName": "#Credits",
+            "subsections": []
+        }
+    ]
+}
