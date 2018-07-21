@@ -1,0 +1,532 @@
+{
+    "title": "Xanathar's Guide to Everything",
+    "urlName": "rules/xgte",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Chapter 1: Subclasses",
+            "urlName": "rules/xgte/subclasses",
+            "anchorName": "#Chapter1Subclasses",
+            "subsections": [
+                {
+                    "title": "Subclasses",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Subclasses",
+                    "subsections": []
+                },
+                {
+                    "title": "Barbarian",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Barbarian",
+                    "subsections": []
+                },
+                {
+                    "title": "Bard",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Bard",
+                    "subsections": []
+                },
+                {
+                    "title": "Cleric",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Cleric",
+                    "subsections": []
+                },
+                {
+                    "title": "Druid",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Druid",
+                    "subsections": []
+                },
+                {
+                    "title": "Fighter",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Fighter",
+                    "subsections": []
+                },
+                {
+                    "title": "Monk",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Monk",
+                    "subsections": []
+                },
+                {
+                    "title": "Paladin",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Paladin",
+                    "subsections": []
+                },
+                {
+                    "title": "Ranger",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Ranger",
+                    "subsections": []
+                },
+                {
+                    "title": "Rogue",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Rogue",
+                    "subsections": []
+                },
+                {
+                    "title": "Sorcerer",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Sorcerer",
+                    "subsections": []
+                },
+                {
+                    "title": "Warlock",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Warlock",
+                    "subsections": []
+                },
+                {
+                    "title": "Wizard",
+                    "urlName": "rules/xgte/subclasses",
+                    "anchorName": "#Wizard",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Dungeon Master's Tools",
+            "urlName": "rules/xgte/dungeon-masters-tools",
+            "anchorName": "#Chapter2DungeonMastersTools",
+            "subsections": [
+                {
+                    "title": "Simultaneous Effects",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#SimultaneousEffects",
+                    "subsections": []
+                },
+                {
+                    "title": "Falling",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#Falling",
+                    "subsections": []
+                },
+                {
+                    "title": "Sleep",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#Sleep",
+                    "subsections": []
+                },
+                {
+                    "title": "Adamantine Weapons",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#AdamantineWeapons",
+                    "subsections": []
+                },
+                {
+                    "title": "Tying Knots",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#TyingKnots",
+                    "subsections": []
+                },
+                {
+                    "title": "Tool Proficiencies",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#ToolProficiencies",
+                    "subsections": []
+                },
+                {
+                    "title": "Spellcasting",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#Spellcasting",
+                    "subsections": []
+                },
+                {
+                    "title": "Encounter Building",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#EncounterBuilding",
+                    "subsections": []
+                },
+                {
+                    "title": "Random Encounters",
+                    "urlName": "rules/xgte/dungeon-masters-tools",
+                    "anchorName": "#RandomEncounters",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: Spells",
+            "urlName": "rules/xgte/spells",
+            "anchorName": "#Chapter3Spells",
+            "subsections": [
+                {
+                    "title": "Spell Lists",
+                    "urlName": "rules/xgte/spells",
+                    "anchorName": "#SpellLists",
+                    "subsections": [
+                        {
+                            "title": "Bard Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#BardSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cleric Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#ClericSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Druid Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#DruidSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Paladin Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#PaladinSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ranger Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#RangerSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sorcerer Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#SorcererSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warlock Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#WarlockSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wizard Spells",
+                            "urlName": "rules/xgte/spells",
+                            "anchorName": "#WizardSpells",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Spell Descriptions",
+                    "urlName": "rules/xgte/spells",
+                    "anchorName": "#SpellDescriptions",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Shared Campaigns",
+            "urlName": "rules/xgte/shared-campaigns",
+            "anchorName": "#AppendixASharedCampaigns",
+            "subsections": [
+                {
+                    "title": "Designing Adventures",
+                    "urlName": "rules/xgte/shared-campaigns",
+                    "anchorName": "#DesigningAdventures",
+                    "subsections": [
+                        {
+                            "title": "Adventure Duration",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#AdventureDuration",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Combat Encounters",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#CombatEncounters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rewards",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#Rewards",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Character Creation",
+                    "urlName": "rules/xgte/shared-campaigns",
+                    "anchorName": "#CharacterCreation",
+                    "subsections": [
+                        {
+                            "title": "Player’s Handbook plus One",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#PlayersHandbookplusOne",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ability Scores",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#AbilityScores",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Starting Equipment",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#StartingEquipment",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Variant Rules",
+                    "urlName": "rules/xgte/shared-campaigns",
+                    "anchorName": "#VariantRules",
+                    "subsections": [
+                        {
+                            "title": "Character Advancement",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#CharacterAdvancement",
+                            "subsections": [
+                                {
+                                    "title": "Using Checkpoints",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#UsingCheckpoints",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Individual Treasure",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#IndividualTreasure",
+                            "subsections": [
+                                {
+                                    "title": "Individual Treasure",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#IndividualTreasure",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Magic Items",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#MagicItems",
+                            "subsections": [
+                                {
+                                    "title": "Gaining Treasure Points",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#GainingTreasurePoints",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Creating an Item List",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#CreatinganItemList",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Magic Items by Tier",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#MagicItemsbyTier",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spending Treasure Points",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#SpendingTreasurePoints",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Buying and Selling",
+                            "urlName": "rules/xgte/shared-campaigns",
+                            "anchorName": "#BuyingandSelling",
+                            "subsections": [
+                                {
+                                    "title": "Potions for Sale",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#PotionsforSale",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spell Scrolls for Sale",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#SpellScrollsforSale",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selling Items",
+                                    "urlName": "rules/xgte/shared-campaigns",
+                                    "anchorName": "#SellingItems",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Character Names",
+            "urlName": "rules/xgte/character-names",
+            "anchorName": "#AppendixBCharacterNames",
+            "subsections": [
+                {
+                    "title": "Nonhuman Names",
+                    "urlName": "rules/xgte/character-names",
+                    "anchorName": "#NonhumanNames",
+                    "subsections": [
+                        {
+                            "title": "Dragonborn",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Dragonborn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dwarf",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Dwarf",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Elf",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Elf",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gnome",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Gnome",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Halfling",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Halfling",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Half-Orc",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#HalfOrc",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Tiefling",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Tiefling",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Human Names",
+                    "urlName": "rules/xgte/character-names",
+                    "anchorName": "#HumanNames",
+                    "subsections": [
+                        {
+                            "title": "Arabic",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Arabic",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Celtic",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Celtic",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Chinese",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Chinese",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Egyptian",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Egyptian",
+                            "subsections": []
+                        },
+                        {
+                            "title": "English",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#English",
+                            "subsections": []
+                        },
+                        {
+                            "title": "French",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#French",
+                            "subsections": []
+                        },
+                        {
+                            "title": "German",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#German",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Greek",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Greek",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Indian",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Indian",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Japanese",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Japanese",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mesoamerican",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Mesoamerican",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Niger–Congo",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#NigerCongo",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Norse",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Norse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Polynesian",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Polynesian",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Roman",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Roman",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Slavic",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Slavic",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Spanish",
+                            "urlName": "rules/xgte/character-names",
+                            "anchorName": "#Spanish",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,340 @@
+{
+    "title": "Rrakkma",
+    "urlName": "adventures/ddia-mord",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Adventure Primer",
+            "urlName": "adventures/ddia-mord/adventure-primer",
+            "anchorName": "#AdventurePrimer",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "adventures/ddia-mord/adventure-primer",
+                    "anchorName": "#Background",
+                    "subsections": []
+                },
+                {
+                    "title": "Githyanki",
+                    "urlName": "adventures/ddia-mord/adventure-primer",
+                    "anchorName": "#Githyanki",
+                    "subsections": []
+                },
+                {
+                    "title": "Githzerai",
+                    "urlName": "adventures/ddia-mord/adventure-primer",
+                    "anchorName": "#Githzerai",
+                    "subsections": []
+                },
+                {
+                    "title": "Sha'sal Khou",
+                    "urlName": "adventures/ddia-mord/adventure-primer",
+                    "anchorName": "#ShasalKhou",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Section 1. Call to Action",
+            "urlName": "adventures/ddia-mord/call-to-action",
+            "anchorName": "#Section1CalltoAction",
+            "subsections": [
+                {
+                    "title": "Chaos Courtesans",
+                    "urlName": "adventures/ddia-mord/call-to-action",
+                    "anchorName": "#ChaosCourtesans",
+                    "subsections": [
+                        {
+                            "title": "Area Information",
+                            "urlName": "adventures/ddia-mord/call-to-action",
+                            "anchorName": "#AreaInformation",
+                            "subsections": [
+                                {
+                                    "title": "Dimensions & Terrain",
+                                    "urlName": "adventures/ddia-mord/call-to-action",
+                                    "anchorName": "#DimensionsTerrain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lighting",
+                                    "urlName": "adventures/ddia-mord/call-to-action",
+                                    "anchorName": "#Lighting",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Creatures/NPCs",
+                            "urlName": "adventures/ddia-mord/call-to-action",
+                            "anchorName": "#CreaturesNPCs",
+                            "subsections": [
+                                {
+                                    "title": "Objectives/Goals",
+                                    "urlName": "adventures/ddia-mord/call-to-action",
+                                    "anchorName": "#ObjectivesGoals",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "What do they know?",
+                                    "urlName": "adventures/ddia-mord/call-to-action",
+                                    "anchorName": "#Whatdotheyknow",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Playing the Pillars",
+                            "urlName": "adventures/ddia-mord/call-to-action",
+                            "anchorName": "#PlayingthePillars",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Section 2. Temple of Madness",
+            "urlName": "adventures/ddia-mord/temple-of-madness",
+            "anchorName": "#Section2TempleofMadness",
+            "subsections": [
+                {
+                    "title": "Pandemonium",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Pandemonium",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 1. Temple Foyer",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area1TempleFoyer",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 2. Cloak Room",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area2CloakRoom",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 3. Guard Station",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area3GuardStation",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 4. Purification Chamber",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area4PurificationChamber",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 5. High Priest’s Quarters",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area5HighPriestsQuarters",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 6. Observation Point",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area6ObservationPoint",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 7. Clergy Quarters",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area7ClergyQuarters",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 8. Statuary Chamber",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area8StatuaryChamber",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 9. Torture Chamber",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area9TortureChamber",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 10. Library",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area10Library",
+                    "subsections": []
+                },
+                {
+                    "title": "Area 11. The Cathedral",
+                    "urlName": "adventures/ddia-mord/temple-of-madness",
+                    "anchorName": "#Area11TheCathedral",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Section 3. The Far Realm",
+            "urlName": "adventures/ddia-mord/the-far-realm",
+            "anchorName": "#Section3TheFarRealm",
+            "subsections": [
+                {
+                    "title": "Far Realm Confusion",
+                    "urlName": "adventures/ddia-mord/the-far-realm",
+                    "anchorName": "#FarRealmConfusion",
+                    "subsections": [
+                        {
+                            "title": "Confusion Behavior",
+                            "urlName": "adventures/ddia-mord/the-far-realm",
+                            "anchorName": "#ConfusionBehavior",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gith Capacitor",
+                    "urlName": "adventures/ddia-mord/the-far-realm",
+                    "anchorName": "#GithCapacitor",
+                    "subsections": [
+                        {
+                            "title": "Area Information",
+                            "urlName": "adventures/ddia-mord/the-far-realm",
+                            "anchorName": "#AreaInformation",
+                            "subsections": [
+                                {
+                                    "title": "Dimensions & Terrain",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#DimensionsTerrain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lighting",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#Lighting",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Creatures/NPCs",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#CreaturesNPCs",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Objectives/Goals",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#ObjectivesGoals",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Playing the Pillars",
+                            "urlName": "adventures/ddia-mord/the-far-realm",
+                            "anchorName": "#PlayingthePillars",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Wrap Up",
+                    "urlName": "adventures/ddia-mord/the-far-realm",
+                    "anchorName": "#WrapUp",
+                    "subsections": [
+                        {
+                            "title": "Adventure Rewards",
+                            "urlName": "adventures/ddia-mord/the-far-realm",
+                            "anchorName": "#AdventureRewards",
+                            "subsections": [
+                                {
+                                    "title": "Brooch of Shielding",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#magicitemBroochofShieldingmagicitem",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Eversmoking Bottle",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#magicitemEversmokingBottlemagicitem",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Pearl of Power",
+                                    "urlName": "adventures/ddia-mord/the-far-realm",
+                                    "anchorName": "#magicitemPearlofPowermagicitem",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendices",
+            "urlName": "adventures/ddia-mord/appendices",
+            "anchorName": "#Appendices",
+            "subsections": [
+                {
+                    "title": "Appendix 1. Creature Statistics",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#Appendix1CreatureStatistics",
+                    "subsections": []
+                },
+                {
+                    "title": "Appendix 2. Temple of Madness",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#Appendix2TempleofMadness",
+                    "subsections": []
+                },
+                {
+                    "title": "Appendix 3. Dungeon Master Tips",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#Appendix3DungeonMasterTips",
+                    "subsections": [
+                        {
+                            "title": "Reliquary of Zerthimon",
+                            "urlName": "adventures/ddia-mord/appendices",
+                            "anchorName": "#ReliquaryofZerthimon",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Player Handout. Gith & The Sha’sal Khou",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#PlayerHandoutGithTheShasalKhou",
+                    "subsections": [
+                        {
+                            "title": "Githyanki",
+                            "urlName": "adventures/ddia-mord/appendices",
+                            "anchorName": "#Githyanki",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Githzerai",
+                            "urlName": "adventures/ddia-mord/appendices",
+                            "anchorName": "#Githzerai",
+                            "subsections": []
+                        },
+                        {
+                            "title": "SHA’SAL KHOU",
+                            "urlName": "adventures/ddia-mord/appendices",
+                            "anchorName": "#SHASALKHOU",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "AL Rewards",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#ALRewards",
+                    "subsections": []
+                },
+                {
+                    "title": "Pregenerated Characters",
+                    "urlName": "adventures/ddia-mord/appendices",
+                    "anchorName": "#PregeneratedCharacters",
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}
