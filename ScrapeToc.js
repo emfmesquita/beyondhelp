@@ -77,11 +77,19 @@ function topLevel(type, hrefs) {
                 const book = go.substr(go.lastIndexOf("/") + 1);
                 const title = $("h1.page-title", $(response)).text().trim();
                 data[type][book] = { title: title, urlName: `${type}/${book}`, anchorName: "", subsections: [] };
+
+                const introRefs = $(".compendium-toc-blockquote a:not('.ddb-lightbox-outer')", $(response)).get().map(e => e.href);
+                if (introRefs.indexOf("https://www.dndbeyond.com/compendium/rules/basic-rules") !== -1) { // ignores basic rules link
+                    introRefs.length = 0;
+                }
+
                 refs = $('.adventure-chapter-header', $(response)).find('a').get().map(e => e.href);
                 if (refs.length === 0)
                     refs = $("[data-chapter-slug]", $(response)).find('a').get().map(e => e.href);
                 if (refs.length === 0)
                     refs = $('.compendium-toc-full-text').first().find('H4').find('a').get().map(e => e.href);
+
+                refs = introRefs.concat(refs);
             }
             secondLevel(type, hrefs, refs);
         }

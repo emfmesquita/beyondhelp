@@ -4,6 +4,99 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "rules/xgte/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Using This Source",
+                    "urlName": "rules/xgte/introduction",
+                    "anchorName": "#UsingThisSource",
+                    "subsections": []
+                },
+                {
+                    "title": "The Core Rules",
+                    "urlName": "rules/xgte/introduction",
+                    "anchorName": "#TheCoreRules",
+                    "subsections": [
+                        {
+                            "title": "The DM Adjudicates the Rules",
+                            "urlName": "rules/xgte/introduction",
+                            "anchorName": "#TheDMAdjudicatestheRules",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ten Rules to Remember",
+                            "urlName": "rules/xgte/introduction",
+                            "anchorName": "#TenRulestoRemember",
+                            "subsections": [
+                                {
+                                    "title": "Exceptions Supersede General Rules",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#ExceptionsSupersedeGeneralRules",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round Down",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#RoundDown",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Advantage and Disadvantage",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#AdvantageandDisadvantage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Combining Different Effects",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#CombiningDifferentEffects",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reaction Timing",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#ReactionTiming",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Resistance and Vulnerability",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#ResistanceandVulnerability",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Proficiency Bonus",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#ProficiencyBonus",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bonus Action Spells",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#BonusActionSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Concentration",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#Concentration",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Temporary Hit Points",
+                                    "urlName": "rules/xgte/introduction",
+                                    "anchorName": "#TemporaryHitPoints",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Chapter 1: Subclasses",
             "urlName": "rules/xgte/subclasses",
             "anchorName": "#Chapter1Subclasses",

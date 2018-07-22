@@ -4,6 +4,19 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Preface",
+            "urlName": "rules/vgtm/preface",
+            "anchorName": "#Preface",
+            "subsections": [
+                {
+                    "title": "Notes from Elminster Aumar",
+                    "urlName": "rules/vgtm/preface",
+                    "anchorName": "#NotesfromElminsterAumar",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 1: Monster Lore",
             "urlName": "rules/vgtm/monster-lore",
             "anchorName": "#Chapter1MonsterLore",

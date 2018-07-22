@@ -4,6 +4,12 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Foreword",
+            "urlName": "adventures/oota/foreword",
+            "anchorName": "#Foreword",
+            "subsections": []
+        },
+        {
             "title": "Chapter 1: Prisoners of the Drow",
             "urlName": "adventures/oota/prisoners-of-the-drow",
             "anchorName": "#Chapter1PrisonersoftheDrow",

@@ -4,6 +4,130 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "rules/mm/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "How to Use These Rules",
+                    "urlName": "rules/mm/introduction",
+                    "anchorName": "#HowtoUseTheseRules",
+                    "subsections": []
+                },
+                {
+                    "title": "What Is a Monster?",
+                    "urlName": "rules/mm/introduction",
+                    "anchorName": "#WhatIsaMonster",
+                    "subsections": [
+                        {
+                            "title": "Where Do Monsters Dwell?",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#WhereDoMonstersDwell",
+                            "subsections": []
+                        },
+                        {
+                            "title": "What Monsters to Use?",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#WhatMonsterstoUse",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Statistics",
+                    "urlName": "rules/mm/introduction",
+                    "anchorName": "#Statistics",
+                    "subsections": [
+                        {
+                            "title": "Size",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Size",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Type",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Type",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Alignment",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Alignment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Armor Class",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#ArmorClass",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hit Points",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#HitPoints",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Speed",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Speed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ability Scores",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#AbilityScores",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vulnerabilities, Resistances, and Immunities",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#VulnerabilitiesResistancesandImmunities",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Senses",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Senses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Challenge",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#Challenge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Traits",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#SpecialTraits",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Legendary Creatures",
+                    "urlName": "rules/mm/introduction",
+                    "anchorName": "#LegendaryCreatures",
+                    "subsections": [
+                        {
+                            "title": "Legendary Actions",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#LegendaryActions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Legendary Creature’s Lair",
+                            "urlName": "rules/mm/introduction",
+                            "anchorName": "#ALegendaryCreaturesLair",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "A | Monsters",
             "urlName": "rules/mm/monsters-a",
             "anchorName": "#AMonsters",

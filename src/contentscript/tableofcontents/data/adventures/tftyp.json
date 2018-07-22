@@ -4,6 +4,145 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "adventures/tftyp/i0/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Using This Source",
+                    "urlName": "adventures/tftyp/i0/introduction",
+                    "anchorName": "#UsingThisSource",
+                    "subsections": [
+                        {
+                            "title": "About the Adventures",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#AbouttheAdventures",
+                            "subsections": [
+                                {
+                                    "title": "The Sunless Citadel",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#TheSunlessCitadel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Forge of Fury",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#TheForgeOfFury",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Hidden Shrine of Tamoachan",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#TheHiddenShrineofTamoachan",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "White Plume Mountain",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#WhitePlumeMountain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dead in Thay",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#DeadinThay",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Against the Giants",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#AgainsttheGiants",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Tomb of Horrors",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#TombofHorrors",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Running the Adventures",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#RunningtheAdventures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Creating a Campaign",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#CreatingaCampaign",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Yawning Portal",
+                    "urlName": "adventures/tftyp/i0/introduction",
+                    "anchorName": "#TheYawningPortal",
+                    "subsections": [
+                        {
+                            "title": "Features of the Yawning Portal",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#FeaturesoftheYawningPortal",
+                            "subsections": [
+                                {
+                                    "title": "Yawning Portal Taproom Curios",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#YawningPortalTaproomCurios",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A Typical Evening",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#ATypicalEvening",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Starting the Story",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#StartingtheStory",
+                            "subsections": [
+                                {
+                                    "title": "A Mysterious Stranger Offers a Quest",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#AMysteriousStrangerOffersaQuest",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Mysterious Stranger’s Secret",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#TheMysteriousStranger’sSecret",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Durnan",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#Durnan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Other Denizens",
+                            "urlName": "adventures/tftyp/i0/introduction",
+                            "anchorName": "#Other Denizens",
+                            "subsections": [
+                                {
+                                    "title": "Denizens of the Yawning Portal",
+                                    "urlName": "adventures/tftyp/i0/introduction",
+                                    "anchorName": "#DenizensoftheYawningPortal",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "The Sunless Citadel",
             "urlName": "adventures/tftyp/a1/the-sunless-citadel",
             "anchorName": "#TheSunlessCitadel",

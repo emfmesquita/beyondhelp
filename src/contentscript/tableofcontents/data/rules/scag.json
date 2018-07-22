@@ -4,6 +4,19 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Preface",
+            "urlName": "rules/scag/preface",
+            "anchorName": "#Preface",
+            "subsections": [
+                {
+                    "title": "Using This Book",
+                    "urlName": "rules/scag/preface",
+                    "anchorName": "#UsingThisBook",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 1: Welcome to the Realms",
             "urlName": "rules/scag/welcome-to-the-realms",
             "anchorName": "#Chapter1WelcometotheRealms",

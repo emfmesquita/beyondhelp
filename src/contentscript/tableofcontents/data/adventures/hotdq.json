@@ -4,6 +4,44 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "adventures/hotdq/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "adventures/hotdq/introduction",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "Dragon Masks",
+                            "urlName": "adventures/hotdq/introduction",
+                            "anchorName": "#DragonMasks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Secrets",
+                            "urlName": "adventures/hotdq/introduction",
+                            "anchorName": "#Secrets",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cult Organization",
+                            "urlName": "adventures/hotdq/introduction",
+                            "anchorName": "#CultOrganization",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Overview",
+                    "urlName": "adventures/hotdq/introduction",
+                    "anchorName": "#Overview",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Episode 1: Greenest in Flames",
             "urlName": "adventures/hotdq/greenest-in-flames",
             "anchorName": "#Episode1GreenestinFlames",

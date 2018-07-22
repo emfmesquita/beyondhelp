@@ -4,6 +4,209 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "adventures/rot/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Tyranny of Dragons",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#TyrannyofDragons",
+                    "subsections": []
+                },
+                {
+                    "title": "Background",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#Background",
+                    "subsections": []
+                },
+                {
+                    "title": "Overview",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#Overview",
+                    "subsections": []
+                },
+                {
+                    "title": "Outline of Episodes",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#OutlineofEpisodes",
+                    "subsections": [
+                        {
+                            "title": "Stage 1",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Stage1",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stage 2",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Stage2",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stage 3",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Stage3",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stage 4",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Stage4",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Advancement",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Advancement",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": []
+                },
+                {
+                    "title": "Additional Encounters",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#AdditionalEncounters",
+                    "subsections": [
+                        {
+                            "title": "Monstrous Uprising",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#MonstrousUprising",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Power of the Cult",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#PoweroftheCult",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Devilish Demands",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#DevilishDemands",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Captive Cultist",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#CaptiveCultist",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fallen Hero",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#FallenHero",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Death at the Council",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#DeathattheCouncil",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Running the Adventure",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#RunningtheAdventure",
+                    "subsections": []
+                },
+                {
+                    "title": "Villains",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#Villains",
+                    "subsections": [
+                        {
+                            "title": "The Cult of the Dragon",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheCultoftheDragon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Red Wizards of Thay",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#RedWizardsofThay",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hosts of the Nine Hells",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#HostsoftheNineHells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Chromatic Dragons",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#ChromaticDragons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Giants",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Giants",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Allies",
+                    "urlName": "adventures/rot/introduction",
+                    "anchorName": "#Allies",
+                    "subsections": [
+                        {
+                            "title": "The Harpers",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheHarpers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Order of the Gauntlet",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheOrderoftheGauntlet",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Emerald Enclave",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheEmeraldEnclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Lords’ Alliance",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheLordsAlliance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Zhentarim",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#TheZhentarim",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Metallic Dragons",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#MetallicDragons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Giants",
+                            "urlName": "adventures/rot/introduction",
+                            "anchorName": "#Giants",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Episode 1: Council of Waterdeep",
             "urlName": "adventures/rot/council-of-waterdeep",
             "anchorName": "#Episode1CouncilofWaterdeep",

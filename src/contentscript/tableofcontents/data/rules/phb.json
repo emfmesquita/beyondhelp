@@ -4,6 +4,88 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Preface",
+            "urlName": "rules/phb/introduction",
+            "anchorName": "#Preface",
+            "subsections": []
+        },
+        {
+            "title": "Introduction",
+            "urlName": "rules/phb/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Worlds of Adventure",
+                    "urlName": "rules/phb/introduction",
+                    "anchorName": "#WorldsofAdventure",
+                    "subsections": []
+                },
+                {
+                    "title": "Using These Rules",
+                    "urlName": "rules/phb/introduction",
+                    "anchorName": "#UsingTheseRules",
+                    "subsections": []
+                },
+                {
+                    "title": "How to Play",
+                    "urlName": "rules/phb/introduction",
+                    "anchorName": "#HowtoPlay",
+                    "subsections": [
+                        {
+                            "title": "Game Dice",
+                            "urlName": "rules/phb/introduction",
+                            "anchorName": "#GameDice",
+                            "subsections": [
+                                {
+                                    "title": "The D20",
+                                    "urlName": "rules/phb/introduction",
+                                    "anchorName": "#TheD20",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Advantage and Disadvantage",
+                            "urlName": "rules/phb/introduction",
+                            "anchorName": "#AdvantageandDisadvantage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Specific Beats General",
+                            "urlName": "rules/phb/introduction",
+                            "anchorName": "#SpecificBeatsGeneral",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Round Down",
+                            "urlName": "rules/phb/introduction",
+                            "anchorName": "#RoundDown",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventures",
+                    "urlName": "rules/phb/introduction",
+                    "anchorName": "#Adventures",
+                    "subsections": [
+                        {
+                            "title": "The Three Pillars of Adventure",
+                            "urlName": "rules/phb/introduction",
+                            "anchorName": "#TheThreePillarsofAdventure",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Wonders of Magic",
+                    "urlName": "rules/phb/introduction",
+                    "anchorName": "#TheWondersofMagic",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 1: Step-By-Step Characters",
             "urlName": "rules/phb/step-by-step-characters",
             "anchorName": "#Chapter1StepByStepCharacters",

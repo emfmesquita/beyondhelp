@@ -4,6 +4,93 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "rules/dmg/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "The Dungeon Master",
+                    "urlName": "rules/dmg/introduction",
+                    "anchorName": "#TheDungeonMaster",
+                    "subsections": []
+                },
+                {
+                    "title": "How to Use These Rules",
+                    "urlName": "rules/dmg/introduction",
+                    "anchorName": "#HowtoUseTheseRules",
+                    "subsections": [
+                        {
+                            "title": "Part 1: Master of Worlds",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Part1MasterofWorlds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Part 2: Master of Adventures",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Part2MasterofAdventures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Part 3: Master of Rules",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Part3MasterofRules",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Know Your Players",
+                    "urlName": "rules/dmg/introduction",
+                    "anchorName": "#KnowYourPlayers",
+                    "subsections": [
+                        {
+                            "title": "Acting",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Acting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Exploring",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Exploring",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Instigating",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Instigating",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fighting",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Fighting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Optimizing",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Optimizing",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Problem Solving",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#ProblemSolving",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Storytelling",
+                            "urlName": "rules/dmg/introduction",
+                            "anchorName": "#Storytelling",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Chapter 1: A World of Your Own",
             "urlName": "rules/dmg/a-world-of-your-own",
             "anchorName": "#Chapter1AWorldofYourOwn",

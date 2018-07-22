@@ -4,6 +4,119 @@
     "anchorName": "",
     "subsections": [
         {
+            "title": "Introduction",
+            "urlName": "rules/basic-rules/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Worlds of Adventure",
+                    "urlName": "rules/basic-rules/introduction",
+                    "anchorName": "#WorldsofAdventure",
+                    "subsections": []
+                },
+                {
+                    "title": "Using These Rules",
+                    "urlName": "rules/basic-rules/introduction",
+                    "anchorName": "#UsingTheseRules",
+                    "subsections": []
+                },
+                {
+                    "title": "How to Play",
+                    "urlName": "rules/basic-rules/introduction",
+                    "anchorName": "#HowtoPlay",
+                    "subsections": [
+                        {
+                            "title": "1. The DM describes the environment.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#1TheDMdescribestheenvironment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. The players describe what they want to do.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#2Theplayersdescribewhattheywanttodo",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. The DM narrates the results of the adventurers’ actions.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#3TheDMnarratestheresultsoftheadventurersactions",
+                            "subsections": [
+                                {
+                                    "title": "Game Dice",
+                                    "urlName": "rules/basic-rules/introduction",
+                                    "anchorName": "#GameDice",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The D20",
+                                    "urlName": "rules/basic-rules/introduction",
+                                    "anchorName": "#TheD20",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "1. Roll the die and add a modifier.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#1Rollthedieandaddamodifier",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Apply circumstantial bonuses and penalties.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#2Applycircumstantialbonusesandpenalties",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Compare the total to a target number.",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#3Comparethetotaltoatargetnumber",
+                            "subsections": [
+                                {
+                                    "title": "Advantage and Disadvantage",
+                                    "urlName": "rules/basic-rules/introduction",
+                                    "anchorName": "#AdvantageandDisadvantage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Specific Beats General",
+                                    "urlName": "rules/basic-rules/introduction",
+                                    "anchorName": "#SpecificBeatsGeneral",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round Down",
+                                    "urlName": "rules/basic-rules/introduction",
+                                    "anchorName": "#RoundDown",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventures",
+                    "urlName": "rules/basic-rules/introduction",
+                    "anchorName": "#Adventures",
+                    "subsections": [
+                        {
+                            "title": "The Three Pillars of Adventure",
+                            "urlName": "rules/basic-rules/introduction",
+                            "anchorName": "#TheThreePillarsofAdventure",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Wonders of Magic",
+                    "urlName": "rules/basic-rules/introduction",
+                    "anchorName": "#TheWondersofMagic",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Step-By-Step Characters",
             "urlName": "rules/basic-rules/step-by-step-characters",
             "anchorName": "#StepByStepCharacters",
@@ -247,7 +360,7 @@
             ]
         },
         {
-            "title": "Chapter 3: Classes",
+            "title": "Classes",
             "urlName": "rules/basic-rules/classes",
             "anchorName": "#Chapter3Classes",
             "subsections": [
