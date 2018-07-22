@@ -17,16 +17,16 @@
         "no-console": 0,
         "no-debugger": 1,
         "no-extra-semi": 1,
-        "no-extra-parens": 1,
+        "no-extra-parens": 0,
         "no-irregular-whitespace": 0,
         "no-undef": 0,
         "no-unused-vars": 0,
         "semi": 1,
         "semi-spacing": 1,
-        /*"valid-jsdoc": [
-			2,
-			{ "requireReturn": false }
-		],*/
+        // "valid-jsdoc": [
+        // 	2,
+        // 	{ "requireReturn": false }
+        // ],
         "react/display-name": 2,
         "react/forbid-prop-types": 1,
         "react/jsx-boolean-value": 1,

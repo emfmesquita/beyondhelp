@@ -34,7 +34,8 @@ class TOCService {
         const book = TOCData.getBook(pathComponents[2], pathComponents[3]);
         if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
-        const active = menu.find('.quick-menu-item-active').find('a').first().attr('href');
+        let active = menu.find('.quick-menu-item-active').find('a').first().attr('href');
+        if (!active) active = menu.find('.quick-menu-tier-1').find('a').first().attr('href');
         const kids = menu.children();
         menu.empty();
         try {
