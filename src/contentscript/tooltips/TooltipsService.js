@@ -94,6 +94,7 @@ srcTitleMap.set("tftypa7", "Tomb of Horrors");
 srcTitleMap.set("toa", "Tomb of Annihilation");
 srcTitleMap.set("mtof", "Mordenkainen's Tome of Foes");
 srcTitleMap.set("ddia-mord", "Rrakkma");
+srcTitleMap.set("wgte", "Wayfinder's Guide to Eberron");
 
 const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass }) {
     return new Promise((resolve, reject) => {

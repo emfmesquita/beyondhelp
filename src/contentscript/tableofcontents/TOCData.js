@@ -16,6 +16,7 @@ import phb from './data/rules/phb.json';
 import scag from './data/rules/scag.json';
 import ttp from './data/rules/ttp.json';
 import vgtm from './data/rules/vgtm.json';
+import wgte from './data/rules/wgte.json';
 import xgte from './data/rules/xgte.json';
 
 const data = {
@@ -40,6 +41,7 @@ const data = {
         'scag': scag,
         'ttp': ttp,
         'vgtm': vgtm,
+        'wgte': wgte,
         'xgte': xgte
     }
 };

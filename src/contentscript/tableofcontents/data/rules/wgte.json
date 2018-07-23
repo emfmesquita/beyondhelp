@@ -1,0 +1,697 @@
+{
+    "title": "Wayfinder's Guide to Eberron",
+    "urlName": "rules/wgte",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Introduction",
+            "urlName": "rules/wgte/introduction",
+            "anchorName": "#",
+            "subsections": []
+        },
+        {
+            "title": "Chapter 1: What Is Eberron?",
+            "urlName": "rules/wgte/what-is-eberron",
+            "anchorName": "#Chapter1WhatIsEberron",
+            "subsections": [
+                {
+                    "title": "A Magical World",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#AMagicalWorld",
+                    "subsections": []
+                },
+                {
+                    "title": "Pulp Adventure",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#PulpAdventure",
+                    "subsections": []
+                },
+                {
+                    "title": "Neo-Noir Intrigue",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#NeoNoirIntrigue",
+                    "subsections": [
+                        {
+                            "title": "Why Do You Need 200 Gold Pieces?",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#WhyDoYouNeed200GoldPieces",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Last War",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#TheLastWar",
+                    "subsections": [
+                        {
+                            "title": "Military Backgrounds",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#MilitaryBackgrounds",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Mourning",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#TheMourning",
+                    "subsections": [
+                        {
+                            "title": "The Mournland",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#TheMournland",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Mourning and You",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#TheMourningandYou",
+                            "subsections": []
+                        },
+                        {
+                            "title": "What Caused the Mourning?",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#WhatCausedtheMourning",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Ancient Mysteries",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#AncientMysteries",
+                    "subsections": [
+                        {
+                            "title": "Dark Forces",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#DarkForces",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "If It Exists in D&D, There's a Place for It in Eberron",
+                    "urlName": "rules/wgte/what-is-eberron",
+                    "anchorName": "#IfItExistsinDDTheresaPlaceforItinEberron",
+                    "subsections": [
+                        {
+                            "title": "Eberron and the Multiverse",
+                            "urlName": "rules/wgte/what-is-eberron",
+                            "anchorName": "#EberronandtheMultiverse",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Welcome to Khorvaire",
+            "urlName": "rules/wgte/welcome-to-khorvaire",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "Nations of Eberron",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#NationsofEberron",
+                    "subsections": []
+                },
+                {
+                    "title": "Everyday Life",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#EverydayLife",
+                    "subsections": [
+                        {
+                            "title": "The Calendar of Galifar",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheCalendarofGalifar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Currency of Galifar",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheCurrencyofGalifar",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Languages in Eberron",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#LanguagesinEberron",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Names in the Five Nations",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#NamesintheFiveNations",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Magic in Khorvaire",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#MagicinKhorvaire",
+                    "subsections": [
+                        {
+                            "title": "Wide Magic, Not High Magic",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#WideMagicNotHighMagic",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Magewrights",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#Magewrights",
+                    "subsections": []
+                },
+                {
+                    "title": "Wandslingers",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#Wandslingers",
+                    "subsections": []
+                },
+                {
+                    "title": "The Magical Economy",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#TheMagicalEconomy",
+                    "subsections": [
+                        {
+                            "title": "Communication",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Communication",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Entertainment",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Entertainment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fashion",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Fashion",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Medicine",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Medicine",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Transportation",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Transportation",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warfare",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Warfare",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Creating Magic Items",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#CreatingMagicItems",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Faiths of Khorvaire",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#FaithsofKhorvaire",
+                    "subsections": [
+                        {
+                            "title": "The Church of the Silver Flame",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheChurchoftheSilverFlame",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Sovereign Host",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheSovereignHost",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Dark Six",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheDarkSix",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Blood of Vol",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheBloodofVol",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Path of Light",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#ThePathofLight",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Undying Court",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheUndyingCourt",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cults of the Dragon Below",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#CultsoftheDragonBelow",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Distant Lands",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#DistantLands",
+                    "subsections": [
+                        {
+                            "title": "Aerenal",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Aerenal",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Argonnessen",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Argonnessen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Everice and The Frostfell",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#EvericeandTheFrostfell",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sarlona",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Sarlona",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Xen’drik",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#Xendrik",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Eberron: Above and Beyond",
+                    "urlName": "rules/wgte/welcome-to-khorvaire",
+                    "anchorName": "#EberronAboveandBeyond",
+                    "subsections": [
+                        {
+                            "title": "The Material Plane",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#TheMaterialPlane",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Planes of Eberron",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#ThePlanesofEberron",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Astral and Ethereal",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#AstralandEthereal",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Celestials, Gods, and Fiends",
+                            "urlName": "rules/wgte/welcome-to-khorvaire",
+                            "anchorName": "#CelestialsGodsandFiends",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: Races of Eberron",
+            "urlName": "rules/wgte/races-of-eberron",
+            "anchorName": "#Chapter3RacesofEberron",
+            "subsections": [
+                {
+                    "title": "Changelings",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Changelings",
+                    "subsections": []
+                },
+                {
+                    "title": "Kalashtar",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Kalashtar",
+                    "subsections": []
+                },
+                {
+                    "title": "Shifters",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Shifters",
+                    "subsections": []
+                },
+                {
+                    "title": "Warforged",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Warforged",
+                    "subsections": []
+                },
+                {
+                    "title": "Dwarves",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Dwarves",
+                    "subsections": []
+                },
+                {
+                    "title": "Gnomes",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Gnomes",
+                    "subsections": []
+                },
+                {
+                    "title": "Half-Elves",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#HalfElves",
+                    "subsections": []
+                },
+                {
+                    "title": "Half-Orcs",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#HalfOrcs",
+                    "subsections": []
+                },
+                {
+                    "title": "Halflings",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Halflings",
+                    "subsections": []
+                },
+                {
+                    "title": "Humans",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Humans",
+                    "subsections": []
+                },
+                {
+                    "title": "Other Races",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#OtherRaces",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: Dragonmarks",
+            "urlName": "rules/wgte/dragonmarks",
+            "anchorName": "#Chapter4Dragonmarks",
+            "subsections": [
+                {
+                    "title": "Creating a Dragonmarked Character",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#CreatingaDragonmarkedCharacter",
+                    "subsections": []
+                },
+                {
+                    "title": "Dragonmarks and Backgrounds",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#DragonmarksandBackgrounds",
+                    "subsections": []
+                },
+                {
+                    "title": "The Powers of the Mark",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#ThePowersoftheMark",
+                    "subsections": []
+                },
+                {
+                    "title": "Dragonmark Appearance",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#DragonmarkAppearance",
+                    "subsections": []
+                },
+                {
+                    "title": "Background",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#Background",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Detection",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofDetection",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Finding",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofFinding",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Handling",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofHandling",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Healing",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofHealing",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Hospitality",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofHospitality",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Making",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofMaking",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Passage",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofPassage",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Scribing",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofScribing",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Sentinel",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofSentinel",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Shadow",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofShadow",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Storm",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofStorm",
+                    "subsections": []
+                },
+                {
+                    "title": "The Mark of Warding",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#TheMarkofWarding",
+                    "subsections": []
+                },
+                {
+                    "title": "Greater Dragonmarks",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#GreaterDragonmarks",
+                    "subsections": []
+                },
+                {
+                    "title": "Aberrant Dragonmarks",
+                    "urlName": "rules/wgte/dragonmarks",
+                    "anchorName": "#AberrantDragonmarks",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 5: Magic Items",
+            "urlName": "rules/wgte/magic-items",
+            "anchorName": "#Chapter5MagicItems",
+            "subsections": [
+                {
+                    "title": "Dragonshards",
+                    "urlName": "rules/wgte/magic-items",
+                    "anchorName": "#Dragonshards",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items",
+                    "urlName": "rules/wgte/magic-items",
+                    "anchorName": "#MagicItems",
+                    "subsections": [
+                        {
+                            "title": "Arcane Focuses",
+                            "urlName": "rules/wgte/magic-items",
+                            "anchorName": "#ArcaneFocuses",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Common Magic Items",
+                            "urlName": "rules/wgte/magic-items",
+                            "anchorName": "#CommonMagicItems",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dragonmark Focus Items",
+                            "urlName": "rules/wgte/magic-items",
+                            "anchorName": "#DragonmarkFocusItems",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eldritch Machines",
+                            "urlName": "rules/wgte/magic-items",
+                            "anchorName": "#EldritchMachines",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warforged Components",
+                            "urlName": "rules/wgte/magic-items",
+                            "anchorName": "#WarforgedComponents",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 6: Sharn, City of Towers",
+            "urlName": "rules/wgte/sharn-city-of-towers",
+            "anchorName": "#Chapter6SharnCityofTowers",
+            "subsections": [
+                {
+                    "title": "Sharn Backgrounds",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#SharnBackgrounds",
+                    "subsections": []
+                },
+                {
+                    "title": "The Shape of Sharn",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#TheShapeofSharn",
+                    "subsections": []
+                },
+                {
+                    "title": "Central Plateau Quarter",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#CentralPlateauQuarter",
+                    "subsections": []
+                },
+                {
+                    "title": "Dura Quarter",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#DuraQuarter",
+                    "subsections": []
+                },
+                {
+                    "title": "Menthis Plateau Quarter",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#MenthisPlateauQuarter",
+                    "subsections": []
+                },
+                {
+                    "title": "Northedge Quarter",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#NorthedgeQuarter",
+                    "subsections": []
+                },
+                {
+                    "title": "Tavick’s Landing Quarter",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#TavicksLandingQuarter",
+                    "subsections": []
+                },
+                {
+                    "title": "Sharn: Above and Below",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#SharnAboveandBelow",
+                    "subsections": []
+                },
+                {
+                    "title": "Things to Do in Sharn",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#ThingstoDoinSharn",
+                    "subsections": []
+                },
+                {
+                    "title": "Criminal Activities in Sharn",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#CriminalActivitiesinSharn",
+                    "subsections": []
+                },
+                {
+                    "title": "Starting Points",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#StartingPoints",
+                    "subsections": []
+                },
+                {
+                    "title": "Starting Point: Callestan",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#StartingPointCallestan",
+                    "subsections": []
+                },
+                {
+                    "title": "Starting Point: Clifftop",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#StartingPointClifftop",
+                    "subsections": []
+                },
+                {
+                    "title": "Starting Point: Morgrave University",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#StartingPointMorgraveUniversity",
+                    "subsections": []
+                },
+                {
+                    "title": "A Quick Sharn Story",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#AQuickSharnStory",
+                    "subsections": []
+                },
+                {
+                    "title": "The Streets of Sharn",
+                    "urlName": "rules/wgte/sharn-city-of-towers",
+                    "anchorName": "#TheStreetsofSharn",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/wgte/credits",
+            "anchorName": "#",
+            "subsections": []
+        }
+    ]
+}
