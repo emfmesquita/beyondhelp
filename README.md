@@ -33,10 +33,12 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 ### Enhanced My Characters Page
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
+- Thanks to Tony (https://github.com/zeg-io) for the layout idea.
 
 ### Enhanced Campaign Page
 - Characters are sorted by name;
 - On campaigns that you are the DM it is possible to create collapsible folders and add characters to them.
+- Thanks to Tony (https://github.com/zeg-io) for the layout idea.
 
 ### Editor Plugin
 - Extra button on all editors of the site that enables:
@@ -63,7 +65,10 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Collapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaign;
 - All data can be seen, deleted, downloaded on the extension configuration page;
 - Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extension is removed from chrome.
-    
+
+### Compendium TOC on Side Menu
+- Huge thanks to Dawson Conway (https://github.com/dconman) the author of this feature;
+- This adds the full toc on the side menu for compendiums. Is not enabled by default. To turn it on head to the extension options (the whrench on extension pop up page) and check the "Show table of contents on compendium pages".
 
 ### Compendium References
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on:
@@ -103,6 +108,9 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ![Making Notes](http://i.imgur.com/9qYFhzv.png)
 
 ![Checking Notes on Options Page](http://i.imgur.com/HBTbdoh.png)
+
+### Compendium TOC on Side Menu
+![Toc](http://i.imgur.com/QqNKXoZ.png)
 
 ### Compendium References
 ##### First copy the reference
