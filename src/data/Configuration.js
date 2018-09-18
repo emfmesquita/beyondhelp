@@ -1,6 +1,11 @@
 import Data from "./Data";
 import Opt from "../Options";
 
+const defaultFalseOptions = [
+    Opt.ExtraMapRefsDrawingBundle,
+    Opt.ToC
+];
+
 class Configuration extends Data {
     constructor(storageId: string) {
         super(storageId);
@@ -13,7 +18,7 @@ class Configuration extends Data {
     }
 
     static initialValue(configKey: string) {
-        return Opt.ExtraMapRefsDrawingBundle === configKey ? "" : true;
+        return defaultFalseOptions.indexOf(configKey) === -1 ? true : "";
     }
 }
 
