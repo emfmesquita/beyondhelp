@@ -17,6 +17,7 @@ import scag from './data/rules/scag.json';
 import ttp from './data/rules/ttp.json';
 import vgtm from './data/rules/vgtm.json';
 import wgte from './data/rules/wgte.json';
+import wdh from './data/adventures/wdh.json';
 import xgte from './data/rules/xgte.json';
 
 const data = {
@@ -30,7 +31,8 @@ const data = {
         'rot': rot,
         'skt': skt,
         'tftyp': tftyp,
-        'toa': toa
+        'toa': toa,
+        'wdh': wdh
     },
     rules: {
         'basic-rules': basicRules,
