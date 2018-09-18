@@ -131,7 +131,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
 
 ### Global Options
-![Global Options](http://i.imgur.com/o7XwcNG.png)
+![Global Options](https://i.imgur.com/4X9JQqH.png)
 
 ### Roll on Tables
 ![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
