@@ -10,11 +10,11 @@ import MapToMapAreaInfo from "./MapToMapAreaInfo";
 let allMaps: MapInfo[] = [];
 
 // preprocessed data of current page only
-const toPreProcess = new MapRefsPreProcessed();
+let preprocessed = new MapRefsPreProcessed();
 
 // adds base path to areas
 const preProcessAreas = (areas: MapAreaInfo[], basePath: string) => {
-    if (!areas || !Array.isArray(areas)) return;
+    if (!Array.isArray(areas)) return;
     areas.forEach(area => {
         if (area.page) area.page = basePath + area.page;
     });
@@ -22,13 +22,13 @@ const preProcessAreas = (areas: MapAreaInfo[], basePath: string) => {
 
 // finds target map and adds info to area
 const preProcesMaptoMaps = (areas: MapAreaInfo[], basePath: string) => {
-    if (!areas || !Array.isArray(areas)) return;
+    if (!Array.isArray(areas)) return;
     areas.forEach(area => {
         if (!(area instanceof MapToMapAreaInfo)) return;
         const mapToMap: MapToMapAreaInfo = area;
         const targetMap = allMaps.find(map => map.mapImageName === mapToMap.targetImageName);
         if (!targetMap) return;
-        mapToMap.page = basePath + targetMap.page;
+        mapToMap.page = targetMap.preprocessed ? targetMap.page : basePath + targetMap.page;
         mapToMap.contentId = targetMap.contentId;
     });
 };
@@ -47,11 +47,11 @@ const preProcessLinks = (map: MapInfo, basePath: string): MapLinksInfo => {
     let extraMapLinkSelectors = map.extraMapLinkSelectors || [];
 
     const selectors: Set<string> = new Set(); // set to avoind repetitions
-    if (map.areas && Array.isArray(map.areas)) {
+    if (Array.isArray(map.areas)) {
         map.areas.forEach(area => area.addBackLink && selectors.add("#" + area.headerId));
     }
     if (map.menuHeaderId) selectors.add("#" + map.menuHeaderId);
-    if (map.extraMenuHeaderIds && Array.isArray(map.extraMenuHeaderIds)) {
+    if (Array.isArray(map.extraMenuHeaderIds)) {
         map.extraMenuHeaderIds.forEach(menuHeaderId => selectors.add("#" + menuHeaderId));
     }
     extraMapLinkSelectors = extraMapLinkSelectors.concat(Array.from(selectors));
@@ -71,6 +71,11 @@ const preProcessExtraLinks = (mapLinks: MapLinksInfo) => {
 };
 
 class MapsPreProcessService {
+    static reset() {
+        allMaps = [];
+        preprocessed = new MapRefsPreProcessed();
+    }
+
     /**
      * Register map classes with maps to pre process.
      * @param {*} refsClass 
@@ -80,27 +85,38 @@ class MapsPreProcessService {
         const shouldPreProcess = path && LocationService.isOnCompendium(path);
 
         // store path and if is on toc
-        if (shouldPreProcess && !toPreProcess.path) {
-            toPreProcess.path = path;
-            toPreProcess.isOnToc = LocationService.isOnToc(path);
+        if (shouldPreProcess && !preprocessed.path) {
+            preprocessed.path = path;
+            preprocessed.isOnToc = LocationService.isOnToc(path);
         }
 
         // register maps to all maps and maps of current page to pre process
-        if (refsClass.maps && Array.isArray(refsClass.maps)) {
+        if (Array.isArray(refsClass.maps)) {
             allMaps = allMaps.concat(refsClass.maps);
             if (shouldPreProcess) refsClass.maps.forEach(map => {
-                if (!toPreProcess.isOnToc && (!map.page || !LocationService.isOnCompendium(path + map.page))) return;
-                map.basePath = path;
-                toPreProcess.maps.push(map);
+                if (map.preprocessed) {
+                    preprocessed.maps.push(map);
+                } else {
+                    // not on toc, not on current chapter, only process map links
+                    if (!preprocessed.isOnToc && (!map.page || !LocationService.isOnCompendium(path + map.page))) {
+                        map.notFromCurrentChapter = true;
+                    }
+                    map.basePath = path;
+                    preprocessed.maps.push(map);
+                }
             });
         }
 
         // register extra links to pre process
-        if (!toPreProcess.isOnToc && shouldPreProcess && refsClass.extraMapLinks && Array.isArray(refsClass.extraMapLinks)) {
+        if (!preprocessed.isOnToc && shouldPreProcess && Array.isArray(refsClass.extraMapLinks)) {
             refsClass.extraMapLinks.forEach(mapLinks => {
-                if (!mapLinks.fromPage || !LocationService.isOnCompendium(path + mapLinks.fromPage)) return;
-                mapLinks.basePath = path;
-                toPreProcess.extraMapLinks.push(mapLinks);
+                if (mapLinks.preprocessed) {
+                    preprocessed.extraMapLinks.push(mapLinks);
+                } else {
+                    if (!mapLinks.fromPage || !LocationService.isOnCompendium(path + mapLinks.fromPage)) return;
+                    mapLinks.basePath = path;
+                    preprocessed.extraMapLinks.push(mapLinks);
+                }
             });
         }
     }
@@ -110,21 +126,43 @@ class MapsPreProcessService {
      */
     static preProcess(): MapRefsPreProcessed {
 
-        toPreProcess.maps.forEach(map => {
-            if (toPreProcess.isOnToc) return;
-            preProcessAreas(map.areas, map.basePath);
-            preProcesMaptoMaps(map.areas, map.basePath);
+        preprocessed.maps.forEach(map => {
+            if (preprocessed.isOnToc || map.preprocessed) return;
+            if (!map.notFromCurrentChapter) preProcessAreas(map.areas, map.basePath);
+            if (!map.notFromCurrentChapter) preProcesMaptoMaps(map.areas, map.basePath);
             preProcessLinks(map, map.basePath);
         });
 
-        if (!toPreProcess.isOnToc) toPreProcess.extraMapLinks.forEach(preProcessExtraLinks);
+        if (!preprocessed.isOnToc) preprocessed.extraMapLinks.forEach(preProcessExtraLinks);
 
         // adds base path at last to not interfere with areas and extra links pre processors
-        toPreProcess.maps.forEach(map => {
-            map.page = map.basePath + map.page;
+        // also group areas by map image name
+        preprocessed.maps.forEach(map => {
+            if (!map.preprocessed) {
+                map.page = map.basePath + map.page;
+                map.preprocessed = true;
+            }
+
+            if (!map.mapImageName || !Array.isArray(map.areas) || map.areas.length === 0 || map.notFromCurrentChapter) return;
+
+            let areas = preprocessed.areasByMapImage[map.mapImageName];
+            if (!areas) {
+                preprocessed.areasByMapImage[map.mapImageName] = [];
+                areas = preprocessed.areasByMapImage[map.mapImageName];
+            }
+
+            map.areas.forEach(area => {
+                area.page = area.page || map.page;
+                areas.push(area);
+            });
         });
 
-        return toPreProcess;
+        return preprocessed;
+    }
+
+    static hasMapAreas(mapImageName: string): boolean {
+        const areas = preprocessed.areasByMapImage[mapImageName];
+        return Array.isArray(areas) && areas.length > 0;
     }
 }
 

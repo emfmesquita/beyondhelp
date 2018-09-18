@@ -1,0 +1,53 @@
+@mixin icon($icon) {
+    i.fa.fa-#{$icon} {
+        mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        background-color: #000 !important;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle !important;
+        display: inline-block;
+    }
+}
+
+.BH-extra-map-refs-drawing-toolbar {
+    position: fixed;
+    background: #fff;
+    padding: 16px 15px 16px 23px;
+    right: 8px;
+    bottom: 8px;
+    z-index: 100;
+    border: 1px solid #cbc6c3;
+    &>span {
+        margin-right: 8px;
+        .BH-shape-button {
+            box-shadow: inset 0 0 4px 0 #dcd1c7 !important;
+            border: solid 1px #cbc6c3;
+            cursor: pointer;
+            padding: 6px 10px;
+            user-select: none;
+            &:hover {
+                background: #47D18C !important;
+            }
+            &.BH-on {
+                background: #47D18C !important;
+                border: 1px solid #26282a;
+            }
+            @include icon("circle");
+            @include icon("square");
+            @include icon("gem");
+            @include icon("arrows-alt");
+            @include icon("trash-alt");
+            @include icon("expand-arrows-alt");
+        }
+        .BH-extra-map-refs-drawing-coords {
+            border: solid 1px #cbc6c3;
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            min-height: 30px;
+            vertical-align: middle;
+            padding-top: 4px;
+        }
+    }
+}

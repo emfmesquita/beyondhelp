@@ -30,7 +30,7 @@ const mapMenuLinksTooltips = "mapMenuLinksTooltips";
 const mapMenuLinks = "mapMenuLinks";
 const mapTocLinksTooltips = "mapTocLinksTooltips";
 const mapTocLinks = "mapTocLinks";
-const extraMapRefsMode = "extraMapRefsMode";
+const extraMapRefsDrawingBundle = "extraMapRefsDrawingBundle";
 //#endregion
 
 const allOptions = [
@@ -65,7 +65,7 @@ const allOptions = [
     mapMenuLinks,
     mapTocLinksTooltips,
     mapTocLinks,
-    extraMapRefsMode
+    extraMapRefsDrawingBundle
     //#endregion
 ];
 
@@ -161,8 +161,8 @@ class Options {
     static get MapTocLinks(): string {
         return mapTocLinks;
     }
-    static get ExtraMapRefsMode(): string {
-        return extraMapRefsMode;
+    static get ExtraMapRefsDrawingBundle(): string {
+        return extraMapRefsDrawingBundle;
     }
     //#endregion
 

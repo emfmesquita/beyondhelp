@@ -132,7 +132,7 @@ const maps = [
         new MapAreaInfo().rho(771, 499, 791, 519).content("49a88624-1f6d-44cd-a254-c8257d482625"), // 13 - doors
         new MapAreaInfo().rho(753, 405, 773, 425).content("49a88624-1f6d-44cd-a254-c8257d482625"), // 13 - doors
         new MapAreaInfo().rho(738, 486, 758, 506).content("c174e393-dc67-44b4-a00c-c176a25cad83") // 13 - treasure
-    ], ["#GeneralFeatures", "#AreasoftheRuins"]),
+    ], ["#GeneralFeatures1", "#AreasoftheRuins"]),
     new MapInfo("CragmawCastle", "the-spiders-web", "lmop06.jpg", "e439ffb6-c94a-4319-b207-75a414a85f0d", [
         new MapAreaInfo("1CastleEntrance", "99,309,129,339"),
         new MapAreaInfo("2TrappedHall", "206,254,236,284"),
@@ -165,7 +165,7 @@ const maps = [
         new MapAreaInfo().rho(578, 140, 598, 160).content("896ff4bf-da47-47ca-9403-72cdc81dfe21"),// 14 - Northwest Room
         new MapAreaInfo().rho(617, 233, 637, 253).content("a1560108-9fb6-4bc5-a372-c1e6e9b096bf"), // 14 - dwarf
         new MapAreaInfo().rho(623, 98, 643, 118).content("95554e91-2fd0-468a-a4ac-4826402a1bc4") // 14 - treasure
-    ], ["#GeneralFeatures[data-content-chunk-id='dc4878aa-5c53-46c8-b66e-5d6f5c6b0b3b']", "#AreasoftheCastle", "#ReturningWarBand"]),
+    ], ["#GeneralFeatures2", "#AreasoftheCastle", "#ReturningWarBand"]),
     new MapInfo("Part4WaveEchoCave", "wave-echo-cave", "lmop07.jpg", "d9a00d84-9469-4e1f-a53a-933c54bf40ef", [
         new MapAreaInfo("1CaveEntrance", "130,613,150,633"),
         new MapAreaInfo("2MineTunnels", "146,484,166,504"),

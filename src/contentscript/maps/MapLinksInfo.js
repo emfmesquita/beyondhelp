@@ -4,6 +4,7 @@ class MapLinksInfo {
         this.toPage = toPage;
         this.mapContentId = mapContentId;
         this.targetSelectors = targetSelectors || [];
+        this.preprocessed = false;
     }
 
     map(targetImageName: string) {

@@ -7,10 +7,11 @@ import MapRefs from "./MapRefs";
 import MapToMapAreaInfo from "./MapToMapAreaInfo";
 import C from "../../Constants";
 import MapLinksInfo from "./MapLinksInfo";
+import Configuration from "../../data/Configuration";
+import Opt from "../../Options";
 
-
-
-const defaultColor = C.DDBColors.green;
+const defaultColor = C.DDBColors.red;
+const drawableColor = C.DDBColors.green;
 
 const fourCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+,[0-9 ]+/;
 const threeCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+/;
@@ -19,9 +20,16 @@ const onBundle = (bundleName) => `on bundle "${bundleName}"`;
 const fromCompendium = (compendium, bundleName: string) => `from "${compendium.path}" ${onBundle(bundleName)}`;
 const fromMap = (map, compendium, bundleName: string) => `from "${map.mapImageName}" ${fromCompendium(compendium, bundleName)}`;
 const fromExtraLink = (extraLink, compendium, bundleName: string) => `from "${extraLink.selector}" ${fromCompendium(compendium, bundleName)}`;
+const isDrawing = (bundle: ExtraMapRefsData, config) => bundle.storageId === config[Opt.ExtraMapRefsDrawingBundle];
 
-const processCompendiumMap = (bundleName: string, compendium, map) => {
+const setDrawable = (drawable: boolean, area: MapAreaInfo) => {
+    if (drawable) area.drawable().chroma(drawableColor);
+};
+
+const processCompendiumMap = (bundle, compendium, map, config) => {
     const mapAreas: MapAreaInfo[] = [];
+    const bundleName = bundle.content.name;
+    const drawable = isDrawing(bundle, config);
 
     if (!map.mapImageName) {
         E.log(`Attribute "mapImageName" is missing from a map ${fromCompendium(compendium, bundleName)} and it is required.`);
@@ -37,12 +45,12 @@ const processCompendiumMap = (bundleName: string, compendium, map) => {
     }
     if (!map.menuHeaderId) {
         E.log(`Attribute "menuHeaderId" is missing ${fromMap(map, compendium, bundleName)} and it is required.`);
-        return;
+        // not returned - maps added by drawing start without menuHeaderId
     }
 
     // process areas
-    if (map.areas && Array.isArray(map.areas)) {
-        map.areas.forEach(area => {
+    if (Array.isArray(map.simpleAreas)) {
+        map.simpleAreas.forEach(area => {
             if (!area.coords) {
                 E.log(`Attribute "coords" is missing from an area ${fromMap(map, compendium, bundleName)} and it is required.`);
                 return;
@@ -55,17 +63,19 @@ const processCompendiumMap = (bundleName: string, compendium, map) => {
 
             if (!area.headerId && !area.contentId) {
                 E.log(`Attributes "headerId" and "contentId" are missing ${fromMap(map, compendium, bundleName)} and at least one is required.`);
-                return;
+                // not returned - areas added by drawing start without headerId and contentId
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapAreaInfo(area.headerId, area.coords, area.page).content(area.contentId, area.untilContentId).chroma(defaultColor));
+                const info = new MapAreaInfo(area.headerId, area.coords, area.page).content(area.contentId, area.untilContentId).chroma(defaultColor).uid(area.id);
+                setDrawable(drawable, info);
+                mapAreas.push(info);
             }, `Failed to process area "${area.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
     }
 
     // process extra areas
-    if (map.extraAreas && Array.isArray(map.extraAreas)) {
+    if (Array.isArray(map.extraAreas)) {
         map.extraAreas.forEach(extraArea => {
             if (!extraArea.coords) {
                 E.log(`Attribute "coords" is missing from an extra area ${fromMap(map, compendium, bundleName)} and it is required.`);
@@ -79,17 +89,19 @@ const processCompendiumMap = (bundleName: string, compendium, map) => {
 
             if (!extraArea.contentId) {
                 E.log(`Attribute "contentId" is missing from an extra area ${fromMap(map, compendium, bundleName)} and it is required.`);
-                return;
+                // not returned - areas added by drawing start without contentId
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapAreaInfo().rhoStr(extraArea.coords).fromPage(extraArea.page).content(extraArea.contentId, extraArea.untilContentId).chroma(defaultColor));
+                const info = new MapAreaInfo().rhoStr(extraArea.coords).fromPage(extraArea.page).content(extraArea.contentId, extraArea.untilContentId).chroma(defaultColor).uid(extraArea.id);
+                setDrawable(drawable, info);
+                mapAreas.push(info);
             }, `Failed to process extra area "${extraArea.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
     }
 
     // process map to maps
-    if (map.mapToMaps && Array.isArray(map.mapToMaps)) {
+    if (Array.isArray(map.mapToMaps)) {
         map.mapToMaps.forEach(mapToMap => {
             if (!mapToMap.coords) {
                 E.log(`Attribute "coords" is missing from a map to map area ${fromMap(map, compendium, bundleName)} and it is required.`);
@@ -103,11 +115,13 @@ const processCompendiumMap = (bundleName: string, compendium, map) => {
 
             if (!mapToMap.targetImageName) {
                 E.log(`Attribute "targetImageName" is missing from a map to map area ${fromMap(map, compendium, bundleName)} and it is required.`);
-                return;
+                // not returned - areas added by drawing start without targetImageName
             }
 
             E.tryCatch(() => {
-                mapAreas.push(new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).chroma(defaultColor));
+                const info = new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).chroma(defaultColor).uid(mapToMap.id);
+                setDrawable(drawable, info);
+                mapAreas.push(info);
             }, `Failed to process map to map area "${mapToMap.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
     }
@@ -131,7 +145,8 @@ const processCompendiumExtraLink = (bundleName: string, compendium, extraLink, e
     extraLinks.push(new MapLinksInfo(extraLink.page).map(extraLink.targetImageName).selector(extraLink.selector));
 };
 
-const processCompendium = (bundleName: string, compendium, mapRefs: object[]) => {
+const processCompendium = (bundle, compendium, mapRefs: object[], config) => {
+    const bundleName = bundle.content.name;
     const path = compendium.path;
 
     if (!path) {
@@ -147,7 +162,7 @@ const processCompendium = (bundleName: string, compendium, mapRefs: object[]) =>
     if (!compendium.maps || !Array.isArray(compendium.maps)) {
         compendium.maps = [];
     } else {
-        compendium.maps.forEach(map => processCompendiumMap(bundleName, compendium, map));
+        compendium.maps.forEach(map => processCompendiumMap(bundle, compendium, map, config));
     }
 
     // process extra links
@@ -158,7 +173,7 @@ const processCompendium = (bundleName: string, compendium, mapRefs: object[]) =>
     }
 };
 
-const processBundle = (bundle: ExtraMapRefsData): object[] => {
+const processBundle = (bundle: ExtraMapRefsData, config): object[] => {
     const content = bundle.content;
 
     if (!content) return [];
@@ -178,22 +193,22 @@ const processBundle = (bundle: ExtraMapRefsData): object[] => {
     const mapRefs = [];
 
     // process the compendiums related with the current page and add them to mapRefs
-    compendiums.forEach(compendium => processCompendium(bundleName, compendium, mapRefs));
+    compendiums.forEach(compendium => processCompendium(bundle, compendium, mapRefs, config));
 
     return mapRefs;
 };
 
-class ExtraRefMapsService {
-    static buildMapRefs(bundles: ExtraMapRefsData[]): object[] {
+class ExtraMapRefsService {
+    static buildMapRefs(bundles: ExtraMapRefsData[], config: Configuration): object[] {
         let mapRefs = [];
         if (!bundles) return mapRefs;
 
         bundles.forEach(bundle => {
-            mapRefs = mapRefs.concat(processBundle(bundle));
+            mapRefs = mapRefs.concat(processBundle(bundle, config));
         });
 
         return mapRefs;
     }
 }
 
-export default ExtraRefMapsService;
+export default ExtraMapRefsService;

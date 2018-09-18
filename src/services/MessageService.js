@@ -4,6 +4,7 @@ class MessageService {
     static listen(action: string, handler: (message, callback: Function) => boolean) {
         chrome.runtime.onMessage.addListener((request, sender, callback) => {
             if (request.action === action) {
+                request.sender = sender;
                 return handler(request, callback);
             }
         });
@@ -17,6 +18,7 @@ class MessageService {
     static listenFromExternal(action: string, handler: (message, callback: Function) => boolean) {
         chrome.runtime.onMessageExternal.addListener((request, sender, callback) => {
             if (request.action === action) {
+                request.sender = sender;
                 return handler(request, callback);
             }
         });
@@ -52,6 +54,14 @@ class MessageService {
         }
         message.action = action;
         chrome.tabs.sendMessage(tabId, message, {}, callback);
+    }
+
+    static broadcastToTabs(action: string, message: object) {
+        chrome.tabs.query({
+            url: "*://*.dndbeyond.com/*"
+        }, tabs => {
+            tabs.forEach(tab => MessageService.sendToTab(tab.id, action, message));
+        });
     }
 }
 

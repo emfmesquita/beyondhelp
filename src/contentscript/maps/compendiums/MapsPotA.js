@@ -494,11 +494,11 @@ const maps = [
     new MapInfo("NewManagement", "alarums-and-excursions", "06-04.jpg", "5e0d324f-bc46-4f7e-ba4d-b3821ca738c0", [
     ], ["#Setup[data-content-chunk-id='e65a5c50-5f40-414b-a433-1632ea7f6254']", "#KeyDuty", "#SearchfortheKeys",
             "#StrongRoomBurglary", "#GeneralAlarm", "#Conclusion[data-content-chunk-id='108d18ac-0934-49ca-bd66-5e5ea8333fbf']"]),
-    new MapInfo("DellmonRanch", "alarums-and-excursions", "06-05.jpg", "5b430fb5-5a6f-4b83-99ee-30a1220a7e3b", [
-    ], ["#RunningtheSiege", "#Conclusion[data-content-chunk-id='e8c5fe46-85c2-4167-8c8a-4c3e0abce064']"]),
-    new MapInfo("BarrowMound", "alarums-and-excursions", "06-06.jpg", "4930d97b-36bb-423c-a833-223294a202d1", [
-    ], ["#UthgardtVengeance"]),
-    new MapInfo("ShrineoftheTenderOath", "alarums-and-excursions", "06-07.jpg", "e0c22939-2e27-4702-95f8-352f5f1faf3a", [
+    new MapInfo("IceshieldOrcs", "alarums-and-excursions", "06-05.jpg", "5b430fb5-5a6f-4b83-99ee-30a1220a7e3b", [
+    ], ["#DellmonRanch", "#RunningtheSiege", "#Conclusion[data-content-chunk-id='e8c5fe46-85c2-4167-8c8a-4c3e0abce064']"]),
+    new MapInfo("CurseoftheFireWitch", "alarums-and-excursions", "06-06.jpg", "4930d97b-36bb-423c-a833-223294a202d1", [
+    ], ["#BarrowMound", "#UthgardtVengeance"]),
+    new MapInfo("ValeofDancingWaters", "alarums-and-excursions", "06-07.jpg", "e0c22939-2e27-4702-95f8-352f5f1faf3a", [
         new MapAreaInfo("D1Switchbacks", "388,653,423,683"),
         new MapAreaInfo("D2ShrineEntrance", "315,442,350,472"),
         new MapAreaInfo("D3Courtyard", "317,368,352,398"),
@@ -507,7 +507,7 @@ const maps = [
         new MapAreaInfo("D6HallofVows", "314,114,349,144"),
         new MapAreaInfo("D7Temple", "167,646,202,676")
     ], ["#Setup[data-content-chunk-id='a571bbcf-ec5a-4dbe-a401-da15874b6d7d']",
-            "#Conclusion[data-content-chunk-id='b7318e2a-61c0-4ab7-8c8f-7711652380da']"]),
+            "#ShrineoftheTenderOath", "#Conclusion[data-content-chunk-id='b7318e2a-61c0-4ab7-8c8f-7711652380da']"]),
     new MapInfo("DarkDealingsinYartar", "alarums-and-excursions", "06-08.jpg", "d2b46f27-42ce-4fe7-ba66-03e1bd78539a", [
     ], ["#Background[data-content-chunk-id='8d48f244-b2ad-4c6d-a387-c0522423d8b0']",
             "#Setup[data-content-chunk-id='f8889f1f-1d32-49b9-80a9-c2a459a45b11']", "#ArrivalinYartar", "#TheWinkandKiss",

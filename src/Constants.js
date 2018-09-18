@@ -10,7 +10,8 @@ const ddbColors = Object.freeze({
     orange: "#ee8600",
     red: "#bc0f0f",
     green: "#47D18C",
-    darkBlue: "#0f5cbc"
+    darkBlue: "#0f5cbc",
+    purple: "#704cd9"
 });
 
 const configurationId = "bh-config";
@@ -20,7 +21,7 @@ const compendiumPage = "https://www.dndbeyond.com/compendium/";
 
 const mapAreaRect = "rect";
 const mapAreaCircle = "circle";
-const mapAreaRhombus = "rhombus";
+const mapAreaRhombus = "poly";
 
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
@@ -33,6 +34,7 @@ const usernameMessage = "usernamemessage";
 const tooltipErrorMessage = "tooltiperrormessage";
 const commentChangedMessage = "commentchangedmessage";
 const buildTooltipMessage = "buildtooltipmessage";
+const extraMapRefsChangesMessage = "extraMapRefsChangesMessage";
 
 class Constants {
     static get DefaultMonsterColor() {
@@ -112,6 +114,9 @@ class Constants {
     }
     static get BuildTooltipMessage() {
         return buildTooltipMessage;
+    }
+    static get ExtraMapRefsChangesMessage() {
+        return extraMapRefsChangesMessage;
     }
 }
 

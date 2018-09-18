@@ -87,7 +87,7 @@
     // tooltips of map to map references
     if (config.mapRefsCircTooltips) initRefTooltips(".BH-map-ref-circle");
     // tooltips of extra map references
-    if (config.mapRefsRhoTooltips) initRefTooltips(".BH-map-ref-rhombus");
+    if (config.mapRefsRhoTooltips) initRefTooltips(".BH-map-ref-poly");
     // tooltips of header to map links
     if (config.mapLinksTooltips) initRefTooltips(".BH-map-link");
     // tooltips of menu to map links

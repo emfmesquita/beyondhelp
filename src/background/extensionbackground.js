@@ -49,6 +49,14 @@ MessageService.listen(C.UsernameMessage, (message, callback: Function) => {
     return true;
 });
 
+// listen changes of map refs and broadcast back to tabs
+MessageService.listen(C.ExtraMapRefsChangesMessage, (message, callback: Function) => {
+    callback(message.sender);
+    message.originalSender = message.sender;
+    MessageService.broadcastToTabs(C.ExtraMapRefsChangesMessage, message);
+    return true;
+});
+
 // listen the request from client page to build a custom tooltip content
 MessageService.listenFromExternal(C.BuildTooltipMessage, (tooltipInfo, callback) => {
     TooltipsService.buildCustomTooltipContent(tooltipInfo).then(callback).catch(callback);

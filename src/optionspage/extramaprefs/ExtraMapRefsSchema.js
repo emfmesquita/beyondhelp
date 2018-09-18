@@ -56,7 +56,7 @@ const areasSchema = {
 
 const extraAreasSchema = {
     "type": "array",
-    "title": "Extra Info Areas (rhombus)",
+    "title": "Extra Info Areas (diamonds)",
     "items": {
         "type": "object",
         "properties": {
@@ -122,7 +122,7 @@ const mapsSchema = {
                 "type": "string",
                 "title": "Toc Link CSS Selector"
             },
-            "areas": areasSchema,
+            "simpleAreas": areasSchema,
             "extraAreas": extraAreasSchema,
             "mapToMaps": mapToMapsSchema,
             "extraMenuHeaderIds": extraMenuLinksSchema

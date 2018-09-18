@@ -4,13 +4,12 @@ import React, { Component } from 'react';
 import C from "../../Constants";
 import Configuration from "../../data/Configuration";
 import MapAreaInfo from "./MapAreaInfo";
-import MapInfo from "./MapInfo";
 import Opt from "../../Options";
 
 class MapAreas extends Component {
     postProcessArea = (el: HTMLElement, href: string, hash: string) => {
         // to force onclick attribute that stops click propagation that opens the light box
-        el.setAttribute("onclick", "event.preventDefault(); event.stopPropagation();");
+        if (el) el.setAttribute("onclick", "event.preventDefault(); event.stopPropagation();");
     }
 
     toMapRef = ({ button }: MouseEvent, href: string) => {
@@ -23,29 +22,35 @@ class MapAreas extends Component {
     }
 
     renderAreas = () => {
-        const mapInfo: MapInfo = this.props.map;
+        const areas: MapAreaInfo[] = this.props.areas;
         const config: Configuration = this.props.config;
-        if (!mapInfo.areas) return null;
-        return mapInfo.areas.map(area => {
+        if (!areas) return null;
+        return areas.map(area => {
             if (area.shape === C.MapAreaRect && !config[Opt.MapRefsRect]) return;
             if (area.shape === C.MapAreaCircle && !config[Opt.MapRefsCirc]) return;
             if (area.shape === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
             const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
-            const href = `${C.CompendiumPage}${area.page || mapInfo.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}`;
-            const className = `tooltip-hover BH-map-ref BH-map-ref-${area.shape} ${area.highlight ? " BH-area-highlight" : ""}`;
 
-            const maphilightData = {
-                strokeWidth: 2
-            };
+
+            // if area is missing info the tooltip class is not added
+            // and a tooltip is nod added and href is set to void
+            const tooltipable = area.isTooltiplable();
+            const tooltipClass = tooltipable ? `BH-map-ref-${area.shape}` : "";
+            const className = `tooltip-hover BH-map-ref ${tooltipClass}`;
+            const href = tooltipable ? `${C.CompendiumPage}${area.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}` : "javascript:void(0)";
+
+            const maphilightData = {};
             const color = area.color;
             if (color) maphilightData.strokeColor = color.startsWith("#") ? color.substr(1) : color;
 
             return (
                 <area
-                    key={area.coords}
+                    key={area.id || area.coords}
+                    bh-id={area.id}
                     className={className}
                     href={href}
                     shape={shape}
+                    drawable={area.isDrawable.toString()}
                     coords={area.coords}
                     data-maphilight={JSON.stringify(maphilightData)}
                     ref={(el) => this.postProcessArea(el, href)}
@@ -57,7 +62,7 @@ class MapAreas extends Component {
 
     render() {
         return (
-            <map name={this.props.map.mapImageName}>
+            <map name={this.props.mapImageName}>
                 {this.renderAreas()}
             </map>
         );

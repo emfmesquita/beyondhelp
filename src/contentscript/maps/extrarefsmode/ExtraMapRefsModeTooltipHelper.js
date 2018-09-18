@@ -23,11 +23,11 @@ const addQTip = (info: ExtraMapRefsModeTooltipInfo) => {
 
 //#region copy functions
 const copyEntry = (text: string): ClipboardEntry[] => [new ClipboardEntry("text/plain", text)];
-const copyCallBack = (target: JQuery<HTMLElement>): Function => {
-    return () => QTipService.showQTip(target, HTMLUtils.toBold("Copied!"), qTipOptions);
+const copyCallBack = (target: JQuery<HTMLElement>, copiedMsg: string): Function => {
+    return () => QTipService.showQTip(target, HTMLUtils.toBold(copiedMsg), qTipOptions);
 };
-const copy = (target: JQuery<HTMLElement>, text: string) => {
-    ClipboardService.copy(copyEntry(text), copyCallBack(target));
+const copy = (target: JQuery<HTMLElement>, text: string, copiedMsg: string) => {
+    ClipboardService.copy(copyEntry(text), copyCallBack(target, copiedMsg));
 };
 //#endregion
 
@@ -38,7 +38,7 @@ const enter = debounce((info: ExtraMapRefsModeTooltipInfo) => {
     addQTip(info);
 }, 20);
 
-class ExtraMapRefsModeHelper {
+class ExtraMapRefsModeTooltipHelper {
 
     static addCopyTooltip(info: ExtraMapRefsModeTooltipInfo) {
         let originalBoxShadow = "";
@@ -46,14 +46,21 @@ class ExtraMapRefsModeHelper {
         const target = info.target;
 
         // handles copy on click
-        target.mousedown((e) => {
+        target.mousedown(e => {
             if (e.button !== 1 && e.button !== 2) return;
             if (info.middle && e.button === 1) {
-                copy(target, info.middle.text);
+                copy(target, info.middle.text, `${info.middle.label} copied!`);
                 return false;
             }
             if (info.right && e.button === 2) {
-                copy(target, info.right.text);
+                copy(target, info.right.text, `${info.right.label} copied!`);
+                return false;
+            }
+        });
+
+        target.mouseup(e => {
+            if (info.middle && e.button === 1) {
+                e.preventDefault();
                 return false;
             }
         });
@@ -97,4 +104,4 @@ class ExtraMapRefsModeHelper {
     }
 }
 
-export default ExtraMapRefsModeHelper;
+export default ExtraMapRefsModeTooltipHelper;

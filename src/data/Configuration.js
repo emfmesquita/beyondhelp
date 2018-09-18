@@ -13,7 +13,7 @@ class Configuration extends Data {
     }
 
     static initialValue(configKey: string) {
-        return configKey !== Opt.ExtraMapRefsMode;
+        return Opt.ExtraMapRefsDrawingBundle === configKey ? "" : true;
     }
 }
 

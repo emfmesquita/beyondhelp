@@ -26,18 +26,20 @@ class ExtraMapRefsFormArrayTemplate extends Component {
         this.deleteTitle = this.itemTitle ? `Delete ${this.itemTitle}` : "Delete";
     }
 
-
-    renderTab = (children, idx) => {
+    tabTitle = (children, idx) => {
         let title = "";
         const arrayTabProp = this.props.uiSchema["ui:arrayTabProp"];
         if (arrayTabProp) {
             title = data(children, arrayTabProp);
         }
-        if (!title) {
+        if (!title && idx !== undefined) {
             title = this.itemTitle ? `${this.itemTitle} ${idx + 1}` : idx + 1;
         }
+        return title.toString();
+    }
 
-        return <NavItem key={idx} eventKey={idx}>{title}</NavItem>;
+    renderTab = (children, idx, sortedIdx) => {
+        return <NavItem key={idx} eventKey={idx}>{this.tabTitle(children, sortedIdx)}</NavItem>;
     }
 
     renderTabPane = (item, idx) => {
@@ -49,22 +51,49 @@ class ExtraMapRefsFormArrayTemplate extends Component {
         );
     }
 
+    renderAddButton = () => {
+        const uiSchema = this.props.uiSchema;
+        if (uiSchema && uiSchema["ui:arrayAddable"] === false) return null;
+        return <OptionButton className="BH-extramaps-add" icon="plus" onClick={this.props.onAddClick} title={this.newTitle} />;
+    }
+
     renderObjectArray = () => {
+        let items = null;
+
+        if (this.props.uiSchema["ui:arrayTabSorted"]) {
+            const sortedItems = [];
+            this.props.items.forEach(i => sortedItems.push(i));
+
+            sortedItems.sort((a, b) => {
+                const aTitle = this.tabTitle(a.children);
+                const bTitle = this.tabTitle(b.children);
+                if (!aTitle && !bTitle) return 0;
+                if (!aTitle) return 1;
+                if (!bTitle) return -1;
+                return aTitle.localeCompare(bTitle);
+            });
+            items = sortedItems;
+        } else {
+            items = this.props.items;
+        }
+
+        const defaultActiveKey = items.length > 0 ? items[0].index : 0;
+
         return (
-            <Tab.Container className="BH-extramaps-object-array" id={"BH-extramaps-tab-comp-" + id(this)} defaultActiveKey={0}>
+            <Tab.Container className="BH-extramaps-object-array" id={"BH-extramaps-tab-comp-" + id(this)} defaultActiveKey={defaultActiveKey}>
                 <Row className="clearfix">
                     <Col sm={12}>
                         <Nav bsStyle="tabs">
                             <NavItem disabled className="BH-extramaps-title">{this.props.title}</NavItem>
-                            {this.props.items.map((item, idx) => this.renderTab(item.children, idx))}
-                            <OptionButton className="BH-extramaps-add" icon="plus" onClick={this.props.onAddClick} title={this.newTitle} />
+                            {items.map((item, sortedIdx) => this.renderTab(item.children, item.index, sortedIdx))}
+                            {this.renderAddButton()}
                         </Nav>
                     </Col>
                     <Col sm={12}>
                         <Panel>
                             <Panel.Body>
                                 <Tab.Content animation>
-                                    {this.props.items.map(this.renderTabPane)}
+                                    {items.map((item) => this.renderTabPane(item, item.index))}
                                 </Tab.Content>
                             </Panel.Body>
                         </Panel>

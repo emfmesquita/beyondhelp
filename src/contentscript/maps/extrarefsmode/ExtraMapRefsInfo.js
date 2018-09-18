@@ -29,7 +29,7 @@ class ExtraMapRefsInfo extends Component {
         // copies text on click and shows copied tooltip
         const handleClick = (e: MouseEvent) => ClipboardService.copy(
             [new ClipboardEntry("text/plain", row.text)],
-            () => QTipService.showQTip(qTipTarget(e.target), HTMLUtils.toBold("Copied!"), qTipOptions)
+            () => QTipService.showQTip(qTipTarget(e.target), HTMLUtils.toBold(`${row.label} copied!`), qTipOptions)
         );
 
         return (
@@ -41,7 +41,7 @@ class ExtraMapRefsInfo extends Component {
 
     render() {
         const info = this.props.info;
-        if (!info || !Array.isArray(info) || info.length === 0) return null;
+        if (!Array.isArray(info) || info.length === 0) return null;
 
         return (
             <blockquote className="adventure-read-aloud-text BH-extra-map-refs-page-info">

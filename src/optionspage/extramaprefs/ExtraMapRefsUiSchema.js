@@ -26,6 +26,7 @@ const coords = {
 const areasUi = {
     "ui:arrayItemTitle": "Area",
     "ui:arrayTabProp": "coords",
+    "ui:arrayAddable": false,
     "items": {
         "coords": coords,
         "headerId": {
@@ -40,6 +41,7 @@ const areasUi = {
 const extraAreasUi = {
     "ui:arrayItemTitle": "Extra Info Area",
     "ui:arrayTabProp": "coords",
+    "ui:arrayAddable": false,
     "items": {
         "coords": coords,
         "contentId": contentId,
@@ -51,6 +53,8 @@ const extraAreasUi = {
 const mapToMapsUi = {
     "ui:arrayItemTitle": "Map to Map Area",
     "ui:arrayTabProp": "targetImageName",
+    "ui:arrayTabSorted": true,
+    "ui:arrayAddable": false,
     "items": {
         "coords": {
             "ui:placeholder": "Coordinates center point plus the circle radius. E.g 100,40,10"
@@ -67,6 +71,8 @@ const extraMenuLinksUi = {
 
 const mapsUi = {
     "ui:arrayTabProp": "mapImageName",
+    "ui:arrayTabSorted": true,
+    "ui:arrayAddable": false,
     "items": {
         "page": page,
         "mapImageName": {
@@ -84,7 +90,7 @@ const mapsUi = {
         "tocHeaderSelector": {
             "ui:placeholder": "Not required. Overrides 'Toc Link Element Id'."
         },
-        "areas": areasUi,
+        "simpleAreas": areasUi,
         "extraAreas": extraAreasUi,
         "mapToMaps": mapToMapsUi,
         "extraMenuHeaderIds": extraMenuLinksUi
@@ -106,6 +112,8 @@ const extraLinksUi = {
 const uischema = {
     "compendiums": {
         "ui:arrayTabProp": "path",
+        "ui:arrayTabSorted": true,
+        "ui:arrayAddable": false,
         "ui:options": {
             orderable: false
         },
