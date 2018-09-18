@@ -17,6 +17,8 @@ const hasFilters = (): boolean => {
     return Object.keys(query).some(key => key && key.startsWith("filter-") && query[key]);
 };
 
+let firstRender = true;
+
 class CharactersApp extends Component {
     constructor(props) {
         super(props);
@@ -153,10 +155,13 @@ class CharactersApp extends Component {
         return folders.map((folder, idx) => {
             let characters = this.props.allCharacters.filter(character => folder.characterIds.indexOf(character.id) !== -1);
 
-            const hasFilter = hasFilters();
-            if (hasFilter && characters.length === 0) return;
-
-            if (hasFilter) folder.expanded = true;
+            if (firstRender) {
+                const hasFilter = hasFilters();
+                if (hasFilter) {
+                    folder.expanded = (characters.length > 0);
+                }
+                if (idx === folders.length - 1) firstRender = false;
+            }
 
             const up = idx !== 0;
             const down = idx !== folders.length - 1;
