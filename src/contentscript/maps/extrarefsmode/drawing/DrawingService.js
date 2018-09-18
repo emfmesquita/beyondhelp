@@ -108,41 +108,6 @@ const toDrawingAreaColor = (jqArea: JQuery<HTMLElement>) => {
 };
 //#endregion
 
-//#region keyboard
-
-// cancel Drawing
-KeyboardService.down().codes("Escape", "Backspace").noRepeat().handler(cancelDrawing);
-
-// confirm drawing/delete on enter
-KeyboardService.down().keys("Enter").noRepeat().handler(() => confirmDrawing());
-
-const keyboardMoveDeltaChart = {
-    ArrowLeft: { x: -1, y: 0 },
-    ArrowUp: { x: 0, y: -1 },
-    ArrowRight: { x: 1, y: 0 },
-    ArrowDown: { x: 0, y: 1 }
-};
-
-// keyboard move with arrows
-KeyboardService.down().codes("ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown").IF(() => {
-    return currentArea && !dragging && Service.isCommandOn(Command.Move);
-}).throttle(100).handler((e: KeyboardEvent) => {
-    const delta = keyboardMoveDeltaChart[e.code];
-    const multiplier = KeyboardService.isCtrlOn() ? 100 : KeyboardService.isShiftOn() ? 10 : 1;
-    if (!currentArea.coords) currentArea.coords = currentArea.startCoords.clone();
-
-    const newCoords = currentArea.coords.clone();
-    newCoords.translateWithDelta(multiplier * delta.x, multiplier * delta.y);
-
-    const imageCoords = DrawingCoordsService.getImageCoords(currentArea.mapImage);
-    if (newCoords.isInsideRect(imageCoords)) {
-        currentArea.coords = newCoords;
-        redrawArea(currentArea);
-    }
-});
-
-//#endregion
-
 //#region mouse event handlers
 const mouseDown = (e: MouseEvent) => {
     if (!Service.isAnyCommandOn()) return;
@@ -290,6 +255,43 @@ class DrawingService {
 
     static isDrawingEnabled(): boolean {
         return Service.isCommandOn(Command.Rect) || Service.isCommandOn(Command.Rho) || Service.isCommandOn(Command.Circ);
+    }
+
+    static init() {
+        //#region keyboard
+
+        // cancel Drawing
+        KeyboardService.down().codes("Escape", "Backspace").noRepeat().handler(cancelDrawing);
+
+        // confirm drawing/delete on enter
+        KeyboardService.down().keys("Enter").noRepeat().handler(() => confirmDrawing());
+
+        const keyboardMoveDeltaChart = {
+            ArrowLeft: { x: -1, y: 0 },
+            ArrowUp: { x: 0, y: -1 },
+            ArrowRight: { x: 1, y: 0 },
+            ArrowDown: { x: 0, y: 1 }
+        };
+
+        // keyboard move with arrows
+        KeyboardService.down().codes("ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown").IF(() => {
+            return currentArea && !dragging && Service.isCommandOn(Command.Move);
+        }).throttle(100).handler((e: KeyboardEvent) => {
+            const delta = keyboardMoveDeltaChart[e.code];
+            const multiplier = KeyboardService.isCtrlOn() ? 100 : KeyboardService.isShiftOn() ? 10 : 1;
+            if (!currentArea.coords) currentArea.coords = currentArea.startCoords.clone();
+
+            const newCoords = currentArea.coords.clone();
+            newCoords.translateWithDelta(multiplier * delta.x, multiplier * delta.y);
+
+            const imageCoords = DrawingCoordsService.getImageCoords(currentArea.mapImage);
+            if (newCoords.isInsideRect(imageCoords)) {
+                currentArea.coords = newCoords;
+                redrawArea(currentArea);
+            }
+        });
+
+        //#endregion
     }
 
     static initMap(jqImg: JQuery<HTMLElement>) {

@@ -146,6 +146,7 @@ class ExtraMapRefsMode {
 
         // page info
         if (!info.isOnToc) {
+            DrawingService.init();
             renderPageInfo();
             renderMapsInfo();
             renderDrawingToolbar();
