@@ -68,7 +68,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ### Compendium TOC on Side Menu
 - Huge thanks to Dawson Conway (https://github.com/dconman) the author of this feature;
-- This adds the full toc on the side menu for compendiums. Is not enabled by default. To turn it on head to the extension options (the whrench on extension pop up page) and check the "Show table of contents on compendium pages".
+- This adds the full toc on the side menu for compendiums. This is not enabled by default. To turn it on head to the extension options (the wrench on extension pop up page) and check the "Show table of contents on compendium pages".
 
 ### Compendium References
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on:
