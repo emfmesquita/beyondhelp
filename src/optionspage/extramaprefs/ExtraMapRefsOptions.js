@@ -2,6 +2,7 @@ import { FieldGroup, Glyphicon } from "react-bootstrap";
 import React, { Component } from "react";
 
 import BhModal from "../../modals/BhModal";
+import C from "../../Constants";
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import ConfirmDialog from "../../modals/ConfirmDialog";
 import DateFormat from "dateformat";
@@ -9,9 +10,12 @@ import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import ExtraMapRefsErrors from "./ExtraMapRefsErrors";
 import ExtraMapRefsFormArrayTemplate from "./ExtraMapRefsFormArrayTemplate";
 import ExtraMapRefsSchema from "./ExtraMapRefsSchema";
+import ExtraMapRefsStorageService from "../../services/storage/ExtraMapRefsStorageService";
 import ExtraMapRefsUiSchema from "./ExtraMapRefsUiSchema";
 import Form from "react-jsonschema-form";
+import MessageService from "../../services/MessageService";
 import NewExtraMapRefsModal from "./NewExtraMapRefsModal";
+import Opt from "../../Options";
 import OptionButton from "../OptionButton";
 import OptionGroup from "../OptionGroup";
 import OptionsToolbar from "../OptionsToolbar";
@@ -23,80 +27,98 @@ const fromJson = json => JSON.parse(json);
 const toJson = val => JSON.stringify(val, null, 2);
 
 const defaultName = "New Bundle";
-const defaultState = (entries: ExtraMapRefsData[]) => {
+const defaultState = (bundles: ExtraMapRefsData[]) => {
     return {
-        entries,
+        bundles,
         showFailToImportModal: false,
-        toDeleteEntry: null,
-        toExportWithErrorsEntry: null
+        toDeleteBundle: null,
+        toExportWithErrorsBundle: null
     };
+};
+
+const sendChangedMessage = () => {
+    MessageService.send(C.ExtraMapRefsChangesMessage);
 };
 
 class ExtraMapRefsOptions extends Component {
     constructor(props) {
         super(props);
         this.state = defaultState([]);
-
         this.load();
+
+        MessageService.listen(C.ExtraMapRefsChangesMessage, () => {
+            this.load();
+        });
     }
 
     load = () => {
-        return ConfigStorageService.getAllExtraMapRefs().then((entries: ExtraMapRefsData[]) => {
-            entries.forEach(entry => {
-                if (!entry.content.name) entry.content.name = defaultName;
+        return ExtraMapRefsStorageService.getAll().then((bundles: ExtraMapRefsData[]) => {
+            bundles.forEach(bundle => {
+                if (!bundle.content.name) bundle.content.name = defaultName;
             });
-            this.setState(defaultState(entries));
+            this.setState(defaultState(bundles));
         }).catch(error => { throw error; });
     }
 
-    getEntry = (storageId: string): ExtraMapRefsData => {
-        return this.state.entries.find(entry => entry.storageId === storageId);
-    }
-
-    handleFormChange = (entry: ExtraMapRefsData, form) => {
-        entry.content = form.formData;
-        entry.valid = !form.errors || form.errors.length === 0;
-        this.debouncedSave(entry);
+    handleFormChange = (bundle: ExtraMapRefsData, form) => {
+        bundle.content = form.formData;
+        bundle.valid = !form.errors || form.errors.length === 0;
+        this.debouncedSave(bundle);
         this.setState({});
     }
 
-    save = (entry: ExtraMapRefsData) => {
-        return ConfigStorageService.saveExtraMapRefs(entry);
+    save = (bundle: ExtraMapRefsData) => {
+        return ExtraMapRefsStorageService.save(bundle).then(() => {
+            MessageService.send(C.ExtraMapRefsChangesMessage);
+        });
     }
 
-    debouncedSave = debounce((entry: ExtraMapRefsData) => {
-        return this.save(entry);
+    debouncedSave = debounce((bundle: ExtraMapRefsData) => {
+        return this.save(bundle);
     }, 500);
 
-    handleNew = (name: string) => {
-        const newEntry = new ExtraMapRefsData(null, { name: defaultName });
-        this.save(newEntry).then(() => this.load());
+    isDrawing = (bundle: ExtraMapRefsData) => {
+        return bundle.storageId === this.props.config[Opt.ExtraMapRefsDrawingBundle];
     }
 
-    handleDeleteClick = (entry: ExtraMapRefsData) => {
-        this.setState({ toDeleteEntry: entry });
+    buildBundleLabel = (bundle: ExtraMapRefsData) => {
+        const name = (bundle.content.name || defaultName).substr(0, 40);
+        if (!this.isDrawing(bundle)) return name;
+        return `${name} (Drawing)`;
+    }
+
+    handleNew = (name: string) => {
+        const newBundle = new ExtraMapRefsData(null, { name: defaultName });
+        this.save(newBundle).then(() => this.load());
+    }
+
+    handleDeleteClick = (bundle: ExtraMapRefsData) => {
+        this.setState({ toDeleteBundle: bundle });
     }
 
     handleDelete = () => {
-        ConfigStorageService.deleteExtraMapRefs(this.state.toDeleteEntry).then(() => this.load());
+        ExtraMapRefsStorageService.delete(this.state.toDeleteBundle).then(() => {
+            this.props.onDrawingBundleChange("");
+            this.load();
+        });
     }
 
-    handleExportClick = (entry: ExtraMapRefsData) => {
-        if (entry.valid) {
-            this.handleExport(entry);
+    handleExportClick = (bundle: ExtraMapRefsData) => {
+        if (bundle.valid) {
+            this.handleExport(bundle);
         } else {
-            this.setState({ toExportWithErrorsEntry: entry });
+            this.setState({ toExportWithErrorsBundle: bundle });
         }
     }
 
-    handleExport = (entry: ExtraMapRefsData) => {
+    handleExport = (bundle: ExtraMapRefsData) => {
         chrome.downloads.download({
-            url: `data:text/plain,${toJson(entry.content)}`,
-            filename: `${sanitize(entry.content.name)}.json`
+            url: `data:text/plain,${toJson(bundle.content)}`,
+            filename: `${sanitize(bundle.content.name)}.json`
         });
 
         // closes the confirm modal
-        this.setState({ toExportWithErrorsEntry: null });
+        this.setState({ toExportWithErrorsBundle: null });
     }
 
     handleImportClick = () => {
@@ -119,8 +141,8 @@ class ExtraMapRefsOptions extends Component {
                 }
                 if (!content.name || typeof content.name !== "string") content.name = defaultName;
                 if (content.name.length > 40) content.name = content.name.substr(0, 40);
-                const newEntry = new ExtraMapRefsData(null, content);
-                this.save(newEntry).then(() => this.load());
+                const newBundle = new ExtraMapRefsData(null, content);
+                this.save(newBundle).then(() => this.load());
             } catch (e) {
                 console.error(e);
                 this.setState({ showFailToImportModal: true });
@@ -129,27 +151,33 @@ class ExtraMapRefsOptions extends Component {
         reader.readAsText(file);
     }
 
-    renderForm = (entry: ExtraMapRefsData) => {
+    renderDrawingButton = (bundle: ExtraMapRefsData) => {
+        if (this.isDrawing(bundle)) return <OptionButton icon="ok" title="Finish Drawing" onClick={() => this.props.onDrawingBundleChange("")} />;
+        return <OptionButton icon="pencil" title="Start Drawing" onClick={() => this.props.onDrawingBundleChange(bundle.storageId)} />;
+    }
+
+    renderForm = (bundle: ExtraMapRefsData) => {
         return (
             <OptionGroup
-                key={entry.storageId}
-                label={(entry.content.name || defaultName).substr(0, 40)}
-                deletable
+                key={bundle.storageId}
+                label={this.buildBundleLabel(bundle)}
+                startExpanded={this.isDrawing(bundle)}
                 deleteTitle="Delete Extra Map Refs Bundle"
-                onDelete={() => this.handleDeleteClick(entry)}
+                onDelete={() => this.handleDeleteClick(bundle)}
             >
                 <OptionsToolbar>
-                    <OptionButton icon="save" title="Export Map References Bundle" onClick={() => this.handleExportClick(entry)} />
-                    <OptionButton icon="trash" title="Delete Map References Bundle" onClick={() => this.handleDeleteClick(entry)} />
+                    <OptionButton icon="save" title="Export Map References Bundle" onClick={() => this.handleExportClick(bundle)} />
+                    <OptionButton icon="trash" title="Delete Map References Bundle" onClick={() => this.handleDeleteClick(bundle)} />
+                    {this.renderDrawingButton(bundle)}
                 </OptionsToolbar>
                 <Form
                     schema={ExtraMapRefsSchema}
                     uiSchema={ExtraMapRefsUiSchema}
-                    formData={entry.content}
+                    formData={bundle.content}
                     liveValidate
                     showErrorList={false}
                     transformErrors={ExtraMapRefsErrors}
-                    onChange={form => this.handleFormChange(entry, form)}
+                    onChange={form => this.handleFormChange(bundle, form)}
                     ArrayFieldTemplate={ExtraMapRefsFormArrayTemplate}
                 >
                     <div />
@@ -163,20 +191,20 @@ class ExtraMapRefsOptions extends Component {
         return (
             <div>
                 <ConfirmDialog
-                    show={this.state.toDeleteEntry}
+                    show={this.state.toDeleteBundle}
                     message="Are you sure you want to delete this bundle of map references?"
-                    onCancel={() => this.setState({ toDeleteEntry: null })}
+                    onCancel={() => this.setState({ toDeleteBundle: null })}
                     confirmButtonStyle="danger"
                     confirmLabel="Delete"
                     onConfirm={this.handleDelete}
                 />
                 <ConfirmDialog
-                    show={this.state.toExportWithErrorsEntry}
+                    show={this.state.toExportWithErrorsBundle}
                     message="This bundle has errors are you sure you want to export it?"
-                    onCancel={() => this.setState({ toExportWithErrorsEntry: null })}
+                    onCancel={() => this.setState({ toExportWithErrorsBundle: null })}
                     confirmButtonStyle="warning"
                     confirmLabel="Export"
-                    onConfirm={() => this.handleExport(this.state.toExportWithErrorsEntry)}
+                    onConfirm={() => this.handleExport(this.state.toExportWithErrorsBundle)}
                 />
                 <BhModal
                     show={this.state.showFailToImportModal}
@@ -189,7 +217,7 @@ class ExtraMapRefsOptions extends Component {
                     <OptionButton icon="open" title="Import Map References Bundle" onClick={this.handleImportClick} />
                     <input id="BH-extramaps-upload" type="file" accept=".json" ref={(el) => this.uploadInput = el} onChange={this.handleImport} />
                 </OptionsToolbar>
-                {this.state.entries.map(this.renderForm)}
+                {this.state.bundles.map(this.renderForm)}
             </div>
         );
     }

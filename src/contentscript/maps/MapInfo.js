@@ -6,9 +6,17 @@ class MapInfo {
         this.page = page;
         this.mapImageName = mapImageName; // map file name
         this.contentId = contentId; // content id of the paragraph that contains the map, used on the tooltips of links to map
-        this.areas = areas;
+        this.areas = areas || [];
         this.extraMapLinkSelectors = extraMapLinkSelectors;
         this.basePath = "";
+
+        this.notFromCurrentChapter = false;
+        this.preprocessed = false;
+    }
+
+    image(mapImageName: string): MapInfo {
+        this.mapImageName = mapImageName;
+        return this;
     }
 
     chMap(): MapInfo {

@@ -10,7 +10,7 @@ const handleCopy = function (e: ClipboardEvent) {
     if (!entries) return;
 
     const data: DataTransfer = e.clipboardData;
-    if (entries && Array.isArray(entries)) {
+    if (Array.isArray(entries)) {
         entries.forEach(entry => data.setData(entry.format, entry.data));
     }
     entries = null;

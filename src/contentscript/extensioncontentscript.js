@@ -67,6 +67,14 @@ MessageService.listen(C.CommentChangedMessage, () => ConfigStorageService.getCon
     tooltipsInit(config);
 }));
 
+// listen the message of extra map refs changes
+MessageService.listen(C.ExtraMapRefsChangesMessage, (message) => ConfigStorageService.getConfig().then(config => {
+    // checks if was this tab that sent the message
+    if (message.originalSender.tab && message.originalSender.tab.id === window.bhTabId) return;
+
+    if (config[Opt.MapRefs]) MapsService.reload(config);
+}));
+
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
     ContentScriptService.init(config);
@@ -94,8 +102,8 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     // inits map references
     if (config[Opt.MapRefs]) MapsService.init(config);
 
-    // extra map references mode
-    if (config[Opt.ExtraMapRefsMode]) ExtraMapRefsMode.init();
+    // // extra map references mode
+    // if (config[Opt.ExtraMapRefsDrawingBundle]) ExtraMapRefsMode.init();
 
     // inits the refs on compendium pages
     if (config[Opt.RefButtons]) ReferencesService.init();

@@ -5,6 +5,7 @@ class MapRefsPreProcessed extends MapRefs {
         super();
         this.maps = [];
         this.extraMapLinks = [];
+        this.areasByMapImage = {};
         this.path = null;
         this.isOnToc = false;
     }

@@ -6,7 +6,7 @@ const attToRequiredTitle = {
     compendiums: "Compendiums",
     path: "Path",
     maps: "Map",
-    areas: "Area",
+    simpleAreas: "Area",
     extraAreas: "Extra Info Area",
     mapToMaps: "Map to Map Area",
     page: "Page",

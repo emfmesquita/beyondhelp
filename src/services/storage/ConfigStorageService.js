@@ -24,27 +24,6 @@ class ConfigStorageService {
             return Promise.resolve(config);
         });
     }
-
-    /**
-     * Gets or creates the data from extra map refs of options page.
-     */
-    static getAllExtraMapRefs(): Promise<ExtraMapRefsData[]> {
-        return LocalStorageService.getStorageData().then((storageData: StorageData) => {
-            return LocalStorageService.find(storageData, Q.clazz("ExtraMapRefsData"));
-        });
-    }
-
-    /**
-     * Updates the data from extra map refs of options page.
-     * @param {*} content 
-     */
-    static saveExtraMapRefs(extraMapRefs: ExtraMapRefsData): Promise {
-        return LocalStorageService.createData("ExtraMapRefsData", extraMapRefs);
-    }
-
-    static deleteExtraMapRefs(extraMapRefs: ExtraMapRefsData): Promise<ExtraMapRefsData> {
-        return LocalStorageService.deleteData(extraMapRefs);
-    }
 }
 
 export default ConfigStorageService;

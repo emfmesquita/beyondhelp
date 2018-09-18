@@ -7,11 +7,14 @@ import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import ExtraMapRefsOptions from "./extramaprefs/ExtraMapRefsOptions";
 import FieldService from "../services/FieldService";
+import MessageService from '../services/MessageService';
 import Opt from "../Options";
 import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
 import PbpEntriesForm from "./playbypost/PbpEntriesForm";
 import SyncStorageService from "../services/storage/SyncStorageService";
+
+let initialized = false;
 
 class OptionsApp extends Component {
 
@@ -19,7 +22,7 @@ class OptionsApp extends Component {
         super(props);
 
         const initState = {};
-        Opt.AllOptions.forEach(opt => initState[opt] = false);
+        Opt.AllOptions.forEach(opt => initState[opt] = Configuration.initialValue(opt));
         this.state = initState;
 
         this.init();
@@ -29,12 +32,13 @@ class OptionsApp extends Component {
         ConfigStorageService.getConfig().then((config: Configuration) => {
             const newState = {};
             Opt.AllOptions.forEach(opt => newState[opt] = config[opt]);
+            initialized = true;
             this.setState(newState);
         });
     }
 
     updateConfig = () => {
-        ConfigStorageService.getConfig().then((config: Configuration) => {
+        return ConfigStorageService.getConfig().then((config: Configuration) => {
             Opt.AllOptions.forEach(opt => config[opt] = this.state[opt]);
             return SyncStorageService.updateData(config);
         });
@@ -50,6 +54,21 @@ class OptionsApp extends Component {
 
     optionField = (label: string, option: string) => {
         return <CheckBoxField className="BH-option-field" checkText={label} value={this.state[option]} onChange={this.changeOptionHandler(option)} />;
+    }
+
+    handleBundleDrawingChange = (bundleId: string) => {
+        this.setState({ [Opt.ExtraMapRefsDrawingBundle]: bundleId }, () => {
+            this.updateConfig().then(() => MessageService.send(C.ExtraMapRefsChangesMessage));
+        });
+    }
+
+    renderExtraMapRefsOptions = () => {
+        if (!initialized) return null;
+        return (
+            <OptionGroup label="Extra Map References" startExpanded={this.state[Opt.ExtraMapRefsDrawingBundle]}>
+                <ExtraMapRefsOptions config={this.state} onDrawingBundleChange={this.handleBundleDrawingChange} />
+            </OptionGroup>
+        );
     }
 
     render() {
@@ -77,10 +96,7 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
                 </OptionGroup>
-                <OptionGroup label="Extra Map References">
-                    <ExtraMapRefsOptions />
-                    {this.optionField("Enable extra map references mode (with visual helpers on compendium pages).", Opt.ExtraMapRefsMode)}
-                </OptionGroup>
+                {/* {this.renderExtraMapRefsOptions()} */}
                 <OptionGroup label="Monster Buttons">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
