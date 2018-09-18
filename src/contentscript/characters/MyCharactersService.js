@@ -24,10 +24,10 @@ class MyCharactersService {
 
             // adds the container of characters folders on content page
             const jqFoldersContainer = $("<div></div>");
-            $(".ddb-characters-listing-header").after(jqFoldersContainer);
+            $(".ddb-characters-listing-body .listing-header").after(jqFoldersContainer);
 
             // removes the original container of characters from content page
-            $(".ddb-characters-listing-body").detach();
+            $(".ddb-characters-listing-body .listing-body").detach();
 
             // renders the character folder structure on content page
             ReactDOM.render(<CharactersApp allCharacters={characters} owner={username} />, jqFoldersContainer[0]);

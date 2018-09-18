@@ -25,7 +25,7 @@ class CharactersService {
                 character = new CharacterData(id, name, lvl, race, classes, jqcharWrapperEl[0]);
             }
 
-            // workaround for modal links - for some reason the stop to work when the char elements are moved on DOM
+            // workaround for modal links - for some reason they stop to work when the char elements are moved on DOM
             jqcharWrapperEl.find("a.modal-link").attr("onclick", "Cobalt.Forms.handleModalLinks.apply(this, [event])");
 
             characters.push(character);

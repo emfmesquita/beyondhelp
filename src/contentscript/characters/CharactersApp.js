@@ -9,7 +9,13 @@ import CharacterFoldersStorageService from "../../services/storage/CharacterFold
 import CharacterList from "./CharacterList";
 import CharactersService from "./CharactersService";
 import CreateFolderButton from "./CreateFolderButton";
+import LocationService from '../../services/LocationService';
 import ReactDOM from 'react-dom';
+
+const hasFilters = (): boolean => {
+    const query = LocationService.parseQuery();
+    return Object.keys(query).some(key => key && key.startsWith("filter-") && query[key]);
+};
 
 class CharactersApp extends Component {
     constructor(props) {
@@ -146,6 +152,12 @@ class CharactersApp extends Component {
         const folders = this.state.foldersData ? this.state.foldersData.folders : [];
         return folders.map((folder, idx) => {
             let characters = this.props.allCharacters.filter(character => folder.characterIds.indexOf(character.id) !== -1);
+
+            const hasFilter = hasFilters();
+            if (hasFilter && characters.length === 0) return;
+
+            if (hasFilter) folder.expanded = true;
+
             const up = idx !== 0;
             const down = idx !== folders.length - 1;
             return (
