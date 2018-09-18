@@ -184,10 +184,20 @@ class TinyMCETooltipsTab extends Component {
         this.props.onAdd(this.state.toAddContent);
     }
 
+    addLower = () => {
+        this.props.onAdd((this.state.toAddContent || "").toLowerCase());
+    }
+
     addAndClose = () => {
         this.props.onAdd(this.state.toAddContent);
         this.props.onClose();
     }
+
+    addLowerAndClose = () => {
+        this.props.onAdd((this.state.toAddContent || "").toLowerCase());
+        this.props.onClose();
+    }
+
 
     isAddDisabled = () => {
         return !this.state.tooltipType || !this.state.toAddContent;
@@ -260,6 +270,12 @@ class TinyMCETooltipsTab extends Component {
                     </Button>
                     <Button disabled={this.isAddDisabled()} onClick={this.add}>
                         Add
+                    </Button>
+                    <Button disabled={this.isAddDisabled()} onClick={this.addLowerAndClose}>
+                        Add Lower Case and Close
+                    </Button>
+                    <Button disabled={this.isAddDisabled()} onClick={this.addLower}>
+                        Add Lower Case
                     </Button>
                     <Button onClick={this.props.onClose}>
                         Close
