@@ -5,8 +5,9 @@ import MonsterData from "../data/MonsterData";
 /* global chrome */
 
 class NotificationService {
-    static notifyNewMonster(name: string, monster: MonsterData) {
+    static notifyNewMonster(name: string, monster: MonsterData, addNotificationMessage: boolean) {
         MessageService.send(C.AddMonsterMessage, {
+            addNotificationMessage,
             notificationid: monster.storageId,
             notification: {
                 type: "basic",

@@ -97,10 +97,11 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
                 </OptionGroup>
                 {/* {this.renderExtraMapRefsOptions()} */}
-                <OptionGroup label="Monster Buttons">
+                <OptionGroup label="Monsters">
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
                     {this.optionField("Show buttons to add monsters on homebrew pages.", Opt.AddMonsterOnHomebrewList)}
+                    {this.optionField("Notify after a monster is added.", Opt.AddMonsterNotification)}
                 </OptionGroup>
                 <OptionGroup label="Tooltips">
                     {this.optionField("Enable Homebrew Tooltips (options on editor, style and error handling).", Opt.HomebrewTooltips)}

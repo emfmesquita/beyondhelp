@@ -39,7 +39,9 @@ chrome.webRequest.onCompleted.addListener((details) => details.tabId >= 0 && Mes
 
 // listen when a monster is added from AddMonsterButton, adds a notification
 MessageService.listen(C.AddMonsterMessage, (message) => {
-    NotificationService.createNotification(message.notificationid, message.notification);
+    if (message.addNotificationMessage) {
+        NotificationService.createNotification(message.notificationid, message.notification);
+    }
     BadgeService.updateBadgeCount();
 });
 
