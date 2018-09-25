@@ -1,8 +1,9 @@
 import MonsterContentData from "./MonsterContentData";
 
 class MonsterParseData {
-    constructor(insertFunction: string, target: JQuery<HTMLElement>, monsterData: MonsterContentData) {
-        this.insert = target[insertFunction].bind(target);
+    constructor(insertButtonFunction: string, statBlock: JQuery<HTMLElement>, monsterData: MonsterContentData) {
+        this.statBlock = statBlock;
+        this.insertButton = statBlock[insertButtonFunction].bind(statBlock);
         this.monsterData = monsterData;
     }
 }

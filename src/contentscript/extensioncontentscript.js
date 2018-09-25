@@ -1,17 +1,16 @@
 import "./extensioncontentstyle.scss";
 
 import $ from "jquery";
-import AddMonsterButton from './monsters/AddMonsterButton';
 import C from "../Constants";
 import CampaignCharactersService from "./characters/CampaignCharactersService";
 import ConfigStorageService from "../services/storage/ConfigStorageService";
 import Configuration from "../data/Configuration";
 import ContentScriptService from "./ContentScriptService";
+import ExtraMapRefsMode from "./maps/extrarefsmode/ExtraMapRefsMode";
 import FavIconService from "./favicon/FavIconService";
 import MapsService from "./maps/MapsService";
 import MessageService from "../services/MessageService";
-import MonsterParseData from "./monsters/MonsterParseData";
-import MonsterParseService from "./monsters/MonsterParseService";
+import MonstersService from "./monsters/MonstersService";
 import MyCharactersService from "./characters/MyCharactersService";
 import Opt from "../Options";
 import PageScriptService from "../services/PageScriptService";
@@ -23,13 +22,6 @@ import TOCService from "./tableofcontents/TOCService";
 import TableRollService from "./tableroll/TableRollService";
 import TinyMCEService from "./tinymce/TinyMCEService";
 import TooltipsService from "./tooltips/TooltipsService";
-import ExtraMapRefsMode from "./maps/extrarefsmode/ExtraMapRefsMode";
-
-const createButton = function (config: Configuration, id: string, name: string, hp: string) {
-    const buttonSpan = document.createElement("span");
-    ReactDOM.render(<AddMonsterButton monsterdata={{ id, name, hp }} config={config} />, buttonSpan);
-    return buttonSpan;
-};
 
 const tooltipsInit = function (config: Configuration) {
     // workaround for homebrew spell tooltips that sever removes classes
@@ -45,14 +37,8 @@ const tablesInit = function (config: Configuration) {
 };
 
 const init = function (config: Configuration) {
-    // render the add monster buttons
-    MonsterParseService.parseMonsters(config).forEach(data => {
-        const buttonsDiv = document.createElement("div");
-        const monster = data.monsterData;
-        buttonsDiv.appendChild(createButton(config, monster.id, monster.name, monster.hp));
-        buttonsDiv.appendChild(createButton(config, monster.id, monster.name, monster.diceHp));
-        data.insert(buttonsDiv);
-    });
+    // render the add monster buttons and cr indicators
+    MonstersService.init(config);
 
     tablesInit(config);
     tooltipsInit(config);

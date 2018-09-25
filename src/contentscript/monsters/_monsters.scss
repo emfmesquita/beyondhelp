@@ -1,6 +1,7 @@
 @media print {
     // hides add button from printing
-    .BH-Monster-button {
+    .BH-Monster-button,
+    .BH-Monster-cr-indicator {
         display: none !important;
     }
 }
@@ -26,6 +27,44 @@
                 -webkit-transform: translateY(1px);
                 transform: translateY(1px)
             }
+        }
+    }
+    .BH-Monster-cr-indicator {
+        float: right;
+        position: absolute;
+        top: -30px;
+        right: -44px;
+        color: #822000;
+        .BH-Monster-cr {
+            float: right;
+            font-size: 36px;
+            position: absolute;
+            min-width: 58px;
+            text-align: center;
+            top: 0px;
+            font-family: MrsEavesSmallCaps, Roboto, Helvetica, sans-serif;
+        }
+        .BH-Monster-cr-border {
+            background: #fff;
+            padding: 26px;
+            border-style: solid;
+            border-radius: 34px;
+            border-color: #b4996e;
+            border-width: 2pt;
+        }
+        .BH-Monster-cr-label {
+            background: #fff;
+            float: right;
+            min-width: 57px;
+            border-style: solid;
+            border-radius: 4px;
+            position: absolute;
+            bottom: -7px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            border-width: 1pt;
+            border-color: #b4996e;
         }
     }
 }
