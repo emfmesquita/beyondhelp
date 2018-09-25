@@ -16,7 +16,7 @@ const isOnMonsterDetail = function (path: string) {
     return path.startsWith("/monsters/");
 };
 
-const parseList = function (isHomebrew): MonsterParseData[] {
+const parseList = function (isHomebrew: boolean, addButton: boolean): MonsterParseData[] {
     const parseDataArray = [];
     $(".more-info-monster:not(.bh-processed)").find(".mon-stat-block").each((idx, el) => {
         // gathers monster info from page
@@ -35,7 +35,11 @@ const parseList = function (isHomebrew): MonsterParseData[] {
         const diceHp = jqHpAttribute.find(".mon-stat-block__attribute-data-extra").text().trim();
         const hp = jqHpAttribute.find(".mon-stat-block__attribute-data-value").text().trim();
 
-        const monsterData = new MonsterContentData(id, name, hp, diceHp);
+        const crLabel = moreInfoDiv.find(".mon-stat-block__tidbits  .mon-stat-block__tidbit-label:contains('Challenge')");
+        const crText = crLabel.closest(".mon-stat-block__tidbit").find(".mon-stat-block__tidbit-data").text().trim();
+        const cr = crText.split(" ")[0];
+
+        const monsterData = new MonsterContentData(id, name, hp, diceHp, cr, addButton);
 
         // target
         const target = $(el);
@@ -45,7 +49,7 @@ const parseList = function (isHomebrew): MonsterParseData[] {
     return parseDataArray;
 };
 
-const parseDetail = function (): MonsterParseData[] {
+const parseDetail = function (addButton: boolean): MonsterParseData[] {
     // to not process the same monster twice
     if ($(".mon-stat-block.bh-processed").length > 0) return [];
     $(".mon-stat-block").addClass("bh-processed");
@@ -55,11 +59,14 @@ const parseDetail = function (): MonsterParseData[] {
     const name = $(".mon-stat-block__name-link").text().trim();
 
     const jqHpAttribute = $(".mon-stat-block__attributes .mon-stat-block__attribute:nth-child(2)");
-
     const diceHp = jqHpAttribute.find(".mon-stat-block__attribute-data-extra").text().trim();
     const hp = jqHpAttribute.find(".mon-stat-block__attribute-data-value").text().trim();
 
-    return [new MonsterParseData("before", $(".mon-stat-block"), new MonsterContentData(id, name, hp, diceHp))];
+    const crLabel = $(".mon-stat-block__tidbits  .mon-stat-block__tidbit-label:contains('Challenge')");
+    const crText = crLabel.closest(".mon-stat-block__tidbit").find(".mon-stat-block__tidbit-data").text().trim();
+    const cr = crText.split(" ")[0];
+
+    return [new MonsterParseData("before", $(".mon-stat-block"), new MonsterContentData(id, name, hp, diceHp, cr, addButton))];
 };
 
 class MonsterParseService {
@@ -68,16 +75,16 @@ class MonsterParseService {
         const isMonsterList = isOnMonsterList(path);
         const isHomebrew = isOnHomebrew(path);
 
-        if (isMonsterList && config[Opt.AddMonsterOnList]) {
-            return parseList(isHomebrew);
+        if (isMonsterList) {
+            return parseList(isHomebrew, config[Opt.AddMonsterOnList]);
         }
 
-        if (isHomebrew && config[Opt.AddMonsterOnHomebrewList]) {
-            return parseList(isHomebrew);
+        if (isHomebrew) {
+            return parseList(isHomebrew, config[Opt.AddMonsterOnHomebrewList]);
         }
 
-        if (isOnMonsterDetail(path) && config[Opt.AddMonsterOnDetail]) {
-            return parseDetail();
+        if (isOnMonsterDetail(path)) {
+            return parseDetail(config[Opt.AddMonsterOnDetail]);
         }
 
         return [];

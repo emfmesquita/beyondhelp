@@ -101,6 +101,7 @@ class OptionsApp extends Component {
                     {this.optionField("Show buttons to add monsters on monsters listing pages.", Opt.AddMonsterOnList)}
                     {this.optionField("Show buttons to add monsters on monsters details pages.", Opt.AddMonsterOnDetail)}
                     {this.optionField("Show buttons to add monsters on homebrew pages.", Opt.AddMonsterOnHomebrewList)}
+                    {this.optionField("Add a challenge rate indicator to monsters stat blocks.", Opt.MonsterCRIndicator)}
                     {this.optionField("Notify after a monster is added.", Opt.AddMonsterNotification)}
                 </OptionGroup>
                 <OptionGroup label="Tooltips">

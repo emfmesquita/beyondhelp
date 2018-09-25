@@ -2,6 +2,7 @@ const addmonsteronlist = "addmonsteronlist";
 const addmonsteronhlist = "addmonsteronhlist";
 const addmonsterondetail = "addmonsterondetail";
 const addmonsternotification = "addmonsternotification";
+const monstercrindicator = "monstercrindicator";
 const tableroll = "tableroll";
 const charfavicon = "charfavicon";
 const mycharacterfolders = "mycharacterfolders";
@@ -39,6 +40,7 @@ const allOptions = [
     addmonsteronhlist,
     addmonsterondetail,
     addmonsternotification,
+    monstercrindicator,
     tableroll,
     charfavicon,
     mycharacterfolders,
@@ -83,6 +85,9 @@ class Options {
     }
     static get AddMonsterNotification(): string {
         return addmonsternotification;
+    }
+    static get MonsterCRIndicator(): string {
+        return monstercrindicator;
     }
     static get TableRolls(): string {
         return tableroll;
