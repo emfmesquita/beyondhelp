@@ -4,6 +4,12 @@ import MonsterData from "../data/MonsterData";
 
 /* global chrome */
 
+const clearAllNotifications = (notifications) => {
+    Object.keys(notifications).forEach((id) => {
+        if (id && id.startsWith("bh-")) chrome.notifications.clear(id, () => { });
+    });
+};
+
 class NotificationService {
     static notifyNewMonster(name: string, monster: MonsterData, addNotificationMessage: boolean) {
         MessageService.send(C.AddMonsterMessage, {
@@ -11,7 +17,7 @@ class NotificationService {
             notificationid: monster.storageId,
             notification: {
                 type: "basic",
-                iconUrl: "icon-grey-128.png",
+                iconUrl: "icon-128.png",
                 title: "Beyond Help",
                 message: `${name} #${monster.number} added with ${monster.hp}HP`
             }
@@ -20,22 +26,14 @@ class NotificationService {
 
     static createNotification(newNotificationId: string, newNotification) {
         chrome.notifications.getAll((notifications) => {
-            const notificationIds = Object.keys(notifications);
-            if (notificationIds.length >= 3) {
-                notificationIds.pop();
-                notificationIds.pop();
-                notificationIds.forEach(id => chrome.notifications.clear(id, () => { }));
-            }
+            clearAllNotifications(notifications);
+            newNotification.silent = true;
             chrome.notifications.create(newNotificationId, newNotification);
         });
     }
 
     static clearAll() {
-        chrome.notifications.getAll((notifications) => {
-            Object.keys(notifications).forEach((id) => {
-                if (id && id.startsWith("bh-")) chrome.notifications.clear(id, () => { });
-            });
-        });
+        chrome.notifications.getAll(clearAllNotifications);
     }
 }
 
