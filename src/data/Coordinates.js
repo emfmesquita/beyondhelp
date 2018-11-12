@@ -1,3 +1,5 @@
+const middle = (coord1: number, coord2: number) => Math.floor((coord1 + coord2) / 2);
+
 class Point {
     constructor(x: number, y: number) {
         this.x = x;
@@ -13,6 +15,7 @@ class Point {
 class Coordinates {
     constructor(x1: number, y1: number) {
         this.coords = [];
+        this.rectBoundsCache = null;
         if (x1 !== undefined) this.add(x1, y1);
     }
 
@@ -42,6 +45,20 @@ class Coordinates {
         return this.coords[n - 1].y;
     }
 
+    rectBounds() {
+        if (this.rectBoundsCache) return this.rectBoundsCache;
+
+        const p1 = { x: this.x(1), y: this.y(1) };
+        const p2 = { x: this.x(2), y: this.y(2) };
+        this.rectBoundsCache = {
+            lX: p1.x < p2.x ? p1.x : p2.x,
+            hX: p1.x < p2.x ? p2.x : p1.x,
+            lY: p1.y < p2.y ? p1.y : p2.y,
+            hY: p1.y < p2.y ? p2.y : p1.y
+        };
+        return this.rectBoundsCache;
+    }
+
     translateWithDelta(deltaX: number, deltaY: number): Coordinates {
         this.coords.forEach(point => {
             if (!point) return;
@@ -59,16 +76,12 @@ class Coordinates {
 
     isInsideRect(rect: Coordinates): boolean {
         let inside = true;
-
-        const p1 = { x: rect.x(1), y: rect.y(1) };
-        const p2 = { x: rect.x(2), y: rect.y(2) };
+        const bounds = rect.rectBounds();
 
         this.coords.forEach(point => {
             if (!inside) return false;
-            if (point.x < p1.x && point.x < p2.x ||
-                point.x > p1.x && point.x > p2.x ||
-                point.y < p1.y && point.y < p2.y ||
-                point.y > p1.y && point.y > p2.y) inside = false;
+            if (point.x < bounds.lX || point.x > bounds.hX ||
+                point.y < bounds.lY || point.y > bounds.hY) inside = false;
         });
 
         if (!inside || this.r === undefined) return inside;
@@ -78,12 +91,42 @@ class Coordinates {
         const higherX = thisP1.x + this.r;
         const lowerY = thisP1.y - this.r;
         const higherY = thisP1.y + this.r;
-        if (lowerX < p1.x && lowerX < p2.x ||
-            higherX > p1.x && higherX > p2.x ||
-            lowerY < p1.y && lowerY < p2.y ||
-            higherY > p1.y && higherY > p2.y) inside = false;
+        if (lowerX < bounds.lX || higherX > bounds.hX ||
+            lowerY < bounds.lY || higherY > bounds.hY) inside = false;
 
         return inside;
+    }
+
+    translateInsideRect(rect: Coordinates) {
+        const bounds = rect.rectBounds();
+
+        let lowerX = 0;
+        let higherX = 0;
+        let lowerY = 0;
+        let higherY = 0;
+        if (this.r === undefined) {
+            const xs = this.coords.map(point => point.x);
+            const ys = this.coords.map(point => point.y);
+            lowerX = Math.min(...xs);
+            higherX = Math.max(...xs);
+            lowerY = Math.min(...ys);
+            higherY = Math.max(...ys);
+        } else {
+            const thisP1 = this.coords[0];
+            lowerX = thisP1.x - this.r;
+            higherX = thisP1.x + this.r;
+            lowerY = thisP1.y - this.r;
+            higherY = thisP1.y + this.r;
+        }
+
+        let deltaX = 0;
+        let deltaY = 0;
+        if (lowerX < bounds.lX) deltaX = bounds.lX - lowerX;
+        if (higherX > bounds.hX) deltaX = bounds.hX - higherX;
+        if (lowerY < bounds.lY) deltaY = bounds.lY - lowerY;
+        if (higherY > bounds.hY) deltaY = bounds.hY - higherY;
+
+        this.translateWithDelta(deltaX, deltaY);
     }
 
     clone(): Coordinates {
@@ -107,13 +150,13 @@ class Coordinates {
         return Math.abs(this.y(2) - this.y(1));
     }
 
-    safeRect() {
+    safeRect(min: 5) {
         const x1 = this.x(1);
         const x2 = this.x(2);
         const y1 = this.y(1);
         const y2 = this.y(2);
-        if (x1 === x2) this.x(2, x1 + 1);
-        if (y1 === y2) this.y(2, y1 + 1);
+        if (Math.abs(x2 - x1) < min) this.x(2, x1 + (x2 > x1 ? min : - min));
+        if (Math.abs(y2 - y1) < min) this.y(2, y1 + (y2 > y1 ? min : - min));
     }
 
     rectCenter(): Coordinates {
@@ -137,6 +180,32 @@ class Coordinates {
             else result.radius(toNumber(i));
         }
         return result;
+    }
+
+    static rect(x1: number, y1: number, x2: number, y2: number): Coordinates {
+        return new Coordinates(x1, y1).add(x2, y2);
+    }
+
+    static rectToRho(x1: number, y1: number, x2: number, y2: number): Coordinates {
+        const middleX = middle(x1, x2);
+        const middleY = middle(y1, y2);
+        return new Coordinates(middleX, y1).add(x2, middleY).add(middleX, y2).add(x1, middleY);
+    }
+
+    static rhoToRect(rho: Coordinates): Coordinates {
+        return new Coordinates(rho.x(4), rho.y(1)).add(rho.x(2), rho.y(3));
+    }
+
+    static strRectToRho(rectCoords: string): Coordinates {
+        const coords = Coordinates.parse(rectCoords);
+        return Coordinates.rectToRho(coords.x(1), coords.y(1), coords.x(2), coords.y(2));
+    }
+
+    static rectToCir(x1: number, y1: number, x2: number, y2: number): Coordinates {
+        const x = Math.abs(x2 - x1);
+        const y = Math.abs(y2 - y1);
+        const r = Math.round(Math.sqrt(x * x + y * y));
+        return new Coordinates(x1, y1).radius(r || 1);
     }
 }
 

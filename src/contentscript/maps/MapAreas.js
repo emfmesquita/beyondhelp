@@ -31,7 +31,6 @@ class MapAreas extends Component {
             if (area.shape === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
             const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
 
-
             // if area is missing info the tooltip class is not added
             // and a tooltip is nod added and href is set to void
             const tooltipable = area.isTooltiplable();
@@ -39,9 +38,11 @@ class MapAreas extends Component {
             const className = `tooltip-hover BH-map-ref ${tooltipClass}`;
             const href = tooltipable ? `${C.CompendiumPage}${area.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}` : "javascript:void(0)";
 
-            const maphilightData = {};
-            const color = area.color;
-            if (color) maphilightData.strokeColor = color.startsWith("#") ? color.substr(1) : color;
+            const paperData = {};
+
+            const safeColor = (color: string) => color.startsWith("#") ? color : "#" + color;
+            if (area.color) paperData.color = safeColor(area.color);
+            if (area.highlightColor) paperData.highlightColor = safeColor(area.highlightColor);
 
             return (
                 <area
@@ -52,7 +53,7 @@ class MapAreas extends Component {
                     shape={shape}
                     drawable={area.isDrawable.toString()}
                     coords={area.coords}
-                    data-maphilight={JSON.stringify(maphilightData)}
+                    bh-paper-data={JSON.stringify(paperData)}
                     ref={(el) => this.postProcessArea(el, href)}
                     onMouseDown={(e) => this.toMapRef(e, href)}
                 />

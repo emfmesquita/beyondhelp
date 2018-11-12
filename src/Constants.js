@@ -14,6 +14,10 @@ const ddbColors = Object.freeze({
     purple: "#704cd9"
 });
 
+const extraColors = Object.freeze({
+    lightOrange: "#ffc478"
+});
+
 const configurationId = "bh-config";
 const pbpRefsId = "pbp-thread";
 
@@ -58,6 +62,9 @@ class Constants {
 
     static get DDBColors() {
         return ddbColors;
+    }
+    static get ExtraColors() {
+        return extraColors;
     }
 
     static get ConfigurationId() {

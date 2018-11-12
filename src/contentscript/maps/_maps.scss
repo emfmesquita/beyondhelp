@@ -69,6 +69,29 @@ $marginRight) {
         @include tocMapLink(4px,
         0px);
     }
+    .BH-map-container {
+        position: relative;
+        background-size: contain;
+        img {
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute !important;
+            top: 0px;
+            left: 0px;
+            padding: 0px !important;
+            border: 0px !important;
+            opacity: 0;
+        }
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute !important;
+            top: 0px;
+            left: 0px;
+            padding: 0px !important;
+            border: 0px !important;
+        }
+    }
 }
 
 @media print {

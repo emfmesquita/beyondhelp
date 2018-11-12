@@ -18,7 +18,6 @@ import MapLinksInfo from "./MapLinksInfo";
 import MapMenuLink from "./MapMenuLink";
 import MapRefs from "./MapRefs";
 import MapRefsPreProcessed from "./MapRefsPreProcessed";
-import MaphilightService from "../../services/MaphilightService";
 import MapsCoS from "./compendiums/MapsCoS";
 import MapsHotDQ from "./compendiums/MapsHotDQ";
 import MapsLMoP from "./compendiums/MapsLMoP";
@@ -30,6 +29,7 @@ import MapsTftYP from "./compendiums/MapsTftYP";
 import MapsToA from "./compendiums/MapsToA";
 import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
+import PaperMapService from "../../services/PaperMapService";
 import ReactDOM from 'react-dom';
 import ReferencesUtils from "../../services/ReferencesUtils";
 import TooltipsService from "../tooltips/TooltipsService";
@@ -185,8 +185,8 @@ const renderMapAreas = (jqMapImg: JQuery<HTMLElement>, mapImageName: string, are
     containers.push(areasContainer);
 
     E.tryCatch(() => {
-        const setupMaphilight = () => MaphilightService.setup(jqMapImg, !!drawingBundleId);
-        ReactDOM.render(<MapAreas mapImageName={mapImageName} areas={areas} config={config} />, areasContainer, setupMaphilight);
+        const setupPaper = () => PaperMapService.setupMap(jqMapImg, !!drawingBundleId);
+        ReactDOM.render(<MapAreas mapImageName={mapImageName} areas={areas} config={config} />, areasContainer, setupPaper);
     }, `Failed to render areas from map "${mapImageName}".`);
 };
 
@@ -220,7 +220,7 @@ const load = (config: Configuration): Promise => {
         // renders map areas and map links
         processMapRefs(MapsPreProcessService.preProcess(), config);
 
-        // if drawing on a bundle render maphilight for images not used
+        // if drawing on a bundle render paperjs for images not used
         // to allow drawing on them
         if (!!drawingBundleId) {
             $(".primary-content .ddb-lightbox-outer img").each((idx, img) => {
@@ -244,7 +244,7 @@ const unload = () => {
 
     // unload the maphiligts
     $(".primary-content .ddb-lightbox-outer img").each((idx, img) => {
-        MaphilightService.unload($(img));
+        PaperMapService.unload($(img));
     });
 
     // resets the preprocessing

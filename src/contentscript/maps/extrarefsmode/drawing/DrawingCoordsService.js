@@ -1,7 +1,6 @@
 import $ from "jquery";
 import C from "../../../../Constants";
 import Coordinates from "../../../../data/Coordinates";
-import MaphilightService from "../../../../services/MaphilightService";
 import DrawingAreaInfo from "./DrawingAreaInfo";
 
 const jqWindow = $(window);
@@ -13,9 +12,9 @@ const coordsSpan = () => {
 };
 
 const coordsFunc = {
-    [C.MapAreaRect]: MaphilightService.rect,
-    [C.MapAreaRhombus]: MaphilightService.rectToRho,
-    [C.MapAreaCircle]: MaphilightService.rectToCir
+    [C.MapAreaRect]: Coordinates.rect,
+    [C.MapAreaRhombus]: Coordinates.rectToRho,
+    [C.MapAreaCircle]: Coordinates.rectToCir
 };
 
 const roundMinDelta = 5;
@@ -26,7 +25,7 @@ const getMapImage = (e: MouseEvent) => {
 
 const toSaveCoords = (coords: Coordinates, shape: string): Coordinates => {
     if (shape === C.MapAreaCircle || shape === C.MapAreaRect) return coords.clone();
-    return MaphilightService.rhoToRect(coords);
+    return Coordinates.rhoToRect(coords);
 };
 
 class DrawingCoordsService {
@@ -67,7 +66,7 @@ class DrawingCoordsService {
 
     static toSaveCoords(coords: Coordinates, shape: string): Coordinates {
         if (shape === C.MapAreaCircle || shape === C.MapAreaRect) return coords.clone();
-        return MaphilightService.rhoToRect(coords);
+        return Coordinates.rhoToRect(coords);
     }
 
     static setToolbarCoords(text: string) {

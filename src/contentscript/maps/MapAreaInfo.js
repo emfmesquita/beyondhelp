@@ -1,5 +1,4 @@
 import C from "../../Constants";
-import MaphilightService from "../../services/MaphilightService";
 import Coordinates from "../../data/Coordinates";
 
 class MapAreaInfo {
@@ -10,6 +9,7 @@ class MapAreaInfo {
         this.headerId = headerId || "";
         this.coords = coords;
         this.color = C.DDBColors.red;
+        this.highlightColor = null;
         this.page = page;
         this.contentId = contentId;
         this.contentOnly = false;
@@ -35,25 +35,26 @@ class MapAreaInfo {
     }
 
     rect(x1: number, y1: number, x2: number, y2: number): MapAreaInfo {
-        this.coords = MaphilightService.rect(x1, y1, x2, y2).toString();
+        this.coords = Coordinates.rect(x1, y1, x2, y2).toString();
         this.shape = C.MapAreaRect;
         return this;
     }
 
     rho(x1: number, y1: number, x2: number, y2: number): MapAreaInfo {
-        this.coords = MaphilightService.rectToRho(x1, y1, x2, y2).toString();
+        this.coords = Coordinates.rectToRho(x1, y1, x2, y2).toString();
         this.shape = C.MapAreaRhombus;
         return this;
     }
 
     rhoStr(coords: string): MapAreaInfo {
-        this.coords = MaphilightService.strRectToRho(coords).toString();
+        this.coords = Coordinates.strRectToRho(coords).toString();
         this.shape = C.MapAreaRhombus;
         return this;
     }
 
-    chroma(color: string): MapAreaInfo {
+    chroma(color: string, highlightColor: string): MapAreaInfo {
         this.color = color;
+        this.highlightColor = highlightColor;
         return this;
     }
 

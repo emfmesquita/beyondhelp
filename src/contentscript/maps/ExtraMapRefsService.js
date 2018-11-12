@@ -12,6 +12,7 @@ import Opt from "../../Options";
 
 const defaultColor = C.DDBColors.red;
 const drawableColor = C.DDBColors.green;
+const drawableHighlightColor = C.ExtraColors.lightOrange;
 
 const fourCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+,[0-9 ]+/;
 const threeCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+/;
@@ -23,7 +24,7 @@ const fromExtraLink = (extraLink, compendium, bundleName: string) => `from "${ex
 const isDrawing = (bundle: ExtraMapRefsData, config) => bundle.storageId === config[Opt.ExtraMapRefsDrawingBundle];
 
 const setDrawable = (drawable: boolean, area: MapAreaInfo) => {
-    if (drawable) area.drawable().chroma(drawableColor);
+    if (drawable) area.drawable().chroma(drawableColor, drawableHighlightColor);
 };
 
 const processCompendiumMap = (bundle, compendium, map, config) => {

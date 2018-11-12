@@ -68,6 +68,12 @@ class ExtraMapRefsModeTooltipHelper {
         // removes menu on right click
         if (info.right) target.contextmenu(() => false);
 
+        // remove open new tab on middle click
+        if (info.middle) {
+            target[0].addEventListener("auxclick", e => {
+                if (e.button === 1) e.preventDefault();
+            });
+        }
 
         // now the logic that handles the highlight on mouse enter/leave
 

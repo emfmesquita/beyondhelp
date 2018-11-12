@@ -104,10 +104,11 @@ class ExtraMapRefsStorageService {
             if (oldArea) {
                 oldArea.coords = saveCoords;
             } else {
-                areas.push({
+                const newArea = {
                     id: areaInfo.id,
                     coords: saveCoords
-                });
+                };
+                areas.push(newArea);
             }
 
             return ExtraMapRefsStorageService.save(bundle);
