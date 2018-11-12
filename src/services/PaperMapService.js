@@ -32,7 +32,7 @@ const drawArea = (paper: PaperScope, jqArea: JQuery<HTMLElement>) => {
     const props = PaperMapService.getAreaData(jqArea) || {};
     if (props.paperId) {
         const item = paper.project.activeLayer.children.find(child => child.id === props.paperId);
-        item.remove();
+        if (item) item.remove();
     }
 
     let path = null;

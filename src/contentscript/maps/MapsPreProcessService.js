@@ -48,7 +48,11 @@ const preProcessLinks = (map: MapInfo, basePath: string): MapLinksInfo => {
 
     const selectors: Set<string> = new Set(); // set to avoind repetitions
     if (Array.isArray(map.areas)) {
-        map.areas.forEach(area => area.addBackLink && selectors.add("#" + area.headerId));
+        map.areas.forEach(area => {
+            if (area.addBackLinkIfSamePage && (!area.page || area.page === (map.basePath + map.page))) {
+                selectors.add("#" + area.headerId);
+            }
+        });
     }
     if (map.menuHeaderId) selectors.add("#" + map.menuHeaderId);
     if (Array.isArray(map.extraMenuHeaderIds)) {

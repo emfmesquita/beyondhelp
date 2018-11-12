@@ -4,7 +4,8 @@ import Coordinates from "../../data/Coordinates";
 class MapAreaInfo {
     constructor(headerId: string, coords: string, page: string, contentId: string) {
         // should add a link to the map on the header with headerId
-        this.addBackLink = headerId && !page && !contentId;
+        // if the area has the same page (or no page) as the map
+        this.addBackLinkIfSamePage = headerId && !contentId;
 
         this.headerId = headerId || "";
         this.coords = coords;

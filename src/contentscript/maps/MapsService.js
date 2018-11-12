@@ -31,8 +31,8 @@ import Opt from "../../Options";
 import PageScriptService from "../../services/PageScriptService";
 import PaperMapService from "../../services/PaperMapService";
 import ReactDOM from 'react-dom';
-import ReferencesUtils from "../../services/ReferencesUtils";
 import TooltipsService from "../tooltips/TooltipsService";
+import HeaderToolbarService from "../../services/HeaderToolbarService";
 
 const fromMapMsg = (map) => map ? `for map "${map.mapImageName}" from compendium "${map.basePath}"` : "";
 let drawingBundleId = null;
@@ -145,15 +145,13 @@ const processMapLinks = function (mapLinks: MapLinksInfo, map: MapInfo) {
     if (!mapLinks || !mapLinks.targetSelectors) return;
 
     mapLinks.targetSelectors.forEach(selector => {
-        const jqTarget = $(selector);
-        if (jqTarget.length === 0) {
+        const jqHeader = $(selector);
+        if (jqHeader.length === 0) {
             E.log(`Header with selector "${selector}" not found ${fromMapMsg(map)}.`);
             return;
         }
 
-        const jqLinkContainer = $("<span class='BH-map-link-container'></span>");
-        jqTarget.append(jqLinkContainer);
-        const linkContainer = jqLinkContainer[0];
+        const linkContainer = HeaderToolbarService.mapLinkButtonContainer(jqHeader);
         containers.push(linkContainer);
 
         E.tryCatch(() => {
@@ -237,7 +235,11 @@ const unload = () => {
     // unmounts all map areas and map links
     containers.forEach(container => {
         ReactDOM.unmountComponentAtNode(container);
-        container.parentNode.removeChild(container);
+        // removes container if it is not map link container
+        // (map link containers are handled by HeaderToolbarService)
+        if (!container.classList.contains("BH-map-link-container")) {
+            container.parentNode.removeChild(container);
+        }
     });
     containers.length = 0;
     mapLinksColision = new MapLinksColisionHandler();

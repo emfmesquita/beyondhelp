@@ -2,7 +2,7 @@ import $ from "jquery";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReferenceApp from "./ReferenceApp";
-import ReferencesUtils from "../../services/ReferencesUtils";
+import HeaderToolbarService from "../../services/HeaderToolbarService";
 
 const headersSelector = ".primary-content h1[id], .primary-content h2[id], .primary-content h3[id], .primary-content h4[id], .primary-content h5[id]";
 
@@ -11,12 +11,10 @@ const setupHeaders = function (headers: HTMLElement[], index: Number) {
     const header = headers[index];
 
     const jqHeader = $(header);
-    const jqContainer = $("<span id='BH-ref-button-container'/>");
-    jqHeader.append(jqContainer);
+    const label = HeaderToolbarService.headerLabel(jqHeader);
+    const container = HeaderToolbarService.referenceButtonContainer(jqHeader);
 
-    const label = ReferencesUtils.headerLabel(jqHeader);
-
-    ReactDOM.render(<ReferenceApp label={label} refId={header.id} />, jqContainer[0]);
+    ReactDOM.render(<ReferenceApp label={label} refId={header.id} />, container);
     if (index >= headers.length - 1) return;
     setTimeout(() => setupHeaders(headers, index + 1), 0);
 };
