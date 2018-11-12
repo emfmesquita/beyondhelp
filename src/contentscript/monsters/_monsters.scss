@@ -1,3 +1,46 @@
+@mixin cr($container-top, $container-right, $cr-font-size, $cr-min-w, $border-padding, $label-bottom, $label-font-size) {
+    // @mixin cr() {
+    .BH-Monster-cr-indicator {
+        float: right;
+        position: absolute;
+        top: $container-top;
+        right: $container-right;
+        color: #822000;
+        .BH-Monster-cr {
+            float: right;
+            font-size: $cr-font-size;
+            position: absolute;
+            min-width: $cr-min-w;
+            text-align: center;
+            top: 0px;
+            font-family: MrsEavesSmallCaps, Roboto, Helvetica, sans-serif;
+        }
+        .BH-Monster-cr-border {
+            background: #fff;
+            padding: $border-padding;
+            border-style: solid;
+            border-radius: 34px;
+            border-color: #b4996e;
+            border-width: 2pt;
+        }
+        .BH-Monster-cr-label {
+            background: #fff;
+            float: right;
+            min-width: $cr-min-w;
+            border-style: solid;
+            border-radius: 4px;
+            position: absolute;
+            bottom: $label-bottom;
+            text-align: center;
+            font-size: $label-font-size;
+            font-weight: bold;
+            border-width: 1pt;
+            border-color: #b4996e;
+            padding-top: 3px;
+        }
+    }
+}
+
 @media print {
     // hides add button from printing
     .BH-Monster-button,
@@ -29,42 +72,31 @@
             }
         }
     }
-    .BH-Monster-cr-indicator {
-        float: right;
-        position: absolute;
-        top: -30px;
-        right: -44px;
-        color: #822000;
-        .BH-Monster-cr {
-            float: right;
-            font-size: 36px;
-            position: absolute;
-            min-width: 58px;
-            text-align: center;
-            top: 0px;
-            font-family: MrsEavesSmallCaps, Roboto, Helvetica, sans-serif;
-        }
-        .BH-Monster-cr-border {
-            background: #fff;
-            padding: 26px;
-            border-style: solid;
-            border-radius: 34px;
-            border-color: #b4996e;
-            border-width: 2pt;
-        }
-        .BH-Monster-cr-label {
-            background: #fff;
-            float: right;
-            min-width: 57px;
-            border-style: solid;
-            border-radius: 4px;
-            position: absolute;
-            bottom: -7px;
-            text-align: center;
-            font-size: 13px;
-            font-weight: bold;
-            border-width: 1pt;
-            border-color: #b4996e;
-        }
-    }
+    @include cr(-26px,
+    -34px,
+    32px,
+    52px,
+    23px,
+    -7px,
+    12px);
+}
+
+@media screen and (max-width: 1024px) {
+    @include cr(-20px,
+    -22px,
+    24px,
+    38px,
+    17px,
+    -8px,
+    10px);
+}
+
+@media screen and (max-width: 768px) {
+    @include cr(-16px,
+    -16px,
+    20px,
+    30px,
+    13px,
+    -8px,
+    8px);
 }
