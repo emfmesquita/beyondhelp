@@ -96,6 +96,8 @@ srcTitleMap.set("mtof", "Mordenkainen's Tome of Foes");
 srcTitleMap.set("ddia-mord", "Rrakkma");
 srcTitleMap.set("wgte", "Wayfinder's Guide to Eberron");
 srcTitleMap.set("wdh", "Waterdeep Dragon Heist");
+srcTitleMap.set("wdotmm", "Waterdeep Dungeon of the Mad Mage");
+srcTitleMap.set("ggtr", "Guildmasters' Guide to Ravnica");
 
 const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass }) {
     return new Promise((resolve, reject) => {

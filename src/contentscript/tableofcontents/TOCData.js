@@ -18,6 +18,7 @@ import ttp from './data/rules/ttp.json';
 import vgtm from './data/rules/vgtm.json';
 import wgte from './data/rules/wgte.json';
 import wdh from './data/adventures/wdh.json';
+import wdotmm from './data/adventures/wdotmm.json';
 import xgte from './data/rules/xgte.json';
 
 const data = {
@@ -32,7 +33,8 @@ const data = {
         'skt': skt,
         'tftyp': tftyp,
         'toa': toa,
-        'wdh': wdh
+        'wdh': wdh,
+        'wdotmm': wdotmm
     },
     rules: {
         'basic-rules': basicRules,
