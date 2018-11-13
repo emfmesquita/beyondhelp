@@ -58,7 +58,10 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
     - Tooltip links on compendium menus to the maps on the current page;
     - Tooltip links on adventures table of contents to the adventure maps;
     - Tooltip links on the areas description header back to the corresponding map.
-
+- Custom map references:
+    - Drawing mode that enables a toolbar to draw areas (with features listed above) on any map of any compendium of DDB;
+    - Any area is also editable by a form on options page;
+    - Custom map areas are organized on bundles that can be exported, shared and imported by the comunity.
 
 ### Play-by-post Notes
 - Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
@@ -78,6 +81,10 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ### Roll on Tables
 - Enables click to roll on most of the tables of the compendium and description pages.
+
+### Monster CR
+- Badge on monster list and monster detail pages that highlights monster CR;
+- Thanks to Tony (https://github.com/zeg-io) for the layout and idea.
 
 ### Character Page Favicon
 - Changes the favicon of character page and character builder page to the character avatar.
@@ -127,6 +134,10 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ![Link back to Map](http://i.imgur.com/BKoUP53.png)
 
+![Drawing Mode](http://i.imgur.com/EmXhCTU.png)
+
+![Extra map refs Options](http://i.imgur.com/z07wN7M.png)
+
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
 
@@ -135,3 +146,8 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ### Roll on Tables
 ![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
+
+### Monster CR
+![Monster CR List](http://i.imgur.com/afsSEMT.png)
+
+![Monster CR Detail](http://i.imgur.com/e28QPgQ.png)
