@@ -61,7 +61,7 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 - Custom map references:
     - Drawing mode that enables a toolbar to draw areas (with features listed above) on any map of any compendium of DDB;
     - Any area is also editable by a form on options page;
-    - Custom map areas are organized on bundles that can be exported, shared and imported by the comunity.
+    - Custom map areas are organized on bundles that can be exported, shared and imported by the community.
 
 ### Play-by-post Notes
 - Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
