@@ -1,18 +1,15 @@
+import C from "../../Constants";
+import Configuration from "../../data/Configuration";
+import DrawingColorService from "./extrarefsmode/drawing/DrawingColorService";
 import E from "../../services/ErrorService";
 import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import LocationService from "../../services/LocationService";
 import MapAreaInfo from "./MapAreaInfo";
 import MapInfo from "./MapInfo";
+import MapLinksInfo from "./MapLinksInfo";
 import MapRefs from "./MapRefs";
 import MapToMapAreaInfo from "./MapToMapAreaInfo";
-import C from "../../Constants";
-import MapLinksInfo from "./MapLinksInfo";
-import Configuration from "../../data/Configuration";
 import Opt from "../../Options";
-
-const defaultColor = C.DDBColors.red;
-const drawableColor = C.DDBColors.green;
-const drawableHighlightColor = C.ExtraColors.lightOrange;
 
 const fourCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+,[0-9 ]+/;
 const threeCoordsRegex = /[0-9 ]+,[0-9 ]+,[0-9 ]+/;
@@ -23,8 +20,9 @@ const fromMap = (map, compendium, bundleName: string) => `from "${map.mapImageNa
 const fromExtraLink = (extraLink, compendium, bundleName: string) => `from "${extraLink.selector}" ${fromCompendium(compendium, bundleName)}`;
 const isDrawing = (bundle: ExtraMapRefsData, config) => bundle.storageId === config[Opt.ExtraMapRefsDrawingBundle];
 
-const setDrawable = (drawable: boolean, area: MapAreaInfo) => {
-    if (drawable) area.drawable().chroma(drawableColor, drawableHighlightColor);
+const setColor = (info: MapAreaInfo, bundle: ExtraMapRefsData, compendium, map, area, drawable: boolean) => {
+    const color = DrawingColorService.calcColor(bundle, compendium, map, area, drawable);
+    info.chroma(color, drawable ? DrawingColorService.toHighlightColor(color) : undefined);
 };
 
 const processCompendiumMap = (bundle, compendium, map, config) => {
@@ -68,8 +66,8 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
             }
 
             E.tryCatch(() => {
-                const info = new MapAreaInfo(area.headerId, area.coords, area.page).content(area.contentId, area.untilContentId).chroma(defaultColor).uid(area.id);
-                setDrawable(drawable, info);
+                const info = new MapAreaInfo(area.headerId, area.coords, area.page).drawable(drawable).content(area.contentId, area.untilContentId).uid(area.id);
+                setColor(info, bundle, compendium, map, area, drawable);
                 mapAreas.push(info);
             }, `Failed to process area "${area.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
@@ -94,8 +92,8 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
             }
 
             E.tryCatch(() => {
-                const info = new MapAreaInfo().rhoStr(extraArea.coords).fromPage(extraArea.page).content(extraArea.contentId, extraArea.untilContentId).chroma(defaultColor).uid(extraArea.id);
-                setDrawable(drawable, info);
+                const info = new MapAreaInfo().rhoStr(extraArea.coords).drawable(drawable).fromPage(extraArea.page).content(extraArea.contentId, extraArea.untilContentId).uid(extraArea.id);
+                setColor(info, bundle, compendium, map, area, drawable);
                 mapAreas.push(info);
             }, `Failed to process extra area "${extraArea.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
@@ -120,8 +118,8 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
             }
 
             E.tryCatch(() => {
-                const info = new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).chroma(defaultColor).uid(mapToMap.id);
-                setDrawable(drawable, info);
+                const info = new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).drawable(drawable).uid(mapToMap.id);
+                setColor(info, bundle, compendium, map, area, drawable);
                 mapAreas.push(info);
             }, `Failed to process map to map area "${mapToMap.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });

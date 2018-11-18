@@ -19,7 +19,7 @@ class MapAreaInfo {
         this.isDrawable = false;
     }
 
-    uid(id: string): DrawingAreaInfo {
+    uid(id: string): MapAreaInfo {
         this.id = id;
         return this;
     }
@@ -59,8 +59,8 @@ class MapAreaInfo {
         return this;
     }
 
-    drawable(): MapAreaInfo {
-        this.isDrawable = true;
+    drawable(isDrawable: boolean): MapAreaInfo {
+        this.isDrawable = isDrawable;
         return this;
     }
 

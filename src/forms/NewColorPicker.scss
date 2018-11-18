@@ -1,0 +1,45 @@
+.Color-ncolorpicker-container {
+    >div {
+        height: 32px;
+        width: calc(100% - 24px);
+        border: 1px solid #ccc;
+        display: inline-block;
+    }
+    .Color-ncolorpicker-field {
+        padding: 8px;
+        background: #fff;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        div {
+            height: 100%;
+            border-radius: 2px;
+        }
+        &.Color-ncolorpicker-field-has-color {
+            div {
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    .Color-ncolorpicker {
+        width: 100%;
+        position: absolute;
+        padding-right: 24px;
+        margin-top: 12px;
+        left: 0px;
+        z-index: 2;
+        .rc-color-picker-panel,
+        .rc-color-picker-panel-board-hsv {
+            width: 100%;
+        }
+        .rc-color-picker-panel-params {
+            margin-left: calc(50% - 107px);
+        }
+    }
+    .Menu-button {
+        padding-left: 6px;
+        position: relative;
+        top: -8px;
+    }
+}

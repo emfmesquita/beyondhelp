@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 import BhModal from "../../modals/BhModal";
 import C from "../../Constants";
+import ColorPickerWidget from "./ColorPickerWidget";
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import ConfirmDialog from "../../modals/ConfirmDialog";
 import DateFormat from "dateformat";
@@ -19,9 +20,10 @@ import Opt from "../../Options";
 import OptionButton from "../OptionButton";
 import OptionGroup from "../OptionGroup";
 import OptionsToolbar from "../OptionsToolbar";
-import type StorageData from "../../data/StorageData";
 import { debounce } from "lodash";
 import sanitize from "sanitize-filename";
+
+import type StorageData from "../../data/StorageData";
 
 const fromJson = json => JSON.parse(json);
 const toJson = val => JSON.stringify(val, null, 2);
@@ -98,7 +100,13 @@ class ExtraMapRefsOptions extends Component {
 
     handleDelete = () => {
         ExtraMapRefsStorageService.delete(this.state.toDeleteBundle).then(() => {
-            this.props.onDrawingBundleChange("");
+            // checks if the deleted bundle was the draing one
+            // if so the new drawing bundle id goes to empty
+            // if not it continues the same
+            // no matter what the change goes up to reload compendium pages (soft or hard depending the case)
+            const drawingBundleId = this.props.config[Opt.ExtraMapRefsDrawingBundle];
+            const newDrawingBundleId = this.isDrawing(this.state.toDeleteBundle) ? "" : drawingBundleId;
+            this.props.onDrawingBundleChange(newDrawingBundleId);
             this.load();
         });
     }
@@ -179,6 +187,9 @@ class ExtraMapRefsOptions extends Component {
                     transformErrors={ExtraMapRefsErrors}
                     onChange={form => this.handleFormChange(bundle, form)}
                     ArrayFieldTemplate={ExtraMapRefsFormArrayTemplate}
+                    widgets={{
+                        colorPicker: ColorPickerWidget
+                    }}
                 >
                     <div />
                 </Form>

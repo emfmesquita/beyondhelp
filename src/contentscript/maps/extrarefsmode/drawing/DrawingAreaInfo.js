@@ -2,6 +2,9 @@ import Coordinates from "../../../../data/Coordinates";
 import UidService from "../../../../services/UidService";
 import $ from "jquery";
 
+// uses the same attr used to map areas to the image
+const getMapName = (jqMapImg: JQuery<HTMLElement>) => jqMapImg.attr("usemap").substr(1);
+
 class DrawingAreaInfo {
     constructor(area: JQuery<HTMLElement>, shape: string, startCoords: Coordinates) {
         this.id = UidService.id();
@@ -9,6 +12,7 @@ class DrawingAreaInfo {
 
         this.mapImage = area.closest("a").find("img");
         this.mapImageCoords = new Coordinates(0, 0).add(this.mapImage.width(), this.mapImage.height());
+        this.mapName = getMapName(this.mapImage);
 
         this.shape = shape;
 

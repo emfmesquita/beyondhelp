@@ -4,6 +4,7 @@ import $ from "jquery";
 import DrawingService from "./drawing/DrawingService";
 import DrawingToolbar from "./drawing/DrawingToolbar";
 import ExtraMapRefsInfo from "./ExtraMapRefsInfo";
+import ExtraMapRefsPathService from "./ExtraMapRefsPathService";
 import ExtraMapRefsModeTooltipHelper from "./ExtraMapRefsModeTooltipHelper";
 import ExtraMapRefsModeTooltipInfo from "./ExtraMapRefsModeTooltipInfo";
 import LocationService from "../../../services/LocationService";
@@ -11,37 +12,9 @@ import MapsService from "../MapsService";
 import React from "react";
 import ReactDOM from "react-dom";
 
-let copyTarget = null;
-
 const ignoreClass = "BH-ignore-tooltip";
 
-// gets the nth position of a character on a string
-const getPosition = (string: string, subString: string, index: number) => {
-    return string.split(subString, index).join(subString).length;
-};
-
-const getPageInfo = (pathname: string) => {
-    const fullPath = pathname.substr(12);
-    const pathEnd = getPosition(fullPath, "/", 2);
-    const builtInfo = {
-        path: fullPath.substr(0, pathEnd + 1),
-        page: fullPath.substr(pathEnd + 1)
-    };
-    builtInfo.isOnToc = builtInfo.page === "";
-    return builtInfo;
-};
-
-const info = getPageInfo(window.location.pathname);
-
-const pageInfoCache = {};
-const getPageInfoCached = (url: string) => {
-    const cached = pageInfoCache[url];
-    if (cached) return cached;
-
-    const builtInfo = getPageInfo(new URL(url).pathname);
-    pageInfoCache[url] = builtInfo;
-    return builtInfo;
-};
+const info = ExtraMapRefsPathService.currentPageInfo();
 
 const renderPageInfo = () => {
     const pageInfoDiv = document.createElement("div");
@@ -97,7 +70,7 @@ const addTooltipsOnMenuHeaders = () => {
         const headerId = href.substr(hashIndex + 1);
         const tooltipInfo = new ExtraMapRefsModeTooltipInfo(jqMenuLink).rightInfo("Menu Element Id", headerId);
 
-        const page = hashIndex === 0 ? info.page : getPageInfoCached(href.substr(0, hashIndex)).page;
+        const page = hashIndex === 0 ? info.page : ExtraMapRefsPathService.pageInfo(href.substr(0, hashIndex)).page;
         tooltipInfo.middleInfo("Page", page);
 
         ExtraMapRefsModeTooltipHelper.addCopyTooltip(tooltipInfo);

@@ -3,6 +3,7 @@ import C from "../../../../Constants";
 import Command from "./Command";
 import Coordinates from "../../../../data/Coordinates";
 import DrawingAreaInfo from "./DrawingAreaInfo";
+import DrawingColorService from "./DrawingColorService";
 import DrawingCoordsService from "./DrawingCoordsService";
 import DrawingStorageService from "./DrawingStorageService";
 import KeyboardService from "../../../../services/KeyboardService";
@@ -116,11 +117,13 @@ const cancelDrawing = () => {
     if (!currentArea) return;
 
     if (Service.isDrawingEnabled()) {
+        // was drawing a new area, on cancel just removes it
         PaperMapService.removeArea(currentArea.mapImage, currentArea.area);
         currentArea.area.detach();
     } else {
+        // returs the old coords
         currentArea.coords = currentArea.startCoords;
-        toDrawingBundleColor(currentArea.area);
+        toDrawingColor(currentArea, false);
         redrawArea(currentArea);
     }
     currentArea = null;
@@ -134,7 +137,7 @@ const confirmDrawing = () => {
         DrawingStorageService.deleteArea(currentArea);
         PaperMapService.removeArea(currentArea.mapImage, currentArea.area);
     } else {
-        toDrawingBundleColor(currentArea.area);
+        toDrawingColor(currentArea, false);
         DrawingStorageService.saveArea(currentArea);
         PaperMapService.redrawArea(currentArea.mapImage, currentArea.area);
     }
@@ -142,14 +145,12 @@ const confirmDrawing = () => {
     currentArea = null;
 };
 
-const toDrawingBundleColor = (jqArea: JQuery<HTMLElement>) => {
-    PaperMapService.setAreaData(jqArea, "color", C.DDBColors.green);
-    PaperMapService.setAreaData(jqArea, "highlightColor", C.ExtraColors.lightOrange);
-};
-
-const toDrawingAreaColor = (jqArea: JQuery<HTMLElement>) => {
-    PaperMapService.setAreaData(jqArea, "color", C.DDBColors.orange);
-    PaperMapService.setAreaData(jqArea, "highlightColor", undefined);
+const toDrawingColor = (info: DrawingAreaInfo, highlighted: boolean) => {
+    const color = DrawingColorService.getColor(info);
+    const highlightColor = DrawingColorService.toHighlightColor(color);
+    PaperMapService.setAreaData(info.area, "color", highlighted ? highlightColor : color);
+    // if already highlighed no need to highlight on mouse over
+    PaperMapService.setAreaData(info.area, "highlightColor", highlighted ? undefined : highlightColor);
 };
 //#endregion
 
@@ -181,7 +182,7 @@ const mouseDown = (e: MouseEvent) => {
         jqMapAnchor.append(area);
         currentArea = new DrawingAreaInfo(area, shape, mouseCoords);
         area.attr("bh-id", currentArea.id);
-        toDrawingAreaColor(area);
+        toDrawingColor(currentArea, true);
         return;
     }
 
@@ -190,12 +191,12 @@ const mouseDown = (e: MouseEvent) => {
 
     if (Service.isCommandOn(Command.Move) || Service.isCommandOn(Command.Resize) || Service.isCommandOn(Command.Delete)) {
         const area = $(e.target);
-        toDrawingAreaColor(area);
 
         const shape = area.attr("shape");
         const uid = area.attr("bh-id");
         const startCoords = Coordinates.parse(area.attr("coords"));
         currentArea = new DrawingAreaInfo(area, shape, startCoords).uid(uid);
+        toDrawingColor(currentArea, true);
 
         if (Service.isCommandOn(Command.Move)) currentArea.moving(mouseCoords);
         if (Service.isCommandOn(Command.Resize) && shape === C.MapAreaRhombus) {

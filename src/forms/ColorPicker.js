@@ -16,10 +16,15 @@ class ColorPicker extends Component {
         };
     }
 
+    renderLabel = () => {
+        if (this.props.label) return <FieldLabel label={this.props.label} />;
+        return null;
+    }
+
     render() {
         return (
             <span>
-                <FieldLabel label={this.props.label} />
+                {this.renderLabel()}
                 <InputGroup bsSize="small" style={{ marginBottom: this.props.showPicker ? "300px" : "0px" }}>
                     <div className="Color-picker-container">
                         <div title="Click to Toggle Color Picker">

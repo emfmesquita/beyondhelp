@@ -4,10 +4,12 @@ import React, { Component } from 'react';
 import $ from "jquery";
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import Configuration from "../../data/Configuration";
+import DrawingColorService from "./extrarefsmode/drawing/DrawingColorService";
 import E from "../../services/ErrorService";
 import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import ExtraMapRefsService from "./ExtraMapRefsService";
 import ExtraMapRefsStorageService from "../../services/storage/ExtraMapRefsStorageService";
+import HeaderToolbarService from "../../services/HeaderToolbarService";
 import LocationService from "../../services/LocationService";
 import MapAreaInfo from "./MapAreaInfo";
 import MapAreas from "./MapAreas";
@@ -32,7 +34,6 @@ import PageScriptService from "../../services/PageScriptService";
 import PaperMapService from "../../services/PaperMapService";
 import ReactDOM from 'react-dom';
 import TooltipsService from "../tooltips/TooltipsService";
-import HeaderToolbarService from "../../services/HeaderToolbarService";
 
 const fromMapMsg = (map) => map ? `for map "${map.mapImageName}" from compendium "${map.basePath}"` : "";
 let drawingBundleId = null;
@@ -218,9 +219,12 @@ const load = (config: Configuration): Promise => {
         // renders map areas and map links
         processMapRefs(MapsPreProcessService.preProcess(), config);
 
-        // if drawing on a bundle render paperjs for images not used
-        // to allow drawing on them
         if (!!drawingBundleId) {
+            // if drawing calculates the drawing color for maps of current page
+            DrawingColorService.init(config, bundles);
+
+            // if drawing on a bundle render paperjs for images not used
+            // to allow drawing on them
             $(".primary-content .ddb-lightbox-outer img").each((idx, img) => {
                 const jqImg = $(img);
                 const imageName = MapsService.getMapImageName(jqImg);

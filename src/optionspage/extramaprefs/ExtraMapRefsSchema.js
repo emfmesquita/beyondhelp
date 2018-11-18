@@ -26,6 +26,12 @@ const targetImageName = {
     "pattern": ExtraMapRefsPatterns.imageName
 };
 
+const areaColor = {
+    "title": "Area Color",
+    "type": "string",
+    "default": ""
+};
+
 const coords = (pattern) => {
     return {
         "type": "string",
@@ -48,7 +54,8 @@ const areasSchema = {
             },
             "page": page,
             "contentId": contentId("From Content Id"),
-            "untilContentId": untilContentId
+            "untilContentId": untilContentId,
+            "color": areaColor
         },
         "required": ["coords"]
     }
@@ -63,7 +70,8 @@ const extraAreasSchema = {
             "coords": coords(ExtraMapRefsPatterns.fourCoords),
             "contentId": contentId("From Content Id"),
             "untilContentId": untilContentId,
-            "page": page
+            "page": page,
+            "color": areaColor
         },
         "required": ["coords", "contentId"]
     }
@@ -76,7 +84,8 @@ const mapToMapsSchema = {
         "type": "object",
         "properties": {
             "coords": coords(ExtraMapRefsPatterns.threeCoords),
-            "targetImageName": targetImageName
+            "targetImageName": targetImageName,
+            "color": areaColor
         },
         "required": ["coords", "targetImageName"]
     }
@@ -122,6 +131,11 @@ const mapsSchema = {
                 "type": "string",
                 "title": "Toc Link CSS Selector"
             },
+            "color": {
+                "title": "Map Global Color",
+                "type": "string",
+                "default": ""
+            },
             "simpleAreas": areasSchema,
             "extraAreas": extraAreasSchema,
             "mapToMaps": mapToMapsSchema,
@@ -156,6 +170,11 @@ const schema = {
             "type": "string",
             "maxLength": 40
         },
+        "color": {
+            "title": "Bundle Global Color",
+            "type": "string",
+            "default": ""
+        },
         "compendiums": {
             "title": "Compendiums",
             "type": "array",
@@ -166,6 +185,11 @@ const schema = {
                         "type": "string",
                         "title": "Path",
                         "pattern": ExtraMapRefsPatterns.path
+                    },
+                    "color": {
+                        "title": "Compendium Global Color",
+                        "type": "string",
+                        "default": ""
                     },
                     "maps": mapsSchema,
                     "extraLinks": extraLinksSchema

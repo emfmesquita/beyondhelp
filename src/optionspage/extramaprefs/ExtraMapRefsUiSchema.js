@@ -23,6 +23,10 @@ const coords = {
     "ui:placeholder": "Coordinates of top left and bottom right points. E.g 100,40,110,50"
 };
 
+const areaColor = {
+    "ui:widget": "colorPicker"
+};
+
 const areasUi = {
     "ui:arrayItemTitle": "Area",
     "ui:arrayTabProp": "coords",
@@ -34,7 +38,8 @@ const areasUi = {
         },
         "page": areaPage,
         "contentId": contentId,
-        "untilContentId": untilContentId
+        "untilContentId": untilContentId,
+        "color": areaColor
     }
 };
 
@@ -46,7 +51,8 @@ const extraAreasUi = {
         "coords": coords,
         "contentId": contentId,
         "untilContentId": untilContentId,
-        "page": areaPage
+        "page": areaPage,
+        "color": areaColor
     }
 };
 
@@ -59,7 +65,8 @@ const mapToMapsUi = {
         "coords": {
             "ui:placeholder": "Coordinates center point plus the circle radius. E.g 100,40,10"
         },
-        "targetImageName": targetImageName
+        "targetImageName": targetImageName,
+        "color": areaColor
     }
 };
 
@@ -89,6 +96,9 @@ const mapsUi = {
         },
         "tocHeaderSelector": {
             "ui:placeholder": "Not required. Overrides 'Toc Link Element Id'."
+        },
+        "color": {
+            "ui:widget": "colorPicker"
         },
         "simpleAreas": areasUi,
         "extraAreas": extraAreasUi,
@@ -121,9 +131,15 @@ const uischema = {
             "path": {
                 "ui:placeholder": "Url path after /compendium. E.g. adventures/toa/"
             },
+            "color": {
+                "ui:widget": "colorPicker"
+            },
             "maps": mapsUi,
             "extraLinks": extraLinksUi
         }
+    },
+    "color": {
+        "ui:widget": "colorPicker"
     }
 };
 
