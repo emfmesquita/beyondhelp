@@ -95,6 +95,15 @@ class OptionsApp extends Component {
                     {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks)}
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
+                    <OptionGroup label="Default Map References">
+                        {this.optionField("Show default map references from: Lost Mine of Phandelver.", Opt.BhMapRefsLMoP)}
+                        {this.optionField("Show default map references from: Hoard of the Dragon Queen.", Opt.BhMapRefsHotDQ)}
+                        {this.optionField("Show default map references from: Rise of Tiamat.", Opt.BhMapRefsRoT)}
+                        {this.optionField("Show default map references from: Princes of the Apocalypse.", Opt.BhMapRefsPotA)}
+                        {this.optionField("Show default map references from: Out of the Abyss.", Opt.BhMapRefsOotA)}
+                        {this.optionField("Show default map references from: Tales from the Yawning Portal.", Opt.BhMapRefsTftYP)}
+                        {this.optionField("Show default map references from: Tomb of Annihilation.", Opt.BhMapRefsToA)}
+                    </OptionGroup>
                 </OptionGroup>
                 {this.renderExtraMapRefsOptions()}
                 <OptionGroup label="Monsters">

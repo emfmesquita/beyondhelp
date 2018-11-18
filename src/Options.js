@@ -32,6 +32,13 @@ const mapMenuLinksTooltips = "mapMenuLinksTooltips";
 const mapMenuLinks = "mapMenuLinks";
 const mapTocLinksTooltips = "mapTocLinksTooltips";
 const mapTocLinks = "mapTocLinks";
+const bhMapRefsLMoP = "bhMapRefsLMoP";
+const bhMapRefsHotDQ = "bhMapRefsHotDQ";
+const bhMapRefsRoT = "bhMapRefsRoT";
+const bhMapRefsPotA = "bhMapRefsPotA";
+const bhMapRefsOotA = "bhMapRefsOotA";
+const bhMapRefsTftYP = "bhMapRefsTftYP";
+const bhMapRefsToA = "bhMapRefsToA";
 const extraMapRefsDrawingBundle = "extraMapRefsDrawingBundle";
 //#endregion
 
@@ -69,6 +76,13 @@ const allOptions = [
     mapMenuLinks,
     mapTocLinksTooltips,
     mapTocLinks,
+    bhMapRefsLMoP,
+    bhMapRefsHotDQ,
+    bhMapRefsRoT,
+    bhMapRefsPotA,
+    bhMapRefsOotA,
+    bhMapRefsTftYP,
+    bhMapRefsToA,
     extraMapRefsDrawingBundle
     //#endregion
 ];
@@ -170,6 +184,27 @@ class Options {
     }
     static get MapTocLinks(): string {
         return mapTocLinks;
+    }
+    static get BhMapRefsLMoP(): string {
+        return bhMapRefsLMoP;
+    }
+    static get BhMapRefsHotDQ(): string {
+        return bhMapRefsHotDQ;
+    }
+    static get BhMapRefsRoT(): string {
+        return bhMapRefsRoT;
+    }
+    static get BhMapRefsPotA(): string {
+        return bhMapRefsPotA;
+    }
+    static get BhMapRefsOotA(): string {
+        return bhMapRefsOotA;
+    }
+    static get BhMapRefsTftYP(): string {
+        return bhMapRefsTftYP;
+    }
+    static get BhMapRefsToA(): string {
+        return bhMapRefsToA;
     }
     static get ExtraMapRefsDrawingBundle(): string {
         return extraMapRefsDrawingBundle;

@@ -20,7 +20,6 @@ import MapLinksInfo from "./MapLinksInfo";
 import MapMenuLink from "./MapMenuLink";
 import MapRefs from "./MapRefs";
 import MapRefsPreProcessed from "./MapRefsPreProcessed";
-import MapsCoS from "./compendiums/MapsCoS";
 import MapsHotDQ from "./compendiums/MapsHotDQ";
 import MapsLMoP from "./compendiums/MapsLMoP";
 import MapsOotA from "./compendiums/MapsOotA";
@@ -199,17 +198,17 @@ const scrollToContentIdReference = function () {
 
 const load = (config: Configuration): Promise => {
     return ExtraMapRefsStorageService.getAll().then(bundles => {
+        const compendiumsToLoad = [];
+        if (config[Opt.BhMapRefsLMoP]) compendiumsToLoad.push(MapsLMoP);
+        if (config[Opt.BhMapRefsHotDQ]) compendiumsToLoad.push(MapsHotDQ);
+        if (config[Opt.BhMapRefsRoT]) compendiumsToLoad.push(MapsRoT);
+        if (config[Opt.BhMapRefsPotA]) compendiumsToLoad.push(MapsPotA);
+        if (config[Opt.BhMapRefsOotA]) compendiumsToLoad.push(MapsOotA);
+        if (config[Opt.BhMapRefsTftYP]) compendiumsToLoad.push(MapsTftYP);
+        if (config[Opt.BhMapRefsToA]) compendiumsToLoad.push(MapsToA);
+
         // register all coded maps to pre process
-        [
-            MapsLMoP,
-            MapsHotDQ,
-            MapsRoT,
-            MapsPotA,
-            MapsOotA,
-            MapsCoS,
-            MapsTftYP,
-            MapsToA
-        ].forEach(MapsPreProcessService.register);
+        compendiumsToLoad.forEach(MapsPreProcessService.register);
 
         // create map refs from bundles of options page and add them to preprocess
         ExtraMapRefsService.buildMapRefs(bundles, config).forEach(mapRefs => {
