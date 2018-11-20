@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Opt from "../../Options";
 import { components } from 'react-select';
 
-class ExtraMapRefsSelectorBundleOption extends Component {
+class ExtraMapRefsBundleSelectorOption extends Component {
     isDrawing = (bundle: ExtraMapRefsData): boolean => {
         return bundle && bundle.storageId === this.props.selectProps.config[Opt.ExtraMapRefsDrawingBundle];
     }
@@ -22,4 +22,4 @@ class ExtraMapRefsSelectorBundleOption extends Component {
     }
 }
 
-export default ExtraMapRefsSelectorBundleOption;
+export default ExtraMapRefsBundleSelectorOption;

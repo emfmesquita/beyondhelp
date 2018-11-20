@@ -7,11 +7,11 @@ import ColorPickerWidget from "./ColorPickerWidget";
 import ConfigStorageService from "../../services/storage/ConfigStorageService";
 import ConfirmDialog from "../../modals/ConfirmDialog";
 import DateFormat from "dateformat";
+import ExtraMapRefsBundleSelectorOption from "./ExtraMapRefsBundleSelectorOption";
 import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import ExtraMapRefsErrors from "./ExtraMapRefsErrors";
 import ExtraMapRefsFormArrayTemplate from "./ExtraMapRefsFormArrayTemplate";
 import ExtraMapRefsSchema from "./ExtraMapRefsSchema";
-import ExtraMapRefsSelectorBundleOption from "./ExtraMapRefsSelectorBundleOption";
 import ExtraMapRefsStorageService from "../../services/storage/ExtraMapRefsStorageService";
 import ExtraMapRefsToolbarButton from "./ExtraMapRefsToolbarButton";
 import ExtraMapRefsUiSchema from "./ExtraMapRefsUiSchema";
@@ -182,12 +182,28 @@ class ExtraMapRefsOptions extends Component {
 
     handleHide = (bundle: ExtraMapRefsData, hidden: boolean) => {
         bundle.hidden = hidden;
+        if (hidden && this.isDrawing(bundle)) {
+            // if is hiding and was the drawing bundle needs to stop being the drawing bundle
+            this.save(bundle).then(() => this.props.onDrawingBundleChange(""));
+            return;
+        }
         this.save(bundle).then(() => this.load());
     }
 
+    handleDrawing = (bundle: ExtraMapRefsData, drawing: boolean) => {
+        const newDrawingStorageId = drawing ? bundle.storageId : "";
+        if (drawing && bundle.hidden) {
+            // if was hidden and should be drawing now needs to stop being hidden
+            bundle.hidden = false;
+            this.save(bundle).then(() => this.props.onDrawingBundleChange(newDrawingStorageId));
+        } else {
+            this.props.onDrawingBundleChange(newDrawingStorageId);
+        }
+    }
+
     renderDrawingButton = (bundle: ExtraMapRefsData) => {
-        if (this.isDrawing(bundle)) return <ExtraMapRefsToolbarButton label="Draw" icon="pencil" title="Stop Drawing on this Bundle" active onClick={() => this.props.onDrawingBundleChange("")} />;
-        return <ExtraMapRefsToolbarButton label="Draw" icon="pencil" title="Start Drawing on this Bundle" disabled={!bundle} onClick={() => this.props.onDrawingBundleChange(bundle.storageId)} />;
+        if (this.isDrawing(bundle)) return <ExtraMapRefsToolbarButton label="Draw" icon="pencil" title="Stop Drawing on this Bundle" active onClick={() => this.handleDrawing(bundle, false)} />;
+        return <ExtraMapRefsToolbarButton label="Draw" icon="pencil" title="Start Drawing on this Bundle" disabled={!bundle} onClick={() => this.handleDrawing(bundle, true)} />;
     }
 
     renderHideButton = (bundle: ExtraMapRefsData) => {
@@ -238,7 +254,7 @@ class ExtraMapRefsOptions extends Component {
                         isSearchable={false}
                         blurInputOnSelect
                         config={this.props.config}
-                        components={{ Option: ExtraMapRefsSelectorBundleOption }}
+                        components={{ Option: ExtraMapRefsBundleSelectorOption }}
                         theme={SelectUtils.defaultTheme()}
                         styles={SelectUtils.defaultStyle({})}
                         value={this.state.selectedBundle}
