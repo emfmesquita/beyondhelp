@@ -93,7 +93,7 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
 
             E.tryCatch(() => {
                 const info = new MapAreaInfo().rhoStr(extraArea.coords).drawable(drawable).fromPage(extraArea.page).content(extraArea.contentId, extraArea.untilContentId).uid(extraArea.id);
-                setColor(info, bundle, compendium, map, area, drawable);
+                setColor(info, bundle, compendium, map, extraArea, drawable);
                 mapAreas.push(info);
             }, `Failed to process extra area "${extraArea.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
@@ -119,7 +119,7 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
 
             E.tryCatch(() => {
                 const info = new MapToMapAreaInfo(mapToMap.targetImageName, mapToMap.coords).drawable(drawable).uid(mapToMap.id);
-                setColor(info, bundle, compendium, map, area, drawable);
+                setColor(info, bundle, compendium, map, mapToMap, drawable);
                 mapAreas.push(info);
             }, `Failed to process map to map area "${mapToMap.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });

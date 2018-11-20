@@ -50,7 +50,8 @@
     },
     "incognito": "split",
     "options_ui": {
-        "page": "optionspage.html"
+        "page": "optionspage.html",
+        "open_in_tab": true
     },
     "permissions": [
         "activeTab",

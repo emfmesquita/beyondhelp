@@ -1,5 +1,6 @@
 import BadgeService from "../services/BadgeService";
 import C from "../Constants";
+import LinkService from "../services/LinkService";
 import MessageService from "../services/MessageService";
 import NotificationService from "../services/NotificationService";
 import TooltipsService from "../contentscript/tooltips/TooltipsService";
@@ -63,6 +64,12 @@ MessageService.listen(C.ExtraMapRefsChangesMessage, (message, callback: Function
 MessageService.listenFromExternal(C.BuildTooltipMessage, (tooltipInfo, callback) => {
     TooltipsService.buildCustomTooltipContent(tooltipInfo).then(callback).catch(callback);
     return true;
+});
+
+// listen request to open links on new tab and reuse same tab if already opened
+// normal scenario is content script needts to use chrome.tabs
+MessageService.listen(C.OpenLinkMessage, (msg) => {
+    LinkService.toNewTabHandler(msg.address, msg.focus)();
 });
 
 BadgeService.updateBadgeCount();

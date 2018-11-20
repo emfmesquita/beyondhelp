@@ -1,16 +1,25 @@
 .BH-pbp-form {
     padding: 2px;
     padding-right: 20px;
+    .BH-pbp-form-header {
+        .Bh-option-button {
+            padding-left: 10px;
+        }
+    }
     .BH-pbp-form-row {
         display: flex;
         @include hoverBackground();
         border-radius: 4px;
+        .Bh-option-button {
+            top: 8px;
+            padding-right: 12px;
+        }
     }
     .BH-pbp-form-row-info {
         display: inline-block;
         width: calc(100% - 46px);
-        margin-left: 4px;
-        padding: 4px;
+        margin: 4px;
+        padding: 8px;
     }
     .BH-pbp-form-header {
         font-weight: bold;

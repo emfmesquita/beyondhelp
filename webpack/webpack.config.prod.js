@@ -29,10 +29,10 @@ module.exports = [{
     },
     module: {
         rules: [rules.lint, {
-            oneOf: [rules.static, rules.js, rules.css, rules.file]
+            oneOf: [rules.static, rules.js, rules.separateCss, rules.file]
         }]
     },
-    plugins: [plugins.html("extensionpopup.html"), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
+    plugins: [plugins.html("extensionpopup.html", paths.popupHtml), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
 }, {
     entry: './src/optionspage/optionspage.js',
     output: {
@@ -44,7 +44,7 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.html("optionspage.html"), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
+    plugins: [plugins.html("optionspage.html", paths.optsHtml), plugins.separateCss("optionspage.css"), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
 }, {
     entry: './src/contentscript/tinymce/tinymcebhdialog.js',
     output: {
@@ -56,5 +56,5 @@ module.exports = [{
             oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
-    plugins: [plugins.html("tinymcebhdialog.html"), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
+    plugins: [plugins.html("tinymcebhdialog.html", paths.popupHtml), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
 }];

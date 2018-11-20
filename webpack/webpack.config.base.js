@@ -98,9 +98,9 @@ module.exports.config = (isProd) => {
     };
 
     result.plugins = {
-        html: (filename) => new HtmlWebpackPlugin({
+        html: (filename, template) => new HtmlWebpackPlugin({
             inject: true,
-            template: result.paths.popupHtml,
+            template,
             filename
         }),
         provideJquery: new webpack.ProvidePlugin({

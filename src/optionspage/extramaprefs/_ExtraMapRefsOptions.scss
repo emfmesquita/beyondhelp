@@ -6,3 +6,15 @@
     color: $options-red;
     font-weight: bold;
 }
+
+.BH-extramaps-bundle-select {
+    margin-left: 4px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 284px;
+    vertical-align: middle;
+}
+
+.BH-extramaps-nav {
+    max-width: calc(100% - 250px);
+}

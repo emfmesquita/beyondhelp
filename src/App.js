@@ -357,7 +357,7 @@ class App extends Component {
                 <div className="Monster-encounter-menu">
                     <MenuButton className="btn" icon="glyphicon-file" title="New Encounter" onClick={() => this.setState({ showNewEncounterModal: true })} />
                     <MenuButton className="btn" icon="glyphicon-cog" title="Encounter Options" onClick={this.openEncounterOptions} />
-                    <MenuButton className="btn" icon="glyphicon-wrench" title="Extension Options" onClick={LinkService.toNewTabHandler("chrome://extensions/?options=" + chrome.runtime.id, true)} />
+                    <MenuButton className="btn" icon="glyphicon-wrench" title="Extension Options" onClick={LinkService.toNewTabHandler(`chrome-extension://${chrome.runtime.id}/optionspage.html`, true)} />
                     <Select
                         className="Monster-encounter-select"
                         labelKey="name"

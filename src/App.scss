@@ -24,9 +24,12 @@ li {
         top: -8px;
     }
     .Monster-encounter-select {
-        padding-left: 4px;
+        margin-left: 2px;
         display: inline-block;
         width: calc(100% - 62px);
+        .Select-menu-outer {
+            width: 100% !important;
+        }
     }
 }
 

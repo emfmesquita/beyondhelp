@@ -1,8 +1,9 @@
-$options-black: #212121;
+$options-black: #2e2e2e;
 $options-dark-gray: #646464;
 $options-light-gray: #eee;
 $options-red: #dd2c00;
 $options-green: #0f9d58;
+$options-white: #fff;
 @mixin hoverColor {
     &:hover {
         color: $options-dark-gray !important;
@@ -23,3 +24,8 @@ $options-green: #0f9d58;
 @import "extramaprefs/ExtraMapRefsOptions";
 @import "extramaprefs/ExtraMapRefsFormArrayTemplate";
 @import "playbypost/PbpEntriesForm";
+$select-item-gutter: 4px;
+$select-item-font-size: 11px;
+$select-input-height: 30px;
+$select-menu-max-height: 170px;
+@import "../../node_modules/react-select/scss/default";

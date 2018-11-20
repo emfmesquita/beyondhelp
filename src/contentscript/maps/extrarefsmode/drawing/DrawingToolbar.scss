@@ -20,7 +20,7 @@
     border: 1px solid #cbc6c3;
     &>span {
         margin-right: 8px;
-        .BH-shape-button {
+        .BH-command-button {
             box-shadow: inset 0 0 4px 0 #dcd1c7 !important;
             border: solid 1px #cbc6c3;
             cursor: pointer;
@@ -39,6 +39,7 @@
             @include icon("arrows-alt");
             @include icon("trash-alt");
             @include icon("expand-arrows-alt");
+            @include icon("wrench-solid");
         }
         .BH-extra-map-refs-drawing-coords {
             border: solid 1px #cbc6c3;

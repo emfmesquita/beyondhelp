@@ -1,11 +1,51 @@
 body {
-    padding: 16px;
-    color: $options-black;
+    color: $options-black !important;
+    overflow-x: hidden;
 }
 
-.BH-option-form-width-hack {
-    visibility: hidden;
-    width: 664px;
+#bh-options-tabs {
+    margin: 0px;
+    width: calc(100vw - 40px);
+    display: flex;
+    min-height: 100vh;
+}
+
+.BH-option-logo {
+    width: 32px;
+    height: 32px;
+    margin: 0px 8px;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/webaccessible/icon.svg");
+    background-size: cover;
+    display: inline-block;
+}
+
+.BH-option-tab-titles-col {
+    background-color: $options-light-gray;
+    padding-top: 70px;
+    a {
+        color: $options-dark-gray !important;
+        &:hover {
+            background-color: $options-white !important;
+        }
+    }
+    li.active a {
+        background-color: $options-white !important;
+    }
+}
+
+.BH-option-tabs-content-col {
+    padding: 0px;
+    h1 {
+        text-align: center;
+        border-bottom-style: solid;
+        border-color: $options-light-gray;
+        margin-left: 20px;
+        padding-bottom: 12px;
+    }
+    .tab-content {
+        margin-left: 20px;
+        margin-top: 16px;
+    }
 }
 
 .BH-option-field {

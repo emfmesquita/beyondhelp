@@ -5,6 +5,7 @@ class ExtraMapRefsData extends Data {
         super(storageId);
         this.content = content;
         this.valid = true;
+        this.hidden = false;
     }
 }
 

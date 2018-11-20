@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import Command from "./Command";
 import DrawingService from "./DrawingService";
 import KeyboardService from "../../../../services/KeyboardService";
+import LinkService from "../../../../services/LinkService";
 import ReactDOM from "react-dom";
 import { throttle } from 'lodash';
 
@@ -40,28 +41,34 @@ class DrawingToolbar extends Component {
         };
     }
 
-    shapeButton = (icon: string, title: string, command: number) => {
-        const onClick = this.commandToClickHandler[command];
-        const on = DrawingService.isCommandOn(command);
+    button = (icon: string, title: string, onClick: Function, on: boolean) => {
         return (
             <span>
-                <span title={title} className={`BH-shape-button${on ? " BH-on" : ""}`} onClick={onClick}>
+                <span title={title} className={`BH-command-button${on ? " BH-on" : ""}`} onClick={onClick}>
                     <i className={"fa fa-" + icon} />
                 </span>
             </span>
         );
     }
 
+    commandButton = (icon: string, title: string, command: number) => {
+        const onClick = this.commandToClickHandler[command];
+        const on = DrawingService.isCommandOn(command);
+        return this.button(icon, title, onClick, on);
+    }
+
     render() {
+        const optionPage = `chrome-extension://${chrome.runtime.id}/optionspage.html`;
         return (
             <div>
                 <div className="BH-extra-map-refs-drawing-toolbar">
-                    {this.shapeButton("square", "Area (1)", Command.Rect)}
-                    {this.shapeButton("gem", "More Info Area (2)", Command.Rho)}
-                    {this.shapeButton("circle", "Map to Map Area (3)", Command.Circ)}
-                    {this.shapeButton("arrows-alt", "Move Area (m)", Command.Move)}
-                    {this.shapeButton("expand-arrows-alt", "Resize Area (s)", Command.Resize)}
-                    {this.shapeButton("trash-alt", "Delete Area (d)", Command.Delete)}
+                    {this.commandButton("square", "Area (1)", Command.Rect)}
+                    {this.commandButton("gem", "More Info Area (2)", Command.Rho)}
+                    {this.commandButton("circle", "Map to Map Area (3)", Command.Circ)}
+                    {this.commandButton("arrows-alt", "Move Area (m)", Command.Move)}
+                    {this.commandButton("expand-arrows-alt", "Resize Area (s)", Command.Resize)}
+                    {this.commandButton("trash-alt", "Delete Area (d)", Command.Delete)}
+                    {this.button("wrench-solid", "To Options Page Tab", LinkService.contentScriptToNewTabHandler(optionPage, true))}
                     <span>
                         <span className="BH-extra-map-refs-drawing-coords">0,0</span>
                     </span>

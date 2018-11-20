@@ -59,7 +59,7 @@ class PbpEntriesForm extends Component {
         return (
             <div key={data.storageId} className="BH-pbp-form-row">
                 <span className="BH-pbp-form-row-info">
-                    <a href={this.threadUrl(data)}>{data.name}</a>
+                    <a href={this.threadUrl(data)} target="_blank">{data.name}</a>
                 </span>
                 <OptionButton icon="save" title="Download Notes" onClick={() => this.exportData(data)} />
                 <OptionButton icon="trash" title="Delete Notes" onClick={() => this.handleDeleteClick(data)} />
@@ -71,7 +71,7 @@ class PbpEntriesForm extends Component {
         if (!this.state.playByPostData) return null;
         return (
             <div className="BH-pbp-form">
-                <div>
+                <div className="BH-pbp-form-header">
                     <span className="BH-pbp-form-header BH-pbp-form-row-info">
                         {this.state.playByPostData.length} Campaign{this.state.playByPostData.length !== 1 ? "s" : ""}
                     </span>

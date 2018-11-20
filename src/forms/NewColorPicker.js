@@ -26,7 +26,7 @@ class NewColorPicker extends Component {
 
     getFieldClasses = () => {
         const color = this.props.color || this.props.defaultColor;
-        return `Color-ncolorpicker-field ${color ? "Color-ncolorpicker-field-has-color" : ""}`
+        return `Color-ncolorpicker-field ${color ? "Color-ncolorpicker-field-has-color" : ""}`;
     }
 
     renderLabel = () => {
