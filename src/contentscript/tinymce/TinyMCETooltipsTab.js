@@ -258,9 +258,9 @@ class TinyMCETooltipsTab extends Component {
                             placeholder="Select Tooltip Type"
                             ref={(el) => this.tooltipTypeSelect = el}
                             theme={SelectUtils.defaultTheme()}
+                            maxMenuHeight="200px"
                             styles={SelectUtils.defaultStyle({
-                                control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" }),
-                                menuList: (styles) => ({ ...styles, maxHeight: "200px" })
+                                control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" })
                             })}
                         />
                     </FormGroup>

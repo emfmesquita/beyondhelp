@@ -27,10 +27,10 @@ class SelectField extends Component {
                     placeholder={this.props.placeholder}
                     searchPromptText="No results."
                     value={this.state.value}
+                    maxMenuHeight="150px"
                     theme={SelectUtils.defaultTheme()}
                     styles={SelectUtils.defaultStyle({
-                        control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" }),
-                        menuList: (styles) => ({ ...styles, maxHeight: "150px" })
+                        control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" })
                     })}
                 />
             </FormGroup>

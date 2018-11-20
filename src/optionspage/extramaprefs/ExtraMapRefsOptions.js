@@ -11,6 +11,7 @@ import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import ExtraMapRefsErrors from "./ExtraMapRefsErrors";
 import ExtraMapRefsFormArrayTemplate from "./ExtraMapRefsFormArrayTemplate";
 import ExtraMapRefsSchema from "./ExtraMapRefsSchema";
+import ExtraMapRefsSelectorBundleOption from "./ExtraMapRefsSelectorBundleOption";
 import ExtraMapRefsStorageService from "../../services/storage/ExtraMapRefsStorageService";
 import ExtraMapRefsToolbarButton from "./ExtraMapRefsToolbarButton";
 import ExtraMapRefsUiSchema from "./ExtraMapRefsUiSchema";
@@ -30,15 +31,13 @@ import type StorageData from "../../data/StorageData";
 
 const defaultName = "New Bundle";
 
+// on some cases during value change of select onChange of form is fired
+// added a workaround to skip unwanted saves
+let skipFormChangeWorkaround = false;
+
 const fromJson = json => JSON.parse(json);
 const toJson = val => JSON.stringify(val, null, 2);
 const bundleName = (bundle: ExtraMapRefsData) => (bundle && bundle.content ? bundle.content.name : defaultName).substr(0, 40);
-const bundleToSelectOpt = (bundle: ExtraMapRefsData) => {
-    return {
-        label: bundleName(bundle),
-        value: bundle.storageId
-    };
-};
 
 const sendChangedMessage = () => {
     MessageService.send(C.ExtraMapRefsChangesMessage);
@@ -58,20 +57,19 @@ class ExtraMapRefsOptions extends Component {
     defaultState = ({ bundles, newBundle, deleted, firstLoad } = {}) => {
         const state = {
             bundles,
-            selectBundles: bundles.map(bundleToSelectOpt),
             showFailToImportModal: false,
             toDeleteBundle: null,
             toExportWithErrorsBundle: null
         };
 
         // if a bundle was created sets the selected option of state
-        if (newBundle) state.selectedBundleOpt = bundleToSelectOpt(newBundle);
+        if (newBundle) state.selectedBundle = newBundle;
         // if a bundle was deleted sets null on selected option of state
-        else if (deleted) state.selectedBundleOpt = null;
+        else if (deleted) state.selectedBundle = null;
         // if it is the first load sets the current drawing bundle as selected
         else if (firstLoad) {
             const drawingBundle = bundles.find(this.isDrawing);
-            if (drawingBundle) state.selectedBundleOpt = bundleToSelectOpt(drawingBundle);
+            if (drawingBundle) state.selectedBundle = drawingBundle;
         }
 
         return state;
@@ -87,6 +85,7 @@ class ExtraMapRefsOptions extends Component {
     }
 
     handleFormChange = (bundle: ExtraMapRefsData, form) => {
+        if (skipFormChangeWorkaround) return;
         bundle.content = form.formData;
         bundle.valid = !form.errors || form.errors.length === 0;
         this.debouncedSave(bundle);
@@ -103,8 +102,12 @@ class ExtraMapRefsOptions extends Component {
         return this.save(bundle);
     }, 500);
 
-    isDrawing = (bundle: ExtraMapRefsData) => {
+    isDrawing = (bundle: ExtraMapRefsData): boolean => {
         return bundle && bundle.storageId === this.props.config[Opt.ExtraMapRefsDrawingBundle];
+    }
+
+    isHidden = (bundle: ExtraMapRefsData): boolean => {
+        return bundle && bundle.hidden;
     }
 
     handleNew = (name: string) => {
@@ -188,7 +191,7 @@ class ExtraMapRefsOptions extends Component {
     }
 
     renderHideButton = (bundle: ExtraMapRefsData) => {
-        if (bundle && bundle.hidden) return <ExtraMapRefsToolbarButton label="Hide" icon="eye-close" title="Unhide Map Refs Bundle" active onClick={() => this.handleHide(bundle, false)} />;
+        if (this.isHidden(bundle)) return <ExtraMapRefsToolbarButton label="Hide" icon="eye-close" title="Unhide Map Refs Bundle" active onClick={() => this.handleHide(bundle, false)} />;
         return <ExtraMapRefsToolbarButton label="Hide" icon="eye-close" title="Hide Map Refs Bundle" disabled={!bundle} onClick={() => this.handleHide(bundle, true)} />;
     }
 
@@ -197,6 +200,7 @@ class ExtraMapRefsOptions extends Component {
         return (
             <div>
                 <Form
+                    key={bundle.storageId}
                     schema={ExtraMapRefsSchema}
                     uiSchema={ExtraMapRefsUiSchema}
                     formData={bundle.content}
@@ -216,21 +220,38 @@ class ExtraMapRefsOptions extends Component {
     }
 
     renderToolbar = (bundle: ExtraMapRefsData) => {
+        let selectClassName = "BH-extramaps-bundle-select";
+        if (this.isDrawing(bundle)) selectClassName += " BH-bundle-drawing";
+        else if (this.isHidden(bundle)) selectClassName += " BH-bundle-hidden";
+
         return (
             <Navbar>
                 <Nav className="BH-extramaps-nav">
                     <Select
-                        className="BH-extramaps-bundle-select"
+                        className={selectClassName}
+                        classNamePrefix="BH-extramaps-bundle-select"
+                        getOptionLabel={(bundle) => bundle.content.name}
+                        getOptionValue={(bundle) => bundle.storageId}
                         placeholder="Select a bundle..."
                         noOptionsMessage={() => "No bundles found"}
                         isClearable={false}
                         isSearchable={false}
                         blurInputOnSelect
+                        config={this.props.config}
+                        components={{ Option: ExtraMapRefsSelectorBundleOption }}
                         theme={SelectUtils.defaultTheme()}
                         styles={SelectUtils.defaultStyle({})}
-                        value={this.state.selectedBundleOpt}
-                        options={this.state.selectBundles}
-                        onChange={(opt) => this.setState({ selectedBundleOpt: opt })}
+                        value={this.state.selectedBundle}
+                        options={this.state.bundles}
+                        onChange={(bundle) => {
+                            // on some cases during value change of select
+                            // onChange of form is fired
+                            // added a workaround to skip unwanted saves
+                            this.setState({ selectedBundle: bundle }, () => {
+                                skipFormChangeWorkaround = false;
+                            });
+                            skipFormChangeWorkaround = true;
+                        }}
                     />
                     <ExtraMapRefsToolbarButton label="New" icon="file" title="New Map References Bundle" onClick={this.handleNew} />
                     <ExtraMapRefsToolbarButton label="Import" icon="open" title="Import Map References Bundle" onClick={this.handleImportClick} />
@@ -246,13 +267,8 @@ class ExtraMapRefsOptions extends Component {
 
     render() {
         const valid = this.state.valid;
-
-        let bundle = null;
-        if (this.state.selectedBundleOpt && this.state.bundles) {
-            bundle = this.state.bundles.find(bundle => bundle.storageId === this.state.selectedBundleOpt.value);
-        }
-
-        const currentBundleName = bundleName(bundle);
+        const bundle = this.state.selectedBundle;
+        const currentBundleName = bundleName(bundle) || "";
         return (
             <div>
                 <ConfirmDialog
