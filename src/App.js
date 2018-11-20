@@ -25,6 +25,7 @@ import MonstersService from './services/MonstersService';
 import NewEncounterModal from "./modals/NewEncounterModal";
 import ScrollService from './services/ScrollService';
 import Select from 'react-select';
+import SelectUtils from './forms/SelectUtils';
 import SyncStorageService from './services/storage/SyncStorageService';
 import { Well } from 'react-bootstrap';
 import { throttle } from 'lodash';
@@ -360,13 +361,15 @@ class App extends Component {
                     <MenuButton className="btn" icon="glyphicon-wrench" title="Extension Options" onClick={LinkService.toNewTabHandler(`chrome-extension://${chrome.runtime.id}/optionspage.html`, true)} />
                     <Select
                         className="Monster-encounter-select"
-                        labelKey="name"
-                        valueKey="storageId"
-                        noResultsText="No encounters found"
-                        autoBlur
+                        getOptionLabel={(opt) => opt.name}
+                        getOptionValue={(opt) => opt.storageId}
+                        noOptionsMessage={() => "No encounters found"}
+                        blurInputOnSelect
                         value={this.state.activeEncounter}
                         options={this.state.encounters}
                         onChange={this.activeEncounterChange}
+                        theme={SelectUtils.defaultTheme()}
+                        styles={SelectUtils.defaultStyle({})}
                     />
                 </div>
 

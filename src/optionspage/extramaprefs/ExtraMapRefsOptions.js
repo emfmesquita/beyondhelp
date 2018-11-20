@@ -22,6 +22,7 @@ import OptionButton from "../OptionButton";
 import OptionGroup from "../OptionGroup";
 import OptionsToolbar from "../OptionsToolbar";
 import Select from 'react-select';
+import SelectUtils from "../../forms/SelectUtils";
 import { debounce } from "lodash";
 import sanitize from "sanitize-filename";
 
@@ -218,22 +219,24 @@ class ExtraMapRefsOptions extends Component {
         return (
             <Navbar>
                 <Nav className="BH-extramaps-nav">
+                    <Select
+                        className="BH-extramaps-bundle-select"
+                        placeholder="Select a bundle..."
+                        noOptionsMessage={() => "No bundles found"}
+                        isClearable={false}
+                        isSearchable={false}
+                        blurInputOnSelect
+                        theme={SelectUtils.defaultTheme()}
+                        styles={SelectUtils.defaultStyle({})}
+                        value={this.state.selectedBundleOpt}
+                        options={this.state.selectBundles}
+                        onChange={(opt) => this.setState({ selectedBundleOpt: opt })}
+                    />
                     <ExtraMapRefsToolbarButton label="New" icon="file" title="New Map References Bundle" onClick={this.handleNew} />
                     <ExtraMapRefsToolbarButton label="Import" icon="open" title="Import Map References Bundle" onClick={this.handleImportClick} />
                     <input id="BH-extramaps-upload" type="file" accept=".json" ref={(el) => this.uploadInput = el} onChange={this.handleImport} />
                     <ExtraMapRefsToolbarButton label="Export" icon="save" title="Export Map References Bundle" disabled={!bundle} onClick={() => this.handleExportClick(bundle)} />
                     <ExtraMapRefsToolbarButton label="Delete" icon="trash" title="Delete Map References Bundle" disabled={!bundle} onClick={() => this.handleDeleteClick(bundle)} />
-                    <Select
-                        className="BH-extramaps-bundle-select"
-                        placeholder="Select a bundle..."
-                        noResultsText="No bundles found"
-                        clearable={false}
-                        searchable={false}
-                        autoBlur
-                        value={this.state.selectedBundleOpt}
-                        options={this.state.selectBundles}
-                        onChange={(opt) => this.setState({ selectedBundleOpt: opt })}
-                    />
                     {this.renderDrawingButton(bundle)}
                     {this.renderHideButton(bundle)}
                 </Nav>

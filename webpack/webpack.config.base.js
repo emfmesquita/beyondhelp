@@ -42,7 +42,7 @@ module.exports.config = (isProd) => {
             exclude: [/node_modules/],
             options: {
                 babelrc: false,
-                presets: ['env', 'flow', 'react'],
+                presets: ['env', 'stage-3', 'flow', 'react',],
                 plugins: [require('babel-plugin-transform-class-properties')],
                 cacheDirectory: true,
                 compact: !!isProd,

@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
-import { Async } from 'react-select';
 import { ControlLabel, FormGroup } from 'react-bootstrap';
+import React, { Component } from 'react';
+
+import AsyncSelect from 'react-select/lib/Async';
+import SelectUtils from './SelectUtils';
+import { createFilter } from 'react-select';
 
 class SearchField extends Component {
     constructor(props) {
         super(props);
         this.state = {
             value: null
+        };
+
+        this.defaultFilterConfig = {
+            ignoreCase: true,
+            ignoreAccents: true,
+            trim: true,
+            matchFrom: "any"
         };
     }
 
@@ -18,16 +28,19 @@ class SearchField extends Component {
     render() {
         return (
             <FormGroup>
-                <Async
-                    autoload={false}
-                    filterOptions={!!this.props.filter}
+                <AsyncSelect
+                    classNamePrefix="bh-select"
+                    filterOption={this.props.filter ? createFilter(this.defaultFilterConfig) : null}
                     loadOptions={this.props.loadOptions}
-                    onBlurResetsInput={false}
-                    onCloseResetsInput={false}
                     onChange={this.onChange}
                     placeholder={this.props.placeholder}
                     searchPromptText="No results."
                     value={this.state.value}
+                    theme={SelectUtils.defaultTheme()}
+                    styles={SelectUtils.defaultStyle({
+                        control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" }),
+                        menuList: (styles) => ({ ...styles, maxHeight: "150px" })
+                    })}
                 />
             </FormGroup>
 

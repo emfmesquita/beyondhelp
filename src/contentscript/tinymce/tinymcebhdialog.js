@@ -12,7 +12,7 @@ const disableScrollOutsideFrame = function () {
     const trapSelector = ".bh-tinymce-dialog";
 
     const trapWheel = (e) => {
-        const jqScrollable = $(e.target).closest(".Select-menu, .bh-tables-rows");
+        const jqScrollable = $(e.target).closest(".bh-select__menu-list, .bh-tables-rows");
         if (jqScrollable.length === 0) return false;
 
         const dy = e.originalEvent.deltaY;

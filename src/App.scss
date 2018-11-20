@@ -21,15 +21,12 @@ li {
     padding: 8px 8px 0px 8px;
     .Menu-button {
         position: relative;
-        top: -8px;
+        top: 3px;
     }
     .Monster-encounter-select {
         margin-left: 2px;
         display: inline-block;
         width: calc(100% - 62px);
-        .Select-menu-outer {
-            width: 100% !important;
-        }
     }
 }
 
@@ -66,9 +63,3 @@ li {
 .Select-menu-outer {
     width: calc(100% - 4px) !important;
 }
-
-$select-item-gutter: 4px;
-$select-item-font-size: 11px;
-$select-input-height: 30px;
-$select-menu-max-height: 170px;
-@import "../node_modules/react-select/scss/default";

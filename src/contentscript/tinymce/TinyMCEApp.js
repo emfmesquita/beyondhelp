@@ -1,4 +1,3 @@
-import 'react-select/dist/react-select.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './TinyMCEApp.scss';

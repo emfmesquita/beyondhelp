@@ -24,8 +24,3 @@ $options-white: #fff;
 @import "extramaprefs/ExtraMapRefsOptions";
 @import "extramaprefs/ExtraMapRefsFormArrayTemplate";
 @import "playbypost/PbpEntriesForm";
-$select-item-gutter: 4px;
-$select-item-font-size: 11px;
-$select-input-height: 30px;
-$select-menu-max-height: 170px;
-@import "../../node_modules/react-select/scss/default";

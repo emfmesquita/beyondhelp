@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import SearchField from "../../forms/SearchField";
 import Select from 'react-select';
 import SelectField from "../../forms/SelectField";
+import SelectUtils from '../../forms/SelectUtils';
 import TooltipEntry from "../../data/TooltipEntry";
 import TooltipOptions from "../tooltips/TooltipOptions";
 import Type from "../tooltips/TooltipType";
@@ -20,20 +21,17 @@ const baseGetOptionsSearcher = function (ddbSearcher: Function, isHomebrewOrCust
     return debounce((input) => {
         return ddbSearcher(input).then(results => {
             results = results || [];
-            return {
-                options: results.map(r => {
-                    let label = null;
-                    if (!isHomebrewOrCustom) {
-                        label = r;
-                    } else {
-                        const autorSufix = r.author ? " - " + r.author : "";
-                        const versionSufix = r.version ? " - v" + r.version : "";
-                        label = r.name + autorSufix + versionSufix;
-                    }
-                    return { label, value: r };
-                }),
-                complete: results.length < pageSize
-            };
+            return results.map(r => {
+                let label = null;
+                if (!isHomebrewOrCustom) {
+                    label = r;
+                } else {
+                    const autorSufix = r.author ? " - " + r.author : "";
+                    const versionSufix = r.version ? " - v" + r.version : "";
+                    label = r.name + autorSufix + versionSufix;
+                }
+                return { label, value: r };
+            });
         }).catch(() => { return { options: [] }; });
     }, 500);
 };
@@ -253,11 +251,17 @@ class TinyMCETooltipsTab extends Component {
                     <FormGroup>
                         <ControlLabel>Type</ControlLabel>
                         <Select
+                            classNamePrefix="bh-select"
                             onChange={this.tooltipTypeSelected}
                             options={this.typeSelectOptions}
                             value={this.state.tooltipType}
                             placeholder="Select Tooltip Type"
                             ref={(el) => this.tooltipTypeSelect = el}
+                            theme={SelectUtils.defaultTheme()}
+                            styles={SelectUtils.defaultStyle({
+                                control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" }),
+                                menuList: (styles) => ({ ...styles, maxHeight: "200px" })
+                            })}
                         />
                     </FormGroup>
                     {this.renderTooltips()}

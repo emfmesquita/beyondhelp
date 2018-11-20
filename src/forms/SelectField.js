@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import Select from 'react-select';
 import { ControlLabel, FormGroup } from 'react-bootstrap';
+import React, { Component } from 'react';
+
+import Select from 'react-select';
+import SelectUtils from './SelectUtils';
 
 class SelectField extends Component {
     constructor(props) {
@@ -19,14 +21,17 @@ class SelectField extends Component {
         return (
             <FormGroup>
                 <Select
-                    autoload={false}
-                    onBlurResetsInput={false}
-                    onCloseResetsInput={false}
+                    classNamePrefix="bh-select"
                     options={this.props.options}
                     onChange={this.onChange}
                     placeholder={this.props.placeholder}
                     searchPromptText="No results."
                     value={this.state.value}
+                    theme={SelectUtils.defaultTheme()}
+                    styles={SelectUtils.defaultStyle({
+                        control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" }),
+                        menuList: (styles) => ({ ...styles, maxHeight: "150px" })
+                    })}
                 />
             </FormGroup>
         );
