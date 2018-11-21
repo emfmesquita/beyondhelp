@@ -54,15 +54,14 @@ class ExtraMapRefsOptions extends Component {
     }
 
     nextDefaultName = () => {
-        let last = 1;
+        let last = 0;
         const bundles = this.state.bundles;
         bundles && bundles.forEach(bundle => {
             if (!bundle.content || !bundle.content.name || !defaultNameRegex.test(bundle.content.name)) return;
             const number = Number.parseInt(bundle.content.name.substr(11));
-            if (number > last) last = number;
-            else if (number === last) last++;
+            if (number >= last) last = number;
         });
-        return `New Bundle ${last}`;
+        return `New Bundle ${last + 1}`;
     }
 
     defaultState = ({ bundles, newBundle, deleted, firstLoad } = {}) => {
