@@ -15,6 +15,7 @@ class SelectUtils {
     static defaultStyle(customStyles) {
         return {
             control: (styles) => ({ ...styles, height: "30px", minHeight: "30px" }),
+            menu: (styles) => ({ ...styles, zIndex: "10" }),
             ...customStyles
         };
     }

@@ -241,7 +241,7 @@ class ExtraMapRefsOptions extends Component {
         else if (this.isHidden(bundle)) selectClassName += " BH-bundle-hidden";
 
         return (
-            <Navbar>
+            <Navbar fluid>
                 <Nav className="BH-extramaps-nav">
                     <Select
                         className={selectClassName}
