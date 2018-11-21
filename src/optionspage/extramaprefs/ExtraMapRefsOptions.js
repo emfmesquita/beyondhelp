@@ -91,6 +91,11 @@ class ExtraMapRefsOptions extends Component {
             bundles.forEach(bundle => {
                 if (!bundle.content.name) bundle.content.name = this.nextDefaultName();
             });
+
+            // if there is a new bundle searches it on the list from storage
+            // making sure the selected bundle and the one on list are the same object
+            if (newBundle) newBundle = bundles.find(bundle => bundle.storageId === newBundle.storageId);
+
             this.setState(this.defaultState({ bundles, newBundle, deleted, firstLoad }));
         }).catch(error => { throw error; });
     }
