@@ -29,7 +29,7 @@ import sanitize from "sanitize-filename";
 
 import type StorageData from "../../data/StorageData";
 
-const defaultName = "New Bundle";
+const defaultNameRegex = /New Bundle [0-9]+/;
 
 // on some cases during value change of select onChange of form is fired
 // added a workaround to skip unwanted saves
@@ -37,7 +37,6 @@ let skipFormChangeWorkaround = false;
 
 const fromJson = json => JSON.parse(json);
 const toJson = val => JSON.stringify(val, null, 2);
-const bundleName = (bundle: ExtraMapRefsData) => (bundle && bundle.content ? bundle.content.name : defaultName).substr(0, 40);
 
 const sendChangedMessage = () => {
     MessageService.send(C.ExtraMapRefsChangesMessage);
@@ -54,6 +53,18 @@ class ExtraMapRefsOptions extends Component {
         });
     }
 
+    nextDefaultName = () => {
+        let last = 1;
+        const bundles = this.state.bundles;
+        bundles && bundles.forEach(bundle => {
+            if (!bundle.content || !bundle.content.name || !defaultNameRegex.test(bundle.content.name)) return;
+            const number = Number.parseInt(bundle.content.name.substr(11));
+            if (number > last) last = number;
+            else if (number === last) last++;
+        });
+        return `New Bundle ${last}`;
+    }
+
     defaultState = ({ bundles, newBundle, deleted, firstLoad } = {}) => {
         const state = {
             bundles,
@@ -65,7 +76,7 @@ class ExtraMapRefsOptions extends Component {
         // if a bundle was created sets the selected option of state
         if (newBundle) state.selectedBundle = newBundle;
         // if a bundle was deleted sets null on selected option of state
-        else if (deleted) state.selectedBundle = null;
+        else if (deleted) state.selectedBundle = bundles[bundles.length - 1];
         // if it is the first load sets the current drawing bundle as selected
         else if (firstLoad) {
             const drawingBundle = bundles.find(this.isDrawing);
@@ -78,7 +89,7 @@ class ExtraMapRefsOptions extends Component {
     load = ({ deleted, newBundle, firstLoad } = {}) => {
         return ExtraMapRefsStorageService.getAll().then((bundles: ExtraMapRefsData[]) => {
             bundles.forEach(bundle => {
-                if (!bundle.content.name) bundle.content.name = defaultName;
+                if (!bundle.content.name) bundle.content.name = this.nextDefaultName();
             });
             this.setState(this.defaultState({ bundles, newBundle, deleted, firstLoad }));
         }).catch(error => { throw error; });
@@ -111,7 +122,7 @@ class ExtraMapRefsOptions extends Component {
     }
 
     handleNew = (name: string) => {
-        const newBundle = new ExtraMapRefsData(null, { name: defaultName });
+        const newBundle = new ExtraMapRefsData(null, { name: this.nextDefaultName() });
         this.save(newBundle).then(() => this.load({ newBundle }));
     }
 
@@ -143,7 +154,7 @@ class ExtraMapRefsOptions extends Component {
     handleExport = (bundle: ExtraMapRefsData) => {
         chrome.downloads.download({
             url: `data:text/plain,${toJson(bundle.content)}`,
-            filename: `${sanitize(bundleName(bundle))}.json`
+            filename: `${sanitize(bundle.content.name.substr(0, 40))}.json`
         });
 
         // closes the confirm modal
@@ -168,7 +179,7 @@ class ExtraMapRefsOptions extends Component {
                     this.setState({ showFailToImportModal: true });
                     return;
                 }
-                if (!content.name || typeof content.name !== "string") content.name = defaultName;
+                if (!content.name || typeof content.name !== "string") content.name = this.nextDefaultName();
                 if (content.name.length > 40) content.name = content.name.substr(0, 40);
                 const newBundle = new ExtraMapRefsData(null, content);
                 this.save(newBundle).then(() => this.load({ newBundle }));
@@ -284,7 +295,7 @@ class ExtraMapRefsOptions extends Component {
     render() {
         const valid = this.state.valid;
         const bundle = this.state.selectedBundle;
-        const currentBundleName = bundleName(bundle) || "";
+        const currentBundleName = bundle ? bundle.content.name : "";
         return (
             <div>
                 <ConfirmDialog
