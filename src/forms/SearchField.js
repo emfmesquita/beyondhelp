@@ -38,9 +38,7 @@ class SearchField extends Component {
                     value={this.state.value}
                     maxMenuHeight="150px"
                     theme={SelectUtils.defaultTheme()}
-                    styles={SelectUtils.defaultStyle({
-                        control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" })
-                    })}
+                    styles={SelectUtils.defaultStyle()}
                 />
             </FormGroup>
 

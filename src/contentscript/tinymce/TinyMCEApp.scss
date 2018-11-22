@@ -1,6 +1,9 @@
 #root {
     .bh-content-panel {
         padding: 8px;
+        .alert {
+            padding: 8px;
+        }
     }
     .bh-button-toolbar {
         position: absolute;

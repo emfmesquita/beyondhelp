@@ -25,10 +25,18 @@
     if (BeyondHelp.config.customTooltips) {
         // parses tooltip info from tooltip anchor
         const parseTooltipInfo = function (tooltipEl) {
-            const tokens = tooltipEl.href.split("/");
+            // original feat/background name is saved on hash
+            let href = tooltipEl.href;
+            let originalText = "";
+            const hashIndex = href.indexOf("#");
+            if (hashIndex >= 0) {
+                originalText = window.decodeURI(href.substring(hashIndex + 1)).trim();
+                href = href.substring(0, hashIndex);
+            }
+            const tokens = href.split("/");
             return {
                 cacheUrl: tooltipEl.dataset.tooltipHref,
-                name: tooltipEl.textContent.trim(),
+                name: originalText || tooltipEl.textContent.trim(),
                 slug: tokens[tokens.length - 1],
                 type: tokens[tokens.length - 2]
             };

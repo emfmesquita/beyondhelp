@@ -1,4 +1,4 @@
-import { Alert, Button, ButtonToolbar, ControlLabel, FormGroup } from 'react-bootstrap';
+import { Alert, Button, ButtonToolbar, ControlLabel, Form, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 import C from "../../Constants";
@@ -43,21 +43,31 @@ const baseGetOptions = function (searcher: Function) {
     };
 };
 
-// called when the user selects a tooltip
-const baseOptionSelected = function (type: string, app: TinyMCEApp) {
-    return (selected) => {
-        if (!selected) {
-            app.setState({ toAddContent: null });
-            return;
-        }
+const optionToDisplayText = (type: string, option) => {
+    if (!option) return "";
+    if (Type.isCommon(type)) return option.value;
+    const entry: TooltipEntry = option.value;
+    return entry.name;
+};
+
+// build the tooltip text content
+const baseBuildContent = function (type: string, app: TinyMCEApp): string {
+    return (selected, displayText: string) => {
+        const originalText = optionToDisplayText(type, selected);
+        const hasDisplayText = displayText && displayText !== originalText;
 
         // builds the content to add to editor
         // tag if normal and anchor if homebrew or custom
         let toAddContent = "";
         if (Type.isCommon(type)) {
             const tag = Type.getTag(type);
-            toAddContent = `[${tag}]${selected.value}[/${tag}]`;
-        } else if (Type.isHomebrew(type)) {
+            const displayExtra = (hasDisplayText ? `;${displayText.replace(/;/g, "")}` : "");
+            return `[${tag}]${originalText}${displayExtra}[/${tag}]`;
+        }
+
+        const toDisplay = displayText || originalText;
+
+        if (Type.isHomebrew(type)) {
             const entry: TooltipEntry = selected.value;
             const clazz = Type.getHomebrewClassName(type);
 
@@ -65,13 +75,11 @@ const baseOptionSelected = function (type: string, app: TinyMCEApp) {
             const [id] = slug.split("-");
             const tooltipPath = `/${action}/${id}-tooltip`;
 
-            toAddContent = `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${entry.name}</a>`;
-        } else if (Type.isCustom(type)) {
-            const entry: TooltipEntry = selected.value;
-            toAddContent = `<a class="tooltip-hover" href="https://www.dndbeyond.com${entry.path}">${entry.name}</a>`;
+            return `<a class="${clazz} tooltip-hover" href="https://www.dndbeyond.com${entry.path}" data-tooltip-href="https://www.dndbeyond.com${tooltipPath}">${toDisplay}</a>`;
         }
 
-        app.setState({ toAddContent });
+        const entry: TooltipEntry = selected.value;
+        return `<a class="tooltip-hover" href="https://www.dndbeyond.com${entry.path}#${originalText}">${toDisplay}</a>`;
     };
 };
 
@@ -100,8 +108,9 @@ class TinyMCETooltipsTab extends Component {
         super(props);
 
         this.state = {
-            toAddContent: null,
-            tooltipType: null
+            tooltipType: null,
+            selectedTooltip: null,
+            displayText: ""
         };
 
         this.tooltipTypeSelect = null;
@@ -112,9 +121,9 @@ class TinyMCETooltipsTab extends Component {
         const addGetOptions = (type, searcher) => this.options[type] = baseGetOptions(searcher);
         Type.allTypes().forEach(type => Type.isSearchable(type) ? addGetOptions(type, searchers[type]) : addOptions(type));
 
-        // for each type of tooltip builds the option selected handler
-        this.tooltipSelected = {};
-        Type.allTypes().forEach(type => this.tooltipSelected[type] = baseOptionSelected(type, this));
+        // for each type of tooltip builds the function to generate content
+        this.buildContent = {};
+        Type.allTypes().forEach(type => this.buildContent[type] = baseBuildContent(type, this));
 
         const backgroundPh = "Search Background Names";
         const featPh = "Search Feat Names";
@@ -179,31 +188,41 @@ class TinyMCETooltipsTab extends Component {
     }
 
     add = () => {
-        this.props.onAdd(this.state.toAddContent);
-    }
-
-    addLower = () => {
-        this.props.onAdd((this.state.toAddContent || "").toLowerCase());
+        const selected = this.state.selectedTooltip;
+        const displayText = this.state.displayText;
+        const type = this.state.tooltipType.value;
+        this.props.onAdd(this.buildContent[type](selected, displayText));
     }
 
     addAndClose = () => {
-        this.props.onAdd(this.state.toAddContent);
+        this.add();
         this.props.onClose();
     }
-
-    addLowerAndClose = () => {
-        this.props.onAdd((this.state.toAddContent || "").toLowerCase());
-        this.props.onClose();
-    }
-
 
     isAddDisabled = () => {
-        return !this.state.tooltipType || !this.state.toAddContent;
+        return !this.state.tooltipType || !this.state.selectedTooltip;
     }
 
     // clears content on type select
     tooltipTypeSelected = (value) => {
-        this.setState({ tooltipType: value, toAddContent: null });
+        this.setState({ tooltipType: value, selectedTooltip: null, displayText: "" });
+    }
+
+    handleTooltipSelected = (option) => {
+        this.setState({ selectedTooltip: option, displayText: optionToDisplayText(this.state.tooltipType.value, option) });
+    }
+
+    handleDisplayTextChage = (e) => {
+        const text = e.target.value;
+        this.setState({ displayText: text ? text : optionToDisplayText(this.state.tooltipType.value, this.state.selectedTooltip) });
+    }
+
+    handleToLower = () => {
+        this.setState({ displayText: this.state.displayText.toLowerCase() });
+    }
+
+    handleBackToDefault = () => {
+        this.setState({ displayText: optionToDisplayText(this.state.tooltipType.value, this.state.selectedTooltip) });
     }
 
     showCollectionAlert = (type: string): boolean => {
@@ -239,9 +258,35 @@ class TinyMCETooltipsTab extends Component {
         const type = this.state.tooltipType.value;
         if (Type.isSearchable(type)) {
             const filter = Type.Background === type || Type.Feat === type;
-            return <SearchField key={type} filter={filter} loadOptions={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
+            return <SearchField key={type} filter={filter} loadOptions={this.options[type]} onChange={this.handleTooltipSelected} placeholder={this.placeHolders[type]} />;
         }
-        return <SelectField key={type} options={this.options[type]} onChange={this.tooltipSelected[type]} placeholder={this.placeHolders[type]} />;
+        return <SelectField key={type} options={this.options[type]} onChange={this.handleTooltipSelected} placeholder={this.placeHolders[type]} />;
+    }
+
+    renderTextToDisplayField = () => {
+        if (!this.state.tooltipType) return null;
+        return (
+            <FormGroup>
+                <ControlLabel>Display Text</ControlLabel>
+                <InputGroup>
+                    <FormControl
+                        type="text"
+                        value={this.state.displayText}
+                        placeholder="Enter Display Text"
+                        disabled={!this.state.selectedTooltip}
+                        onChange={this.handleDisplayTextChage}
+                    />
+                    <InputGroup.Button>
+                        <Button title="To Lower Case" disabled={!this.state.selectedTooltip} onClick={this.handleToLower}>
+                            <Glyphicon glyph="arrow-down" />
+                        </Button>
+                        <Button title="Back to Default" disabled={!this.state.selectedTooltip} onClick={this.handleBackToDefault}>
+                            <Glyphicon glyph="erase" />
+                        </Button>
+                    </InputGroup.Button>
+                </InputGroup>
+            </FormGroup>
+        );
     }
 
     render() {
@@ -257,14 +302,13 @@ class TinyMCETooltipsTab extends Component {
                             value={this.state.tooltipType}
                             placeholder="Select Tooltip Type"
                             ref={(el) => this.tooltipTypeSelect = el}
-                            theme={SelectUtils.defaultTheme()}
                             maxMenuHeight="200px"
-                            styles={SelectUtils.defaultStyle({
-                                control: (styles) => ({ ...styles, height: "38px", minHeight: "38px" })
-                            })}
+                            theme={SelectUtils.defaultTheme()}
+                            styles={SelectUtils.defaultStyle()}
                         />
                     </FormGroup>
                     {this.renderTooltips()}
+                    {this.renderTextToDisplayField()}
                     {this.renderAlerts()}
                 </form>
 
@@ -274,12 +318,6 @@ class TinyMCETooltipsTab extends Component {
                     </Button>
                     <Button disabled={this.isAddDisabled()} onClick={this.add}>
                         Add
-                    </Button>
-                    <Button disabled={this.isAddDisabled()} onClick={this.addLowerAndClose}>
-                        Add Lower Case and Close
-                    </Button>
-                    <Button disabled={this.isAddDisabled()} onClick={this.addLower}>
-                        Add Lower Case
                     </Button>
                     <Button onClick={this.props.onClose}>
                         Close
