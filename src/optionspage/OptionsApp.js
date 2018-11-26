@@ -13,6 +13,7 @@ import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
 import PbpEntriesForm from "./playbypost/PbpEntriesForm";
 import SyncStorageService from "../services/storage/SyncStorageService";
+import OptionsCredits from './OptionsCredits';
 
 let initialized = false;
 
@@ -82,6 +83,7 @@ class OptionsApp extends Component {
                 <NavItem eventKey="tooltips">Tooltips</NavItem>
                 <NavItem eventKey="toc">Table of Contents</NavItem>
                 <NavItem eventKey="tablerolls">Table Rolls</NavItem>
+                <NavItem eventKey="credits">Credits</NavItem>
             </Nav>
         );
     }
@@ -153,6 +155,9 @@ class OptionsApp extends Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="tablerolls">
                     {this.optionField("Enable roll on tables.", Opt.TableRolls)}
+                </Tab.Pane>
+                <Tab.Pane eventKey="credits">
+                    {<OptionsCredits />}
                 </Tab.Pane>
             </Tab.Content>
         );
