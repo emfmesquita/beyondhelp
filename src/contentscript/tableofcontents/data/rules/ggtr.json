@@ -1,0 +1,2704 @@
+{
+    "title": "Guildmasters' Guide to Ravnica",
+    "urlName": "rules/ggtr",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Welcome to Ravnica",
+            "urlName": "rules/ggtr/welcome-to-ravnica",
+            "anchorName": "#WelcometoRavnica",
+            "subsections": [
+                {
+                    "title": "City of Guilds",
+                    "urlName": "rules/ggtr/welcome-to-ravnica",
+                    "anchorName": "#CityofGuilds",
+                    "subsections": []
+                },
+                {
+                    "title": "History of Ravnica",
+                    "urlName": "rules/ggtr/welcome-to-ravnica",
+                    "anchorName": "#HistoryofRavnica",
+                    "subsections": [
+                        {
+                            "title": "The Guildpact",
+                            "urlName": "rules/ggtr/welcome-to-ravnica",
+                            "anchorName": "#TheGuildpact",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Precarious Peace",
+                            "urlName": "rules/ggtr/welcome-to-ravnica",
+                            "anchorName": "#APrecariousPeace",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Life in the Big City",
+                    "urlName": "rules/ggtr/welcome-to-ravnica",
+                    "anchorName": "#LifeintheBigCity",
+                    "subsections": [
+                        {
+                            "title": "Currency: Zibs and Zinos",
+                            "urlName": "rules/ggtr/welcome-to-ravnica",
+                            "anchorName": "#CurrencyZibsandZinos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Comforts of Civilization",
+                            "urlName": "rules/ggtr/welcome-to-ravnica",
+                            "anchorName": "#ComfortsofCivilization",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Languages",
+                            "urlName": "rules/ggtr/welcome-to-ravnica",
+                            "anchorName": "#Languages",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 1: Character Creation",
+            "urlName": "rules/ggtr/character-creation",
+            "anchorName": "#Chapter1CharacterCreation",
+            "subsections": [
+                {
+                    "title": "Choosing a Guild",
+                    "urlName": "rules/ggtr/character-creation",
+                    "anchorName": "#ChoosingaGuild",
+                    "subsections": [
+                        {
+                            "title": "Race and Class",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#RaceandClass",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Races",
+                    "urlName": "rules/ggtr/character-creation",
+                    "anchorName": "#Races",
+                    "subsections": [
+                        {
+                            "title": "Height and Weight",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#HeightandWeight",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Human",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Human",
+                            "subsections": [
+                                {
+                                    "title": "Human Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#HumanNames",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Elf",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Elf",
+                            "subsections": [
+                                {
+                                    "title": "Elf Subraces",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ElfSubraces",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Elf Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ElfNames",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Centaur",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Centaur",
+                            "subsections": [
+                                {
+                                    "title": "Nature’s Cavalry",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#NaturesCavalry",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Affinity for Nature",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#AffinityforNature",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Clans and Community",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ClansandCommunity",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Centaur Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#CentaurNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Centaur Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#CentaurTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Goblin",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Goblin",
+                            "subsections": [
+                                {
+                                    "title": "Small and Wiry",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#SmallandWiry",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Unfettered Emotion",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#UnfetteredEmotion",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Goblin Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#GoblinNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Goblin Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#GoblinTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Loxodon",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Loxodon",
+                            "subsections": [
+                                {
+                                    "title": "Lumbering Giants",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#LumberingGiants",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gifted Stoneworkers",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#GiftedStoneworkers",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Relentlessly Loyal",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#RelentlesslyLoyal",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Loxodon Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#LoxodonNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Loxodon Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#LoxodonTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Minotaur",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Minotaur",
+                            "subsections": [
+                                {
+                                    "title": "Horns and Hooves",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#HornsandHooves",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Strength and Zeal",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#StrengthandZeal",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Family and Guild",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#FamilyandGuild",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Minotaur Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#MinotaurNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Minotaur Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#MinotaurTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Simic Hybrid",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#SimicHybrid",
+                            "subsections": [
+                                {
+                                    "title": "Extensive Adaptation",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ExtensiveAdaptation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Simic Hybrid Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#SimicHybridNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Simic Hybrid Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#SimicHybridTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Vedalken",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Vedalken",
+                            "subsections": [
+                                {
+                                    "title": "Cool Rationality",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#CoolRationality",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reasoning toward Perfection",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ReasoningtowardPerfection",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vedalken Names",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#VedalkenNames",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vedalken Traits",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#VedalkenTraits",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Classes by Guild",
+                    "urlName": "rules/ggtr/character-creation",
+                    "anchorName": "#ClassesbyGuild",
+                    "subsections": [
+                        {
+                            "title": "Barbarian",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Barbarian",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bard",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Bard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cleric",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Cleric",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Druid",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Druid",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fighter",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Fighter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Monk",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Monk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Paladin",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Paladin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ranger",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Ranger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rogue",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Rogue",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sorcerer",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Sorcerer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warlock",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Warlock",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wizard",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#Wizard",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Subclass Options",
+                    "urlName": "rules/ggtr/character-creation",
+                    "anchorName": "#SubclassOptions",
+                    "subsections": [
+                        {
+                            "title": "Cleric: Order Domain",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#ClericOrderDomain",
+                            "subsections": [
+                                {
+                                    "title": "Domain Spells",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#DomainSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bonus Proficiencies",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#BonusProficiencies",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Voice of Authority",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#VoiceofAuthority",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Channel Divinity: Order’s Demand",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#ChannelDivinityOrdersDemand",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Embodiment of the Law",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#EmbodimentoftheLaw",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Divine Strike",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#DivineStrike",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Order’s Wrath",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#OrdersWrath",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Druid: Circle of Spores",
+                            "urlName": "rules/ggtr/character-creation",
+                            "anchorName": "#DruidCircleofSpores",
+                            "subsections": [
+                                {
+                                    "title": "Circle Spells",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#CircleSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Halo of Spores",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#HaloofSpores",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Symbiotic Entity",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#SymbioticEntity",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fungal Infestation",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#FungalInfestation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spreading Spores",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#SpreadingSpores",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fungal Body",
+                                    "urlName": "rules/ggtr/character-creation",
+                                    "anchorName": "#FungalBody",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Guilds of Ravnica",
+            "urlName": "rules/ggtr/guilds-of-ravnica",
+            "anchorName": "#Chapter2GuildsofRavnica",
+            "subsections": [
+                {
+                    "title": "Guild Membership",
+                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                    "anchorName": "#GuildMembership",
+                    "subsections": [
+                        {
+                            "title": "Guild Spells",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#GuildSpells",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bonds and Contacts",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#BondsandContacts",
+                            "subsections": [
+                                {
+                                    "title": "Starting Contacts",
+                                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                                    "anchorName": "#StartingContacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Renown",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#Renown",
+                            "subsections": [
+                                {
+                                    "title": "Benefits of Renown",
+                                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                                    "anchorName": "#BenefitsofRenown",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Losing Renown",
+                                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                                    "anchorName": "#LosingRenown",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Styles of Membership",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#StylesofMembership",
+                            "subsections": [
+                                {
+                                    "title": "Membership and Independence",
+                                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                                    "anchorName": "#MembershipandIndependence",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Changing Guilds",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#ChangingGuilds",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Azorius Senate",
+            "urlName": "rules/ggtr/azorius-senate",
+            "anchorName": "#AzoriusSenate",
+            "subsections": [
+                {
+                    "title": "Inside the Senate",
+                    "urlName": "rules/ggtr/azorius-senate",
+                    "anchorName": "#InsidetheSenate",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Azorius",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#GoalsoftheAzorius",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Azorius Characters",
+                    "urlName": "rules/ggtr/azorius-senate",
+                    "anchorName": "#AzoriusCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Azorius Senate",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#JoiningtheAzoriusSenate",
+                            "subsections": [
+                                {
+                                    "title": "Law Enforcement",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#LawEnforcement",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bureaucracy",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Bureaucracy",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Background: Azorius Functionary",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#BackgroundAzoriusFunctionary",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Legal Authority",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#FeatureLegalAuthority",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Azorius Guild Spells",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#AzoriusGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "An Azorius Party",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#AnAzoriusParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Official",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Rank1Official",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Authority",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Rank2Authority",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Minister, Judge, or Senator",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Rank3MinisterJudgeorSenator",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Arbiter",
+                                    "urlName": "rules/ggtr/azorius-senate",
+                                    "anchorName": "#Rank4Arbiter",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/azorius-senate",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Boros Legion",
+            "urlName": "rules/ggtr/boros-legion",
+            "anchorName": "#BorosLegion",
+            "subsections": [
+                {
+                    "title": "Inside the Legion",
+                    "urlName": "rules/ggtr/boros-legion",
+                    "anchorName": "#InsidetheLegion",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Boros",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#GoalsoftheBoros",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Boros Characters",
+                    "urlName": "rules/ggtr/boros-legion",
+                    "anchorName": "#BorosCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Boros Legion",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#JoiningtheBorosLegion",
+                            "subsections": [
+                                {
+                                    "title": "Martial Training",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#MartialTraining",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Magical Study",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#MagicalStudy",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Military Magic",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#MilitaryMagic",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Background: Boros Legionnaire",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#BackgroundBorosLegionnaire",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Legion Station",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#FeatureLegionStation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Boros Guild Spells",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#BorosGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Boros Party",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#ABorosParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Sergeant",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#Rank1Sergeant",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Skyknight (Special Role)",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#SkyknightSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Wojek (Special Role)",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#WojekSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Brigadier",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#Rank2Brigadier",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sunhome Guard (Special Role)",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#SunhomeGuardSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Captain",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#Rank3Captain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Commander",
+                                    "urlName": "rules/ggtr/boros-legion",
+                                    "anchorName": "#Rank4Commander",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/boros-legion",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "House Dimir",
+            "urlName": "rules/ggtr/house-dimir",
+            "anchorName": "#HouseDimir",
+            "subsections": [
+                {
+                    "title": "Inside the House",
+                    "urlName": "rules/ggtr/house-dimir",
+                    "anchorName": "#InsidetheHouse",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Dimir",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#GoalsoftheDimir",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Dimir Characters",
+                    "urlName": "rules/ggtr/house-dimir",
+                    "anchorName": "#DimirCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining House Dimir",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#JoiningHouseDimir",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Background: Dimir Operative",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#BackgroundDimirOperative",
+                            "subsections": [
+                                {
+                                    "title": "Feature: False Identity",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#FeatureFalseIdentity",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dimir Guild Spells",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#DimirGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spell: Encode Thoughts",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#SpellEncodeThoughts",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Dimir Party",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#ADimirParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Independent Agent",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#IndependentAgent",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Collector of Secrets",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#CollectorofSecrets",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Inner Circle",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#InnerCircle",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Guildmaster’s Confidant",
+                                    "urlName": "rules/ggtr/house-dimir",
+                                    "anchorName": "#GuildmastersConfidant",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/house-dimir",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Golgari Swarm",
+            "urlName": "rules/ggtr/golgari-swarm",
+            "anchorName": "#GolgariSwarm",
+            "subsections": [
+                {
+                    "title": "Inside the Swarm",
+                    "urlName": "rules/ggtr/golgari-swarm",
+                    "anchorName": "#InsidetheSwarm",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Golgari",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#GoalsoftheGolgari",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Golgari Characters",
+                    "urlName": "rules/ggtr/golgari-swarm",
+                    "anchorName": "#GolgariCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Golgari Swarm",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#JoiningtheGolgariSwarm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Background: Golgari Agent",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#BackgroundGolgariAgent",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Undercity Paths",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#FeatureUndercityPaths",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Golgari Guild Spells",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#GolgariGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Golgari Party",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#AGolgariParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Agent",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#Agent",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Monstrous Favors",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#MonstrousFavors",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ochran (Special Role)",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#OchranSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Advisor",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#Advisor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "High Chancellor",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#HighChancellor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Matka (Special Role)",
+                                    "urlName": "rules/ggtr/golgari-swarm",
+                                    "anchorName": "#MatkaSpecialRole",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/golgari-swarm",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Gruul Clans",
+            "urlName": "rules/ggtr/gruul-clans",
+            "anchorName": "#GruulClans",
+            "subsections": [
+                {
+                    "title": "Inside the Clans",
+                    "urlName": "rules/ggtr/gruul-clans",
+                    "anchorName": "#InsidetheClans",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Gruul",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#GoalsoftheGruul",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gruul Characters",
+                    "urlName": "rules/ggtr/gruul-clans",
+                    "anchorName": "#GruulCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Gruul Clans",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#JoiningtheGruulClans",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Background: Gruul Anarch",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#BackgroundGruulAnarch",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Rubblebelt Refuge",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#FeatureRubblebeltRefuge",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gruul Guild Spells",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#GruulGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Gruul Party",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#AGruulParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Proven",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#Proven",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Beast-Friend",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#BeastFriend",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Celebrated",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#Celebrated",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Chieftain",
+                                    "urlName": "rules/ggtr/gruul-clans",
+                                    "anchorName": "#Chieftain",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/gruul-clans",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Izzet League",
+            "urlName": "rules/ggtr/izzet-league",
+            "anchorName": "#IzzetLeague",
+            "subsections": [
+                {
+                    "title": "Inside the League",
+                    "urlName": "rules/ggtr/izzet-league",
+                    "anchorName": "#InsidetheLeague",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Izzet",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#GoalsoftheIzzet",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Izzet Characters",
+                    "urlName": "rules/ggtr/izzet-league",
+                    "anchorName": "#IzzetCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Izzet League",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#JoiningtheIzzetLeague",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Background: Izzet Engineer",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#BackgroundIzzetEngineer",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Urban Infrastructure",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#FeatureUrbanInfrastructure",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Izzet Guild Spells",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#IzzetGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spell: Chaos Bolt",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#SpellChaosBolt",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "An Izzet Party",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#AnIzzetParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Researcher",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#Rank1Researcher",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Scorchbringer (Special Role)",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#ScorchbringerSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Supervisor",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#Rank2Supervisor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Independent Researcher (Special Role)",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#IndependentResearcherSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Director",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#Rank3Director",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Advisor",
+                                    "urlName": "rules/ggtr/izzet-league",
+                                    "anchorName": "#Rank4Advisor",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/izzet-league",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Orzhov Syndicate",
+            "urlName": "rules/ggtr/orzhov-syndicate",
+            "anchorName": "#OrzhovSyndicate",
+            "subsections": [
+                {
+                    "title": "Inside the Syndicate",
+                    "urlName": "rules/ggtr/orzhov-syndicate",
+                    "anchorName": "#InsidetheSyndicate",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Orzhov",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#GoalsoftheOrzhov",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Orzhov Characters",
+                    "urlName": "rules/ggtr/orzhov-syndicate",
+                    "anchorName": "#OrzhovCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Orzhov Syndicate",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#JoiningtheOrzhovSyndicate",
+                            "subsections": [
+                                {
+                                    "title": "Advokist",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Advokist",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Enforcer",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Enforcer",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Priest",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Priest",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Background: Orzhov Representative",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#BackgroundOrzhovRepresentative",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Leverage",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#FeatureLeverage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Orzhov Guild Spells",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#OrzhovGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "An Orzhov Party",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#AnOrzhovParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Syndic",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Rank1Syndic",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Knight",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Rank2Knight",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Ministrant",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Rank3Ministrant",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Pontiff",
+                                    "urlName": "rules/ggtr/orzhov-syndicate",
+                                    "anchorName": "#Rank4Pontiff",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/orzhov-syndicate",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Cult of Rakdos",
+            "urlName": "rules/ggtr/cult-of-rakdos",
+            "anchorName": "#CultofRakdos",
+            "subsections": [
+                {
+                    "title": "Inside the Cult",
+                    "urlName": "rules/ggtr/cult-of-rakdos",
+                    "anchorName": "#InsidetheCult",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Rakdos",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#GoalsoftheRakdos",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rakdos Characters",
+                    "urlName": "rules/ggtr/cult-of-rakdos",
+                    "anchorName": "#RakdosCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Cult of Rakdos",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#JoiningtheCultofRakdos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Background: Rakdos Cultist",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#BackgroundRakdosCultist",
+                            "subsections": [
+                                {
+                                    "title": "A Flair for the Dramatic",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#AFlairfortheDramatic",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Feature: Fearsome Reputation",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#FeatureFearsomeReputation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rakdos Guild Spells",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#RakdosGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Rakdos Party",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#ARakdosParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Extra",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#Extra",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sideshow Act",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#SideshowAct",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Blood Witch (Special Role)",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#BloodWitchSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Star Performer",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#StarPerformer",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ringmaster",
+                                    "urlName": "rules/ggtr/cult-of-rakdos",
+                                    "anchorName": "#Ringmaster",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/cult-of-rakdos",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Selesnya Conclave",
+            "urlName": "rules/ggtr/selesnya-conclave",
+            "anchorName": "#SelesnyaConclave",
+            "subsections": [
+                {
+                    "title": "Inside the Conclave",
+                    "urlName": "rules/ggtr/selesnya-conclave",
+                    "anchorName": "#InsidetheConclave",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Selesnya",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#GoalsoftheSelesnya",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Selesnya Characters",
+                    "urlName": "rules/ggtr/selesnya-conclave",
+                    "anchorName": "#SelesnyaCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Selesnya Conclave",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#JoiningtheSelesnyaConclave",
+                            "subsections": [
+                                {
+                                    "title": "Military Roles",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#MilitaryRoles",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Religious Roles",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#ReligiousRoles",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Background: Selesnya Initiate",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#BackgroundSelesnyaInitiate",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Conclave’s Shelter",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#FeatureConclavesShelter",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selesnya Guild Spells",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#SelesnyaGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Selesnya Party",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#ASelesnyaParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Evangel (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#EvangelSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Votary (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#VotarySpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sagittar (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#SagittarSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selesnya Charm",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#SelesnyaCharm",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Equenaut (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#EquenautSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hierarch (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#HierarchSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ledev Guardian (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#LedevGuardianSpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dignitary (Special Role)",
+                                    "urlName": "rules/ggtr/selesnya-conclave",
+                                    "anchorName": "#DignitarySpecialRole",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/selesnya-conclave",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Simic Combine",
+            "urlName": "rules/ggtr/simic-combine",
+            "anchorName": "#SimicCombine",
+            "subsections": [
+                {
+                    "title": "Inside the Combine",
+                    "urlName": "rules/ggtr/simic-combine",
+                    "anchorName": "#InsidetheCombine",
+                    "subsections": [
+                        {
+                            "title": "Goals of the Simic",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#GoalsoftheSimic",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Simic Characters",
+                    "urlName": "rules/ggtr/simic-combine",
+                    "anchorName": "#SimicCharacters",
+                    "subsections": [
+                        {
+                            "title": "Joining the Simic Combine",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#JoiningtheSimicCombine",
+                            "subsections": [
+                                {
+                                    "title": "Scientist",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Scientist",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Guardian",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Guardian",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Deepsage",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Deepsage",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Background: Simic Scientist",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#BackgroundSimicScientist",
+                            "subsections": [
+                                {
+                                    "title": "Clades and Projects",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#CladesandProjects",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Feature: Researcher",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#FeatureResearcher",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Simic Guild Spells",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#SimicGuildSpells",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#SuggestedCharacteristics",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Contacts",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Contacts",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "How Do I Fit In?",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#HowDoIFitIn",
+                            "subsections": [
+                                {
+                                    "title": "A Simic Party",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#ASimicParty",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rank and Renown",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#RankandRenown",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Technician",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Rank1Technician",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Researcher",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Rank2Researcher",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Luminary (Special Role)",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#LuminarySpecialRole",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Project Leader",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Rank3ProjectLeader",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Clade Leader",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#Rank4CladeLeader",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Speaker (Special Role)",
+                                    "urlName": "rules/ggtr/simic-combine",
+                                    "anchorName": "#SpeakerSpecialRole",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Enemies and Allies",
+                            "urlName": "rules/ggtr/simic-combine",
+                            "anchorName": "#EnemiesandAllies",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: The Tenth District",
+            "urlName": "rules/ggtr/the-tenth-district",
+            "anchorName": "#Chapter3TheTenthDistrict",
+            "subsections": [
+                {
+                    "title": "The Six Precincts",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#TheSixPrecincts",
+                    "subsections": [
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Major Trade Ways",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#MajorTradeWays",
+                    "subsections": []
+                },
+                {
+                    "title": "Beneath the Streets",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#BeneaththeStreets",
+                    "subsections": [
+                        {
+                            "title": "City Works",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#CityWorks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Undercity",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#Undercity",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct One",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctOne",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctOneAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctOneNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctOneGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctOneLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctOnePeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct Two",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctTwo",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctTwoAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctTwoNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctTwoGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctTwoLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctTwoPeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct Three",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctThree",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctThreeAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctThreeNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctThreeGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctThreeLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctThreePeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct Four",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctFour",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFourAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFourNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFourGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFourLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFourPeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct Five",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctFive",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFiveAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFiveNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFiveGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFiveLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctFivePeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Precinct Six",
+                    "urlName": "rules/ggtr/the-tenth-district",
+                    "anchorName": "#PrecinctSix",
+                    "subsections": [
+                        {
+                            "title": "Affiliated Guilds",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctSixAffiliatedGuilds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neighborhoods and Landmarks",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctSixNeighborhoodsandLandmarks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goods and Services",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctSixGoodsandServices",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Crime",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctSixLawandCrime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "People and Rumors",
+                            "urlName": "rules/ggtr/the-tenth-district",
+                            "anchorName": "#PrecinctSixPeopleandRumors",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: Creating Adventures",
+            "urlName": "rules/ggtr/creating-adventures",
+            "anchorName": "#Chapter4CreatingAdventures",
+            "subsections": [
+                {
+                    "title": "Guild-Based Adventures",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#GuildBasedAdventures",
+                    "subsections": []
+                },
+                {
+                    "title": "Choosing a Guild",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#ChoosingaGuild",
+                    "subsections": []
+                },
+                {
+                    "title": "Involving the Characters",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#InvolvingtheCharacters",
+                    "subsections": []
+                },
+                {
+                    "title": "Complications",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#Complications",
+                    "subsections": []
+                },
+                {
+                    "title": "Azorius Senate",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#AzoriusSenate",
+                    "subsections": []
+                },
+                {
+                    "title": "Boros Legion",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#BorosLegion",
+                    "subsections": []
+                },
+                {
+                    "title": "House Dimir",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#HouseDimir",
+                    "subsections": []
+                },
+                {
+                    "title": "Golgari Swarm",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#GolgariSwarm",
+                    "subsections": []
+                },
+                {
+                    "title": "Gruul Clans",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#GruulClans",
+                    "subsections": []
+                },
+                {
+                    "title": "Izzet League",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#IzzetLeague",
+                    "subsections": []
+                },
+                {
+                    "title": "Orzhov Syndicate",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#OrzhovSyndicate",
+                    "subsections": []
+                },
+                {
+                    "title": "Cult of Rakdos",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#CultofRakdos",
+                    "subsections": []
+                },
+                {
+                    "title": "Selesnya Conclave",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#SelesnyaConclave",
+                    "subsections": []
+                },
+                {
+                    "title": "Simic Combine",
+                    "urlName": "rules/ggtr/creating-adventures",
+                    "anchorName": "#SimicCombine",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 5: Treasures",
+            "urlName": "rules/ggtr/treasures",
+            "anchorName": "#Chapter5Treasures",
+            "subsections": [
+                {
+                    "title": "Coins in Treasure",
+                    "urlName": "rules/ggtr/treasures",
+                    "anchorName": "#CoinsinTreasure",
+                    "subsections": []
+                },
+                {
+                    "title": "Guild Charms",
+                    "urlName": "rules/ggtr/treasures",
+                    "anchorName": "#GuildCharms",
+                    "subsections": [
+                        {
+                            "title": "Azorius Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#AzoriusCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Boros Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#BorosCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dimir Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#DimirCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Golgari Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#GolgariCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gruul Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#GruulCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Izzet Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#IzzetCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Orzhov Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#OrzhovCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rakdos Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#RakdosCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Selesnya Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#SelesnyaCharm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Simic Charm",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#SimicCharm",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Magic Items",
+                    "urlName": "rules/ggtr/treasures",
+                    "anchorName": "#MagicItems",
+                    "subsections": [
+                        {
+                            "title": "Guilds and Magic Items",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#GuildsandMagicItems",
+                            "subsections": [
+                                {
+                                    "title": "Azorius Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#AzoriusItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Boros Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#BorosItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dimir Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#DimirItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Golgari Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#GolgariItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gruul Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#GruulItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Izzet Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#IzzetItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Orzhov Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#OrzhovItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rakdos Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#RakdosItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selesnya Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#SelesnyaItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Simic Items",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#SimicItems",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Magic Item Descriptions",
+                            "urlName": "rules/ggtr/treasures",
+                            "anchorName": "#MagicItemDescriptions",
+                            "subsections": [
+                                {
+                                    "title": "Guild Keyrune",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#GuildKeyrune",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Guild Signet",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#GuildSignet",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Illusionist’s Bracers",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#IllusionistsBracers",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mizzium Apparatus",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#MizziumApparatus",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mizzium Armor",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#MizziumArmor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mizzium Mortar",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#MizziumMortar",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Moodmark Paint",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#MoodmarkPaint",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Pariah’s Shield",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#PariahsShield",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Peregrine Mask",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#PeregrineMask",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Pyroconverger",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#Pyroconverger",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rakdos Riteknife",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#RakdosRiteknife",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Skyblinder Staff",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#SkyblinderStaff",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spies’ Murmur",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#SpiesMurmur",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sunforger",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#Sunforger",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sword of the Paruns",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#SwordoftheParuns",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Voyager Staff",
+                                    "urlName": "rules/ggtr/treasures",
+                                    "anchorName": "#VoyagerStaff",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 6: Friends and Foes",
+            "urlName": "rules/ggtr/friends-and-foes",
+            "anchorName": "#Chapter6FriendsandFoes",
+            "subsections": [
+                {
+                    "title": "Azorius Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#AzoriusCreatures",
+                    "subsections": [
+                        {
+                            "title": "Sphinxes of Judgment",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#SphinxesofJudgment",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Boros Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#BorosCreatures",
+                    "subsections": [
+                        {
+                            "title": "Flame-Kin",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#FlameKin",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Dimir Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#DimirCreatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Golgari Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#GolgariCreatures",
+                    "subsections": [
+                        {
+                            "title": "Erstwhile",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Erstwhile",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fungus",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Fungus",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Insects and Arachnids",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#InsectsandArachnids",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Zombies",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Zombies",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gruul Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#GruulCreatures",
+                    "subsections": [
+                        {
+                            "title": "Beasts",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Beasts",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Elementals",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Elementals",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Giants",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Giants",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hydras",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Hydras",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Izzet Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#IzzetCreatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Orzhov Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#OrzhovCreatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Rakdos Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#RakdosCreatures",
+                    "subsections": []
+                },
+                {
+                    "title": "Selesnya Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#SelesnyaCreatures",
+                    "subsections": [
+                        {
+                            "title": "Elementals",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Elementals",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Plant Creatures",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#PlantCreatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pegasi",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Pegasi",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Simic Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#SimicCreatures",
+                    "subsections": [
+                        {
+                            "title": "Benthids",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Benthids",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Merfolk",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Merfolk",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Guildless Creatures",
+                    "urlName": "rules/ggtr/friends-and-foes",
+                    "anchorName": "#GuildlessCreatures",
+                    "subsections": [
+                        {
+                            "title": "Drakes",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#Drakes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pack Beasts",
+                            "urlName": "rules/ggtr/friends-and-foes",
+                            "anchorName": "#PackBeasts",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/ggtr/credits",
+            "anchorName": "#",
+            "subsections": []
+        }
+    ]
+}

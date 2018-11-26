@@ -10,6 +10,7 @@ import tftyp from './data/adventures/tftyp.json';
 import toa from './data/adventures/toa.json';
 import basicRules from './data/rules/basic-rules.json';
 import dmg from './data/rules/dmg.json';
+import ggtr from './data/rules/ggtr.json';
 import mm from './data/rules/mm.json';
 import mtof from './data/rules/mtof.json';
 import phb from './data/rules/phb.json';
@@ -39,6 +40,7 @@ const data = {
     rules: {
         'basic-rules': basicRules,
         'dmg': dmg,
+        'ggtr': ggtr,
         'mm': mm,
         'mtof': mtof,
         'phb': phb,

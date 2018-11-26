@@ -89,6 +89,13 @@ function topLevel(type, hrefs) {
                 if (refs.length === 0)
                     refs = $('.compendium-toc-full-text').first().find('H4').find('a').get().map(e => e.href);
 
+                // adds ravnica guild pages
+                if (go === 'https://www.dndbeyond.com/compendium/rules/ggtr') {
+                    const allSubChapters = $(".adventure-chapter-header:nth-of-type(2)").next().find("strong a").get();
+                    const guildRefs = allSubChapters.filter(subChapter => subChapter.href.indexOf("guilds-of-ravnica") === -1).map(e => e.href);
+                    refs.splice(2, 0, ...guildRefs);
+                }
+
                 refs = introRefs.concat(refs);
             }
             secondLevel(type, hrefs, refs);
