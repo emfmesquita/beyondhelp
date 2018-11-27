@@ -140,8 +140,8 @@ module.exports.config = (isProd) => {
             minifyURLs: true,
         }
         const original = result.plugins.html;
-        result.plugins.html = (filename) => {
-            const plugin = original(filename);
+        result.plugins.html = (filename, template) => {
+            const plugin = original(filename, template);
             plugin.minify = minify;
             return plugin;
         };

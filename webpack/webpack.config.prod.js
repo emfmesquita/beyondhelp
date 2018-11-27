@@ -29,7 +29,7 @@ module.exports = [{
     },
     module: {
         rules: [rules.lint, {
-            oneOf: [rules.static, rules.js, rules.separateCss, rules.file]
+            oneOf: [rules.static, rules.js, rules.css, rules.file]
         }]
     },
     plugins: [plugins.html("extensionpopup.html", paths.popupHtml), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
