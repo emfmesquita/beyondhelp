@@ -11,9 +11,10 @@ import MessageService from '../services/MessageService';
 import Opt from "../Options";
 import OptionGroup from "./OptionGroup";
 import OptionLine from "../forms/OptionLine";
+import OptionsCredits from './OptionsCredits';
+import OptionsDonations from './OptionsDonations';
 import PbpEntriesForm from "./playbypost/PbpEntriesForm";
 import SyncStorageService from "../services/storage/SyncStorageService";
-import OptionsCredits from './OptionsCredits';
 
 let initialized = false;
 
@@ -84,6 +85,7 @@ class OptionsApp extends Component {
                 <NavItem eventKey="toc">Table of Contents</NavItem>
                 <NavItem eventKey="tablerolls">Table Rolls</NavItem>
                 <NavItem eventKey="credits">Credits</NavItem>
+                <NavItem eventKey="donations">Donations</NavItem>
             </Nav>
         );
     }
@@ -158,6 +160,9 @@ class OptionsApp extends Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="credits">
                     {<OptionsCredits />}
+                </Tab.Pane>
+                <Tab.Pane eventKey="donations">
+                    {<OptionsDonations />}
                 </Tab.Pane>
             </Tab.Content>
         );

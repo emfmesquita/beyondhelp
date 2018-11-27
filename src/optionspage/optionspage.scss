@@ -16,6 +16,22 @@ $options-white: #fff;
     }
 }
 
+@mixin icon($icon) {
+    i.fa.fa-#{$icon} {
+        mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        background-color: $options-black;
+        width: 32px;
+        height: 32px;
+        margin: 0px 4px;
+        display: inline-block;
+    }
+}
+
+@include icon("d-and-d-beyond");
+@include icon("github");
+@include icon("twitter");
+@include icon("twitch");
 @import "OptionsApp";
 @import "OptionsCredits";
 @import "OptionsGroup";

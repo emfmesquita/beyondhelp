@@ -1,21 +1,6 @@
-@mixin icon($icon) {
-    i.fa.fa-#{$icon} {
-        mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
-        -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
-        background-color: $options-black;
-        width: 32px;
-        height: 32px;
-        margin: 0px 4px;
-        display: inline-block;
-    }
-}
-
 .BH-credits {
-    @include icon("d-and-d-beyond");
-    @include icon("github");
-    @include icon("twitter");
-    @include icon("twitch");
     margin: 0px !important;
+    width: 100%;
     .row {
         margin: 24px;
     }
