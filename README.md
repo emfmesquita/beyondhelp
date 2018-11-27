@@ -137,13 +137,13 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
 
 ![Drawing Mode](http://i.imgur.com/EmXhCTU.png)
 
-![Extra map refs Options](http://i.imgur.com/z07wN7M.png)
+![Extra map refs Options](http://i.imgur.com/G5YuUGf.png)
 
 ### Character Page Favicon
 ![Character Page Favicon](http://i.imgur.com/gXTRLpd.png)
 
 ### Global Options
-![Global Options](https://i.imgur.com/4X9JQqH.png)
+![Global Options](https://i.imgur.com/cRddCYP.png)
 
 ### Roll on Tables
 ![Roll on Tables](http://i.imgur.com/ewhJtQj.png)
