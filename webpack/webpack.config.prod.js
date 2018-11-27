@@ -41,7 +41,7 @@ module.exports = [{
     },
     module: {
         rules: [rules.lint, {
-            oneOf: [rules.static, rules.js, rules.css, rules.file]
+            oneOf: [rules.static, rules.js, rules.separateCss, rules.file]
         }]
     },
     plugins: [plugins.html("optionspage.html", paths.optsHtml), plugins.separateCss("optionspage.css"), plugins.provideJquery, plugins.react, plugins.uglify, plugins.merge]
