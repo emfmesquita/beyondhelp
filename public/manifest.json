@@ -1,6 +1,6 @@
 {
     "name": "Beyond Help",
-    "version": "0.14.1",
+    "version": "0.14.2",
     "description": "Chrome extension with helpers to https://www.dndbeyond.com/.",
     "background": {
         "scripts": [
