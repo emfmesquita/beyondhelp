@@ -230,6 +230,7 @@ class ExtraMapRefsService {
         if (!bundles) return mapRefs;
 
         bundles.forEach(bundle => {
+            if (bundle.hidden) return;
             mapRefs = mapRefs.concat(processBundle(bundle, config));
         });
 
