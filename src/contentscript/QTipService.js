@@ -1,6 +1,6 @@
-import $ from "jquery";
-import PageScriptService from "../services/PageScriptService";
+import "qtip2";
 
+import $ from "jquery";
 
 const addQtipId = (target: JQuery<HTMLElement>): string => {
     let id = target.attr("bh-qtip-id");
@@ -12,14 +12,11 @@ const addQtipId = (target: JQuery<HTMLElement>): string => {
 };
 
 const addQTip = (target: JQuery<HTMLElement>, options: object) => {
-    const qtipOptionsString = JSON.stringify(options);
-    // adds a script to run on the ddb page that adds the qtip
-    PageScriptService.run(`$("[bh-qtip-id='${addQtipId(target)}']").qtip(${qtipOptionsString})`);
+    $(`[bh-qtip-id='${addQtipId(target)}']`).qtip(options);
 };
 
 const hideQTip = (target: JQuery<HTMLElement>) => {
-    // adds a script to run on the ddb page that hides the qtip
-    PageScriptService.run(`$("[bh-qtip-id='${addQtipId(target)}']").qtip("hide")`);
+    $(`[bh-qtip-id='${addQtipId(target)}']`).qtip("hide");
 };
 
 const defaultOptions = {
