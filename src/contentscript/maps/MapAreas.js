@@ -1,14 +1,16 @@
+import "qtip2";
+
 import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
-import "qtip2";
 
 import $ from "jquery";
 import C from "../../Constants";
 import Configuration from "../../data/Configuration";
 import Coordinates from "../../data/Coordinates";
+import DrawingService from "./extrarefsmode/drawing/DrawingService";
+import HtmlEncode from 'js-htmlencode';
 import MapAreaInfo from "./MapAreaInfo";
 import Opt from "../../Options";
-import DrawingService from "./extrarefsmode/drawing/DrawingService";
 
 class MapAreas extends Component {
     postProcessArea = (el: HTMLElement, href: string, area: MapAreaInfo) => {
@@ -18,12 +20,18 @@ class MapAreas extends Component {
         el.setAttribute("onclick", "event.preventDefault(); event.stopPropagation();");
 
         // if is a comment setup the qtip
-        if (area.areaType === C.MapAreaComment) {
-            $(el).qtip({
-                content: area.comment,
+        if (area.areaType === C.MapAreaComment && area.comment) {
+
+
+            const opts = {
+                content: {
+                    text: HtmlEncode.htmlEncode(area.comment),
+                    title: area.title || ""
+                },
                 position: { target: 'mouse', adjust: { x: 5, y: 5 } },
                 style: { classes: "BH-map-ref-comment-tooltip qtip-light" }
-            });
+            };
+            $(el).qtip(opts);
             if (DrawingService.isAnyCommandOn()) $(el).qtip("disable");
         }
     }

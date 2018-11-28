@@ -102,9 +102,13 @@ const commentsSchema = {
                 "type": "string",
                 "title": "Comment"
             },
+            "title": {
+                "type": "string",
+                "title": "Title (Optional)"
+            },
             "color": areaColor
         },
-        "required": ["coords", "targetImageName"]
+        "required": ["coords", "comment"]
     }
 };
 

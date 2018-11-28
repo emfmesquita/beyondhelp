@@ -8,6 +8,7 @@
         "dateformat": "^3.0.3",
         "debounce-promise": "^3.0.2",
         "jquery": "^3.2.1",
+        "js-htmlencode": "^0.3.0",
         "lodash": "^4.17.4",
         "paper": "^0.11.8",
         "qtip2": "^3.0.3",

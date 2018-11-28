@@ -19,7 +19,8 @@ const attToRequiredTitle = {
     coords: "Coords",
     headerId: "Header Id",
     targetImageName: "Target Image",
-    selector: "Header Selector"
+    selector: "Header Selector",
+    comment: "Comment"
 };
 
 const patternToMsg = {

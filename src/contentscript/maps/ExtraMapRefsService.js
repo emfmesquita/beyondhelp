@@ -145,7 +145,7 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
             }
 
             E.tryCatch(() => {
-                const info = new MapCommentAreaInfo(comment.comment, comment.coords).drawable(drawable).uid(comment.id);
+                const info = new MapCommentAreaInfo(comment.comment, comment.coords, comment.title).drawable(drawable).uid(comment.id);
                 setColor(info, bundle, compendium, map, comment, drawable);
                 mapAreas.push(info);
             }, `Failed to process comment area "${comment.coords}" ${fromMap(map, compendium, bundleName)}.`);
