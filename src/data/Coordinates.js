@@ -1,3 +1,5 @@
+import C from "../Constants";
+
 const middle = (coord1: number, coord2: number) => Math.floor((coord1 + coord2) / 2);
 
 class Point {
@@ -171,6 +173,10 @@ class Coordinates {
         return `${base}${base ? "," : ""}${this.r ? this.r : ""}`;
     }
 
+    static clone(coords: Coordinates): Coordinates {
+        return coords.clone();
+    }
+
     static parse(coords: string): Coordinates {
         const coordsSplited = coords.split(",");
         const toNumber = (idx: number) => Number.parseInt(coordsSplited[idx]);
@@ -192,13 +198,16 @@ class Coordinates {
         return new Coordinates(middleX, y1).add(x2, middleY).add(middleX, y2).add(x1, middleY);
     }
 
+    static rectCoordsToRho(rectCoords: Coordinates): Coordinates {
+        return Coordinates.rectToRho(rectCoords.x(1), rectCoords.y(1), rectCoords.x(2), rectCoords.y(2));
+    }
+
     static rhoToRect(rho: Coordinates): Coordinates {
         return new Coordinates(rho.x(4), rho.y(1)).add(rho.x(2), rho.y(3));
     }
 
     static strRectToRho(rectCoords: string): Coordinates {
-        const coords = Coordinates.parse(rectCoords);
-        return Coordinates.rectToRho(coords.x(1), coords.y(1), coords.x(2), coords.y(2));
+        return Coordinates.rectCoordsToRho(Coordinates.parse(rectCoords));
     }
 
     static rectToCir(x1: number, y1: number, x2: number, y2: number): Coordinates {
@@ -206,6 +215,47 @@ class Coordinates {
         const y = Math.abs(y2 - y1);
         const r = Math.round(Math.sqrt(x * x + y * y));
         return new Coordinates(x1, y1).radius(r || 1);
+    }
+
+    static rectCoordsToCir(rectCoords: Coordinates): Coordinates {
+        return Coordinates.rectToCir(rectCoords.x(1), rectCoords.y(1), rectCoords.x(2), rectCoords.y(2));
+    }
+
+    static rectToComment(x1: number, y1: number, x2: number, y2: number): Coordinates {
+        const leftX = Math.min(x1, x2);
+        const rightX = Math.max(x1, x2);
+        const topY = Math.min(y1, y2);
+        const botY = Math.max(y1, y2);
+
+        const coords = new Coordinates(leftX, topY).add(rightX, topY).add(rightX, botY);
+
+        const middleX = middle(x1, x2);
+        const leftBaseX = middleX - 2;
+        const rightBaseX = middleX + 3;
+        const tipY = botY + 5;
+        const tipX = middleX - 1;
+
+        coords.add(rightBaseX, botY).add(tipX, tipY).add(leftBaseX, botY);
+        coords.add(leftX, botY);
+        return coords;
+    }
+
+    static rectCoordsToComment(rectCoords: Coordinates): Coordinates {
+        return Coordinates.rectToComment(rectCoords.x(1), rectCoords.y(1), rectCoords.x(2), rectCoords.y(2));
+    }
+
+    static strRectToComment(rectCoords: string): Coordinates {
+        const coords = Coordinates.parse(rectCoords);
+        return Coordinates.rectToComment(coords.x(1), coords.y(1), coords.x(2), coords.y(2));
+    }
+
+    static commentToRect(comment: Coordinates): Coordinates {
+        return new Coordinates(comment.x(1), comment.y(1)).add(comment.x(3), comment.y(3));
+    }
+
+    static areaTypeToShape(type: string) {
+        if ([C.MapAreaRhombus, C.MapAreaComment].includes(type)) return "poly";
+        return type;
     }
 }
 

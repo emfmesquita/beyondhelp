@@ -26,6 +26,7 @@ const mapRefsCircTooltips = "mapRefsCircTooltips";
 const mapRefsCirc = "mapRefsCirc";
 const mapRefsRhoTooltips = "mapRefsRhoTooltips";
 const mapRefsRho = "mapRefsRho";
+const mapRefsComments = "mapRefsComments";
 const mapLinksTooltips = "mapLinksTooltips";
 const mapLinks = "mapLinks";
 const mapMenuLinksTooltips = "mapMenuLinksTooltips";
@@ -66,6 +67,7 @@ const allOptions = [
     mapRefs,
     mapRefsRectTooltips,
     mapRefsRect,
+    mapRefsComments,
     mapRefsCircTooltips,
     mapRefsCirc,
     mapRefsRhoTooltips,
@@ -154,6 +156,9 @@ class Options {
     }
     static get MapRefsRect(): string {
         return mapRefsRect;
+    }
+    static get MapRefsComments(): string {
+        return mapRefsComments;
     }
     static get MapRefsCircTooltips(): string {
         return mapRefsCircTooltips;

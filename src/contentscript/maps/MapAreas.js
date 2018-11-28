@@ -1,15 +1,31 @@
 import { FragmentData, FragmentService } from "../../services/FragmentService";
 import React, { Component } from 'react';
+import "qtip2";
 
+import $ from "jquery";
 import C from "../../Constants";
 import Configuration from "../../data/Configuration";
+import Coordinates from "../../data/Coordinates";
 import MapAreaInfo from "./MapAreaInfo";
 import Opt from "../../Options";
+import DrawingService from "./extrarefsmode/drawing/DrawingService";
 
 class MapAreas extends Component {
-    postProcessArea = (el: HTMLElement, href: string, hash: string) => {
+    postProcessArea = (el: HTMLElement, href: string, area: MapAreaInfo) => {
+        if (!el) return;
+
         // to force onclick attribute that stops click propagation that opens the light box
-        if (el) el.setAttribute("onclick", "event.preventDefault(); event.stopPropagation();");
+        el.setAttribute("onclick", "event.preventDefault(); event.stopPropagation();");
+
+        // if is a comment setup the qtip
+        if (area.areaType === C.MapAreaComment) {
+            $(el).qtip({
+                content: area.comment,
+                position: { target: 'mouse', adjust: { x: 5, y: 5 } },
+                style: { classes: "BH-map-ref-comment-tooltip qtip-light" }
+            });
+            if (DrawingService.isAnyCommandOn()) $(el).qtip("disable");
+        }
     }
 
     toMapRef = ({ button }: MouseEvent, href: string) => {
@@ -26,17 +42,20 @@ class MapAreas extends Component {
         const config: Configuration = this.props.config;
         if (!areas) return null;
         return areas.map(area => {
-            if (area.shape === C.MapAreaRect && !config[Opt.MapRefsRect]) return;
-            if (area.shape === C.MapAreaCircle && !config[Opt.MapRefsCirc]) return;
-            if (area.shape === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
-            const shape = area.shape === C.MapAreaRhombus ? "poly" : area.shape;
+            const isComment = area.areaType === C.MapAreaComment;
+            if (area.areaType === C.MapAreaRect && !config[Opt.MapRefsRect]) return;
+            if (area.areaType === C.MapAreaCircle && !config[Opt.MapRefsCirc]) return;
+            if (area.areaType === C.MapAreaRhombus && !config[Opt.MapRefsRho]) return;
+            if (isComment && !config[Opt.MapRefsComments]) return;
+
+            const shape = Coordinates.areaTypeToShape(area.areaType);
 
             // if area is missing info the tooltip class is not added
             // and a tooltip is nod added and href is set to void
             const tooltipable = area.isTooltiplable();
-            const tooltipClass = tooltipable ? `BH-map-ref-${area.shape}` : "";
-            const className = `tooltip-hover BH-map-ref ${tooltipClass}`;
-            const href = tooltipable ? `${C.CompendiumPage}${area.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}` : "javascript:void(0)";
+            const tooltipClass = tooltipable ? `BH-map-ref-${area.areaType}` : "";
+            const className = isComment ? "BH-map-ref-comment" : `tooltip-hover BH-map-ref ${tooltipClass}`;
+            const href = tooltipable && !isComment ? `${C.CompendiumPage}${area.page}${FragmentService.format(area.headerId, area.contentId, area.untilContentId, area.contentOnly)}` : "javascript:void(0)";
 
             const paperData = {};
 
@@ -51,10 +70,11 @@ class MapAreas extends Component {
                     className={className}
                     href={href}
                     shape={shape}
+                    type={area.areaType}
                     drawable={area.isDrawable.toString()}
                     coords={area.coords}
                     bh-paper-data={JSON.stringify(paperData)}
-                    ref={(el) => this.postProcessArea(el, href)}
+                    ref={(el) => this.postProcessArea(el, href, area)}
                     onMouseDown={(e) => this.toMapRef(e, href)}
                 />
             );

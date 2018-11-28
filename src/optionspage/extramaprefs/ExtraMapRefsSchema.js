@@ -91,6 +91,23 @@ const mapToMapsSchema = {
     }
 };
 
+const commentsSchema = {
+    "type": "array",
+    "title": "Comment Areas",
+    "items": {
+        "type": "object",
+        "properties": {
+            "coords": coords(ExtraMapRefsPatterns.fourCoords),
+            "comment": {
+                "type": "string",
+                "title": "Comment"
+            },
+            "color": areaColor
+        },
+        "required": ["coords", "targetImageName"]
+    }
+};
+
 const extraMenuLinksSchema = {
     "type": "array",
     "title": "Extra Menu Element Ids",
@@ -139,6 +156,7 @@ const mapsSchema = {
             "simpleAreas": areasSchema,
             "extraAreas": extraAreasSchema,
             "mapToMaps": mapToMapsSchema,
+            "comments": commentsSchema,
             "extraMenuHeaderIds": extraMenuLinksSchema
         },
         "required": ["page", "mapImageName", "contentId", "menuHeaderId"]

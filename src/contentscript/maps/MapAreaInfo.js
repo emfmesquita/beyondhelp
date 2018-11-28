@@ -14,7 +14,7 @@ class MapAreaInfo {
         this.page = page;
         this.contentId = contentId;
         this.contentOnly = false;
-        this.shape = C.MapAreaRect;
+        this.areaType = C.MapAreaRect;
         this.id = null;
         this.isDrawable = false;
     }
@@ -37,19 +37,19 @@ class MapAreaInfo {
 
     rect(x1: number, y1: number, x2: number, y2: number): MapAreaInfo {
         this.coords = Coordinates.rect(x1, y1, x2, y2).toString();
-        this.shape = C.MapAreaRect;
+        this.areaType = C.MapAreaRect;
         return this;
     }
 
     rho(x1: number, y1: number, x2: number, y2: number): MapAreaInfo {
         this.coords = Coordinates.rectToRho(x1, y1, x2, y2).toString();
-        this.shape = C.MapAreaRhombus;
+        this.areaType = C.MapAreaRhombus;
         return this;
     }
 
     rhoStr(coords: string): MapAreaInfo {
         this.coords = Coordinates.strRectToRho(coords).toString();
-        this.shape = C.MapAreaRhombus;
+        this.areaType = C.MapAreaRhombus;
         return this;
     }
 

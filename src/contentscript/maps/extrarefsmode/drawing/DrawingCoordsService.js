@@ -12,20 +12,23 @@ const coordsSpan = () => {
 };
 
 const coordsFunc = {
-    [C.MapAreaRect]: Coordinates.rect,
-    [C.MapAreaRhombus]: Coordinates.rectToRho,
-    [C.MapAreaCircle]: Coordinates.rectToCir
+    [C.MapAreaRect]: (c) => c,
+    [C.MapAreaRhombus]: Coordinates.rectCoordsToRho,
+    [C.MapAreaCircle]: Coordinates.rectCoordsToCir,
+    [C.MapAreaComment]: Coordinates.rectCoordsToComment
+};
+
+const toSaveFunc = {
+    [C.MapAreaRect]: Coordinates.clone,
+    [C.MapAreaRhombus]: Coordinates.rhoToRect,
+    [C.MapAreaCircle]: Coordinates.clone,
+    [C.MapAreaComment]: Coordinates.commentToRect
 };
 
 const roundMinDelta = 5;
 
 const getMapImage = (e: MouseEvent) => {
     return $(e.target).closest("a").find("img");
-};
-
-const toSaveCoords = (coords: Coordinates, shape: string): Coordinates => {
-    if (shape === C.MapAreaCircle || shape === C.MapAreaRect) return coords.clone();
-    return Coordinates.rhoToRect(coords);
 };
 
 class DrawingCoordsService {
@@ -64,9 +67,8 @@ class DrawingCoordsService {
         return coords;
     }
 
-    static toSaveCoords(coords: Coordinates, shape: string): Coordinates {
-        if (shape === C.MapAreaCircle || shape === C.MapAreaRect) return coords.clone();
-        return Coordinates.rhoToRect(coords);
+    static toSaveCoords(coords: Coordinates, type: string): Coordinates {
+        return toSaveFunc[type](coords);
     }
 
     static setToolbarCoords(text: string) {
@@ -127,8 +129,8 @@ class DrawingCoordsService {
         if (circle.r === 0) circle.r = roundMinDelta;
     }
 
-    static rectToShape(rect: Coordinates, shape: string): Coordinates {
-        return coordsFunc[shape](rect.x(1), rect.y(1), rect.x(2), rect.y(2));
+    static rectToShape(rect: Coordinates, type: string): Coordinates {
+        return coordsFunc[type](rect);
     }
 }
 

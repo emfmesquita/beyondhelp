@@ -6,7 +6,7 @@ import $ from "jquery";
 const getMapName = (jqMapImg: JQuery<HTMLElement>) => jqMapImg.attr("usemap").substr(1);
 
 class DrawingAreaInfo {
-    constructor(area: JQuery<HTMLElement>, shape: string, startCoords: Coordinates) {
+    constructor(area: JQuery<HTMLElement>, areaType: string, startCoords: Coordinates) {
         this.id = UidService.id();
         this.area = area;
 
@@ -14,7 +14,7 @@ class DrawingAreaInfo {
         this.mapImageCoords = new Coordinates(0, 0).add(this.mapImage.width(), this.mapImage.height());
         this.mapName = getMapName(this.mapImage);
 
-        this.shape = shape;
+        this.areaType = areaType;
 
         this.startCoords = startCoords;
         this.coords = startCoords.clone();

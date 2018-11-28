@@ -6,7 +6,7 @@ class MapToMapAreaInfo extends MapAreaInfo {
         super("", coords);
         this.addBackLinkIfSamePage = false;
         this.contentOnly = true;
-        this.shape = C.MapAreaCircle;
+        this.areaType = C.MapAreaCircle;
         this.targetImageName = targetImageName;
     }
 }

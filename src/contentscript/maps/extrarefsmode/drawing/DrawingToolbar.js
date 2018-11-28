@@ -23,6 +23,7 @@ class DrawingToolbar extends Component {
             Digit1: this.commandToClickHandler[Command.Rect], // 1
             Digit2: this.commandToClickHandler[Command.Rho], // 2
             Digit3: this.commandToClickHandler[Command.Circ], // 3
+            Digit4: this.commandToClickHandler[Command.Comment], // 4
             KeyM: this.commandToClickHandler[Command.Move], // m
             KeyD: this.commandToClickHandler[Command.Delete], // d
             KeyS: this.commandToClickHandler[Command.Resize] // s
@@ -65,6 +66,7 @@ class DrawingToolbar extends Component {
                     {this.commandButton("square", "Area (1)", Command.Rect)}
                     {this.commandButton("gem", "More Info Area (2)", Command.Rho)}
                     {this.commandButton("circle", "Map to Map Area (3)", Command.Circ)}
+                    {this.commandButton("comment-alt", "Comment Area (4)", Command.Comment)}
                     {this.commandButton("arrows-alt", "Move Area (m)", Command.Move)}
                     {this.commandButton("expand-arrows-alt", "Resize Area (s)", Command.Resize)}
                     {this.commandButton("trash-alt", "Delete Area (d)", Command.Delete)}

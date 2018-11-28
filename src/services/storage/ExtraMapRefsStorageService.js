@@ -10,10 +10,11 @@ import Q from "../../services/storage/Q";
 import DrawingCoordsService from "../../contentscript/maps/extrarefsmode/drawing/DrawingCoordsService";
 //import type StorageData from "../../data/StorageData";
 
-const shapeToAreas = {
+const typeToAreas = {
     [C.MapAreaRect]: "simpleAreas",
     [C.MapAreaRhombus]: "extraAreas",
-    [C.MapAreaCircle]: "mapToMaps"
+    [C.MapAreaCircle]: "mapToMaps",
+    [C.MapAreaComment]: "comments"
 };
 
 const getDrawingBundle = (): Promise<ExtraMapRefsData> => {
@@ -56,9 +57,9 @@ const getMap = (bundle: ExtraMapRefsData, mapInfo: MapInfo, createNonExistent: b
     return map;
 };
 
-const getAreas = (map: object, shape: string, createNonExistent: boolean): Array => {
-    if (!Array.isArray(map[shapeToAreas[shape]]) && createNonExistent) map[shapeToAreas[shape]] = [];
-    return map[shapeToAreas[shape]];
+const getAreas = (map: object, type: string, createNonExistent: boolean): Array => {
+    if (!Array.isArray(map[typeToAreas[type]]) && createNonExistent) map[typeToAreas[type]] = [];
+    return map[typeToAreas[type]];
 };
 
 const sendChangedMessage = () => {
@@ -97,9 +98,9 @@ class ExtraMapRefsStorageService {
     static saveArea(areaInfo: DrawingAreaInfo, mapInfo: MapInfo): Promise {
         return getDrawingBundle().then(bundle => {
             const map = getMap(bundle, mapInfo, true);
-            const areas = getAreas(map, areaInfo.shape, true);
+            const areas = getAreas(map, areaInfo.areaType, true);
             const oldArea = areas.find(a => a.id === areaInfo.id);
-            const saveCoords = DrawingCoordsService.toSaveCoords(areaInfo.coords, areaInfo.shape).toString();
+            const saveCoords = DrawingCoordsService.toSaveCoords(areaInfo.coords, areaInfo.areaType).toString();
 
             if (oldArea) {
                 oldArea.coords = saveCoords;
@@ -120,7 +121,7 @@ class ExtraMapRefsStorageService {
             const map = getMap(bundle, mapInfo, true);
             if (!map) return;
 
-            const areas = getAreas(map, areaInfo.shape);
+            const areas = getAreas(map, areaInfo.areaType);
             if (!Array.isArray(areas)) return;
 
             const idx = areas.findIndex(a => a.id === areaInfo.id);

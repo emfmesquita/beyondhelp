@@ -99,7 +99,9 @@ class ExtraMapRefsOptions extends Component {
 
             // makes sure that the current selected bundle is from the list of loaded bundles
             // fixes a bug of editing on compendium page triggering an option reload
-            if (this.state.selectedBundle) state.selectedBundle = bundles.find(bundle => bundle.storageId === this.state.selectedBundle.storageId);
+            if (this.state.selectedBundle && !newBundle && !deleted) {
+                state.selectedBundle = bundles.find(bundle => bundle.storageId === this.state.selectedBundle.storageId);
+            }
 
             this.setState(state);
         }).catch(error => { throw error; });

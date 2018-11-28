@@ -1,5 +1,6 @@
 import { PaperScope, Path, Point, Rectangle, Color } from 'paper';
 import $ from "jquery";
+import C from '../Constants';
 
 const AREA_DATA_ATTR = "bh-paper-data";
 const paperScopeCache = {};
@@ -21,10 +22,14 @@ const applyColor = (path: Path, color: string) => {
 
 const drawArea = (paper: PaperScope, jqArea: JQuery<HTMLElement>) => {
     const coords = jqArea.attr("coords");
+    const areaType = jqArea.attr("type");
 
     let splited = coords.split(",");
-    // should be circ, rect or rho
-    if (splited.length !== 3 && splited.length !== 4 && splited.length !== 8) return;
+    // validates the coordinates length for each area type
+    if (areaType === C.MapAreaRect && splited.length !== 4) return;
+    if (areaType === C.MapAreaRhombus && splited.length !== 8) return;
+    if (areaType === C.MapAreaCircle && splited.length !== 3) return;
+    if (areaType === C.MapAreaComment && splited.length !== 14) return;
 
     splited = toNumberArray(splited);
 
@@ -36,20 +41,19 @@ const drawArea = (paper: PaperScope, jqArea: JQuery<HTMLElement>) => {
     }
 
     let path = null;
-    if (splited.length === 3) { // circle
+    if (areaType === C.MapAreaCircle) { // circle
         const center = new Point(splited[0], splited[1]);
         path = new Path.Circle(center, splited[2]);
-    } else if (splited.length === 4) { // rect
+    } else if (areaType === C.MapAreaRect) { // rect
         const p1 = new Point(splited[0], splited[1]);
         const p2 = new Point(splited[2], splited[3]);
         const rect = new Rectangle(p1, p2);
         path = new Path.Rectangle(rect);
-    } else { // rho
+    } else { // rho or comment
         path = new Path();
-        path.add(new Point(splited[0], splited[1]));
-        path.add(new Point(splited[2], splited[3]));
-        path.add(new Point(splited[4], splited[5]));
-        path.add(new Point(splited[6], splited[7]));
+        for (let i = 0; i < splited.length; i += 2) {
+            path.add(new Point(splited[i], splited[i + 1]));
+        }
         path.closed = true;
     }
 

@@ -70,6 +70,19 @@ const mapToMapsUi = {
     }
 };
 
+const commentsUi = {
+    "ui:arrayItemTitle": "Comment Area",
+    "ui:arrayTabProp": "coords",
+    "ui:arrayAddable": false,
+    "items": {
+        "coords": coords,
+        "comment": {
+            "ui:widget": "textarea"
+        },
+        "color": areaColor
+    }
+};
+
 const extraMenuLinksUi = {
     "items": {
         "ui:placeholder": "Html id attribute of extra menu elements related to map."
@@ -103,6 +116,7 @@ const mapsUi = {
         "simpleAreas": areasUi,
         "extraAreas": extraAreasUi,
         "mapToMaps": mapToMapsUi,
+        "comments": commentsUi,
         "extraMenuHeaderIds": extraMenuLinksUi
     }
 };

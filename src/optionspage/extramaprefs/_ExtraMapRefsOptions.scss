@@ -52,3 +52,9 @@
 .BH-extramaps-nav {
     max-width: calc(100% - 250px);
 }
+
+.rjsf textarea {
+    resize: vertical;
+    min-height: 30px;
+    height: 100px;
+}

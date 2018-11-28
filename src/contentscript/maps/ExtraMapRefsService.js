@@ -5,6 +5,7 @@ import E from "../../services/ErrorService";
 import ExtraMapRefsData from "../../data/ExtraMapRefsData";
 import LocationService from "../../services/LocationService";
 import MapAreaInfo from "./MapAreaInfo";
+import MapCommentAreaInfo from "./MapCommentAreaInfo";
 import MapInfo from "./MapInfo";
 import MapLinksInfo from "./MapLinksInfo";
 import MapRefs from "./MapRefs";
@@ -122,6 +123,32 @@ const processCompendiumMap = (bundle, compendium, map, config) => {
                 setColor(info, bundle, compendium, map, mapToMap, drawable);
                 mapAreas.push(info);
             }, `Failed to process map to map area "${mapToMap.coords}" ${fromMap(map, compendium, bundleName)}.`);
+        });
+    }
+
+    // process comments
+    if (Array.isArray(map.comments)) {
+        map.comments.forEach(comment => {
+            if (!comment.coords) {
+                E.log(`Attribute "coords" is missing from a comment area ${fromMap(map, compendium, bundleName)} and it is required.`);
+                return;
+            }
+
+            if (!fourCoordsRegex.test(comment.coords)) {
+                E.log(`Attribute "coords" (${comment.coords}) from a comment area ${fromMap(map, compendium, bundleName)} has an invalid format.`);
+                return;
+            }
+
+            if (!comment.comment) {
+                E.log(`Attributes "comment" is missing from a comment area ${fromMap(map, compendium, bundleName)} and it is required.`);
+                // not returned - areas added by drawing start without comment
+            }
+
+            E.tryCatch(() => {
+                const info = new MapCommentAreaInfo(comment.comment, comment.coords).drawable(drawable).uid(comment.id);
+                setColor(info, bundle, compendium, map, comment, drawable);
+                mapAreas.push(info);
+            }, `Failed to process comment area "${comment.coords}" ${fromMap(map, compendium, bundleName)}.`);
         });
     }
 

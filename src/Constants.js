@@ -24,8 +24,9 @@ const pbpRefsId = "pbp-thread";
 const compendiumPage = "https://www.dndbeyond.com/compendium/";
 
 const mapAreaRect = "rect";
+const mapAreaRhombus = "rho";
 const mapAreaCircle = "circle";
-const mapAreaRhombus = "poly";
+const mapAreaComment = "comment";
 
 const addMonsterMessage = "addmonstermessage";
 const closeTinyMessage = "closetinymessage";
@@ -88,6 +89,9 @@ class Constants {
     }
     static get MapAreaRhombus() {
         return mapAreaRhombus;
+    }
+    static get MapAreaComment() {
+        return mapAreaComment;
     }
 
     static get AddMonsterMessage() {

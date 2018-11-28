@@ -3,6 +3,7 @@ import C from "../../../../Constants";
 const rect = 1;
 const rho = 2;
 const circ = 3;
+const comment = 7;
 const move = 4;
 const del = 5;
 const resize = 6;
@@ -11,6 +12,7 @@ const allCommands = [
     rect,
     rho,
     circ,
+    comment,
     move,
     del,
     resize
@@ -29,6 +31,10 @@ class Command {
         return circ;
     }
 
+    static get Comment(): number {
+        return comment;
+    }
+
     static get Move(): number {
         return move;
     }
@@ -45,17 +51,11 @@ class Command {
         return allCommands;
     }
 
-    static mathlightShape(shape: number): string {
-        if (shape === Command.Rect) return C.MapAreaRect;
-        if (shape === Command.Rho) return C.MapAreaRhombus;
-        if (shape === Command.Circ) return C.MapAreaCircle;
-        return null;
-    }
-
-    static parseMathlightShape(shape: string): number {
-        if (shape === C.MapAreaRect) return Command.Rect;
-        if (shape === C.MapAreaRhombus) return Command.Rho;
-        if (shape === C.MapAreaCircle) return Command.Circ;
+    static commandToAreaType(command: number): string {
+        if (command === Command.Rect) return C.MapAreaRect;
+        if (command === Command.Rho) return C.MapAreaRhombus;
+        if (command === Command.Circ) return C.MapAreaCircle;
+        if (command === Command.Comment) return C.MapAreaComment;
         return null;
     }
 }

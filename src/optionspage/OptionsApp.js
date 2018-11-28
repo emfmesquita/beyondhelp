@@ -109,8 +109,9 @@ class OptionsApp extends Component {
                 <Tab.Pane eventKey="globalmaprefs">
                     {this.optionField("Global enable map references.", Opt.MapRefs)}
                     {this.optionField("Enable main map references (rectangular references).", Opt.MapRefsRect)}
-                    {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc)}
                     {this.optionField("Enable extra map references (diamond shape references).", Opt.MapRefsRho)}
+                    {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc)}
+                    {this.optionField("Enable comment map references.", Opt.MapRefsComments)}
                     {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks)}
                     {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
                     {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}

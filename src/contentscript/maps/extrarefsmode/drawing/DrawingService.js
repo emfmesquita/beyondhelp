@@ -26,9 +26,9 @@ const getMapImage = (e: MouseEvent) => {
 };
 
 const redrawArea = (info: DrawingAreaInfo) => {
-    const displayCoords = DrawingCoordsService.toSaveCoords(info.coords, info.shape);
+    const displayCoords = DrawingCoordsService.toSaveCoords(info.coords, info.areaType);
     let toDisplay: string = null;
-    if (info.shape === C.MapAreaCircle) {
+    if (info.areaType === C.MapAreaCircle) {
         toDisplay = `${displayCoords.toString()}   r: ${info.coords.r}`;
     } else {
         toDisplay = `${displayCoords.toString()}   s: ${displayCoords.rectWidth()}x${displayCoords.rectHeight()}`;
@@ -60,27 +60,27 @@ const safeBoundsRedrawWithTranslate = (newCoords: Coordinates) => {
 };
 
 const resizedRectToShape = (baseRect: Coordinates): Coordinates => {
-    // rho or rect with ctrl => width and height should be the same
-    if (C.MapAreaRhombus === currentArea.shape || (C.MapAreaRect === currentArea.shape && KeyboardService.isCtrlOn())) {
+    // rho or rect/comment with ctrl => width and height should be the same
+    if (C.MapAreaRhombus === currentArea.areaType || ([C.MapAreaRect, C.MapAreaComment].includes(currentArea.areaType) && KeyboardService.isCtrlOn())) {
         DrawingCoordsService.toOneToOneAspectRatio(baseRect);
     }
 
     // if shift on sizes only changes by minimum of 5
-    if (KeyboardService.isShiftOn() && C.MapAreaCircle !== currentArea.shape) {
+    if (KeyboardService.isShiftOn() && C.MapAreaCircle !== currentArea.areaType) {
         DrawingCoordsService.round(baseRect);
     }
 
-    const safeWidth = C.MapAreaRect === currentArea.shape ? 10 : 5;
+    const safeWidth = [C.MapAreaRect, C.MapAreaComment].includes(currentArea.areaType) ? 10 : 5;
     baseRect.safeRect(safeWidth);
 
     // applies rect mirror for rho
-    if (C.MapAreaRhombus === currentArea.shape) DrawingCoordsService.rectMirror(baseRect);
+    if (C.MapAreaRhombus === currentArea.areaType) DrawingCoordsService.rectMirror(baseRect);
 
-    const coords = DrawingCoordsService.rectToShape(baseRect, currentArea.shape);
+    const coords = DrawingCoordsService.rectToShape(baseRect, currentArea.areaType);
 
     // if shift on radius only changes by minimum of 5
     // made after conversion from rect to circ
-    if (KeyboardService.isShiftOn() && C.MapAreaCircle === currentArea.shape) {
+    if (KeyboardService.isShiftOn() && C.MapAreaCircle === currentArea.areaType) {
         DrawingCoordsService.circleRound(coords);
     }
 
@@ -93,7 +93,7 @@ const resizeWithDelta = (delta: Number) => {
     const y1 = baseCoords.y(1);
 
     let newCoords = null;
-    if (C.MapAreaCircle === currentArea.shape) {
+    if (C.MapAreaCircle === currentArea.areaType) {
         newCoords = new Coordinates(x1, y1).radius(baseCoords.r + delta);
 
         // if shift on radius only changes by minimum of 5
@@ -177,10 +177,11 @@ const mouseDown = (e: MouseEvent) => {
         const jqMapAnchor = $(e.target).closest("a").find("map");
         if (jqMapAnchor.length === 0) return;
 
-        const shape = Command.mathlightShape(currentCommand);
-        const area = $(`<area drawable="true" shape="${shape}" coords="${mouseCoords.toString()}">`);
+        const areaType = Command.commandToAreaType(currentCommand);
+        const shape = Coordinates.areaTypeToShape(areaType);
+        const area = $(`<area drawable="true" shape="${shape}" type="${areaType}" coords="${mouseCoords.toString()}">`);
         jqMapAnchor.append(area);
-        currentArea = new DrawingAreaInfo(area, shape, mouseCoords);
+        currentArea = new DrawingAreaInfo(area, areaType, mouseCoords);
         area.attr("bh-id", currentArea.id);
         toDrawingColor(currentArea, true);
         return;
@@ -193,13 +194,14 @@ const mouseDown = (e: MouseEvent) => {
         const area = $(e.target);
 
         const shape = area.attr("shape");
+        const areaType = area.attr("type");
         const uid = area.attr("bh-id");
         const startCoords = Coordinates.parse(area.attr("coords"));
-        currentArea = new DrawingAreaInfo(area, shape, startCoords).uid(uid);
+        currentArea = new DrawingAreaInfo(area, areaType, startCoords).uid(uid);
         toDrawingColor(currentArea, true);
 
         if (Service.isCommandOn(Command.Move)) currentArea.moving(mouseCoords);
-        if (Service.isCommandOn(Command.Resize) && shape === C.MapAreaRhombus) {
+        if (Service.isCommandOn(Command.Resize) && areaType === C.MapAreaRhombus) {
             currentArea.resizeCoords = Coordinates.rhoToRect(currentArea.startCoords).rectCenter();
         }
 
@@ -226,7 +228,7 @@ const click = (e: MouseEvent) => {
 };
 
 const mouseWheel = (e: WheelEvent) => {
-    if (!currentArea || C.MapAreaRect === currentArea.shape || !Service.isCommandOn(Command.Resize)) return;
+    if (!currentArea || [C.MapAreaRect, C.MapAreaComment].includes(currentArea.areaType) || !Service.isCommandOn(Command.Resize)) return;
     e.preventDefault();
     e.stopPropagation();
 
@@ -294,12 +296,12 @@ const keyboardArrow = (e: KeyboardEvent) => {
     }
 
     if (Service.isCommandOn(Command.Resize)) {
-        if (C.MapAreaRhombus === currentArea.shape || C.MapAreaCircle === currentArea.shape) {
+        if ([C.MapAreaRhombus, C.MapAreaCircle].includes(currentArea.areaType)) {
             let delta = keyboardResizeDeltaChart[e.code].r;
             if (KeyboardService.isShiftOn()) delta *= 5;
             resizeWithDelta(delta);
         }
-        if (C.MapAreaRect === currentArea.shape) {
+        if ([C.MapAreaRect, C.MapAreaComment].includes(currentArea.areaType)) {
             const multiplier = KeyboardService.isShiftOn() ? 5 : 1;
             let deltaX = multiplier * keyboardResizeDeltaChart[e.code].x;
             if (currentArea.coords.x(2) < currentArea.coords.x(1)) deltaX *= -1;
@@ -311,9 +313,15 @@ const keyboardArrow = (e: KeyboardEvent) => {
                 else deltaX = deltaY;
             }
 
-            let newCoords = currentArea.coords.clone();
-            newCoords.x(2, currentArea.coords.x(2) + deltaX);
-            newCoords.y(2, currentArea.coords.y(2) + deltaY);
+            let newCoords = null;
+            if (C.MapAreaComment === currentArea.areaType) {
+                newCoords = Coordinates.commentToRect(currentArea.coords);
+            } else {
+                newCoords = currentArea.coords.clone();
+            }
+
+            newCoords.x(2, newCoords.x(2) + deltaX);
+            newCoords.y(2, newCoords.y(2) + deltaY);
             newCoords = resizedRectToShape(newCoords);
             safeBoundsRedrawCurrentArea(newCoords);
         }
@@ -340,7 +348,10 @@ class DrawingService {
         return () => {
             confirmDrawing();
             currentCommand = currentCommand === toToggleCommand ? null : toToggleCommand;
-            PageScriptService.run(`Waterdeep.CurseTip.${currentCommand === null ? "enable()" : "disable()"};`);
+
+            const qtipCommand = currentCommand === null ? "enable" : "disable";
+            $(".BH-map-ref-comment").qtip(qtipCommand); // enables/disables comment area tooltips
+            PageScriptService.run(`Waterdeep.CurseTip.${qtipCommand}();`); // enables/disables other area tooltips
         };
     }
 
@@ -353,7 +364,7 @@ class DrawingService {
     }
 
     static isDrawingEnabled(): boolean {
-        return Service.isCommandOn(Command.Rect) || Service.isCommandOn(Command.Rho) || Service.isCommandOn(Command.Circ);
+        return Service.isCommandOn(Command.Rect) || Service.isCommandOn(Command.Rho) || Service.isCommandOn(Command.Circ) || Service.isCommandOn(Command.Comment);
     }
 
     static init() {
