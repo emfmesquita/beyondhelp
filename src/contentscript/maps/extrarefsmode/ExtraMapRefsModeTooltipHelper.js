@@ -7,7 +7,13 @@ import ClipboardEntry from "../../../data/ClipboardEntry";
 import ClipboardService from "../../../services/ClipboardService";
 import HTMLUtils from "../../../services/HTMLUtils";
 
-const qTipOptions = { hide: { event: "mouseleave" } };
+const qTipOptions = {
+    hide: {
+        event: 'mouseleave',
+        delay: 200,
+        fixed: true
+    }
+};
 
 //#region tooltip functions
 const toolTipHeader = `<h5 style="font-size: 12px">Beyond Help - Extra Map References Info</h5>`;
