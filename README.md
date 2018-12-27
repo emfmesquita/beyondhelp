@@ -33,12 +33,12 @@ After the build task just open a chrome window and go to `chrome://extensions/` 
 ### Enhanced My Characters Page
 - Characters are sorted by name;
 - It is possible to create collapsible folders and add characters to them.
-- Thanks to Tony (https://github.com/zeg-io) for the layout idea.
+- Thanks to GM XIX (https://www.gmxix.com) for the layout idea.
 
 ### Enhanced Campaign Page
 - Characters are sorted by name;
 - On campaigns that you are the DM it is possible to create collapsible folders and add characters to them.
-- Thanks to Tony (https://github.com/zeg-io) for the layout idea.
+- Thanks to GM XIX (https://www.gmxix.com) for the layout idea.
 
 ### Editor Plugin
 - Extra button on all editors of the site that enables:
