@@ -30,6 +30,18 @@ $orange-border: #ffc478;
     }
 }
 
+@mixin icon($icon) {
+    i.fa.fa-#{$icon} {
+        mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/webaccessible/font-awesome/" + $icon + ".svg") no-repeat 50% 50%;
+        background-color: #000 !important;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle !important;
+        display: inline-block;
+    }
+}
+
 .BH-qtip .qtip-content {
     text-align: center !important;
 }
@@ -39,6 +51,7 @@ $orange-border: #ffc478;
 }
 
 @import "characters/characters";
+@import "maps/extrarefsmode/drawing/drawingtoolbar";
 @import "maps/maps";
 @import "monsters/monsters";
 @import "playbypost/playbypost";

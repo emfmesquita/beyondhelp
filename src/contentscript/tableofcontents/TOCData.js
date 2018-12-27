@@ -1,6 +1,7 @@
 import cos from './data/adventures/cos.json';
 import ddiaMord from './data/adventures/ddia-mord.json';
 import hotdq from './data/adventures/hotdq.json';
+import llok from './data/adventures/llok.json';
 import lmop from './data/adventures/lmop.json';
 import oota from './data/adventures/oota.json';
 import pota from './data/adventures/pota.json';
@@ -27,6 +28,7 @@ const data = {
         'cos': cos,
         'ddia-mord': ddiaMord,
         'hotdq': hotdq,
+        'llok': llok,
         'lmop': lmop,
         'oota': oota,
         'pota': pota,

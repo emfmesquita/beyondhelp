@@ -1411,13 +1411,13 @@
                     "title": "Movement",
                     "urlName": "rules/basic-rules/adventuring",
                     "anchorName": "#Movement",
+                    "subsections": []
+                },
+                {
+                    "title": "Speed",
+                    "urlName": "rules/basic-rules/adventuring",
+                    "anchorName": "#Speed",
                     "subsections": [
-                        {
-                            "title": "Speed",
-                            "urlName": "rules/basic-rules/adventuring",
-                            "anchorName": "#Speed",
-                            "subsections": []
-                        },
                         {
                             "title": "Travel Pace",
                             "urlName": "rules/basic-rules/adventuring",
@@ -2458,6 +2458,12 @@
             "anchorName": "#MagicItems",
             "subsections": [
                 {
+                    "title": "Using a Magic Item",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#UsingaMagicItem",
+                    "subsections": []
+                },
+                {
                     "title": "Attunement",
                     "urlName": "rules/basic-rules/magic-items",
                     "anchorName": "#Attunement",
@@ -2562,6 +2568,12 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "title": "Magic Item Descriptions",
+                    "urlName": "rules/basic-rules/magic-items",
+                    "anchorName": "#MagicItemDescriptions",
+                    "subsections": []
                 }
             ]
         },
@@ -2894,6 +2906,189 @@
                     "urlName": "rules/basic-rules/appendix-a-conditions",
                     "anchorName": "#Unconscious",
                     "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Gods of the Multiverse",
+            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+            "anchorName": "#AppendixBGodsoftheMultiverse",
+            "subsections": [
+                {
+                    "title": "D&D Pantheons",
+                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                    "anchorName": "#DDPantheons",
+                    "subsections": [
+                        {
+                            "title": "The Forgotten Realms",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheForgottenRealms",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Nonhuman Deities",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#NonhumanDeities",
+                            "subsections": [
+                                {
+                                    "title": "Deities of the Forgotten Realms",
+                                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#DeitiesoftheForgottenRealms",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fantasy-Historical Pantheons",
+                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                    "anchorName": "#FantasyHistoricalPantheons",
+                    "subsections": [
+                        {
+                            "title": "The Celtic Pantheon",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheCelticPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Greek Pantheon",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheGreekPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Egyptian Pantheon",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheEgyptianPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Norse Pantheon",
+                            "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheNorsePantheon",
+                            "subsections": [
+                                {
+                                    "title": "Celtic Deities",
+                                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#CelticDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Greek Deities",
+                                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#GreekDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Egyptian Deities",
+                                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#EgyptianDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Norse Deities",
+                                    "urlName": "rules/basic-rules/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#NorseDeities",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: The Five Factions",
+            "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+            "anchorName": "#AppendixDTheFiveFactions",
+            "subsections": [
+                {
+                    "title": "Harpers",
+                    "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+                    "anchorName": "#Harpers",
+                    "subsections": []
+                },
+                {
+                    "title": "Order of the Gauntlet",
+                    "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+                    "anchorName": "#OrderoftheGauntlet",
+                    "subsections": []
+                },
+                {
+                    "title": "Emerald Enclave",
+                    "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+                    "anchorName": "#EmeraldEnclave",
+                    "subsections": []
+                },
+                {
+                    "title": "Lords' Alliance",
+                    "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+                    "anchorName": "#LordsAlliance",
+                    "subsections": []
+                },
+                {
+                    "title": "Zhentarim",
+                    "urlName": "rules/basic-rules/appendix-c-the-five-factions",
+                    "anchorName": "#Zhentarim",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix D: The Planes of Existence",
+            "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+            "anchorName": "#AppendixCThePlanesofExistence",
+            "subsections": [
+                {
+                    "title": "The Material Plane",
+                    "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                    "anchorName": "#TheMaterialPlane",
+                    "subsections": []
+                },
+                {
+                    "title": "Beyond the Material",
+                    "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                    "anchorName": "#BeyondtheMaterial",
+                    "subsections": [
+                        {
+                            "title": "Planar Travel",
+                            "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                            "anchorName": "#PlanarTravel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Transitive Planes",
+                            "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                            "anchorName": "#TransitivePlanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Inner Planes",
+                            "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                            "anchorName": "#InnerPlanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Outer Planes",
+                            "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                            "anchorName": "#OuterPlanes",
+                            "subsections": [
+                                {
+                                    "title": "Upper and Lower Planes",
+                                    "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                                    "anchorName": "#UpperandLowerPlanes",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Demiplanes",
+                                    "urlName": "rules/basic-rules/appendix-d-the-planes-of-existence",
+                                    "anchorName": "#Demiplanes",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

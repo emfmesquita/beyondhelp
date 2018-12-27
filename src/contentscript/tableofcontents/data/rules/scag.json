@@ -1690,6 +1690,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/scag/credits",
+            "anchorName": "#Credits",
+            "subsections": [
+                {
+                    "title": "Bibliography",
+                    "urlName": "rules/scag/credits",
+                    "anchorName": "#Bibliography",
+                    "subsections": []
+                }
+            ]
         }
     ]
 }

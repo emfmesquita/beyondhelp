@@ -1,114 +1,126 @@
-data = { adventures: {}, rules: {} };
+(() => {
+    const data = { adventures: {}, rules: {} };
 
-function secondLevel(type, bookRefs, chapterRefs) {
-    if (chapterRefs.length === 0) {
-        topLevel(type, bookRefs.slice(1));
-        return;
-    }
-    const go = chapterRefs[0];
-    $.ajax(go, {
-        url: go,
-        dataType: "html",
-        success: (response) => {
-            console.log(go);
-            function recurse(heads, arr, url) {
-                if (heads.length === 0) return;
-                const head = heads[0];
-                const level = head.tagName.substr(1);
-                heads.splice(0, 1);
+    const compendiums = [
+        "https://www.dndbeyond.com/compendium/rules/phb",
+        "https://www.dndbeyond.com/compendium/rules/dmg",
+        "https://www.dndbeyond.com/compendium/rules/mm",
+        "https://www.dndbeyond.com/compendium/rules/basic-rules",
+        "https://www.dndbeyond.com/compendium/rules/ggtr",
+        "https://www.dndbeyond.com/compendium/rules/mtof",
+        "https://www.dndbeyond.com/compendium/rules/xgte",
+        "https://www.dndbeyond.com/compendium/rules/vgtm",
+        "https://www.dndbeyond.com/compendium/rules/scag",
+        "https://www.dndbeyond.com/compendium/rules/wgte",
+        "https://www.dndbeyond.com/compendium/rules/ttp",
+        "https://www.dndbeyond.com/compendium/adventures/wdotmm",
+        "https://www.dndbeyond.com/compendium/adventures/wdh",
+        "https://www.dndbeyond.com/compendium/adventures/toa",
+        "https://www.dndbeyond.com/compendium/adventures/tftyp",
+        "https://www.dndbeyond.com/compendium/adventures/skt",
+        "https://www.dndbeyond.com/compendium/adventures/cos",
+        "https://www.dndbeyond.com/compendium/adventures/oota",
+        "https://www.dndbeyond.com/compendium/adventures/pota",
+        "https://www.dndbeyond.com/compendium/adventures/hotdq",
+        "https://www.dndbeyond.com/compendium/adventures/rot",
+        "https://www.dndbeyond.com/compendium/adventures/lmop",
+        "https://www.dndbeyond.com/compendium/adventures/llok",
+        "https://www.dndbeyond.com/compendium/adventures/ddia-mord"
+    ];
 
-                var title = head.innerText.trim();
-                var anchor = "#" + head.id;
-                var elem = { title: title, urlName: url, anchorName: anchor, subsections: [] };
-                arr.push(elem);
+    // run in https://www.dndbeyond.com/compendium/rules and https://www.dndbeyond.com/compendium/adventures
+    const printCompendiuns = () => $('.card-item-header-title').find('a').get().map(e => e.href).forEach(a => console.log(a));
 
-                while (heads.length > 0) {
-                    const next = heads[0];
-                    const nextLevel = next.tagName.substr(1);
-                    if (level < nextLevel) {
-                        recurse(heads, elem.subsections, url);
-                    } else if (level === nextLevel) {
-                        recurse(heads, arr, url);
+    const processChapters = (type, bookRefs, chapterRefs) => {
+        if (chapterRefs.length === 0) {
+            processBook(bookRefs.slice(1));
+            return;
+        }
+        const chapterUrl = chapterRefs[0];
+        $.ajax(chapterUrl, {
+            url: chapterUrl,
+            dataType: "html",
+            success: (response) => {
+                console.log(chapterUrl);
+                function recurse(heads, arr, url) {
+                    if (heads.length === 0) return;
+                    const head = heads[0];
+                    const level = head.tagName.substr(1);
+                    heads.splice(0, 1);
+
+                    var title = head.innerText.trim();
+                    var anchor = "#" + head.id;
+                    var elem = { title: title, urlName: url, anchorName: anchor, subsections: [] };
+                    arr.push(elem);
+
+                    while (heads.length > 0) {
+                        const next = heads[0];
+                        const nextLevel = next.tagName.substr(1);
+                        if (level < nextLevel) {
+                            recurse(heads, elem.subsections, url);
+                        } else if (level === nextLevel) {
+                            recurse(heads, arr, url);
+                        }
+                        else return;
                     }
-                    else return;
+
+
                 }
 
+                const url = chapterUrl.substr(37);
+                var heads = $('#content', $(response)).find('h1, h2, h3, h4, h5').not('.quick-menu-exclude').get();
+                while (heads.length > 0 && heads[0].tagName !== "H1") heads.splice(0, 1);
 
+                recurse(heads, data[type][url.split("/")[1]].subsections, url);
+                processChapters(type, bookRefs, chapterRefs.slice(1));
             }
+        });
+    };
 
-
-            const url = go.substr(37);
-            var heads = $('#content', $(response)).find('h1, h2, h3, h4, h5').not('.quick-menu-exclude').get();
-            while (heads.length > 0 && heads[0].tagName !== "H1") heads.splice(0, 1);
-
-            recurse(heads, data[type][url.split("/")[1]].subsections, url);
-            secondLevel(type, bookRefs, chapterRefs.slice(1));
-        }
-    });
-}
-
-function topLevel(type, hrefs) {
-    if (hrefs.length === 0) {
-        if (type === 'adventures') run('rules');
-        else {
-            ['adventures', 'rules'].forEach(t => {
-                Object.keys(data[t]).forEach(e => {
-                    const a = document.createElement("a");
-                    var file = new Blob([JSON.stringify(data[t][e], null, '    ')], { type: 'application/json' });
-                    a.href = URL.createObjectURL(file);
-                    a.download = e + '.json';
-                    a.click();
+    const processBook = (hrefs) => {
+        if (hrefs.length === 0) {
+            ['adventures', 'rules'].forEach(type => {
+                Object.keys(data[type]).forEach(e => {
+                    const anchor = document.createElement("a");
+                    const file = new Blob([JSON.stringify(data[type][e], null, '    ')], { type: 'application/json' });
+                    anchor.href = URL.createObjectURL(file);
+                    anchor.download = e + '.json';
+                    anchor.click();
                 });
             });
+            return;
         }
-        return;
-    }
-    var go = hrefs[0];
-    $.ajax(go, {
-        url: go,
-        success: (response) => {
-            console.log(go);
-            refs = [];
-            if (go === 'https://www.dndbeyond.com/compendium/rules/ttp') {
-                data[type]["ttp"] = { title: "The Tortle Package", urlName: 'rules/ttp', anchorName: "", subsections: [] };
-                refs = ["https://www.dndbeyond.com/compendium/rules/ttp/the-tortle-package"];
-            }
-            else {
-                const book = go.substr(go.lastIndexOf("/") + 1);
-                const title = $("h1.page-title", $(response)).text().trim();
-                data[type][book] = { title: title, urlName: `${type}/${book}`, anchorName: "", subsections: [] };
 
-                const introRefs = $(".compendium-toc-blockquote a:not('.ddb-lightbox-outer')", $(response)).get().map(e => e.href);
-                if (introRefs.indexOf("https://www.dndbeyond.com/compendium/rules/basic-rules") !== -1) { // ignores basic rules link
-                    introRefs.length = 0;
+        const compendiumUrl = hrefs[0];
+        const compendiumUrlObj = new URL(compendiumUrl);
+        const type = new URL(compendiumUrl).pathname.split("/")[2];
+
+        $.ajax(compendiumUrl, {
+            url: compendiumUrl,
+            success: (response) => {
+                console.log(compendiumUrl);
+                refs = [];
+                if (compendiumUrl === 'https://www.dndbeyond.com/compendium/rules/ttp') {
+                    data[type]["ttp"] = { title: "The Tortle Package", urlName: 'rules/ttp', anchorName: "", subsections: [] };
+                    refs = ["https://www.dndbeyond.com/compendium/rules/ttp/the-tortle-package"];
                 }
+                else {
+                    const book = compendiumUrl.substr(compendiumUrl.lastIndexOf("/") + 1);
+                    const title = $("h1.page-title", $(response)).text().trim();
+                    data[type][book] = { title: title, urlName: `${type}/${book}`, anchorName: "", subsections: [] };
 
-                refs = $('.adventure-chapter-header', $(response)).find('a').get().map(e => e.href);
-                if (refs.length === 0)
-                    refs = $("[data-chapter-slug]", $(response)).find('a').get().map(e => e.href);
-                if (refs.length === 0)
-                    refs = $('.compendium-toc-full-text').first().find('H4').find('a').get().map(e => e.href);
-
-                // adds ravnica guild pages
-                if (go === 'https://www.dndbeyond.com/compendium/rules/ggtr') {
-                    const allSubChapters = $(".adventure-chapter-header:nth-of-type(2)").next().find("strong a").get();
-                    const guildRefs = allSubChapters.filter(subChapter => subChapter.href.indexOf("guilds-of-ravnica") === -1).map(e => e.href);
-                    refs.splice(2, 0, ...guildRefs);
+                    $("a", $(response)).get().forEach(a => {
+                        if (!a.href.startsWith(compendiumUrl)) return;
+                        const url = new URL(a.href);
+                        if (url.pathname === compendiumUrlObj.pathname) return;
+                        const chapterUrl = url.origin + url.pathname;
+                        if (refs.indexOf(chapterUrl) === -1) refs.push(chapterUrl);
+                    });
                 }
-
-                refs = introRefs.concat(refs);
+                processChapters(type, hrefs, refs);
             }
-            secondLevel(type, hrefs, refs);
-        }
-    });
-}
-function run(type) {
-    $.ajax(`https://www.dndbeyond.com/compendium/${type}`, {
-        success: (response) => {
-            var hrefs = $('.card-item-header-title', $(response)).find('a').get().map(e => e.href);
-            topLevel(type, hrefs);
+        });
+    };
 
-        }
-    });
-}
-run('adventures');
+    processBook(compendiums);
+})();

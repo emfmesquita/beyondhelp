@@ -1,3 +1,4 @@
+const changelog = "changelog";
 const addmonsteronlist = "addmonsteronlist";
 const addmonsteronhlist = "addmonsteronhlist";
 const addmonsterondetail = "addmonsterondetail";
@@ -44,6 +45,7 @@ const extraMapRefsDrawingBundle = "extraMapRefsDrawingBundle";
 //#endregion
 
 const allOptions = [
+    changelog,
     addmonsteronlist,
     addmonsteronhlist,
     addmonsterondetail,
@@ -90,6 +92,10 @@ const allOptions = [
 ];
 
 class Options {
+    static get Changelog(): string {
+        return changelog;
+    }
+
     static get AddMonsterOnList(): string {
         return addmonsteronlist;
     }

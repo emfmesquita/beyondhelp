@@ -962,6 +962,106 @@
                     "subsections": []
                 }
             ]
+        },
+        {
+            "title": "Appendix A: Assorted Beasts",
+            "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+            "anchorName": "#AppendixAAssortedBeasts",
+            "subsections": [
+                {
+                    "title": "Aurochs",
+                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "anchorName": "#Aurochs",
+                    "subsections": []
+                },
+                {
+                    "title": "Cattle",
+                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "anchorName": "#Cattle",
+                    "subsections": []
+                },
+                {
+                    "title": "Dolphin",
+                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "anchorName": "#Dolphin",
+                    "subsections": []
+                },
+                {
+                    "title": "Swarm of Rot Grubs",
+                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "anchorName": "#SwarmofRotGrubs",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Nonplayer Characters",
+            "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+            "anchorName": "#AppendixBNonplayerCharacters",
+            "subsections": [
+                {
+                    "title": "Nonplayer Characters A - C",
+                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "anchorName": "#NonplayerCharactersAC",
+                    "subsections": []
+                },
+                {
+                    "title": "Nonplayer Characters D - I",
+                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "anchorName": "#NonplayerCharactersDI",
+                    "subsections": []
+                },
+                {
+                    "title": "Nonplayer Characters K - N",
+                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "anchorName": "#NonplayerCharactersKN",
+                    "subsections": []
+                },
+                {
+                    "title": "Nonplayer Characters S - W",
+                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "anchorName": "#NonplayerCharactersSW",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Monster Lists",
+            "urlName": "rules/vgtm/appendix-c-monster-lists",
+            "anchorName": "#AppendixCMonsterLists",
+            "subsections": [
+                {
+                    "title": "Stat Blocks by Creature Type",
+                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "anchorName": "#StatBlocksbyCreatureType",
+                    "subsections": []
+                },
+                {
+                    "title": "Stat Blocks by Challenge Rating",
+                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "anchorName": "#StatBlocksbyChallengeRating",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures by Environment",
+                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "anchorName": "#CreaturesbyEnvironment",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/vgtm/credits",
+            "anchorName": "#Credits",
+            "subsections": [
+                {
+                    "title": "About This Book",
+                    "urlName": "rules/vgtm/credits",
+                    "anchorName": "#AboutThisBook",
+                    "subsections": []
+                }
+            ]
         }
     ]
 }

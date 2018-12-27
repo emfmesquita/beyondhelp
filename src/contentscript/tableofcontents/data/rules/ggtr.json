@@ -569,6 +569,73 @@
                             "subsections": []
                         }
                     ]
+                },
+                {
+                    "title": "Guild Details",
+                    "urlName": "rules/ggtr/guilds-of-ravnica",
+                    "anchorName": "#GuildDetails",
+                    "subsections": [
+                        {
+                            "title": "Azorius Senate",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#AzoriusSenate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Boros Legion",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#BorosLegion",
+                            "subsections": []
+                        },
+                        {
+                            "title": "House Dimir",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#HouseDimir",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Golgari Swarm",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#GolgariSwarm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gruul Clans",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#GruulClans",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Izzet League",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#IzzetLeague",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Orzhov Syndicate",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#OrzhovSyndicate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cult of Rakdos",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#CultofRakdos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Selesnya Conclave",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#SelesnyaConclave",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Simic Combine",
+                            "urlName": "rules/ggtr/guilds-of-ravnica",
+                            "anchorName": "#SimicCombine",
+                            "subsections": []
+                        }
+                    ]
                 }
             ]
         },
@@ -2256,6 +2323,241 @@
             ]
         },
         {
+            "title": "Krenko’s Way",
+            "urlName": "rules/ggtr/krenkos-way",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "Story Overview",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#StoryOverview",
+                    "subsections": []
+                },
+                {
+                    "title": "Running the Adventure",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#RunningtheAdventure",
+                    "subsections": [
+                        {
+                            "title": "Adventure Summary",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#AdventureSummary",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Krenko’s Patron",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#KrenkosPatron",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Starting the Adventure",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#StartingtheAdventure",
+                    "subsections": [
+                        {
+                            "title": "Roleplaying Nassius Ven",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#RoleplayingNassiusVen",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Search for Krenko",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#TheSearchforKrenko",
+                    "subsections": [
+                        {
+                            "title": "Timeline of Events",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#TimelineofEvents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Dossier",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#TheDossier",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hitting the Streets",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#HittingtheStreets",
+                            "subsections": [
+                                {
+                                    "title": "Meet with Contacts",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#MeetwithContacts",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gather Rumors",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#GatherRumors",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Sewers at Plaza West",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#TheSewersatPlazaWest",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Tin Street",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#TinStreet",
+                            "subsections": [
+                                {
+                                    "title": "Shattergang Eavesdropping",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#ShattergangEavesdropping",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Finding Falish",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#FindingFalish",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Falish’s Workshop",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#FalishsWorkshop",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Foundry Street",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#FoundryStreet",
+                            "subsections": [
+                                {
+                                    "title": "Welcoming Party",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#WelcomingParty",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Shattergang’s Response",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#ShattergangsResponse",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Krenko’s Hideout",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#KrenkosHideout",
+                    "subsections": [
+                        {
+                            "title": "Krenko’s Gang",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#KrenkosGang",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lookouts",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#Lookouts",
+                            "subsections": [
+                                {
+                                    "title": "Changing of the Guard",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#ChangingoftheGuard",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Day 2 Arrivals",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#Day2Arrivals",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Day 3 Chaos",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#Day3Chaos",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Warehouse Locations",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#WarehouseLocations",
+                    "subsections": [
+                        {
+                            "title": "Office",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#Office",
+                            "subsections": [
+                                {
+                                    "title": "Treasure",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#Treasure",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Catwalk",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#Catwalk",
+                            "subsections": [
+                                {
+                                    "title": "Weakened Staircase",
+                                    "urlName": "rules/ggtr/krenkos-way",
+                                    "anchorName": "#WeakenedStaircase",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Main Floor",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#MainFloor",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Confronting Krenko",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#ConfrontingKrenko",
+                    "subsections": []
+                },
+                {
+                    "title": "The Handoff",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#TheHandoff",
+                    "subsections": [
+                        {
+                            "title": "Nassius’s Patron",
+                            "urlName": "rules/ggtr/krenkos-way",
+                            "anchorName": "#NassiussPatron",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The End?",
+                    "urlName": "rules/ggtr/krenkos-way",
+                    "anchorName": "#TheEnd",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 5: Treasures",
             "urlName": "rules/ggtr/treasures",
             "anchorName": "#Chapter5Treasures",
@@ -2688,6 +2990,294 @@
                             "title": "Pack Beasts",
                             "urlName": "rules/ggtr/friends-and-foes",
                             "anchorName": "#PackBeasts",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Bestiary",
+            "urlName": "rules/ggtr/bestiary",
+            "anchorName": "#Bestiary",
+            "subsections": [
+                {
+                    "title": "Stat Blocks by Creature Type",
+                    "urlName": "rules/ggtr/bestiary",
+                    "anchorName": "#StatBlocksbyCreatureType",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters A - D",
+                    "urlName": "rules/ggtr/bestiary",
+                    "anchorName": "#MonstersAD",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters F - I",
+                    "urlName": "rules/ggtr/bestiary",
+                    "anchorName": "#MonstersFI",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters K - N",
+                    "urlName": "rules/ggtr/bestiary",
+                    "anchorName": "#MonstersKN",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters S - W",
+                    "urlName": "rules/ggtr/bestiary",
+                    "anchorName": "#MonstersSW",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "NPCs by Guild",
+            "urlName": "rules/ggtr/npcs-by-guild",
+            "anchorName": "#NPCsbyGuild",
+            "subsections": [
+                {
+                    "title": "Azorius NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#AzoriusNPCs",
+                    "subsections": [
+                        {
+                            "title": "Supreme Judge Isperia",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#SupremeJudgeIsperia",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lawmage",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Lawmage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Precognitive Mage",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#PrecognitiveMage",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Boros NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#BorosNPCs",
+                    "subsections": [
+                        {
+                            "title": "Warleader Aurelia",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#WarleaderAurelia",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Firefist",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Firefist",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Frontline Medic",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#FrontlineMedic",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Reckoner",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Reckoner",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Dimir NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#DimirNPCs",
+                    "subsections": [
+                        {
+                            "title": "Lazav the Faceless",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#LazavtheFaceless",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mind Mage",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#MindMage",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Thought Spy",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#ThoughtSpy",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Golgari NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#GolgariNPCs",
+                    "subsections": [
+                        {
+                            "title": "Jarad Vod Savo",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#JaradVodSavo",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Golgari Shaman",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#GolgariShaman",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Golgari Lairs",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#GolgariLairs",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gruul NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#GruulNPCs",
+                    "subsections": [
+                        {
+                            "title": "Borborygmos",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Borborygmos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Anarch",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Anarch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Druid of the Old Ways",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#DruidoftheOldWays",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rubblebelt Stalker",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#RubblebeltStalker",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Izzet NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#IzzetNPCs",
+                    "subsections": [
+                        {
+                            "title": "Niv-Mizzet",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#NivMizzet",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Blastseekers",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Blastseekers",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Orzhov NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#OrzhovNPCs",
+                    "subsections": [
+                        {
+                            "title": "Obzedat, the Ghost Council",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#ObzedattheGhostCouncil",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rakdos NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#RakdosNPCs",
+                    "subsections": [
+                        {
+                            "title": "Rakdos",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Rakdos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Blood Witch",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#BloodWitch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rakdos Lampooner",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#RakdosLampooner",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rakdos Performer",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#RakdosPerformer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rakdos Carnival",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#RakdosCarnival",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Selesnya NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#SelesnyaNPCs",
+                    "subsections": [
+                        {
+                            "title": "Trostani",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Trostani",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Horncaller",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Horncaller",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Simic NPCs",
+                    "urlName": "rules/ggtr/npcs-by-guild",
+                    "anchorName": "#SimicNPCs",
+                    "subsections": [
+                        {
+                            "title": "Prime Speaker Zegana",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#PrimeSpeakerZegana",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Biomancer",
+                            "urlName": "rules/ggtr/npcs-by-guild",
+                            "anchorName": "#Biomancer",
                             "subsections": []
                         }
                     ]

@@ -1,8 +1,9 @@
-import $ from "jquery";
-import React from 'react';
-import ReactDOM from 'react-dom';
 import TOCApp, { handleHeight } from "./TOCApp";
 
+import $ from "jquery";
+import PageScriptService from "../../services/PageScriptService";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import TOCData from "./TOCData.js";
 
 class TOCService {
@@ -25,6 +26,34 @@ class TOCService {
         });
     }
 
+    static reloadMenuItemsLookup(menuItemsLookup) {
+        // changes original function to also scroll menu item into view
+        const scrollIntoView = `
+            const original = Waterdeep.CompendiumPage.activateMenuItemById;
+            Waterdeep.CompendiumPage.activateMenuItemById = (id) => {
+                original(id);
+                Waterdeep.CompendiumPage.menuItemsLookup[id][0].scrollIntoViewIfNeeded();
+            };
+        `;
+
+        // update menu items with the new ones rendered here
+        const updateMenuItems = `
+            const menuItemsLookup = JSON.parse('${JSON.stringify(menuItemsLookup)}');
+            Waterdeep.CompendiumPage.$menuItems = $([]);
+            Object.keys(menuItemsLookup).forEach(anchorName => {
+                const id = menuItemsLookup[anchorName];
+                const $menuItem = $("li.quick-menu-item[bh-id=" + id + "]");;
+                menuItemsLookup[anchorName] = $menuItem;
+                Waterdeep.CompendiumPage.$menuItems = Waterdeep.CompendiumPage.$menuItems.add($menuItem);
+            });
+            Waterdeep.CompendiumPage.menuItemsLookup = menuItemsLookup;
+        `;
+
+        PageScriptService.run(`
+            ${scrollIntoView}
+            ${updateMenuItems}            
+        `);
+    }
 
     static init() {
         const path = window.location.pathname;
@@ -39,12 +68,10 @@ class TOCService {
         const kids = menu.children();
         menu.empty();
         try {
-            ReactDOM.render(<TOCApp object={book} currentUrl={subPath} />, menu[0]);
-            $(`[href='${active}'`).parents('.quick-menu-item-closed')
-                .removeClass('quick-menu-item-closed')
-                .addClass('quick-menu-item-opened')
-                .last().addClass('quick-menu-item-active');
+            const menuItemsLookup = {};
+            ReactDOM.render(<TOCApp object={book} currentUrl={subPath} menuItemsLookup={menuItemsLookup} />, menu[0]);
             this.triggers();
+            this.reloadMenuItemsLookup(menuItemsLookup);
         } catch (e) {
             menu.append(kids);
         }

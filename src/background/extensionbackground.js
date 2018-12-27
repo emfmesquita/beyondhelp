@@ -1,12 +1,30 @@
 import BadgeService from "../services/BadgeService";
 import C from "../Constants";
+import ConfigStorageService from "../services/storage/ConfigStorageService";
 import LinkService from "../services/LinkService";
 import MessageService from "../services/MessageService";
 import NotificationService from "../services/NotificationService";
+import Opt from "../Options";
+import SyncStorageService from "../services/storage/SyncStorageService";
 import TooltipsService from "../contentscript/tooltips/TooltipsService";
 import UserService from "../services/UserService";
+import packageJson from "../../package.json";
 
 /* global chrome */
+
+// runs code for each version a single time
+chrome.runtime.onInstalled.addListener(() => {
+    ConfigStorageService.getConfig().then((config: Configuration) => {
+        const changelog: string[] = config[Opt.Changelog] || [];
+        if (changelog.indexOf("0.15.0") === -1) {
+            changelog.push("0.15.0");
+            config[Opt.ToC] = true;
+        }
+
+        config[Opt.Changelog] = changelog;
+        SyncStorageService.updateData(config);
+    });
+});
 
 // listen the dndbeyound request to gather a more info
 // sends a message to the content script to render the add monster buttons and parse roll tables

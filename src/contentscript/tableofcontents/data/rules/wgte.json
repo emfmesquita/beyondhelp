@@ -376,6 +376,12 @@
                     "subsections": []
                 },
                 {
+                    "title": "Elves",
+                    "urlName": "rules/wgte/races-of-eberron",
+                    "anchorName": "#Elves",
+                    "subsections": []
+                },
+                {
                     "title": "Gnomes",
                     "urlName": "rules/wgte/races-of-eberron",
                     "anchorName": "#Gnomes",
@@ -683,6 +689,44 @@
                     "title": "The Streets of Sharn",
                     "urlName": "rules/wgte/sharn-city-of-towers",
                     "anchorName": "#TheStreetsofSharn",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendices",
+            "urlName": "rules/wgte/appendices",
+            "anchorName": "#Appendices",
+            "subsections": [
+                {
+                    "title": "Appendix A: Further Reading",
+                    "urlName": "rules/wgte/appendices",
+                    "anchorName": "#AppendixAFurtherReading",
+                    "subsections": [
+                        {
+                            "title": "Eberron Sourcebooks",
+                            "urlName": "rules/wgte/appendices",
+                            "anchorName": "#EberronSourcebooks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eberron Novels",
+                            "urlName": "rules/wgte/appendices",
+                            "anchorName": "#EberronNovels",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Appendix B: Glossary",
+                    "urlName": "rules/wgte/appendices",
+                    "anchorName": "#AppendixBGlossary",
+                    "subsections": []
+                },
+                {
+                    "title": "Appendix C: Dragonmarked House Crests",
+                    "urlName": "rules/wgte/appendices",
+                    "anchorName": "#AppendixCDragonmarkedHouseCrests",
                     "subsections": []
                 }
             ]

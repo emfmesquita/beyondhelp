@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 
 import MenuButton from "./buttons/MenuButton";
 
+const hpRegex = /^[-+]?[0-9]{1,10}$/i
+
 class MonsterHpBarForm extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +21,7 @@ class MonsterHpBarForm extends Component {
     }
 
     validate = () => {
-        return isNaN(this.state.value) ? "error" : "success";
+        return hpRegex.test(this.state.value) ? "success" : "error";
     }
 
     /**
@@ -33,12 +35,19 @@ class MonsterHpBarForm extends Component {
      * onClick of ok button
      */
     okClick = (e: MouseEvent) => {
-        if (this.validate() === "success") {
-            this.props.onHpChange(Number(this.state.value));
-            return;
+        if (e) e.preventDefault();
+        if (e) e.stopPropagation();
+        if (this.validate() === "error") return;
+        const strValue = this.state.value;
+        let value = this.props.currentHp;
+        if (strValue.startsWith("+")) {
+            value += Number.parseInt(strValue.substr(1));
+        } else if (strValue.startsWith("-")) {
+            value -= Number.parseInt(strValue.substr(1));
+        } else {
+            value = Number.parseInt(strValue);
         }
-        e.preventDefault();
-        e.stopPropagation();
+        this.props.onHpChange(value);
     }
 
     /**

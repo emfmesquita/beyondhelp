@@ -182,6 +182,68 @@
             ]
         },
         {
+            "title": "Chapter 1: This Is Your Life",
+            "urlName": "rules/xgte/character-options-this-is-your-life",
+            "anchorName": "#Chapter1ThisIsYourLife",
+            "subsections": [
+                {
+                    "title": "Ideas, Not Rules",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#IdeasNotRules",
+                    "subsections": []
+                },
+                {
+                    "title": "Origins",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#Origins",
+                    "subsections": []
+                },
+                {
+                    "title": "Personal Decisions",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#PersonalDecisions",
+                    "subsections": []
+                },
+                {
+                    "title": "Life Events",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#LifeEvents",
+                    "subsections": []
+                },
+                {
+                    "title": "Supplemental Tables",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#SupplementalTables",
+                    "subsections": []
+                },
+                {
+                    "title": "What’s Next?",
+                    "urlName": "rules/xgte/character-options-this-is-your-life",
+                    "anchorName": "#WhatsNext",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 1: Racial Feats",
+            "urlName": "rules/xgte/character-options-racial-feats",
+            "anchorName": "#Chapter1RacialFeats",
+            "subsections": [
+                {
+                    "title": "Racial Feats Summary",
+                    "urlName": "rules/xgte/character-options-racial-feats",
+                    "anchorName": "#RacialFeatsSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Racial Feat Descriptions",
+                    "urlName": "rules/xgte/character-options-racial-feats",
+                    "anchorName": "#RacialFeatDescriptions",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 2: Dungeon Master's Tools",
             "urlName": "rules/xgte/dungeon-masters-tools",
             "anchorName": "#Chapter2DungeonMastersTools",
@@ -238,6 +300,877 @@
                     "title": "Random Encounters",
                     "urlName": "rules/xgte/dungeon-masters-tools",
                     "anchorName": "#RandomEncounters",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Random Encounter Tables",
+            "urlName": "rules/xgte/random-encounters",
+            "anchorName": "#Chapter2RandomEncounterTables",
+            "subsections": [
+                {
+                    "title": "Arctic Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#ArcticEncounters",
+                    "subsections": [
+                        {
+                            "title": "Arctic Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ArcticEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arctic Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ArcticEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arctic Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ArcticEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Arctic Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ArcticEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Coastal Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#CoastalEncounters",
+                    "subsections": [
+                        {
+                            "title": "Coastal Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#CoastalEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Coastal Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#CoastalEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Coastal Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#CoastalEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Coastal Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#CoastalEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Desert Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#DesertEncounters",
+                    "subsections": [
+                        {
+                            "title": "Desert Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#DesertEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Desert Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#DesertEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Desert Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#DesertEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Desert Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#DesertEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Forest Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#ForestEncounters",
+                    "subsections": [
+                        {
+                            "title": "Forest Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ForestEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Forest Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ForestEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Forest Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ForestEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Forest Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#ForestEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Grassland Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#GrasslandEncounters",
+                    "subsections": [
+                        {
+                            "title": "Grassland Encounters (Levels 1–5)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#GrasslandEncountersLevels15",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Grassland Encounters (Levels 6–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#GrasslandEncountersLevels610",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Grassland Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#GrasslandEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Grassland Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#GrasslandEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Hill Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#HillEncounters",
+                    "subsections": [
+                        {
+                            "title": "Hill Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#HillEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hill Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#HillEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hill Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#HillEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hill Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#HillEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Mountain Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#MountainEncounters",
+                    "subsections": [
+                        {
+                            "title": "Mountain Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#MountainEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mountain Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#MountainEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mountain Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#MountainEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mountain Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#MountainEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Swamp Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#SwampEncounters",
+                    "subsections": [
+                        {
+                            "title": "Swamp Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#SwampEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Swamp Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#SwampEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Swamp Encounters (Levels 11–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#SwampEncountersLevels1120",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Underdark Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#UnderdarkEncounters",
+                    "subsections": [
+                        {
+                            "title": "Underdark Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderdarkEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Underdark Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderdarkEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Underdark Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderdarkEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Underdark Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderdarkEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Underwater Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#UnderwaterEncounters",
+                    "subsections": [
+                        {
+                            "title": "Underwater Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderwaterEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Underwater Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderwaterEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Underwater Encounters (Levels 11–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UnderwaterEncountersLevels1120",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Urban Encounters",
+                    "urlName": "rules/xgte/random-encounters",
+                    "anchorName": "#UrbanEncounters",
+                    "subsections": [
+                        {
+                            "title": "Urban Encounters (Levels 1–4)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UrbanEncountersLevels14",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Urban Encounters (Levels 5–10)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UrbanEncountersLevels510",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Urban Encounters (Levels 11–16)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UrbanEncountersLevels1116",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Urban Encounters (Levels 17–20)",
+                            "urlName": "rules/xgte/random-encounters",
+                            "anchorName": "#UrbanEncountersLevels1720",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Traps Revisited",
+            "urlName": "rules/xgte/traps-revisited",
+            "anchorName": "#TrapsRevisited",
+            "subsections": [
+                {
+                    "title": "Simple Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#SimpleTraps",
+                    "subsections": [
+                        {
+                            "title": "Elements of a Simple Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#ElementsofaSimpleTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Running a Simple Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#RunningaSimpleTrap",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Example Simple Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#",
+                    "subsections": [
+                        {
+                            "title": "Bear Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#BearTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Crossbow Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#CrossbowTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Falling Portcullis",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#FallingPortcullis",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fiery Blast",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#FieryBlast",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Net Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#NetTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pit Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#PitTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Poison Needle",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#PoisonNeedle",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Scything Blade",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#ScythingBlade",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sleep of Ages",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#SleepofAges",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Designing Simple Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#DesigningSimpleTraps",
+                    "subsections": [
+                        {
+                            "title": "Purpose",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Purpose",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Level and Lethality",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#LevelandLethality",
+                            "subsections": [
+                                {
+                                    "title": "Trap Save DCs and Attack Bonuses",
+                                    "urlName": "rules/xgte/traps-revisited",
+                                    "anchorName": "#TrapSaveDCsandAttackBonuses",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Damage Severity by Level",
+                                    "urlName": "rules/xgte/traps-revisited",
+                                    "anchorName": "#DamageSeveritybyLevel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Spell Equivalent by Level",
+                                    "urlName": "rules/xgte/traps-revisited",
+                                    "anchorName": "#SpellEquivalentbyLevel",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Triggers",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Triggers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Effects",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Effects",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Disarming a Simple Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#DisarmingaSimpleTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Placing a Simple Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#PlacingaSimpleTrap",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Complex Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#ComplexTraps",
+                    "subsections": [
+                        {
+                            "title": "Describing a Complex Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#DescribingaComplexTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Running a Complex Trap",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#RunningaComplexTrap",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Experience for Complex Traps",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#ExperienceforComplexTraps",
+                            "subsections": [
+                                {
+                                    "title": "Complex Trap Experience Awards",
+                                    "urlName": "rules/xgte/traps-revisited",
+                                    "anchorName": "#ComplexTrapExperienceAwards",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Example Complex Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#",
+                    "subsections": [
+                        {
+                            "title": "Path of Blades",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#PathofBlades",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sphere of Crushing Doom",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#SphereofCrushingDoom",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Poisoned Tempest",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#PoisonedTempest",
+                            "subsections": [
+                                {
+                                    "title": "Tempest Effects",
+                                    "urlName": "rules/xgte/traps-revisited",
+                                    "anchorName": "#TempestEffects",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Designing Complex Traps",
+                    "urlName": "rules/xgte/traps-revisited",
+                    "anchorName": "#DesigningComplexTraps",
+                    "subsections": [
+                        {
+                            "title": "Purpose",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Purpose",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Level and Lethality",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#LevelandLethality",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Map",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Map",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Active Elements",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#ActiveElements",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Constant Elements",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#ConstantElements",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dynamic Elements",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#DynamicElements",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Triggers",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Triggers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Initiative",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#Initiative",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Defeating Complex Traps",
+                            "urlName": "rules/xgte/traps-revisited",
+                            "anchorName": "#DefeatingComplexTraps",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Downtime Revisited",
+            "urlName": "rules/xgte/downtime-revisited",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "Rivals",
+                    "urlName": "rules/xgte/downtime-revisited",
+                    "anchorName": "#Rivals",
+                    "subsections": [
+                        {
+                            "title": "Creating a Rival",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#",
+                            "subsections": [
+                                {
+                                    "title": "Example Rivals",
+                                    "urlName": "rules/xgte/downtime-revisited",
+                                    "anchorName": "#",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Example Rival: Marina Rodemus",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#ExampleRivalMarinaRodemus",
+                            "subsections": [
+                                {
+                                    "title": "Marina’s Plans",
+                                    "urlName": "rules/xgte/downtime-revisited",
+                                    "anchorName": "#",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Example Rival: High Priest Cheldar",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#ExampleRivalHighPriestCheldar",
+                            "subsections": [
+                                {
+                                    "title": "Cheldar’s Plans",
+                                    "urlName": "rules/xgte/downtime-revisited",
+                                    "anchorName": "#",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Downtime Activities",
+                    "urlName": "rules/xgte/downtime-revisited",
+                    "anchorName": "#DowntimeActivities",
+                    "subsections": [
+                        {
+                            "title": "Resolving Activities",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#ResolvingActivities",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Complications",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Example Downtime Activities",
+                    "urlName": "rules/xgte/downtime-revisited",
+                    "anchorName": "#",
+                    "subsections": [
+                        {
+                            "title": "Carousing",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Carousing",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Crafting an Item",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#CraftinganItem",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Crime",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Crime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gambling",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Gambling",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pit Fighting",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#PitFighting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Relaxation",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Relaxation",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Religious Service",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#ReligiousService",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Research",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Research",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Scribing a Spell Scroll",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#ScribingaSpellScroll",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Selling a Magic Item",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#SellingaMagicItem",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Training",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Training",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Work",
+                            "urlName": "rules/xgte/downtime-revisited",
+                            "anchorName": "#Work",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Awarding Magic Items",
+            "urlName": "rules/xgte/awarding-magic-items",
+            "anchorName": "#",
+            "subsections": []
+        },
+        {
+            "title": "Chapter 2: Common Magic Items",
+            "urlName": "rules/xgte/common-magic-items",
+            "anchorName": "#Chapter2CommonMagicItems",
+            "subsections": [
+                {
+                    "title": "Items A - D",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsAD",
+                    "subsections": []
+                },
+                {
+                    "title": "Items E - H",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsEH",
+                    "subsections": []
+                },
+                {
+                    "title": "Items I - L",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsIL",
+                    "subsections": []
+                },
+                {
+                    "title": "Items M - P",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsMP",
+                    "subsections": []
+                },
+                {
+                    "title": "Items R - T",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsRT",
+                    "subsections": []
+                },
+                {
+                    "title": "Items U - W",
+                    "urlName": "rules/xgte/common-magic-items",
+                    "anchorName": "#ItemsUW",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Magic Item Tables",
+            "urlName": "rules/xgte/magic-item-tables",
+            "anchorName": "#Chapter2MagicItemTables",
+            "subsections": [
+                {
+                    "title": "Minor Items, Common",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MinorItemsCommon",
+                    "subsections": []
+                },
+                {
+                    "title": "Minor Items, Uncommon",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MinorItemsUncommon",
+                    "subsections": []
+                },
+                {
+                    "title": "Minor Items, Rare",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MinorItemsRare",
+                    "subsections": []
+                },
+                {
+                    "title": "Minor Items, Very Rare",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MinorItemsVeryRare",
+                    "subsections": []
+                },
+                {
+                    "title": "Minor Items, Legendary",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MinorItemsLegendary",
+                    "subsections": []
+                },
+                {
+                    "title": "Major Items, Uncommon",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MajorItemsUncommon",
+                    "subsections": []
+                },
+                {
+                    "title": "Major Items, Rare",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MajorItemsRare",
+                    "subsections": []
+                },
+                {
+                    "title": "Major Items, Very Rare",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MajorItemsVeryRare",
+                    "subsections": []
+                },
+                {
+                    "title": "Major Items, Legendary",
+                    "urlName": "rules/xgte/magic-item-tables",
+                    "anchorName": "#MajorItemsLegendary",
                     "subsections": []
                 }
             ]
@@ -620,6 +1553,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/xgte/credits",
+            "anchorName": "#Credits",
+            "subsections": []
         }
     ]
 }

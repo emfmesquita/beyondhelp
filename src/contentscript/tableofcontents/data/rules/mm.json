@@ -1771,6 +1771,68 @@
                     "subsections": []
                 }
             ]
+        },
+        {
+            "title": "Appendix A: Miscellaneous Creatures",
+            "urlName": "rules/mm/miscellaneous-creatures",
+            "anchorName": "#AppendixAMiscellaneousCreatures",
+            "subsections": [
+                {
+                    "title": "Creatures A - D",
+                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "anchorName": "#CreaturesAD",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures E - G",
+                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "anchorName": "#CreaturesEG",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures H - O",
+                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "anchorName": "#CreaturesHO",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures P - R",
+                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "anchorName": "#CreaturesPR",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures S - W",
+                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "anchorName": "#CreaturesSW",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Nonplayer Characters",
+            "urlName": "rules/mm/nonplayer-characters",
+            "anchorName": "#AppendixBNonplayerCharacters",
+            "subsections": [
+                {
+                    "title": "Customizing NPCs",
+                    "urlName": "rules/mm/nonplayer-characters",
+                    "anchorName": "#CustomizingNPCs",
+                    "subsections": []
+                },
+                {
+                    "title": "NPC Descriptions",
+                    "urlName": "rules/mm/nonplayer-characters",
+                    "anchorName": "#NPCDescriptions",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/mm/credits",
+            "anchorName": "#Credits",
+            "subsections": []
         }
     ]
 }

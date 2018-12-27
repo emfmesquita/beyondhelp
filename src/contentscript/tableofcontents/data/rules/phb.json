@@ -801,27 +801,9 @@
                     "anchorName": "#Tools",
                     "subsections": [
                         {
-                            "title": "Artisan's Tools",
+                            "title": "Tools",
                             "urlName": "rules/phb/equipment",
                             "anchorName": "#ArtisansTools",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Gaming Sets",
-                            "urlName": "rules/phb/equipment",
-                            "anchorName": "#GamingSets",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Musical Instruments",
-                            "urlName": "rules/phb/equipment",
-                            "anchorName": "#MusicalInstruments",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Other Tools",
-                            "urlName": "rules/phb/equipment",
-                            "anchorName": "#OtherTools",
                             "subsections": []
                         }
                     ]
@@ -2333,34 +2315,368 @@
                     "title": "Spell Descriptions",
                     "urlName": "rules/phb/spells",
                     "anchorName": "#SpellDescriptions",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Conditions",
+            "urlName": "rules/phb/appendix-a-conditions",
+            "anchorName": "#AppendixAConditions",
+            "subsections": [
+                {
+                    "title": "Blinded",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Blinded",
+                    "subsections": []
+                },
+                {
+                    "title": "Charmed",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Charmed",
+                    "subsections": []
+                },
+                {
+                    "title": "Deafened",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Deafened",
+                    "subsections": []
+                },
+                {
+                    "title": "Exhaustion",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Exhaustion",
+                    "subsections": []
+                },
+                {
+                    "title": "Frightened",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Frightened",
+                    "subsections": []
+                },
+                {
+                    "title": "Grappled",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Grappled",
+                    "subsections": []
+                },
+                {
+                    "title": "Incapacitated",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Incapacitated",
+                    "subsections": []
+                },
+                {
+                    "title": "Invisible",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Invisible",
+                    "subsections": []
+                },
+                {
+                    "title": "Paralyzed",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Paralyzed",
+                    "subsections": []
+                },
+                {
+                    "title": "Petrified",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Petrified",
+                    "subsections": []
+                },
+                {
+                    "title": "Poisoned",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Poisoned",
+                    "subsections": []
+                },
+                {
+                    "title": "Prone",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Prone",
+                    "subsections": []
+                },
+                {
+                    "title": "Restrained",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Restrained",
+                    "subsections": []
+                },
+                {
+                    "title": "Stunned",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Stunned",
+                    "subsections": []
+                },
+                {
+                    "title": "Unconscious",
+                    "urlName": "rules/phb/appendix-a-conditions",
+                    "anchorName": "#Unconscious",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Gods of the Multiverse",
+            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+            "anchorName": "#AppendixBGodsoftheMultiverse",
+            "subsections": [
+                {
+                    "title": "D&D Pantheons",
+                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                    "anchorName": "#DDPantheons",
                     "subsections": [
                         {
-                            "title": "Animated Object Statistics",
-                            "urlName": "rules/phb/spells",
-                            "anchorName": "#AnimatedObjectStatistics",
+                            "title": "The Forgotten Realms",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheForgottenRealms",
                             "subsections": []
                         },
                         {
-                            "title": "Temperature",
-                            "urlName": "rules/phb/spells",
-                            "anchorName": "#Temperature",
+                            "title": "Greyhawk",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#Greyhawk",
                             "subsections": []
                         },
                         {
-                            "title": "Wind",
-                            "urlName": "rules/phb/spells",
-                            "anchorName": "#Wind",
+                            "title": "Dragonlance",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#Dragonlance",
                             "subsections": []
                         },
                         {
-                            "title": "Precipitation",
-                            "urlName": "rules/phb/spells",
-                            "anchorName": "#Precipitation",
+                            "title": "Eberron",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#Eberron",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Nonhuman Deities",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#NonhumanDeities",
+                            "subsections": [
+                                {
+                                    "title": "Deities of the Forgotten Realms",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#DeitiesoftheForgottenRealms",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Deities of Greyhawk",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#DeitiesofGreyhawk",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Deities of Dragonlance",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#DeitiesofDragonlance",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Deities of Eberron",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#DeitiesofEberron",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Nonhuman Deities",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#NonhumanDeities",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fantasy-Historical Pantheons",
+                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                    "anchorName": "#FantasyHistoricalPantheons",
+                    "subsections": [
+                        {
+                            "title": "The Celtic Pantheon",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheCelticPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Greek Pantheon",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheGreekPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Egyptian Pantheon",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheEgyptianPantheon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Norse Pantheon",
+                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "anchorName": "#TheNorsePantheon",
+                            "subsections": [
+                                {
+                                    "title": "Celtic Deities",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#CelticDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Greek Deities",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#GreekDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Egyptian Deities",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#EgyptianDeities",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Norse Deities",
+                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "anchorName": "#NorseDeities",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: The Planes of Existence",
+            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+            "anchorName": "#AppendixCThePlanesofExistence",
+            "subsections": [
+                {
+                    "title": "The Material Plane",
+                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                    "anchorName": "#TheMaterialPlane",
+                    "subsections": [
+                        {
+                            "title": "Material Echoes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#MaterialEchoes",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Beyond the Material",
+                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                    "anchorName": "#BeyondtheMaterial",
+                    "subsections": [
+                        {
+                            "title": "Planar Travel",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#PlanarTravel",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Transitive Planes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#TransitivePlanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Inner Planes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#InnerPlanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Outer Planes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#OuterPlanes",
+                            "subsections": [
+                                {
+                                    "title": "Outer Planes",
+                                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                                    "anchorName": "#OuterPlanes",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Other Planes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#OtherPlanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sigil and the Outlands",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#SigilandtheOutlands",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Demiplanes",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#Demiplanes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Far Realm",
+                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "anchorName": "#TheFarRealm",
                             "subsections": []
                         }
                     ]
                 }
             ]
+        },
+        {
+            "title": "Appendix D: Creature Statistics",
+            "urlName": "rules/phb/appendix-d-creature-statistics",
+            "anchorName": "#AppendixDCreatureStatistics",
+            "subsections": [
+                {
+                    "title": "Creatures A - D",
+                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "anchorName": "#CreaturesAD",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures F - I",
+                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "anchorName": "#CreaturesFI",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures L - O",
+                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "anchorName": "#CreaturesLO",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures P - S",
+                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "anchorName": "#CreaturesPS",
+                    "subsections": []
+                },
+                {
+                    "title": "Creatures T - Z",
+                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "anchorName": "#CreaturesTZ",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix E: Inspirational Reading",
+            "urlName": "rules/phb/appendix-e-inspirational-reading",
+            "anchorName": "#AppendixEInspirationalReading",
+            "subsections": []
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/phb/credits",
+            "anchorName": "#Credits",
+            "subsections": []
         }
     ]
 }

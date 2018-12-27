@@ -1211,6 +1211,191 @@
             ]
         },
         {
+            "title": "Chapter 7: Magic Items A–Z",
+            "urlName": "rules/dmg/magic-items-a-z",
+            "anchorName": "#MagicItemsAZ",
+            "subsections": [
+                {
+                    "title": "Magic Items (A - D)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsAD",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items (E - H)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsEH",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items (I - L)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsIL",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items (M - P)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsMP",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items (Q - T)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsQT",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items (U - W)",
+                    "urlName": "rules/dmg/magic-items-a-z",
+                    "anchorName": "#MagicItemsUW",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 7: Sentient Magic Items",
+            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "Creating Sentient Magic Items",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#",
+                    "subsections": []
+                },
+                {
+                    "title": "Conflict",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#Conflict",
+                    "subsections": []
+                },
+                {
+                    "title": "Sample Sentient Items",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#SampleSentientItems",
+                    "subsections": [
+                        {
+                            "title": "Blackrazor",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Moonblade",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wave",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Whelm",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Artifacts",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#Artifacts",
+                    "subsections": []
+                },
+                {
+                    "title": "Artifact Properties",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#",
+                    "subsections": []
+                },
+                {
+                    "title": "Destroying Artifacts",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#DestroyingArtifacts",
+                    "subsections": []
+                },
+                {
+                    "title": "Sample Artifacts",
+                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#SampleArtifacts",
+                    "subsections": [
+                        {
+                            "title": "Axe of the Dwarvish Lords",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Book of Exalted Deeds",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Book of Vile Darkness",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eye and Hand of Vecna",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Orb of Dragonkind",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sword of Kas",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wand of Orcus",
+                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 7: Other Rewards",
+            "urlName": "rules/dmg/other-rewards",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "Supernatural Gifts",
+                    "urlName": "rules/dmg/other-rewards",
+                    "anchorName": "#SupernaturalGifts",
+                    "subsections": []
+                },
+                {
+                    "title": "Marks of Prestige",
+                    "urlName": "rules/dmg/other-rewards",
+                    "anchorName": "#MarksofPrestige",
+                    "subsections": []
+                },
+                {
+                    "title": "Epic Boons",
+                    "urlName": "rules/dmg/other-rewards",
+                    "anchorName": "#EpicBoons",
+                    "subsections": []
+                }
+            ]
+        },
+        {
             "title": "Chapter 8: Running the Game",
             "urlName": "rules/dmg/running-the-game",
             "anchorName": "#Chapter8RunningtheGame",
@@ -1537,6 +1722,92 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "Appendix A: Random Dungeons",
+            "urlName": "rules/dmg/appendix-a-random-dungeons",
+            "anchorName": "#AppendixARandomDungeons",
+            "subsections": [
+                {
+                    "title": "Starting Area",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#StartingArea",
+                    "subsections": []
+                },
+                {
+                    "title": "Passages",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#Passages",
+                    "subsections": []
+                },
+                {
+                    "title": "Doors",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#Doors",
+                    "subsections": []
+                },
+                {
+                    "title": "Chambers",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#Chambers",
+                    "subsections": []
+                },
+                {
+                    "title": "Stairs",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#Stairs",
+                    "subsections": []
+                },
+                {
+                    "title": "Connecting Areas",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#ConnectingAreas",
+                    "subsections": []
+                },
+                {
+                    "title": "Stocking a Dungeon",
+                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "anchorName": "#StockingaDungeon",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Monster Lists",
+            "urlName": "rules/dmg/appendix-b-monster-lists",
+            "anchorName": "#AppendixBMonsterLists",
+            "subsections": [
+                {
+                    "title": "Monsters by Environment",
+                    "urlName": "rules/dmg/appendix-b-monster-lists",
+                    "anchorName": "#MonstersbyEnvironment",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters by Challenge Rating",
+                    "urlName": "rules/dmg/appendix-b-monster-lists",
+                    "anchorName": "#MonstersbyChallengeRating",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Maps",
+            "urlName": "rules/dmg/appendix-c-maps",
+            "anchorName": "#AppendixCMaps",
+            "subsections": []
+        },
+        {
+            "title": "Appendix D: Dungeon Master Inspiration",
+            "urlName": "rules/dmg/appendix-d-dungeon-master-inspiration",
+            "anchorName": "#AppendixDDungeonMasterInspiration",
+            "subsections": []
+        },
+        {
+            "title": "Credits",
+            "urlName": "rules/dmg/credits",
+            "anchorName": "#Credits",
+            "subsections": []
         }
     ]
 }

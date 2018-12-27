@@ -1,5 +1,3 @@
-import "./DrawingToolbar.scss";
-
 import React, { Component } from "react";
 
 import Command from "./Command";

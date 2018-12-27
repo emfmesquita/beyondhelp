@@ -2059,6 +2059,149 @@
             ]
         },
         {
+            "title": "Appendix B: Death House",
+            "urlName": "adventures/cos/appendix-b-death-house",
+            "anchorName": "#AppendixBDeathHouse",
+            "subsections": [
+                {
+                    "title": "History",
+                    "urlName": "adventures/cos/appendix-b-death-house",
+                    "anchorName": "#History",
+                    "subsections": []
+                },
+                {
+                    "title": "Rose and Thorn",
+                    "urlName": "adventures/cos/appendix-b-death-house",
+                    "anchorName": "#RoseandThorn",
+                    "subsections": []
+                },
+                {
+                    "title": "Areas of the House",
+                    "urlName": "adventures/cos/appendix-b-death-house",
+                    "anchorName": "#AreasoftheHouse",
+                    "subsections": []
+                },
+                {
+                    "title": "Endings",
+                    "urlName": "adventures/cos/appendix-b-death-house",
+                    "anchorName": "#Endings",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Treasures",
+            "urlName": "adventures/cos/appendix-c-treasures",
+            "anchorName": "#AppendixCTreasures",
+            "subsections": [
+                {
+                    "title": "Tome of Strahd",
+                    "urlName": "adventures/cos/appendix-c-treasures",
+                    "anchorName": "#TomeofStrahd",
+                    "subsections": []
+                },
+                {
+                    "title": "Magic Items",
+                    "urlName": "adventures/cos/appendix-c-treasures",
+                    "anchorName": "#MagicItems",
+                    "subsections": [
+                        {
+                            "title": "Blood Spear",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#BloodSpear",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gulthias Staff",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#GulthiasStaff",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Holy Symbol of Ravenkind",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#HolySymbolofRavenkind",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Icon of Ravenloft",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#IconofRavenloft",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Saint Markovia’s Thighbone",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#SaintMarkoviasThighbone",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sunsword",
+                            "urlName": "adventures/cos/appendix-c-treasures",
+                            "anchorName": "#Sunsword",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix D: Monsters and NPCs",
+            "urlName": "adventures/cos/appendix-d-monsters-and-npcs",
+            "anchorName": "#AppendixDMonstersandNPCs",
+            "subsections": [
+                {
+                    "title": "New Creatures by Challenge Rating",
+                    "urlName": "adventures/cos/appendix-d-monsters-and-npcs",
+                    "anchorName": "#NewCreaturesbyChallengeRating",
+                    "subsections": []
+                },
+                {
+                    "title": "Creature Descriptions",
+                    "urlName": "adventures/cos/appendix-d-monsters-and-npcs",
+                    "anchorName": "#CreatureDescriptions",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix E: The Tarokka Deck",
+            "urlName": "adventures/cos/appendix-e-the-tarokka-deck",
+            "anchorName": "#AppendixETheTarokkaDeck",
+            "subsections": [
+                {
+                    "title": "Composition",
+                    "urlName": "adventures/cos/appendix-e-the-tarokka-deck",
+                    "anchorName": "#Composition",
+                    "subsections": []
+                },
+                {
+                    "title": "High Deck",
+                    "urlName": "adventures/cos/appendix-e-the-tarokka-deck",
+                    "anchorName": "#HighDeck",
+                    "subsections": []
+                },
+                {
+                    "title": "Common Deck",
+                    "urlName": "adventures/cos/appendix-e-the-tarokka-deck",
+                    "anchorName": "#CommonDeck",
+                    "subsections": []
+                },
+                {
+                    "title": "Tarokka Cards",
+                    "urlName": "adventures/cos/appendix-e-the-tarokka-deck",
+                    "anchorName": "#TarokkaCards",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix F: Handouts",
+            "urlName": "adventures/cos/appendix-f-handouts",
+            "anchorName": "#AppendixFHandouts",
+            "subsections": []
+        },
+        {
             "title": "Credits",
             "urlName": "adventures/cos/credits",
             "anchorName": "#Credits",

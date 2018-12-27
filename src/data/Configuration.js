@@ -2,8 +2,7 @@ import Data from "./Data";
 import Opt from "../Options";
 
 const defaultFalseOptions = [
-    Opt.ExtraMapRefsDrawingBundle,
-    Opt.ToC
+    Opt.ExtraMapRefsDrawingBundle
 ];
 
 class Configuration extends Data {
@@ -18,6 +17,7 @@ class Configuration extends Data {
     }
 
     static initialValue(configKey: string) {
+        if (configKey === Opt.Changelog) return [];
         return defaultFalseOptions.indexOf(configKey) === -1 ? true : "";
     }
 }
