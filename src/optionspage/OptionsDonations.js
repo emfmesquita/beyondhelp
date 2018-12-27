@@ -28,6 +28,9 @@ class OptionsDonations extends Component {
                         <img style={{ height: "30px", marginLeft: "12px" }} src={"chrome-extension://" + chrome.runtime.id + "/webaccessible/donations/patreon.png"} />
                     </a>
                 </p>
+                <p>
+                    Thank you very much for the support! Specially our first patron!
+                </p>
             </div>
         );
     }

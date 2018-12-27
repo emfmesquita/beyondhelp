@@ -5,7 +5,8 @@ const socialTitles = {
     "d-and-d-beyond": "D&D Beyond",
     github: "GitHub",
     twitter: "Twitter",
-    twitch: "Twitch"
+    twitch: "Twitch",
+    "dragon-solid": "GM XIX"
 };
 
 const content = [
@@ -36,9 +37,11 @@ const content = [
         description: "Table of Contents on Side Menu Feature"
     },
     {
-        name: "Zeg-io",
+        name: "GM XIX",
         socials: [
-            { social: "github", link: "https://github.com/zeg-io" }
+            { social: "d-and-d-beyond", link: "https://www.dndbeyond.com/members/XIX/" },
+            { social: "github", link: "https://github.com/zeg-io" },
+            { social: "dragon-solid", link: "https://gmxix.com/" }
         ],
         description: "Character Folder Layout and Monster CR Idea and Layout"
     }
@@ -80,7 +83,7 @@ class OptionsCredits extends Component {
                     <Col xs={4} md={1}>
                         <strong>Community</strong>
                     </Col>
-                    <Col xs={8} md={11}>Thanks for using the extension, findings bugs and always giving cool ideas for new features and improvements.</Col>
+                    <Col xs={8} md={11}>Thanks for using the extension, findings bugs and always giving cool ideas for new features and improvements. Special thanks to our first patron!</Col>
                 </Row>
             </Grid>
         );
