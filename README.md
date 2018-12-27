@@ -65,15 +65,15 @@ P.S.: Background, Feat and Homebrew tooltips may cease to work if the implementa
     - Customizable colors for each level (bundle, compendium, map, area);
     - Custom map areas are organized on bundles that can be exported, shared and imported by the community.
 
+### Compendium TOC on Side Menu
+- Huge thanks to Dawson Conway (https://github.com/dconman) the author of this feature;
+- This adds the full toc on the side menu for compendiums.
+
 ### Play-by-post Notes
 - Huge thanks to [gludington](https://github.com/gludington) the author of this feature;
 - Collapsible area on play-by-post threads of D&D Beyond forum that enables adding private notes related with the campaign;
 - All data can be seen, deleted, downloaded on the extension configuration page;
 - Attention: The notes are persisted on the local machine (not synchronized between devices) and are erased if the extension is removed from chrome.
-
-### Compendium TOC on Side Menu
-- Huge thanks to Dawson Conway (https://github.com/dconman) the author of this feature;
-- This adds the full toc on the side menu for compendiums. This is not enabled by default. To turn it on head to the extension options (the wrench on extension pop up page) and check the "Show table of contents on compendium pages".
 
 ### Compendium References
 - Extra buttons on all compendium pages that enables the user to copy references that can be pasted on:
