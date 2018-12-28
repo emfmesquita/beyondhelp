@@ -94,8 +94,9 @@ class OptionsApp extends Component {
         return (
             <Tab.Content animation>
                 <Tab.Pane eventKey="cfolders">
-                    {this.optionField("Enable folders and sort on 'My Characters' page.", Opt.MyCharactersFolders)}
-                    {this.optionField("Enable folders and sort on campaign pages.", Opt.CampaignCharactersFolders)}
+                    {this.optionField("Enable folders on 'My Characters' page.", Opt.MyCharactersFolders)}
+                    {this.optionField("Sort characters alphabetically on 'My Characters' page.", Opt.MyCharacterSort)}
+                    {this.optionField("Enable folders on campaign pages.", Opt.CampaignCharactersFolders)}
                 </Tab.Pane>
                 <Tab.Pane eventKey="editor">
                     {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}

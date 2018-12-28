@@ -12,14 +12,19 @@ import packageJson from "../../package.json";
 
 /* global chrome */
 
-// runs code for each version a single time
+// runs code for each version a single time'
 chrome.runtime.onInstalled.addListener(() => {
     ConfigStorageService.getConfig().then((config: Configuration) => {
         const changelog: string[] = config[Opt.Changelog] || [];
-        if (changelog.indexOf("0.15.0") === -1) {
-            changelog.push("0.15.0");
-            config[Opt.ToC] = true;
+        const runOnce = (version: string, toRun: Function) => {
+            if (changelog.indexOf(version) === -1) {
+                changelog.push(version);
+                toRun();
+            }
         }
+
+        runOnce("0.15.0", () => config[Opt.ToC] = true);
+        runOnce("0.15.1", () => config[Opt.MyCharacterSort] = config[Opt.MyCharactersFolders]);
 
         config[Opt.Changelog] = changelog;
         SyncStorageService.updateData(config);

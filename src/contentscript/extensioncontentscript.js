@@ -71,7 +71,7 @@ ConfigStorageService.getConfig().then((config: Configuration) => {
     if (config[Opt.CharacterFavIcon]) FavIconService.changeCharacterFavIcon();
 
     // change my characters page
-    if (config[Opt.MyCharactersFolders]) MyCharactersService.init();
+    if (config[Opt.MyCharactersFolders] || config[Opt.MyCharacterSort]) MyCharactersService.init(config);
 
     // change campaign page
     if (config[Opt.CampaignCharactersFolders]) CampaignCharactersService.init();

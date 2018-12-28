@@ -29,7 +29,7 @@ class OptionsDonations extends Component {
                     </a>
                 </p>
                 <p>
-                    Thank you very much for the support! Especially our first patron!
+                    Thank you very much for the support! Especially our patrons!
                 </p>
             </div>
         );

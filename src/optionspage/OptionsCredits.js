@@ -83,7 +83,7 @@ class OptionsCredits extends Component {
                     <Col xs={4} md={1}>
                         <strong>Community</strong>
                     </Col>
-                    <Col xs={8} md={11}>Thanks for using the extension, findings bugs and always giving cool ideas for new features and improvements. Special thanks to our first patron!</Col>
+                    <Col xs={8} md={11}>Thanks for using the extension, findings bugs and always giving cool ideas for new features and improvements. Special thanks to our patrons!</Col>
                 </Row>
             </Grid>
         );
