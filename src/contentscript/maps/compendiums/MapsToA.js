@@ -111,7 +111,7 @@ const maps = [
 
 class MapsToA extends MapRefs {
     static get path() {
-        return "adventures/toa/";
+        return "toa/";
     }
 
     static get maps() {

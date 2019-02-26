@@ -44,6 +44,8 @@
 
         initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/characters/feats/']", "BH-feat-tooltip", parseTooltipInfo);
         initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/characters/backgrounds/']", "BH-background-tooltip", parseTooltipInfo);
+        initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/feats/']", "BH-feat-tooltip", parseTooltipInfo);
+        initTooltips(".tooltip-hover[href^='https://www.dndbeyond.com/backgrounds/']", "BH-background-tooltip", parseTooltipInfo);
     }
 
 
@@ -86,6 +88,7 @@
 
     const initRefTooltips = function (typeSelector) {
         initTooltips(`${typeSelector}.tooltip-hover[href^='https://www.dndbeyond.com/compendium/']`, "BH-reference-tooltip", parseReference);
+        initTooltips(`${typeSelector}.tooltip-hover[href^='https://www.dndbeyond.com/sources/']`, "BH-reference-tooltip", parseReference);
     };
 
     // compendium references tooltips

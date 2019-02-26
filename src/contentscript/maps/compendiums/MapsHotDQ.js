@@ -291,7 +291,7 @@ const maps = [
 
 class MapsHotDQ extends MapRefs {
     static get path() {
-        return "adventures/hotdq/";
+        return "hotdq/";
     }
 
     static get maps() {

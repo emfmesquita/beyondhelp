@@ -393,7 +393,7 @@ const maps = [
 
 class MapsOotA extends MapRefs {
     static get path() {
-        return "adventures/oota/";
+        return "oota/";
     }
 
     static get maps() {

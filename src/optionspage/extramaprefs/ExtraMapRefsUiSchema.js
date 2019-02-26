@@ -143,7 +143,7 @@ const uischema = {
         },
         "items": {
             "path": {
-                "ui:placeholder": "Url path after /compendium. E.g. adventures/toa/"
+                "ui:placeholder": "Url path after /sources. E.g. toa"
             },
             "color": {
                 "ui:widget": "colorPicker"

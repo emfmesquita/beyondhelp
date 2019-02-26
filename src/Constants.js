@@ -21,7 +21,7 @@ const extraColors = Object.freeze({
 const configurationId = "bh-config";
 const pbpRefsId = "pbp-thread";
 
-const compendiumPage = "https://www.dndbeyond.com/compendium/";
+const compendiumPage = "https://www.dndbeyond.com/sources/";
 
 const mapAreaRect = "rect";
 const mapAreaRhombus = "rho";

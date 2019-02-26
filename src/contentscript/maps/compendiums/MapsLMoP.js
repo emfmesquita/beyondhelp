@@ -214,7 +214,7 @@ const maps = [
 
 class MapsLMoP extends MapRefs {
     static get path() {
-        return "adventures/lmop/";
+        return "lmop/";
     }
 
     static get maps() {

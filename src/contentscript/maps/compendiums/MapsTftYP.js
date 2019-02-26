@@ -373,7 +373,7 @@ const maps = [
 
 class MapsTftYP extends MapRefs {
     static get path() {
-        return "adventures/tftyp/";
+        return "tftyp/";
     }
 
     static get maps() {

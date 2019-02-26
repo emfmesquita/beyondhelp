@@ -9,7 +9,7 @@ class LocationService {
      * @param {*} path 
      */
     static isOnCompendium(path: string): boolean {
-        return addBar(window.location.pathname).startsWith(addBar("/compendium/" + path));
+        return addBar(window.location.pathname).startsWith(addBar("/sources/" + path));
     }
 
     /**
@@ -17,7 +17,7 @@ class LocationService {
      * @param {*} path 
      */
     static isOnToc(path: string): boolean {
-        return addBar(window.location.pathname) === addBar("/compendium/" + path);
+        return addBar(window.location.pathname) === addBar("/sources/" + path);
     }
 
     /**

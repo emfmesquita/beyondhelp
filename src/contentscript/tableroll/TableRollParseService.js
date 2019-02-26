@@ -14,21 +14,21 @@ const basicTable = function (firstColumnHeaderText: string, firstColumnHeader: H
 
 const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, index: number) {
     const columnHeaders = jqTable.find("th, thead td").get();
-    if (checkSpecial(firstColumnHeaderText, "d12 Roll", "/compendium/adventures/lmop/wave-echo-cave")) {
+    if (checkSpecial(firstColumnHeaderText, "d12 Roll", "/sources/lmop/wave-echo-cave")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d12");
-    } else if (checkSpecial(firstColumnHeaderText, "Day Roll", "/compendium/adventures/lmop/the-spiders-web")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Day Roll", "/sources/lmop/the-spiders-web")) {
         return new RollableTableData([
             new RollableData("Day Roll", "d12", [0], columnHeaders[0]),
             new RollableData("Night Roll", "d12", [1], columnHeaders[1])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "Day", "/compendium/adventures/pota/the-dessarin-valley")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Day", "/sources/pota/the-dessarin-valley")) {
         return new RollableTableData([
             new RollableData("Day", "d12 + d8", [0], columnHeaders[0]),
             new RollableData("Night", "d12 + d8", [1], columnHeaders[1])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "Roll", "/compendium/adventures/pota/the-dessarin-valley")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Roll", "/sources/pota/the-dessarin-valley")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d12 + d8");
-    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/compendium/adventures/skt/the-savage-frontier")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/sources/skt/the-savage-frontier")) {
         return new RollableTableData([
             new RollableData("Forest", "d100", [1], columnHeaders[1]),
             new RollableData("Grassland", "d100", [2], columnHeaders[2]),
@@ -38,7 +38,7 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
             new RollableData("Sea", "d100", [6], columnHeaders[6]),
             new RollableData("Tundra", "d100", [7], columnHeaders[7])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/compendium/adventures/toa/random-encounters")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/sources/toa/random-encounters")) {
         if (index === 6) {
             return new RollableTableData([
                 new RollableData("Ruins", "d100", [1], columnHeaders[1]),
@@ -46,25 +46,25 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
                 new RollableData("Swamp", "d100", [3], columnHeaders[3])
             ]);
         }
-    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/compendium/rules/ttp/the-tortle-package")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Encounter", "/sources/ttp/the-tortle-package")) {
         return new RollableTableData([
             new RollableData("Land", "d100", [1], columnHeaders[1]),
             new RollableData("Water", "d100", [2], columnHeaders[2])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "d100*", "/compendium/rules/xgte/character-options-this-is-your-life")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d100*", "/sources/xgte/character-options-this-is-your-life")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d100");
-    } else if (checkSpecial(firstColumnHeaderText, "3d6 +Cha mod", "/compendium/rules/xgte/character-options-this-is-your-life")) {
+    } else if (checkSpecial(firstColumnHeaderText, "3d6 +Cha mod", "/sources/xgte/character-options-this-is-your-life")) {
         const headerContent = <span>{"3d6 +"} < br /> {"Cha mod"}</span>;
         return basicTable(headerContent, columnHeaders[0], "3d6");
-    } else if (checkSpecial(firstColumnHeaderText, "d100 + Level", "/compendium/rules/dmg/between-adventures")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d100 + Level", "/sources/dmg/between-adventures")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d100");
-    } else if (checkSpecial(firstColumnHeaderText, "d100 + Days", "/compendium/rules/dmg/between-adventures")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d100 + Days", "/sources/dmg/between-adventures")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d100");
-    } else if (checkSpecial(firstColumnHeaderText, "d100 + Mod.", "/compendium/rules/dmg/between-adventures")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d100 + Mod.", "/sources/dmg/between-adventures")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d100");
-    } else if (checkSpecial(firstColumnHeaderText, "Check Total", "/compendium/rules/xgte/dungeon-masters-tools")) {
+    } else if (checkSpecial(firstColumnHeaderText, "Check Total", "/sources/xgte/dungeon-masters-tools")) {
         return basicTable(firstColumnHeaderText, columnHeaders[0], "d20");
-    } else if (checkSpecial(firstColumnHeaderText, "d12/d20", "/compendium/rules/dmg/appendix-a-random-dungeons")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d12/d20", "/sources/dmg/appendix-a-random-dungeons")) {
         const firstRollableContaier = $("<span></span>");
         const secondRollableContaier = $("<span></span>");
         const jqFirstColumnHeader = $(columnHeaders[0]);
@@ -74,7 +74,7 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
             new RollableData("d12", "d12", [0], firstRollableContaier[0]),
             new RollableData("d20", "d20", [0], secondRollableContaier[0])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "d6 (d8)", "/compendium/adventures/pota/secret-of-the-sumber-hills")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d6 (d8)", "/sources/pota/secret-of-the-sumber-hills")) {
         const firstRollableContaier = $("<span></span>");
         const secondRollableContaier = $("<span></span>");
         const jqFirstColumnHeader = $(columnHeaders[0]);
@@ -84,7 +84,7 @@ const parseSpecialTables = function (firstColumnHeaderText: string, jqTable, ind
             new RollableData("d6", "d6", [0], firstRollableContaier[0]),
             new RollableData("d8", "d8", [0], secondRollableContaier[0])
         ]);
-    } else if (checkSpecial(firstColumnHeaderText, "d8", "/compendium/adventures/oota/audience-in-gauntlgrym")) {
+    } else if (checkSpecial(firstColumnHeaderText, "d8", "/sources/oota/audience-in-gauntlgrym")) {
         return basicTable("d20", columnHeaders[0], "d20");
     }
     return null;

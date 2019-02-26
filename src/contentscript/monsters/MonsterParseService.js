@@ -9,7 +9,7 @@ const isOnMonsterList = function (path: string) {
 };
 
 const isOnHomebrew = function (path: string) {
-    return path.startsWith("/homebrew/");
+    return path.startsWith("/my-creations") || path.startsWith("/my-collection");
 };
 
 const isOnMonsterDetail = function (path: string) {

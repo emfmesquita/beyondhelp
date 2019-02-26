@@ -3,19 +3,20 @@ import $ from "jquery";
 import TooltipEntry from "../data/TooltipEntry";
 
 const url = (name: string, path: string) => `https://www.dndbeyond.com/${path}?filter-search=${encodeURI(trim(name))}&sort=name`;
-const collectionUrl = (name: string, type: string) => `https://www.dndbeyond.com/homebrew/collection?filter-type=${type}&filter-name=${encodeURI(trim(name))}&sort=name`;
-const characterUrl = (type: string) => `https://www.dndbeyond.com/characters/${type}`;
-const hCharacterUrl = (name: string, path: string) => `https://www.dndbeyond.com/${path}?filter-name=${encodeURI(trim(name))}&sort=name`;
+const baseUrl = (type: string) => `https://www.dndbeyond.com/${type}`;
+const creationUrl = (name: string, type: string) => `https://www.dndbeyond.com/my-creations?filter-type=${type}&filter-name=${encodeURI(trim(name))}&sort=name`;
+const collectionUrl = (name: string, type: string) => `https://www.dndbeyond.com/my-collection?filter-type=${type}&filter-name=${encodeURI(trim(name))}&sort=name`;
 
 const trim = (value: string) => value ? value.trim() : "";
 
 const commonParse = (el: HTMLElement) => trim(el.textContent);
 
-const homebrewListParse = function (el: HTMLElement): TooltipEntry {
+const homebrewCreationParse = function (el: HTMLElement): TooltipEntry {
     const name = trim(el.textContent);
     const jqEl = $(el);
-    const path = trim(jqEl.attr("href"));
-    const author = trim(jqEl.closest(".list-row").find(".list-row-author-primary-text").text());
+    const jqRow = $(el).closest(".list-row");
+    const path = `/${jqRow.attr("data-type")}/${jqRow.attr("data-slug")}`;
+    const author = jqRow.find(".list-row-author-primary-text").text();
     return new TooltipEntry(name, path, author);
 };
 
@@ -49,13 +50,13 @@ const baseSearch = function (url: string, selector: string, parser: Function) {
 };
 
 const commonSearch = (url: string, selector: string) => baseSearch(url, selector, commonParse);
-const homebreListSearch = (url: string) => baseSearch(url, ".list-row-name-primary-text a", homebrewListParse);
+const homebreCreationSearch = (url: string) => baseSearch(url, ".list-row-name-primary-text a", homebrewCreationParse);
 const homebreCollectionSearch = (url: string) => baseSearch(url, ".list-row-name-primary-text a", homebrewCollectionParse);
 const characterSearch = (url: string) => baseSearch(url, ".list-row-name-primary-text a", characterParse);
 
 class DDBSearchService {
     static backgrounds(): Promise<TooltipEntry[]> {
-        return characterSearch(characterUrl("backgrounds"));
+        return characterSearch(baseUrl("backgrounds"));
     }
 
     static equipments(name: string): Promise<string[]> {
@@ -63,7 +64,7 @@ class DDBSearchService {
     }
 
     static feats(): Promise<TooltipEntry[]> {
-        return characterSearch(characterUrl("feats"));
+        return characterSearch(baseUrl("feats"));
     }
 
     static magicItems(name: string): Promise<string[]> {
@@ -79,27 +80,23 @@ class DDBSearchService {
     }
 
     static homebrewBackgrounds(name: string): Promise<TooltipEntry[]> {
-        return homebreListSearch(hCharacterUrl(name, "homebrew/backgrounds"));
+        return homebreCreationSearch(creationUrl(name, "1669830167"));
     }
 
     static homebrewFeats(name: string): Promise<TooltipEntry[]> {
-        return homebreListSearch(hCharacterUrl(name, "homebrew/feats"));
+        return homebreCreationSearch(creationUrl(name, "1088085227"));
     }
 
     static homebrewMagicItems(name: string): Promise<TooltipEntry[]> {
-        return homebreListSearch(url(name, "homebrew/magic-items"));
+        return homebreCreationSearch(creationUrl(name, "112130694"));
     }
 
     static homebrewMonsters(name: string): Promise<TooltipEntry[]> {
-        return homebreListSearch(url(name, "homebrew/monsters"));
+        return homebreCreationSearch(creationUrl(name, "779871897"));
     }
 
     static homebrewSpells(name: string): Promise<TooltipEntry[]> {
-        return homebreListSearch(url(name, "homebrew/spells"));
-    }
-
-    static homebrewCollectionMagicItems(name: string): Promise<TooltipEntry[]> {
-        return homebreCollectionSearch(collectionUrl(name, "112130694"));
+        return homebreCreationSearch(creationUrl(name, "1118725998"));
     }
 
     static homebrewCollectionBackgrounds(name: string): Promise<TooltipEntry[]> {
@@ -108,6 +105,10 @@ class DDBSearchService {
 
     static homebrewCollectionFeats(name: string): Promise<TooltipEntry[]> {
         return homebreCollectionSearch(collectionUrl(name, "1088085227"));
+    }
+
+    static homebrewCollectionMagicItems(name: string): Promise<TooltipEntry[]> {
+        return homebreCollectionSearch(collectionUrl(name, "112130694"));
     }
 
     static homebrewCollectionMonsters(name: string): Promise<TooltipEntry[]> {

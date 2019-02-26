@@ -22,7 +22,7 @@ const setupHeaders = function (headers: HTMLElement[], index: Number) {
 class ReferencesService {
     static init() {
         const path = window.location.pathname;
-        if (!path.startsWith("/compendium/") || path.split("/").length < 5) return;
+        if (!path.startsWith("/sources/") || path.split("/").length < 5) return;
 
         const headers = $(headersSelector);
 

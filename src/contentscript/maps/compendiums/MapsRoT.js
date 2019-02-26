@@ -166,7 +166,7 @@ const maps = [
 
 class MapsRoT extends MapRefs {
     static get path() {
-        return "adventures/rot/";
+        return "rot/";
     }
 
     static get maps() {

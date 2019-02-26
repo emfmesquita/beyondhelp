@@ -11,24 +11,24 @@ const wprop = "wprop";
 const common = [monster, spell, equip, mitem, action, condition, sense, skill, wprop];
 
 // homebrew lists
+const hbackground = "hbackground";
+const hfeat = "hfeat";
 const hmonster = "hmonster";
 const hspell = "hspell";
 const hmitem = "hmitem";
-const hListTypes = [hmonster, hspell, hmitem];
+const hListTypes = [hbackground, hfeat, hmonster, hspell, hmitem];
 
 // homebrew collections
+const hcbackground = "hcbackground";
+const hcfeat = "hcfeat";
 const hcollectionmonster = "hcollectionmonster";
 const hcollectionspell = "hcollectionspell";
 const hcollectionitem = "hcollectionitem";
-const hCollectionTypes = [hcollectionmonster, hcollectionspell, hcollectionitem];
+const hCollectionTypes = [hcbackground, hcfeat, hcollectionmonster, hcollectionspell, hcollectionitem];
 
 // custom
 const background = "background";
 const feat = "feat";
-const hbackground = "hbackground";
-const hfeat = "hfeat";
-const hcbackground = "hcbackground";
-const hcfeat = "hcfeat";
 const custom = [background, feat, hbackground, hfeat, hcbackground, hcfeat];
 
 const hTypes = hListTypes.concat(hCollectionTypes);

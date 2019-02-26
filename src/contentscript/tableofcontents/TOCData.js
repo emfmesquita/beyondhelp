@@ -24,39 +24,35 @@ import wdotmm from './data/adventures/wdotmm.json';
 import xgte from './data/rules/xgte.json';
 
 const data = {
-    adventures: {
-        'cos': cos,
-        'ddia-mord': ddiaMord,
-        'hotdq': hotdq,
-        'llok': llok,
-        'lmop': lmop,
-        'oota': oota,
-        'pota': pota,
-        'rot': rot,
-        'skt': skt,
-        'tftyp': tftyp,
-        'toa': toa,
-        'wdh': wdh,
-        'wdotmm': wdotmm
-    },
-    rules: {
-        'basic-rules': basicRules,
-        'dmg': dmg,
-        'ggtr': ggtr,
-        'mm': mm,
-        'mtof': mtof,
-        'phb': phb,
-        'scag': scag,
-        'ttp': ttp,
-        'vgtm': vgtm,
-        'wgte': wgte,
-        'xgte': xgte
-    }
+    'cos': cos,
+    'ddia-mord': ddiaMord,
+    'hotdq': hotdq,
+    'llok': llok,
+    'lmop': lmop,
+    'oota': oota,
+    'pota': pota,
+    'rot': rot,
+    'skt': skt,
+    'tftyp': tftyp,
+    'toa': toa,
+    'wdh': wdh,
+    'wdotmm': wdotmm,
+    'basic-rules': basicRules,
+    'dmg': dmg,
+    'ggtr': ggtr,
+    'mm': mm,
+    'mtof': mtof,
+    'phb': phb,
+    'scag': scag,
+    'ttp': ttp,
+    'vgtm': vgtm,
+    'wgte': wgte,
+    'xgte': xgte
 };
 
 class TOCData {
-    static getBook(type: String, title: String) {
-        return data[type][title];
+    static getBook(title: String) {
+        return data[title];
     }
 }
 

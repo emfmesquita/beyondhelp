@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import UidService from "../../services/UidService";
 
 const chapterUrl = (object, currentUrl) =>
-    currentUrl === object.urlName ? object.anchorName : `https://www.dndbeyond.com/compendium/${object.urlName}${object.anchorName}`;
+    currentUrl === object.urlName ? object.anchorName : `https://www.dndbeyond.com/sources/${object.urlName}${object.anchorName}`;
 
 class TOCElement extends Component {
 

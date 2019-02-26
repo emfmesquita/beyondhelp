@@ -15,7 +15,7 @@ const pathRegex = /^\/profile\/[0-9a-z]+\/characters$/i;
 class MyCharactersService {
     static init(config: Configuration) {
         const path = window.location.pathname;
-        if (path !== "/my-content/characters" && !pathRegex.test(path)) return;
+        if (path !== "/my-characters") return;
 
         MessageService.send(C.UsernameMessage, {}, (username: string) => {
             if (!username) return;

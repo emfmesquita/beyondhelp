@@ -102,7 +102,7 @@ srcTitleMap.set("llok", "Lost Laboratory of Kwalish");
 
 const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass }) {
     return new Promise((resolve, reject) => {
-        const moreInfoUrl = `https://www.dndbeyond.com/characters/${type}/${slug}/more-info`;
+        const moreInfoUrl = `https://www.dndbeyond.com/${type}/${slug}/more-info`;
 
         // gets the more-info content (same used on list expand) and parses the content to add on tooltip
         $.get(moreInfoUrl, (response) => {
@@ -148,7 +148,7 @@ const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass
                 default:
                     identifier = "";
             }
-            const content = jqHtml.find(".more-info-body").html();
+            const content = jqHtml.find(".more-info-body-description").html();
             resolve(tooltipContent(name, identifier, itentifierClass, content));
         }).fail(() => {
             reject(unknownErrorContent);
@@ -320,7 +320,7 @@ class TooltipsService {
      * @param {*} tooltipInfo 
      */
     static buildCustomTooltipContent(tooltipInfo): Promise<Object> {
-        if (tooltipInfo.type === "compendium") {
+        if (tooltipInfo.type === "compendium" || tooltipInfo.type === "sources") {
             return buildReferenceTooltip(tooltipInfo);
         }
         return buildBackgroundFeatTooltip(tooltipInfo);

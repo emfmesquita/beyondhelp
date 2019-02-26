@@ -531,7 +531,7 @@ const maps = [
 
 class MapsPotA extends MapRefs {
     static get path() {
-        return "adventures/pota/";
+        return "pota/";
     }
 
     static get maps() {

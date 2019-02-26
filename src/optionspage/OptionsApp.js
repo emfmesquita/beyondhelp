@@ -54,8 +54,8 @@ class OptionsApp extends Component {
         };
     }
 
-    optionField = (label: string, option: string) => {
-        return <CheckBoxField className="BH-option-field" checkText={label} value={this.state[option]} onChange={this.changeOptionHandler(option)} />;
+    optionField = (label: string, option: string, level = 0) => {
+        return <CheckBoxField className="BH-option-field" checkText={label} value={this.state[option]} level={level} onChange={this.changeOptionHandler(option)} />;
     }
 
     handleBundleDrawingChange = (bundleId: string) => {
@@ -100,8 +100,8 @@ class OptionsApp extends Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="editor">
                     {this.optionField("Enable Beyond Help button on editors.", Opt.EditorButton)}
-                    {this.optionField("Enable Tooltips Tab on Beyond Help Editor Dialog.", Opt.TooltipsTab)}
-                    {this.optionField("Enable Rollable Tables Tab on Beyond Help Editor Dialog.", Opt.TablesTab)}
+                    {this.optionField("Enable Tooltips Tab on Beyond Help Editor Dialog.", Opt.TooltipsTab, 1)}
+                    {this.optionField("Enable Rollable Tables Tab on Beyond Help Editor Dialog.", Opt.TablesTab, 1)}
                     {this.optionField("Enable Fullscreen button on editors.", Opt.FullscreenButton)}
                 </Tab.Pane>
                 <Tab.Pane eventKey="favicon">
@@ -109,13 +109,13 @@ class OptionsApp extends Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="globalmaprefs">
                     {this.optionField("Global enable map references.", Opt.MapRefs)}
-                    {this.optionField("Enable main map references (rectangular references).", Opt.MapRefsRect)}
-                    {this.optionField("Enable extra map references (diamond shape references).", Opt.MapRefsRho)}
-                    {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc)}
-                    {this.optionField("Enable comment map references.", Opt.MapRefsComments)}
-                    {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks)}
-                    {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks)}
-                    {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks)}
+                    {this.optionField("Enable main map references (rectangular references).", Opt.MapRefsRect, 1)}
+                    {this.optionField("Enable extra map references (diamond shape references).", Opt.MapRefsRho, 1)}
+                    {this.optionField("Enable map to map references (circle references).", Opt.MapRefsCirc, 1)}
+                    {this.optionField("Enable comment map references.", Opt.MapRefsComments, 1)}
+                    {this.optionField("Enable links to maps on compendium headers.", Opt.MapLinks, 1)}
+                    {this.optionField("Enable links to maps on compendium menus.", Opt.MapMenuLinks, 1)}
+                    {this.optionField("Enable links to maps on compendium table of contents.", Opt.MapTocLinks, 1)}
                 </Tab.Pane>
                 <Tab.Pane eventKey="defaultmaprefs">
                     {this.optionField("Show default map references from: Lost Mine of Phandelver.", Opt.BhMapRefsLMoP)}

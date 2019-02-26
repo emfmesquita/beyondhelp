@@ -56,11 +56,14 @@ class TOCService {
     }
 
     static init() {
+        // off for now
+        return;
+
         const path = window.location.pathname;
         const pathComponents = path.split("/");
-        if (pathComponents.length < 5 || pathComponents[1] !== "compendium") return;
+        if (pathComponents.length < 4 || pathComponents[1] !== "sources") return;
         const subPath = pathComponents.slice(2).join('/');
-        const book = TOCData.getBook(pathComponents[2], pathComponents[3]);
+        const book = TOCData.getBook(pathComponents[2]);
         if (!book) return; // no entry on data, nothing to do
         const menu = $(".sidebar-menu");
         let active = menu.find('.quick-menu-item-active').find('a').first().attr('href');
