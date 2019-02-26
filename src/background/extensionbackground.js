@@ -24,7 +24,7 @@ chrome.runtime.onInstalled.addListener(() => {
         }
 
         runOnce("0.15.0", () => config[Opt.ToC] = true);
-        runOnce("0.15.1", () => config[Opt.MyCharacterSort] = config[Opt.MyCharactersFolders]);
+        runOnce("0.16.0", () => config[Opt.MyCharacterSort] = config[Opt.MyCharactersFolders]);
 
         config[Opt.Changelog] = changelog;
         SyncStorageService.updateData(config);
