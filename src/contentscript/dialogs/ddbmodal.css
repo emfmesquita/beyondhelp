@@ -1,0 +1,202 @@
+.fullscreen-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 999
+}
+
+.race-confirm-modal .builder-message {
+    margin-bottom: 10px
+}
+
+.fullscreen-modal {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+.fullscreen-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 999
+}
+
+.fullscreen-modal-header {
+    background-color: #262e37;
+    color: #fff;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 15px
+}
+
+.fullscreen-modal-heading {
+    font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.fullscreen-modal-close-btn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://www.dndbeyond.com/Content/Skins/Waterdeep/images/sprites/charsheet-atlas-white.svg);
+    background-position: -35px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer
+}
+
+.fullscreen-modal-content {
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 60px;
+    bottom: 45px;
+    padding: 20px
+}
+
+.fullscreen-modal-noactions .fullscreen-modal-content {
+    bottom: 0
+}
+
+.fullscreen-modal-footer {
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-top: 1px solid #96bf6b
+}
+
+.fullscreen-modal-action {
+    width: 50%
+}
+
+@media (min-width: 768px) {
+    .fullscreen-modal {
+        left: 50%;
+        right: auto;
+        top: 50%;
+        bottom: auto;
+        width: calc(100% - 40px);
+        max-width: 500px;
+        height: 70%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.site .character-button,
+.site .character-button-modal,
+.site .character-button-modal-cancel {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #96bf6b;
+    color: #fff;
+    font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+    font-size: 10px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    transition: all 50ms
+}
+
+.site .character-button-modal-cancel:disabled,
+.site .character-button-modal:disabled,
+.site .character-button:disabled {
+    opacity: 1;
+    color: #777;
+    background-color: #eaeaea
+}
+
+.site .character-button-modal-cancel:disabled:active,
+.site .character-button-modal-cancel:disabled:focus,
+.site .character-button-modal-cancel:disabled:hover,
+.site .character-button-modal-cancel:disabled:visited,
+.site .character-button-modal:disabled:active,
+.site .character-button-modal:disabled:focus,
+.site .character-button-modal:disabled:hover,
+.site .character-button-modal:disabled:visited,
+.site .character-button:disabled:active,
+.site .character-button:disabled:focus,
+.site .character-button:disabled:hover,
+.site .character-button:disabled:visited {
+    color: #777;
+    background-color: #eaeaea;
+    box-shadow: none
+}
+
+.site .character-button-modal-cancel:active,
+.site .character-button-modal:active,
+.site .character-button:active {
+    background-color: #7dac4b;
+    box-shadow: inset 0 0 10px 2px #63893b;
+    color: #fff
+}
+
+.site .character-button-modal-cancel:focus,
+.site .character-button-modal:focus,
+.site .character-button:focus {
+    color: #fff
+}
+
+.site .character-button-modal-cancel:visited,
+.site .character-button-modal:visited,
+.site .character-button:visited {
+    color: #fff
+}
+
+.site .character-button-modal,
+.site .character-button-modal-cancel {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px
+}
+
+.site .character-button-modal-cancel {
+    background-color: #fff;
+    color: #838383
+}
+
+.site .character-button-modal-cancel:active,
+.site .character-button-modal-cancel:focus,
+.site .character-button-modal-cancel:hover {
+    color: #838383;
+    background-color: #e6e6e6;
+    box-shadow: inset 0 0 10px 2px #ccc
+}
+
+.builder-field-value[type=number],
+.builder-field-value[type=text] {
+    width: 100%;
+    padding: 10px
+}
+
+.builder-field-heading {
+    font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: normal
+}

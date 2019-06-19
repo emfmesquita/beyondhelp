@@ -1,16 +1,27 @@
 /* global chrome */
-
 class UserService {
     /**
      * Gets the current logged user username.
      */
     static getCurrentUsername(): Promise<string> {
         return new Promise((resolve, reject) => {
+            const answer = (value) => chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(value);
+
             chrome.cookies.getAll({
-                domain: ".dndbeyond.com",
-                name: "User"
+                domain: ".dndbeyond.com"
             }, (cookies) => {
-                const cookie = cookies && cookies[0] ? cookies[0] : null;
+                if (!cookies) {
+                    answer(null);
+                    return;
+                }
+
+                let cookie = cookies.find(cookie => cookie.name === "User.Username");
+                if (cookie) {
+                    answer(cookie.value);
+                    return;
+                }
+
+                cookie = cookies.find(cookie => cookie.name === "User");
                 const value = cookie ? cookie.value : null;
                 let username = null;
                 if (value) {
@@ -18,7 +29,7 @@ class UserService {
                         if (token.startsWith("UserName=")) username = token.replace("UserName=", "");
                     });
                 }
-                chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(username);
+                answer(username);
             });
         });
     }

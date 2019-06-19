@@ -11,14 +11,17 @@ a.BH-homebrew-character-action {
 .BH-character-multiple-select {
     font-size: 15px !important;
     height: 100% !important;
+    width: 100% !important;
     overflow: hidden !important;
 }
 
 .BH-character-folder-li {
     display: inline-block;
+
     &.open {
         width: 100%;
     }
+
     &.closed {
         width: 33%;
     }

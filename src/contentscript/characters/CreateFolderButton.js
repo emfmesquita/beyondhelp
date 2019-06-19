@@ -33,11 +33,11 @@ class CreateFolderButton extends Component {
 
     modalContent = () => {
         return (
-            <div className="builder-field form-input-field">
-                <span className="builder-field-label">
-                    <label className="builder-field-heading form-input-field-label">Folder Name</label>
+            <div>
+                <span>
+                    <label className="builder-field-heading">Folder Name</label>
                 </span>
-                <span className="builder-field-input">
+                <span>
                     <input
                         type="text"
                         className="builder-field-value"

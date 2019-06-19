@@ -85,8 +85,8 @@ class CharacterFolder extends Component {
 
         return (
             <div>
-                <span className="builder-field-label">
-                    <label className="builder-field-heading form-input-field-label">Characters</label>
+                <span>
+                    <label className="builder-field-heading">Characters</label>
                 </span>
                 <select multiple value={this.state[selectProp]} size={charList.length} className="character-select BH-character-multiple-select" onChange={handleSelected}>
                     {charList.map(character => <option key={character.id} value={character.id}>{optionName(character)}</option>)}
