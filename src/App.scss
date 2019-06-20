@@ -19,14 +19,15 @@ li {
 
 .Monster-encounter-menu {
     padding: 8px 8px 0px 8px;
-    .Menu-button {
-        position: relative;
-        top: 3px;
-    }
+
     .Monster-encounter-select {
         margin-left: 2px;
         display: inline-block;
         width: calc(100% - 63px);
+    }
+
+    .Monster-encounter-select__control {
+        height: 34px;
     }
 }
 
@@ -36,6 +37,7 @@ li {
 
 .Monster-empty-list {
     margin: 8px;
+
     p {
         margin: 0;
     }
@@ -47,14 +49,17 @@ li {
 }
 
 .modal-dialog {
+
     .modal-header,
     .modal-body,
     .modal-footer {
         padding: 8px;
     }
+
     .modal-title {
         font-size: 16px;
     }
+
     .form-group {
         margin-bottom: 0px;
     }

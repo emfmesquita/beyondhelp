@@ -361,6 +361,7 @@ class App extends Component {
                     <MenuButton className="btn" icon="glyphicon-wrench" title="Extension Options" onClick={LinkService.toNewTabHandler(`chrome-extension://${chrome.runtime.id}/optionspage.html`, true)} />
                     <Select
                         className="Monster-encounter-select"
+                        classNamePrefix="Monster-encounter-select"
                         getOptionLabel={(opt) => opt.name}
                         getOptionValue={(opt) => opt.storageId}
                         noOptionsMessage={() => "No encounters found"}
