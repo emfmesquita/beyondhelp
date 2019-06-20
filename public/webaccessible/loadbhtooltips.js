@@ -51,8 +51,9 @@
 
     // parses reference tooltip info from tooltip anchor
     const parseReference = function (referenceEl) {
-        const tokens = referenceEl.pathname.split("/");
-        const src = tokens[3];
+        const path = referenceEl.pathname;
+        const tokens = path.split("/");
+        const src = tokens[path.indexOf("/sources/") !== -1 ? 2 : 3];
         const page = tokens[tokens.length - 1];
 
         let refId, contentId, untilContentId, contentOnly = false;

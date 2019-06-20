@@ -99,6 +99,9 @@ srcTitleMap.set("wdh", "Waterdeep Dragon Heist");
 srcTitleMap.set("wdotmm", "Waterdeep Dungeon of the Mad Mage");
 srcTitleMap.set("ggtr", "Guildmasters' Guide to Ravnica");
 srcTitleMap.set("llok", "Lost Laboratory of Kwalish");
+srcTitleMap.set("gos", "Ghosts of Saltmarsh");
+srcTitleMap.set("ai", "Acquisitions Incorporated");
+srcTitleMap.set("hftt", "Hunt for the Thessalhydra");
 
 const buildBackgroundFeatTooltip = function ({ name, slug, type, itentifierClass }) {
     return new Promise((resolve, reject) => {
