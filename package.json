@@ -21,6 +21,7 @@
         "react-jsonschema-form": "^1.0.4",
         "react-overlays": "^0.7.3",
         "react-select": "^3.0.3",
+        "regenerator-runtime": "^0.13.2",
         "sanitize-filename": "^1.6.1",
         "tinycolor2": "https://registry.npmjs.org/tinycolor2/-/tinycolor2-1.4.1.tgz"
     },

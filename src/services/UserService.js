@@ -1,3 +1,8 @@
+import $ from "jquery";
+import PageScriptService from "./PageScriptService";
+let userIdCache = null;
+
+
 /* global chrome */
 class UserService {
     /**
@@ -32,6 +37,15 @@ class UserService {
                 answer(username);
             });
         });
+    }
+
+    static getUserID() {
+        if (userIdCache) return userIdCache;
+
+        PageScriptService.run('jQuery("body").append(`<div id="bh-user-id" value="${Cobalt.User.ID}"/>`);');
+
+        userIdCache = $("#bh-user-id").attr("value");
+        return userIdCache;
     }
 }
 

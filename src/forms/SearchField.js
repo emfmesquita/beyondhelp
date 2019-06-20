@@ -1,7 +1,7 @@
 import { ControlLabel, FormGroup } from 'react-bootstrap';
 import React, { Component } from 'react';
 
-import AsyncSelect from 'react-select/lib/Async';
+import AsyncSelect from 'react-select/async';
 import SelectUtils from './SelectUtils';
 import { createFilter } from 'react-select';
 

@@ -1,5 +1,6 @@
 import $ from "jquery";
 import C from "../../Constants";
+import CharacterFoldersStorageService from "../../services/storage/CharacterFoldersStorageService";
 import CharacterList from "./CharacterList";
 import CharactersApp from "./CharactersApp";
 import CharactersService from "./CharactersService";
@@ -8,6 +9,8 @@ import MessageService from "../../services/MessageService";
 import Opt from "../../Options";
 import React from 'react';
 import ReactDOM from 'react-dom';
+import UserService from "../../services/UserService";
+import regeneratorRuntime from "regenerator-runtime";
 
 /* global chrome */
 
@@ -18,8 +21,11 @@ class MyCharactersService {
         const path = window.location.pathname;
         if (path !== "/my-characters") return;
 
-        MessageService.send(C.UsernameMessage, {}, (username: string) => {
-            if (!username) return;
+        MessageService.send(C.UsernameMessage, {}, async (username: string) => {
+            const userId = UserService.getUserID();
+            if (username) {
+                await CharacterFoldersStorageService.migrateToId(username, userId);
+            }
 
             // parses and sort characters by name
             let characters = CharactersService.parseCharacters();
@@ -39,7 +45,7 @@ class MyCharactersService {
                 originalListingBodies.detach();
 
                 // renders the character folder structure on content page
-                ReactDOM.render(<CharactersApp allCharacters={characters} owner={username} />, jqFoldersContainer[0]);
+                ReactDOM.render(<CharactersApp allCharacters={characters} owner={userId} />, jqFoldersContainer[0]);
             } else {
                 // renders only sorted characters
                 ReactDOM.render(<CharacterList characters={characters} />, originalListingBodies[0]);
