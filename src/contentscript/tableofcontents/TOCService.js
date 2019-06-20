@@ -56,9 +56,6 @@ class TOCService {
     }
 
     static init() {
-        // off for now
-        return;
-
         const path = window.location.pathname;
         const pathComponents = path.split("/");
         if (pathComponents.length < 4 || pathComponents[1] !== "sources") return;

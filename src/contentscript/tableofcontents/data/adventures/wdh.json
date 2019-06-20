@@ -1,16 +1,16 @@
 {
-    "title": "Waterdeep Dragon Heist",
+    "title": "Waterdeep: Dragon Heist",
     "urlName": "adventures/wdh",
     "anchorName": "",
     "subsections": [
         {
             "title": "Foreword",
-            "urlName": "adventures/wdh/foreword",
+            "urlName": "wdh/foreword",
             "anchorName": "#",
             "subsections": [
                 {
                     "title": "Pronunciation Guide",
-                    "urlName": "adventures/wdh/foreword",
+                    "urlName": "wdh/foreword",
                     "anchorName": "#PronunciationGuide",
                     "subsections": []
                 }
@@ -18,35 +18,35 @@
         },
         {
             "title": "Introduction",
-            "urlName": "adventures/wdh/introduction",
+            "urlName": "wdh/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "Story Overview",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#StoryOverview",
                     "subsections": [
                         {
                             "title": "Cache of Dragons",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#CacheofDragons",
                             "subsections": []
                         },
                         {
                             "title": "War in the Streets",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#WarintheStreets",
                             "subsections": []
                         },
                         {
                             "title": "Volo’s Quest",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#VolosQuest",
                             "subsections": []
                         },
                         {
                             "title": "Fireball!",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Fireball",
                             "subsections": []
                         }
@@ -54,30 +54,30 @@
                 },
                 {
                     "title": "Choose Your Villain",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#ChooseYourVillain",
                     "subsections": [
                         {
                             "title": "Xanathar",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Xanathar",
                             "subsections": []
                         },
                         {
                             "title": "The Cassalanters",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#TheCassalanters",
                             "subsections": []
                         },
                         {
                             "title": "Jarlaxle Baenre",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#JarlaxleBaenre",
                             "subsections": []
                         },
                         {
                             "title": "Manshoon",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Manshoon",
                             "subsections": []
                         }
@@ -85,30 +85,30 @@
                 },
                 {
                     "title": "Seasons",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#Seasons",
                     "subsections": [
                         {
                             "title": "Spring",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Spring",
                             "subsections": []
                         },
                         {
                             "title": "Summer",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Summer",
                             "subsections": []
                         },
                         {
                             "title": "Autumn",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Autumn",
                             "subsections": []
                         },
                         {
                             "title": "Winter",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Winter",
                             "subsections": []
                         }
@@ -116,12 +116,12 @@
                 },
                 {
                     "title": "Running the Adventure",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#RunningtheAdventure",
                     "subsections": [
                         {
                             "title": "Abbreviations",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Abbreviations",
                             "subsections": []
                         }
@@ -129,12 +129,12 @@
                 },
                 {
                     "title": "Adventure Structure",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#AdventureStructure",
                     "subsections": [
                         {
                             "title": "Volo’s Waterdeep Enchiridion",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#VolosWaterdeepEnchiridion",
                             "subsections": []
                         }
@@ -142,18 +142,18 @@
                 },
                 {
                     "title": "Life in Waterdeep",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#LifeinWaterdeep",
                     "subsections": [
                         {
                             "title": "Breaking the Law",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#BreakingtheLaw",
                             "subsections": []
                         },
                         {
                             "title": "Arresting Characters",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#ArrestingCharacters",
                             "subsections": []
                         }
@@ -161,29 +161,29 @@
                 },
                 {
                     "title": "Character Creation",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#CharacterCreation",
                     "subsections": [
                         {
                             "title": "Bringing the Party Together",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#BringingthePartyTogether",
                             "subsections": []
                         },
                         {
                             "title": "Buying Equipment at 1st Level",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#BuyingEquipmentat1stLevel",
                             "subsections": []
                         },
                         {
                             "title": "Character Backgrounds",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#CharacterBackgrounds",
                             "subsections": [
                                 {
                                     "title": "Waterdavian Noble Families",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#WaterdavianNobleFamilies",
                                     "subsections": []
                                 }
@@ -191,13 +191,13 @@
                         },
                         {
                             "title": "Guild Membership",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#GuildMembership",
                             "subsections": []
                         },
                         {
                             "title": "Faction Membership",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#FactionMembership",
                             "subsections": []
                         }
@@ -205,60 +205,60 @@
                 },
                 {
                     "title": "Character Advancement",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#CharacterAdvancement",
                     "subsections": []
                 },
                 {
                     "title": "Factions in Waterdeep",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#FactionsinWaterdeep",
                     "subsections": [
                         {
                             "title": "Bregan D’aerthe",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#BreganDaerthe",
                             "subsections": []
                         },
                         {
                             "title": "Emerald Enclave",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#EmeraldEnclave",
                             "subsections": []
                         },
                         {
                             "title": "Force Grey",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#ForceGrey",
                             "subsections": []
                         },
                         {
                             "title": "Harpers",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Harpers",
                             "subsections": []
                         },
                         {
                             "title": "Lords’ Alliance",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#LordsAlliance",
                             "subsections": []
                         },
                         {
                             "title": "Order of the Gauntlet",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#OrderoftheGauntlet",
                             "subsections": []
                         },
                         {
                             "title": "Xanathar Guild",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#XanatharGuild",
                             "subsections": []
                         },
                         {
                             "title": "Zhentarim",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#Zhentarim",
                             "subsections": []
                         }
@@ -266,53 +266,53 @@
                 },
                 {
                     "title": "The Yawning Portal",
-                    "urlName": "adventures/wdh/introduction",
+                    "urlName": "wdh/introduction",
                     "anchorName": "#TheYawningPortal",
                     "subsections": [
                         {
                             "title": "Familiar Faces",
-                            "urlName": "adventures/wdh/introduction",
+                            "urlName": "wdh/introduction",
                             "anchorName": "#FamiliarFaces",
                             "subsections": [
                                 {
                                     "title": "Durnan",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#Durnan",
                                     "subsections": []
                                 },
                                 {
                                     "title": "“Bonnie”",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#Bonnie",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Mattrim “Threestrings” Mereg",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#MattrimThreestringsMereg",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jalester Silvermane",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#JalesterSilvermane",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Meloon Wardragon",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#MeloonWardragon",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Obaya Uday",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#ObayaUday",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Yagra Stonefist",
-                                    "urlName": "adventures/wdh/introduction",
+                                    "urlName": "wdh/introduction",
                                     "anchorName": "#YagraStonefist",
                                     "subsections": []
                                 }
@@ -324,28 +324,28 @@
         },
         {
             "title": "Chapter 1: A Friend in Need",
-            "urlName": "adventures/wdh/a-friend-in-need",
+            "urlName": "wdh/a-friend-in-need",
             "anchorName": "#Chapter1AFriendinNeed",
             "subsections": [
                 {
                     "title": "Where to Start",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#WheretoStart",
                     "subsections": [
                         {
                             "title": "Tavern Brawl",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#TavernBrawl",
                             "subsections": [
                                 {
                                     "title": "Getting Involved",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#GettingInvolved",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Hanging Back",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#HangingBack",
                                     "subsections": []
                                 }
@@ -353,18 +353,18 @@
                         },
                         {
                             "title": "Troll and Friends",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#TrollandFriends",
                             "subsections": []
                         },
                         {
                             "title": "Meeting Volo",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#MeetingVolo",
                             "subsections": [
                                 {
                                     "title": "What Happened That Night?",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#WhatHappenedThatNight",
                                     "subsections": []
                                 }
@@ -372,36 +372,36 @@
                         },
                         {
                             "title": "Finding Floon",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#FindingFloon",
                             "subsections": [
                                 {
                                     "title": "Blood in the Streets",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#BloodintheStreets",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Searching the Dock Ward",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#SearchingtheDockWard",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Old Xoblob Shop",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#OldXoblobShop",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Skewered Dragon",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#TheSkeweredDragon",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Candle Lane",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#CandleLane",
                                     "subsections": []
                                 }
@@ -411,17 +411,17 @@
                 },
                 {
                     "title": "Zhentarim Hideout",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#ZhentarimHideout",
                     "subsections": [
                         {
                             "title": "Z1. Main Room",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Z1MainRoom",
                             "subsections": [
                                 {
                                     "title": "What the Kenku Know",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#WhattheKenkuKnow",
                                     "subsections": []
                                 }
@@ -429,12 +429,12 @@
                         },
                         {
                             "title": "Z2. Storage Closet",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Z2StorageCloset",
                             "subsections": [
                                 {
                                     "title": "Roleplaying Renaer",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#RoleplayingRenaer",
                                     "subsections": []
                                 }
@@ -442,12 +442,12 @@
                         },
                         {
                             "title": "Z3. Secret Room",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Z3SecretRoom",
                             "subsections": [
                                 {
                                     "title": "Treasure",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Treasure",
                                     "subsections": []
                                 }
@@ -455,18 +455,18 @@
                         },
                         {
                             "title": "Z4. Balcony",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Z4Balcony",
                             "subsections": []
                         },
                         {
                             "title": "Z5. Offices",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Z5Offices",
                             "subsections": [
                                 {
                                     "title": "Treasure",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Treasure",
                                     "subsections": []
                                 }
@@ -476,23 +476,23 @@
                 },
                 {
                     "title": "The Watch Arrives",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#TheWatchArrives",
                     "subsections": []
                 },
                 {
                     "title": "Tracking Floon",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#TrackingFloon",
                     "subsections": [
                         {
                             "title": "Navigating the Sewers",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#NavigatingtheSewers",
                             "subsections": [
                                 {
                                     "title": "Gazer Guard",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#GazerGuard",
                                     "subsections": []
                                 }
@@ -502,17 +502,17 @@
                 },
                 {
                     "title": "Xanathar Guild Hideout",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#XanatharGuildHideout",
                     "subsections": [
                         {
                             "title": "Q1. Central Hub",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q1CentralHub",
                             "subsections": [
                                 {
                                     "title": "Secret Door",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#SecretDoor",
                                     "subsections": []
                                 }
@@ -520,12 +520,12 @@
                         },
                         {
                             "title": "Q2. Watch Posts",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q2WatchPosts",
                             "subsections": [
                                 {
                                     "title": "Treasure",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Treasure",
                                     "subsections": []
                                 }
@@ -533,42 +533,42 @@
                         },
                         {
                             "title": "Q3. Messy Room",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q3MessyRoom",
                             "subsections": []
                         },
                         {
                             "title": "Q4. Empty Sleeping Area",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q4EmptySleepingArea",
                             "subsections": []
                         },
                         {
                             "title": "Q5. Sleeping Area",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q5SleepingArea",
                             "subsections": []
                         },
                         {
                             "title": "Q6. Lavatory",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q6Lavatory",
                             "subsections": []
                         },
                         {
                             "title": "Q7. Boss Fight",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q7BossFight",
                             "subsections": [
                                 {
                                     "title": "Roleplaying Floon",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#RoleplayingFloon",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Treasure",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Treasure",
                                     "subsections": []
                                 }
@@ -576,18 +576,18 @@
                         },
                         {
                             "title": "Q8. Getaway Passage",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q8GetawayPassage",
                             "subsections": []
                         },
                         {
                             "title": "Q9. Private Cellar",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q9PrivateCellar",
                             "subsections": [
                                 {
                                     "title": "Development",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Development",
                                     "subsections": []
                                 }
@@ -595,18 +595,18 @@
                         },
                         {
                             "title": "Q10. Sleeping Quarters",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q10SleepingQuarters",
                             "subsections": []
                         },
                         {
                             "title": "Q11. Back Door",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q11BackDoor",
                             "subsections": [
                                 {
                                     "title": "Not-So-Secret Door",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#NotSoSecretDoor",
                                     "subsections": []
                                 }
@@ -614,12 +614,12 @@
                         },
                         {
                             "title": "Q12. Hostel Cellar",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Q12HostelCellar",
                             "subsections": [
                                 {
                                     "title": "Development",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#Development",
                                     "subsections": []
                                 }
@@ -629,23 +629,23 @@
                 },
                 {
                     "title": "Completing Volo’s Quest",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#CompletingVolosQuest",
                     "subsections": [
                         {
                             "title": "Rewards",
-                            "urlName": "adventures/wdh/a-friend-in-need",
+                            "urlName": "wdh/a-friend-in-need",
                             "anchorName": "#Rewards",
                             "subsections": [
                                 {
                                     "title": "A Good Deed",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#AGoodDeed",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Fine Friends",
-                                    "urlName": "adventures/wdh/a-friend-in-need",
+                                    "urlName": "wdh/a-friend-in-need",
                                     "anchorName": "#FineFriends",
                                     "subsections": []
                                 }
@@ -655,7 +655,7 @@
                 },
                 {
                     "title": "Level Advancement",
-                    "urlName": "adventures/wdh/a-friend-in-need",
+                    "urlName": "wdh/a-friend-in-need",
                     "anchorName": "#LevelAdvancement",
                     "subsections": []
                 }
@@ -663,28 +663,28 @@
         },
         {
             "title": "Chapter 2: Trollskull Alley",
-            "urlName": "adventures/wdh/trollskull-alley",
+            "urlName": "wdh/trollskull-alley",
             "anchorName": "#Chapter2TrollskullAlley",
             "subsections": [
                 {
                     "title": "Areas in the Alley",
-                    "urlName": "adventures/wdh/trollskull-alley",
+                    "urlName": "wdh/trollskull-alley",
                     "anchorName": "#AreasintheAlley",
                     "subsections": [
                         {
                             "title": "T1. Trollskull Manor",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T1TrollskullManor",
                             "subsections": [
                                 {
                                     "title": "Tavern Rooms",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#TavernRooms",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Spirit on Tap",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#SpiritonTap",
                                     "subsections": []
                                 }
@@ -692,12 +692,12 @@
                         },
                         {
                             "title": "T2. The Bent Nail",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T2TheBentNail",
                             "subsections": [
                                 {
                                     "title": "Services",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Services",
                                     "subsections": []
                                 }
@@ -705,12 +705,12 @@
                         },
                         {
                             "title": "T3. Steam and Steel",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T3SteamandSteel",
                             "subsections": [
                                 {
                                     "title": "Services",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Services",
                                     "subsections": []
                                 }
@@ -718,12 +718,12 @@
                         },
                         {
                             "title": "T4. Corellon’s Crown",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T4CorellonsCrown",
                             "subsections": [
                                 {
                                     "title": "Services",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Services",
                                     "subsections": []
                                 }
@@ -731,12 +731,12 @@
                         },
                         {
                             "title": "T5. Tiger’s Eye",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T5TigersEye",
                             "subsections": [
                                 {
                                     "title": "Services",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Services",
                                     "subsections": []
                                 }
@@ -744,12 +744,12 @@
                         },
                         {
                             "title": "T6. Book Wyrm’s Treasure",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T6BookWyrmsTreasure",
                             "subsections": [
                                 {
                                     "title": "Services",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Services",
                                     "subsections": []
                                 }
@@ -757,7 +757,7 @@
                         },
                         {
                             "title": "T7. Sewer Access",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#T7SewerAccess",
                             "subsections": []
                         }
@@ -765,17 +765,17 @@
                 },
                 {
                     "title": "Joining Factions",
-                    "urlName": "adventures/wdh/trollskull-alley",
+                    "urlName": "wdh/trollskull-alley",
                     "anchorName": "#JoiningFactions",
                     "subsections": [
                         {
                             "title": "Bregan D’aerthe",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#BreganDaerthe",
                             "subsections": [
                                 {
                                     "title": "Jarlaxle Baenre",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#JarlaxleBaenre",
                                     "subsections": []
                                 }
@@ -783,18 +783,18 @@
                         },
                         {
                             "title": "Emerald Enclave",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#EmeraldEnclave",
                             "subsections": [
                                 {
                                     "title": "Melannor Fellbranch",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#MelannorFellbranch",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jeryth Phaulkon",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#JerythPhaulkon",
                                     "subsections": []
                                 }
@@ -802,12 +802,12 @@
                         },
                         {
                             "title": "Force Grey (Gray Hands)",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#ForceGreyGrayHands",
                             "subsections": [
                                 {
                                     "title": "Vajra Safahr",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#VajraSafahr",
                                     "subsections": []
                                 }
@@ -815,12 +815,12 @@
                         },
                         {
                             "title": "Harpers",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#Harpers",
                             "subsections": [
                                 {
                                     "title": "Mirt",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Mirt",
                                     "subsections": []
                                 }
@@ -828,12 +828,12 @@
                         },
                         {
                             "title": "Lords’ Alliance",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#LordsAlliance",
                             "subsections": [
                                 {
                                     "title": "Jalester Silvermane",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#JalesterSilvermane",
                                     "subsections": []
                                 }
@@ -841,12 +841,12 @@
                         },
                         {
                             "title": "Order of the Gauntlet",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#OrderoftheGauntlet",
                             "subsections": [
                                 {
                                     "title": "Savra Belabranta",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#SavraBelabranta",
                                     "subsections": []
                                 }
@@ -854,18 +854,18 @@
                         },
                         {
                             "title": "Zhentarim",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#Zhentarim",
                             "subsections": [
                                 {
                                     "title": "Davil Starsong",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#DavilStarsong",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Tashlyn Yafeera",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#TashlynYafeera",
                                     "subsections": []
                                 }
@@ -875,35 +875,35 @@
                 },
                 {
                     "title": "Open for Business?",
-                    "urlName": "adventures/wdh/trollskull-alley",
+                    "urlName": "wdh/trollskull-alley",
                     "anchorName": "#OpenforBusiness",
                     "subsections": [
                         {
                             "title": "Sample Guild Representatives",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#SampleGuildRepresentatives",
                             "subsections": [
                                 {
                                     "title": "Broxley Fairkettle",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#BroxleyFairkettle",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Hammond Kraddoc",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#HammondKraddoc",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Justyn Rassk",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#JustynRassk",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Ulkoria Stonemarrow",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#UlkoriaStonemarrow",
                                     "subsections": []
                                 }
@@ -911,24 +911,24 @@
                         },
                         {
                             "title": "Business Rival: Emmek Frewn",
-                            "urlName": "adventures/wdh/trollskull-alley",
+                            "urlName": "wdh/trollskull-alley",
                             "anchorName": "#BusinessRivalEmmekFrewn",
                             "subsections": [
                                 {
                                     "title": "Goals",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Goals",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Assets",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Assets",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Plans",
-                                    "urlName": "adventures/wdh/trollskull-alley",
+                                    "urlName": "wdh/trollskull-alley",
                                     "anchorName": "#Plans",
                                     "subsections": []
                                 }
@@ -938,7 +938,7 @@
                 },
                 {
                     "title": "Level Advancement",
-                    "urlName": "adventures/wdh/trollskull-alley",
+                    "urlName": "wdh/trollskull-alley",
                     "anchorName": "#LevelAdvancement",
                     "subsections": []
                 }
@@ -946,29 +946,29 @@
         },
         {
             "title": "Chapter 3: Fireball",
-            "urlName": "adventures/wdh/fireball",
+            "urlName": "wdh/fireball",
             "anchorName": "#Chapter3Fireball",
             "subsections": [
                 {
                     "title": "What’s Happening Here?",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#WhatsHappeningHere",
                     "subsections": [
                         {
                             "title": "Zhents Caught in the Act",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#ZhentsCaughtintheAct",
                             "subsections": []
                         },
                         {
                             "title": "House Gralhund",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#HouseGralhund",
                             "subsections": []
                         },
                         {
                             "title": "Unraveling the Plot",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#UnravelingthePlot",
                             "subsections": []
                         }
@@ -976,41 +976,41 @@
                 },
                 {
                     "title": "The Crime Scene",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#TheCrimeScene",
                     "subsections": []
                 },
                 {
                     "title": "After the Blast",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#AftertheBlast",
                     "subsections": [
                         {
                             "title": "The Watch Arrives",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#TheWatchArrives",
                             "subsections": []
                         },
                         {
                             "title": "Eyewitnesses",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#Eyewitnesses",
                             "subsections": [
                                 {
                                     "title": "Fala Lefaliir",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#FalaLefaliir",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jezrynne Hornraven",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#JezrynneHornraven",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Martem Trec",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#MartemTrec",
                                     "subsections": []
                                 }
@@ -1018,7 +1018,7 @@
                         },
                         {
                             "title": "Speaking with the Victims",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#SpeakingwiththeVictims",
                             "subsections": []
                         }
@@ -1026,41 +1026,41 @@
                 },
                 {
                     "title": "Nim’s Secret",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#NimsSecret",
                     "subsections": [
                         {
                             "title": "House of Inspired Hands",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#HouseofInspiredHands",
                             "subsections": []
                         },
                         {
                             "title": "Inside the Temple",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#InsidetheTemple",
                             "subsections": [
                                 {
                                     "title": "Hall of Exemplary Inventions",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#HallofExemplaryInventions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Meeting Valetta",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#MeetingValetta",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Meeting Nim",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#MeetingNim",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Reward",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#Reward",
                                     "subsections": []
                                 }
@@ -1068,18 +1068,18 @@
                         },
                         {
                             "title": "Finding Nim’s Creation",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#FindingNimsCreation",
                             "subsections": [
                                 {
                                     "title": "Dock Ward Distraction",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#DockWardDistraction",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Drow Characters",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#DrowCharacters",
                                     "subsections": []
                                 }
@@ -1089,29 +1089,29 @@
                 },
                 {
                     "title": "What Renaer Knows",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#WhatRenaerKnows",
                     "subsections": []
                 },
                 {
                     "title": "Gralhund Villa",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#GralhundVilla",
                     "subsections": [
                         {
                             "title": "Should They or Shouldn’t They?",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#ShouldTheyorShouldntThey",
                             "subsections": [
                                 {
                                     "title": "Let the Watch Handle It",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#LettheWatchHandleIt",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Investigate the Villa",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#InvestigatetheVilla",
                                     "subsections": []
                                 }
@@ -1119,13 +1119,13 @@
                         },
                         {
                             "title": "Overview",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#Overview",
                             "subsections": []
                         },
                         {
                             "title": "Encounters in the Villa",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#EncountersintheVilla",
                             "subsections": []
                         }
@@ -1133,23 +1133,23 @@
                 },
                 {
                     "title": "Aftermath",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#Aftermath",
                     "subsections": []
                 },
                 {
                     "title": "Loose Ends",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#LooseEnds",
                     "subsections": [
                         {
                             "title": "Bad Time to Be a Zhent",
-                            "urlName": "adventures/wdh/fireball",
+                            "urlName": "wdh/fireball",
                             "anchorName": "#BadTimetoBeaZhent",
                             "subsections": [
                                 {
                                     "title": "Encounter with Istrid Horn",
-                                    "urlName": "adventures/wdh/fireball",
+                                    "urlName": "wdh/fireball",
                                     "anchorName": "#EncounterwithIstridHorn",
                                     "subsections": []
                                 }
@@ -1159,7 +1159,7 @@
                 },
                 {
                     "title": "Level Advancement",
-                    "urlName": "adventures/wdh/fireball",
+                    "urlName": "wdh/fireball",
                     "anchorName": "#LevelAdvancement",
                     "subsections": []
                 }
@@ -1167,17 +1167,17 @@
         },
         {
             "title": "Chapter 4: Dragon Season",
-            "urlName": "adventures/wdh/dragon-season",
+            "urlName": "wdh/dragon-season",
             "anchorName": "#Chapter4DragonSeason",
             "subsections": [
                 {
                     "title": "Setting the Stage",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#SettingtheStage",
                     "subsections": [
                         {
                             "title": "Finding the Nimblewright",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#FindingtheNimblewright",
                             "subsections": []
                         }
@@ -1185,30 +1185,30 @@
                 },
                 {
                     "title": "Encounter Chains",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#EncounterChains",
                     "subsections": [
                         {
                             "title": "Spring Encounter Chain",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#SpringEncounterChain",
                             "subsections": []
                         },
                         {
                             "title": "Summer Encounter Chain",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#SummerEncounterChain",
                             "subsections": []
                         },
                         {
                             "title": "Autumn Encounter Chain",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AutumnEncounterChain",
                             "subsections": []
                         },
                         {
                             "title": "Winter Encounter Chain",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#WinterEncounterChain",
                             "subsections": []
                         }
@@ -1216,36 +1216,36 @@
                 },
                 {
                     "title": "Encounter 1: Alley",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter1Alley",
                     "subsections": [
                         {
                             "title": "Areas of the Alley",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheAlley",
                             "subsections": []
                         },
                         {
                             "title": "Alley: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AlleySpring",
                             "subsections": []
                         },
                         {
                             "title": "Alley: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AlleySummer",
                             "subsections": []
                         },
                         {
                             "title": "Alley: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AlleyAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Alley: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AlleyWinter",
                             "subsections": []
                         }
@@ -1253,30 +1253,30 @@
                 },
                 {
                     "title": "Encounter 2: Mistshore",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter2Mistshore",
                     "subsections": [
                         {
                             "title": "Areas of Mistshore",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasofMistshore",
                             "subsections": []
                         },
                         {
                             "title": "Mistshore: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MistshoreSpring",
                             "subsections": []
                         },
                         {
                             "title": "Mistshore: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MistshoreAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Mistshore: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MistshoreWinter",
                             "subsections": []
                         }
@@ -1284,24 +1284,24 @@
                 },
                 {
                     "title": "Encounter 3: Street Chase",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter3StreetChase",
                     "subsections": [
                         {
                             "title": "Street Chase: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#StreetChaseSpring",
                             "subsections": []
                         },
                         {
                             "title": "Street Chase: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#StreetChaseSummer",
                             "subsections": []
                         },
                         {
                             "title": "Street Chase: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#StreetChaseWinter",
                             "subsections": []
                         }
@@ -1309,30 +1309,30 @@
                 },
                 {
                     "title": "Encounter 4: Mausoleum",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter4Mausoleum",
                     "subsections": [
                         {
                             "title": "Areas of the Mausoleum",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheMausoleum",
                             "subsections": []
                         },
                         {
                             "title": "Mausoleum: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MausoleumSpring",
                             "subsections": []
                         },
                         {
                             "title": "Mausoleum: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MausoleumSummer",
                             "subsections": []
                         },
                         {
                             "title": "Mausoleum: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#MausoleumWinter",
                             "subsections": []
                         }
@@ -1340,24 +1340,24 @@
                 },
                 {
                     "title": "Encounter 5: Rooftop Chase",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter5RooftopChase",
                     "subsections": [
                         {
                             "title": "Rooftop Chase: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#RooftopChaseSummer",
                             "subsections": []
                         },
                         {
                             "title": "Rooftop Chase: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#RooftopChaseAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Rooftop Chase: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#RooftopChaseWinter",
                             "subsections": []
                         }
@@ -1365,30 +1365,30 @@
                 },
                 {
                     "title": "Encounter 6: Theater",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter6Theater",
                     "subsections": [
                         {
                             "title": "Areas of the Theater",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheTheater",
                             "subsections": []
                         },
                         {
                             "title": "Theater: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#TheaterSpring",
                             "subsections": []
                         },
                         {
                             "title": "Theater: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#TheaterAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Theater: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#TheaterWinter",
                             "subsections": []
                         }
@@ -1396,36 +1396,36 @@
                 },
                 {
                     "title": "Encounter 7: Old Tower",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter7OldTower",
                     "subsections": [
                         {
                             "title": "Areas of the Old Tower",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheOldTower",
                             "subsections": []
                         },
                         {
                             "title": "Old Tower: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#OldTowerSpring",
                             "subsections": []
                         },
                         {
                             "title": "Old Tower: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#OldTowerSummer",
                             "subsections": []
                         },
                         {
                             "title": "Old Tower: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#OldTowerAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Old Tower: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#OldTowerWinter",
                             "subsections": []
                         }
@@ -1433,24 +1433,24 @@
                 },
                 {
                     "title": "Encounter 8: Courthouse",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter8Courthouse",
                     "subsections": [
                         {
                             "title": "Areas of the Courthouse",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheCourthouse",
                             "subsections": []
                         },
                         {
                             "title": "Courthouse: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#CourthouseSummer",
                             "subsections": []
                         },
                         {
                             "title": "Courthouse: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#CourthouseAutumn",
                             "subsections": []
                         }
@@ -1458,30 +1458,30 @@
                 },
                 {
                     "title": "Encounter 9: Cellar Complex",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter9CellarComplex",
                     "subsections": [
                         {
                             "title": "Areas of the Cellar Complex",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheCellarComplex",
                             "subsections": []
                         },
                         {
                             "title": "Cellar Complex: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#CellarComplexSpring",
                             "subsections": []
                         },
                         {
                             "title": "Cellar Complex: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#CellarComplexSummer",
                             "subsections": []
                         },
                         {
                             "title": "Cellar Complex: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#CellarComplexAutumn",
                             "subsections": []
                         }
@@ -1489,36 +1489,36 @@
                 },
                 {
                     "title": "Encounter 10: Converted Windmill",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#Encounter10ConvertedWindmill",
                     "subsections": [
                         {
                             "title": "Areas of the Converted Windmill",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheConvertedWindmill",
                             "subsections": []
                         },
                         {
                             "title": "Converted Windmill: Spring",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#ConvertedWindmillSpring",
                             "subsections": []
                         },
                         {
                             "title": "Converted Windmill: Summer",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#ConvertedWindmillSummer",
                             "subsections": []
                         },
                         {
                             "title": "Converted Windmill: Autumn",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#ConvertedWindmillAutumn",
                             "subsections": []
                         },
                         {
                             "title": "Converted Windmill: Winter",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#ConvertedWindmillWinter",
                             "subsections": []
                         }
@@ -1526,12 +1526,12 @@
                 },
                 {
                     "title": "Vault Keys",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#VaultKeys",
                     "subsections": [
                         {
                             "title": "Key Descriptions",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#KeyDescriptions",
                             "subsections": []
                         }
@@ -1539,24 +1539,24 @@
                 },
                 {
                     "title": "Vault of Dragons",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#VaultofDragons",
                     "subsections": [
                         {
                             "title": "Vault Features",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#VaultFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Vault",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#AreasoftheVault",
                             "subsections": []
                         },
                         {
                             "title": "Leaving the Vault",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#LeavingtheVault",
                             "subsections": []
                         }
@@ -1564,24 +1564,24 @@
                 },
                 {
                     "title": "Adventure Conclusion",
-                    "urlName": "adventures/wdh/dragon-season",
+                    "urlName": "wdh/dragon-season",
                     "anchorName": "#AdventureConclusion",
                     "subsections": [
                         {
                             "title": "Dying in the Vault",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#DyingintheVault",
                             "subsections": []
                         },
                         {
                             "title": "Removing the Gold",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#RemovingtheGold",
                             "subsections": []
                         },
                         {
                             "title": "Onward and Downward",
-                            "urlName": "adventures/wdh/dragon-season",
+                            "urlName": "wdh/dragon-season",
                             "anchorName": "#OnwardandDownward",
                             "subsections": []
                         }
@@ -1591,40 +1591,40 @@
         },
         {
             "title": "Chapter 5: Spring Madness",
-            "urlName": "adventures/wdh/spring-madness",
+            "urlName": "wdh/spring-madness",
             "anchorName": "#Chapter5SpringMadness",
             "subsections": [
                 {
                     "title": "Facing Xanathar",
-                    "urlName": "adventures/wdh/spring-madness",
+                    "urlName": "wdh/spring-madness",
                     "anchorName": "#FacingXanathar",
                     "subsections": []
                 },
                 {
                     "title": "Foiling Xanathar’s Operation",
-                    "urlName": "adventures/wdh/spring-madness",
+                    "urlName": "wdh/spring-madness",
                     "anchorName": "#FoilingXanatharsOperation",
                     "subsections": [
                         {
                             "title": "Enrage Xanathar",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#EnrageXanathar",
                             "subsections": [
                                 {
                                     "title": "Abduct or Kill Sylgar",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#AbductorKillSylgar",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Destroy the Dream Nullifier",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#DestroytheDreamNullifier",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Take Its Food Away",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#TakeItsFoodAway",
                                     "subsections": []
                                 }
@@ -1632,24 +1632,24 @@
                         },
                         {
                             "title": "Disrupt Command",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#DisruptCommand",
                             "subsections": [
                                 {
                                     "title": "Assassination",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#Assassination",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Blind Xanathar",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#BlindXanathar",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Sow Mistrust",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#SowMistrust",
                                     "subsections": []
                                 }
@@ -1657,7 +1657,7 @@
                         },
                         {
                             "title": "Destroy the Lair",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#DestroytheLair",
                             "subsections": []
                         }
@@ -1665,41 +1665,41 @@
                 },
                 {
                     "title": "Xanathar’s Lair",
-                    "urlName": "adventures/wdh/spring-madness",
+                    "urlName": "wdh/spring-madness",
                     "anchorName": "#XanatharsLair",
                     "subsections": [
                         {
                             "title": "Getting to the Lair",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#GettingtotheLair",
                             "subsections": [
                                 {
                                     "title": "Bregan D’aerthe",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#BreganDaerthe",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Harpers",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#Harpers",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Lords’ Alliance",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#LordsAlliance",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Emerald Enclave",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#EmeraldEnclave",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Zhentarim",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#Zhentarim",
                                     "subsections": []
                                 }
@@ -1707,7 +1707,7 @@
                         },
                         {
                             "title": "Areas of the Lair",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#AreasoftheLair",
                             "subsections": []
                         }
@@ -1715,29 +1715,29 @@
                 },
                 {
                     "title": "Special Events",
-                    "urlName": "adventures/wdh/spring-madness",
+                    "urlName": "wdh/spring-madness",
                     "anchorName": "#SpecialEvents",
                     "subsections": [
                         {
                             "title": "Blood and Fortune",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#BloodandFortune",
                             "subsections": [
                                 {
                                     "title": "Tournament Structure",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#TournamentStructure",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Winning the Tournament",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#WinningtheTournament",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Tournament Wagers",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#TournamentWagers",
                                     "subsections": []
                                 }
@@ -1745,12 +1745,12 @@
                         },
                         {
                             "title": "Trolltide Slaughter",
-                            "urlName": "adventures/wdh/spring-madness",
+                            "urlName": "wdh/spring-madness",
                             "anchorName": "#TrolltideSlaughter",
                             "subsections": [
                                 {
                                     "title": "Development",
-                                    "urlName": "adventures/wdh/spring-madness",
+                                    "urlName": "wdh/spring-madness",
                                     "anchorName": "#Development",
                                     "subsections": []
                                 }
@@ -1762,34 +1762,34 @@
         },
         {
             "title": "Chapter 6: Hell of a Summer",
-            "urlName": "adventures/wdh/hell-of-a-summer",
+            "urlName": "wdh/hell-of-a-summer",
             "anchorName": "#Chapter6HellofaSummer",
             "subsections": [
                 {
                     "title": "Cult of Asmodeus",
-                    "urlName": "adventures/wdh/hell-of-a-summer",
+                    "urlName": "wdh/hell-of-a-summer",
                     "anchorName": "#CultofAsmodeus",
                     "subsections": [
                         {
                             "title": "Meet the Cassalanters",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#MeettheCassalanters",
                             "subsections": [
                                 {
                                     "title": "Lady Ammalia Cassalanter",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#LadyAmmaliaCassalanter",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Lord Victoro Cassalanter",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#LordVictoroCassalanter",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Terenzio and Elzerina",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#TerenzioandElzerina",
                                     "subsections": []
                                 }
@@ -1797,30 +1797,30 @@
                         },
                         {
                             "title": "Head Servants",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#HeadServants",
                             "subsections": [
                                 {
                                     "title": "Willifort Crowelle",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#WillifortCrowelle",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Tissina Khyret",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#TissinaKhyret",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Laiba “Nana” Rosse",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#LaibaNanaRosse",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jandar Chergoba",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#JandarChergoba",
                                     "subsections": []
                                 }
@@ -1830,18 +1830,18 @@
                 },
                 {
                     "title": "Facing the Cassalanters",
-                    "urlName": "adventures/wdh/hell-of-a-summer",
+                    "urlName": "wdh/hell-of-a-summer",
                     "anchorName": "#FacingtheCassalanters",
                     "subsections": [
                         {
                             "title": "Disrupting the Cassalanters’ Operation",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#DisruptingtheCassalantersOperation",
                             "subsections": []
                         },
                         {
                             "title": "Gathering Information",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#GatheringInformation",
                             "subsections": []
                         }
@@ -1849,29 +1849,29 @@
                 },
                 {
                     "title": "Cassalanter Villa",
-                    "urlName": "adventures/wdh/hell-of-a-summer",
+                    "urlName": "wdh/hell-of-a-summer",
                     "anchorName": "#CassalanterVilla",
                     "subsections": [
                         {
                             "title": "Approaching Cassalanter Villa",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#ApproachingCassalanterVilla",
                             "subsections": [
                                 {
                                     "title": "Spotted by the Guards",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#SpottedbytheGuards",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Reinforcements",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#Reinforcements",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Denizens of Cassalanter Villa",
-                                    "urlName": "adventures/wdh/hell-of-a-summer",
+                                    "urlName": "wdh/hell-of-a-summer",
                                     "anchorName": "#DenizensofCassalanterVilla",
                                     "subsections": []
                                 }
@@ -1879,13 +1879,13 @@
                         },
                         {
                             "title": "Villa Features",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#VillaFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Villa",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#AreasoftheVilla",
                             "subsections": []
                         }
@@ -1893,18 +1893,18 @@
                 },
                 {
                     "title": "Temple of Asmodeus",
-                    "urlName": "adventures/wdh/hell-of-a-summer",
+                    "urlName": "wdh/hell-of-a-summer",
                     "anchorName": "#TempleofAsmodeus",
                     "subsections": [
                         {
                             "title": "Temple Features",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#TempleFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Temple",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#AreasoftheTemple",
                             "subsections": []
                         }
@@ -1912,18 +1912,18 @@
                 },
                 {
                     "title": "Special Events",
-                    "urlName": "adventures/wdh/hell-of-a-summer",
+                    "urlName": "wdh/hell-of-a-summer",
                     "anchorName": "#SpecialEvents",
                     "subsections": [
                         {
                             "title": "Getting the Gold",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#GettingtheGold",
                             "subsections": []
                         },
                         {
                             "title": "Day of the Damned",
-                            "urlName": "adventures/wdh/hell-of-a-summer",
+                            "urlName": "wdh/hell-of-a-summer",
                             "anchorName": "#DayoftheDamned",
                             "subsections": []
                         }
@@ -1933,28 +1933,28 @@
         },
         {
             "title": "Chapter 7: Maestro’s Fall",
-            "urlName": "adventures/wdh/maestros-fall",
+            "urlName": "wdh/maestros-fall",
             "anchorName": "#Chapter7MaestrosFall",
             "subsections": [
                 {
                     "title": "Facing Jarlaxle",
-                    "urlName": "adventures/wdh/maestros-fall",
+                    "urlName": "wdh/maestros-fall",
                     "anchorName": "#FacingJarlaxle",
                     "subsections": [
                         {
                             "title": "Disrupting Jarlaxle’s Operation",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#DisruptingJarlaxlesOperation",
                             "subsections": [
                                 {
                                     "title": "Destroy the Figureheads",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#DestroytheFigureheads",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Sink or Steal a Vessel",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#SinkorStealaVessel",
                                     "subsections": []
                                 }
@@ -1964,35 +1964,35 @@
                 },
                 {
                     "title": "Sea Maidens Faire",
-                    "urlName": "adventures/wdh/maestros-fall",
+                    "urlName": "wdh/maestros-fall",
                     "anchorName": "#SeaMaidensFaire",
                     "subsections": [
                         {
                             "title": "Approaching the Ships",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#ApproachingtheShips",
                             "subsections": []
                         },
                         {
                             "title": "Crews",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#Crews",
                             "subsections": [
                                 {
                                     "title": "Ship Captains",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#ShipCaptains",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Sailors",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Sailors",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Carnies",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Carnies",
                                     "subsections": []
                                 }
@@ -2000,48 +2000,48 @@
                         },
                         {
                             "title": "Discovering the Drow",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#DiscoveringtheDrow",
                             "subsections": []
                         },
                         {
                             "title": "Ship Features",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#ShipFeatures",
                             "subsections": [
                                 {
                                     "title": "Alarms",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Alarms",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Ceilings",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Ceilings",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Doors",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Doors",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Elevator Platforms",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#ElevatorPlatforms",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Lighting",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Lighting",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Rigging",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#Rigging",
                                     "subsections": []
                                 }
@@ -2049,7 +2049,7 @@
                         },
                         {
                             "title": "Areas of the Ships",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#AreasoftheShips",
                             "subsections": []
                         }
@@ -2057,30 +2057,30 @@
                 },
                 {
                     "title": "Scarlet Marpenoth",
-                    "urlName": "adventures/wdh/maestros-fall",
+                    "urlName": "wdh/maestros-fall",
                     "anchorName": "#ScarletMarpenoth",
                     "subsections": [
                         {
                             "title": "Drow Crew",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#DrowCrew",
                             "subsections": []
                         },
                         {
                             "title": "Gnome Engineers",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#GnomeEngineers",
                             "subsections": []
                         },
                         {
                             "title": "Submarine Features",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#SubmarineFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Scarlet Marpenoth",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#AreasoftheScarletMarpenoth",
                             "subsections": []
                         }
@@ -2088,29 +2088,29 @@
                 },
                 {
                     "title": "Special Events",
-                    "urlName": "adventures/wdh/maestros-fall",
+                    "urlName": "wdh/maestros-fall",
                     "anchorName": "#SpecialEvents",
                     "subsections": [
                         {
                             "title": "The Friendly Dragon",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#TheFriendlyDragon",
                             "subsections": []
                         },
                         {
                             "title": "A Night to Remember",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#ANighttoRemember",
                             "subsections": [
                                 {
                                     "title": "Jarlaxle’s Letter",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#JarlaxlesLetter",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Conversation with Laeral",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#ConversationwithLaeral",
                                     "subsections": []
                                 }
@@ -2118,12 +2118,12 @@
                         },
                         {
                             "title": "Day of Wonders Parade",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#DayofWondersParade",
                             "subsections": [
                                 {
                                     "title": "While the Boss Is Away",
-                                    "urlName": "adventures/wdh/maestros-fall",
+                                    "urlName": "wdh/maestros-fall",
                                     "anchorName": "#WhiletheBossIsAway",
                                     "subsections": []
                                 }
@@ -2131,7 +2131,7 @@
                         },
                         {
                             "title": "Escaped Bear",
-                            "urlName": "adventures/wdh/maestros-fall",
+                            "urlName": "wdh/maestros-fall",
                             "anchorName": "#EscapedBear",
                             "subsections": []
                         }
@@ -2141,34 +2141,34 @@
         },
         {
             "title": "Chapter 8: Winter Wizardry",
-            "urlName": "adventures/wdh/winter-wizardry",
+            "urlName": "wdh/winter-wizardry",
             "anchorName": "#Chapter8WinterWizardry",
             "subsections": [
                 {
                     "title": "Facing Manshoon",
-                    "urlName": "adventures/wdh/winter-wizardry",
+                    "urlName": "wdh/winter-wizardry",
                     "anchorName": "#FacingManshoon",
                     "subsections": [
                         {
                             "title": "Disrupting Manshoon’s Operation",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#DisruptingManshoonsOperation",
                             "subsections": [
                                 {
                                     "title": "Release the Barlgura",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#ReleasetheBarlgura",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Report Manshoon",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#ReportManshoon",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Steal Manshoon’s Spellbook",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#StealManshoonsSpellbook",
                                     "subsections": []
                                 }
@@ -2178,29 +2178,29 @@
                 },
                 {
                     "title": "Kolat Towers",
-                    "urlName": "adventures/wdh/winter-wizardry",
+                    "urlName": "wdh/winter-wizardry",
                     "anchorName": "#KolatTowers",
                     "subsections": [
                         {
                             "title": "Force Field",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#ForceField",
                             "subsections": [
                                 {
                                     "title": "Digging under the Force Field",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#DiggingundertheForceField",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Using Magic to Bypass the Force Field",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#UsingMagictoBypasstheForceField",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Destroying the Force Field",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#DestroyingtheForceField",
                                     "subsections": []
                                 }
@@ -2208,13 +2208,13 @@
                         },
                         {
                             "title": "Kolat Towers Features",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#KolatTowersFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of Kolat Towers",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#AreasofKolatTowers",
                             "subsections": []
                         }
@@ -2222,18 +2222,18 @@
                 },
                 {
                     "title": "Extradimensional Sanctum",
-                    "urlName": "adventures/wdh/winter-wizardry",
+                    "urlName": "wdh/winter-wizardry",
                     "anchorName": "#ExtradimensionalSanctum",
                     "subsections": [
                         {
                             "title": "Sanctum Features",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#SanctumFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Sanctum",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#AreasoftheSanctum",
                             "subsections": []
                         }
@@ -2241,23 +2241,23 @@
                 },
                 {
                     "title": "Special Events",
-                    "urlName": "adventures/wdh/winter-wizardry",
+                    "urlName": "wdh/winter-wizardry",
                     "anchorName": "#SpecialEvents",
                     "subsections": [
                         {
                             "title": "Blackmailed Lords",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#BlackmailedLords",
                             "subsections": [
                                 {
                                     "title": "Corylus Thann",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#CorylusThann",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jelenn Urmbrusk",
-                                    "urlName": "adventures/wdh/winter-wizardry",
+                                    "urlName": "wdh/winter-wizardry",
                                     "anchorName": "#JelennUrmbrusk",
                                     "subsections": []
                                 }
@@ -2265,13 +2265,13 @@
                         },
                         {
                             "title": "Deadwinter Day Feast",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#DeadwinterDayFeast",
                             "subsections": []
                         },
                         {
                             "title": "Secret Simulacrum",
-                            "urlName": "adventures/wdh/winter-wizardry",
+                            "urlName": "wdh/winter-wizardry",
                             "anchorName": "#SecretSimulacrum",
                             "subsections": []
                         }
@@ -2281,17 +2281,17 @@
         },
         {
             "title": "Volo’s Waterdeep Enchiridion",
-            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+            "urlName": "wdh/volos-waterdeep-enchiridion",
             "anchorName": "#VolosWaterdeepEnchiridion",
             "subsections": [
                 {
                     "title": "Entering Waterdeep",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#EnteringWaterdeep",
                     "subsections": [
                         {
                             "title": "Your Arrival in the City",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#YourArrivalintheCity",
                             "subsections": []
                         }
@@ -2299,66 +2299,66 @@
                 },
                 {
                     "title": "A Long History (in Brief)",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#ALongHistoryinBrief",
                     "subsections": []
                 },
                 {
                     "title": "Surviving in the City",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#SurvivingintheCity",
                     "subsections": [
                         {
                             "title": "The Code Legal",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TheCodeLegal",
                             "subsections": []
                         },
                         {
                             "title": "Arms, Armor, and Combat",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#ArmsArmorandCombat",
                             "subsections": []
                         },
                         {
                             "title": "City Watch",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#CityWatch",
                             "subsections": []
                         },
                         {
                             "title": "The Watchful Order of Magists and Protectors",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TheWatchfulOrderofMagistsandProtectors",
                             "subsections": []
                         },
                         {
                             "title": "Coinage",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#Coinage",
                             "subsections": []
                         },
                         {
                             "title": "Taxes and Fees",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TaxesandFees",
                             "subsections": []
                         },
                         {
                             "title": "Getting About",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#GettingAbout",
                             "subsections": []
                         },
                         {
                             "title": "Nobility",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#Nobility",
                             "subsections": []
                         },
                         {
                             "title": "Guilds and Guild Law",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#GuildsandGuildLaw",
                             "subsections": []
                         }
@@ -2366,54 +2366,54 @@
                 },
                 {
                     "title": "The Wards of Waterdeep",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#TheWardsofWaterdeep",
                     "subsections": [
                         {
                             "title": "Sea Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#SeaWard",
                             "subsections": []
                         },
                         {
                             "title": "North Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#NorthWard",
                             "subsections": []
                         },
                         {
                             "title": "Castle Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#CastleWard",
                             "subsections": []
                         },
                         {
                             "title": "Trades Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TradesWard",
                             "subsections": []
                         },
                         {
                             "title": "Southern Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#SouthernWard",
                             "subsections": []
                         },
                         {
                             "title": "Dock Ward",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#DockWard",
                             "subsections": []
                         },
                         {
                             "title": "City of the Dead",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#CityoftheDead",
                             "subsections": []
                         },
                         {
                             "title": "Outside the City Proper",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#OutsidetheCityProper",
                             "subsections": []
                         }
@@ -2421,30 +2421,30 @@
                 },
                 {
                     "title": "The City’s Splendors",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#TheCitysSplendors",
                     "subsections": [
                         {
                             "title": "Amenities",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#Amenities",
                             "subsections": []
                         },
                         {
                             "title": "The Griffon Cavalry",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TheGriffonCavalry",
                             "subsections": []
                         },
                         {
                             "title": "The Walking Statues",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#TheWalkingStatues",
                             "subsections": []
                         },
                         {
                             "title": "City Celebrations",
-                            "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                            "urlName": "wdh/volos-waterdeep-enchiridion",
                             "anchorName": "#CityCelebrations",
                             "subsections": []
                         }
@@ -2452,7 +2452,7 @@
                 },
                 {
                     "title": "Parting Words",
-                    "urlName": "adventures/wdh/volos-waterdeep-enchiridion",
+                    "urlName": "wdh/volos-waterdeep-enchiridion",
                     "anchorName": "#PartingWords",
                     "subsections": []
                 }
@@ -2460,78 +2460,78 @@
         },
         {
             "title": "Appendix A: Magic Items",
-            "urlName": "adventures/wdh/magic-items",
+            "urlName": "wdh/magic-items",
             "anchorName": "#AppendixAMagicItems",
             "subsections": [
                 {
                     "title": "Azuredge",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#Azuredge",
                     "subsections": []
                 },
                 {
                     "title": "Badge of the Watch",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#BadgeoftheWatch",
                     "subsections": []
                 },
                 {
                     "title": "Blackstaff",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#Blackstaff",
                     "subsections": []
                 },
                 {
                     "title": "Bracer of Flying Daggers",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#BracerofFlyingDaggers",
                     "subsections": []
                 },
                 {
                     "title": "Dragonstaff of Ahghairon",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#DragonstaffofAhghairon",
                     "subsections": []
                 },
                 {
                     "title": "Feather of Diatryma Summoning",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#FeatherofDiatrymaSummoning",
                     "subsections": []
                 },
                 {
                     "title": "Knave’s Eye Patch",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#KnavesEyePatch",
                     "subsections": []
                 },
                 {
                     "title": "Lord’s Ensemble",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#LordsEnsemble",
                     "subsections": []
                 },
                 {
                     "title": "Paper Bird",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#PaperBird",
                     "subsections": []
                 },
                 {
                     "title": "Ring of Truth Telling",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#RingofTruthTelling",
                     "subsections": []
                 },
                 {
                     "title": "Smokepowder",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#Smokepowder",
                     "subsections": []
                 },
                 {
                     "title": "Stone of Golorr",
-                    "urlName": "adventures/wdh/magic-items",
+                    "urlName": "wdh/magic-items",
                     "anchorName": "#StoneofGolorr",
                     "subsections": []
                 }
@@ -2539,30 +2539,30 @@
         },
         {
             "title": "Appendix B: Monsters and NPCs",
-            "urlName": "adventures/wdh/monsters-and-npcs",
+            "urlName": "wdh/monsters-and-npcs",
             "anchorName": "#AppendixBMonstersandNPCs",
             "subsections": [
                 {
                     "title": "Monsters A - D",
-                    "urlName": "adventures/wdh/monsters-and-npcs",
+                    "urlName": "wdh/monsters-and-npcs",
                     "anchorName": "#MonstersAD",
                     "subsections": []
                 },
                 {
                     "title": "Monsters F - J",
-                    "urlName": "adventures/wdh/monsters-and-npcs",
+                    "urlName": "wdh/monsters-and-npcs",
                     "anchorName": "#MonstersFJ",
                     "subsections": []
                 },
                 {
                     "title": "Monsters L - O",
-                    "urlName": "adventures/wdh/monsters-and-npcs",
+                    "urlName": "wdh/monsters-and-npcs",
                     "anchorName": "#MonstersLO",
                     "subsections": []
                 },
                 {
                     "title": "Monsters R - W",
-                    "urlName": "adventures/wdh/monsters-and-npcs",
+                    "urlName": "wdh/monsters-and-npcs",
                     "anchorName": "#MonstersRW",
                     "subsections": []
                 }
@@ -2570,30 +2570,30 @@
         },
         {
             "title": "Appendix C: Handouts",
-            "urlName": "adventures/wdh/handouts",
+            "urlName": "wdh/handouts",
             "anchorName": "#AppendixCHandouts",
             "subsections": [
                 {
                     "title": "Yawning Portal Friendly Faces",
-                    "urlName": "adventures/wdh/handouts",
+                    "urlName": "wdh/handouts",
                     "anchorName": "#YawningPortalFriendlyFaces",
                     "subsections": []
                 },
                 {
                     "title": "The Code Legal",
-                    "urlName": "adventures/wdh/handouts",
+                    "urlName": "wdh/handouts",
                     "anchorName": "#TheCodeLegal",
                     "subsections": []
                 },
                 {
                     "title": "Trollskull Manor and Tavern",
-                    "urlName": "adventures/wdh/handouts",
+                    "urlName": "wdh/handouts",
                     "anchorName": "#TrollskullManorandTavern",
                     "subsections": []
                 },
                 {
                     "title": "Key to the Yawning Portal",
-                    "urlName": "adventures/wdh/handouts",
+                    "urlName": "wdh/handouts",
                     "anchorName": "#KeytotheYawningPortal",
                     "subsections": []
                 }
@@ -2601,7 +2601,7 @@
         },
         {
             "title": "Credits",
-            "urlName": "adventures/wdh/credits",
+            "urlName": "wdh/credits",
             "anchorName": "#",
             "subsections": []
         }

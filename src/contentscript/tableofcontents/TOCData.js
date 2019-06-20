@@ -1,5 +1,6 @@
 import cos from './data/adventures/cos.json';
 import ddiaMord from './data/adventures/ddia-mord.json';
+import gos from './data/adventures/gos.json';
 import hotdq from './data/adventures/hotdq.json';
 import llok from './data/adventures/llok.json';
 import lmop from './data/adventures/lmop.json';
@@ -9,6 +10,7 @@ import rot from './data/adventures/rot.json';
 import skt from './data/adventures/skt.json';
 import tftyp from './data/adventures/tftyp.json';
 import toa from './data/adventures/toa.json';
+import ai from './data/rules/ai.json';
 import basicRules from './data/rules/basic-rules.json';
 import dmg from './data/rules/dmg.json';
 import ggtr from './data/rules/ggtr.json';
@@ -26,6 +28,7 @@ import xgte from './data/rules/xgte.json';
 const data = {
     'cos': cos,
     'ddia-mord': ddiaMord,
+    'gos': gos,
     'hotdq': hotdq,
     'llok': llok,
     'lmop': lmop,
@@ -37,6 +40,7 @@ const data = {
     'toa': toa,
     'wdh': wdh,
     'wdotmm': wdotmm,
+    'ai': ai,
     'basic-rules': basicRules,
     'dmg': dmg,
     'ggtr': ggtr,

@@ -5,29 +5,29 @@
     "subsections": [
         {
             "title": "Introduction",
-            "urlName": "rules/mm/introduction",
+            "urlName": "mm/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "How to Use These Rules",
-                    "urlName": "rules/mm/introduction",
+                    "urlName": "mm/introduction",
                     "anchorName": "#HowtoUseTheseRules",
                     "subsections": []
                 },
                 {
                     "title": "What Is a Monster?",
-                    "urlName": "rules/mm/introduction",
+                    "urlName": "mm/introduction",
                     "anchorName": "#WhatIsaMonster",
                     "subsections": [
                         {
                             "title": "Where Do Monsters Dwell?",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#WhereDoMonstersDwell",
                             "subsections": []
                         },
                         {
                             "title": "What Monsters to Use?",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#WhatMonsterstoUse",
                             "subsections": []
                         }
@@ -35,72 +35,72 @@
                 },
                 {
                     "title": "Statistics",
-                    "urlName": "rules/mm/introduction",
+                    "urlName": "mm/introduction",
                     "anchorName": "#Statistics",
                     "subsections": [
                         {
                             "title": "Size",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Size",
                             "subsections": []
                         },
                         {
                             "title": "Type",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Type",
                             "subsections": []
                         },
                         {
                             "title": "Alignment",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Alignment",
                             "subsections": []
                         },
                         {
                             "title": "Armor Class",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#ArmorClass",
                             "subsections": []
                         },
                         {
                             "title": "Hit Points",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#HitPoints",
                             "subsections": []
                         },
                         {
                             "title": "Speed",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Speed",
                             "subsections": []
                         },
                         {
                             "title": "Ability Scores",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#AbilityScores",
                             "subsections": []
                         },
                         {
                             "title": "Vulnerabilities, Resistances, and Immunities",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#VulnerabilitiesResistancesandImmunities",
                             "subsections": []
                         },
                         {
                             "title": "Senses",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Senses",
                             "subsections": []
                         },
                         {
                             "title": "Challenge",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#Challenge",
                             "subsections": []
                         },
                         {
                             "title": "Special Traits",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#SpecialTraits",
                             "subsections": []
                         }
@@ -108,18 +108,18 @@
                 },
                 {
                     "title": "Legendary Creatures",
-                    "urlName": "rules/mm/introduction",
+                    "urlName": "mm/introduction",
                     "anchorName": "#LegendaryCreatures",
                     "subsections": [
                         {
                             "title": "Legendary Actions",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#LegendaryActions",
                             "subsections": []
                         },
                         {
                             "title": "A Legendary Creature’s Lair",
-                            "urlName": "rules/mm/introduction",
+                            "urlName": "mm/introduction",
                             "anchorName": "#ALegendaryCreaturesLair",
                             "subsections": []
                         }
@@ -129,34 +129,34 @@
         },
         {
             "title": "A | Monsters",
-            "urlName": "rules/mm/monsters-a",
+            "urlName": "mm/monsters-a",
             "anchorName": "#AMonsters",
             "subsections": [
                 {
                     "title": "Aarakocra",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#Aarakocra",
                     "subsections": []
                 },
                 {
                     "title": "Aboleth",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#Aboleth",
                     "subsections": [
                         {
                             "title": "An Aboleth’s Lair",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#AnAbolethsLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-a",
+                                    "urlName": "mm/monsters-a",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-a",
+                                    "urlName": "mm/monsters-a",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -166,24 +166,24 @@
                 },
                 {
                     "title": "Angels",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#Angels",
                     "subsections": [
                         {
                             "title": "Deva",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#Deva",
                             "subsections": []
                         },
                         {
                             "title": "Planetar",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#Planetar",
                             "subsections": []
                         },
                         {
                             "title": "Solar",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#Solar",
                             "subsections": []
                         }
@@ -191,24 +191,24 @@
                 },
                 {
                     "title": "Animated Objects",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#AnimatedObjects",
                     "subsections": [
                         {
                             "title": "Animated Armor",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#AnimatedArmor",
                             "subsections": []
                         },
                         {
                             "title": "Flying Sword",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#FlyingSword",
                             "subsections": []
                         },
                         {
                             "title": "Rug of Smothering",
-                            "urlName": "rules/mm/monsters-a",
+                            "urlName": "mm/monsters-a",
                             "anchorName": "#RugofSmothering",
                             "subsections": []
                         }
@@ -216,13 +216,13 @@
                 },
                 {
                     "title": "Ankheg",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#Ankheg",
                     "subsections": []
                 },
                 {
                     "title": "Azer",
-                    "urlName": "rules/mm/monsters-a",
+                    "urlName": "mm/monsters-a",
                     "anchorName": "#Azer",
                     "subsections": []
                 }
@@ -230,46 +230,46 @@
         },
         {
             "title": "B | Monsters",
-            "urlName": "rules/mm/monsters-b",
+            "urlName": "mm/monsters-b",
             "anchorName": "#BMonsters",
             "subsections": [
                 {
                     "title": "Banshee",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Banshee",
                     "subsections": []
                 },
                 {
                     "title": "Basilisk",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Basilisk",
                     "subsections": []
                 },
                 {
                     "title": "Behir",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Behir",
                     "subsections": []
                 },
                 {
                     "title": "Beholders",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Beholders",
                     "subsections": [
                         {
                             "title": "A Beholder’s Lair",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#ABeholdersLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-b",
+                                    "urlName": "mm/monsters-b",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-b",
+                                    "urlName": "mm/monsters-b",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -277,24 +277,24 @@
                         },
                         {
                             "title": "Death Tyrant",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#DeathTyrant",
                             "subsections": []
                         },
                         {
                             "title": "A Death Tyrant’s Lair",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#ADeathTyrantsLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-b",
+                                    "urlName": "mm/monsters-b",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-b",
+                                    "urlName": "mm/monsters-b",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -302,7 +302,7 @@
                         },
                         {
                             "title": "Spectator",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#Spectator",
                             "subsections": []
                         }
@@ -310,24 +310,24 @@
                 },
                 {
                     "title": "Blights",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Blights",
                     "subsections": [
                         {
                             "title": "Needle Blight",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#NeedleBlight",
                             "subsections": []
                         },
                         {
                             "title": "Twig Blight",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#TwigBlight",
                             "subsections": []
                         },
                         {
                             "title": "Vine Blight",
-                            "urlName": "rules/mm/monsters-b",
+                            "urlName": "mm/monsters-b",
                             "anchorName": "#VineBlight",
                             "subsections": []
                         }
@@ -335,19 +335,19 @@
                 },
                 {
                     "title": "Bugbears",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Bugbears",
                     "subsections": []
                 },
                 {
                     "title": "Bulette",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Bulette",
                     "subsections": []
                 },
                 {
                     "title": "Bullywug",
-                    "urlName": "rules/mm/monsters-b",
+                    "urlName": "mm/monsters-b",
                     "anchorName": "#Bullywug",
                     "subsections": []
                 }
@@ -355,66 +355,66 @@
         },
         {
             "title": "C | Monsters",
-            "urlName": "rules/mm/monsters-c",
+            "urlName": "mm/monsters-c",
             "anchorName": "#CMonsters",
             "subsections": [
                 {
                     "title": "Cambion",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Cambion",
                     "subsections": []
                 },
                 {
                     "title": "Carrion Crawler",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#CarrionCrawler",
                     "subsections": []
                 },
                 {
                     "title": "Centaur",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Centaur",
                     "subsections": []
                 },
                 {
                     "title": "Chimera",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Chimera",
                     "subsections": []
                 },
                 {
                     "title": "Chuul",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Chuul",
                     "subsections": []
                 },
                 {
                     "title": "Cloaker",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Cloaker",
                     "subsections": []
                 },
                 {
                     "title": "Cockatrice",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Cockatrice",
                     "subsections": []
                 },
                 {
                     "title": "Couatl",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Couatl",
                     "subsections": []
                 },
                 {
                     "title": "Crawling Claw",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#CrawlingClaw",
                     "subsections": []
                 },
                 {
                     "title": "Cyclops",
-                    "urlName": "rules/mm/monsters-c",
+                    "urlName": "mm/monsters-c",
                     "anchorName": "#Cyclops",
                     "subsections": []
                 }
@@ -422,96 +422,96 @@
         },
         {
             "title": "D | Monsters",
-            "urlName": "rules/mm/monsters-d",
+            "urlName": "mm/monsters-d",
             "anchorName": "#DMonsters",
             "subsections": [
                 {
                     "title": "Darkmantle",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Darkmantle",
                     "subsections": []
                 },
                 {
                     "title": "Death Knight",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#DeathKnight",
                     "subsections": []
                 },
                 {
                     "title": "Demilich",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Demilich",
                     "subsections": []
                 },
                 {
                     "title": "Demons",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Demons",
                     "subsections": []
                 },
                 {
                     "title": "Devils",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Devils",
                     "subsections": []
                 },
                 {
                     "title": "Dinosaurs",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Dinosaurs",
                     "subsections": []
                 },
                 {
                     "title": "Displacer Beast",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#DisplacerBeast",
                     "subsections": []
                 },
                 {
                     "title": "Doppelganger",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Doppelganger",
                     "subsections": []
                 },
                 {
                     "title": "Dracolich",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Dracolich",
                     "subsections": []
                 },
                 {
                     "title": "Dragon, Shadow",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#DragonShadow",
                     "subsections": []
                 },
                 {
                     "title": "Dragons",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Dragons",
                     "subsections": []
                 },
                 {
                     "title": "Dragon Turtle",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#DragonTurtle",
                     "subsections": []
                 },
                 {
                     "title": "Drider",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Drider",
                     "subsections": []
                 },
                 {
                     "title": "Dryad",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Dryad",
                     "subsections": []
                 },
                 {
                     "title": "Duergar",
-                    "urlName": "rules/mm/monsters-d",
+                    "urlName": "mm/monsters-d",
                     "anchorName": "#Duergar",
                     "subsections": []
                 }
@@ -519,35 +519,35 @@
         },
         {
             "title": "E | Monsters",
-            "urlName": "rules/mm/monsters-e",
+            "urlName": "mm/monsters-e",
             "anchorName": "#EMonsters",
             "subsections": [
                 {
                     "title": "Elementals",
-                    "urlName": "rules/mm/monsters-e",
+                    "urlName": "mm/monsters-e",
                     "anchorName": "#Elementals",
                     "subsections": [
                         {
                             "title": "Air Elemental",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#AirElemental",
                             "subsections": []
                         },
                         {
                             "title": "Earth Elemental",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#EarthElemental",
                             "subsections": []
                         },
                         {
                             "title": "Fire Elemental",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#FireElemental",
                             "subsections": []
                         },
                         {
                             "title": "Water Elemental",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#WaterElemental",
                             "subsections": []
                         }
@@ -555,24 +555,24 @@
                 },
                 {
                     "title": "Elves: Drow",
-                    "urlName": "rules/mm/monsters-e",
+                    "urlName": "mm/monsters-e",
                     "anchorName": "#ElvesDrow",
                     "subsections": [
                         {
                             "title": "Drow Elite Warrior",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#DrowEliteWarrior",
                             "subsections": []
                         },
                         {
                             "title": "Drow Mage",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#DrowMage",
                             "subsections": []
                         },
                         {
                             "title": "Drow Priestess of Lolth",
-                            "urlName": "rules/mm/monsters-e",
+                            "urlName": "mm/monsters-e",
                             "anchorName": "#DrowPriestessofLolth",
                             "subsections": []
                         }
@@ -580,19 +580,19 @@
                 },
                 {
                     "title": "Empyrean",
-                    "urlName": "rules/mm/monsters-e",
+                    "urlName": "mm/monsters-e",
                     "anchorName": "#Empyrean",
                     "subsections": []
                 },
                 {
                     "title": "Ettercap",
-                    "urlName": "rules/mm/monsters-e",
+                    "urlName": "mm/monsters-e",
                     "anchorName": "#Ettercap",
                     "subsections": []
                 },
                 {
                     "title": "Ettin",
-                    "urlName": "rules/mm/monsters-e",
+                    "urlName": "mm/monsters-e",
                     "anchorName": "#Ettin",
                     "subsections": []
                 }
@@ -600,53 +600,53 @@
         },
         {
             "title": "F | Monsters",
-            "urlName": "rules/mm/monsters-f",
+            "urlName": "mm/monsters-f",
             "anchorName": "#FMonsters",
             "subsections": [
                 {
                     "title": "Faerie Dragon",
-                    "urlName": "rules/mm/monsters-f",
+                    "urlName": "mm/monsters-f",
                     "anchorName": "#FaerieDragon",
                     "subsections": []
                 },
                 {
                     "title": "Flameskull",
-                    "urlName": "rules/mm/monsters-f",
+                    "urlName": "mm/monsters-f",
                     "anchorName": "#Flameskull",
                     "subsections": []
                 },
                 {
                     "title": "Flumph",
-                    "urlName": "rules/mm/monsters-f",
+                    "urlName": "mm/monsters-f",
                     "anchorName": "#Flumph",
                     "subsections": []
                 },
                 {
                     "title": "Fomorian",
-                    "urlName": "rules/mm/monsters-f",
+                    "urlName": "mm/monsters-f",
                     "anchorName": "#Fomorian",
                     "subsections": []
                 },
                 {
                     "title": "Fungi",
-                    "urlName": "rules/mm/monsters-f",
+                    "urlName": "mm/monsters-f",
                     "anchorName": "#Fungi",
                     "subsections": [
                         {
                             "title": "Gas Spore",
-                            "urlName": "rules/mm/monsters-f",
+                            "urlName": "mm/monsters-f",
                             "anchorName": "#GasSpore",
                             "subsections": []
                         },
                         {
                             "title": "Shrieker",
-                            "urlName": "rules/mm/monsters-f",
+                            "urlName": "mm/monsters-f",
                             "anchorName": "#Shrieker",
                             "subsections": []
                         },
                         {
                             "title": "Violet Fungus",
-                            "urlName": "rules/mm/monsters-f",
+                            "urlName": "mm/monsters-f",
                             "anchorName": "#VioletFungus",
                             "subsections": []
                         }
@@ -656,108 +656,108 @@
         },
         {
             "title": "G | Monsters",
-            "urlName": "rules/mm/monsters-g",
+            "urlName": "mm/monsters-g",
             "anchorName": "#GMonsters",
             "subsections": [
                 {
                     "title": "Galeb Duhr",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#GalebDuhr",
                     "subsections": []
                 },
                 {
                     "title": "Gargoyle",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Gargoyle",
                     "subsections": []
                 },
                 {
                     "title": "Genies",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Genies",
                     "subsections": []
                 },
                 {
                     "title": "Ghost",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Ghost",
                     "subsections": []
                 },
                 {
                     "title": "Ghouls",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Ghouls",
                     "subsections": []
                 },
                 {
                     "title": "Giants",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Giants",
                     "subsections": []
                 },
                 {
                     "title": "Gibbering Mouther",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#GibberingMouther",
                     "subsections": []
                 },
                 {
                     "title": "Gith",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Gith",
                     "subsections": []
                 },
                 {
                     "title": "Gnolls",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Gnolls",
                     "subsections": []
                 },
                 {
                     "title": "Deep Gnome (Svirfneblin)",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#DeepGnomeSvirfneblin",
                     "subsections": []
                 },
                 {
                     "title": "Goblins",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Goblins",
                     "subsections": []
                 },
                 {
                     "title": "Golems",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Golems",
                     "subsections": []
                 },
                 {
                     "title": "Gorgon",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Gorgon",
                     "subsections": []
                 },
                 {
                     "title": "Grell",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Grell",
                     "subsections": []
                 },
                 {
                     "title": "Grick",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Grick",
                     "subsections": []
                 },
                 {
                     "title": "Griffon",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Griffon",
                     "subsections": []
                 },
                 {
                     "title": "Grimlock",
-                    "urlName": "rules/mm/monsters-g",
+                    "urlName": "mm/monsters-g",
                     "anchorName": "#Grimlock",
                     "subsections": []
                 }
@@ -765,29 +765,29 @@
         },
         {
             "title": "H | Monsters",
-            "urlName": "rules/mm/monsters-h",
+            "urlName": "mm/monsters-h",
             "anchorName": "#HMonsters",
             "subsections": [
                 {
                     "title": "Hags",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Hags",
                     "subsections": [
                         {
                             "title": "Green Hag",
-                            "urlName": "rules/mm/monsters-h",
+                            "urlName": "mm/monsters-h",
                             "anchorName": "#GreenHag",
                             "subsections": []
                         },
                         {
                             "title": "Night Hag",
-                            "urlName": "rules/mm/monsters-h",
+                            "urlName": "mm/monsters-h",
                             "anchorName": "#NightHag",
                             "subsections": []
                         },
                         {
                             "title": "Sea Hag",
-                            "urlName": "rules/mm/monsters-h",
+                            "urlName": "mm/monsters-h",
                             "anchorName": "#SeaHag",
                             "subsections": []
                         }
@@ -795,17 +795,17 @@
                 },
                 {
                     "title": "Half-Dragon",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#HalfDragon",
                     "subsections": [
                         {
                             "title": "Half-Dragon Template",
-                            "urlName": "rules/mm/monsters-h",
+                            "urlName": "mm/monsters-h",
                             "anchorName": "#HalfDragonTemplate",
                             "subsections": [
                                 {
                                     "title": "Sample Half-Dragon",
-                                    "urlName": "rules/mm/monsters-h",
+                                    "urlName": "mm/monsters-h",
                                     "anchorName": "#SampleHalfDragon",
                                     "subsections": []
                                 }
@@ -815,49 +815,49 @@
                 },
                 {
                     "title": "Harpy",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Harpy",
                     "subsections": []
                 },
                 {
                     "title": "Hell Hound",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#HellHound",
                     "subsections": []
                 },
                 {
                     "title": "Helmed Horror",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#HelmedHorror",
                     "subsections": []
                 },
                 {
                     "title": "Hippogriff",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Hippogriff",
                     "subsections": []
                 },
                 {
                     "title": "Hobgoblins",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Hobgoblins",
                     "subsections": []
                 },
                 {
                     "title": "Homunculus",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Homunculus",
                     "subsections": []
                 },
                 {
                     "title": "Hook Horror",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#HookHorror",
                     "subsections": []
                 },
                 {
                     "title": "Hydra",
-                    "urlName": "rules/mm/monsters-h",
+                    "urlName": "mm/monsters-h",
                     "anchorName": "#Hydra",
                     "subsections": []
                 }
@@ -865,18 +865,18 @@
         },
         {
             "title": "I | Monsters",
-            "urlName": "rules/mm/monsters-i",
+            "urlName": "mm/monsters-i",
             "anchorName": "#IMonsters",
             "subsections": [
                 {
                     "title": "Intellect Devourer",
-                    "urlName": "rules/mm/monsters-i",
+                    "urlName": "mm/monsters-i",
                     "anchorName": "#IntellectDevourer",
                     "subsections": []
                 },
                 {
                     "title": "Invisible Stalker",
-                    "urlName": "rules/mm/monsters-i",
+                    "urlName": "mm/monsters-i",
                     "anchorName": "#InvisibleStalker",
                     "subsections": []
                 }
@@ -884,12 +884,12 @@
         },
         {
             "title": "J | Monsters",
-            "urlName": "rules/mm/monsters-j",
+            "urlName": "mm/monsters-j",
             "anchorName": "#JMonsters",
             "subsections": [
                 {
                     "title": "Jackalwere",
-                    "urlName": "rules/mm/monsters-j",
+                    "urlName": "mm/monsters-j",
                     "anchorName": "#Jackalwere",
                     "subsections": []
                 }
@@ -897,40 +897,40 @@
         },
         {
             "title": "K | Monsters",
-            "urlName": "rules/mm/monsters-k",
+            "urlName": "mm/monsters-k",
             "anchorName": "#KMonsters",
             "subsections": [
                 {
                     "title": "Kenku",
-                    "urlName": "rules/mm/monsters-k",
+                    "urlName": "mm/monsters-k",
                     "anchorName": "#Kenku",
                     "subsections": []
                 },
                 {
                     "title": "Kobolds",
-                    "urlName": "rules/mm/monsters-k",
+                    "urlName": "mm/monsters-k",
                     "anchorName": "#Kobolds",
                     "subsections": []
                 },
                 {
                     "title": "Kraken",
-                    "urlName": "rules/mm/monsters-k",
+                    "urlName": "mm/monsters-k",
                     "anchorName": "#Kraken",
                     "subsections": [
                         {
                             "title": "A Kraken’s Lair",
-                            "urlName": "rules/mm/monsters-k",
+                            "urlName": "mm/monsters-k",
                             "anchorName": "#AKrakensLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-k",
+                                    "urlName": "mm/monsters-k",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-k",
+                                    "urlName": "mm/monsters-k",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -940,7 +940,7 @@
                 },
                 {
                     "title": "Kuo-toa",
-                    "urlName": "rules/mm/monsters-k",
+                    "urlName": "mm/monsters-k",
                     "anchorName": "#Kuotoa",
                     "subsections": []
                 }
@@ -948,28 +948,28 @@
         },
         {
             "title": "L | Monsters",
-            "urlName": "rules/mm/monsters-l",
+            "urlName": "mm/monsters-l",
             "anchorName": "#LMonsters",
             "subsections": [
                 {
                     "title": "Lamia",
-                    "urlName": "rules/mm/monsters-l",
+                    "urlName": "mm/monsters-l",
                     "anchorName": "#Lamia",
                     "subsections": []
                 },
                 {
                     "title": "Lich",
-                    "urlName": "rules/mm/monsters-l",
+                    "urlName": "mm/monsters-l",
                     "anchorName": "#Lich",
                     "subsections": [
                         {
                             "title": "A Lich’s Lair",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#ALichsLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-l",
+                                    "urlName": "mm/monsters-l",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 }
@@ -979,42 +979,42 @@
                 },
                 {
                     "title": "Lizardfolk",
-                    "urlName": "rules/mm/monsters-l",
+                    "urlName": "mm/monsters-l",
                     "anchorName": "#Lizardfolk",
                     "subsections": []
                 },
                 {
                     "title": "Lycanthropes",
-                    "urlName": "rules/mm/monsters-l",
+                    "urlName": "mm/monsters-l",
                     "anchorName": "#Lycanthropes",
                     "subsections": [
                         {
                             "title": "Werebear",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#Werebear",
                             "subsections": []
                         },
                         {
                             "title": "Wereboar",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#Wereboar",
                             "subsections": []
                         },
                         {
                             "title": "Wererat",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#Wererat",
                             "subsections": []
                         },
                         {
                             "title": "Weretiger",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#Weretiger",
                             "subsections": []
                         },
                         {
                             "title": "Werewolf",
-                            "urlName": "rules/mm/monsters-l",
+                            "urlName": "mm/monsters-l",
                             "anchorName": "#Werewolf",
                             "subsections": []
                         }
@@ -1024,65 +1024,65 @@
         },
         {
             "title": "M | Monsters",
-            "urlName": "rules/mm/monsters-m",
+            "urlName": "mm/monsters-m",
             "anchorName": "#MMonsters",
             "subsections": [
                 {
                     "title": "Magmin",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Magmin",
                     "subsections": []
                 },
                 {
                     "title": "Manticore",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Manticore",
                     "subsections": []
                 },
                 {
                     "title": "Medusa",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Medusa",
                     "subsections": []
                 },
                 {
                     "title": "Mephits",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Mephits",
                     "subsections": [
                         {
                             "title": "Dust Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#DustMephit",
                             "subsections": []
                         },
                         {
                             "title": "Ice Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#IceMephit",
                             "subsections": []
                         },
                         {
                             "title": "Magma Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#MagmaMephit",
                             "subsections": []
                         },
                         {
                             "title": "Mud Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#MudMephit",
                             "subsections": []
                         },
                         {
                             "title": "Smoke Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#SmokeMephit",
                             "subsections": []
                         },
                         {
                             "title": "Steam Mephit",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#SteamMephit",
                             "subsections": []
                         }
@@ -1090,66 +1090,66 @@
                 },
                 {
                     "title": "Merfolk",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Merfolk",
                     "subsections": []
                 },
                 {
                     "title": "Merrow",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Merrow",
                     "subsections": []
                 },
                 {
                     "title": "Mimic",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Mimic",
                     "subsections": []
                 },
                 {
                     "title": "Mind Flayer",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#MindFlayer",
                     "subsections": []
                 },
                 {
                     "title": "Minotaur",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Minotaur",
                     "subsections": []
                 },
                 {
                     "title": "Modrons",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Modrons",
                     "subsections": [
                         {
                             "title": "Monodrone",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#Monodrone",
                             "subsections": []
                         },
                         {
                             "title": "Duodrone",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#Duodrone",
                             "subsections": []
                         },
                         {
                             "title": "Tridrone",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#Tridrone",
                             "subsections": []
                         },
                         {
                             "title": "Quadrone",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#Quadrone",
                             "subsections": []
                         },
                         {
                             "title": "Pentadrone",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#Pentadrone",
                             "subsections": []
                         }
@@ -1157,29 +1157,29 @@
                 },
                 {
                     "title": "Mummies",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Mummies",
                     "subsections": [
                         {
                             "title": "Mummy Lord",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#MummyLord",
                             "subsections": []
                         },
                         {
                             "title": "A Mummy Lord’s Lair",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#AMummyLordsLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-m",
+                                    "urlName": "mm/monsters-m",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-m",
+                                    "urlName": "mm/monsters-m",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -1189,17 +1189,17 @@
                 },
                 {
                     "title": "Myconids",
-                    "urlName": "rules/mm/monsters-m",
+                    "urlName": "mm/monsters-m",
                     "anchorName": "#Myconids",
                     "subsections": [
                         {
                             "title": "Spore Servant Template",
-                            "urlName": "rules/mm/monsters-m",
+                            "urlName": "mm/monsters-m",
                             "anchorName": "#SporeServantTemplate",
                             "subsections": [
                                 {
                                     "title": "Sample Spore Servant",
-                                    "urlName": "rules/mm/monsters-m",
+                                    "urlName": "mm/monsters-m",
                                     "anchorName": "#SampleSporeServant",
                                     "subsections": []
                                 }
@@ -1211,29 +1211,29 @@
         },
         {
             "title": "N | Monsters",
-            "urlName": "rules/mm/monsters-n",
+            "urlName": "mm/monsters-n",
             "anchorName": "#NMonsters",
             "subsections": [
                 {
                     "title": "Nagas",
-                    "urlName": "rules/mm/monsters-n",
+                    "urlName": "mm/monsters-n",
                     "anchorName": "#Nagas",
                     "subsections": [
                         {
                             "title": "Bone Naga",
-                            "urlName": "rules/mm/monsters-n",
+                            "urlName": "mm/monsters-n",
                             "anchorName": "#BoneNaga",
                             "subsections": []
                         },
                         {
                             "title": "Guardian Naga",
-                            "urlName": "rules/mm/monsters-n",
+                            "urlName": "mm/monsters-n",
                             "anchorName": "#GuardianNaga",
                             "subsections": []
                         },
                         {
                             "title": "Spirit Naga",
-                            "urlName": "rules/mm/monsters-n",
+                            "urlName": "mm/monsters-n",
                             "anchorName": "#SpiritNaga",
                             "subsections": []
                         }
@@ -1241,13 +1241,13 @@
                 },
                 {
                     "title": "Nightmare",
-                    "urlName": "rules/mm/monsters-n",
+                    "urlName": "mm/monsters-n",
                     "anchorName": "#Nightmare",
                     "subsections": []
                 },
                 {
                     "title": "Nothic",
-                    "urlName": "rules/mm/monsters-n",
+                    "urlName": "mm/monsters-n",
                     "anchorName": "#Nothic",
                     "subsections": []
                 }
@@ -1255,42 +1255,42 @@
         },
         {
             "title": "O | Monsters",
-            "urlName": "rules/mm/monsters-o",
+            "urlName": "mm/monsters-o",
             "anchorName": "#OMonsters",
             "subsections": [
                 {
                     "title": "Ogres",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Ogres",
                     "subsections": []
                 },
                 {
                     "title": "Oni",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Oni",
                     "subsections": []
                 },
                 {
                     "title": "Oozes",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Oozes",
                     "subsections": []
                 },
                 {
                     "title": "Orcs",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Orcs",
                     "subsections": []
                 },
                 {
                     "title": "Otyugh",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Otyugh",
                     "subsections": []
                 },
                 {
                     "title": "Owlbear",
-                    "urlName": "rules/mm/monsters-o",
+                    "urlName": "mm/monsters-o",
                     "anchorName": "#Owlbear",
                     "subsections": []
                 }
@@ -1298,42 +1298,42 @@
         },
         {
             "title": "P | Monsters",
-            "urlName": "rules/mm/monsters-p",
+            "urlName": "mm/monsters-p",
             "anchorName": "#PMonsters",
             "subsections": [
                 {
                     "title": "Pegasus",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#Pegasus",
                     "subsections": []
                 },
                 {
                     "title": "Peryton",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#Peryton",
                     "subsections": []
                 },
                 {
                     "title": "Piercer",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#Piercer",
                     "subsections": []
                 },
                 {
                     "title": "Pixie",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#Pixie",
                     "subsections": []
                 },
                 {
                     "title": "Pseudodragon",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#Pseudodragon",
                     "subsections": []
                 },
                 {
                     "title": "Purple Worm",
-                    "urlName": "rules/mm/monsters-p",
+                    "urlName": "mm/monsters-p",
                     "anchorName": "#PurpleWorm",
                     "subsections": []
                 }
@@ -1341,12 +1341,12 @@
         },
         {
             "title": "Q | Monsters",
-            "urlName": "rules/mm/monsters-q",
+            "urlName": "mm/monsters-q",
             "anchorName": "#QMonsters",
             "subsections": [
                 {
                     "title": "Quaggoth",
-                    "urlName": "rules/mm/monsters-q",
+                    "urlName": "mm/monsters-q",
                     "anchorName": "#Quaggoth",
                     "subsections": []
                 }
@@ -1354,42 +1354,42 @@
         },
         {
             "title": "R | Monsters",
-            "urlName": "rules/mm/monsters-r",
+            "urlName": "mm/monsters-r",
             "anchorName": "#RMonsters",
             "subsections": [
                 {
                     "title": "Rakshasa",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#Rakshasa",
                     "subsections": []
                 },
                 {
                     "title": "Remorhazes",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#Remorhazes",
                     "subsections": []
                 },
                 {
                     "title": "Revenant",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#Revenant",
                     "subsections": []
                 },
                 {
                     "title": "Roc",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#Roc",
                     "subsections": []
                 },
                 {
                     "title": "Roper",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#Roper",
                     "subsections": []
                 },
                 {
                     "title": "Rust Monster",
-                    "urlName": "rules/mm/monsters-r",
+                    "urlName": "mm/monsters-r",
                     "anchorName": "#RustMonster",
                     "subsections": []
                 }
@@ -1397,89 +1397,89 @@
         },
         {
             "title": "S | Monsters",
-            "urlName": "rules/mm/monsters-s",
+            "urlName": "mm/monsters-s",
             "anchorName": "#SMonsters",
             "subsections": [
                 {
                     "title": "Sahuagin",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Sahuagin",
                     "subsections": []
                 },
                 {
                     "title": "Salamanders",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Salamanders",
                     "subsections": []
                 },
                 {
                     "title": "Satyr",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Satyr",
                     "subsections": []
                 },
                 {
                     "title": "Scarecrow",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Scarecrow",
                     "subsections": []
                 },
                 {
                     "title": "Shadow",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Shadow",
                     "subsections": []
                 },
                 {
                     "title": "Shambling Mound",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#ShamblingMound",
                     "subsections": []
                 },
                 {
                     "title": "Shield Guardian",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#ShieldGuardian",
                     "subsections": []
                 },
                 {
                     "title": "Skeletons",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Skeletons",
                     "subsections": []
                 },
                 {
                     "title": "Slaadi",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Slaadi",
                     "subsections": [
                         {
                             "title": "Red Slaad",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#RedSlaad",
                             "subsections": []
                         },
                         {
                             "title": "Blue Slaad",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#BlueSlaad",
                             "subsections": []
                         },
                         {
                             "title": "Green Slaad",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#GreenSlaad",
                             "subsections": []
                         },
                         {
                             "title": "Gray Slaad",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#GraySlaad",
                             "subsections": []
                         },
                         {
                             "title": "Death Slaad",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#DeathSlaad",
                             "subsections": []
                         }
@@ -1487,35 +1487,35 @@
                 },
                 {
                     "title": "Specter",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Specter",
                     "subsections": []
                 },
                 {
                     "title": "Sphinxes",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Sphinxes",
                     "subsections": [
                         {
                             "title": "Androsphinx",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#Androsphinx",
                             "subsections": []
                         },
                         {
                             "title": "Gynosphinx",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#Gynosphinx",
                             "subsections": []
                         },
                         {
                             "title": "A Sphinx’s Lair",
-                            "urlName": "rules/mm/monsters-s",
+                            "urlName": "mm/monsters-s",
                             "anchorName": "#ASphinxsLair",
                             "subsections": [
                                 {
                                     "title": "Lair Actions",
-                                    "urlName": "rules/mm/monsters-s",
+                                    "urlName": "mm/monsters-s",
                                     "anchorName": "#LairActions",
                                     "subsections": []
                                 }
@@ -1525,19 +1525,19 @@
                 },
                 {
                     "title": "Sprite",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Sprite",
                     "subsections": []
                 },
                 {
                     "title": "Stirge",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#Stirge",
                     "subsections": []
                 },
                 {
                     "title": "Succubus/Incubus",
-                    "urlName": "rules/mm/monsters-s",
+                    "urlName": "mm/monsters-s",
                     "anchorName": "#SuccubusIncubus",
                     "subsections": []
                 }
@@ -1545,36 +1545,36 @@
         },
         {
             "title": "T | Monsters",
-            "urlName": "rules/mm/monsters-t",
+            "urlName": "mm/monsters-t",
             "anchorName": "#TMonsters",
             "subsections": [
                 {
                     "title": "Tarrasque",
-                    "urlName": "rules/mm/monsters-t",
+                    "urlName": "mm/monsters-t",
                     "anchorName": "#Tarrasque",
                     "subsections": []
                 },
                 {
                     "title": "Thri-kreen",
-                    "urlName": "rules/mm/monsters-t",
+                    "urlName": "mm/monsters-t",
                     "anchorName": "#Thrikreen",
                     "subsections": []
                 },
                 {
                     "title": "Treant",
-                    "urlName": "rules/mm/monsters-t",
+                    "urlName": "mm/monsters-t",
                     "anchorName": "#Treant",
                     "subsections": []
                 },
                 {
                     "title": "Troglodyte",
-                    "urlName": "rules/mm/monsters-t",
+                    "urlName": "mm/monsters-t",
                     "anchorName": "#Troglodyte",
                     "subsections": []
                 },
                 {
                     "title": "Troll",
-                    "urlName": "rules/mm/monsters-t",
+                    "urlName": "mm/monsters-t",
                     "anchorName": "#Troll",
                     "subsections": []
                 }
@@ -1582,28 +1582,28 @@
         },
         {
             "title": "U | Monsters",
-            "urlName": "rules/mm/monsters-u",
+            "urlName": "mm/monsters-u",
             "anchorName": "#UMonsters",
             "subsections": [
                 {
                     "title": "Umber Hulk",
-                    "urlName": "rules/mm/monsters-u",
+                    "urlName": "mm/monsters-u",
                     "anchorName": "#UmberHulk",
                     "subsections": []
                 },
                 {
                     "title": "Unicorn",
-                    "urlName": "rules/mm/monsters-u",
+                    "urlName": "mm/monsters-u",
                     "anchorName": "#Unicorn",
                     "subsections": [
                         {
                             "title": "A Unicorn’s Lair",
-                            "urlName": "rules/mm/monsters-u",
+                            "urlName": "mm/monsters-u",
                             "anchorName": "#AUnicornsLair",
                             "subsections": [
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-u",
+                                    "urlName": "mm/monsters-u",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -1615,22 +1615,22 @@
         },
         {
             "title": "V | Monsters",
-            "urlName": "rules/mm/monsters-v",
+            "urlName": "mm/monsters-v",
             "anchorName": "#VMonsters",
             "subsections": [
                 {
                     "title": "Vampires",
-                    "urlName": "rules/mm/monsters-v",
+                    "urlName": "mm/monsters-v",
                     "anchorName": "#Vampires",
                     "subsections": [
                         {
                             "title": "A Vampire’s Lair",
-                            "urlName": "rules/mm/monsters-v",
+                            "urlName": "mm/monsters-v",
                             "anchorName": "#AVampiresLair",
                             "subsections": [
                                 {
                                     "title": "Regional Effects",
-                                    "urlName": "rules/mm/monsters-v",
+                                    "urlName": "mm/monsters-v",
                                     "anchorName": "#RegionalEffects",
                                     "subsections": []
                                 }
@@ -1642,36 +1642,36 @@
         },
         {
             "title": "W | Monsters",
-            "urlName": "rules/mm/monsters-w",
+            "urlName": "mm/monsters-w",
             "anchorName": "#WMonsters",
             "subsections": [
                 {
                     "title": "Water Weird",
-                    "urlName": "rules/mm/monsters-w",
+                    "urlName": "mm/monsters-w",
                     "anchorName": "#WaterWeird",
                     "subsections": []
                 },
                 {
                     "title": "Wight",
-                    "urlName": "rules/mm/monsters-w",
+                    "urlName": "mm/monsters-w",
                     "anchorName": "#Wight",
                     "subsections": []
                 },
                 {
                     "title": "Will-o’-Wisp",
-                    "urlName": "rules/mm/monsters-w",
+                    "urlName": "mm/monsters-w",
                     "anchorName": "#WilloWisp",
                     "subsections": []
                 },
                 {
                     "title": "Wraith",
-                    "urlName": "rules/mm/monsters-w",
+                    "urlName": "mm/monsters-w",
                     "anchorName": "#Wraith",
                     "subsections": []
                 },
                 {
                     "title": "Wyvern",
-                    "urlName": "rules/mm/monsters-w",
+                    "urlName": "mm/monsters-w",
                     "anchorName": "#Wyvern",
                     "subsections": []
                 }
@@ -1679,12 +1679,12 @@
         },
         {
             "title": "X | Monsters",
-            "urlName": "rules/mm/monsters-x",
+            "urlName": "mm/monsters-x",
             "anchorName": "#XMonsters",
             "subsections": [
                 {
                     "title": "Xorn",
-                    "urlName": "rules/mm/monsters-x",
+                    "urlName": "mm/monsters-x",
                     "anchorName": "#Xorn",
                     "subsections": []
                 }
@@ -1692,35 +1692,35 @@
         },
         {
             "title": "Y | Monsters",
-            "urlName": "rules/mm/monsters-y",
+            "urlName": "mm/monsters-y",
             "anchorName": "#YMonsters",
             "subsections": [
                 {
                     "title": "Yeti",
-                    "urlName": "rules/mm/monsters-y",
+                    "urlName": "mm/monsters-y",
                     "anchorName": "#Yeti",
                     "subsections": []
                 },
                 {
                     "title": "Yuan-ti",
-                    "urlName": "rules/mm/monsters-y",
+                    "urlName": "mm/monsters-y",
                     "anchorName": "#Yuanti",
                     "subsections": [
                         {
                             "title": "Yuan-ti Abomination",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#YuantiAbomination",
                             "subsections": []
                         },
                         {
                             "title": "Yuan-ti Malison",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#YuantiMalison",
                             "subsections": []
                         },
                         {
                             "title": "Yuan-ti Pureblood",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#YuantiPureblood",
                             "subsections": []
                         }
@@ -1728,30 +1728,30 @@
                 },
                 {
                     "title": "Yugoloths",
-                    "urlName": "rules/mm/monsters-y",
+                    "urlName": "mm/monsters-y",
                     "anchorName": "#Yugoloths",
                     "subsections": [
                         {
                             "title": "Arcanaloth",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#Arcanaloth",
                             "subsections": []
                         },
                         {
                             "title": "Mezzoloth",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#Mezzoloth",
                             "subsections": []
                         },
                         {
                             "title": "Nycaloth",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#Nycaloth",
                             "subsections": []
                         },
                         {
                             "title": "Ultroloth",
-                            "urlName": "rules/mm/monsters-y",
+                            "urlName": "mm/monsters-y",
                             "anchorName": "#Ultroloth",
                             "subsections": []
                         }
@@ -1761,12 +1761,12 @@
         },
         {
             "title": "Z | Monsters",
-            "urlName": "rules/mm/monsters-z",
+            "urlName": "mm/monsters-z",
             "anchorName": "#ZMonsters",
             "subsections": [
                 {
                     "title": "Zombies",
-                    "urlName": "rules/mm/monsters-z",
+                    "urlName": "mm/monsters-z",
                     "anchorName": "#Zombies",
                     "subsections": []
                 }
@@ -1774,36 +1774,36 @@
         },
         {
             "title": "Appendix A: Miscellaneous Creatures",
-            "urlName": "rules/mm/miscellaneous-creatures",
+            "urlName": "mm/miscellaneous-creatures",
             "anchorName": "#AppendixAMiscellaneousCreatures",
             "subsections": [
                 {
                     "title": "Creatures A - D",
-                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "urlName": "mm/miscellaneous-creatures",
                     "anchorName": "#CreaturesAD",
                     "subsections": []
                 },
                 {
                     "title": "Creatures E - G",
-                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "urlName": "mm/miscellaneous-creatures",
                     "anchorName": "#CreaturesEG",
                     "subsections": []
                 },
                 {
                     "title": "Creatures H - O",
-                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "urlName": "mm/miscellaneous-creatures",
                     "anchorName": "#CreaturesHO",
                     "subsections": []
                 },
                 {
                     "title": "Creatures P - R",
-                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "urlName": "mm/miscellaneous-creatures",
                     "anchorName": "#CreaturesPR",
                     "subsections": []
                 },
                 {
                     "title": "Creatures S - W",
-                    "urlName": "rules/mm/miscellaneous-creatures",
+                    "urlName": "mm/miscellaneous-creatures",
                     "anchorName": "#CreaturesSW",
                     "subsections": []
                 }
@@ -1811,18 +1811,18 @@
         },
         {
             "title": "Appendix B: Nonplayer Characters",
-            "urlName": "rules/mm/nonplayer-characters",
+            "urlName": "mm/nonplayer-characters",
             "anchorName": "#AppendixBNonplayerCharacters",
             "subsections": [
                 {
                     "title": "Customizing NPCs",
-                    "urlName": "rules/mm/nonplayer-characters",
+                    "urlName": "mm/nonplayer-characters",
                     "anchorName": "#CustomizingNPCs",
                     "subsections": []
                 },
                 {
                     "title": "NPC Descriptions",
-                    "urlName": "rules/mm/nonplayer-characters",
+                    "urlName": "mm/nonplayer-characters",
                     "anchorName": "#NPCDescriptions",
                     "subsections": []
                 }
@@ -1830,7 +1830,7 @@
         },
         {
             "title": "Credits",
-            "urlName": "rules/mm/credits",
+            "urlName": "mm/credits",
             "anchorName": "#Credits",
             "subsections": []
         }

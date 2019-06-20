@@ -1,4 +1,6 @@
 (() => {
+    const toSrc = (url) => url.replace("compendium/rules", "sources").replace("compendium/adventures", "sources");
+
     const data = { adventures: {}, rules: {} };
 
     const compendiums = [
@@ -13,6 +15,7 @@
         "https://www.dndbeyond.com/compendium/rules/scag",
         "https://www.dndbeyond.com/compendium/rules/wgte",
         "https://www.dndbeyond.com/compendium/rules/ttp",
+        "https://www.dndbeyond.com/compendium/rules/ai",
         "https://www.dndbeyond.com/compendium/adventures/wdotmm",
         "https://www.dndbeyond.com/compendium/adventures/wdh",
         "https://www.dndbeyond.com/compendium/adventures/toa",
@@ -36,11 +39,12 @@
             processBook(bookRefs.slice(1));
             return;
         }
-        const chapterUrl = chapterRefs[0];
+        let chapterUrl = chapterRefs[0];
         $.ajax(chapterUrl, {
             url: chapterUrl,
             dataType: "html",
             success: (response) => {
+                chapterUrl = toSrc(chapterUrl);
                 console.log(chapterUrl);
                 function recurse(heads, arr, url) {
                     if (heads.length === 0) return;
@@ -67,11 +71,11 @@
 
                 }
 
-                const url = chapterUrl.substr(37);
+                const url = chapterUrl.substr(34);
                 var heads = $('#content', $(response)).find('h1, h2, h3, h4, h5').not('.quick-menu-exclude').get();
                 while (heads.length > 0 && heads[0].tagName !== "H1") heads.splice(0, 1);
 
-                recurse(heads, data[type][url.split("/")[1]].subsections, url);
+                recurse(heads, data[type][url.split("/")[0]].subsections, url);
                 processChapters(type, bookRefs, chapterRefs.slice(1));
             }
         });
@@ -114,6 +118,7 @@
                         const url = new URL(a.href);
                         if (url.pathname === compendiumUrlObj.pathname) return;
                         const chapterUrl = url.origin + url.pathname;
+                        if (chapterUrl.startsWith("https://www.dndbeyond.com/compendium/rules/basic-rules/basic-rules/")) return;
                         if (refs.indexOf(chapterUrl) === -1) refs.push(chapterUrl);
                     });
                 }

@@ -5,12 +5,12 @@
     "subsections": [
         {
             "title": "Preface",
-            "urlName": "rules/scag/preface",
+            "urlName": "scag/preface",
             "anchorName": "#Preface",
             "subsections": [
                 {
                     "title": "Using This Book",
-                    "urlName": "rules/scag/preface",
+                    "urlName": "scag/preface",
                     "anchorName": "#UsingThisBook",
                     "subsections": []
                 }
@@ -18,41 +18,41 @@
         },
         {
             "title": "Chapter 1: Welcome to the Realms",
-            "urlName": "rules/scag/welcome-to-the-realms",
+            "urlName": "scag/welcome-to-the-realms",
             "anchorName": "#Chapter1WelcometotheRealms",
             "subsections": [
                 {
                     "title": "The Sword Coast and the North",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#TheSwordCoastandtheNorth",
                     "subsections": [
                         {
                             "title": "The Lords’ Alliance",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheLordsAlliance",
                             "subsections": []
                         },
                         {
                             "title": "Dwarfholds of the North",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#DwarfholdsoftheNorth",
                             "subsections": []
                         },
                         {
                             "title": "Island Kingdoms",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#IslandKingdoms",
                             "subsections": []
                         },
                         {
                             "title": "Independent Realms",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#IndependentRealms",
                             "subsections": []
                         },
                         {
                             "title": "The Underdark",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheUnderdark",
                             "subsections": []
                         }
@@ -60,23 +60,23 @@
                 },
                 {
                     "title": "Toril and Its Lands",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#TorilandItsLands",
                     "subsections": [
                         {
                             "title": "Faerûn",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#Faern",
                             "subsections": [
                                 {
                                     "title": "Lands to the South",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#LandstotheSouth",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Lands to the East",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#LandstotheEast",
                                     "subsections": []
                                 }
@@ -84,19 +84,19 @@
                         },
                         {
                             "title": "Kara-Tur",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#KaraTur",
                             "subsections": []
                         },
                         {
                             "title": "Zakhara",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#Zakhara",
                             "subsections": []
                         },
                         {
                             "title": "Beyond the Trackless Sea",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#BeyondtheTracklessSea",
                             "subsections": []
                         }
@@ -104,24 +104,24 @@
                 },
                 {
                     "title": "Time in the Realms",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#TimeintheRealms",
                     "subsections": [
                         {
                             "title": "Special Calendar Days",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#SpecialCalendarDays",
                             "subsections": []
                         },
                         {
                             "title": "Keeping Time from Day to Day",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#KeepingTimefromDaytoDay",
                             "subsections": []
                         },
                         {
                             "title": "The Shifting of the Seasons",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheShiftingoftheSeasons",
                             "subsections": []
                         }
@@ -129,35 +129,35 @@
                 },
                 {
                     "title": "A Brief History",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#ABriefHistory",
                     "subsections": [
                         {
                             "title": "The Days of Thunder",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheDaysofThunder",
                             "subsections": []
                         },
                         {
                             "title": "The First Flowering",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheFirstFlowering",
                             "subsections": [
                                 {
                                     "title": "The First Sundering",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheFirstSundering",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Crown Wars",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheCrownWars",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Descent of the Drow",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheDescentoftheDrow",
                                     "subsections": []
                                 }
@@ -165,18 +165,18 @@
                         },
                         {
                             "title": "The Age of Humanity",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheAgeofHumanity",
                             "subsections": [
                                 {
                                     "title": "The Rise and Fall of Netheril",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheRiseandFallofNetheril",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Great Cities",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheGreatCities",
                                     "subsections": []
                                 }
@@ -184,30 +184,30 @@
                         },
                         {
                             "title": "The Present Age",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#ThePresentAge",
                             "subsections": [
                                 {
                                     "title": "The Time of Troubles",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheTimeofTroubles",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Return of Netheril",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheReturnofNetheril",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Spellplague",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheSpellplague",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Second Sundering",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TheSecondSundering",
                                     "subsections": []
                                 }
@@ -217,30 +217,30 @@
                 },
                 {
                     "title": "Magic in the Realms",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#MagicintheRealms",
                     "subsections": [
                         {
                             "title": "The Weave",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheWeave",
                             "subsections": []
                         },
                         {
                             "title": "Supernatural Powers and Psionics",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#SupernaturalPowersandPsionics",
                             "subsections": []
                         },
                         {
                             "title": "Magic Items",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#MagicItems",
                             "subsections": []
                         },
                         {
                             "title": "Mythals",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#Mythals",
                             "subsections": []
                         }
@@ -248,23 +248,23 @@
                 },
                 {
                     "title": "Religion in the Realms",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#ReligionintheRealms",
                     "subsections": [
                         {
                             "title": "Forms of Worship",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#FormsofWorship",
                             "subsections": [
                                 {
                                     "title": "New and Foreign Gods",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#NewandForeignGods",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Dead and Resurrected Gods",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#DeadandResurrectedGods",
                                     "subsections": []
                                 }
@@ -272,36 +272,36 @@
                         },
                         {
                             "title": "The Afterlife",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#TheAfterlife",
                             "subsections": []
                         },
                         {
                             "title": "Religious Institutions",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#ReligiousInstitutions",
                             "subsections": [
                                 {
                                     "title": "Temples and Shrines",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#TemplesandShrines",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Communing with the Gods",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#CommuningwiththeGods",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Priesthood",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#Priesthood",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Conflicts and Persecution",
-                                    "urlName": "rules/scag/welcome-to-the-realms",
+                                    "urlName": "scag/welcome-to-the-realms",
                                     "anchorName": "#ConflictsandPersecution",
                                     "subsections": []
                                 }
@@ -309,7 +309,7 @@
                         },
                         {
                             "title": "Divine Magic",
-                            "urlName": "rules/scag/welcome-to-the-realms",
+                            "urlName": "scag/welcome-to-the-realms",
                             "anchorName": "#DivineMagic",
                             "subsections": []
                         }
@@ -317,7 +317,7 @@
                 },
                 {
                     "title": "The Gods of Faerûn",
-                    "urlName": "rules/scag/welcome-to-the-realms",
+                    "urlName": "scag/welcome-to-the-realms",
                     "anchorName": "#TheGodsofFaern",
                     "subsections": []
                 }
@@ -325,65 +325,65 @@
         },
         {
             "title": "Chapter 2: The Sword Coast and the North",
-            "urlName": "rules/scag/the-sword-coast-and-the-north",
+            "urlName": "scag/the-sword-coast-and-the-north",
             "anchorName": "#Chapter2TheSwordCoastandtheNorth",
             "subsections": [
                 {
                     "title": "The Lords’ Alliance",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#TheLordsAlliance",
                     "subsections": [
                         {
                             "title": "Amphail",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Amphail",
                             "subsections": []
                         },
                         {
                             "title": "Baldur’s Gate",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#BaldursGate",
                             "subsections": []
                         },
                         {
                             "title": "Daggerford",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Daggerford",
                             "subsections": []
                         },
                         {
                             "title": "Longsaddle",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Longsaddle",
                             "subsections": []
                         },
                         {
                             "title": "Mirabar",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Mirabar",
                             "subsections": []
                         },
                         {
                             "title": "Neverwinter",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Neverwinter",
                             "subsections": []
                         },
                         {
                             "title": "Silverymoon",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Silverymoon",
                             "subsections": []
                         },
                         {
                             "title": "Waterdeep",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Waterdeep",
                             "subsections": []
                         },
                         {
                             "title": "Yartar",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Yartar",
                             "subsections": []
                         }
@@ -391,48 +391,48 @@
                 },
                 {
                     "title": "Dwarfholds of the North",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#DwarfholdsoftheNorth",
                     "subsections": [
                         {
                             "title": "Citadel Adbar",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#CitadelAdbar",
                             "subsections": []
                         },
                         {
                             "title": "Citadel Felbarr",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#CitadelFelbarr",
                             "subsections": []
                         },
                         {
                             "title": "Gauntlgrym",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Gauntlgrym",
                             "subsections": []
                         },
                         {
                             "title": "Ironmaster",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Ironmaster",
                             "subsections": []
                         },
                         {
                             "title": "Mithral Hall",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#MithralHall",
                             "subsections": []
                         },
                         {
                             "title": "Sundabar",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Sundabar",
                             "subsections": []
                         },
                         {
                             "title": "Thornhold",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Thornhold",
                             "subsections": []
                         }
@@ -440,12 +440,12 @@
                 },
                 {
                     "title": "Island Kingdoms",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#IslandKingdoms",
                     "subsections": [
                         {
                             "title": "Mintarn",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Mintarn",
                             "subsections": []
                         }
@@ -453,30 +453,30 @@
                 },
                 {
                     "title": "The Moonshaes",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#TheMoonshaes",
                     "subsections": [
                         {
                             "title": "Northlander Isles",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#NorthlanderIsles",
                             "subsections": []
                         },
                         {
                             "title": "Orlumbor",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Orlumbor",
                             "subsections": []
                         },
                         {
                             "title": "Southern Isles",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#SouthernIsles",
                             "subsections": []
                         },
                         {
                             "title": "Evermeet",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Evermeet",
                             "subsections": []
                         }
@@ -484,114 +484,114 @@
                 },
                 {
                     "title": "Independent Realms",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#IndependentRealms",
                     "subsections": [
                         {
                             "title": "Boareskyr Bridge",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#BoareskyrBridge",
                             "subsections": []
                         },
                         {
                             "title": "Candlekeep",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Candlekeep",
                             "subsections": []
                         },
                         {
                             "title": "Darkhold",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Darkhold",
                             "subsections": []
                         },
                         {
                             "title": "Elturgard",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Elturgard",
                             "subsections": []
                         },
                         {
                             "title": "Evereska",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Evereska",
                             "subsections": []
                         },
                         {
                             "title": "Fields of the Dead",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#FieldsoftheDead",
                             "subsections": []
                         },
                         {
                             "title": "Dragonspear Castle",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#DragonspearCastle",
                             "subsections": []
                         },
                         {
                             "title": "Trollclaws",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Trollclaws",
                             "subsections": []
                         },
                         {
                             "title": "Hartsvale",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Hartsvale",
                             "subsections": []
                         },
                         {
                             "title": "Helm’s Hold",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#HelmsHold",
                             "subsections": []
                         },
                         {
                             "title": "High Forest",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#HighForest",
                             "subsections": []
                         },
                         {
                             "title": "High Moor",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#HighMoor",
                             "subsections": []
                         },
                         {
                             "title": "Najara",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Najara",
                             "subsections": []
                         },
                         {
                             "title": "Trielta Hills",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#TrieltaHills",
                             "subsections": []
                         },
                         {
                             "title": "Uthgardt Lands",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#UthgardtLands",
                             "subsections": []
                         },
                         {
                             "title": "Warlock’s Crypt",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#WarlocksCrypt",
                             "subsections": []
                         },
                         {
                             "title": "Luskan",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Luskan",
                             "subsections": []
                         },
                         {
                             "title": "Icewind Dale",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#IcewindDale",
                             "subsections": []
                         }
@@ -599,42 +599,42 @@
                 },
                 {
                     "title": "The Underdark",
-                    "urlName": "rules/scag/the-sword-coast-and-the-north",
+                    "urlName": "scag/the-sword-coast-and-the-north",
                     "anchorName": "#TheUnderdark",
                     "subsections": [
                         {
                             "title": "Capture",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Capture",
                             "subsections": []
                         },
                         {
                             "title": "Gracklstugh",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Gracklstugh",
                             "subsections": []
                         },
                         {
                             "title": "Mantol-Derith",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#MantolDerith",
                             "subsections": []
                         },
                         {
                             "title": "Menzoberranzan",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Menzoberranzan",
                             "subsections": []
                         },
                         {
                             "title": "Escape",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Escape",
                             "subsections": []
                         },
                         {
                             "title": "Blingdenstone",
-                            "urlName": "rules/scag/the-sword-coast-and-the-north",
+                            "urlName": "scag/the-sword-coast-and-the-north",
                             "anchorName": "#Blingdenstone",
                             "subsections": []
                         }
@@ -644,35 +644,35 @@
         },
         {
             "title": "Chapter 3: Races of the Realms",
-            "urlName": "rules/scag/races-of-the-realms",
+            "urlName": "scag/races-of-the-realms",
             "anchorName": "#Chapter3RacesoftheRealms",
             "subsections": [
                 {
                     "title": "Dwarves",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Dwarves",
                     "subsections": [
                         {
                             "title": "Shield Dwarves",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#ShieldDwarves",
                             "subsections": []
                         },
                         {
                             "title": "Gold Dwarves",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#GoldDwarves",
                             "subsections": []
                         },
                         {
                             "title": "Gray Dwarves (Duergar)",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#GrayDwarvesDuergar",
                             "subsections": []
                         },
                         {
                             "title": "Dwarven Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#DwarvenDeities",
                             "subsections": []
                         }
@@ -680,36 +680,36 @@
                 },
                 {
                     "title": "Elves",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Elves",
                     "subsections": [
                         {
                             "title": "Moon Elves",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#MoonElves",
                             "subsections": []
                         },
                         {
                             "title": "Sun Elves",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#SunElves",
                             "subsections": []
                         },
                         {
                             "title": "Wood Elves",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#WoodElves",
                             "subsections": []
                         },
                         {
                             "title": "Dark Elves (Drow)",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#DarkElvesDrow",
                             "subsections": []
                         },
                         {
                             "title": "Elven Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#ElvenDeities",
                             "subsections": []
                         }
@@ -717,24 +717,24 @@
                 },
                 {
                     "title": "Halflings",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Halflings",
                     "subsections": [
                         {
                             "title": "Lightfoot Halflings",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#LightfootHalflings",
                             "subsections": []
                         },
                         {
                             "title": "Strongheart Halflings",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#StrongheartHalflings",
                             "subsections": []
                         },
                         {
                             "title": "Halfling Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HalflingDeities",
                             "subsections": []
                         }
@@ -742,18 +742,18 @@
                 },
                 {
                     "title": "Humans",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Humans",
                     "subsections": [
                         {
                             "title": "Human Ethnicities in Faerûn",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HumanEthnicitiesinFaern",
                             "subsections": []
                         },
                         {
                             "title": "Humans’ Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HumansDeities",
                             "subsections": []
                         }
@@ -761,30 +761,30 @@
                 },
                 {
                     "title": "Dragonborn",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Dragonborn",
                     "subsections": [
                         {
                             "title": "Uncertain Origins",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#UncertainOrigins",
                             "subsections": []
                         },
                         {
                             "title": "The Fight for Freedom",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#TheFightforFreedom",
                             "subsections": []
                         },
                         {
                             "title": "Honor and Family",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HonorandFamily",
                             "subsections": []
                         },
                         {
                             "title": "Philosophy and Religion",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#PhilosophyandReligion",
                             "subsections": []
                         }
@@ -792,30 +792,30 @@
                 },
                 {
                     "title": "Gnomes",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Gnomes",
                     "subsections": [
                         {
                             "title": "Forest Gnomes",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#ForestGnomes",
                             "subsections": []
                         },
                         {
                             "title": "Rock Gnomes",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#RockGnomes",
                             "subsections": []
                         },
                         {
                             "title": "Deep Gnomes (Svirfneblin)",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#DeepGnomesSvirfneblin",
                             "subsections": []
                         },
                         {
                             "title": "Gnomish Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#GnomishDeities",
                             "subsections": []
                         }
@@ -823,24 +823,24 @@
                 },
                 {
                     "title": "Half-Elves",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#HalfElves",
                     "subsections": [
                         {
                             "title": "Young Race, Old Roots",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#YoungRaceOldRoots",
                             "subsections": []
                         },
                         {
                             "title": "Mixed Heritage",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#MixedHeritage",
                             "subsections": []
                         },
                         {
                             "title": "The Gods of Two Peoples",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#TheGodsofTwoPeoples",
                             "subsections": []
                         }
@@ -848,24 +848,24 @@
                 },
                 {
                     "title": "Half-Orcs",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#HalfOrcs",
                     "subsections": [
                         {
                             "title": "Blood Will Tell",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#BloodWillTell",
                             "subsections": []
                         },
                         {
                             "title": "Half-Orc Homelands",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HalfOrcHomelands",
                             "subsections": []
                         },
                         {
                             "title": "Half-Orc Deities",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#HalfOrcDeities",
                             "subsections": []
                         }
@@ -873,30 +873,30 @@
                 },
                 {
                     "title": "Tieflings",
-                    "urlName": "rules/scag/races-of-the-realms",
+                    "urlName": "scag/races-of-the-realms",
                     "anchorName": "#Tieflings",
                     "subsections": [
                         {
                             "title": "The Mark of Asmodeus",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#TheMarkofAsmodeus",
                             "subsections": []
                         },
                         {
                             "title": "A Race without a Home",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#ARacewithoutaHome",
                             "subsections": []
                         },
                         {
                             "title": "Lone Faithful",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#LoneFaithful",
                             "subsections": []
                         },
                         {
                             "title": "Tiefling Names",
-                            "urlName": "rules/scag/races-of-the-realms",
+                            "urlName": "scag/races-of-the-realms",
                             "anchorName": "#TieflingNames",
                             "subsections": []
                         }
@@ -906,29 +906,29 @@
         },
         {
             "title": "Chapter 4: Classes",
-            "urlName": "rules/scag/classes",
+            "urlName": "scag/classes",
             "anchorName": "#Chapter4Classes",
             "subsections": [
                 {
                     "title": "Barbarians",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Barbarians",
                     "subsections": [
                         {
                             "title": "Primal Paths",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PrimalPaths",
                             "subsections": []
                         },
                         {
                             "title": "Path of the Battlerager",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PathoftheBattlerager",
                             "subsections": []
                         },
                         {
                             "title": "Path of the Totem Warrior",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PathoftheTotemWarrior",
                             "subsections": []
                         }
@@ -936,18 +936,18 @@
                 },
                 {
                     "title": "Bards",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Bards",
                     "subsections": [
                         {
                             "title": "The Harpers",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#TheHarpers",
                             "subsections": []
                         },
                         {
                             "title": "Bardic Colleges",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#BardicColleges",
                             "subsections": []
                         }
@@ -955,18 +955,18 @@
                 },
                 {
                     "title": "Clerics",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Clerics",
                     "subsections": [
                         {
                             "title": "Divine Domain",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#DivineDomain",
                             "subsections": []
                         },
                         {
                             "title": "Arcana Domain",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#ArcanaDomain",
                             "subsections": []
                         }
@@ -974,12 +974,12 @@
                 },
                 {
                     "title": "Druids",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Druids",
                     "subsections": [
                         {
                             "title": "Druid Circles",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#DruidCircles",
                             "subsections": []
                         }
@@ -987,18 +987,18 @@
                 },
                 {
                     "title": "Fighters",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Fighters",
                     "subsections": [
                         {
                             "title": "Martial Archetype",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#MartialArchetype",
                             "subsections": []
                         },
                         {
                             "title": "Purple Dragon Knight",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PurpleDragonKnight",
                             "subsections": []
                         }
@@ -1006,30 +1006,30 @@
                 },
                 {
                     "title": "Monks",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Monks",
                     "subsections": [
                         {
                             "title": "Monastic Orders",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#MonasticOrders",
                             "subsections": []
                         },
                         {
                             "title": "Monastic Traditions",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#MonasticTraditions",
                             "subsections": []
                         },
                         {
                             "title": "Way of the Long Death",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#WayoftheLongDeath",
                             "subsections": []
                         },
                         {
                             "title": "Way of the Sun Soul",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#WayoftheSunSoul",
                             "subsections": []
                         }
@@ -1037,24 +1037,24 @@
                 },
                 {
                     "title": "Paladins",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Paladins",
                     "subsections": [
                         {
                             "title": "Paladin Orders",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PaladinOrders",
                             "subsections": []
                         },
                         {
                             "title": "Sacred Oath",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#SacredOath",
                             "subsections": []
                         },
                         {
                             "title": "Oath of the Crown",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#OathoftheCrown",
                             "subsections": []
                         }
@@ -1062,30 +1062,30 @@
                 },
                 {
                     "title": "Rangers",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Rangers",
                     "subsections": [
                         {
                             "title": "Human Rangers",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#HumanRangers",
                             "subsections": []
                         },
                         {
                             "title": "Elf Rangers",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#ElfRangers",
                             "subsections": []
                         },
                         {
                             "title": "Halfling Rangers",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#HalflingRangers",
                             "subsections": []
                         },
                         {
                             "title": "Dwarf Rangers",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#DwarfRangers",
                             "subsections": []
                         }
@@ -1093,24 +1093,24 @@
                 },
                 {
                     "title": "Rogues",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Rogues",
                     "subsections": [
                         {
                             "title": "Roguish Archetypes",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#RoguishArchetypes",
                             "subsections": []
                         },
                         {
                             "title": "Mastermind",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#Mastermind",
                             "subsections": []
                         },
                         {
                             "title": "Swashbuckler",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#Swashbuckler",
                             "subsections": []
                         }
@@ -1118,36 +1118,36 @@
                 },
                 {
                     "title": "Sorcerers",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Sorcerers",
                     "subsections": [
                         {
                             "title": "Wild Magic",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#WildMagic",
                             "subsections": []
                         },
                         {
                             "title": "Draconic Magic",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#DraconicMagic",
                             "subsections": []
                         },
                         {
                             "title": "Magic of the Storm",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#MagicoftheStorm",
                             "subsections": []
                         },
                         {
                             "title": "Sorcerous Origin",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#SorcerousOrigin",
                             "subsections": []
                         },
                         {
                             "title": "Storm Sorcery",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#StormSorcery",
                             "subsections": []
                         }
@@ -1155,24 +1155,24 @@
                 },
                 {
                     "title": "Warlocks",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Warlocks",
                     "subsections": [
                         {
                             "title": "Patrons in the Realms",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#PatronsintheRealms",
                             "subsections": []
                         },
                         {
                             "title": "Otherworldly Patron",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#OtherworldlyPatron",
                             "subsections": []
                         },
                         {
                             "title": "The Undying",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#TheUndying",
                             "subsections": []
                         }
@@ -1180,24 +1180,24 @@
                 },
                 {
                     "title": "Wizards",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#Wizards",
                     "subsections": [
                         {
                             "title": "Wizardly Groups",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#WizardlyGroups",
                             "subsections": []
                         },
                         {
                             "title": "Arcane Tradition",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#ArcaneTradition",
                             "subsections": []
                         },
                         {
                             "title": "Bladesinging",
-                            "urlName": "rules/scag/classes",
+                            "urlName": "scag/classes",
                             "anchorName": "#Bladesinging",
                             "subsections": []
                         }
@@ -1205,7 +1205,7 @@
                 },
                 {
                     "title": "Cantrips for Sorcerers, Warlocks, and Wizards",
-                    "urlName": "rules/scag/classes",
+                    "urlName": "scag/classes",
                     "anchorName": "#CantripsforSorcerersWarlocksandWizards",
                     "subsections": []
                 }
@@ -1213,23 +1213,23 @@
         },
         {
             "title": "Chapter 5: Backgrounds",
-            "urlName": "rules/scag/backgrounds",
+            "urlName": "scag/backgrounds",
             "anchorName": "#Chapter5Backgrounds",
             "subsections": [
                 {
                     "title": "City Watch",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#CityWatch",
                     "subsections": [
                         {
                             "title": "Feature: Watcher’s Eye",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureWatchersEye",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1237,18 +1237,18 @@
                 },
                 {
                     "title": "Clan Crafter",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#ClanCrafter",
                     "subsections": [
                         {
                             "title": "Feature: Respect of the Stout Folk",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureRespectoftheStoutFolk",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1256,18 +1256,18 @@
                 },
                 {
                     "title": "Cloistered Scholar",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#CloisteredScholar",
                     "subsections": [
                         {
                             "title": "Feature: Library Access",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureLibraryAccess",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1275,18 +1275,18 @@
                 },
                 {
                     "title": "Courtier",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#Courtier",
                     "subsections": [
                         {
                             "title": "Feature: Court Functionary",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureCourtFunctionary",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1294,18 +1294,18 @@
                 },
                 {
                     "title": "Faction Agent",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#FactionAgent",
                     "subsections": [
                         {
                             "title": "Feature: Safe Haven",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureSafeHaven",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1313,30 +1313,30 @@
                 },
                 {
                     "title": "Far Traveler",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#FarTraveler",
                     "subsections": [
                         {
                             "title": "Why Are You Here?",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#WhyAreYouHere",
                             "subsections": []
                         },
                         {
                             "title": "Where Are You From?",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#WhereAreYouFrom",
                             "subsections": []
                         },
                         {
                             "title": "Feature: All Eyes on You",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureAllEyesonYou",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1344,18 +1344,18 @@
                 },
                 {
                     "title": "Inheritor",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#Inheritor",
                     "subsections": [
                         {
                             "title": "Feature: Inheritance",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureInheritance",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1363,18 +1363,18 @@
                 },
                 {
                     "title": "Knight of the Order",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#KnightoftheOrder",
                     "subsections": [
                         {
                             "title": "Feature: Knightly Regard",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureKnightlyRegard",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1382,18 +1382,18 @@
                 },
                 {
                     "title": "Mercenary Veteran",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#MercenaryVeteran",
                     "subsections": [
                         {
                             "title": "Feature: Mercenary Life",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureMercenaryLife",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1401,18 +1401,18 @@
                 },
                 {
                     "title": "Urban Bounty Hunter",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#UrbanBountyHunter",
                     "subsections": [
                         {
                             "title": "Feature: Ear to the Ground",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureEartotheGround",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1420,18 +1420,18 @@
                 },
                 {
                     "title": "Uthgardt Tribe Member",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#UthgardtTribeMember",
                     "subsections": [
                         {
                             "title": "Feature: Uthgardt Heritage",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureUthgardtHeritage",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1439,18 +1439,18 @@
                 },
                 {
                     "title": "Waterdhavian Noble",
-                    "urlName": "rules/scag/backgrounds",
+                    "urlName": "scag/backgrounds",
                     "anchorName": "#WaterdhavianNoble",
                     "subsections": [
                         {
                             "title": "Feature: Kept in Style",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#FeatureKeptinStyle",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "rules/scag/backgrounds",
+                            "urlName": "scag/backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -1460,59 +1460,59 @@
         },
         {
             "title": "Appendix: Class Options in Other Worlds",
-            "urlName": "rules/scag/class-options-in-other-worlds",
+            "urlName": "scag/class-options-in-other-worlds",
             "anchorName": "#AppendixClassOptionsinOtherWorlds",
             "subsections": [
                 {
                     "title": "Dragonlance",
-                    "urlName": "rules/scag/class-options-in-other-worlds",
+                    "urlName": "scag/class-options-in-other-worlds",
                     "anchorName": "#Dragonlance",
                     "subsections": [
                         {
                             "title": "Barbarian",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Barbarian",
                             "subsections": []
                         },
                         {
                             "title": "Cleric",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Cleric",
                             "subsections": []
                         },
                         {
                             "title": "Fighter",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Fighter",
                             "subsections": []
                         },
                         {
                             "title": "Monk",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Monk",
                             "subsections": []
                         },
                         {
                             "title": "Paladin",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Paladin",
                             "subsections": []
                         },
                         {
                             "title": "Rogue",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Rogue",
                             "subsections": []
                         },
                         {
                             "title": "Warlock",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Warlock",
                             "subsections": []
                         },
                         {
                             "title": "Wizard",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Wizard",
                             "subsections": []
                         }
@@ -1520,60 +1520,60 @@
                 },
                 {
                     "title": "Eberron",
-                    "urlName": "rules/scag/class-options-in-other-worlds",
+                    "urlName": "scag/class-options-in-other-worlds",
                     "anchorName": "#Eberron",
                     "subsections": [
                         {
                             "title": "Barbarian",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Barbarian",
                             "subsections": []
                         },
                         {
                             "title": "Cleric",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Cleric",
                             "subsections": []
                         },
                         {
                             "title": "Fighter",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Fighter",
                             "subsections": []
                         },
                         {
                             "title": "Monk",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Monk",
                             "subsections": []
                         },
                         {
                             "title": "Paladin",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Paladin",
                             "subsections": []
                         },
                         {
                             "title": "Rogue",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Rogue",
                             "subsections": []
                         },
                         {
                             "title": "Sorcerer",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Sorcerer",
                             "subsections": []
                         },
                         {
                             "title": "Warlock",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Warlock",
                             "subsections": []
                         },
                         {
                             "title": "Wizard",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Wizard",
                             "subsections": []
                         }
@@ -1581,54 +1581,54 @@
                 },
                 {
                     "title": "Greyhawk",
-                    "urlName": "rules/scag/class-options-in-other-worlds",
+                    "urlName": "scag/class-options-in-other-worlds",
                     "anchorName": "#Greyhawk",
                     "subsections": [
                         {
                             "title": "Barbarian",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Barbarian",
                             "subsections": []
                         },
                         {
                             "title": "Cleric",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Cleric",
                             "subsections": []
                         },
                         {
                             "title": "Fighter",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Fighter",
                             "subsections": []
                         },
                         {
                             "title": "Monk",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Monk",
                             "subsections": []
                         },
                         {
                             "title": "Paladin",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Paladin",
                             "subsections": []
                         },
                         {
                             "title": "Rogue",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Rogue",
                             "subsections": []
                         },
                         {
                             "title": "Warlock",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Warlock",
                             "subsections": []
                         },
                         {
                             "title": "Wizard",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Wizard",
                             "subsections": []
                         }
@@ -1636,54 +1636,54 @@
                 },
                 {
                     "title": "Homemade Worlds",
-                    "urlName": "rules/scag/class-options-in-other-worlds",
+                    "urlName": "scag/class-options-in-other-worlds",
                     "anchorName": "#HomemadeWorlds",
                     "subsections": [
                         {
                             "title": "Barbarian",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Barbarian",
                             "subsections": []
                         },
                         {
                             "title": "Cleric",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Cleric",
                             "subsections": []
                         },
                         {
                             "title": "Fighter",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Fighter",
                             "subsections": []
                         },
                         {
                             "title": "Monk",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Monk",
                             "subsections": []
                         },
                         {
                             "title": "Paladin",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Paladin",
                             "subsections": []
                         },
                         {
                             "title": "Sorcerer",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Sorcerer",
                             "subsections": []
                         },
                         {
                             "title": "Warlock",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Warlock",
                             "subsections": []
                         },
                         {
                             "title": "Wizard",
-                            "urlName": "rules/scag/class-options-in-other-worlds",
+                            "urlName": "scag/class-options-in-other-worlds",
                             "anchorName": "#Wizard",
                             "subsections": []
                         }
@@ -1693,12 +1693,12 @@
         },
         {
             "title": "Credits",
-            "urlName": "rules/scag/credits",
+            "urlName": "scag/credits",
             "anchorName": "#Credits",
             "subsections": [
                 {
                     "title": "Bibliography",
-                    "urlName": "rules/scag/credits",
+                    "urlName": "scag/credits",
                     "anchorName": "#Bibliography",
                     "subsections": []
                 }

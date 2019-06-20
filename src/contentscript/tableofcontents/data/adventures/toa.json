@@ -5,53 +5,53 @@
     "subsections": [
         {
             "title": "Dramatis Personae",
-            "urlName": "adventures/toa/dramatis-personae",
+            "urlName": "toa/dramatis-personae",
             "anchorName": "#DramatisPersonae",
             "subsections": []
         },
         {
             "title": "Introduction",
-            "urlName": "adventures/toa/introduction",
+            "urlName": "toa/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "Story Overview",
-                    "urlName": "adventures/toa/introduction",
+                    "urlName": "toa/introduction",
                     "anchorName": "#StoryOverview",
                     "subsections": []
                 },
                 {
                     "title": "Running the Adventure",
-                    "urlName": "adventures/toa/introduction",
+                    "urlName": "toa/introduction",
                     "anchorName": "#RunningtheAdventure",
                     "subsections": [
                         {
                             "title": "Abbreviations",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#Abbreviations",
                             "subsections": []
                         },
                         {
                             "title": "Adventure Summary",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#AdventureSummary",
                             "subsections": []
                         },
                         {
                             "title": "Death Curse",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#DeathCurse",
                             "subsections": []
                         },
                         {
                             "title": "Character Advancement",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#CharacterAdvancement",
                             "subsections": []
                         },
                         {
                             "title": "Starting at Higher Levels",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#StartingatHigherLevels",
                             "subsections": []
                         }
@@ -59,23 +59,23 @@
                 },
                 {
                     "title": "Starting the Adventure",
-                    "urlName": "adventures/toa/introduction",
+                    "urlName": "toa/introduction",
                     "anchorName": "#StartingtheAdventure",
                     "subsections": [
                         {
                             "title": "Syndra Silvane’s Curse",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#SyndraSilvanesCurse",
                             "subsections": []
                         },
                         {
                             "title": "Character Hooks",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#CharacterHooks",
                             "subsections": [
                                 {
                                     "title": "Character Hooks for Select Backgrounds",
-                                    "urlName": "adventures/toa/introduction",
+                                    "urlName": "toa/introduction",
                                     "anchorName": "#CharacterHooksforSelectBackgrounds",
                                     "subsections": []
                                 }
@@ -85,23 +85,23 @@
                 },
                 {
                     "title": "Welcome to Chult",
-                    "urlName": "adventures/toa/introduction",
+                    "urlName": "toa/introduction",
                     "anchorName": "#WelcometoChult",
                     "subsections": [
                         {
                             "title": "Weather",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#Weather",
                             "subsections": []
                         },
                         {
                             "title": "Races of Chult",
-                            "urlName": "adventures/toa/introduction",
+                            "urlName": "toa/introduction",
                             "anchorName": "#RacesofChult",
                             "subsections": [
                                 {
                                     "title": "Chultan Names",
-                                    "urlName": "adventures/toa/introduction",
+                                    "urlName": "toa/introduction",
                                     "anchorName": "#ChultanNames",
                                     "subsections": []
                                 }
@@ -113,59 +113,59 @@
         },
         {
             "title": "Chapter 1: Port Nyanzaru",
-            "urlName": "adventures/toa/port-nyanzaru",
+            "urlName": "toa/port-nyanzaru",
             "anchorName": "#Chapter1PortNyanzaru",
             "subsections": [
                 {
                     "title": "Arrival",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#Arrival",
                     "subsections": []
                 },
                 {
                     "title": "Side Quests",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#SideQuests",
                     "subsections": []
                 },
                 {
                     "title": "Locations in the City",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#LocationsintheCity",
                     "subsections": [
                         {
                             "title": "Old City",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#OldCity",
                             "subsections": []
                         },
                         {
                             "title": "Merchants’ Ward",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#MerchantsWard",
                             "subsections": []
                         },
                         {
                             "title": "Harbor Ward",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#HarborWard",
                             "subsections": []
                         },
                         {
                             "title": "Market Ward",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#MarketWard",
                             "subsections": []
                         },
                         {
                             "title": "Malar’s Throat",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#MalarsThroat",
                             "subsections": []
                         },
                         {
                             "title": "Tiryki Anchorage",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#TirykiAnchorage",
                             "subsections": []
                         }
@@ -173,35 +173,35 @@
                 },
                 {
                     "title": "City Denizens",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#CityDenizens",
                     "subsections": [
                         {
                             "title": "Volothamp “Volo” Geddarm",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#VolothampVoloGeddarm",
                             "subsections": []
                         },
                         {
                             "title": "Merchant Princes",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#MerchantPrinces",
                             "subsections": [
                                 {
                                     "title": "Magic Shields and Weapons for Sale",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#MagicShieldsandWeaponsforSale",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Beasts for Sale",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#BeastsforSale",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Magic Items for Sale",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#MagicItemsforSale",
                                     "subsections": []
                                 }
@@ -211,18 +211,18 @@
                 },
                 {
                     "title": "Merchant Prince’s Villa",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#MerchantPrincesVilla",
                     "subsections": [
                         {
                             "title": "Lower Level",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#LowerLevel",
                             "subsections": []
                         },
                         {
                             "title": "Upper Level",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#UpperLevel",
                             "subsections": []
                         }
@@ -230,54 +230,54 @@
                 },
                 {
                     "title": "Factions and Their Representatives",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#FactionsandTheirRepresentatives",
                     "subsections": [
                         {
                             "title": "Emerald Enclave",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#EmeraldEnclave",
                             "subsections": []
                         },
                         {
                             "title": "Flaming Fist",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#FlamingFist",
                             "subsections": []
                         },
                         {
                             "title": "Harpers",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#Harpers",
                             "subsections": []
                         },
                         {
                             "title": "Lords’ Alliance",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#LordsAlliance",
                             "subsections": []
                         },
                         {
                             "title": "Order of the Gauntlet",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#OrderoftheGauntlet",
                             "subsections": []
                         },
                         {
                             "title": "Red Wizards of Thay",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#RedWizardsofThay",
                             "subsections": []
                         },
                         {
                             "title": "Ytepka Society",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#YtepkaSociety",
                             "subsections": []
                         },
                         {
                             "title": "Zhentarim",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#Zhentarim",
                             "subsections": []
                         }
@@ -285,29 +285,29 @@
                 },
                 {
                     "title": "Things to Do",
-                    "urlName": "adventures/toa/port-nyanzaru",
+                    "urlName": "toa/port-nyanzaru",
                     "anchorName": "#ThingstoDo",
                     "subsections": [
                         {
                             "title": "Buying a Special Item",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#BuyingaSpecialItem",
                             "subsections": []
                         },
                         {
                             "title": "Dinosaur Racing",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#DinosaurRacing",
                             "subsections": [
                                 {
                                     "title": "Betting on Dinosaur Races",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#BettingonDinosaurRaces",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Racing Dinosaurs",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#RacingDinosaurs",
                                     "subsections": []
                                 }
@@ -315,18 +315,18 @@
                         },
                         {
                             "title": "Finding a Guide",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#FindingaGuide",
                             "subsections": []
                         },
                         {
                             "title": "Gathering Information",
-                            "urlName": "adventures/toa/port-nyanzaru",
+                            "urlName": "toa/port-nyanzaru",
                             "anchorName": "#GatheringInformation",
                             "subsections": [
                                 {
                                     "title": "Chult Rumors",
-                                    "urlName": "adventures/toa/port-nyanzaru",
+                                    "urlName": "toa/port-nyanzaru",
                                     "anchorName": "#ChultRumors",
                                     "subsections": []
                                 }
@@ -338,41 +338,41 @@
         },
         {
             "title": "Chapter 2: The Land of Chult",
-            "urlName": "adventures/toa/the-land-of-chult",
+            "urlName": "toa/the-land-of-chult",
             "anchorName": "#Chapter2TheLandofChult",
             "subsections": [
                 {
                     "title": "The Expedition Begins",
-                    "urlName": "adventures/toa/the-land-of-chult",
+                    "urlName": "toa/the-land-of-chult",
                     "anchorName": "#TheExpeditionBegins",
                     "subsections": [
                         {
                             "title": "Travel Distances",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#TravelDistances",
                             "subsections": []
                         },
                         {
                             "title": "Navigation",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#Navigation",
                             "subsections": []
                         },
                         {
                             "title": "Dehydration",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#Dehydration",
                             "subsections": []
                         },
                         {
                             "title": "Diseases",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#Diseases",
                             "subsections": []
                         },
                         {
                             "title": "Random Encounters",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#RandomEncounters",
                             "subsections": []
                         }
@@ -380,42 +380,42 @@
                 },
                 {
                     "title": "Locations in Chult",
-                    "urlName": "adventures/toa/the-land-of-chult",
+                    "urlName": "toa/the-land-of-chult",
                     "anchorName": "#LocationsinChult",
                     "subsections": [
                         {
                             "title": "Locations A - D",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsAD",
                             "subsections": []
                         },
                         {
                             "title": "Locations F - I",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsFI",
                             "subsections": []
                         },
                         {
                             "title": "Locations J - L",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsJL",
                             "subsections": []
                         },
                         {
                             "title": "Locations M - P",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsMP",
                             "subsections": []
                         },
                         {
                             "title": "Locations R - S",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsRS",
                             "subsections": []
                         },
                         {
                             "title": "Locations V - Y",
-                            "urlName": "adventures/toa/the-land-of-chult",
+                            "urlName": "toa/the-land-of-chult",
                             "anchorName": "#LocationsVY",
                             "subsections": []
                         }
@@ -425,59 +425,59 @@
         },
         {
             "title": "Chapter 3: Dwellers of the Forbidden City",
-            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+            "urlName": "toa/dwellers-of-the-forbidden-city",
             "anchorName": "#Chapter3DwellersoftheForbiddenCity",
             "subsections": [
                 {
                     "title": "Omu",
-                    "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                    "urlName": "toa/dwellers-of-the-forbidden-city",
                     "anchorName": "#Omu",
                     "subsections": [
                         {
                             "title": "Approaching the City",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#ApproachingtheCity",
                             "subsections": []
                         },
                         {
                             "title": "Entering the City",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#EnteringtheCity",
                             "subsections": []
                         },
                         {
                             "title": "History of Omu",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#HistoryofOmu",
                             "subsections": []
                         },
                         {
                             "title": "Legend of the Nine Gods",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#LegendoftheNineGods",
                             "subsections": []
                         },
                         {
                             "title": "City Inhabitants",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#CityInhabitants",
                             "subsections": []
                         },
                         {
                             "title": "Puzzle Cubes",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#PuzzleCubes",
                             "subsections": []
                         },
                         {
                             "title": "Navigation",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#Navigation",
                             "subsections": []
                         },
                         {
                             "title": "Random Encounters in Omu",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#RandomEncountersinOmu",
                             "subsections": []
                         }
@@ -485,126 +485,126 @@
                 },
                 {
                     "title": "Locations in the City",
-                    "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                    "urlName": "toa/dwellers-of-the-forbidden-city",
                     "anchorName": "#LocationsintheCity",
                     "subsections": [
                         {
                             "title": "1. City Entrance",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#1CityEntrance",
                             "subsections": []
                         },
                         {
                             "title": "2. Walled Compound",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#2WalledCompound",
                             "subsections": []
                         },
                         {
                             "title": "3. Kubazan’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#3KubazansShrine",
                             "subsections": []
                         },
                         {
                             "title": "4. Shagambi’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#4ShagambisShrine",
                             "subsections": []
                         },
                         {
                             "title": "5. Great Rift",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#5GreatRift",
                             "subsections": []
                         },
                         {
                             "title": "6. Moa’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#6MoasShrine",
                             "subsections": []
                         },
                         {
                             "title": "7. Fallen Tree",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#7FallenTree",
                             "subsections": []
                         },
                         {
                             "title": "8. Unkh’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#8UnkhsShrine",
                             "subsections": []
                         },
                         {
                             "title": "9. Adventurers’ Camp",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#9AdventurersCamp",
                             "subsections": []
                         },
                         {
                             "title": "10. I’jin’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#10IjinsShrine",
                             "subsections": []
                         },
                         {
                             "title": "11. Chwinga Wagon",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#11ChwingaWagon",
                             "subsections": []
                         },
                         {
                             "title": "12. Wongo’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#12WongosShrine",
                             "subsections": []
                         },
                         {
                             "title": "13. Amphitheater",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#13Amphitheater",
                             "subsections": []
                         },
                         {
                             "title": "14. Tomb of the Nine Gods",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#14TomboftheNineGods",
                             "subsections": []
                         },
                         {
                             "title": "15. Ruined Bazaar",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#15RuinedBazaar",
                             "subsections": []
                         },
                         {
                             "title": "16. Papazotl’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#16PapazotlsShrine",
                             "subsections": []
                         },
                         {
                             "title": "17. Waterfall",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#17Waterfall",
                             "subsections": []
                         },
                         {
                             "title": "18. Nangnang’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#18NangnangsShrine",
                             "subsections": []
                         },
                         {
                             "title": "19. Obo’laka’s Shrine",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#19ObolakasShrine",
                             "subsections": []
                         },
                         {
                             "title": "20. Royal Palace",
-                            "urlName": "adventures/toa/dwellers-of-the-forbidden-city",
+                            "urlName": "toa/dwellers-of-the-forbidden-city",
                             "anchorName": "#20RoyalPalace",
                             "subsections": []
                         }
@@ -614,23 +614,23 @@
         },
         {
             "title": "Chapter 4: Fane of the Night Serpent",
-            "urlName": "adventures/toa/fane-of-the-night-serpent",
+            "urlName": "toa/fane-of-the-night-serpent",
             "anchorName": "#Chapter4FaneoftheNightSerpent",
             "subsections": [
                 {
                     "title": "Schemes of the Yuan-ti",
-                    "urlName": "adventures/toa/fane-of-the-night-serpent",
+                    "urlName": "toa/fane-of-the-night-serpent",
                     "anchorName": "#SchemesoftheYuanti",
                     "subsections": [
                         {
                             "title": "Ras Nsi",
-                            "urlName": "adventures/toa/fane-of-the-night-serpent",
+                            "urlName": "toa/fane-of-the-night-serpent",
                             "anchorName": "#RasNsi",
                             "subsections": []
                         },
                         {
                             "title": "Fenthaza",
-                            "urlName": "adventures/toa/fane-of-the-night-serpent",
+                            "urlName": "toa/fane-of-the-night-serpent",
                             "anchorName": "#Fenthaza",
                             "subsections": []
                         }
@@ -638,18 +638,18 @@
                 },
                 {
                     "title": "Getting Inside",
-                    "urlName": "adventures/toa/fane-of-the-night-serpent",
+                    "urlName": "toa/fane-of-the-night-serpent",
                     "anchorName": "#GettingInside",
                     "subsections": [
                         {
                             "title": "Infiltrating the Temple",
-                            "urlName": "adventures/toa/fane-of-the-night-serpent",
+                            "urlName": "toa/fane-of-the-night-serpent",
                             "anchorName": "#InfiltratingtheTemple",
                             "subsections": []
                         },
                         {
                             "title": "Captured by the Yuan-ti",
-                            "urlName": "adventures/toa/fane-of-the-night-serpent",
+                            "urlName": "toa/fane-of-the-night-serpent",
                             "anchorName": "#CapturedbytheYuanti",
                             "subsections": []
                         }
@@ -657,12 +657,12 @@
                 },
                 {
                     "title": "Locations in the Temple",
-                    "urlName": "adventures/toa/fane-of-the-night-serpent",
+                    "urlName": "toa/fane-of-the-night-serpent",
                     "anchorName": "#LocationsintheTemple",
                     "subsections": [
                         {
                             "title": "Prisoners of the Yuan-ti",
-                            "urlName": "adventures/toa/fane-of-the-night-serpent",
+                            "urlName": "toa/fane-of-the-night-serpent",
                             "anchorName": "#PrisonersoftheYuanti",
                             "subsections": []
                         }
@@ -672,23 +672,23 @@
         },
         {
             "title": "Chapter 5: Tomb of the Nine Gods",
-            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+            "urlName": "toa/tomb-of-the-nine-gods",
             "anchorName": "#Chapter5TomboftheNineGods",
             "subsections": [
                 {
                     "title": "History of the Tomb",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#HistoryoftheTomb",
                     "subsections": [
                         {
                             "title": "Rise of the Tomb",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#RiseoftheTomb",
                             "subsections": []
                         },
                         {
                             "title": "Nourishing the Atropal",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#NourishingtheAtropal",
                             "subsections": []
                         }
@@ -696,36 +696,36 @@
                 },
                 {
                     "title": "Exploring the Tomb",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#ExploringtheTomb",
                     "subsections": [
                         {
                             "title": "General Features",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#GeneralFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Tomb Inhabitants",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#TombInhabitants",
                             "subsections": []
                         },
                         {
                             "title": "Fabled Treasures",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#FabledTreasures",
                             "subsections": []
                         },
                         {
                             "title": "Spell Restrictions",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#SpellRestrictions",
                             "subsections": []
                         },
                         {
                             "title": "Replacing Dead Characters",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#ReplacingDeadCharacters",
                             "subsections": []
                         }
@@ -733,30 +733,30 @@
                 },
                 {
                     "title": "Spirits of the Nine Trickster Gods",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#SpiritsoftheNineTricksterGods",
                     "subsections": [
                         {
                             "title": "Spiritual Inhabitation",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#SpiritualInhabitation",
                             "subsections": []
                         },
                         {
                             "title": "Leaving a Host",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#LeavingaHost",
                             "subsections": []
                         },
                         {
                             "title": "Fighting Over a Host",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#FightingOveraHost",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying the Spirits",
-                            "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                            "urlName": "toa/tomb-of-the-nine-gods",
                             "anchorName": "#RoleplayingtheSpirits",
                             "subsections": []
                         }
@@ -764,43 +764,43 @@
                 },
                 {
                     "title": "Level 1: Rotten Halls",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level1RottenHalls",
                     "subsections": []
                 },
                 {
                     "title": "Level 2: Dungeon of Deception",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level2DungeonofDeception",
                     "subsections": []
                 },
                 {
                     "title": "Level 3: Vault of Reflection",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level3VaultofReflection",
                     "subsections": []
                 },
                 {
                     "title": "Level 4: Chambers of Horror",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level4ChambersofHorror",
                     "subsections": []
                 },
                 {
                     "title": "Level 5: Gears of Hate",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level5GearsofHate",
                     "subsections": []
                 },
                 {
                     "title": "Level 6: Cradle of the Death God",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Level6CradleoftheDeathGod",
                     "subsections": []
                 },
                 {
                     "title": "Conclusion",
-                    "urlName": "adventures/toa/tomb-of-the-nine-gods",
+                    "urlName": "toa/tomb-of-the-nine-gods",
                     "anchorName": "#Conclusion",
                     "subsections": []
                 }
@@ -808,29 +808,29 @@
         },
         {
             "title": "Appendix A: Character Backgrounds",
-            "urlName": "adventures/toa/character-backgrounds",
+            "urlName": "toa/character-backgrounds",
             "anchorName": "#AppendixACharacterBackgrounds",
             "subsections": [
                 {
                     "title": "Anthropologist",
-                    "urlName": "adventures/toa/character-backgrounds",
+                    "urlName": "toa/character-backgrounds",
                     "anchorName": "#Anthropologist",
                     "subsections": [
                         {
                             "title": "Cultural Chameleon",
-                            "urlName": "adventures/toa/character-backgrounds",
+                            "urlName": "toa/character-backgrounds",
                             "anchorName": "#CulturalChameleon",
                             "subsections": []
                         },
                         {
                             "title": "Adopted Culture",
-                            "urlName": "adventures/toa/character-backgrounds",
+                            "urlName": "toa/character-backgrounds",
                             "anchorName": "#AdoptedCulture",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "adventures/toa/character-backgrounds",
+                            "urlName": "toa/character-backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -838,18 +838,18 @@
                 },
                 {
                     "title": "Archaeologist",
-                    "urlName": "adventures/toa/character-backgrounds",
+                    "urlName": "toa/character-backgrounds",
                     "anchorName": "#Archaeologist",
                     "subsections": [
                         {
                             "title": "Dust Digger",
-                            "urlName": "adventures/toa/character-backgrounds",
+                            "urlName": "toa/character-backgrounds",
                             "anchorName": "#DustDigger",
                             "subsections": []
                         },
                         {
                             "title": "Suggested Characteristics",
-                            "urlName": "adventures/toa/character-backgrounds",
+                            "urlName": "toa/character-backgrounds",
                             "anchorName": "#SuggestedCharacteristics",
                             "subsections": []
                         }
@@ -859,24 +859,24 @@
         },
         {
             "title": "Appendix B: Random Encounters",
-            "urlName": "adventures/toa/random-encounters",
+            "urlName": "toa/random-encounters",
             "anchorName": "#AppendixBRandomEncounters",
             "subsections": [
                 {
                     "title": "Port Nyanzaru Encounters",
-                    "urlName": "adventures/toa/random-encounters",
+                    "urlName": "toa/random-encounters",
                     "anchorName": "#PortNyanzaruEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Wilderness Encounters",
-                    "urlName": "adventures/toa/random-encounters",
+                    "urlName": "toa/random-encounters",
                     "anchorName": "#WildernessEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Omu Encounters",
-                    "urlName": "adventures/toa/random-encounters",
+                    "urlName": "toa/random-encounters",
                     "anchorName": "#OmuEncounters",
                     "subsections": []
                 }
@@ -884,59 +884,59 @@
         },
         {
             "title": "Appendix C: Discoveries",
-            "urlName": "adventures/toa/discoveries",
+            "urlName": "toa/discoveries",
             "anchorName": "#AppendixCDiscoveries",
             "subsections": [
                 {
                     "title": "Flora and Fauna",
-                    "urlName": "adventures/toa/discoveries",
+                    "urlName": "toa/discoveries",
                     "anchorName": "#FloraandFauna",
                     "subsections": [
                         {
                             "title": "Dancing Monkey Fruit",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#DancingMonkeyFruit",
                             "subsections": []
                         },
                         {
                             "title": "Menga Leaves",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#MengaLeaves",
                             "subsections": []
                         },
                         {
                             "title": "Ryath Root",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#RyathRoot",
                             "subsections": []
                         },
                         {
                             "title": "Sinda Berries",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#SindaBerries",
                             "subsections": []
                         },
                         {
                             "title": "Wildroot",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#Wildroot",
                             "subsections": []
                         },
                         {
                             "title": "Wukka Nuts",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#WukkaNuts",
                             "subsections": []
                         },
                         {
                             "title": "Yahcha",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#Yahcha",
                             "subsections": []
                         },
                         {
                             "title": "Zabou",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#Zabou",
                             "subsections": []
                         }
@@ -944,48 +944,48 @@
                 },
                 {
                     "title": "Magic Items",
-                    "urlName": "adventures/toa/discoveries",
+                    "urlName": "toa/discoveries",
                     "anchorName": "#MagicItems",
                     "subsections": [
                         {
                             "title": "Amulet of the Black Skull",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#AmuletoftheBlackSkull",
                             "subsections": []
                         },
                         {
                             "title": "Bookmark",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#Bookmark",
                             "subsections": []
                         },
                         {
                             "title": "Ghost Lantern",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#GhostLantern",
                             "subsections": []
                         },
                         {
                             "title": "Mask of the Beast",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#MaskoftheBeast",
                             "subsections": []
                         },
                         {
                             "title": "Ring of Winter",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#RingofWinter",
                             "subsections": []
                         },
                         {
                             "title": "Scorpion Armor",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#ScorpionArmor",
                             "subsections": []
                         },
                         {
                             "title": "Staff of the Forgotten One",
-                            "urlName": "adventures/toa/discoveries",
+                            "urlName": "toa/discoveries",
                             "anchorName": "#StaffoftheForgottenOne",
                             "subsections": []
                         }
@@ -995,42 +995,42 @@
         },
         {
             "title": "Appendix D: Monsters and NPCs",
-            "urlName": "adventures/toa/monsters-and-npcs",
+            "urlName": "toa/monsters-and-npcs",
             "anchorName": "#AppendixDMonstersandNPCs",
             "subsections": [
                 {
                     "title": "Monsters A - D",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersAD",
                     "subsections": []
                 },
                 {
                     "title": "Monsters E - H",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersEH",
                     "subsections": []
                 },
                 {
                     "title": "Monsters J - L",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersJL",
                     "subsections": []
                 },
                 {
                     "title": "Monsters M - Q",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersMQ",
                     "subsections": []
                 },
                 {
                     "title": "Monsters R - T",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersRT",
                     "subsections": []
                 },
                 {
                     "title": "Monsters V - Z",
-                    "urlName": "adventures/toa/monsters-and-npcs",
+                    "urlName": "toa/monsters-and-npcs",
                     "anchorName": "#MonstersVZ",
                     "subsections": []
                 }
@@ -1038,71 +1038,71 @@
         },
         {
             "title": "Appendix E: Player Handouts",
-            "urlName": "adventures/toa/player-handouts",
+            "urlName": "toa/player-handouts",
             "anchorName": "#AppendixEPlayerHandouts",
             "subsections": [
                 {
                     "title": "Handout 1: Players’ Map of Chult",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout1PlayersMapofChult",
                     "subsections": []
                 },
                 {
                     "title": "Guides",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Guides",
                     "subsections": [
                         {
                             "title": "Handout 2: Azaka Stormfang",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout2AzakaStormfang",
                             "subsections": []
                         },
                         {
                             "title": "Handout 3: Eku",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout3Eku",
                             "subsections": []
                         },
                         {
                             "title": "Handout 4: Faroul and Gondolo",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout4FaroulandGondolo",
                             "subsections": []
                         },
                         {
                             "title": "Handout 5: Hew Hackinstone",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout5HewHackinstone",
                             "subsections": []
                         },
                         {
                             "title": "Handout 6: Musharib",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout6Musharib",
                             "subsections": []
                         },
                         {
                             "title": "Handout 7: Qawasha and Kupalué",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout7QawashaandKupalu",
                             "subsections": []
                         },
                         {
                             "title": "Handout 8: River Mist and Flask of Wine",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout8RiverMistandFlaskofWine",
                             "subsections": []
                         },
                         {
                             "title": "Handout 9: Salida",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout9Salida",
                             "subsections": []
                         },
                         {
                             "title": "Handout 10: Shago",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout10Shago",
                             "subsections": []
                         }
@@ -1110,66 +1110,66 @@
                 },
                 {
                     "title": "Handout 11: Puzzle Cubes",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout11PuzzleCubes",
                     "subsections": []
                 },
                 {
                     "title": "Handout 12: Players’ Map of Omu",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout12PlayersMapofOmu",
                     "subsections": []
                 },
                 {
                     "title": "Handout 13: Lord Brixton’s Letter",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout13LordBrixtonsLetter",
                     "subsections": []
                 },
                 {
                     "title": "Handout 14: I’jin’s Puzzle Floor",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout14IjinsPuzzleFloor",
                     "subsections": []
                 },
                 {
                     "title": "Handout 15: Papazotl’s Riddle",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout15PapazotlsRiddle",
                     "subsections": []
                 },
                 {
                     "title": "Handout 16: Papazotl’s Puzzle Key",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout16PapazotlsPuzzleKey",
                     "subsections": []
                 },
                 {
                     "title": "Acererak's Warnings",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#AcereraksWarnings",
                     "subsections": [
                         {
                             "title": "Handout 17: Acererak’s First Warning",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout17AcereraksFirstWarning",
                             "subsections": []
                         },
                         {
                             "title": "Handout 18: Acererak’s Second Warning",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout18AcereraksSecondWarning",
                             "subsections": []
                         },
                         {
                             "title": "Handout 19: Acererak’s Third Warning",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout19AcereraksThirdWarning",
                             "subsections": []
                         },
                         {
                             "title": "Handout 20: Acererak’s Fourth Warning",
-                            "urlName": "adventures/toa/player-handouts",
+                            "urlName": "toa/player-handouts",
                             "anchorName": "#Handout20AcereraksFourthWarning",
                             "subsections": []
                         }
@@ -1177,25 +1177,25 @@
                 },
                 {
                     "title": "Handout 21: Devlin’s Journal Excerpt",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout21DevlinsJournalExcerpt",
                     "subsections": []
                 },
                 {
                     "title": "Handout 22: Withers’s Journal Excerpt",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout22WitherssJournalExcerpt",
                     "subsections": []
                 },
                 {
                     "title": "Handout 23: Hieroglyphic Floor",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout23HieroglyphicFloor",
                     "subsections": []
                 },
                 {
                     "title": "Handout 24: Control Panel",
-                    "urlName": "adventures/toa/player-handouts",
+                    "urlName": "toa/player-handouts",
                     "anchorName": "#Handout24ControlPanel",
                     "subsections": []
                 }
@@ -1203,18 +1203,18 @@
         },
         {
             "title": "Appendix F: Trickster Gods of Omu",
-            "urlName": "adventures/toa/trickster-gods-of-omu",
+            "urlName": "toa/trickster-gods-of-omu",
             "anchorName": "#AppendixFTricksterGodsofOmu",
             "subsections": []
         },
         {
             "title": "Credits",
-            "urlName": "adventures/toa/credits",
+            "urlName": "toa/credits",
             "anchorName": "#Credits",
             "subsections": [
                 {
                     "title": "Playtesters",
-                    "urlName": "adventures/toa/credits",
+                    "urlName": "toa/credits",
                     "anchorName": "#Playtesters",
                     "subsections": []
                 }

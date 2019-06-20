@@ -5,12 +5,12 @@
     "subsections": [
         {
             "title": "Preface",
-            "urlName": "rules/mtof/preface",
+            "urlName": "mtof/preface",
             "anchorName": "#Preface",
             "subsections": [
                 {
                     "title": "About This Book",
-                    "urlName": "rules/mtof/preface",
+                    "urlName": "mtof/preface",
                     "anchorName": "#AboutThisBook",
                     "subsections": []
                 }
@@ -18,78 +18,78 @@
         },
         {
             "title": "Chapter 1: The Blood War",
-            "urlName": "rules/mtof/the-blood-war",
+            "urlName": "mtof/the-blood-war",
             "anchorName": "#Chapter1TheBloodWar",
             "subsections": [
                 {
                     "title": "The Great Dance",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#TheGreatDance",
                     "subsections": []
                 },
                 {
                     "title": "Lords of the Nine",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#LordsoftheNine",
                     "subsections": []
                 },
                 {
                     "title": "Diabolical Cults",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#DiabolicalCults",
                     "subsections": []
                 },
                 {
                     "title": "Infernal Cambions",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#InfernalCambions",
                     "subsections": []
                 },
                 {
                     "title": "Tiefling Subraces",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#TieflingSubraces",
                     "subsections": []
                 },
                 {
                     "title": "Devil Customization Tables",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#DevilCustomizationTables",
                     "subsections": []
                 },
                 {
                     "title": "Princes of the Abyss",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#PrincesoftheAbyss",
                     "subsections": []
                 },
                 {
                     "title": "Lords and Their Thralls",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#LordsandTheirThralls",
                     "subsections": []
                 },
                 {
                     "title": "Demonic Boons",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#DemonicBoons",
                     "subsections": []
                 },
                 {
                     "title": "Demonic Cambions",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#DemonicCambions",
                     "subsections": []
                 },
                 {
                     "title": "Demon Customization Tables",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#DemonCustomizationTables",
                     "subsections": []
                 },
                 {
                     "title": "Fiendish Cults",
-                    "urlName": "rules/mtof/the-blood-war",
+                    "urlName": "mtof/the-blood-war",
                     "anchorName": "#FiendishCults",
                     "subsections": []
                 }
@@ -97,72 +97,72 @@
         },
         {
             "title": "Chapter 2: Elves",
-            "urlName": "rules/mtof/elves",
+            "urlName": "mtof/elves",
             "anchorName": "#Chapter2Elves",
             "subsections": [
                 {
                     "title": "A Race Divided",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#ARaceDivided",
                     "subsections": []
                 },
                 {
                     "title": "The Elven Diaspora",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#TheElvenDiaspora",
                     "subsections": []
                 },
                 {
                     "title": "Living in Reverie",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#LivinginReverie",
                     "subsections": []
                 },
                 {
                     "title": "The Elven Outlook",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#TheElvenOutlook",
                     "subsections": []
                 },
                 {
                     "title": "Elves and Magic",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#ElvesandMagic",
                     "subsections": []
                 },
                 {
                     "title": "The Seldarine",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#TheSeldarine",
                     "subsections": []
                 },
                 {
                     "title": "Eladrin and the Feywild",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#EladrinandtheFeywild",
                     "subsections": []
                 },
                 {
                     "title": "Drow",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#Drow",
                     "subsections": []
                 },
                 {
                     "title": "The Raven Queen and the Shadar-kai",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#TheRavenQueenandtheShadarkai",
                     "subsections": []
                 },
                 {
                     "title": "Elf Subraces",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#ElfSubraces",
                     "subsections": []
                 },
                 {
                     "title": "Elf Tables",
-                    "urlName": "rules/mtof/elves",
+                    "urlName": "mtof/elves",
                     "anchorName": "#ElfTables",
                     "subsections": []
                 }
@@ -170,42 +170,42 @@
         },
         {
             "title": "Chapter 3: Dwarves and Duergar",
-            "urlName": "rules/mtof/dwarves-and-duergar",
+            "urlName": "mtof/dwarves-and-duergar",
             "anchorName": "#Chapter3DwarvesandDuergar",
             "subsections": [
                 {
                     "title": "The Deep Roots of War",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#TheDeepRootsofWar",
                     "subsections": []
                 },
                 {
                     "title": "Dwarves",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#Dwarves",
                     "subsections": []
                 },
                 {
                     "title": "Duergar",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#Duergar",
                     "subsections": []
                 },
                 {
                     "title": "Duergar Characters",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#DuergarCharacters",
                     "subsections": []
                 },
                 {
                     "title": "Dwarf Tables",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#DwarfTables",
                     "subsections": []
                 },
                 {
                     "title": "Duergar Tables",
-                    "urlName": "rules/mtof/dwarves-and-duergar",
+                    "urlName": "mtof/dwarves-and-duergar",
                     "anchorName": "#DuergarTables",
                     "subsections": []
                 }
@@ -213,30 +213,30 @@
         },
         {
             "title": "Chapter 4: Gith and Their Endless War",
-            "urlName": "rules/mtof/gith-and-their-endless-war",
+            "urlName": "mtof/gith-and-their-endless-war",
             "anchorName": "#Chapter4GithandTheirEndlessWar",
             "subsections": [
                 {
                     "title": "Githyanki",
-                    "urlName": "rules/mtof/gith-and-their-endless-war",
+                    "urlName": "mtof/gith-and-their-endless-war",
                     "anchorName": "#Githyanki",
                     "subsections": []
                 },
                 {
                     "title": "Githzerai",
-                    "urlName": "rules/mtof/gith-and-their-endless-war",
+                    "urlName": "mtof/gith-and-their-endless-war",
                     "anchorName": "#Githzerai",
                     "subsections": []
                 },
                 {
                     "title": "Gith Characters",
-                    "urlName": "rules/mtof/gith-and-their-endless-war",
+                    "urlName": "mtof/gith-and-their-endless-war",
                     "anchorName": "#GithCharacters",
                     "subsections": []
                 },
                 {
                     "title": "Gith Tables",
-                    "urlName": "rules/mtof/gith-and-their-endless-war",
+                    "urlName": "mtof/gith-and-their-endless-war",
                     "anchorName": "#GithTables",
                     "subsections": []
                 }
@@ -244,36 +244,36 @@
         },
         {
             "title": "Chapter 5: Halflings and Gnomes",
-            "urlName": "rules/mtof/halflings-and-gnomes",
+            "urlName": "mtof/halflings-and-gnomes",
             "anchorName": "#Chapter5HalflingsandGnomes",
             "subsections": [
                 {
                     "title": "Halflings",
-                    "urlName": "rules/mtof/halflings-and-gnomes",
+                    "urlName": "mtof/halflings-and-gnomes",
                     "anchorName": "#Halflings",
                     "subsections": []
                 },
                 {
                     "title": "Halfling Tables",
-                    "urlName": "rules/mtof/halflings-and-gnomes",
+                    "urlName": "mtof/halflings-and-gnomes",
                     "anchorName": "#HalflingTables",
                     "subsections": []
                 },
                 {
                     "title": "Gnomes",
-                    "urlName": "rules/mtof/halflings-and-gnomes",
+                    "urlName": "mtof/halflings-and-gnomes",
                     "anchorName": "#Gnomes",
                     "subsections": []
                 },
                 {
                     "title": "Deep Gnome Characters",
-                    "urlName": "rules/mtof/halflings-and-gnomes",
+                    "urlName": "mtof/halflings-and-gnomes",
                     "anchorName": "#DeepGnomeCharacters",
                     "subsections": []
                 },
                 {
                     "title": "Gnome Tables",
-                    "urlName": "rules/mtof/halflings-and-gnomes",
+                    "urlName": "mtof/halflings-and-gnomes",
                     "anchorName": "#GnomeTables",
                     "subsections": []
                 }
@@ -281,36 +281,36 @@
         },
         {
             "title": "Chapter 6: Bestiary",
-            "urlName": "rules/mtof/bestiary",
+            "urlName": "mtof/bestiary",
             "anchorName": "#Chapter6Bestiary",
             "subsections": [
                 {
                     "title": "Monsters A - C",
-                    "urlName": "rules/mtof/bestiary",
+                    "urlName": "mtof/bestiary",
                     "anchorName": "#MonstersAC",
                     "subsections": []
                 },
                 {
                     "title": "Monsters D - F",
-                    "urlName": "rules/mtof/bestiary",
+                    "urlName": "mtof/bestiary",
                     "anchorName": "#MonstersDF",
                     "subsections": []
                 },
                 {
                     "title": "Monsters G - L",
-                    "urlName": "rules/mtof/bestiary",
+                    "urlName": "mtof/bestiary",
                     "anchorName": "#MonstersGL",
                     "subsections": []
                 },
                 {
                     "title": "Monsters M - R",
-                    "urlName": "rules/mtof/bestiary",
+                    "urlName": "mtof/bestiary",
                     "anchorName": "#MonstersMR",
                     "subsections": []
                 },
                 {
                     "title": "Monsters S - Y",
-                    "urlName": "rules/mtof/bestiary",
+                    "urlName": "mtof/bestiary",
                     "anchorName": "#MonstersSY",
                     "subsections": []
                 }
@@ -318,77 +318,77 @@
         },
         {
             "title": "Appendix: Monster Lists",
-            "urlName": "rules/mtof/monster-lists",
+            "urlName": "mtof/monster-lists",
             "anchorName": "#AppendixMonsterLists",
             "subsections": [
                 {
                     "title": "Stat Blocks by Creature Type",
-                    "urlName": "rules/mtof/monster-lists",
+                    "urlName": "mtof/monster-lists",
                     "anchorName": "#StatBlocksbyCreatureType",
                     "subsections": [
                         {
                             "title": "Aberrations",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Aberrations",
                             "subsections": []
                         },
                         {
                             "title": "Constructs",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Constructs",
                             "subsections": []
                         },
                         {
                             "title": "Elementals",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Elementals",
                             "subsections": []
                         },
                         {
                             "title": "Fey",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Fey",
                             "subsections": []
                         },
                         {
                             "title": "Fiends",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Fiends",
                             "subsections": []
                         },
                         {
                             "title": "Giants",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Giants",
                             "subsections": []
                         },
                         {
                             "title": "Humanoids",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Humanoids",
                             "subsections": []
                         },
                         {
                             "title": "Monstrosities",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Monstrosities",
                             "subsections": []
                         },
                         {
                             "title": "Oozes",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Oozes",
                             "subsections": []
                         },
                         {
                             "title": "Plants",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Plants",
                             "subsections": []
                         },
                         {
                             "title": "Undead",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#Undead",
                             "subsections": []
                         }
@@ -396,78 +396,78 @@
                 },
                 {
                     "title": "Stat Blocks by Challenge Rating",
-                    "urlName": "rules/mtof/monster-lists",
+                    "urlName": "mtof/monster-lists",
                     "anchorName": "#StatBlocksbyChallengeRating",
                     "subsections": []
                 },
                 {
                     "title": "Creatures by Environment",
-                    "urlName": "rules/mtof/monster-lists",
+                    "urlName": "mtof/monster-lists",
                     "anchorName": "#CreaturesbyEnvironment",
                     "subsections": [
                         {
                             "title": "Arctic Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#ArcticCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Coastal Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#CoastalCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Desert Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#DesertCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Forest Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#ForestCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Grassland Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#GrasslandCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Hill Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#HillCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Mountain Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#MountainCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Swamp Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#SwampCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Underdark Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#UnderdarkCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Underwater Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#UnderwaterCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Urban Creatures",
-                            "urlName": "rules/mtof/monster-lists",
+                            "urlName": "mtof/monster-lists",
                             "anchorName": "#UrbanCreatures",
                             "subsections": []
                         }
@@ -477,7 +477,7 @@
         },
         {
             "title": "Credits",
-            "urlName": "rules/mtof/credits",
+            "urlName": "mtof/credits",
             "anchorName": "#",
             "subsections": []
         }

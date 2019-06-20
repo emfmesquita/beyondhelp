@@ -5,40 +5,40 @@
     "subsections": [
         {
             "title": "Dramatis Personae",
-            "urlName": "adventures/skt/dramatis-personae",
+            "urlName": "skt/dramatis-personae",
             "anchorName": "#DramatisPersonae",
             "subsections": []
         },
         {
             "title": "Introduction",
-            "urlName": "adventures/skt/introduction",
+            "urlName": "skt/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "Adventure Background",
-                    "urlName": "adventures/skt/introduction",
+                    "urlName": "skt/introduction",
                     "anchorName": "#AdventureBackground",
                     "subsections": [
                         {
                             "title": "The Ordning",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#TheOrdning",
                             "subsections": []
                         },
                         {
                             "title": "King Hekaton and His Daughters",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#KingHekatonandHisDaughters",
                             "subsections": [
                                 {
                                     "title": "Mirran and Nym",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#MirranandNym",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Serissa",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#Serissa",
                                     "subsections": []
                                 }
@@ -46,42 +46,42 @@
                         },
                         {
                             "title": "Iymrith",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#Iymrith",
                             "subsections": []
                         },
                         {
                             "title": "The Giant Lords",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#TheGiantLords",
                             "subsections": [
                                 {
                                     "title": "Chief Guh",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#ChiefGuh",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Thane Kayalithica",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#ThaneKayalithica",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Jarl Storvald",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#JarlStorvald",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Duke Zalto",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#DukeZalto",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Countess Sansuri",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#CountessSansuri",
                                     "subsections": []
                                 }
@@ -89,42 +89,42 @@
                         },
                         {
                             "title": "Factions in the North",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#FactionsintheNorth",
                             "subsections": [
                                 {
                                     "title": "The Harpers",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheHarpers",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Lords’ Alliance",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheLordsAlliance",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Emerald Enclave",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheEmeraldEnclave",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Order of the Gauntlet",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheOrderoftheGauntlet",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Zhentarim",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheZhentarim",
                                     "subsections": []
                                 },
                                 {
                                     "title": "The Kraken Society",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#TheKrakenSociety",
                                     "subsections": []
                                 }
@@ -134,29 +134,29 @@
                 },
                 {
                     "title": "Running the Adventure",
-                    "urlName": "adventures/skt/introduction",
+                    "urlName": "skt/introduction",
                     "anchorName": "#RunningtheAdventure",
                     "subsections": [
                         {
                             "title": "Adventure Synopsis",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#AdventureSynopsis",
                             "subsections": [
                                 {
                                     "title": "Starting at 5th Level",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#Startingat5thLevel",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Character Advancement",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#CharacterAdvancement",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Figure 0.1: Adventure Flowchart",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#Figure01AdventureFlowchart",
                                     "subsections": []
                                 }
@@ -164,36 +164,36 @@
                         },
                         {
                             "title": "Deadly Encounters",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#DeadlyEncounters",
                             "subsections": []
                         },
                         {
                             "title": "Treasure",
-                            "urlName": "adventures/skt/introduction",
+                            "urlName": "skt/introduction",
                             "anchorName": "#Treasure",
                             "subsections": [
                                 {
                                     "title": "Random Coin Amounts",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#RandomCoinAmounts",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Random Magic Items",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#RandomMagicItems",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Giant-Sized Treasures",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#GiantSizedTreasures",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Giants’ Bags",
-                                    "urlName": "adventures/skt/introduction",
+                                    "urlName": "skt/introduction",
                                     "anchorName": "#GiantsBags",
                                     "subsections": []
                                 }
@@ -205,95 +205,101 @@
         },
         {
             "title": "Chapter 1: A Great Upheaval",
-            "urlName": "adventures/skt/a-great-upheaval",
+            "urlName": "skt/a-great-upheaval",
             "anchorName": "#Chapter1AGreatUpheaval",
             "subsections": [
                 {
                     "title": "Nightstone",
-                    "urlName": "adventures/skt/a-great-upheaval",
+                    "urlName": "skt/a-great-upheaval",
                     "anchorName": "#Nightstone",
                     "subsections": [
                         {
                             "title": "1. Drawbridge",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#1Drawbridge",
                             "subsections": []
                         },
                         {
                             "title": "2. Watchtowers",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#2Watchtowers",
                             "subsections": []
                         },
                         {
+                            "title": "3. Square",
+                            "urlName": "skt/a-great-upheaval",
+                            "anchorName": "#3Square",
+                            "subsections": []
+                        },
+                        {
                             "title": "4. Residences",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#4Residences",
                             "subsections": []
                         },
                         {
                             "title": "5. Temple",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#5Temple",
                             "subsections": []
                         },
                         {
                             "title": "6. Graveyards",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#6Graveyards",
                             "subsections": []
                         },
                         {
                             "title": "7. Stable House",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#7StableHouse",
                             "subsections": []
                         },
                         {
                             "title": "8. Nightstone Inn",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#8NightstoneInn",
                             "subsections": []
                         },
                         {
                             "title": "9. Trading Post",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#9TradingPost",
                             "subsections": []
                         },
                         {
                             "title": "10. Windmill",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#10Windmill",
                             "subsections": []
                         },
                         {
                             "title": "11. Bridge",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#11Bridge",
                             "subsections": []
                         },
                         {
                             "title": "12. Gate to the Keep",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#12GatetotheKeep",
                             "subsections": []
                         },
                         {
                             "title": "13. Inner Bailey",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#13InnerBailey",
                             "subsections": []
                         },
                         {
                             "title": "14. Nandar Keep",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#14NandarKeep",
                             "subsections": []
                         },
                         {
                             "title": "Special Events in Nightstone",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#SpecialEventsinNightstone",
                             "subsections": []
                         }
@@ -301,60 +307,60 @@
                 },
                 {
                     "title": "Dripping Caves",
-                    "urlName": "adventures/skt/a-great-upheaval",
+                    "urlName": "skt/a-great-upheaval",
                     "anchorName": "#DrippingCaves",
                     "subsections": [
                         {
                             "title": "1. Main Cavern",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#1MainCavern",
                             "subsections": []
                         },
                         {
                             "title": "2. Goblin Warrens",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#2GoblinWarrens",
                             "subsections": []
                         },
                         {
                             "title": "3. East Caves",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#3EastCaves",
                             "subsections": []
                         },
                         {
                             "title": "4. Bats and Prisoners",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#4BatsandPrisoners",
                             "subsections": []
                         },
                         {
                             "title": "5. Fissure",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#5Fissure",
                             "subsections": []
                         },
                         {
                             "title": "6. Underground Stream",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#6UndergroundStream",
                             "subsections": []
                         },
                         {
                             "title": "7. Natural Chimney",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#7NaturalChimney",
                             "subsections": []
                         },
                         {
                             "title": "8. Hark’s Hoard",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#8HarksHoard",
                             "subsections": []
                         },
                         {
                             "title": "9. Boss Hark’s Cave",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#9BossHarksCave",
                             "subsections": []
                         }
@@ -362,24 +368,24 @@
                 },
                 {
                     "title": "Morak’s Quest",
-                    "urlName": "adventures/skt/a-great-upheaval",
+                    "urlName": "skt/a-great-upheaval",
                     "anchorName": "#MoraksQuest",
                     "subsections": [
                         {
                             "title": "Bryn Shander Quest",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#BrynShanderQuest",
                             "subsections": []
                         },
                         {
                             "title": "Goldenfields Quest",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#GoldenfieldsQuest",
                             "subsections": []
                         },
                         {
                             "title": "Triboar Quest",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#TriboarQuest",
                             "subsections": []
                         }
@@ -387,24 +393,24 @@
                 },
                 {
                     "title": "Tower of Zephyros",
-                    "urlName": "adventures/skt/a-great-upheaval",
+                    "urlName": "skt/a-great-upheaval",
                     "anchorName": "#TowerofZephyros",
                     "subsections": [
                         {
                             "title": "First Floor",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#FirstFloor",
                             "subsections": []
                         },
                         {
                             "title": "Second Floor",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#SecondFloor",
                             "subsections": []
                         },
                         {
                             "title": "Aerie",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#Aerie",
                             "subsections": []
                         }
@@ -412,18 +418,18 @@
                 },
                 {
                     "title": "Unfriendly Skies",
-                    "urlName": "adventures/skt/a-great-upheaval",
+                    "urlName": "skt/a-great-upheaval",
                     "anchorName": "#UnfriendlySkies",
                     "subsections": [
                         {
                             "title": "Day 3: The Howling Hatred",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#Day3TheHowlingHatred",
                             "subsections": []
                         },
                         {
                             "title": "Day 10: Operation “Orb Strike”",
-                            "urlName": "adventures/skt/a-great-upheaval",
+                            "urlName": "skt/a-great-upheaval",
                             "anchorName": "#Day10OperationOrbStrike",
                             "subsections": []
                         }
@@ -433,35 +439,35 @@
         },
         {
             "title": "Chapter 2: Rumblings",
-            "urlName": "adventures/skt/rumblings",
+            "urlName": "skt/rumblings",
             "anchorName": "#Chapter2Rumblings",
             "subsections": [
                 {
                     "title": "Special NPCs",
-                    "urlName": "adventures/skt/rumblings",
+                    "urlName": "skt/rumblings",
                     "anchorName": "#SpecialNPCs",
                     "subsections": []
                 },
                 {
                     "title": "Bryn Shander",
-                    "urlName": "adventures/skt/rumblings",
+                    "urlName": "skt/rumblings",
                     "anchorName": "#BrynShander",
                     "subsections": [
                         {
                             "title": "Locations in Bryn Shander",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#LocationsinBrynShander",
                             "subsections": []
                         },
                         {
                             "title": "Attack on Bryn Shander",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#AttackonBrynShander",
                             "subsections": []
                         },
                         {
                             "title": "Bryn Shander Quests",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#BrynShanderQuests",
                             "subsections": []
                         }
@@ -469,24 +475,24 @@
                 },
                 {
                     "title": "Goldenfields",
-                    "urlName": "adventures/skt/rumblings",
+                    "urlName": "skt/rumblings",
                     "anchorName": "#Goldenfields",
                     "subsections": [
                         {
                             "title": "Goldenfields Locations",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#GoldenfieldsLocations",
                             "subsections": []
                         },
                         {
                             "title": "Attack on Goldenfields",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#AttackonGoldenfields",
                             "subsections": []
                         },
                         {
                             "title": "Goldenfields Quests",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#GoldenfieldsQuests",
                             "subsections": []
                         }
@@ -494,24 +500,24 @@
                 },
                 {
                     "title": "Triboar",
-                    "urlName": "adventures/skt/rumblings",
+                    "urlName": "skt/rumblings",
                     "anchorName": "#Triboar",
                     "subsections": [
                         {
                             "title": "Locations in Triboar",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#LocationsinTriboar",
                             "subsections": []
                         },
                         {
                             "title": "Attack on Triboar",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#AttackonTriboar",
                             "subsections": []
                         },
                         {
                             "title": "Triboar Quests",
-                            "urlName": "adventures/skt/rumblings",
+                            "urlName": "skt/rumblings",
                             "anchorName": "#TriboarQuests",
                             "subsections": []
                         }
@@ -521,59 +527,59 @@
         },
         {
             "title": "Chapter 3: The Savage Frontier",
-            "urlName": "adventures/skt/the-savage-frontier",
+            "urlName": "skt/the-savage-frontier",
             "anchorName": "#Chapter3TheSavageFrontier",
             "subsections": [
                 {
                     "title": "Peoples of the North",
-                    "urlName": "adventures/skt/the-savage-frontier",
+                    "urlName": "skt/the-savage-frontier",
                     "anchorName": "#PeoplesoftheNorth",
                     "subsections": [
                         {
                             "title": "Civilized Folk",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#CivilizedFolk",
                             "subsections": []
                         },
                         {
                             "title": "Northlanders",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#Northlanders",
                             "subsections": []
                         },
                         {
                             "title": "Reghed Barbarians",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#ReghedBarbarians",
                             "subsections": []
                         },
                         {
                             "title": "Uthgardt Barbarians",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#UthgardtBarbarians",
                             "subsections": []
                         },
                         {
                             "title": "Orcs and Half-Orcs",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#OrcsandHalfOrcs",
                             "subsections": []
                         },
                         {
                             "title": "Shield Dwarves",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#ShieldDwarves",
                             "subsections": []
                         },
                         {
                             "title": "Elves",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#Elves",
                             "subsections": []
                         },
                         {
                             "title": "Halflings",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#Halflings",
                             "subsections": []
                         }
@@ -581,29 +587,29 @@
                 },
                 {
                     "title": "Random Wilderness Encounters",
-                    "urlName": "adventures/skt/the-savage-frontier",
+                    "urlName": "skt/the-savage-frontier",
                     "anchorName": "#RandomWildernessEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Locations of the North",
-                    "urlName": "adventures/skt/the-savage-frontier",
+                    "urlName": "skt/the-savage-frontier",
                     "anchorName": "#LocationsoftheNorth",
                     "subsections": [
                         {
                             "title": "Locations A - D",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsAD",
                             "subsections": []
                         },
                         {
                             "title": "Locations E - H",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsEH",
                             "subsections": [
                                 {
                                     "title": "Avenging Animals",
-                                    "urlName": "adventures/skt/the-savage-frontier",
+                                    "urlName": "skt/the-savage-frontier",
                                     "anchorName": "#AvengingAnimals",
                                     "subsections": []
                                 }
@@ -611,12 +617,12 @@
                         },
                         {
                             "title": "Locations I - L",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsIL",
                             "subsections": [
                                 {
                                     "title": "Random Encounters in Icewind Dale",
-                                    "urlName": "adventures/skt/the-savage-frontier",
+                                    "urlName": "skt/the-savage-frontier",
                                     "anchorName": "#RandomEncountersinIcewindDale",
                                     "subsections": []
                                 }
@@ -624,19 +630,19 @@
                         },
                         {
                             "title": "Locations M - P",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsMP",
                             "subsections": []
                         },
                         {
                             "title": "Locations R - U",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsRU",
                             "subsections": []
                         },
                         {
                             "title": "Locations V - Z",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#LocationsVZ",
                             "subsections": []
                         }
@@ -644,24 +650,24 @@
                 },
                 {
                     "title": "Featured Encounters",
-                    "urlName": "adventures/skt/the-savage-frontier",
+                    "urlName": "skt/the-savage-frontier",
                     "anchorName": "#FeaturedEncounters",
                     "subsections": [
                         {
                             "title": "Old Tower",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#OldTower",
                             "subsections": []
                         },
                         {
                             "title": "Inner Circles",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#InnerCircles",
                             "subsections": []
                         },
                         {
                             "title": "Harshnag",
-                            "urlName": "adventures/skt/the-savage-frontier",
+                            "urlName": "skt/the-savage-frontier",
                             "anchorName": "#Harshnag",
                             "subsections": []
                         }
@@ -671,83 +677,83 @@
         },
         {
             "title": "Chapter 4: The Chosen Path",
-            "urlName": "adventures/skt/the-chosen-path",
+            "urlName": "skt/the-chosen-path",
             "anchorName": "#Chapter4TheChosenPath",
             "subsections": [
                 {
                     "title": "Journey to the Eye",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#JourneytotheEye",
                     "subsections": []
                 },
                 {
                     "title": "Eye of the All-Father",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#EyeoftheAllFather",
                     "subsections": [
                         {
                             "title": "1. Domed Entrance",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#1DomedEntrance",
                             "subsections": []
                         },
                         {
                             "title": "2. Stone Blocks",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#2StoneBlocks",
                             "subsections": []
                         },
                         {
                             "title": "3. Boulderfall Hall",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#3BoulderfallHall",
                             "subsections": []
                         },
                         {
                             "title": "4. Giant Doors",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#4GiantDoors",
                             "subsections": []
                         },
                         {
                             "title": "5. Portcullises",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#5Portcullises",
                             "subsections": []
                         },
                         {
                             "title": "6. Annam’s Temple",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#6AnnamsTemple",
                             "subsections": []
                         },
                         {
                             "title": "7. Feast Hall",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#7FeastHall",
                             "subsections": []
                         },
                         {
                             "title": "8. Trapped Hall",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#8TrappedHall",
                             "subsections": []
                         },
                         {
                             "title": "9. Ice Spider Tunnels",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#9IceSpiderTunnels",
                             "subsections": []
                         },
                         {
                             "title": "10. Upstairs Quarters",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#10UpstairsQuarters",
                             "subsections": []
                         },
                         {
                             "title": "11. Eye of Annam",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#11EyeofAnnam",
                             "subsections": []
                         }
@@ -755,12 +761,12 @@
                 },
                 {
                     "title": "Words of the Oracle",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#WordsoftheOracle",
                     "subsections": [
                         {
                             "title": "Quest for the Giant Relics",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#QuestfortheGiantRelics",
                             "subsections": []
                         }
@@ -768,24 +774,24 @@
                 },
                 {
                     "title": "Airship of a Cult",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#AirshipofaCult",
                     "subsections": [
                         {
                             "title": "Need a Lift?",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#NeedaLift",
                             "subsections": []
                         },
                         {
                             "title": "Airship Description",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#AirshipDescription",
                             "subsections": []
                         },
                         {
                             "title": "Airship Locations",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#AirshipLocations",
                             "subsections": []
                         }
@@ -793,18 +799,18 @@
                 },
                 {
                     "title": "Encounter with Iymrith",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#EncounterwithIymrith",
                     "subsections": [
                         {
                             "title": "The Blue Wyrm",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#TheBlueWyrm",
                             "subsections": []
                         },
                         {
                             "title": "Harshnag’s Sacrifice",
-                            "urlName": "adventures/skt/the-chosen-path",
+                            "urlName": "skt/the-chosen-path",
                             "anchorName": "#HarshnagsSacrifice",
                             "subsections": []
                         }
@@ -812,7 +818,7 @@
                 },
                 {
                     "title": "Troubleshooting",
-                    "urlName": "adventures/skt/the-chosen-path",
+                    "urlName": "skt/the-chosen-path",
                     "anchorName": "#Troubleshooting",
                     "subsections": []
                 }
@@ -820,23 +826,23 @@
         },
         {
             "title": "Chapter 5: Den of the Hill Giants",
-            "urlName": "adventures/skt/den-of-the-hill-giants",
+            "urlName": "skt/den-of-the-hill-giants",
             "anchorName": "#Chapter5DenoftheHillGiants",
             "subsections": [
                 {
                     "title": "Hill Giants",
-                    "urlName": "adventures/skt/den-of-the-hill-giants",
+                    "urlName": "skt/den-of-the-hill-giants",
                     "anchorName": "#HillGiants",
                     "subsections": [
                         {
                             "title": "Guh’s Gluttony",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#GuhsGluttony",
                             "subsections": []
                         },
                         {
                             "title": "The Hunt for Food",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#TheHuntforFood",
                             "subsections": []
                         }
@@ -844,36 +850,36 @@
                 },
                 {
                     "title": "Grudd Haug",
-                    "urlName": "adventures/skt/den-of-the-hill-giants",
+                    "urlName": "skt/den-of-the-hill-giants",
                     "anchorName": "#GruddHaug",
                     "subsections": [
                         {
                             "title": "Reaching Grudd Haug",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#ReachingGruddHaug",
                             "subsections": []
                         },
                         {
                             "title": "Approaching the Den",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#ApproachingtheDen",
                             "subsections": []
                         },
                         {
                             "title": "Denizens",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#Denizens",
                             "subsections": []
                         },
                         {
                             "title": "Reinforcements",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#Reinforcements",
                             "subsections": []
                         },
                         {
                             "title": "Areas of Grudd Haug",
-                            "urlName": "adventures/skt/den-of-the-hill-giants",
+                            "urlName": "skt/den-of-the-hill-giants",
                             "anchorName": "#AreasofGruddHaug",
                             "subsections": []
                         }
@@ -883,23 +889,23 @@
         },
         {
             "title": "Chapter 6: Canyon of the Stone Giants",
-            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+            "urlName": "skt/canyon-of-the-stone-giants",
             "anchorName": "#Chapter6CanyonoftheStoneGiants",
             "subsections": [
                 {
                     "title": "Stone Giants",
-                    "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                    "urlName": "skt/canyon-of-the-stone-giants",
                     "anchorName": "#StoneGiants",
                     "subsections": [
                         {
                             "title": "A Pox on the Land",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#APoxontheLand",
                             "subsections": []
                         },
                         {
                             "title": "The Great Stillness",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#TheGreatStillness",
                             "subsections": []
                         }
@@ -907,120 +913,120 @@
                 },
                 {
                     "title": "Deadstone Cleft",
-                    "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                    "urlName": "skt/canyon-of-the-stone-giants",
                     "anchorName": "#DeadstoneCleft",
                     "subsections": [
                         {
                             "title": "Reaching Deadstone Cleft",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#ReachingDeadstoneCleft",
                             "subsections": []
                         },
                         {
                             "title": "Approaching the Canyon",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#ApproachingtheCanyon",
                             "subsections": []
                         },
                         {
                             "title": "Denizens",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#Denizens",
                             "subsections": []
                         },
                         {
                             "title": "Reinforcements",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#Reinforcements",
                             "subsections": []
                         },
                         {
                             "title": "1. Canyon Entrance",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#1CanyonEntrance",
                             "subsections": []
                         },
                         {
                             "title": "2. Roc’s Nest",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#2RocsNest",
                             "subsections": []
                         },
                         {
                             "title": "3. Bear Cave",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#3BearCave",
                             "subsections": []
                         },
                         {
                             "title": "4. Gorgon Mud Pool",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#4GorgonMudPool",
                             "subsections": []
                         },
                         {
                             "title": "5. Thanes’ Tomb",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#5ThanesTomb",
                             "subsections": []
                         },
                         {
                             "title": "6. Roc Handler",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#6RocHandler",
                             "subsections": []
                         },
                         {
                             "title": "7. Tomb of the Skodkong",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#7TomboftheSkodkong",
                             "subsections": []
                         },
                         {
                             "title": "8. Stonecarver’s Cave",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#8StonecarversCave",
                             "subsections": []
                         },
                         {
                             "title": "9. Goat Cave",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#9GoatCave",
                             "subsections": []
                         },
                         {
                             "title": "10. Mushroom Farm",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#10MushroomFarm",
                             "subsections": []
                         },
                         {
                             "title": "11. Overgrown Tunnel",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#11OvergrownTunnel",
                             "subsections": []
                         },
                         {
                             "title": "12. Warriors’ Tomb",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#12WarriorsTomb",
                             "subsections": []
                         },
                         {
                             "title": "13. Skoraeus Stonebones",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#13SkoraeusStonebones",
                             "subsections": []
                         },
                         {
                             "title": "14. Temple",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#14Temple",
                             "subsections": []
                         },
                         {
                             "title": "15. Uthgardt Camps",
-                            "urlName": "adventures/skt/canyon-of-the-stone-giants",
+                            "urlName": "skt/canyon-of-the-stone-giants",
                             "anchorName": "#15UthgardtCamps",
                             "subsections": []
                         }
@@ -1030,23 +1036,23 @@
         },
         {
             "title": "Chapter 7: Berg of the Frost Giants",
-            "urlName": "adventures/skt/berg-of-the-frost-giants",
+            "urlName": "skt/berg-of-the-frost-giants",
             "anchorName": "#Chapter7BergoftheFrostGiants",
             "subsections": [
                 {
                     "title": "Frost Giants",
-                    "urlName": "adventures/skt/berg-of-the-frost-giants",
+                    "urlName": "skt/berg-of-the-frost-giants",
                     "anchorName": "#FrostGiants",
                     "subsections": [
                         {
                             "title": "Reclaiming Svardborg",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#ReclaimingSvardborg",
                             "subsections": []
                         },
                         {
                             "title": "The Ring of Winter",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#TheRingofWinter",
                             "subsections": []
                         }
@@ -1054,78 +1060,78 @@
                 },
                 {
                     "title": "Svardborg",
-                    "urlName": "adventures/skt/berg-of-the-frost-giants",
+                    "urlName": "skt/berg-of-the-frost-giants",
                     "anchorName": "#Svardborg",
                     "subsections": [
                         {
                             "title": "Reaching Svardborg",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#ReachingSvardborg",
                             "subsections": []
                         },
                         {
                             "title": "Approaching Svardborg",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#ApproachingSvardborg",
                             "subsections": []
                         },
                         {
                             "title": "Denizens",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#Denizens",
                             "subsections": []
                         },
                         {
                             "title": "1. Jarl’s Lodge",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#1JarlsLodge",
                             "subsections": []
                         },
                         {
                             "title": "2. Giants’ Lodge",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#2GiantsLodge",
                             "subsections": []
                         },
                         {
                             "title": "3. Drydock Lodge",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#3DrydockLodge",
                             "subsections": []
                         },
                         {
                             "title": "4. Temple of Thrym",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#4TempleofThrym",
                             "subsections": []
                         },
                         {
                             "title": "5. Yeti Cave",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#5YetiCave",
                             "subsections": []
                         },
                         {
                             "title": "6. Outhouse",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#6Outhouse",
                             "subsections": []
                         },
                         {
                             "title": "7. Entombed Greatship",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#7EntombedGreatship",
                             "subsections": []
                         },
                         {
                             "title": "8. Underwater Passage",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#8UnderwaterPassage",
                             "subsections": []
                         },
                         {
                             "title": "9. Greatships",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#9Greatships",
                             "subsections": []
                         }
@@ -1133,24 +1139,24 @@
                 },
                 {
                     "title": "The Krigvind",
-                    "urlName": "adventures/skt/berg-of-the-frost-giants",
+                    "urlName": "skt/berg-of-the-frost-giants",
                     "anchorName": "#TheKrigvind",
                     "subsections": [
                         {
                             "title": "The Frost Giant Jarl",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#TheFrostGiantJarl",
                             "subsections": []
                         },
                         {
                             "title": "Dragon in Chains",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#DragoninChains",
                             "subsections": []
                         },
                         {
                             "title": "Features of the Krigvind",
-                            "urlName": "adventures/skt/berg-of-the-frost-giants",
+                            "urlName": "skt/berg-of-the-frost-giants",
                             "anchorName": "#FeaturesoftheKrigvind",
                             "subsections": []
                         }
@@ -1160,29 +1166,29 @@
         },
         {
             "title": "Chapter 8: Forge of the Fire Giants",
-            "urlName": "adventures/skt/forge-of-the-fire-giants",
+            "urlName": "skt/forge-of-the-fire-giants",
             "anchorName": "#Chapter8ForgeoftheFireGiants",
             "subsections": [
                 {
                     "title": "Fire Giants",
-                    "urlName": "adventures/skt/forge-of-the-fire-giants",
+                    "urlName": "skt/forge-of-the-fire-giants",
                     "anchorName": "#FireGiants",
                     "subsections": [
                         {
                             "title": "Warmonger",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#Warmonger",
                             "subsections": []
                         },
                         {
                             "title": "The Xorlarrin Alliance",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#TheXorlarrinAlliance",
                             "subsections": []
                         },
                         {
                             "title": "Yakfolk Neighbors",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#YakfolkNeighbors",
                             "subsections": []
                         }
@@ -1190,36 +1196,36 @@
                 },
                 {
                     "title": "Ironslag",
-                    "urlName": "adventures/skt/forge-of-the-fire-giants",
+                    "urlName": "skt/forge-of-the-fire-giants",
                     "anchorName": "#Ironslag",
                     "subsections": [
                         {
                             "title": "Reaching Ironslag By Land",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#ReachingIronslagByLand",
                             "subsections": []
                         },
                         {
                             "title": "Reaching Ironslag By Air",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#ReachingIronslagByAir",
                             "subsections": []
                         },
                         {
                             "title": "Zones and Denizens",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#ZonesandDenizens",
                             "subsections": []
                         },
                         {
                             "title": "Reinforcements",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#Reinforcements",
                             "subsections": []
                         },
                         {
                             "title": "Areas of Ironslag",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#AreasofIronslag",
                             "subsections": []
                         }
@@ -1227,12 +1233,12 @@
                 },
                 {
                     "title": "Special Delivery",
-                    "urlName": "adventures/skt/forge-of-the-fire-giants",
+                    "urlName": "skt/forge-of-the-fire-giants",
                     "anchorName": "#SpecialDelivery",
                     "subsections": [
                         {
                             "title": "Zalto’s Iron Flask",
-                            "urlName": "adventures/skt/forge-of-the-fire-giants",
+                            "urlName": "skt/forge-of-the-fire-giants",
                             "anchorName": "#ZaltosIronFlask",
                             "subsections": []
                         }
@@ -1242,29 +1248,29 @@
         },
         {
             "title": "Chapter 9: Castle of the Cloud Giants",
-            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+            "urlName": "skt/castle-of-the-cloud-giants",
             "anchorName": "#Chapter9CastleoftheCloudGiants",
             "subsections": [
                 {
                     "title": "Cloud Giants",
-                    "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                    "urlName": "skt/castle-of-the-cloud-giants",
                     "anchorName": "#CloudGiants",
                     "subsections": [
                         {
                             "title": "Lady of Masks",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#LadyofMasks",
                             "subsections": []
                         },
                         {
                             "title": "Aarakocra Simulacra",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#AarakocraSimulacra",
                             "subsections": []
                         },
                         {
                             "title": "Felgolos’s Torment",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#FelgolossTorment",
                             "subsections": []
                         }
@@ -1272,24 +1278,24 @@
                 },
                 {
                     "title": "Lyn Armaal",
-                    "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                    "urlName": "skt/castle-of-the-cloud-giants",
                     "anchorName": "#LynArmaal",
                     "subsections": [
                         {
                             "title": "Reaching Lyn Armaal",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#ReachingLynArmaal",
                             "subsections": []
                         },
                         {
                             "title": "Denizens",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#Denizens",
                             "subsections": []
                         },
                         {
                             "title": "Areas of Lyn Armaal",
-                            "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                            "urlName": "skt/castle-of-the-cloud-giants",
                             "anchorName": "#AreasofLynArmaal",
                             "subsections": []
                         }
@@ -1297,7 +1303,7 @@
                 },
                 {
                     "title": "Conquering the Castle",
-                    "urlName": "adventures/skt/castle-of-the-cloud-giants",
+                    "urlName": "skt/castle-of-the-cloud-giants",
                     "anchorName": "#ConqueringtheCastle",
                     "subsections": []
                 }
@@ -1305,35 +1311,35 @@
         },
         {
             "title": "Chapter 10: Hold of the Storm Giants",
-            "urlName": "adventures/skt/hold-of-the-storm-giants",
+            "urlName": "skt/hold-of-the-storm-giants",
             "anchorName": "#Chapter10HoldoftheStormGiants",
             "subsections": [
                 {
                     "title": "Storm Giants",
-                    "urlName": "adventures/skt/hold-of-the-storm-giants",
+                    "urlName": "skt/hold-of-the-storm-giants",
                     "anchorName": "#StormGiants",
                     "subsections": []
                 },
                 {
                     "title": "Maelstrom",
-                    "urlName": "adventures/skt/hold-of-the-storm-giants",
+                    "urlName": "skt/hold-of-the-storm-giants",
                     "anchorName": "#Maelstrom",
                     "subsections": [
                         {
                             "title": "Reaching Maelstrom",
-                            "urlName": "adventures/skt/hold-of-the-storm-giants",
+                            "urlName": "skt/hold-of-the-storm-giants",
                             "anchorName": "#ReachingMaelstrom",
                             "subsections": []
                         },
                         {
                             "title": "Denizens",
-                            "urlName": "adventures/skt/hold-of-the-storm-giants",
+                            "urlName": "skt/hold-of-the-storm-giants",
                             "anchorName": "#Denizens",
                             "subsections": []
                         },
                         {
                             "title": "Areas of Maelstrom",
-                            "urlName": "adventures/skt/hold-of-the-storm-giants",
+                            "urlName": "skt/hold-of-the-storm-giants",
                             "anchorName": "#AreasofMaelstrom",
                             "subsections": []
                         }
@@ -1343,107 +1349,107 @@
         },
         {
             "title": "Chapter 11: Caught in the Tentacles",
-            "urlName": "adventures/skt/caught-in-the-tentacles",
+            "urlName": "skt/caught-in-the-tentacles",
             "anchorName": "#Chapter11CaughtintheTentacles",
             "subsections": [
                 {
                     "title": "The Golden Goose",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#TheGoldenGoose",
                     "subsections": []
                 },
                 {
                     "title": "The Grand Dame",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#TheGrandDame",
                     "subsections": [
                         {
                             "title": "1. Hold",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#1Hold",
                             "subsections": []
                         },
                         {
                             "title": "2. Head",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#2Head",
                             "subsections": []
                         },
                         {
                             "title": "3. Forward Stairs",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#3ForwardStairs",
                             "subsections": []
                         },
                         {
                             "title": "4. Lower Deck",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#4LowerDeck",
                             "subsections": []
                         },
                         {
                             "title": "5. Aft Stairs",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#5AftStairs",
                             "subsections": []
                         },
                         {
                             "title": "6. Main Deck Forward",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#6MainDeckForward",
                             "subsections": []
                         },
                         {
                             "title": "7. Dining Room",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#7DiningRoom",
                             "subsections": []
                         },
                         {
                             "title": "8. Kitchen",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#8Kitchen",
                             "subsections": []
                         },
                         {
                             "title": "9. Golden Goose Casino",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#9GoldenGooseCasino",
                             "subsections": []
                         },
                         {
                             "title": "10. Main Deck Aft",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#10MainDeckAft",
                             "subsections": []
                         },
                         {
                             "title": "11. Bridge",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#11Bridge",
                             "subsections": []
                         },
                         {
                             "title": "12. Crew Cabins",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#12CrewCabins",
                             "subsections": []
                         },
                         {
                             "title": "13. Lord Drylund’s Cabin",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#13LordDrylundsCabin",
                             "subsections": []
                         },
                         {
                             "title": "14. Dance Hall",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#14DanceHall",
                             "subsections": []
                         },
                         {
                             "title": "15. Aft Balcony",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#15AftBalcony",
                             "subsections": []
                         }
@@ -1451,18 +1457,18 @@
                 },
                 {
                     "title": "The Hunt for Hekaton",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#TheHuntforHekaton",
                     "subsections": [
                         {
                             "title": "Finding the Morkoth",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#FindingtheMorkoth",
                             "subsections": []
                         },
                         {
                             "title": "Modes of Travel",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#ModesofTravel",
                             "subsections": []
                         }
@@ -1470,48 +1476,48 @@
                 },
                 {
                     "title": "The Morkoth",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#TheMorkoth",
                     "subsections": [
                         {
                             "title": "1. Forecastle",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#1Forecastle",
                             "subsections": []
                         },
                         {
                             "title": "2. Aft Castle",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#2AftCastle",
                             "subsections": []
                         },
                         {
                             "title": "3. Hekaton in Chains",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#3HekatoninChains",
                             "subsections": []
                         },
                         {
                             "title": "4. Crew Cabin",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#4CrewCabin",
                             "subsections": []
                         },
                         {
                             "title": "5. Captain’s Cabin",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#5CaptainsCabin",
                             "subsections": []
                         },
                         {
                             "title": "6. First Mate’s Cabin",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#6FirstMatesCabin",
                             "subsections": []
                         },
                         {
                             "title": "7. Hold",
-                            "urlName": "adventures/skt/caught-in-the-tentacles",
+                            "urlName": "skt/caught-in-the-tentacles",
                             "anchorName": "#7Hold",
                             "subsections": []
                         }
@@ -1519,13 +1525,13 @@
                 },
                 {
                     "title": "The Kraken Cometh",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#TheKrakenCometh",
                     "subsections": []
                 },
                 {
                     "title": "Back to Maelstrom?",
-                    "urlName": "adventures/skt/caught-in-the-tentacles",
+                    "urlName": "skt/caught-in-the-tentacles",
                     "anchorName": "#BacktoMaelstrom",
                     "subsections": []
                 }
@@ -1533,47 +1539,47 @@
         },
         {
             "title": "Chapter 12: Doom of the Desert",
-            "urlName": "adventures/skt/doom-of-the-desert",
+            "urlName": "skt/doom-of-the-desert",
             "anchorName": "#Chapter12DoomoftheDesert",
             "subsections": [
                 {
                     "title": "Finding Iymrith",
-                    "urlName": "adventures/skt/doom-of-the-desert",
+                    "urlName": "skt/doom-of-the-desert",
                     "anchorName": "#FindingIymrith",
                     "subsections": []
                 },
                 {
                     "title": "Iymrith’s Lair",
-                    "urlName": "adventures/skt/doom-of-the-desert",
+                    "urlName": "skt/doom-of-the-desert",
                     "anchorName": "#IymrithsLair",
                     "subsections": [
                         {
                             "title": "1. Amphitheater and Environs",
-                            "urlName": "adventures/skt/doom-of-the-desert",
+                            "urlName": "skt/doom-of-the-desert",
                             "anchorName": "#1AmphitheaterandEnvirons",
                             "subsections": []
                         },
                         {
                             "title": "2. Entrance Chamber",
-                            "urlName": "adventures/skt/doom-of-the-desert",
+                            "urlName": "skt/doom-of-the-desert",
                             "anchorName": "#2EntranceChamber",
                             "subsections": []
                         },
                         {
                             "title": "3. Serpents of the Sands",
-                            "urlName": "adventures/skt/doom-of-the-desert",
+                            "urlName": "skt/doom-of-the-desert",
                             "anchorName": "#3SerpentsoftheSands",
                             "subsections": []
                         },
                         {
                             "title": "4. Iymrith’s Trove",
-                            "urlName": "adventures/skt/doom-of-the-desert",
+                            "urlName": "skt/doom-of-the-desert",
                             "anchorName": "#4IymrithsTrove",
                             "subsections": []
                         },
                         {
                             "title": "5. Purple Wormling Nursery",
-                            "urlName": "adventures/skt/doom-of-the-desert",
+                            "urlName": "skt/doom-of-the-desert",
                             "anchorName": "#5PurpleWormlingNursery",
                             "subsections": []
                         }
@@ -1581,7 +1587,7 @@
                 },
                 {
                     "title": "Adventure Conclusion",
-                    "urlName": "adventures/skt/doom-of-the-desert",
+                    "urlName": "skt/doom-of-the-desert",
                     "anchorName": "#AdventureConclusion",
                     "subsections": []
                 }
@@ -1589,29 +1595,29 @@
         },
         {
             "title": "Appendix A: Linked Adventures",
-            "urlName": "adventures/skt/linked-adventures",
+            "urlName": "skt/linked-adventures",
             "anchorName": "#AppendixALinkedAdventures",
             "subsections": [
                 {
                     "title": "Lost Mine of Phandelver",
-                    "urlName": "adventures/skt/linked-adventures",
+                    "urlName": "skt/linked-adventures",
                     "anchorName": "#LostMineofPhandelver",
                     "subsections": [
                         {
                             "title": "Lionshield Delivery",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#LionshieldDelivery",
                             "subsections": []
                         },
                         {
                             "title": "A Demanding Letter",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#ADemandingLetter",
                             "subsections": []
                         },
                         {
                             "title": "Zhentarim Connection",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#ZhentarimConnection",
                             "subsections": []
                         }
@@ -1619,30 +1625,30 @@
                 },
                 {
                     "title": "Hoard of the Dragon Queen",
-                    "urlName": "adventures/skt/linked-adventures",
+                    "urlName": "skt/linked-adventures",
                     "anchorName": "#HoardoftheDragonQueen",
                     "subsections": []
                 },
                 {
                     "title": "Princes of the Apocalypse",
-                    "urlName": "adventures/skt/linked-adventures",
+                    "urlName": "skt/linked-adventures",
                     "anchorName": "#PrincesoftheApocalypse",
                     "subsections": [
                         {
                             "title": "Harper Sympathizer",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#HarperSympathizer",
                             "subsections": []
                         },
                         {
                             "title": "Errant Priest",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#ErrantPriest",
                             "subsections": []
                         },
                         {
                             "title": "Homesteads in Peril",
-                            "urlName": "adventures/skt/linked-adventures",
+                            "urlName": "skt/linked-adventures",
                             "anchorName": "#HomesteadsinPeril",
                             "subsections": []
                         }
@@ -1650,7 +1656,7 @@
                 },
                 {
                     "title": "Out of the Abyss",
-                    "urlName": "adventures/skt/linked-adventures",
+                    "urlName": "skt/linked-adventures",
                     "anchorName": "#OutoftheAbyss",
                     "subsections": []
                 }
@@ -1658,108 +1664,108 @@
         },
         {
             "title": "Appendix B: Magic Items",
-            "urlName": "adventures/skt/magic-items",
+            "urlName": "skt/magic-items",
             "anchorName": "#AppendixBMagicItems",
             "subsections": [
                 {
                     "title": "Banner of the Krig Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#BanneroftheKrigRune",
                     "subsections": []
                 },
                 {
                     "title": "Blod Stone",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#BlodStone",
                     "subsections": []
                 },
                 {
                     "title": "Claw of the Wyrm Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#ClawoftheWyrmRune",
                     "subsections": []
                 },
                 {
                     "title": "Conch of Teleportation",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#2016right250ConchofTeleportation",
                     "subsections": []
                 },
                 {
                     "title": "Gavel of the Venn Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#GaveloftheVennRune",
                     "subsections": []
                 },
                 {
                     "title": "Gurt’s Greataxe",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#GurtsGreataxe",
                     "subsections": []
                 },
                 {
                     "title": "Ingot of the Skold Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#IngotoftheSkoldRune",
                     "subsections": []
                 },
                 {
                     "title": "Korolnor Scepter",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#KorolnorScepter",
                     "subsections": []
                 },
                 {
                     "title": "Navigation Orb",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#NavigationOrb",
                     "subsections": []
                 },
                 {
                     "title": "Opal of the Ild Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#OpaloftheIldRune",
                     "subsections": []
                 },
                 {
                     "title": "Orb of the Stein Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#OrboftheSteinRune",
                     "subsections": []
                 },
                 {
                     "title": "Pennant of the Vind Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#PennantoftheVindRune",
                     "subsections": []
                 },
                 {
                     "title": "Potion of Giant Size",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#PotionofGiantSize",
                     "subsections": []
                 },
                 {
                     "title": "Robe of Serpents",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#RobeofSerpents",
                     "subsections": []
                 },
                 {
                     "title": "Rod of the Vonindod",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#RodoftheVonindod",
                     "subsections": []
                 },
                 {
                     "title": "Shard of the Ise Rune",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#ShardoftheIseRune",
                     "subsections": []
                 },
                 {
                     "title": "Wyrmskull Throne",
-                    "urlName": "adventures/skt/magic-items",
+                    "urlName": "skt/magic-items",
                     "anchorName": "#WyrmskullThrone",
                     "subsections": []
                 }
@@ -1767,95 +1773,95 @@
         },
         {
             "title": "Appendix C: Creatures",
-            "urlName": "adventures/skt/creatures",
+            "urlName": "skt/creatures",
             "anchorName": "#AppendixCCreatures",
             "subsections": [
                 {
                     "title": "Crag Cat",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#CragCat",
                     "subsections": []
                 },
                 {
                     "title": "Hulking Crab",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#HulkingCrab",
                     "subsections": []
                 },
                 {
                     "title": "Iymrith the Dragon",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#IymriththeDragon",
                     "subsections": []
                 },
                 {
                     "title": "Maegera the Dawn Titan",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#MaegeratheDawnTitan",
                     "subsections": []
                 },
                 {
                     "title": "Purple Wormling",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#PurpleWormling",
                     "subsections": []
                 },
                 {
                     "title": "Tressym",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#Tressym",
                     "subsections": []
                 },
                 {
                     "title": "Uthgardt Shaman",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#UthgardtShaman",
                     "subsections": []
                 },
                 {
                     "title": "Yakfolk (Yikaria)",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#YakfolkYikaria",
                     "subsections": []
                 },
                 {
                     "title": "New Giant Options",
-                    "urlName": "adventures/skt/creatures",
+                    "urlName": "skt/creatures",
                     "anchorName": "#NewGiantOptions",
                     "subsections": [
                         {
                             "title": "Cloud Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#CloudGiants",
                             "subsections": []
                         },
                         {
                             "title": "Fire Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#FireGiants",
                             "subsections": []
                         },
                         {
                             "title": "Frost Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#FrostGiants",
                             "subsections": []
                         },
                         {
                             "title": "Hill Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#HillGiants",
                             "subsections": []
                         },
                         {
                             "title": "Stone Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#StoneGiants",
                             "subsections": []
                         },
                         {
                             "title": "Storm Giants",
-                            "urlName": "adventures/skt/creatures",
+                            "urlName": "skt/creatures",
                             "anchorName": "#StormGiants",
                             "subsections": []
                         }
@@ -1865,12 +1871,12 @@
         },
         {
             "title": "Appendix D: Special NPCs",
-            "urlName": "adventures/skt/special-npcs",
+            "urlName": "skt/special-npcs",
             "anchorName": "#AppendixDSpecialNPCs",
             "subsections": [
                 {
                     "title": "Instructions for the DM",
-                    "urlName": "adventures/skt/special-npcs",
+                    "urlName": "skt/special-npcs",
                     "anchorName": "#InstructionsfortheDM",
                     "subsections": []
                 }
@@ -1878,7 +1884,7 @@
         },
         {
             "title": "Credits",
-            "urlName": "adventures/skt/credits",
+            "urlName": "skt/credits",
             "anchorName": "#Credits",
             "subsections": []
         }

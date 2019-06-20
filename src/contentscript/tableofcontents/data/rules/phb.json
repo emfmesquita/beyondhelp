@@ -5,40 +5,40 @@
     "subsections": [
         {
             "title": "Preface",
-            "urlName": "rules/phb/introduction",
+            "urlName": "phb/introduction",
             "anchorName": "#Preface",
             "subsections": []
         },
         {
             "title": "Introduction",
-            "urlName": "rules/phb/introduction",
+            "urlName": "phb/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "Worlds of Adventure",
-                    "urlName": "rules/phb/introduction",
+                    "urlName": "phb/introduction",
                     "anchorName": "#WorldsofAdventure",
                     "subsections": []
                 },
                 {
                     "title": "Using These Rules",
-                    "urlName": "rules/phb/introduction",
+                    "urlName": "phb/introduction",
                     "anchorName": "#UsingTheseRules",
                     "subsections": []
                 },
                 {
                     "title": "How to Play",
-                    "urlName": "rules/phb/introduction",
+                    "urlName": "phb/introduction",
                     "anchorName": "#HowtoPlay",
                     "subsections": [
                         {
                             "title": "Game Dice",
-                            "urlName": "rules/phb/introduction",
+                            "urlName": "phb/introduction",
                             "anchorName": "#GameDice",
                             "subsections": [
                                 {
                                     "title": "The D20",
-                                    "urlName": "rules/phb/introduction",
+                                    "urlName": "phb/introduction",
                                     "anchorName": "#TheD20",
                                     "subsections": []
                                 }
@@ -46,19 +46,19 @@
                         },
                         {
                             "title": "Advantage and Disadvantage",
-                            "urlName": "rules/phb/introduction",
+                            "urlName": "phb/introduction",
                             "anchorName": "#AdvantageandDisadvantage",
                             "subsections": []
                         },
                         {
                             "title": "Specific Beats General",
-                            "urlName": "rules/phb/introduction",
+                            "urlName": "phb/introduction",
                             "anchorName": "#SpecificBeatsGeneral",
                             "subsections": []
                         },
                         {
                             "title": "Round Down",
-                            "urlName": "rules/phb/introduction",
+                            "urlName": "phb/introduction",
                             "anchorName": "#RoundDown",
                             "subsections": []
                         }
@@ -66,12 +66,12 @@
                 },
                 {
                     "title": "Adventures",
-                    "urlName": "rules/phb/introduction",
+                    "urlName": "phb/introduction",
                     "anchorName": "#Adventures",
                     "subsections": [
                         {
                             "title": "The Three Pillars of Adventure",
-                            "urlName": "rules/phb/introduction",
+                            "urlName": "phb/introduction",
                             "anchorName": "#TheThreePillarsofAdventure",
                             "subsections": []
                         }
@@ -79,7 +79,7 @@
                 },
                 {
                     "title": "The Wonders of Magic",
-                    "urlName": "rules/phb/introduction",
+                    "urlName": "phb/introduction",
                     "anchorName": "#TheWondersofMagic",
                     "subsections": []
                 }
@@ -87,35 +87,35 @@
         },
         {
             "title": "Chapter 1: Step-By-Step Characters",
-            "urlName": "rules/phb/step-by-step-characters",
+            "urlName": "phb/step-by-step-characters",
             "anchorName": "#Chapter1StepByStepCharacters",
             "subsections": [
                 {
                     "title": "1. Choose a Race",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#1ChooseaRace",
                     "subsections": []
                 },
                 {
                     "title": "2. Choose a Class",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#2ChooseaClass",
                     "subsections": [
                         {
                             "title": "Level",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#Level",
                             "subsections": []
                         },
                         {
                             "title": "Hit Points and Hit Dice",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#HitPointsandHitDice",
                             "subsections": []
                         },
                         {
                             "title": "Proficiency Bonus",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#ProficiencyBonus",
                             "subsections": []
                         }
@@ -123,29 +123,29 @@
                 },
                 {
                     "title": "3. Determine Ability Scores",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#3DetermineAbilityScores",
                     "subsections": [
                         {
                             "title": "Variant: Customizing Ability Scores",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#VariantCustomizingAbilityScores",
                             "subsections": [
                                 {
                                     "title": "Ability Score Point Cost",
-                                    "urlName": "rules/phb/step-by-step-characters",
+                                    "urlName": "phb/step-by-step-characters",
                                     "anchorName": "#AbilityScorePointCost",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Ability Score Summary",
-                                    "urlName": "rules/phb/step-by-step-characters",
+                                    "urlName": "phb/step-by-step-characters",
                                     "anchorName": "#AbilityScoreSummary",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Ability Scores and Modifiers",
-                                    "urlName": "rules/phb/step-by-step-characters",
+                                    "urlName": "phb/step-by-step-characters",
                                     "anchorName": "#AbilityScoresandModifiers",
                                     "subsections": []
                                 }
@@ -155,12 +155,12 @@
                 },
                 {
                     "title": "4. Describe Your Character",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#4DescribeYourCharacter",
                     "subsections": [
                         {
                             "title": "Your Character's Abilities",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#YourCharactersAbilities",
                             "subsections": []
                         }
@@ -168,18 +168,18 @@
                 },
                 {
                     "title": "5. Choose Equipment",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#5ChooseEquipment",
                     "subsections": [
                         {
                             "title": "Armor Class",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#ArmorClass",
                             "subsections": []
                         },
                         {
                             "title": "Weapons",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#Weapons",
                             "subsections": []
                         }
@@ -187,30 +187,30 @@
                 },
                 {
                     "title": "6. Come Together",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#6ComeTogether",
                     "subsections": []
                 },
                 {
                     "title": "Beyond 1st Level",
-                    "urlName": "rules/phb/step-by-step-characters",
+                    "urlName": "phb/step-by-step-characters",
                     "anchorName": "#Beyond1stLevel",
                     "subsections": [
                         {
                             "title": "Class Features and Hit Dice",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#ClassFeaturesandHitDice",
                             "subsections": []
                         },
                         {
                             "title": "XP and Proficiency Bonus Progression",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#XPandProficiencyBonusProgression",
                             "subsections": []
                         },
                         {
                             "title": "Tiers of Play",
-                            "urlName": "rules/phb/step-by-step-characters",
+                            "urlName": "phb/step-by-step-characters",
                             "anchorName": "#TiersofPlay",
                             "subsections": []
                         }
@@ -220,72 +220,72 @@
         },
         {
             "title": "Chapter 2: Races",
-            "urlName": "rules/phb/races",
+            "urlName": "phb/races",
             "anchorName": "#Chapter2Races",
             "subsections": [
                 {
                     "title": "Choosing a Race",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#ChoosingaRace",
                     "subsections": []
                 },
                 {
                     "title": "Racial Traits",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#RacialTraits",
                     "subsections": []
                 },
                 {
                     "title": "Dwarf",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Dwarf",
                     "subsections": []
                 },
                 {
                     "title": "Elf",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Elf",
                     "subsections": []
                 },
                 {
                     "title": "Halfling",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Halfling",
                     "subsections": []
                 },
                 {
                     "title": "Human",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Human",
                     "subsections": []
                 },
                 {
                     "title": "Dragonborn",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Dragonborn",
                     "subsections": []
                 },
                 {
                     "title": "Gnome",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Gnome",
                     "subsections": []
                 },
                 {
                     "title": "Half-Elf",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#HalfElf",
                     "subsections": []
                 },
                 {
                     "title": "Half-Orc",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#HalfOrc",
                     "subsections": []
                 },
                 {
                     "title": "Tiefling",
-                    "urlName": "rules/phb/races",
+                    "urlName": "phb/races",
                     "anchorName": "#Tiefling",
                     "subsections": []
                 }
@@ -293,84 +293,84 @@
         },
         {
             "title": "Chapter 3: Classes",
-            "urlName": "rules/phb/classes",
+            "urlName": "phb/classes",
             "anchorName": "#Chapter3Classes",
             "subsections": [
                 {
                     "title": "Classes Summary",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#ClassesSummary",
                     "subsections": []
                 },
                 {
                     "title": "Barbarian",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Barbarian",
                     "subsections": []
                 },
                 {
                     "title": "Bard",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Bard",
                     "subsections": []
                 },
                 {
                     "title": "Cleric",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Cleric",
                     "subsections": []
                 },
                 {
                     "title": "Druid",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Druid",
                     "subsections": []
                 },
                 {
                     "title": "Fighter",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Fighter",
                     "subsections": []
                 },
                 {
                     "title": "Monk",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Monk",
                     "subsections": []
                 },
                 {
                     "title": "Paladin",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Paladin",
                     "subsections": []
                 },
                 {
                     "title": "Ranger",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Ranger",
                     "subsections": []
                 },
                 {
                     "title": "Rogue",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Rogue",
                     "subsections": []
                 },
                 {
                     "title": "Sorcerer",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Sorcerer",
                     "subsections": []
                 },
                 {
                     "title": "Warlock",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Warlock",
                     "subsections": []
                 },
                 {
                     "title": "Wizard",
-                    "urlName": "rules/phb/classes",
+                    "urlName": "phb/classes",
                     "anchorName": "#Wizard",
                     "subsections": []
                 }
@@ -378,64 +378,64 @@
         },
         {
             "title": "Chapter 4: Personality and Background",
-            "urlName": "rules/phb/personality-and-background",
+            "urlName": "phb/personality-and-background",
             "anchorName": "#Chapter4PersonalityandBackground",
             "subsections": [
                 {
                     "title": "Character Details",
-                    "urlName": "rules/phb/personality-and-background",
+                    "urlName": "phb/personality-and-background",
                     "anchorName": "#CharacterDetails",
                     "subsections": [
                         {
                             "title": "Height and Weight",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#HeightandWeight",
                             "subsections": []
                         },
                         {
                             "title": "Other Physical Characteristics",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#OtherPhysicalCharacteristics",
                             "subsections": []
                         },
                         {
                             "title": "Alignment",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Alignment",
                             "subsections": []
                         },
                         {
                             "title": "Languages",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Languages",
                             "subsections": [
                                 {
                                     "title": "Dwarvish Alphabet",
-                                    "urlName": "rules/phb/personality-and-background",
+                                    "urlName": "phb/personality-and-background",
                                     "anchorName": "#DwarvishAlphabet",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Standard Languages",
-                                    "urlName": "rules/phb/personality-and-background",
+                                    "urlName": "phb/personality-and-background",
                                     "anchorName": "#StandardLanguages",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Elvish Alphabet",
-                                    "urlName": "rules/phb/personality-and-background",
+                                    "urlName": "phb/personality-and-background",
                                     "anchorName": "#ElvishAlphabet",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Exotic Languages",
-                                    "urlName": "rules/phb/personality-and-background",
+                                    "urlName": "phb/personality-and-background",
                                     "anchorName": "#ExoticLanguages",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Draconic Alphabet",
-                                    "urlName": "rules/phb/personality-and-background",
+                                    "urlName": "phb/personality-and-background",
                                     "anchorName": "#DraconicAlphabet",
                                     "subsections": []
                                 }
@@ -445,30 +445,30 @@
                 },
                 {
                     "title": "Personal Characteristics",
-                    "urlName": "rules/phb/personality-and-background",
+                    "urlName": "phb/personality-and-background",
                     "anchorName": "#PersonalCharacteristics",
                     "subsections": [
                         {
                             "title": "Personality Traits",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#PersonalityTraits",
                             "subsections": []
                         },
                         {
                             "title": "Ideals",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Ideals",
                             "subsections": []
                         },
                         {
                             "title": "Bonds",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Bonds",
                             "subsections": []
                         },
                         {
                             "title": "Flaws",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Flaws",
                             "subsections": []
                         }
@@ -476,18 +476,18 @@
                 },
                 {
                     "title": "Inspiration",
-                    "urlName": "rules/phb/personality-and-background",
+                    "urlName": "phb/personality-and-background",
                     "anchorName": "#Inspiration",
                     "subsections": [
                         {
                             "title": "Gaining Inspiration",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#GainingInspiration",
                             "subsections": []
                         },
                         {
                             "title": "Using Inspiration",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#UsingInspiration",
                             "subsections": []
                         }
@@ -495,84 +495,84 @@
                 },
                 {
                     "title": "Backgrounds",
-                    "urlName": "rules/phb/personality-and-background",
+                    "urlName": "phb/personality-and-background",
                     "anchorName": "#Backgrounds",
                     "subsections": [
                         {
                             "title": "Acolyte",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Acolyte",
                             "subsections": []
                         },
                         {
                             "title": "Charlatan",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Charlatan",
                             "subsections": []
                         },
                         {
                             "title": "Criminal",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Criminal",
                             "subsections": []
                         },
                         {
                             "title": "Entertainer",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Entertainer",
                             "subsections": []
                         },
                         {
                             "title": "Folk Hero",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#FolkHero",
                             "subsections": []
                         },
                         {
                             "title": "Guild Artisan",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#GuildArtisan",
                             "subsections": []
                         },
                         {
                             "title": "Hermit",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Hermit",
                             "subsections": []
                         },
                         {
                             "title": "Noble",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Noble",
                             "subsections": []
                         },
                         {
                             "title": "Outlander",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Outlander",
                             "subsections": []
                         },
                         {
                             "title": "Sage",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Sage",
                             "subsections": []
                         },
                         {
                             "title": "Sailor",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Sailor",
                             "subsections": []
                         },
                         {
                             "title": "Soldier",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Soldier",
                             "subsections": []
                         },
                         {
                             "title": "Urchin",
-                            "urlName": "rules/phb/personality-and-background",
+                            "urlName": "phb/personality-and-background",
                             "anchorName": "#Urchin",
                             "subsections": []
                         }
@@ -582,34 +582,34 @@
         },
         {
             "title": "Chapter 5: Equipment",
-            "urlName": "rules/phb/equipment",
+            "urlName": "phb/equipment",
             "anchorName": "#Chapter5Equipment",
             "subsections": [
                 {
                     "title": "Starting Equipment",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#StartingEquipment",
                     "subsections": []
                 },
                 {
                     "title": "Wealth",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#Wealth",
                     "subsections": [
                         {
                             "title": "Starting Wealth by Class",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#StartingWealthbyClass",
                             "subsections": []
                         },
                         {
                             "title": "Coinage",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Coinage",
                             "subsections": [
                                 {
                                     "title": "Standard Exchange Rates",
-                                    "urlName": "rules/phb/equipment",
+                                    "urlName": "phb/equipment",
                                     "anchorName": "#StandardExchangeRates",
                                     "subsections": []
                                 }
@@ -619,30 +619,30 @@
                 },
                 {
                     "title": "Selling Treasure",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#SellingTreasure",
                     "subsections": [
                         {
                             "title": "Arms, Armor, and Other Equipment",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#ArmsArmorandOtherEquipment",
                             "subsections": []
                         },
                         {
                             "title": "Magic Items",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#MagicItems",
                             "subsections": []
                         },
                         {
                             "title": "Gems, Jewelry, and Art Objects",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#GemsJewelryandArtObjects",
                             "subsections": []
                         },
                         {
                             "title": "Trade Goods and Other",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#TradeGoodsandOther",
                             "subsections": []
                         }
@@ -650,36 +650,36 @@
                 },
                 {
                     "title": "Armor and Shields",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#ArmorandShields",
                     "subsections": [
                         {
                             "title": "Light Armor",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#LightArmor",
                             "subsections": []
                         },
                         {
                             "title": "Medium Armor",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#MediumArmor",
                             "subsections": []
                         },
                         {
                             "title": "Heavy Armor",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#HeavyArmor",
                             "subsections": []
                         },
                         {
                             "title": "Shield",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Shield",
                             "subsections": []
                         },
                         {
                             "title": "Getting Into and Out of Armor",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#GettingIntoandOutofArmor",
                             "subsections": []
                         }
@@ -687,60 +687,60 @@
                 },
                 {
                     "title": "Weapons",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#Weapons",
                     "subsections": [
                         {
                             "title": "Simple Melee Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SimpleMeleeWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Simple Ranged Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SimpleRangedWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Martial Melee Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#MartialMeleeWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Martial Ranged Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#MartialRangedWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Weapon Proficiency",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#WeaponProficiency",
                             "subsections": []
                         },
                         {
                             "title": "Weapon Properties",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#WeaponProperties",
                             "subsections": []
                         },
                         {
                             "title": "Improvised Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#ImprovisedWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Silvered Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SilveredWeapons",
                             "subsections": []
                         },
                         {
                             "title": "Special Weapons",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SpecialWeapons",
                             "subsections": []
                         }
@@ -748,42 +748,42 @@
                 },
                 {
                     "title": "Adventuring Gear",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#AdventuringGear",
                     "subsections": [
                         {
                             "title": "Ammunition",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Ammunition",
                             "subsections": []
                         },
                         {
                             "title": "Arcane Focus",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#ArcaneFocus",
                             "subsections": []
                         },
                         {
                             "title": "Druidic Focus",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#DruidicFocus",
                             "subsections": []
                         },
                         {
                             "title": "Holy Symbol",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#HolySymbol",
                             "subsections": []
                         },
                         {
                             "title": "Other Adventuring Gear",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#OtherAdventuringGear",
                             "subsections": []
                         },
                         {
                             "title": "Container Capacity",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#ContainerCapacity",
                             "subsections": []
                         }
@@ -791,18 +791,18 @@
                 },
                 {
                     "title": "Equipment Packs",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#EquipmentPacks",
                     "subsections": []
                 },
                 {
                     "title": "Tools",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#Tools",
                     "subsections": [
                         {
                             "title": "Tools",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#ArtisansTools",
                             "subsections": []
                         }
@@ -810,30 +810,30 @@
                 },
                 {
                     "title": "Mounts and Vehicles",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#MountsandVehicles",
                     "subsections": [
                         {
                             "title": "Mounts",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Mounts",
                             "subsections": []
                         },
                         {
                             "title": "Tack, Harness, and Drawn Vehicles",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#TackHarnessandDrawnVehicles",
                             "subsections": []
                         },
                         {
                             "title": "Saddles",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Saddles",
                             "subsections": []
                         },
                         {
                             "title": "Waterborne Vehicles",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#WaterborneVehicles",
                             "subsections": []
                         }
@@ -841,18 +841,18 @@
                 },
                 {
                     "title": "Trade Goods",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#TradeGoods",
                     "subsections": [
                         {
                             "title": "Regulation and Bartering",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#RegulationandBartering",
                             "subsections": []
                         },
                         {
                             "title": "Trade Goods Table",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#TradeGoodsTable",
                             "subsections": []
                         }
@@ -860,30 +860,30 @@
                 },
                 {
                     "title": "Expenses",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#Expenses",
                     "subsections": [
                         {
                             "title": "Lifestyle Expenses",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#LifestyleExpenses",
                             "subsections": []
                         },
                         {
                             "title": "Food, Drink, and Lodging",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#FoodDrinkandLodging",
                             "subsections": []
                         },
                         {
                             "title": "Services",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#Services",
                             "subsections": []
                         },
                         {
                             "title": "Spellcasting Services",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SpellcastingServices",
                             "subsections": []
                         }
@@ -891,12 +891,12 @@
                 },
                 {
                     "title": "Trinkets",
-                    "urlName": "rules/phb/equipment",
+                    "urlName": "phb/equipment",
                     "anchorName": "#Trinkets",
                     "subsections": [
                         {
                             "title": "Sample Trinkets",
-                            "urlName": "rules/phb/equipment",
+                            "urlName": "phb/equipment",
                             "anchorName": "#SampleTrinkets",
                             "subsections": []
                         }
@@ -906,40 +906,40 @@
         },
         {
             "title": "Chapter 6: Customization Options",
-            "urlName": "rules/phb/customization-options",
+            "urlName": "phb/customization-options",
             "anchorName": "#Chapter6CustomizationOptions",
             "subsections": [
                 {
                     "title": "Multiclassing",
-                    "urlName": "rules/phb/customization-options",
+                    "urlName": "phb/customization-options",
                     "anchorName": "#Multiclassing",
                     "subsections": [
                         {
                             "title": "Experience Points",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#ExperiencePoints",
                             "subsections": []
                         },
                         {
                             "title": "Hit Points and Hit Dice",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#HitPointsandHitDice",
                             "subsections": []
                         },
                         {
                             "title": "Proficiency Bonus",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#ProficiencyBonus",
                             "subsections": []
                         },
                         {
                             "title": "Proficiencies",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#Proficiencies",
                             "subsections": [
                                 {
                                     "title": "Multiclassing Proficiencies",
-                                    "urlName": "rules/phb/customization-options",
+                                    "urlName": "phb/customization-options",
                                     "anchorName": "#MulticlassingProficiencies",
                                     "subsections": []
                                 }
@@ -949,24 +949,24 @@
                 },
                 {
                     "title": "Class Features",
-                    "urlName": "rules/phb/customization-options",
+                    "urlName": "phb/customization-options",
                     "anchorName": "#ClassFeatures",
                     "subsections": [
                         {
                             "title": "Channel Divinity",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#ChannelDivinity",
                             "subsections": []
                         },
                         {
                             "title": "Extra Attack",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#ExtraAttack",
                             "subsections": []
                         },
                         {
                             "title": "Unarmored Defense",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#UnarmoredDefense",
                             "subsections": []
                         }
@@ -974,12 +974,12 @@
                 },
                 {
                     "title": "Spellcasting",
-                    "urlName": "rules/phb/customization-options",
+                    "urlName": "phb/customization-options",
                     "anchorName": "#Spellcasting",
                     "subsections": [
                         {
                             "title": "Multiclass Spellcaster",
-                            "urlName": "rules/phb/customization-options",
+                            "urlName": "phb/customization-options",
                             "anchorName": "#MulticlassSpellcaster",
                             "subsections": []
                         }
@@ -987,7 +987,7 @@
                 },
                 {
                     "title": "Feats",
-                    "urlName": "rules/phb/customization-options",
+                    "urlName": "phb/customization-options",
                     "anchorName": "#Feats",
                     "subsections": []
                 }
@@ -995,17 +995,17 @@
         },
         {
             "title": "Chapter 7: Using Ability Scores",
-            "urlName": "rules/phb/using-ability-scores",
+            "urlName": "phb/using-ability-scores",
             "anchorName": "#Chapter7UsingAbilityScores",
             "subsections": [
                 {
                     "title": "Ability Scores and Modifiers",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#AbilityScoresandModifiers",
                     "subsections": [
                         {
                             "title": "Ability Scores and Modifiers Table",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#AbilityScoresandModifiersTable",
                             "subsections": []
                         }
@@ -1013,41 +1013,41 @@
                 },
                 {
                     "title": "Advantage and Disadvantage",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#AdvantageandDisadvantage",
                     "subsections": []
                 },
                 {
                     "title": "Proficiency Bonus",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#ProficiencyBonus",
                     "subsections": []
                 },
                 {
                     "title": "Ability Checks",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#AbilityChecks",
                     "subsections": [
                         {
                             "title": "Typical Difficulty Classes",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#TypicalDifficultyClasses",
                             "subsections": []
                         },
                         {
                             "title": "Contests",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Contests",
                             "subsections": []
                         },
                         {
                             "title": "Skills",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Skills",
                             "subsections": [
                                 {
                                     "title": "Variant: Skills with Different Abilities",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#VariantSkillswithDifferentAbilities",
                                     "subsections": []
                                 }
@@ -1055,18 +1055,18 @@
                         },
                         {
                             "title": "Passive Checks",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#PassiveChecks",
                             "subsections": []
                         },
                         {
                             "title": "Working Together",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#WorkingTogether",
                             "subsections": [
                                 {
                                     "title": "Group Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#GroupChecks",
                                     "subsections": []
                                 }
@@ -1076,28 +1076,28 @@
                 },
                 {
                     "title": "Using Each Ability",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#UsingEachAbility",
                     "subsections": [
                         {
                             "title": "Strength",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Strength",
                             "subsections": [
                                 {
                                     "title": "Strength Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#StrengthChecks",
                                     "subsections": [
                                         {
                                             "title": "Athletics",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Athletics",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Other Strength Checks",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#OtherStrengthChecks",
                                             "subsections": []
                                         }
@@ -1105,19 +1105,19 @@
                                 },
                                 {
                                     "title": "Attack Rolls and Damage",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#AttackRollsandDamage",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Lifting and Carrying",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#LiftingandCarrying",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Variant: Encumbrance",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#VariantEncumbrance",
                                     "subsections": []
                                 }
@@ -1125,35 +1125,35 @@
                         },
                         {
                             "title": "Dexterity",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Dexterity",
                             "subsections": [
                                 {
                                     "title": "Dexterity Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#DexterityChecks",
                                     "subsections": [
                                         {
                                             "title": "Acrobatics",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Acrobatics",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Sleight of Hand",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#SleightofHand",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Stealth",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Stealth",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Other Dexterity Checks",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#OtherDexterityChecks",
                                             "subsections": []
                                         }
@@ -1161,19 +1161,19 @@
                                 },
                                 {
                                     "title": "Attack Rolls and Damage",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#AttackRollsandDamage",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Armor Class",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#ArmorClass",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Initiative",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#Initiative",
                                     "subsections": []
                                 }
@@ -1181,18 +1181,18 @@
                         },
                         {
                             "title": "Constitution",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Constitution",
                             "subsections": [
                                 {
                                     "title": "Constitution Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#ConstitutionChecks",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Hit Points",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#HitPoints",
                                     "subsections": []
                                 }
@@ -1200,47 +1200,47 @@
                         },
                         {
                             "title": "Intelligence",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Intelligence",
                             "subsections": [
                                 {
                                     "title": "Intelligence Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#IntelligenceChecks",
                                     "subsections": [
                                         {
                                             "title": "Arcana",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Arcana",
                                             "subsections": []
                                         },
                                         {
                                             "title": "History",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#History",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Investigation",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Investigation",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Nature",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Nature",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Religion",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Religion",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Other Intelligence Checks",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#OtherIntelligenceChecks",
                                             "subsections": []
                                         }
@@ -1248,7 +1248,7 @@
                                 },
                                 {
                                     "title": "Spellcasting Ability",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#SpellcastingAbility",
                                     "subsections": []
                                 }
@@ -1256,47 +1256,47 @@
                         },
                         {
                             "title": "Wisdom",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Wisdom",
                             "subsections": [
                                 {
                                     "title": "Wisdom Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#WisdomChecks",
                                     "subsections": [
                                         {
                                             "title": "Animal Handling",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#AnimalHandling",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Insight",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Insight",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Medicine",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Medicine",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Perception",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Perception",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Survival",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Survival",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Other Wisdom Checks",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#OtherWisdomChecks",
                                             "subsections": []
                                         }
@@ -1304,7 +1304,7 @@
                                 },
                                 {
                                     "title": "Spellcasting Ability",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#SpellcastingAbility",
                                     "subsections": []
                                 }
@@ -1312,41 +1312,41 @@
                         },
                         {
                             "title": "Charisma",
-                            "urlName": "rules/phb/using-ability-scores",
+                            "urlName": "phb/using-ability-scores",
                             "anchorName": "#Charisma",
                             "subsections": [
                                 {
                                     "title": "Charisma Checks",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#CharismaChecks",
                                     "subsections": [
                                         {
                                             "title": "Deception",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Deception",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Intimidation",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Intimidation",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Performance",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Performance",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Persuasion",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#Persuasion",
                                             "subsections": []
                                         },
                                         {
                                             "title": "Other Charisma Checks",
-                                            "urlName": "rules/phb/using-ability-scores",
+                                            "urlName": "phb/using-ability-scores",
                                             "anchorName": "#OtherCharismaChecks",
                                             "subsections": []
                                         }
@@ -1354,7 +1354,7 @@
                                 },
                                 {
                                     "title": "Spellcasting Ability",
-                                    "urlName": "rules/phb/using-ability-scores",
+                                    "urlName": "phb/using-ability-scores",
                                     "anchorName": "#SpellcastingAbility",
                                     "subsections": []
                                 }
@@ -1364,7 +1364,7 @@
                 },
                 {
                     "title": "Saving Throws",
-                    "urlName": "rules/phb/using-ability-scores",
+                    "urlName": "phb/using-ability-scores",
                     "anchorName": "#SavingThrows",
                     "subsections": []
                 }
@@ -1372,126 +1372,128 @@
         },
         {
             "title": "Chapter 8: Adventuring",
-            "urlName": "rules/phb/adventuring",
+            "urlName": "phb/adventuring",
             "anchorName": "#Chapter8Adventuring",
             "subsections": [
                 {
                     "title": "Time",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#Time",
                     "subsections": []
                 },
                 {
                     "title": "Movement",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#Movement",
                     "subsections": [
                         {
                             "title": "Speed",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#Speed",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Travel Pace",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#TravelPace",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Difficult Terrain",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#DifficultTerrain",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Special Types of Movement",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#SpecialTypesofMovement",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Climbing, Swimming, and Crawling",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#ClimbingSwimmingandCrawling",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Jumping",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#Jumping",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Activity While Traveling",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#ActivityWhileTraveling",
                             "subsections": [
                                 {
-                                    "title": "Marching Order",
-                                    "urlName": "rules/phb/adventuring",
-                                    "anchorName": "#MarchingOrder",
+                                    "title": "Travel Pace",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#TravelPace",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Difficult Terrain",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#DifficultTerrain",
                                     "subsections": []
                                 }
                             ]
                         },
                         {
-                            "title": "Stealth",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#Stealth",
-                            "subsections": []
+                            "title": "Special Types of Movement",
+                            "urlName": "phb/adventuring",
+                            "anchorName": "#SpecialTypesofMovement",
+                            "subsections": [
+                                {
+                                    "title": "Climbing, Swimming, and Crawling",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#ClimbingSwimmingandCrawling",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Jumping",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#Jumping",
+                                    "subsections": []
+                                }
+                            ]
                         },
                         {
-                            "title": "Noticing Threats",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#NoticingThreats",
-                            "subsections": []
-                        },
-                        {
-                            "title": "Other Activities",
-                            "urlName": "rules/phb/adventuring",
-                            "anchorName": "#OtherActivities",
-                            "subsections": []
+                            "title": "Activity While Traveling",
+                            "urlName": "phb/adventuring",
+                            "anchorName": "#ActivityWhileTraveling",
+                            "subsections": [
+                                {
+                                    "title": "Marching Order",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#MarchingOrder",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Stealth",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#Stealth",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Noticing Threats",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#NoticingThreats",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Other Activities",
+                                    "urlName": "phb/adventuring",
+                                    "anchorName": "#OtherActivities",
+                                    "subsections": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "title": "The Environment",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#TheEnvironment",
                     "subsections": [
                         {
                             "title": "Falling",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#Falling",
                             "subsections": []
                         },
                         {
                             "title": "Suffocating",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#Suffocating",
                             "subsections": []
                         },
                         {
                             "title": "Vision and Light",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#VisionandLight",
                             "subsections": [
                                 {
                                     "title": "Blindsight",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Blindsight",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Darkvision",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Darkvision",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Truesight",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Truesight",
                                     "subsections": []
                                 }
@@ -1499,18 +1501,18 @@
                         },
                         {
                             "title": "Food and Water",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#FoodandWater",
                             "subsections": [
                                 {
                                     "title": "Food",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Food",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Water",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Water",
                                     "subsections": []
                                 }
@@ -1518,7 +1520,7 @@
                         },
                         {
                             "title": "Interacting with Objects",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#InteractingwithObjects",
                             "subsections": []
                         }
@@ -1526,29 +1528,29 @@
                 },
                 {
                     "title": "Social Interaction",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#SocialInteraction",
                     "subsections": [
                         {
                             "title": "Roleplaying",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#Roleplaying",
                             "subsections": [
                                 {
                                     "title": "Descriptive Approach to Roleplaying",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#DescriptiveApproachtoRoleplaying",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Active Approach to Roleplaying",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#ActiveApproachtoRoleplaying",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Results of Roleplaying",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#ResultsofRoleplaying",
                                     "subsections": []
                                 }
@@ -1556,7 +1558,7 @@
                         },
                         {
                             "title": "Ability Checks",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#AbilityChecks",
                             "subsections": []
                         }
@@ -1564,18 +1566,18 @@
                 },
                 {
                     "title": "Resting",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#Resting",
                     "subsections": [
                         {
                             "title": "Short Rest",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#ShortRest",
                             "subsections": []
                         },
                         {
                             "title": "Long Rest",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#LongRest",
                             "subsections": []
                         }
@@ -1583,47 +1585,47 @@
                 },
                 {
                     "title": "Between Adventures",
-                    "urlName": "rules/phb/adventuring",
+                    "urlName": "phb/adventuring",
                     "anchorName": "#BetweenAdventures",
                     "subsections": [
                         {
                             "title": "Lifestyle Expenses",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#LifestyleExpenses",
                             "subsections": []
                         },
                         {
                             "title": "Downtime Activities",
-                            "urlName": "rules/phb/adventuring",
+                            "urlName": "phb/adventuring",
                             "anchorName": "#DowntimeActivities",
                             "subsections": [
                                 {
                                     "title": "Crafting",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Crafting",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Practicing a Profession",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#PracticingaProfession",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Recuperating",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Recuperating",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Researching",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Researching",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Training",
-                                    "urlName": "rules/phb/adventuring",
+                                    "urlName": "phb/adventuring",
                                     "anchorName": "#Training",
                                     "subsections": []
                                 }
@@ -1635,46 +1637,46 @@
         },
         {
             "title": "Chapter 9: Combat",
-            "urlName": "rules/phb/combat",
+            "urlName": "phb/combat",
             "anchorName": "#Chapter9Combat",
             "subsections": [
                 {
                     "title": "The Order of Combat",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#TheOrderofCombat",
                     "subsections": [
                         {
                             "title": "Surprise",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Surprise",
                             "subsections": []
                         },
                         {
                             "title": "Initiative",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Initiative",
                             "subsections": []
                         },
                         {
                             "title": "Your Turn",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#YourTurn",
                             "subsections": [
                                 {
                                     "title": "Bonus Actions",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#BonusActions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Other Activity on Your Turn",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#OtherActivityonYourTurn",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Reactions",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#Reactions",
                                     "subsections": []
                                 }
@@ -1684,23 +1686,23 @@
                 },
                 {
                     "title": "Movement and Position",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#MovementandPosition",
                     "subsections": [
                         {
                             "title": "Breaking Up Your Move",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#BreakingUpYourMove",
                             "subsections": [
                                 {
                                     "title": "Moving Between Attacks",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#MovingBetweenAttacks",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Using Different Speeds",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#UsingDifferentSpeeds",
                                     "subsections": []
                                 }
@@ -1708,42 +1710,42 @@
                         },
                         {
                             "title": "Difficult Terrain",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#DifficultTerrain",
                             "subsections": []
                         },
                         {
                             "title": "Being Prone",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#BeingProne",
                             "subsections": []
                         },
                         {
                             "title": "Moving Around Other Creatures",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#MovingAroundOtherCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Flying Movement",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#FlyingMovement",
                             "subsections": []
                         },
                         {
                             "title": "Creature Size",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#CreatureSize",
                             "subsections": [
                                 {
                                     "title": "Space",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#Space",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Squeezing into a Smaller Space",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#SqueezingintoaSmallerSpace",
                                     "subsections": []
                                 }
@@ -1753,66 +1755,66 @@
                 },
                 {
                     "title": "Actions in Combat",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#ActionsinCombat",
                     "subsections": [
                         {
                             "title": "Attack",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Attack",
                             "subsections": []
                         },
                         {
                             "title": "Cast a Spell",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#CastaSpell",
                             "subsections": []
                         },
                         {
                             "title": "Dash",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Dash",
                             "subsections": []
                         },
                         {
                             "title": "Disengage",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Disengage",
                             "subsections": []
                         },
                         {
                             "title": "Dodge",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Dodge",
                             "subsections": []
                         },
                         {
                             "title": "Help",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Help",
                             "subsections": []
                         },
                         {
                             "title": "Hide",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Hide",
                             "subsections": []
                         },
                         {
                             "title": "Ready",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Ready",
                             "subsections": []
                         },
                         {
                             "title": "Search",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Search",
                             "subsections": []
                         },
                         {
                             "title": "Use an Object",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#UseanObject",
                             "subsections": []
                         }
@@ -1820,23 +1822,23 @@
                 },
                 {
                     "title": "Making an Attack",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#MakinganAttack",
                     "subsections": [
                         {
                             "title": "Attack Rolls",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#AttackRolls",
                             "subsections": [
                                 {
                                     "title": "Modifiers to the Roll",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#ModifierstotheRoll",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Rolling 1 or 20",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#Rolling1or20",
                                     "subsections": []
                                 }
@@ -1844,24 +1846,24 @@
                         },
                         {
                             "title": "Unseen Attackers and Targets",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#UnseenAttackersandTargets",
                             "subsections": []
                         },
                         {
                             "title": "Ranged Attacks",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#RangedAttacks",
                             "subsections": [
                                 {
                                     "title": "Range",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#Range",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Ranged Attacks in Close Combat",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#RangedAttacksinCloseCombat",
                                     "subsections": []
                                 }
@@ -1869,36 +1871,36 @@
                         },
                         {
                             "title": "Melee Attacks",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#MeleeAttacks",
                             "subsections": [
                                 {
                                     "title": "Opportunity Attacks",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#OpportunityAttacks",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Two-Weapon Fighting",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#TwoWeaponFighting",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Contests in Combat",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#ContestsinCombat",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Grappling",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#Grappling",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Shoving a Creature",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#ShovingaCreature",
                                     "subsections": []
                                 }
@@ -1908,24 +1910,24 @@
                 },
                 {
                     "title": "Cover",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#Cover",
                     "subsections": [
                         {
                             "title": "Half Cover",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#HalfCover",
                             "subsections": []
                         },
                         {
                             "title": "Three-Quarters Cover",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#ThreeQuartersCover",
                             "subsections": []
                         },
                         {
                             "title": "Total Cover",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#TotalCover",
                             "subsections": []
                         }
@@ -1933,23 +1935,23 @@
                 },
                 {
                     "title": "Damage and Healing",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#DamageandHealing",
                     "subsections": [
                         {
                             "title": "Hit Points",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#HitPoints",
                             "subsections": []
                         },
                         {
                             "title": "Damage Rolls",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#DamageRolls",
                             "subsections": [
                                 {
                                     "title": "Critical Hits",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#CriticalHits",
                                     "subsections": []
                                 }
@@ -1957,54 +1959,54 @@
                         },
                         {
                             "title": "Damage Types",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#DamageTypes",
                             "subsections": []
                         },
                         {
                             "title": "Damage Resistance and Vulnerability",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#DamageResistanceandVulnerability",
                             "subsections": []
                         },
                         {
                             "title": "Healing",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Healing",
                             "subsections": []
                         },
                         {
                             "title": "Dropping to 0 Hit Points",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#Droppingto0HitPoints",
                             "subsections": [
                                 {
                                     "title": "Instant Death",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#InstantDeath",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Falling Unconscious",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#FallingUnconscious",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Death Saving Throws",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#DeathSavingThrows",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Stabilizing a Creature",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#StabilizingaCreature",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Monsters and Death",
-                                    "urlName": "rules/phb/combat",
+                                    "urlName": "phb/combat",
                                     "anchorName": "#MonstersandDeath",
                                     "subsections": []
                                 }
@@ -2012,13 +2014,13 @@
                         },
                         {
                             "title": "Knocking a Creature Out",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#KnockingaCreatureOut",
                             "subsections": []
                         },
                         {
                             "title": "Temporary Hit Points",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#TemporaryHitPoints",
                             "subsections": []
                         }
@@ -2026,18 +2028,18 @@
                 },
                 {
                     "title": "Mounted Combat",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#MountedCombat",
                     "subsections": [
                         {
                             "title": "Mounting and Dismounting",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#MountingandDismounting",
                             "subsections": []
                         },
                         {
                             "title": "Controlling a Mount",
-                            "urlName": "rules/phb/combat",
+                            "urlName": "phb/combat",
                             "anchorName": "#ControllingaMount",
                             "subsections": []
                         }
@@ -2045,7 +2047,7 @@
                 },
                 {
                     "title": "Underwater Combat",
-                    "urlName": "rules/phb/combat",
+                    "urlName": "phb/combat",
                     "anchorName": "#UnderwaterCombat",
                     "subsections": []
                 }
@@ -2053,17 +2055,17 @@
         },
         {
             "title": "Chapter 10: Spellcasting",
-            "urlName": "rules/phb/spellcasting",
+            "urlName": "phb/spellcasting",
             "anchorName": "#Chapter10Spellcasting",
             "subsections": [
                 {
                     "title": "What Is a Spell?",
-                    "urlName": "rules/phb/spellcasting",
+                    "urlName": "phb/spellcasting",
                     "anchorName": "#WhatIsaSpell",
                     "subsections": [
                         {
                             "title": "Spell Level",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#SpellLevel",
                             "subsections": []
                         }
@@ -2071,24 +2073,24 @@
                 },
                 {
                     "title": "Known and Prepared Spells",
-                    "urlName": "rules/phb/spellcasting",
+                    "urlName": "phb/spellcasting",
                     "anchorName": "#KnownandPreparedSpells",
                     "subsections": []
                 },
                 {
                     "title": "Spell Slots",
-                    "urlName": "rules/phb/spellcasting",
+                    "urlName": "phb/spellcasting",
                     "anchorName": "#SpellSlots",
                     "subsections": [
                         {
                             "title": "Casting a Spell at a Higher Level",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#CastingaSpellataHigherLevel",
                             "subsections": []
                         },
                         {
                             "title": "Cantrips",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#Cantrips",
                             "subsections": []
                         }
@@ -2096,35 +2098,35 @@
                 },
                 {
                     "title": "Rituals",
-                    "urlName": "rules/phb/spellcasting",
+                    "urlName": "phb/spellcasting",
                     "anchorName": "#Rituals",
                     "subsections": []
                 },
                 {
                     "title": "Casting a Spell",
-                    "urlName": "rules/phb/spellcasting",
+                    "urlName": "phb/spellcasting",
                     "anchorName": "#CastingaSpell",
                     "subsections": [
                         {
                             "title": "Casting Time",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#CastingTime",
                             "subsections": [
                                 {
                                     "title": "Bonus Action",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#BonusAction",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Reactions",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Reactions",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Longer Casting Times",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#LongerCastingTimes",
                                     "subsections": []
                                 }
@@ -2132,30 +2134,30 @@
                         },
                         {
                             "title": "Range",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#Range",
                             "subsections": []
                         },
                         {
                             "title": "Components",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#Components",
                             "subsections": [
                                 {
                                     "title": "Verbal (V)",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#VerbalV",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Somatic (S)",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#SomaticS",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Material (M)",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#MaterialM",
                                     "subsections": []
                                 }
@@ -2163,18 +2165,18 @@
                         },
                         {
                             "title": "Duration",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#Duration",
                             "subsections": [
                                 {
                                     "title": "Instantaneous",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Instantaneous",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Concentration",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Concentration",
                                     "subsections": []
                                 }
@@ -2182,18 +2184,18 @@
                         },
                         {
                             "title": "Targets",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#Targets",
                             "subsections": [
                                 {
                                     "title": "A Clear Path to the Target",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#AClearPathtotheTarget",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Targeting Yourself",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#TargetingYourself",
                                     "subsections": []
                                 }
@@ -2201,36 +2203,36 @@
                         },
                         {
                             "title": "Areas of Effect",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#AreasofEffect",
                             "subsections": [
                                 {
                                     "title": "Cone",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Cone",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Cube",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Cube",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Cylinder",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Cylinder",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Line",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Line",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Sphere",
-                                    "urlName": "rules/phb/spellcasting",
+                                    "urlName": "phb/spellcasting",
                                     "anchorName": "#Sphere",
                                     "subsections": []
                                 }
@@ -2238,19 +2240,19 @@
                         },
                         {
                             "title": "Saving Throws",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#SavingThrows",
                             "subsections": []
                         },
                         {
                             "title": "Attack Rolls",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#AttackRolls",
                             "subsections": []
                         },
                         {
                             "title": "Combining Magical Effects",
-                            "urlName": "rules/phb/spellcasting",
+                            "urlName": "phb/spellcasting",
                             "anchorName": "#CombiningMagicalEffects",
                             "subsections": []
                         }
@@ -2260,60 +2262,60 @@
         },
         {
             "title": "Chapter 11: Spells",
-            "urlName": "rules/phb/spells",
+            "urlName": "phb/spells",
             "anchorName": "#Chapter11Spells",
             "subsections": [
                 {
                     "title": "Bard Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#BardSpells",
                     "subsections": []
                 },
                 {
                     "title": "Cleric Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#ClericSpells",
                     "subsections": []
                 },
                 {
                     "title": "Druid Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#DruidSpells",
                     "subsections": []
                 },
                 {
                     "title": "Paladin Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#PaladinSpells",
                     "subsections": []
                 },
                 {
                     "title": "Ranger Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#RangerSpells",
                     "subsections": []
                 },
                 {
                     "title": "Sorcerer Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#SorcererSpells",
                     "subsections": []
                 },
                 {
                     "title": "Warlock Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#WarlockSpells",
                     "subsections": []
                 },
                 {
                     "title": "Wizard Spells",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#WizardSpells",
                     "subsections": []
                 },
                 {
                     "title": "Spell Descriptions",
-                    "urlName": "rules/phb/spells",
+                    "urlName": "phb/spells",
                     "anchorName": "#SpellDescriptions",
                     "subsections": []
                 }
@@ -2321,96 +2323,96 @@
         },
         {
             "title": "Appendix A: Conditions",
-            "urlName": "rules/phb/appendix-a-conditions",
+            "urlName": "phb/appendix-a-conditions",
             "anchorName": "#AppendixAConditions",
             "subsections": [
                 {
                     "title": "Blinded",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Blinded",
                     "subsections": []
                 },
                 {
                     "title": "Charmed",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Charmed",
                     "subsections": []
                 },
                 {
                     "title": "Deafened",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Deafened",
                     "subsections": []
                 },
                 {
                     "title": "Exhaustion",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Exhaustion",
                     "subsections": []
                 },
                 {
                     "title": "Frightened",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Frightened",
                     "subsections": []
                 },
                 {
                     "title": "Grappled",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Grappled",
                     "subsections": []
                 },
                 {
                     "title": "Incapacitated",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Incapacitated",
                     "subsections": []
                 },
                 {
                     "title": "Invisible",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Invisible",
                     "subsections": []
                 },
                 {
                     "title": "Paralyzed",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Paralyzed",
                     "subsections": []
                 },
                 {
                     "title": "Petrified",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Petrified",
                     "subsections": []
                 },
                 {
                     "title": "Poisoned",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Poisoned",
                     "subsections": []
                 },
                 {
                     "title": "Prone",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Prone",
                     "subsections": []
                 },
                 {
                     "title": "Restrained",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Restrained",
                     "subsections": []
                 },
                 {
                     "title": "Stunned",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Stunned",
                     "subsections": []
                 },
                 {
                     "title": "Unconscious",
-                    "urlName": "rules/phb/appendix-a-conditions",
+                    "urlName": "phb/appendix-a-conditions",
                     "anchorName": "#Unconscious",
                     "subsections": []
                 }
@@ -2418,70 +2420,70 @@
         },
         {
             "title": "Appendix B: Gods of the Multiverse",
-            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+            "urlName": "phb/appendix-b-gods-of-the-multiverse",
             "anchorName": "#AppendixBGodsoftheMultiverse",
             "subsections": [
                 {
                     "title": "D&D Pantheons",
-                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                     "anchorName": "#DDPantheons",
                     "subsections": [
                         {
                             "title": "The Forgotten Realms",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#TheForgottenRealms",
                             "subsections": []
                         },
                         {
                             "title": "Greyhawk",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#Greyhawk",
                             "subsections": []
                         },
                         {
                             "title": "Dragonlance",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#Dragonlance",
                             "subsections": []
                         },
                         {
                             "title": "Eberron",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#Eberron",
                             "subsections": []
                         },
                         {
                             "title": "Nonhuman Deities",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#NonhumanDeities",
                             "subsections": [
                                 {
                                     "title": "Deities of the Forgotten Realms",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#DeitiesoftheForgottenRealms",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Deities of Greyhawk",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#DeitiesofGreyhawk",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Deities of Dragonlance",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#DeitiesofDragonlance",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Deities of Eberron",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#DeitiesofEberron",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Nonhuman Deities",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#NonhumanDeities",
                                     "subsections": []
                                 }
@@ -2491,53 +2493,53 @@
                 },
                 {
                     "title": "Fantasy-Historical Pantheons",
-                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                     "anchorName": "#FantasyHistoricalPantheons",
                     "subsections": [
                         {
                             "title": "The Celtic Pantheon",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#TheCelticPantheon",
                             "subsections": []
                         },
                         {
                             "title": "The Greek Pantheon",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#TheGreekPantheon",
                             "subsections": []
                         },
                         {
                             "title": "The Egyptian Pantheon",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#TheEgyptianPantheon",
                             "subsections": []
                         },
                         {
                             "title": "The Norse Pantheon",
-                            "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                            "urlName": "phb/appendix-b-gods-of-the-multiverse",
                             "anchorName": "#TheNorsePantheon",
                             "subsections": [
                                 {
                                     "title": "Celtic Deities",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#CelticDeities",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Greek Deities",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#GreekDeities",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Egyptian Deities",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#EgyptianDeities",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Norse Deities",
-                                    "urlName": "rules/phb/appendix-b-gods-of-the-multiverse",
+                                    "urlName": "phb/appendix-b-gods-of-the-multiverse",
                                     "anchorName": "#NorseDeities",
                                     "subsections": []
                                 }
@@ -2549,17 +2551,17 @@
         },
         {
             "title": "Appendix C: The Planes of Existence",
-            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+            "urlName": "phb/appendix-c-the-planes-of-existence",
             "anchorName": "#AppendixCThePlanesofExistence",
             "subsections": [
                 {
                     "title": "The Material Plane",
-                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                    "urlName": "phb/appendix-c-the-planes-of-existence",
                     "anchorName": "#TheMaterialPlane",
                     "subsections": [
                         {
                             "title": "Material Echoes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#MaterialEchoes",
                             "subsections": []
                         }
@@ -2567,35 +2569,35 @@
                 },
                 {
                     "title": "Beyond the Material",
-                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                    "urlName": "phb/appendix-c-the-planes-of-existence",
                     "anchorName": "#BeyondtheMaterial",
                     "subsections": [
                         {
                             "title": "Planar Travel",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#PlanarTravel",
                             "subsections": []
                         },
                         {
                             "title": "Transitive Planes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#TransitivePlanes",
                             "subsections": []
                         },
                         {
                             "title": "Inner Planes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#InnerPlanes",
                             "subsections": []
                         },
                         {
                             "title": "Outer Planes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#OuterPlanes",
                             "subsections": [
                                 {
                                     "title": "Outer Planes",
-                                    "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                                    "urlName": "phb/appendix-c-the-planes-of-existence",
                                     "anchorName": "#OuterPlanes",
                                     "subsections": []
                                 }
@@ -2603,25 +2605,25 @@
                         },
                         {
                             "title": "Other Planes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#OtherPlanes",
                             "subsections": []
                         },
                         {
                             "title": "Sigil and the Outlands",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#SigilandtheOutlands",
                             "subsections": []
                         },
                         {
                             "title": "Demiplanes",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#Demiplanes",
                             "subsections": []
                         },
                         {
                             "title": "The Far Realm",
-                            "urlName": "rules/phb/appendix-c-the-planes-of-existence",
+                            "urlName": "phb/appendix-c-the-planes-of-existence",
                             "anchorName": "#TheFarRealm",
                             "subsections": []
                         }
@@ -2631,36 +2633,36 @@
         },
         {
             "title": "Appendix D: Creature Statistics",
-            "urlName": "rules/phb/appendix-d-creature-statistics",
+            "urlName": "phb/appendix-d-creature-statistics",
             "anchorName": "#AppendixDCreatureStatistics",
             "subsections": [
                 {
                     "title": "Creatures A - D",
-                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "urlName": "phb/appendix-d-creature-statistics",
                     "anchorName": "#CreaturesAD",
                     "subsections": []
                 },
                 {
                     "title": "Creatures F - I",
-                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "urlName": "phb/appendix-d-creature-statistics",
                     "anchorName": "#CreaturesFI",
                     "subsections": []
                 },
                 {
                     "title": "Creatures L - O",
-                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "urlName": "phb/appendix-d-creature-statistics",
                     "anchorName": "#CreaturesLO",
                     "subsections": []
                 },
                 {
                     "title": "Creatures P - S",
-                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "urlName": "phb/appendix-d-creature-statistics",
                     "anchorName": "#CreaturesPS",
                     "subsections": []
                 },
                 {
                     "title": "Creatures T - Z",
-                    "urlName": "rules/phb/appendix-d-creature-statistics",
+                    "urlName": "phb/appendix-d-creature-statistics",
                     "anchorName": "#CreaturesTZ",
                     "subsections": []
                 }
@@ -2668,13 +2670,13 @@
         },
         {
             "title": "Appendix E: Inspirational Reading",
-            "urlName": "rules/phb/appendix-e-inspirational-reading",
+            "urlName": "phb/appendix-e-inspirational-reading",
             "anchorName": "#AppendixEInspirationalReading",
             "subsections": []
         },
         {
             "title": "Credits",
-            "urlName": "rules/phb/credits",
+            "urlName": "phb/credits",
             "anchorName": "#Credits",
             "subsections": []
         }

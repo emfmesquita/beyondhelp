@@ -5,71 +5,71 @@
     "subsections": [
         {
             "title": "Adventure Primer",
-            "urlName": "adventures/llok/adventure-primer",
+            "urlName": "llok/adventure-primer",
             "anchorName": "#AdventurePrimer",
             "subsections": [
                 {
                     "title": "Background",
-                    "urlName": "adventures/llok/adventure-primer",
+                    "urlName": "llok/adventure-primer",
                     "anchorName": "#Background",
                     "subsections": []
                 },
                 {
                     "title": "Adventure Summary",
-                    "urlName": "adventures/llok/adventure-primer",
+                    "urlName": "llok/adventure-primer",
                     "anchorName": "#AdventureSummary",
                     "subsections": []
                 },
                 {
                     "title": "Running the Adventure",
-                    "urlName": "adventures/llok/adventure-primer",
+                    "urlName": "llok/adventure-primer",
                     "anchorName": "#RunningtheAdventure",
                     "subsections": []
                 },
                 {
                     "title": "Adventure Hooks",
-                    "urlName": "adventures/llok/adventure-primer",
+                    "urlName": "llok/adventure-primer",
                     "anchorName": "#AdventureHooks",
                     "subsections": [
                         {
                             "title": "Thwarting Annihilation",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#ThwartingAnnihilation",
                             "subsections": []
                         },
                         {
                             "title": "Waterdeep Dangers",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#WaterdeepDangers",
                             "subsections": []
                         },
                         {
                             "title": "Ravnica in Peril",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#RavnicainPeril",
                             "subsections": []
                         },
                         {
                             "title": "From One Mad Mage to Another",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#FromOneMadMagetoAnother",
                             "subsections": []
                         },
                         {
                             "title": "Unnatural Invasion",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#UnnaturalInvasion",
                             "subsections": []
                         },
                         {
                             "title": "Planar Retribution",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#PlanarRetribution",
                             "subsections": []
                         },
                         {
                             "title": "Journey of Discovery",
-                            "urlName": "adventures/llok/adventure-primer",
+                            "urlName": "llok/adventure-primer",
                             "anchorName": "#JourneyofDiscovery",
                             "subsections": []
                         }
@@ -79,41 +79,41 @@
         },
         {
             "title": "Part 1: Mission to the Barrier Peaks",
-            "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+            "urlName": "llok/mission-to-the-barrier-peaks",
             "anchorName": "#Part1MissiontotheBarrierPeaks",
             "subsections": [
                 {
                     "title": "The Cartophile",
-                    "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                    "urlName": "llok/mission-to-the-barrier-peaks",
                     "anchorName": "#TheCartophile",
                     "subsections": []
                 },
                 {
                     "title": "Hirelings",
-                    "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                    "urlName": "llok/mission-to-the-barrier-peaks",
                     "anchorName": "#Hirelings",
                     "subsections": [
                         {
                             "title": "Ctenmiir the Vampire",
-                            "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                            "urlName": "llok/mission-to-the-barrier-peaks",
                             "anchorName": "#CtenmiirtheVampire",
                             "subsections": []
                         },
                         {
                             "title": "Garret Levistusson",
-                            "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                            "urlName": "llok/mission-to-the-barrier-peaks",
                             "anchorName": "#GarretLevistusson",
                             "subsections": []
                         },
                         {
                             "title": "Gearbox",
-                            "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                            "urlName": "llok/mission-to-the-barrier-peaks",
                             "anchorName": "#Gearbox",
                             "subsections": []
                         },
                         {
                             "title": "Mary Greymalkin",
-                            "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                            "urlName": "llok/mission-to-the-barrier-peaks",
                             "anchorName": "#MaryGreymalkin",
                             "subsections": []
                         }
@@ -121,19 +121,19 @@
                 },
                 {
                     "title": "Rumors and Legends",
-                    "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                    "urlName": "llok/mission-to-the-barrier-peaks",
                     "anchorName": "#RumorsandLegends",
                     "subsections": []
                 },
                 {
                     "title": "Reaching the Peaks",
-                    "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                    "urlName": "llok/mission-to-the-barrier-peaks",
                     "anchorName": "#ReachingthePeaks",
                     "subsections": []
                 },
                 {
                     "title": "Trinkets from the Barrier Peaks",
-                    "urlName": "adventures/llok/mission-to-the-barrier-peaks",
+                    "urlName": "llok/mission-to-the-barrier-peaks",
                     "anchorName": "#TrinketsfromtheBarrierPeaks",
                     "subsections": []
                 }
@@ -141,35 +141,35 @@
         },
         {
             "title": "Part 2: Monastery of the Distressed Body",
-            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+            "urlName": "llok/monastery-of-the-distressed-body",
             "anchorName": "#Part2MonasteryoftheDistressedBody",
             "subsections": [
                 {
                     "title": "Cliff-Side Approach",
-                    "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                    "urlName": "llok/monastery-of-the-distressed-body",
                     "anchorName": "#CliffSideApproach",
                     "subsections": [
                         {
                             "title": "C1. Cliff Edge",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#C1CliffEdge",
                             "subsections": []
                         },
                         {
                             "title": "C2. Enhanced Sphinx",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#C2EnhancedSphinx",
                             "subsections": []
                         },
                         {
                             "title": "C3. Ferry Service",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#C3FerryService",
                             "subsections": []
                         },
                         {
                             "title": "C4. Valley Floor",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#C4ValleyFloor",
                             "subsections": []
                         }
@@ -177,18 +177,18 @@
                 },
                 {
                     "title": "The Monastery",
-                    "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                    "urlName": "llok/monastery-of-the-distressed-body",
                     "anchorName": "#TheMonastery",
                     "subsections": [
                         {
                             "title": "Roleplaying the Monks",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#RoleplayingtheMonks",
                             "subsections": []
                         },
                         {
                             "title": "Prisoners of the Monastery",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#PrisonersoftheMonastery",
                             "subsections": []
                         }
@@ -196,59 +196,59 @@
                 },
                 {
                     "title": "Locations in the Monastery",
-                    "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                    "urlName": "llok/monastery-of-the-distressed-body",
                     "anchorName": "#LocationsintheMonastery",
                     "subsections": [
                         {
                             "title": "M1. Monastery Dock",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M1MonasteryDock",
                             "subsections": []
                         },
                         {
                             "title": "M2. Monastery Grounds",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M2MonasteryGrounds",
                             "subsections": []
                         },
                         {
                             "title": "M3. Central Abbey",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M3CentralAbbey",
                             "subsections": []
                         },
                         {
                             "title": "M4. Dormitories",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M4Dormitories",
                             "subsections": []
                         },
                         {
                             "title": "M5. Engine Room",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M5EngineRoom",
                             "subsections": []
                         },
                         {
                             "title": "M6. Prison Cells",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M6PrisonCells",
                             "subsections": []
                         },
                         {
                             "title": "M7. Leather Works",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M7LeatherWorks",
                             "subsections": []
                         },
                         {
                             "title": "M8. Control Room",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M8ControlRoom",
                             "subsections": [
                                 {
                                     "title": "Brains in Jars",
-                                    "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                                    "urlName": "llok/monastery-of-the-distressed-body",
                                     "anchorName": "#BrainsinJars",
                                     "subsections": []
                                 }
@@ -256,13 +256,13 @@
                         },
                         {
                             "title": "M9. Floating Bridge",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M9FloatingBridge",
                             "subsections": []
                         },
                         {
                             "title": "M10. Treasury",
-                            "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                            "urlName": "llok/monastery-of-the-distressed-body",
                             "anchorName": "#M10Treasury",
                             "subsections": []
                         }
@@ -270,7 +270,7 @@
                 },
                 {
                     "title": "Onward Journey",
-                    "urlName": "adventures/llok/monastery-of-the-distressed-body",
+                    "urlName": "llok/monastery-of-the-distressed-body",
                     "anchorName": "#OnwardJourney",
                     "subsections": []
                 }
@@ -278,59 +278,59 @@
         },
         {
             "title": "Part 3: The Ooze-Flooded City",
-            "urlName": "adventures/llok/the-ooze-flooded-city",
+            "urlName": "llok/the-ooze-flooded-city",
             "anchorName": "#Part3TheOozeFloodedCity",
             "subsections": [
                 {
                     "title": "Daoine Gloine",
-                    "urlName": "adventures/llok/the-ooze-flooded-city",
+                    "urlName": "llok/the-ooze-flooded-city",
                     "anchorName": "#DaoineGloine",
                     "subsections": [
                         {
                             "title": "O1. Overlook",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O1Overlook",
                             "subsections": []
                         },
                         {
                             "title": "O2. Tower Level",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O2TowerLevel",
                             "subsections": []
                         },
                         {
                             "title": "O3. Street Level",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O3StreetLevel",
                             "subsections": []
                         },
                         {
                             "title": "O4. Tomb of the Medusa",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O4TomboftheMedusa",
                             "subsections": []
                         },
                         {
                             "title": "O5. Apparatus Garage",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O5ApparatusGarage",
                             "subsections": []
                         },
                         {
                             "title": "O6. Baubles",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O6Baubles",
                             "subsections": []
                         },
                         {
                             "title": "O7. Kwalish’s Lab",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#O7KwalishsLab",
                             "subsections": []
                         },
                         {
                             "title": "Sample Bauble Encounters",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#SampleBaubleEncounters",
                             "subsections": []
                         }
@@ -338,42 +338,42 @@
                 },
                 {
                     "title": "Meeting Kwalish",
-                    "urlName": "adventures/llok/the-ooze-flooded-city",
+                    "urlName": "llok/the-ooze-flooded-city",
                     "anchorName": "#MeetingKwalish",
                     "subsections": [
                         {
                             "title": "Quick Contact",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#QuickContact",
                             "subsections": []
                         },
                         {
                             "title": "Just a Bit of Trouble",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#JustaBitofTrouble",
                             "subsections": []
                         },
                         {
                             "title": "Kwalish Who?",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#KwalishWho",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying Kwalish",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#RoleplayingKwalish",
                             "subsections": []
                         },
                         {
                             "title": "Sphinx’s Curse",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#SphinxsCurse",
                             "subsections": []
                         },
                         {
                             "title": "Laboratory Fight",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#LaboratoryFight",
                             "subsections": []
                         }
@@ -381,24 +381,24 @@
                 },
                 {
                     "title": "Concluding the Adventure",
-                    "urlName": "adventures/llok/the-ooze-flooded-city",
+                    "urlName": "llok/the-ooze-flooded-city",
                     "anchorName": "#ConcludingtheAdventure",
                     "subsections": [
                         {
                             "title": "Loose Ends",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#LooseEnds",
                             "subsections": []
                         },
                         {
                             "title": "Kwalish’s Plans",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#KwalishsPlans",
                             "subsections": []
                         },
                         {
                             "title": "New Discoveries",
-                            "urlName": "adventures/llok/the-ooze-flooded-city",
+                            "urlName": "llok/the-ooze-flooded-city",
                             "anchorName": "#NewDiscoveries",
                             "subsections": []
                         }
@@ -408,30 +408,30 @@
         },
         {
             "title": "Acknowledgments and Final Thanks",
-            "urlName": "adventures/llok/acknowledgments-and-final-thanks",
+            "urlName": "llok/acknowledgments-and-final-thanks",
             "anchorName": "#",
             "subsections": []
         },
         {
             "title": "Appendix A: Random Encounters",
-            "urlName": "adventures/llok/random-encounters",
+            "urlName": "llok/random-encounters",
             "anchorName": "#AppendixARandomEncounters",
             "subsections": [
                 {
                     "title": "Wilderness Encounters",
-                    "urlName": "adventures/llok/random-encounters",
+                    "urlName": "llok/random-encounters",
                     "anchorName": "#WildernessEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Cavern Encounters",
-                    "urlName": "adventures/llok/random-encounters",
+                    "urlName": "llok/random-encounters",
                     "anchorName": "#CavernEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Mountain Encounters",
-                    "urlName": "adventures/llok/random-encounters",
+                    "urlName": "llok/random-encounters",
                     "anchorName": "#MountainEncounters",
                     "subsections": []
                 }
@@ -439,66 +439,66 @@
         },
         {
             "title": "Appendix B: Further Options",
-            "urlName": "adventures/llok/further-options",
+            "urlName": "llok/further-options",
             "anchorName": "#AppendixBFurtherOptions",
             "subsections": [
                 {
                     "title": "The Cartophile",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#TheCartophile",
                     "subsections": []
                 },
                 {
                     "title": "Mary Greymalkin",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#MaryGreymalkin",
                     "subsections": []
                 },
                 {
                     "title": "The Enhanced Sphinx",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#TheEnhancedSphinx",
                     "subsections": []
                 },
                 {
                     "title": "The Grand Master",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#TheGrandMaster",
                     "subsections": []
                 },
                 {
                     "title": "Brains in Jars",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#BrainsinJars",
                     "subsections": []
                 },
                 {
                     "title": "More Monastery",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#MoreMonastery",
                     "subsections": []
                 },
                 {
                     "title": "High Priest",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#HighPriest",
                     "subsections": []
                 },
                 {
                     "title": "Baubles",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#Baubles",
                     "subsections": []
                 },
                 {
                     "title": "Abyssal Throne Gate",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#AbyssalThroneGate",
                     "subsections": []
                 },
                 {
                     "title": "Kwalish",
-                    "urlName": "adventures/llok/further-options",
+                    "urlName": "llok/further-options",
                     "anchorName": "#Kwalish",
                     "subsections": []
                 }
@@ -506,30 +506,30 @@
         },
         {
             "title": "Appendix C: Monsters and NPCs",
-            "urlName": "adventures/llok/monsters-and-npcs",
+            "urlName": "llok/monsters-and-npcs",
             "anchorName": "#AppendixCMonstersandNPCs",
             "subsections": [
                 {
                     "title": "Monsters B - E",
-                    "urlName": "adventures/llok/monsters-and-npcs",
+                    "urlName": "llok/monsters-and-npcs",
                     "anchorName": "#MonstersBE",
                     "subsections": []
                 },
                 {
                     "title": "Monsters F - M",
-                    "urlName": "adventures/llok/monsters-and-npcs",
+                    "urlName": "llok/monsters-and-npcs",
                     "anchorName": "#MonstersFM",
                     "subsections": []
                 },
                 {
                     "title": "Monsters O - S",
-                    "urlName": "adventures/llok/monsters-and-npcs",
+                    "urlName": "llok/monsters-and-npcs",
                     "anchorName": "#MonstersOS",
                     "subsections": []
                 },
                 {
                     "title": "Monsters T - W",
-                    "urlName": "adventures/llok/monsters-and-npcs",
+                    "urlName": "llok/monsters-and-npcs",
                     "anchorName": "#MonstersTW",
                     "subsections": []
                 }
@@ -537,60 +537,60 @@
         },
         {
             "title": "Appendix D: Magic Items",
-            "urlName": "adventures/llok/magic-items",
+            "urlName": "llok/magic-items",
             "anchorName": "#AppendixDMagicItems",
             "subsections": [
                 {
                     "title": "Blade of the Medusa",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#BladeoftheMedusa",
                     "subsections": []
                 },
                 {
                     "title": "Deck of Several Things",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#DeckofSeveralThings",
                     "subsections": []
                 },
                 {
                     "title": "Galder’s Bubble Pipe",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#GaldersBubblePipe",
                     "subsections": []
                 },
                 {
                     "title": "Gambler’s Blade",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#GamblersBlade",
                     "subsections": []
                 },
                 {
                     "title": "Heward’s Hireling Armor",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#HewardsHirelingArmor",
                     "subsections": []
                 },
                 {
                     "title": "Ioun Stone",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#IounStone",
                     "subsections": []
                 },
                 {
                     "title": "Leather Golem Armor",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#LeatherGolemArmor",
                     "subsections": []
                 },
                 {
                     "title": "Polymorph Blade",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#PolymorphBlade",
                     "subsections": []
                 },
                 {
                     "title": "Powered Armor",
-                    "urlName": "adventures/llok/magic-items",
+                    "urlName": "llok/magic-items",
                     "anchorName": "#PoweredArmor",
                     "subsections": []
                 }
@@ -598,24 +598,24 @@
         },
         {
             "title": "Appendix E: New Spells",
-            "urlName": "adventures/llok/new-spells",
+            "urlName": "llok/new-spells",
             "anchorName": "#AppendixENewSpells",
             "subsections": [
                 {
                     "title": "Flock of Familiars",
-                    "urlName": "adventures/llok/new-spells",
+                    "urlName": "llok/new-spells",
                     "anchorName": "#FlockofFamiliars",
                     "subsections": []
                 },
                 {
                     "title": "Galder’s Speedy Courier",
-                    "urlName": "adventures/llok/new-spells",
+                    "urlName": "llok/new-spells",
                     "anchorName": "#GaldersSpeedyCourier",
                     "subsections": []
                 },
                 {
                     "title": "Galder’s Tower",
-                    "urlName": "adventures/llok/new-spells",
+                    "urlName": "llok/new-spells",
                     "anchorName": "#GaldersTower",
                     "subsections": []
                 }
@@ -623,13 +623,13 @@
         },
         {
             "title": "Appendix F: Additional Rumors",
-            "urlName": "adventures/llok/additional-rumors",
+            "urlName": "llok/additional-rumors",
             "anchorName": "#AppendixFAdditionalRumors",
             "subsections": []
         },
         {
             "title": "Credits",
-            "urlName": "adventures/llok/credits",
+            "urlName": "llok/credits",
             "anchorName": "#Credits",
             "subsections": []
         }

@@ -5,41 +5,41 @@
     "subsections": [
         {
             "title": "Introduction",
-            "urlName": "adventures/lmop/introduction",
+            "urlName": "lmop/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "Running the Adventure",
-                    "urlName": "adventures/lmop/introduction",
+                    "urlName": "lmop/introduction",
                     "anchorName": "#RunningtheAdventure",
                     "subsections": [
                         {
                             "title": "The Dungeon Master",
-                            "urlName": "adventures/lmop/introduction",
+                            "urlName": "lmop/introduction",
                             "anchorName": "#TheDungeonMaster",
                             "subsections": []
                         },
                         {
                             "title": "Improvising Ability Checks",
-                            "urlName": "adventures/lmop/introduction",
+                            "urlName": "lmop/introduction",
                             "anchorName": "#ImprovisingAbilityChecks",
                             "subsections": []
                         },
                         {
                             "title": "Glossary",
-                            "urlName": "adventures/lmop/introduction",
+                            "urlName": "lmop/introduction",
                             "anchorName": "#Glossary",
                             "subsections": []
                         },
                         {
                             "title": "Magic Items and Monsters",
-                            "urlName": "adventures/lmop/introduction",
+                            "urlName": "lmop/introduction",
                             "anchorName": "#MagicItemsandMonsters",
                             "subsections": []
                         },
                         {
                             "title": "Abbreviations",
-                            "urlName": "adventures/lmop/introduction",
+                            "urlName": "lmop/introduction",
                             "anchorName": "#Abbreviations",
                             "subsections": []
                         }
@@ -47,25 +47,25 @@
                 },
                 {
                     "title": "Background",
-                    "urlName": "adventures/lmop/introduction",
+                    "urlName": "lmop/introduction",
                     "anchorName": "#Background",
                     "subsections": []
                 },
                 {
                     "title": "Overview",
-                    "urlName": "adventures/lmop/introduction",
+                    "urlName": "lmop/introduction",
                     "anchorName": "#Overview",
                     "subsections": []
                 },
                 {
                     "title": "Adventure Hook",
-                    "urlName": "adventures/lmop/introduction",
+                    "urlName": "lmop/introduction",
                     "anchorName": "#AdventureHook",
                     "subsections": []
                 },
                 {
                     "title": "The Forgotten Realms",
-                    "urlName": "adventures/lmop/introduction",
+                    "urlName": "lmop/introduction",
                     "anchorName": "#TheForgottenRealms",
                     "subsections": []
                 }
@@ -73,23 +73,23 @@
         },
         {
             "title": "Part 1: Goblin Arrows",
-            "urlName": "adventures/lmop/goblin-arrows",
+            "urlName": "lmop/goblin-arrows",
             "anchorName": "#Part1GoblinArrows",
             "subsections": [
                 {
                     "title": "Goblin Ambush",
-                    "urlName": "adventures/lmop/goblin-arrows",
+                    "urlName": "lmop/goblin-arrows",
                     "anchorName": "#GoblinAmbush",
                     "subsections": [
                         {
                             "title": "Goblin Trail",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#GoblinTrail",
                             "subsections": []
                         },
                         {
                             "title": "Awarding Experience Points",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#AwardingExperiencePoints",
                             "subsections": []
                         }
@@ -97,53 +97,53 @@
                 },
                 {
                     "title": "Cragmaw Hideout",
-                    "urlName": "adventures/lmop/goblin-arrows",
+                    "urlName": "lmop/goblin-arrows",
                     "anchorName": "#CragmawHideout",
                     "subsections": [
                         {
                             "title": "General Features",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#GeneralFeatures",
                             "subsections": []
                         },
                         {
                             "title": "1. Cave Mouth",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#1CaveMouth",
                             "subsections": []
                         },
                         {
                             "title": "2. Goblin Blind",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#2GoblinBlind",
                             "subsections": []
                         },
                         {
                             "title": "3. Kennel",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#3Kennel",
                             "subsections": []
                         },
                         {
                             "title": "4. Steep Passage",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#4SteepPassage",
                             "subsections": []
                         },
                         {
                             "title": "5. Overpass",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#5Overpass",
                             "subsections": []
                         },
                         {
                             "title": "6. Goblin Den",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#6GoblinDen",
                             "subsections": [
                                 {
                                     "title": "NPC Party Members",
-                                    "urlName": "adventures/lmop/goblin-arrows",
+                                    "urlName": "lmop/goblin-arrows",
                                     "anchorName": "#NPCPartyMembers",
                                     "subsections": []
                                 }
@@ -151,19 +151,19 @@
                         },
                         {
                             "title": "7. Twin Pools Cave",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#7TwinPoolsCave",
                             "subsections": []
                         },
                         {
                             "title": "8. Klarg’s Cave",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#8KlargsCave",
                             "subsections": []
                         },
                         {
                             "title": "What’s Next?",
-                            "urlName": "adventures/lmop/goblin-arrows",
+                            "urlName": "lmop/goblin-arrows",
                             "anchorName": "#WhatsNext",
                             "subsections": []
                         }
@@ -173,23 +173,23 @@
         },
         {
             "title": "Part 2: Phandalin",
-            "urlName": "adventures/lmop/phandalin",
+            "urlName": "lmop/phandalin",
             "anchorName": "#Part2Phandalin",
             "subsections": [
                 {
                     "title": "Encounters in Phandalin",
-                    "urlName": "adventures/lmop/phandalin",
+                    "urlName": "lmop/phandalin",
                     "anchorName": "#EncountersinPhandalin",
                     "subsections": []
                 },
                 {
                     "title": "Important NPCs",
-                    "urlName": "adventures/lmop/phandalin",
+                    "urlName": "lmop/phandalin",
                     "anchorName": "#ImportantNPCs",
                     "subsections": [
                         {
                             "title": "Roleplaying Phandalin NPCs",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#RoleplayingPhandalinNPCs",
                             "subsections": []
                         }
@@ -197,66 +197,66 @@
                 },
                 {
                     "title": "Town Description",
-                    "urlName": "adventures/lmop/phandalin",
+                    "urlName": "lmop/phandalin",
                     "anchorName": "#TownDescription",
                     "subsections": [
                         {
                             "title": "Stonehill Inn",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#StonehillInn",
                             "subsections": []
                         },
                         {
                             "title": "Barthen’s Provisions",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#BarthensProvisions",
                             "subsections": []
                         },
                         {
                             "title": "Edermath Orchard",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#EdermathOrchard",
                             "subsections": []
                         },
                         {
                             "title": "Lionshield Coster",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#LionshieldCoster",
                             "subsections": []
                         },
                         {
                             "title": "Phandalin Miner’s Exchange",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#PhandalinMinersExchange",
                             "subsections": []
                         },
                         {
                             "title": "Alderleaf Farm",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#AlderleafFarm",
                             "subsections": []
                         },
                         {
                             "title": "Shrine of Luck",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#ShrineofLuck",
                             "subsections": []
                         },
                         {
                             "title": "The Sleeping Giant",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#TheSleepingGiant",
                             "subsections": []
                         },
                         {
                             "title": "Townmaster’s Hall",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#TownmastersHall",
                             "subsections": []
                         },
                         {
                             "title": "Tresendar Manor",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#TresendarManor",
                             "subsections": []
                         }
@@ -264,12 +264,12 @@
                 },
                 {
                     "title": "Redbrand Ruffians",
-                    "urlName": "adventures/lmop/phandalin",
+                    "urlName": "lmop/phandalin",
                     "anchorName": "#RedbrandRuffians",
                     "subsections": [
                         {
                             "title": "Confrontation",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#Confrontation",
                             "subsections": []
                         }
@@ -277,90 +277,90 @@
                 },
                 {
                     "title": "Redbrand Hideout",
-                    "urlName": "adventures/lmop/phandalin",
+                    "urlName": "lmop/phandalin",
                     "anchorName": "#RedbrandHideout",
                     "subsections": [
                         {
                             "title": "General Features",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#GeneralFeatures",
                             "subsections": []
                         },
                         {
                             "title": "1. Cellar",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#1Cellar",
                             "subsections": []
                         },
                         {
                             "title": "2. Barracks",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#2Barracks",
                             "subsections": []
                         },
                         {
                             "title": "3. Trapped Hall",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#3TrappedHall",
                             "subsections": []
                         },
                         {
                             "title": "4. Tresendar Crypts",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#4TresendarCrypts",
                             "subsections": []
                         },
                         {
                             "title": "5. Slave Pens",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#5SlavePens",
                             "subsections": []
                         },
                         {
                             "title": "6. Armory",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#6Armory",
                             "subsections": []
                         },
                         {
                             "title": "7. Storeroom and Work Area",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#7StoreroomandWorkArea",
                             "subsections": []
                         },
                         {
                             "title": "8. Crevasse",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#8Crevasse",
                             "subsections": []
                         },
                         {
                             "title": "9. Guard Barracks",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#9GuardBarracks",
                             "subsections": []
                         },
                         {
                             "title": "10. Common Room",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#10CommonRoom",
                             "subsections": []
                         },
                         {
                             "title": "11. Wizard’s Workshop",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#11WizardsWorkshop",
                             "subsections": []
                         },
                         {
                             "title": "12. Glasstaff’s Quarters",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#12GlasstaffsQuarters",
                             "subsections": []
                         },
                         {
                             "title": "What’s Next?",
-                            "urlName": "adventures/lmop/phandalin",
+                            "urlName": "lmop/phandalin",
                             "anchorName": "#WhatsNext",
                             "subsections": []
                         }
@@ -370,23 +370,23 @@
         },
         {
             "title": "Part 3: The Spider’s Web",
-            "urlName": "adventures/lmop/the-spiders-web",
+            "urlName": "lmop/the-spiders-web",
             "anchorName": "#Part3TheSpidersWeb",
             "subsections": [
                 {
                     "title": "Triboar Trail",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#TriboarTrail",
                     "subsections": [
                         {
                             "title": "Using the Overland Map",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#UsingtheOverlandMap",
                             "subsections": []
                         },
                         {
                             "title": "Wilderness Encounters",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#WildernessEncounters",
                             "subsections": []
                         }
@@ -394,30 +394,30 @@
                 },
                 {
                     "title": "Conyberry and Agatha’s Lair",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#ConyberryandAgathasLair",
                     "subsections": []
                 },
                 {
                     "title": "Old Owl Well",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#OldOwlWell",
                     "subsections": []
                 },
                 {
                     "title": "Ruins of Thundertree",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#RuinsofThundertree",
                     "subsections": [
                         {
                             "title": "General Features",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#GeneralFeatures1",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Ruins",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#AreasoftheRuins",
                             "subsections": []
                         }
@@ -425,12 +425,12 @@
                 },
                 {
                     "title": "Wyvern Tor",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#WyvernTor",
                     "subsections": [
                         {
                             "title": "Orc Camp",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#OrcCamp",
                             "subsections": []
                         }
@@ -438,30 +438,30 @@
                 },
                 {
                     "title": "Cragmaw Castle",
-                    "urlName": "adventures/lmop/the-spiders-web",
+                    "urlName": "lmop/the-spiders-web",
                     "anchorName": "#CragmawCastle",
                     "subsections": [
                         {
                             "title": "General Features",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#GeneralFeatures2",
                             "subsections": []
                         },
                         {
                             "title": "Areas of the Castle",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#AreasoftheCastle",
                             "subsections": []
                         },
                         {
                             "title": "Returning War Band",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#ReturningWarBand",
                             "subsections": []
                         },
                         {
                             "title": "What’s Next?",
-                            "urlName": "adventures/lmop/the-spiders-web",
+                            "urlName": "lmop/the-spiders-web",
                             "anchorName": "#WhatsNext",
                             "subsections": []
                         }
@@ -471,42 +471,42 @@
         },
         {
             "title": "Part 4: Wave Echo Cave",
-            "urlName": "adventures/lmop/wave-echo-cave",
+            "urlName": "lmop/wave-echo-cave",
             "anchorName": "#Part4WaveEchoCave",
             "subsections": [
                 {
                     "title": "Character Level",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#CharacterLevel",
                     "subsections": []
                 },
                 {
                     "title": "Experience Point Awards",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#ExperiencePointAwards",
                     "subsections": []
                 },
                 {
                     "title": "Wandering Monsters",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#WanderingMonsters",
                     "subsections": []
                 },
                 {
                     "title": "General Features",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#GeneralFeatures",
                     "subsections": []
                 },
                 {
                     "title": "Keyed Encounters",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#KeyedEncounters",
                     "subsections": []
                 },
                 {
                     "title": "Conclusion",
-                    "urlName": "adventures/lmop/wave-echo-cave",
+                    "urlName": "lmop/wave-echo-cave",
                     "anchorName": "#Conclusion",
                     "subsections": []
                 }
@@ -514,18 +514,18 @@
         },
         {
             "title": "Appendix A: Magic Items",
-            "urlName": "adventures/lmop/appendix-a-magic-items",
+            "urlName": "lmop/appendix-a-magic-items",
             "anchorName": "#AppendixAMagicItems",
             "subsections": [
                 {
                     "title": "Using a Magic Item",
-                    "urlName": "adventures/lmop/appendix-a-magic-items",
+                    "urlName": "lmop/appendix-a-magic-items",
                     "anchorName": "#UsingaMagicItem",
                     "subsections": []
                 },
                 {
                     "title": "Item Descriptions",
-                    "urlName": "adventures/lmop/appendix-a-magic-items",
+                    "urlName": "lmop/appendix-a-magic-items",
                     "anchorName": "#ItemDescriptions",
                     "subsections": []
                 }
@@ -533,18 +533,18 @@
         },
         {
             "title": "Appendix B: Monsters",
-            "urlName": "adventures/lmop/appendix-b-monsters",
+            "urlName": "lmop/appendix-b-monsters",
             "anchorName": "#AppendixBMonsters",
             "subsections": [
                 {
                     "title": "Statistics",
-                    "urlName": "adventures/lmop/appendix-b-monsters",
+                    "urlName": "lmop/appendix-b-monsters",
                     "anchorName": "#Statistics",
                     "subsections": []
                 },
                 {
                     "title": "Monster Descriptions",
-                    "urlName": "adventures/lmop/appendix-b-monsters",
+                    "urlName": "lmop/appendix-b-monsters",
                     "anchorName": "#MonsterDescriptions",
                     "subsections": []
                 }

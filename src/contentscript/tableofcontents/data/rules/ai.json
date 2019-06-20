@@ -1,0 +1,2933 @@
+{
+    "title": "Acquisitions Incorporated",
+    "urlName": "ai",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Preface",
+            "urlName": "ai/preface",
+            "anchorName": "#",
+            "subsections": []
+        },
+        {
+            "title": "Chapter 1: Acquisitions Incorporated",
+            "urlName": "ai/acquisitions-incorporated",
+            "anchorName": "#Chapter1AcquisitionsIncorporated",
+            "subsections": [
+                {
+                    "title": "It’s Just Business",
+                    "urlName": "ai/acquisitions-incorporated",
+                    "anchorName": "#ItsJustBusiness",
+                    "subsections": [
+                        {
+                            "title": "What Is Acquisitions Incorporated?",
+                            "urlName": "ai/acquisitions-incorporated",
+                            "anchorName": "#WhatIsAcquisitionsIncorporated",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "A Corporate Prospectus",
+                    "urlName": "ai/acquisitions-incorporated",
+                    "anchorName": "#ACorporateProspectus",
+                    "subsections": [
+                        {
+                            "title": "How It Started",
+                            "urlName": "ai/acquisitions-incorporated",
+                            "anchorName": "#HowItStarted",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Aggressive Expansion",
+                            "urlName": "ai/acquisitions-incorporated",
+                            "anchorName": "#AggressiveExpansion",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Adventuring Biz",
+                            "urlName": "ai/acquisitions-incorporated",
+                            "anchorName": "#TheAdventuringBiz",
+                            "subsections": []
+                        },
+                        {
+                            "title": "No Competition",
+                            "urlName": "ai/acquisitions-incorporated",
+                            "anchorName": "#NoCompetition",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Fast Franchise Generator",
+                    "urlName": "ai/acquisitions-incorporated",
+                    "anchorName": "#FastFranchiseGenerator",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: Growing Your Franchise",
+            "urlName": "ai/growing-your-franchise",
+            "anchorName": "#Chapter2GrowingYourFranchise",
+            "subsections": [
+                {
+                    "title": "Franchise Advancement",
+                    "urlName": "ai/growing-your-franchise",
+                    "anchorName": "#FranchiseAdvancement",
+                    "subsections": [
+                        {
+                            "title": "Franchise Rank",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#FranchiseRank",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Licensed Region",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#LicensedRegion",
+                            "subsections": [
+                                {
+                                    "title": "Rank 1: Settlement",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Rank1Settlement",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 2: Small Territory",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Rank2SmallTerritory",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 3: Large Territory",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Rank3LargeTerritory",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rank 4: Limited Extraplanar",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Rank4LimitedExtraplanar",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Staff",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Staff",
+                            "subsections": [
+                                {
+                                    "title": "Majordomo",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Majordomo",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Untrained Hirelings",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#UntrainedHirelings",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Skilled Hirelings",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#SkilledHirelings",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Crew",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Crew",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Headquarters Features",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#HeadquartersFeatures",
+                            "subsections": [
+                                {
+                                    "title": "Group Design",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#GroupDesign",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Incorporating Benefits",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#IncorporatingBenefits",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Starter Headquarters",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#StarterHeadquarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Cosmetic Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#CosmeticFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Expansion Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ExpansionFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Transportation Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#TransportationFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Weapon Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#WeaponFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Arcane Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ArcaneFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Defensive Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#DefensiveFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Franchise Choice Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#FranchiseChoiceFeatures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Secret Features",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#SecretFeatures",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Franchise Costs",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#FranchiseCosts",
+                            "subsections": [
+                                {
+                                    "title": "Baseline Costs",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#BaselineCosts",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Franchise Rank Multiplier",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#FranchiseRankMultiplier",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Monthly Business Performance",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#MonthlyBusinessPerformance",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Defaulting",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Defaulting",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Company Positions",
+                    "urlName": "ai/growing-your-franchise",
+                    "anchorName": "#CompanyPositions",
+                    "subsections": [
+                        {
+                            "title": "Joint Effort",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#JointEffort",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Position Proficiencies",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#PositionProficiencies",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gaining Ranks",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#GainingRanks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cartographer",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Cartographer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Decisionist",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Decisionist",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Documancer",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Documancer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hoardsperson",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Hoardsperson",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Loremonger",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Loremonger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Obviator",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Obviator",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Occultant",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Occultant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Secretarian",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#Secretarian",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Franchise Tasks and Downtime",
+                    "urlName": "ai/growing-your-franchise",
+                    "anchorName": "#FranchiseTasksandDowntime",
+                    "subsections": [
+                        {
+                            "title": "Franchise Tasks in the Campaign",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#FranchiseTasksintheCampaign",
+                            "subsections": [
+                                {
+                                    "title": "Between Adventures",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#BetweenAdventures",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ongoing Activities",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#OngoingActivities",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Selecting Franchise Tasks",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#SelectingFranchiseTasks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Making Task Checks",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#MakingTaskChecks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Franchise Tasks as Narrative",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#FranchiseTasksasNarrative",
+                            "subsections": [
+                                {
+                                    "title": "Establish Goals",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#EstablishGoals",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Opening Scene",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#OpeningScene",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ability Check Scenes",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#AbilityCheckScenes",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Concluding Scene",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ConcludingScene",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ongoing Story",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#OngoingStory",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Complications and Rivals",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#ComplicationsandRivals",
+                            "subsections": [
+                                {
+                                    "title": "Who’s Watching?",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#WhosWatching",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Complications as Story",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ComplicationsasStory",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Downtime and Franchise Activities",
+                            "urlName": "ai/growing-your-franchise",
+                            "anchorName": "#DowntimeandFranchiseActivities",
+                            "subsections": [
+                                {
+                                    "title": "Explore Territory",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ExploreTerritory",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Franchise Restructuring",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#FranchiseRestructuring",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Headquarters Modification",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#HeadquartersModification",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Marketeering",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Marketeering",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Philanthropic Enterprise",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#PhilanthropicEnterprise",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Running a Franchise",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#RunningaFranchise",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Scrutineering",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Scrutineering",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Shady Business Practice",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#ShadyBusinessPractice",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Schmoozing",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#Schmoozing",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Team Building",
+                                    "urlName": "ai/growing-your-franchise",
+                                    "anchorName": "#TeamBuilding",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: Player Options",
+            "urlName": "ai/player-options",
+            "anchorName": "#Chapter3PlayerOptions",
+            "subsections": [
+                {
+                    "title": "Backgrounds",
+                    "urlName": "ai/player-options",
+                    "anchorName": "#Backgrounds",
+                    "subsections": [
+                        {
+                            "title": "Celebrity Adventurer’s Scion",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#CelebrityAdventurersScion",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Name Dropping",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#FeatureNameDropping",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#SuggestedCharacteristicsScion",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Failed Merchant",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#FailedMerchant",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Supply Chain",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#FeatureSupplyChain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#SuggestedCharacteristicsMerchant",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Gambler",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Gambler",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Never Tell Me the Odds",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#FeatureNeverTellMetheOdds",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#SuggestedCharacteristicsGambler",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Plaintiff",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Plaintiff",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Legalese",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#FeatureLegalese",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#SuggestedCharacteristicsPlaintiff",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rival Intern",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#RivalIntern",
+                            "subsections": [
+                                {
+                                    "title": "Feature: Inside Informant",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#FeatureInsideInformant",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Suggested Characteristics",
+                                    "urlName": "ai/player-options",
+                                    "anchorName": "#SuggestedCharacteristicsIntern",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Playing with Class",
+                    "urlName": "ai/player-options",
+                    "anchorName": "#PlayingwithClass",
+                    "subsections": [
+                        {
+                            "title": "Barbarian",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Barbarian",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bard",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Bard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cleric",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Cleric",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Druid",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Druid",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fighter",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Fighter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Monk",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Monk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Paladin",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Paladin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ranger",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Ranger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rogue",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Rogue",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sorcerer",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Sorcerer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warlock",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Warlock",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wizard",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#Wizard",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "New Race: Verdan",
+                    "urlName": "ai/player-options",
+                    "anchorName": "#NewRaceVerdan",
+                    "subsections": [
+                        {
+                            "title": "Created by Chaos",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#CreatedbyChaos",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ongoing Mutations",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#OngoingMutations",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cultural Chameleons",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#CulturalChameleons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wide-Eyed and Curious",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#WideEyedandCurious",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Verdan Names",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#VerdanNames",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Verdan Traits",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#VerdanTraits",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "New Spells",
+                    "urlName": "ai/player-options",
+                    "anchorName": "#NewSpells",
+                    "subsections": [
+                        {
+                            "title": "Distort Value",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#DistortValue",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fast Friends",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#FastFriends",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gift of Gab",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#GiftofGab",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Incite Greed",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#InciteGreed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jim’s Glowing Coin",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#JimsGlowingCoin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jim’s Magic Missile",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#JimsMagicMissile",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Motivational Speech",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#MotivationalSpeech",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Factions and Rivals",
+                    "urlName": "ai/player-options",
+                    "anchorName": "#FactionsandRivals",
+                    "subsections": [
+                        {
+                            "title": "Acquisitions Incorporated",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#AcquisitionsIncorporated",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dran Enterprises",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#DranEnterprises",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Noble Knife",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#TheNobleKnife",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Silver Sliver",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#TheSilverSliver",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Six",
+                            "urlName": "ai/player-options",
+                            "anchorName": "#TheSix",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: The Orrery of the Wanderer",
+            "urlName": "ai/the-orrery-of-the-wanderer",
+            "anchorName": "#Chapter4TheOrreryoftheWanderer",
+            "subsections": [
+                {
+                    "title": "Running an Acquisitions Incorporated Campaign",
+                    "urlName": "ai/the-orrery-of-the-wanderer",
+                    "anchorName": "#RunninganAcquisitionsIncorporatedCampaign",
+                    "subsections": [
+                        {
+                            "title": "Familiar Faces",
+                            "urlName": "ai/the-orrery-of-the-wanderer",
+                            "anchorName": "#FamiliarFaces",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Right and Wrong",
+                            "urlName": "ai/the-orrery-of-the-wanderer",
+                            "anchorName": "#RightandWrong",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Life Goes On",
+                            "urlName": "ai/the-orrery-of-the-wanderer",
+                            "anchorName": "#LifeGoesOn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Let the Franchise Shine",
+                            "urlName": "ai/the-orrery-of-the-wanderer",
+                            "anchorName": "#LettheFranchiseShine",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Story Overview",
+                    "urlName": "ai/the-orrery-of-the-wanderer",
+                    "anchorName": "#StoryOverview",
+                    "subsections": [
+                        {
+                            "title": "Episode Details",
+                            "urlName": "ai/the-orrery-of-the-wanderer",
+                            "anchorName": "#EpisodeDetails",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Episode 1: Right Place, Wrong Heroes",
+            "urlName": "ai/right-place-wrong-heroes",
+            "anchorName": "#Episode1RightPlaceWrongHeroes",
+            "subsections": [
+                {
+                    "title": "A Disorienting Orientation",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#ADisorientingOrientation",
+                    "subsections": [
+                        {
+                            "title": "Jim Darkmagic Sets Things Straight",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#JimDarkmagicSetsThingsStraight",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Dock Ward",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#DockWard",
+                    "subsections": [
+                        {
+                            "title": "Maps and Poshuns",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#MapsandPoshuns",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Skeleton Crew",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#SkeletonCrew",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Mystic",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#TheMystic",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Warehouse Environs",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#WarehouseEnvirons",
+                    "subsections": [
+                        {
+                            "title": "Gray Hands Spy",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#GrayHandsSpy",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The City Watch",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#TheCityWatch",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jolly’s Lamp Emporium",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#JollysLampEmporium",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Fissure",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#TheFissure",
+                    "subsections": [
+                        {
+                            "title": "1. Rats",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#1Rats",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Trials",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#2Trials",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Traps",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#3Traps",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Tunnels",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#4Tunnels",
+                            "subsections": []
+                        },
+                        {
+                            "title": "5. Death",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#5Death",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6. Goblin",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#6Goblin",
+                            "subsections": []
+                        },
+                        {
+                            "title": "7. Stomp",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#7Stomp",
+                            "subsections": []
+                        },
+                        {
+                            "title": "8. Tentacle",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#8Tentacle",
+                            "subsections": []
+                        },
+                        {
+                            "title": "9. Dragon",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#9Dragon",
+                            "subsections": []
+                        },
+                        {
+                            "title": "10. Shrine of Destruction",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#10ShrineofDestruction",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Exiting the Fissure",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#ExitingtheFissure",
+                    "subsections": [
+                        {
+                            "title": "Dock Ward Ambush",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#DockWardAmbush",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "The Orrery",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#TheOrrery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dragonsitting",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#Dragonsitting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Altared States",
+                            "urlName": "ai/right-place-wrong-heroes",
+                            "anchorName": "#AltaredStates",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Continuing the Adventure",
+                    "urlName": "ai/right-place-wrong-heroes",
+                    "anchorName": "#ContinuingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 2: Fun in Phandalin",
+            "urlName": "ai/fun-in-phandalin",
+            "anchorName": "#Episode2FuninPhandalin",
+            "subsections": [
+                {
+                    "title": "Layers of Villainy",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#LayersofVillainy",
+                    "subsections": []
+                },
+                {
+                    "title": "Traveling to Phandalin",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#TravelingtoPhandalin",
+                    "subsections": [
+                        {
+                            "title": "Overland Adventuring",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#OverlandAdventuring",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Free-Market Lizardfolk",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#FreeMarketLizardfolk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Wrongness",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#TheWrongness",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Horse Is a Corpse, of Course",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#AHorseIsaCorpseofCourse",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Arrival in Phandalin",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#ArrivalinPhandalin",
+                    "subsections": []
+                },
+                {
+                    "title": "Recent Events in Phandalin",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#RecentEventsinPhandalin",
+                    "subsections": []
+                },
+                {
+                    "title": "Plots of the Six",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#PlotsoftheSix",
+                    "subsections": []
+                },
+                {
+                    "title": "People of Phandalin",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#PeopleofPhandalin",
+                    "subsections": [
+                        {
+                            "title": "Brawn McGable",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#BrawnMcGable",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ditch Fundi",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#DitchFundi",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Harbin Wester",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#HarbinWester",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Macklin Talctuft",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#MacklinTalctuft",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Minghee Graywind",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#MingheeGraywind",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sharna Quirstiron",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#SharnaQuirstiron",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sildar Hallwinter",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#SildarHallwinter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sister Garaele",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#SisterGaraele",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stuuzant",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#Stuuzant",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Locations in Phandalin",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#LocationsinPhandalin",
+                    "subsections": [
+                        {
+                            "title": "Edermath Orchard",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#EdermathOrchard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lionshield Coster",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#LionshieldCoster",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Phandalin Miners’ Exchange",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#PhandalinMinersExchange",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Shrine of Luck",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#ShrineofLuck",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sleeping Giant",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#SleepingGiant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Smithy",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#Smithy",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Stonehill Inn",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#StonehillInn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Temple of the Coinmaiden",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#TempleoftheCoinmaiden",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Town Council Hall",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#TownCouncilHall",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Tresendar Manor",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#TresendarManor",
+                    "subsections": [
+                        {
+                            "title": "The Ruins",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#TheRuins",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Jackal and Hide",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#JackalandHide",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Searching the Grounds",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#SearchingtheGrounds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Survivor",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#Survivor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Timepiece of Travel",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#TheTimepieceofTravel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Tresendar Manor Dungeon",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#TresendarManorDungeon",
+                    "subsections": []
+                },
+                {
+                    "title": "Clean-Up Crew",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#CleanUpCrew",
+                    "subsections": []
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#Conclusion",
+                    "subsections": [
+                        {
+                            "title": "Company Positions",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#CompanyPositions",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "New Business",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#NewBusiness",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Thinking Locally",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#ThinkingLocally",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Staying on the Good Side",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#StayingontheGoodSide",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Leads to the Lighthouse",
+                            "urlName": "ai/fun-in-phandalin",
+                            "anchorName": "#LeadstotheLighthouse",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Continuing the Adventure",
+                    "urlName": "ai/fun-in-phandalin",
+                    "anchorName": "#ContinuingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 3: Darkness at the Lighthouse",
+            "urlName": "ai/darkness-at-the-lighthouse",
+            "anchorName": "#",
+            "subsections": [
+                {
+                    "title": "To the Lighthouse",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#TotheLighthouse",
+                    "subsections": []
+                },
+                {
+                    "title": "A Detour to Neverwinter",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#ADetourtoNeverwinter",
+                    "subsections": [
+                        {
+                            "title": "A Simple Request",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ASimpleRequest",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Backstory",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheBackstory",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Stable Quiver",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheStableQuiver",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Holes",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheHoles",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rescuing Oppal",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#RescuingOppal",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Oppal’s Info",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#OppalsInfo",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Hall of Knowledge",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheHallofKnowledge",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Entering the Temple",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#EnteringtheTemple",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Alternative Entry",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#AlternativeEntry",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Entering the Vault of Tomes",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#EnteringtheVaultofTomes",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Leaving Neverwinter",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#LeavingNeverwinter",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Tortured Tortle Mutiny",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#TheTorturedTortleMutiny",
+                    "subsections": [
+                        {
+                            "title": "Sailors in Need",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#SailorsinNeed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Trouble at Sea",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TroubleatSea",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mutineers",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#Mutineers",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Silent Sound Lighthouse",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#SilentSoundLighthouse",
+                    "subsections": [
+                        {
+                            "title": "Beachside Tents",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#BeachsideTents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "General Features",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Front Door",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#FrontDoor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ground Floor",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#GroundFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Second Floor",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#SecondFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Third Floor",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ThirdFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fourth Floor",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#FourthFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lighthouse Top",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#LighthouseTop",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Secret Basement",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#SecretBasement",
+                    "subsections": [
+                        {
+                            "title": "Arrival",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#Arrival",
+                            "subsections": []
+                        },
+                        {
+                            "title": "To Fight or Not to Fight?",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ToFightorNottoFight",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Okay, to Fight",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#OkaytoFight",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Super-Secret Basement",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#SuperSecretBasement",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Replica Modrons",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ReplicaModrons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "1. Out of Service",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#1OutofService",
+                            "subsections": []
+                        },
+                        {
+                            "title": "2. Incomplete Circuits",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#2IncompleteCircuits",
+                            "subsections": []
+                        },
+                        {
+                            "title": "3. Recharging Station",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#3RechargingStation",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4. Mechachimera",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#4Mechachimera",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#Conclusion",
+                    "subsections": [
+                        {
+                            "title": "Talanatha Three-Coins",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TalanathaThreeCoins",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Returning the Diamonds",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ReturningtheDiamonds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Orrery",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheOrrery",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "The Luskan Connection",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#TheLuskanConnection",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Modron in Need",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#ModroninNeed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Our Very Own Mechachimera",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#OurVeryOwnMechachimera",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Business Is Expanding",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#BusinessIsExpanding",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Living the Good Life",
+                            "urlName": "ai/darkness-at-the-lighthouse",
+                            "anchorName": "#LivingtheGoodLife",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Continuing the Adventure",
+                    "urlName": "ai/darkness-at-the-lighthouse",
+                    "anchorName": "#ContinuingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 4: Dran Enterprises",
+            "urlName": "ai/dran-enterprises",
+            "anchorName": "#Episode4DranEnterprises",
+            "subsections": [
+                {
+                    "title": "Traveling to Luskan",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#TravelingtoLuskan",
+                    "subsections": []
+                },
+                {
+                    "title": "Searching for Dran Enterprises",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#SearchingforDranEnterprises",
+                    "subsections": [
+                        {
+                            "title": "Trouble at the South Gate",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TroubleattheSouthGate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Broker",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TheBroker",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Fishbone Tavern",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#FishboneTavern",
+                    "subsections": [
+                        {
+                            "title": "Friends of Dran Enterprises",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#FriendsofDranEnterprises",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Working-Class Rumors",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#WorkingClassRumors",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Moving Things Along",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#MovingThingsAlong",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Peg and Hook",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#ThePegandHook",
+                    "subsections": [
+                        {
+                            "title": "Talk First, Fight Later?",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TalkFirstFightLater",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Talking to Arla",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TalkingtoArla",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Hidden Headquarters",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TheHiddenHeadquarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dran Strike Team",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#DranStrikeTeam",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Treasure",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#PegandHookTreasure",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Infiltrating Dran Enterprises",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#InfiltratingDranEnterprises",
+                    "subsections": [
+                        {
+                            "title": "Racing Against the Six",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#RacingAgainsttheSix",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dangerous Business",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#DangerousBusiness",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Portal Nexus",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#PortalNexus",
+                    "subsections": [
+                        {
+                            "title": "Dead Guard",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#DeadGuard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal Doors",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#PortalDoors",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Portal Encounters",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#PortalEncounters",
+                    "subsections": [
+                        {
+                            "title": "Just Cut to the End",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#JustCuttotheEnd",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 1: Far Realm Horror",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal1FarRealmHorror",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 2: Guarded Warehouse",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal2GuardedWarehouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 3: Raging Storm",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal3RagingStorm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 4: Amid the Rigging",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal4AmidtheRigging",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 5: Pirates Versus Zombies",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal5PiratesVersusZombies",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portal 6: River Barge Crossing",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#Portal6RiverBargeCrossing",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "On Board The Maverick",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#OnBoardTheMaverick",
+                    "subsections": [
+                        {
+                            "title": "First to the Meeting",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#FirsttotheMeeting",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Right on Time",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#RightonTime",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Unfashionably Late",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#UnfashionablyLate",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Operatives of the Six",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#OperativesoftheSix",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Treasure",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#MaverickTreasure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Getting Away",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#GettingAway",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                },
+                {
+                    "title": "Franchise Advancement",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#FranchiseAdvancement",
+                    "subsections": [
+                        {
+                            "title": "Franchise Headquarters Upgrades",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#FranchiseHeadquartersUpgrades",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Hiring Staff",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#HiringStaff",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Making Franchise Advancement Rewarding",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#MakingFranchiseAdvancementRewarding",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "The Road to Horn Enclave",
+                            "urlName": "ai/dran-enterprises",
+                            "anchorName": "#TheRoadtoHornEnclave",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Continuing the Adventure",
+                    "urlName": "ai/dran-enterprises",
+                    "anchorName": "#ContinuingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 5: Hide and Seek",
+            "urlName": "ai/hide-and-seek",
+            "anchorName": "#Episode5HideandSeek",
+            "subsections": [
+                {
+                    "title": "Enter Flabbergast",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#EnterFlabbergast",
+                    "subsections": [
+                        {
+                            "title": "Seeking the Ritual",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#SeekingtheRitual",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Does Anyone Have a Better Idea?",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#DoesAnyoneHaveaBetterIdea",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Traveling to Horn Enclave",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#TravelingtoHornEnclave",
+                    "subsections": []
+                },
+                {
+                    "title": "Dhargun Ironworks",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#DhargunIronworks",
+                    "subsections": [
+                        {
+                            "title": "The Caravan",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#TheCaravan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wedding Guests",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#WeddingGuests",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Character-Building Exercise",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#CharacterBuildingExercise",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Horn Enclave",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#HornEnclave",
+                    "subsections": [
+                        {
+                            "title": "Within the Enclave",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#WithintheEnclave",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Wedding Itinerary",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#WeddingItinerary",
+                    "subsections": [
+                        {
+                            "title": "11:00 AM — Arrival",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#1100AMArrival",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11:15 AM — Hall of War and the Vaults",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#1115AMHallofWarandtheVaults",
+                            "subsections": []
+                        },
+                        {
+                            "title": "11:30 AM — The Tavern",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#1130AMTheTavern",
+                            "subsections": []
+                        },
+                        {
+                            "title": "1:30 PM — Guest Quarters",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#130PMGuestQuarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4:00 PM — Temple",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#400PMTemple",
+                            "subsections": []
+                        },
+                        {
+                            "title": "4:30 PM — Dining Hall",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#430PMDiningHall",
+                            "subsections": []
+                        },
+                        {
+                            "title": "6:00 PM — Departure",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#600PMDeparture",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Orrery Vault",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#OrreryVault",
+                    "subsections": [
+                        {
+                            "title": "Clockwork Dragons",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#ClockworkDragons",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Missing Component",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#TheMissingComponent",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Loose Ends",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#LooseEnds",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Going in Style",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#GoinginStyle",
+                    "subsections": []
+                },
+                {
+                    "title": "Riders on the Storm",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#RidersontheStorm",
+                    "subsections": [
+                        {
+                            "title": "Nasty Weather",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#NastyWeather",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Event 1",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Event1",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Event 2",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Event2",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Event 3",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Event3",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Battle in the Skies!",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#BattleintheSkies",
+                    "subsections": [
+                        {
+                            "title": "Round 1",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Round1",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Round 2",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Round2",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Round 3",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Round3",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Round 4 and Beyond",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#Round4andBeyond",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mopping Up",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#MoppingUp",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "(Mis)Fortune",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#MisFortune",
+                    "subsections": [
+                        {
+                            "title": "Fortune’s End",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#FortunesEnd",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gambling Fever",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#GamblingFever",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Almost Here!",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#AlmostHere",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Lottie’s Palace",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#LottiesPalace",
+                    "subsections": []
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "Locating the Ritual Site",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#LocatingtheRitualSite",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Seeking the Six",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#SeekingtheSix",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Business as Usual",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#BusinessasUsual",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Franchise Restructuring",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#FranchiseRestructuring",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Meet and Greet",
+                            "urlName": "ai/hide-and-seek",
+                            "anchorName": "#MeetandGreet",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Continuing the Adventure",
+                    "urlName": "ai/hide-and-seek",
+                    "anchorName": "#ContinuingtheAdventure",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Episode 6: Showdown with the Six",
+            "urlName": "ai/showdown-with-the-six",
+            "anchorName": "#Episode6ShowdownwiththeSix",
+            "subsections": [
+                {
+                    "title": "Seeking the Ritual Site",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#SeekingtheRitualSite",
+                    "subsections": [
+                        {
+                            "title": "Candlekeep",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#Candlekeep",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mantol-Derith",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#MantolDerith",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Neverwinter",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#Neverwinter",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Kryptgarden Forest",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#KryptgardenForest",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Moon Glade",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#TheMoonGlade",
+                    "subsections": [
+                        {
+                            "title": "Research and Requisitions",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#ResearchandRequisitions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Investigating the Glade",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#InvestigatingtheGlade",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Completing the Mission",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#CompletingtheMission",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Mission to Red Larch",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#MissiontoRedLarch",
+                    "subsections": [
+                        {
+                            "title": "Corralled Townsfolk",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#CorralledTownsfolk",
+                            "subsections": []
+                        },
+                        {
+                            "title": "North Side of Town",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#NorthSideofTown",
+                            "subsections": []
+                        },
+                        {
+                            "title": "South Side of Town",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#SouthSideofTown",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Dran & Courtier",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheDranCourtier",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Stage 1: The Dran & Courtier?",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#Stage1TheDranCourtier",
+                    "subsections": [
+                        {
+                            "title": "The Keymaster’s Plans",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheKeymastersPlans",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Advancing to Stage 2 and Beyond",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#AdvancingtoStage2andBeyond",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Stage 2: Little Inn of Horrors",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#Stage2LittleInnofHorrors",
+                    "subsections": [
+                        {
+                            "title": "Not What They Seem",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#NotWhatTheySeem",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Horrid Kitchen",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#HorridKitchen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Upstairs Bedrooms",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#UpstairsBedrooms",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Advancing to Stage 3",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#AdvancingtoStage3",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Stage 3: Feeling Small",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#Stage3FeelingSmall",
+                    "subsections": [
+                        {
+                            "title": "Splugoth’s Bargain",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#SplugothsBargain",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Onyx Ascendant",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#OnyxAscendant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mouse Den",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#MouseDen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Advancing to Stage 4",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#AdvancingtoStage4",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Stage 4: Revenge for the “C” Team",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#Stage4RevengefortheCTeam",
+                    "subsections": [
+                        {
+                            "title": "The Fallen",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheFallen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eldritch Horror",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#EldritchHorror",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The “C” Team Restored",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheCTeamRestored",
+                            "subsections": []
+                        },
+                        {
+                            "title": "After Stage Four",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#AfterStageFour",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Additional Stages",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#AdditionalStages",
+                    "subsections": [
+                        {
+                            "title": "Flashback",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#Flashback",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Inanimate Trauma",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#InanimateTrauma",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Battle at the Headquarters",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#BattleattheHeadquarters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Too Many Prophas",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TooManyProphas",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Need to Feed",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#NeedtoFeed",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Food Fight",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#FoodFight",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Confronting the Keymaster",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#ConfrontingtheKeymaster",
+                    "subsections": []
+                },
+                {
+                    "title": "Dimensional Caverns",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#DimensionalCaverns",
+                    "subsections": [
+                        {
+                            "title": "Approaching the Nest",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#ApproachingtheNest",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Waking Raah",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#WakingRaah",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Hard Way",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheHardWay",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Dating Advice",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#DatingAdvice",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Moving On",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#MovingOn",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The End of the World",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#TheEndoftheWorld",
+                    "subsections": [
+                        {
+                            "title": "Friends from the Far Realm",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#FriendsfromtheFarRealm",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Reaching the Mesa",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#ReachingtheMesa",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Splugoth’s Forces",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#SplugothsForces",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ritual Actions",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#RitualActions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Controlling the Orrery Components",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#ControllingtheOrreryComponents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Using the Components",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#UsingtheComponents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Component Mishaps",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#ComponentMishaps",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Victory Conditions",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#VictoryConditions",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#Conclusion",
+                    "subsections": [
+                        {
+                            "title": "Orrery of the Wanderer",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#OrreryoftheWanderer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Fate of the Franchise",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#TheFateoftheFranchise",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Franchise Downtime",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#FranchiseDowntime",
+                    "subsections": [
+                        {
+                            "title": "Friends and Enemies",
+                            "urlName": "ai/showdown-with-the-six",
+                            "anchorName": "#FriendsandEnemies",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Campaign to Come",
+                    "urlName": "ai/showdown-with-the-six",
+                    "anchorName": "#TheCampaigntoCome",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Acq Inc",
+            "urlName": "ai/acq-inc",
+            "anchorName": "#AppendixAAcqInc",
+            "subsections": [
+                {
+                    "title": "Omin Dran",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#OminDran",
+                    "subsections": []
+                },
+                {
+                    "title": "Jim Darkmagic",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#JimDarkmagic",
+                    "subsections": []
+                },
+                {
+                    "title": "Viari",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#Viari",
+                    "subsections": []
+                },
+                {
+                    "title": "Môrgæn",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#Môrgæn",
+                    "subsections": []
+                },
+                {
+                    "title": "Flabbergast",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#Flabbergast",
+                    "subsections": []
+                },
+                {
+                    "title": "The “C” Team",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#TheCTeam",
+                    "subsections": [
+                        {
+                            "title": "Donaar Blit’zen",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#DonaarBlitzen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "K’thriss Drow’b",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#KthrissDrowb",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Rosie Beestinger",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#RosieBeestinger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Walnut Dankgrass",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#WalnutDankgrass",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The “B” Team",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#TheBTeam",
+                    "subsections": [
+                        {
+                            "title": "Brahma Lutier",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#BrahmaLutier",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Oak Truestrike",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#OakTruestrike",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Pendragon Beestinger",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#PendragonBeestinger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Phoenix Anvil",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#PhoenixAnvil",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "House Dran",
+                    "urlName": "ai/acq-inc",
+                    "anchorName": "#HouseDran",
+                    "subsections": [
+                        {
+                            "title": "Auspicia Dran",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#AuspiciaDran",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Portentia Dran",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#PortentiaDran",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Prophetess Dran",
+                            "urlName": "ai/acq-inc",
+                            "anchorName": "#ProphetessDran",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Monsters",
+            "urlName": "ai/monsters",
+            "anchorName": "#AppendixBMonsters",
+            "subsections": [
+                {
+                    "title": "Chaos Quadrapod",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#ChaosQuadrapod",
+                    "subsections": []
+                },
+                {
+                    "title": "Clockwork Dragon",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#ClockworkDragon",
+                    "subsections": []
+                },
+                {
+                    "title": "Deep Crow",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#DeepCrow",
+                    "subsections": [
+                        {
+                            "title": "Ancient Deep Crow",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#AncientDeepCrow",
+                            "subsections": []
+                        },
+                        {
+                            "title": "A Deep Crow’s Lair",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#ADeepCrowsLair",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Regional Effects",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#RegionalEffects",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Keg Robot",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#KegRobot",
+                    "subsections": []
+                },
+                {
+                    "title": "Splugoth the Returned",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#SplugoththeReturned",
+                    "subsections": []
+                },
+                {
+                    "title": "Iconic Faction Features",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#IconicFactionFeatures",
+                    "subsections": [
+                        {
+                            "title": "Iconic Dran Enterprises Employee",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicDranEnterprisesEmployee",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Noble Knife Agent",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicNobleKnifeAgent",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Zealot of the Silver Sliver",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicZealotoftheSilverSliver",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Affiliate of the Six",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicAffiliateoftheSix",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Iconic Franchise Features",
+                    "urlName": "ai/monsters",
+                    "anchorName": "#IconicFranchiseFeatures",
+                    "subsections": [
+                        {
+                            "title": "Iconic Cartographer",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicCartographer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Decisionist",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicDecisionist",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Documancer",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicDocumancer",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Hoardsperson",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicHoardsperson",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Loremonger",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicLoremonger",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Obviator",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicObviator",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Occultant",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicOccultant",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Iconic Secretarian",
+                            "urlName": "ai/monsters",
+                            "anchorName": "#IconicSecretarian",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Vehicles",
+            "urlName": "ai/vehicles",
+            "anchorName": "#AppendixCVehicles",
+            "subsections": [
+                {
+                    "title": "Battle Balloon",
+                    "urlName": "ai/vehicles",
+                    "anchorName": "#BattleBalloon",
+                    "subsections": []
+                },
+                {
+                    "title": "Mechanical Beholder",
+                    "urlName": "ai/vehicles",
+                    "anchorName": "#MechanicalBeholder",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix D: Orrery and Components",
+            "urlName": "ai/orrery-and-components",
+            "anchorName": "#AppendixDOrreryandComponents",
+            "subsections": [
+                {
+                    "title": "Orrery of the Wanderer",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#OrreryoftheWanderer",
+                    "subsections": []
+                },
+                {
+                    "title": "Chronolometer",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#Chronolometer",
+                    "subsections": []
+                },
+                {
+                    "title": "Dimensional Loop",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#DimensionalLoop",
+                    "subsections": []
+                },
+                {
+                    "title": "Far Gear",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#FarGear",
+                    "subsections": []
+                },
+                {
+                    "title": "Rotor of Return",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#RotorofReturn",
+                    "subsections": []
+                },
+                {
+                    "title": "Timepiece of Travel",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#TimepieceofTravel",
+                    "subsections": []
+                },
+                {
+                    "title": "Wheel of Stars",
+                    "urlName": "ai/orrery-and-components",
+                    "anchorName": "#WheelofStars",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix E: Trinkets",
+            "urlName": "ai/trinkets",
+            "anchorName": "#AppendixETrinkets",
+            "subsections": []
+        },
+        {
+            "title": "Credits",
+            "urlName": "ai/credits",
+            "anchorName": "#",
+            "subsections": []
+        }
+    ]
+}

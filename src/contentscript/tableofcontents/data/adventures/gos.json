@@ -1,0 +1,3712 @@
+{
+    "title": "Ghosts of Saltmarsh",
+    "urlName": "gos",
+    "anchorName": "",
+    "subsections": [
+        {
+            "title": "Introduction",
+            "urlName": "gos/introduction",
+            "anchorName": "#Introduction",
+            "subsections": [
+                {
+                    "title": "Using This Book",
+                    "urlName": "gos/introduction",
+                    "anchorName": "#UsingThisBook",
+                    "subsections": [
+                        {
+                            "title": "Running the Adventures",
+                            "urlName": "gos/introduction",
+                            "anchorName": "#RunningtheAdventures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Credits from the Originals",
+                            "urlName": "gos/introduction",
+                            "anchorName": "#CreditsfromtheOriginals",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 1: Saltmarsh",
+            "urlName": "gos/saltmarsh",
+            "anchorName": "#Chapter1Saltmarsh",
+            "subsections": [
+                {
+                    "title": "Politics and Factions",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#PoliticsandFactions",
+                    "subsections": [
+                        {
+                            "title": "Traditionalists",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Traditionalists",
+                            "subsections": [
+                                {
+                                    "title": "Eda Oweland",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#EdaOweland",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gellan Primewater",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#GellanPrimewater",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Traditionalists in Play",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheTraditionalistsinPlay",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Loyalists",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Loyalists",
+                            "subsections": [
+                                {
+                                    "title": "Eliander Fireborn",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#ElianderFireborn",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Manistrad Copperlocks",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#ManistradCopperlocks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Loyalists in Play",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheLoyalistsinPlay",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Scarlet Brotherhood",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#ScarletBrotherhood",
+                            "subsections": [
+                                {
+                                    "title": "Anders Solmor",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#AndersSolmor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Skerrin Wavechaser",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#SkerrinWavechaser",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Scarlet Brotherhood in Play",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheScarletBrotherhoodinPlay",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Saltmarsh Overview",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#SaltmarshOverview",
+                    "subsections": [
+                        {
+                            "title": "Law and Order",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#LawandOrder",
+                            "subsections": [
+                                {
+                                    "title": "Militia and Defense",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#MilitiaandDefense",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Local Law Enforcement",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#LocalLawEnforcement",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Commerce",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Commerce",
+                            "subsections": [
+                                {
+                                    "title": "Fishing",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Fishing",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Trading",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Trading",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Smuggling",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Smuggling",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mining",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Mining",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Docks",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Docks",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mood of the Town",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#MoodoftheTown",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Locations in Saltmarsh",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#LocationsinSaltmarsh",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Downtime Activities",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#DowntimeActivities",
+                    "subsections": [
+                        {
+                            "title": "Buying and Selling Magic Items",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#BuyingandSellingMagicItems",
+                            "subsections": [
+                                {
+                                    "title": "Buying Items",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#BuyingItems",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selling Items",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#SellingItems",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Carousing",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Carousing",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Research",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Research",
+                            "subsections": [
+                                {
+                                    "title": "Wages and Research",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#WagesandResearch",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Employment",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#Employment",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mercenary Work",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#MercenaryWork",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Saltmarsh Region",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#SaltmarshRegion",
+                    "subsections": [
+                        {
+                            "title": "Roads and Pathways",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#RoadsandPathways",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Points of Interest",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#PointsofInterest",
+                            "subsections": [
+                                {
+                                    "title": "Abbey Isle",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#AbbeyIsle",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Burle",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Burle",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dwarven Mine",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#DwarvenMine",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Haunted House",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#HauntedHouse",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lizardfolk Lair",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#LizardfolkLair",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sahuagin Fortress",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#SahuaginFortress",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Seaton",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Seaton",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Tower of Zenopus",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TowerofZenopus",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Geographic Features",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#GeographicFeatures",
+                            "subsections": [
+                                {
+                                    "title": "The Dreadwood",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheDreadwood",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Drowned Forest",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#DrownedForest",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hool Marshes",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#HoolMarshes",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dunwater River",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#DunwaterRiver",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Silverstand",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Silverstand",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Azure Sea",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#AzureSea",
+                            "subsections": [
+                                {
+                                    "title": "Shipwrecks",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Shipwrecks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Random Encounters",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#RandomEncounters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gnasher",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Gnasher",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Pale Prow",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#PaleProw",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dreadnaught",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#Dreadnaught",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventures in Saltmarsh",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#AdventuresinSaltmarsh",
+                    "subsections": [
+                        {
+                            "title": "Ghosts of Saltmarsh",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#GhostsofSaltmarsh",
+                            "subsections": [
+                                {
+                                    "title": "Sinister Secret of Saltmarsh",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#SinisterSecretofSaltmarsh",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Danger at Dunwater",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#DangeratDunwater",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Salvage Operation",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#SalvageOperation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Isle of the Abbey",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#IsleoftheAbbey",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Final Enemy",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheFinalEnemy",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Tammeraut’s Fate",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TammerautsFate",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Styes",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheStyes",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Tales from the Yawning Portal",
+                            "urlName": "gos/saltmarsh",
+                            "anchorName": "#TalesfromtheYawningPortal",
+                            "subsections": [
+                                {
+                                    "title": "The Sunless Citadel",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheSunlessCitadel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Forge of Fury",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheForgeofFury",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Hidden Shrine of Tamoachan",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheHiddenShrineofTamoachan",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "White Plume Mountain",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#WhitePlumeMountain",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dead in Thay",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#DeadinThay",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Against the Giants",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#AgainsttheGiants",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Tomb of Horrors",
+                                    "urlName": "gos/saltmarsh",
+                                    "anchorName": "#TheTombofHorrors",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Saltmarsh Backgrounds",
+                    "urlName": "gos/saltmarsh",
+                    "anchorName": "#SaltmarshBackgrounds",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 2: The Sinister Secret of Saltmarsh",
+            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+            "anchorName": "#Chapter2TheSinisterSecretofSaltmarsh",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "The Secret",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheSecret",
+                            "subsections": [
+                                {
+                                    "title": "The Sea Ghost",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#TheSeaGhosts",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sanbalet’s Gang",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#SanbaletsGang",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Portents of War",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#PortentsofWar",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": [
+                        {
+                            "title": "A Man on the Inside",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#AManontheInside",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Hidden Hoard",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#HiddenHoard",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Knowledge Unlimited",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#KnowledgeUnlimited",
+                            "subsections": []
+                        },
+                        {
+                            "title": "It Must Be Cleansed",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#ItMustBeCleansed",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Haunted House",
+                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                    "anchorName": "#TheHauntedHouse",
+                    "subsections": [
+                        {
+                            "title": "Traveling to the House",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TravelingtotheHouse",
+                            "subsections": []
+                        },
+                        {
+                            "title": "House Exterior",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#HouseExterior",
+                            "subsections": [
+                                {
+                                    "title": "The Wall",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#TheWall",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Garden",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#TheGarden",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Well",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#TheWell",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "House Interior",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#HouseInterior",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ground Floor",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#GroundFloor",
+                            "subsections": [
+                                {
+                                    "title": "1. Entrance Hall",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#1EntranceHall",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. Library",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#2Library",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. Study",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#3Study",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "4. Living Area",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#4LivingArea",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Living Area",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#5LivingArea",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "6. Living Area",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#6LivingArea",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "7. Dining Room",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#7DiningRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "8. Withdrawing Room",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#8WithdrawingRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "9. Kitchen",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#9Kitchen",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "10. Scullery",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#10Scullery",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Upper Floor",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#UpperFloor",
+                            "subsections": [
+                                {
+                                    "title": "11. Moldering Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#11MolderingBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "12. Decrepit Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#12DecrepitBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "13. Guest Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#13GuestBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "14. Crumbling Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#14CrumblingBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "15. Ned’s Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#15NedsBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "16. Alchemist’s Bedroom",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#16AlchemistsBedroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "17. Box Room",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#17BoxRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "18. Landing",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#18Landing",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "19. Attic",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#19Attic",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Cellar",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheCellar",
+                            "subsections": [
+                                {
+                                    "title": "20. Wine Cellar",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#20WineCellar",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "21. Cellar",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#21Cellar",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "22. Sanbalet’s Private Quarters",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#22SanbaletsPrivateQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "23. Skeletons’ Room",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#23SkeletonsRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "24. Laboratory",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#24Laboratory",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Caverns",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheCaverns",
+                            "subsections": [
+                                {
+                                    "title": "25. Slimy Cavern",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#25SlimyCavern",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "26. Natural Cavern",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#26NaturalCavern",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "27. Storage Cavern",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#27StorageCavern",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "28. Sloping Passage",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#28SlopingPassage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "29. Stock Cavern",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#29StockCavern",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "30. Sea Cave",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#30SeaCave",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Conclusion",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#ConclusionHouse",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Sea Ghost",
+                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                    "anchorName": "#TheSeaGhost",
+                    "subsections": [
+                        {
+                            "title": "The Plan",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#ThePlan",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Signaling System",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheSignalingSystem",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Boarding the Sea Ghost",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#BoardingtheSeaGhost",
+                            "subsections": [
+                                {
+                                    "title": "Crow’s Nest",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#CrowsNest",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bluffing Their Way On",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#BluffingTheirWayOn",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Climbing Aboard",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#ClimbingAboard",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Crew of the Sea Ghost",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheCrewoftheSeaGhost",
+                            "subsections": [
+                                {
+                                    "title": "In Case of Surrender",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#InCaseofSurrender",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Smugglers’ Ship",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#TheSmugglersShip",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ship Locations",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#ShipLocations",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Conclusion",
+                            "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                            "anchorName": "#Conclusion",
+                            "subsections": [
+                                {
+                                    "title": "Smuggled Goods",
+                                    "urlName": "gos/the-sinister-secret-of-saltmarsh",
+                                    "anchorName": "#SmuggledGoods",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 3: Danger at Dunwater",
+            "urlName": "gos/danger-at-dunwater",
+            "anchorName": "#Chapter3DangeratDunwater",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "Adventurers Needed",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#AdventurersNeeded",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The True Threat",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#TheTrueThreat",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Politics Among the Lizardfolk",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#PoliticsAmongtheLizardfolk",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rules of Engagement",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#RulesofEngagement",
+                    "subsections": [
+                        {
+                            "title": "Procedure",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#Procedure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Meeting the Queen",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#MeetingtheQueen",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Goodwill Tour",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#GoodwillTour",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Bribery",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#Bribery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Kill the Crocodile",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#KilltheCrocodile",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Deal Breakers",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#DealBreakers",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Roleplaying Lizardfolk",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#RoleplayingLizardfolk",
+                    "subsections": [
+                        {
+                            "title": "Personalities",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#Personalities",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Lizardfolk Names",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#LizardfolkNames",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": [
+                        {
+                            "title": "True Motives",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#TrueMotives",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Traveling to the Lair",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#TravelingtotheLair",
+                    "subsections": [
+                        {
+                            "title": "By Sea",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#BySea",
+                            "subsections": []
+                        },
+                        {
+                            "title": "By Land",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#ByLand",
+                            "subsections": [
+                                {
+                                    "title": "The Bullywug Ambush",
+                                    "urlName": "gos/danger-at-dunwater",
+                                    "anchorName": "#TheBullywugAmbush",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Lizardfolk Lair",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#LizardfolkLair",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Communication and Disposition",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#CommunicationandDisposition",
+                            "subsections": [
+                                {
+                                    "title": "Parley and Surrender",
+                                    "urlName": "gos/danger-at-dunwater",
+                                    "anchorName": "#ParleyandSurrender",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Inhabitants",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#Inhabitants",
+                            "subsections": [
+                                {
+                                    "title": "Patrols in the Lair",
+                                    "urlName": "gos/danger-at-dunwater",
+                                    "anchorName": "#PatrolsintheLair",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Lair Locations",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#LairLocations",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#Conclusion",
+                    "subsections": [
+                        {
+                            "title": "Formalizing the Alliance",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#FormalizingtheAlliance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mission Gone Wrong?",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#MissionGoneWrong",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Epilogue: Croc Hunt",
+                    "urlName": "gos/danger-at-dunwater",
+                    "anchorName": "#EpilogueCrocHunt",
+                    "subsections": [
+                        {
+                            "title": "Lair of the Devourer",
+                            "urlName": "gos/danger-at-dunwater",
+                            "anchorName": "#LairoftheDevourer",
+                            "subsections": [
+                                {
+                                    "title": "Traveling to the Pool",
+                                    "urlName": "gos/danger-at-dunwater",
+                                    "anchorName": "#TravelingtothePool",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Polluted Pool",
+                                    "urlName": "gos/danger-at-dunwater",
+                                    "anchorName": "#PollutedPool",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 4: Salvage Operation",
+            "urlName": "gos/salvage-operation",
+            "anchorName": "#Chapter4SalvageOperation",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#Background",
+                    "subsections": []
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Salvagers Wanted",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#SalvagersWanted",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Soul of Winter",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#SoulofWinter",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "State of the Ship",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#StateoftheShip",
+                    "subsections": [
+                        {
+                            "title": "Upper Deck",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#UpperDeck",
+                            "subsections": [
+                                {
+                                    "title": "1. Main Deck",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#1MainDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. Altar to Lolth",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#2AltartoLolth",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. Navigator’s Room",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#3NavigatorsRoom",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Lower Deck and Cargo Hold",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#LowerDeckandCargoHold",
+                            "subsections": [
+                                {
+                                    "title": "4. Webbed Doorway",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#4WebbedDoorway",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Spider Nest",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#5SpiderNest",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "6. Food Storage",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#6FoodStorage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "7. Krell’s Cabin",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#7KrellsCabin",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "8. First Mate’s Cabin",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#8FirstMatesCabin",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "9. Spider Chambers",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#9SpiderChambers",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "10. Unholy Shrine",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#10UnholyShrine",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "11. Galley",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#11Galley",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "12. Cargo Hold",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#12CargoHold",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Death of the Emperor",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#DeathoftheEmperor",
+                    "subsections": [
+                        {
+                            "title": "Octopus Attack",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#OctopusAttack",
+                            "subsections": [
+                                {
+                                    "title": "Movement",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Movement",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rescue",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Rescue",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Thrashing Tentacles",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#ThrashingTentacles",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Attacking the Octopus",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#AttackingtheOctopus",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Other Monsters",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#OtherMonsters",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Moving Aubreck’s Treasure",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#MovingAubrecksTreasure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sequence of Events",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#SequenceofEvents",
+                            "subsections": [
+                                {
+                                    "title": "Round 1",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round1",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 2",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round2",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 3",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round3",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 4",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round4",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 5",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round5",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rounds 6 through 13",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Rounds6through13",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 14",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round14",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rounds 15 through 19",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Rounds15through19",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Round 20",
+                                    "urlName": "gos/salvage-operation",
+                                    "anchorName": "#Round20",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Getting Off the Emperor",
+                            "urlName": "gos/salvage-operation",
+                            "anchorName": "#GettingOfftheEmperor",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "gos/salvage-operation",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 5: Isle of the Abbey",
+            "urlName": "gos/isle-of-the-abbey",
+            "anchorName": "#Chapter5IsleoftheAbbey",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "The Job at Hand",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheJobatHand",
+                            "subsections": [
+                                {
+                                    "title": "Supplies",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Supplies",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Gilded Rumors",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#GildedRumors",
+                            "subsections": []
+                        },
+                        {
+                            "title": "For the People",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#ForthePeople",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Traveling to the Isle",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#TravelingtotheIsle",
+                    "subsections": [
+                        {
+                            "title": "The Lighthouse Keeper",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheLighthouseKeeper",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Roleplaying Major Ursa",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#RoleplayingMajorUrsa",
+                            "subsections": [
+                                {
+                                    "title": "What He Knows",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#WhatHeKnows",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "What He Might Know",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#WhatHeMightKnow",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "The Island",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#TheIsland",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Skull Dunes",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheSkullDunes",
+                            "subsections": [
+                                {
+                                    "title": "Encounter Procedure",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#EncounterProcedure",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Avoiding the Skull Dunes",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#AvoidingtheSkullDunes",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Complications on the Dunes",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#ComplicationsontheDunes",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Abbey Ruins",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#TheAbbeyRuins",
+                    "subsections": [
+                        {
+                            "title": "Recent Events",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#RecentEvents",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Survivors",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheSurvivors",
+                            "subsections": [
+                                {
+                                    "title": "Ozymandias",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Ozymandias",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Odium",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Odium",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Bayleaf",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Bayleaf",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ogmund",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Ogmund",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Disciples",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Disciples",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Guards",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Guards",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Survivors’ Response",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheSurvivorsResponse",
+                            "subsections": [
+                                {
+                                    "title": "Hostile",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Hostile",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Conversational",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#Conversational",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Treasures Untold",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TreasuresUntold",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Locations in the Ruins",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#LocationsintheRuins",
+                    "subsections": [
+                        {
+                            "title": "The Ruined Cellar",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheRuinedCellar",
+                            "subsections": [
+                                {
+                                    "title": "1. Rubble and Cellar Entrance",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#1RubbleandCellarEntrance",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. Common Area",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#2CommonArea",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. Kitchen",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#3Kitchen",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "4. Ogmund’s Quarters",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#4OgmundsQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Barracks",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#5Barracks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "6. Meditation Room",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#6MeditationRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "7. Ozymandias’s Quarters",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#7OzymandiassQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "8. Bayleaf’s Quarters",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#8BayleafsQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "9. Odium’s Quarters",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#9OdiumsQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "10. Disciples’ Quarters",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#10DisciplesQuarters",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "The Winding Way",
+                            "urlName": "gos/isle-of-the-abbey",
+                            "anchorName": "#TheWindingWay",
+                            "subsections": [
+                                {
+                                    "title": "A. Trip Wire",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#ATripWire",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "B. Open Pit and Illusion",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#BOpenPitandIllusion",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "C. Spiked Pit Trap",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#CSpikedPitTrap",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D. False Door with Overhead Block",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#DFalseDoorwithOverheadBlock",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "E. Door with Crossbow",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#EDoorwithCrossbow",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "11. Entrance Guardroom",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#11EntranceGuardroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "12. Hallway Guardroom",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#12HallwayGuardroom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "13. False Treasure Room",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#13FalseTreasureRoom",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "14. Treasure Room",
+                                    "urlName": "gos/isle-of-the-abbey",
+                                    "anchorName": "#14TreasureRoom",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "gos/isle-of-the-abbey",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Chapter 6: The Final Enemy",
+            "urlName": "gos/the-final-enemy",
+            "anchorName": "#Chapter6TheFinalEnemy",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/the-final-enemy",
+                    "anchorName": "#Background",
+                    "subsections": []
+                },
+                {
+                    "title": "Council of War",
+                    "urlName": "gos/the-final-enemy",
+                    "anchorName": "#CouncilofWar",
+                    "subsections": [
+                        {
+                            "title": "The Master Plan",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#TheMasterPlan",
+                            "subsections": [
+                                {
+                                    "title": "Lay of the Land",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#LayoftheLand",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mission Goals",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#MissionGoals",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Approach by Sea",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#ApproachbySea",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Sahuagin Stronghold",
+                    "urlName": "gos/the-final-enemy",
+                    "anchorName": "#SahuaginStronghold",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": [
+                                {
+                                    "title": "Decorative Tiles",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#DecorativeTiles",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Corridors and Rooms",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#CorridorsandRooms",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Doors",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#Doors",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Gates and Pillars",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#GatesandPillars",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Illumination",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#Illumination",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Furniture and Seaweed Beds",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#FurnitureandSeaweedBeds",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Those Who Rule",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#ThoseWhoRule",
+                            "subsections": [
+                                {
+                                    "title": "Baroness Seklaz",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#BaronessSeklaz",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Baron Kepmak",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#BaronKepmak",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "High Priestess Thadrah",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#HighPriestessThadrah",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Blademaster Makaht",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#BlademasterMakaht",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Inhabitants",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#Inhabitants",
+                            "subsections": [
+                                {
+                                    "title": "Patrols in the Fortress",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#PatrolsintheFortress",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "The Mission Begins",
+                    "urlName": "gos/the-final-enemy",
+                    "anchorName": "#TheMissionBegins",
+                    "subsections": [
+                        {
+                            "title": "Arrival at the Island",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#ArrivalattheIsland",
+                            "subsections": [
+                                {
+                                    "title": "Entrances",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#Entrances",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rocky Exterior",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#RockyExterior",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Causeway",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#TheCauseway",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Fortress Level 1",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#FortressLevel1",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fortress Level 2",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#FortressLevel2",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Fortress Level 3",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#FortressLevel3",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "gos/the-final-enemy",
+                    "anchorName": "#Conclusion",
+                    "subsections": [
+                        {
+                            "title": "The Assault",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#TheAssault",
+                            "subsections": [
+                                {
+                                    "title": "The Plan",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#ThePlan",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Resources",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#Resources",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Attack",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#TheAttack",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Defense",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#TheDefense",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Timing",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#Timing",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "On Alert",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#OnAlert",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Concluding the Assault",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#ConcludingtheAssault",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Assault Encounters",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#AssaultEncounters",
+                            "subsections": [
+                                {
+                                    "title": "1. North Entrance and Guard Post",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#1NorthEntranceandGuardPost2",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Unfinished Barracks",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#5UnfinishedBarracks2",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "19. Hall",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#19Hall2",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Baron’s Counterattack",
+                                    "urlName": "gos/the-final-enemy",
+                                    "anchorName": "#TheBaronsCounterattack",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Failure",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#Failure",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Triumph",
+                            "urlName": "gos/the-final-enemy",
+                            "anchorName": "#Triumph",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 7: Tammeraut’s Fate",
+            "urlName": "gos/tammerauts-fate",
+            "anchorName": "#Chapter7TammerautsFate",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "Tammeraut’s Secret",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#TammerautsSecret",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Death in the Night",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#DeathintheNight",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Delayed Delivery",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#DelayedDelivery",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Morley’s Debt",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#MorleysDebt",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Harpy Attack",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#HarpyAttack",
+                    "subsections": [
+                        {
+                            "title": "Unfortunate Swimmer",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#UnfortunateSwimmer",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Village of Uskarn",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#TheVillageofUskarn",
+                    "subsections": [
+                        {
+                            "title": "Staying in Uskarn",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#StayinginUskarn",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Uskarn Council",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#UskarnCouncil",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Law and Order",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#LawandOrder",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Intrigue",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#Intrigue",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Firewatch Island",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#FirewatchIsland",
+                    "subsections": [
+                        {
+                            "title": "Look Out Above",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#LookOutAbove",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Traveling to Firewatch Island",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#TravelingtoFirewatchIsland",
+                            "subsections": [
+                                {
+                                    "title": "End of The Journey",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#EndofTheJourney",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "The Hermitage",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#TheHermitage",
+                    "subsections": [
+                        {
+                            "title": "General Features",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#GeneralFeatures",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Making an Entrance",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#MakinganEntrance",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Island Approach and First Floor",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#IslandApproachandFirstFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Second Floor",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#SecondFloor",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Upper Levels and Cellar",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#UpperLevelsandCellar",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Last Stand",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#LastStand",
+                    "subsections": []
+                },
+                {
+                    "title": "Preparing for the Drowned Ones",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#PreparingfortheDrownedOnes",
+                    "subsections": [
+                        {
+                            "title": "Defending the Fortress",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#DefendingtheFortress",
+                            "subsections": [
+                                {
+                                    "title": "Arrow Slits",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#ArrowSlits",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Floral Assault",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#FloralAssault",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rat Pack",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#RatPack",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reinforcing the Doors",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#ReinforcingtheDoors",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Rigging the Roof",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#RiggingtheRoof",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Oil of Slipperiness",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#OilofSlipperiness",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Death from the Deep",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#DeathfromtheDeep",
+                    "subsections": [
+                        {
+                            "title": "Scenario 1: Undead Horde",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#Scenario1UndeadHorde",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Scenario 2: Waves of Undead",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#Scenario2WavesofUndead",
+                            "subsections": [
+                                {
+                                    "title": "Wave 1",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#Wave1",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Wave 2",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#Wave2",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Wave 3",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#Wave3",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Safe by Day",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#SafebyDay",
+                    "subsections": [
+                        {
+                            "title": "Virgil’s Mission",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#VirgilsMission",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "The Wreck",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#TheWreck",
+                    "subsections": [
+                        {
+                            "title": "The Remains of Tammeraut",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#TheRemainsofTammeraut",
+                            "subsections": [
+                                {
+                                    "title": "Unhallowed Ground",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#UnhallowedGround",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ancient Warning",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#AncientWarning",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Inside the Ship",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#InsidetheShip",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Rift",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#TheRift",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Sealing the Rift",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#SealingtheRift",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Conclusion",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#Conclusion",
+                    "subsections": []
+                },
+                {
+                    "title": "Extending the Adventure",
+                    "urlName": "gos/tammerauts-fate",
+                    "anchorName": "#ExtendingtheAdventure",
+                    "subsections": [
+                        {
+                            "title": "Orcus and the Sea",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#OrcusandtheSea",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Further Adventures",
+                            "urlName": "gos/tammerauts-fate",
+                            "anchorName": "#FurtherAdventures",
+                            "subsections": [
+                                {
+                                    "title": "Death Fleet",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#DeathFleet",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "The Devouring Gyre",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#TheDevouringGyre",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Island of Bones",
+                                    "urlName": "gos/tammerauts-fate",
+                                    "anchorName": "#IslandofBones",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chapter 8: The Styes",
+            "urlName": "gos/the-styes",
+            "anchorName": "#Chapter8TheStyes",
+            "subsections": [
+                {
+                    "title": "Background",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Background",
+                    "subsections": [
+                        {
+                            "title": "The Mark of Tharizdun",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#TheMarkofTharizdun",
+                            "subsections": []
+                        },
+                        {
+                            "title": "The Lantern Ghost Murders",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#TheLanternGhostMurders",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Adventure Summary",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#AdventureSummary",
+                    "subsections": []
+                },
+                {
+                    "title": "Adventure Hooks",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#AdventureHooks",
+                    "subsections": [
+                        {
+                            "title": "Refrum’s Plea",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#RefrumsPlea",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Eleanor’s Loss",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#EleanorsLoss",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Thornwell’s Offer",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#ThornwellsOffer",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Part 1: A Dying District",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Part1ADyingDistrict",
+                    "subsections": [
+                        {
+                            "title": "History and Decay",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#HistoryandDecay",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Residents and Politics",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#ResidentsandPolitics",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Styes Encounters",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#StyesEncounters",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Life in the Styes",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#LifeintheStyes",
+                            "subsections": [
+                                {
+                                    "title": "Merchandise",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#Merchandise",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Taverns and Inns",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#TavernsandInns",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Religion",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#Religion",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Health",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#Health",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Layout of the District",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#LayoutoftheDistrict",
+                            "subsections": [
+                                {
+                                    "title": "Low Quarter",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#LowQuarter",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Alchemists’ Quarter",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#AlchemistsQuarter",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "High Quarter",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#HighQuarter",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Merchants’ Quarter",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#MerchantsQuarter",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Locations in the Styes",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#LocationsintheStyes",
+                            "subsections": [
+                                {
+                                    "title": "1. Harbor Master",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#1HarborMaster",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. Frother’s Lamp",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#2FrothersLamp",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. Marketplace",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#3Marketplace",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "4. District Garrison",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#4DistrictGarrison",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Council Hall",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#5CouncilHall",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "6. Refrum’s Workshop",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#6RefrumsWorkshop",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "7. Dory’s Warehouse",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#7DorysWarehouse",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "8. Rashlen Manor",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#8RashlenManor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "9. Thornwell Tower",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#9ThornwellTower",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "10. Mortuary",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#10Mortuary",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "11. Hopene’er Asylum",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#11HopeneerAsylum",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Part 2: Murder Mystery",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Part2MurderMystery",
+                    "subsections": [
+                        {
+                            "title": "Dark Justice",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#DarkJustice",
+                            "subsections": [
+                                {
+                                    "title": "A New Murder",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#ANewMurder",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Hopene’er Asylum",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#HopeneerAsylum",
+                            "subsections": [
+                                {
+                                    "title": "Speaking with Trantor",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#SpeakingwithTrantor",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Jarme’s Last Message",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#JarmesLastMessage",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "District Garrison",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#DistrictGarrison",
+                            "subsections": [
+                                {
+                                    "title": "Constable Jute",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#ConstableJute",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Scene of the Crime",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#SceneoftheCrime",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Part 3: Hemlock Pit",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Part3HemlockPit",
+                    "subsections": [
+                        {
+                            "title": "Strange Housekeeping",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#StrangeHousekeeping",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warehouse Secrets",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#WarehouseSecrets",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mr. Dory’s Warehouse",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#MrDorysWarehouse",
+                            "subsections": [
+                                {
+                                    "title": "D1. Main Storehouse",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D1MainStorehouse",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D2. Office",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D2Office",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D3. Loft",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D3Loft",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D4. Upper Walkway",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D4UpperWalkway",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D5. Crane",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D5Crane",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D6. Upper Deck",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D6UpperDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D7. Bow Pool",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D7BowPool",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D8. Amidships",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D8Amidships",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "D9. Dory’s Chamber",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#D9DorysChamber",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Part 4: The Lamp’s Shadow",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Part4TheLampsShadow",
+                    "subsections": [
+                        {
+                            "title": "Temple of Tharizdun",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#TempleofTharizdun",
+                            "subsections": [
+                                {
+                                    "title": "T1. Milden Span",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T1MildenSpan",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "T2. Galley Pier",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T2GalleyPier",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "T3. Ship’s Prow",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T3ShipsProw",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "T4. Chuul-Haunted Hallway",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T4ChuulHauntedHallway",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "T5. Dark God’s Chapel",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T5DarkGodsChapel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "T6. Watery Descent",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#T6WateryDescent",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Mysterious Tunnel",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#MysteriousTunnel",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Part 5: Tharizdun’s Progeny",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Part5TharizdunsProgeny",
+                    "subsections": [
+                        {
+                            "title": "Death from the Deep",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#DeathfromtheDeep",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Landgrave’s Folly",
+                            "urlName": "gos/the-styes",
+                            "anchorName": "#LandgravesFolly",
+                            "subsections": [
+                                {
+                                    "title": "L1. Ruined Spire",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#L1RuinedSpire",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "L2. Flooded Temple",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#L2FloodedTemple",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "L3. Landgrave’s Pit",
+                                    "urlName": "gos/the-styes",
+                                    "anchorName": "#L3LandgravesPit",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Aftermath",
+                    "urlName": "gos/the-styes",
+                    "anchorName": "#Aftermath",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix A: Of Ships and the Sea",
+            "urlName": "gos/of-ships-and-the-sea",
+            "anchorName": "#AppendixAOfShipsandtheSea",
+            "subsections": [
+                {
+                    "title": "Ship Stat Blocks",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#ShipStatBlocks",
+                    "subsections": [
+                        {
+                            "title": "Basic Statistics",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#BasicStatistics",
+                            "subsections": [
+                                {
+                                    "title": "Size",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Size",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Space",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Space",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Capacity",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Capacity",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Travel Pace",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#TravelPace",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ability Scores",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#AbilityScores",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vulnerabilities, Resistances, and Immunities",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#VulnerabilitiesResistancesandImmunities",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Actions",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Actions",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Components",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Components",
+                            "subsections": [
+                                {
+                                    "title": "Armor Class",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ArmorClass",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hit Points",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#HitPoints",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Damage Threshold",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DamageThreshold",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Sample Ships",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#SampleShips",
+                    "subsections": [
+                        {
+                            "title": "Galley",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Galley",
+                            "subsections": [
+                                {
+                                    "title": "Example Galley Crew",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ExampleGalleyCrew",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Main Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#MainDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Lower Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#LowerDeck",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Keelboat",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Keelboat",
+                            "subsections": [
+                                {
+                                    "title": "Example Keelboat Crew",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ExampleKeelboatCrew",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Keelboat Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#KeelboatDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Keelboat Cabin",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#KeelboatCabin",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Longship",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Longship",
+                            "subsections": [
+                                {
+                                    "title": "Example Longship Crew",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ExampleLongshipCrew",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Longship Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#LongshipDeck",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Rowboat",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Rowboat",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sailing Ship and Warship",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#SailingShipandWarship",
+                            "subsections": [
+                                {
+                                    "title": "Example Crew",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ExampleCrew",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "1. Main Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#1MainDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2. Officers’ Quarters",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#2OfficersQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "3. Captain’s Quarters",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#3CaptainsQuarters",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "4. Siege Weapon Ammunition",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#4SiegeWeaponAmmunition",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "5. Supplies",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#5Supplies",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "6. Forecastle",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#6Forecastle",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "7. Quarterdeck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#7Quarterdeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "8. Oar Deck",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#8OarDeck",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "9. Privy",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#9Privy",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "10. Medical Cabin",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#10MedicalCabin",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "11. Guest Cabin and Brig",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#11GuestCabinandBrig",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "12. Hold",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#12Hold",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "13. Armory",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#13Armory",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Officers and Crew",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#OfficersandCrew",
+                    "subsections": [
+                        {
+                            "title": "Types of Officers",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#TypesofOfficers",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Crew Members",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#CrewMembers",
+                            "subsections": [
+                                {
+                                    "title": "Optional Rule: Loyalty and Quality",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#OptionalRuleLoyaltyandQuality",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mutiny",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Mutiny",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Shore Leave",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ShoreLeave",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Ship Upgrades",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#SuperiorShipUpgrades",
+                    "subsections": [
+                        {
+                            "title": "Hull Upgrades",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#HullUpgrades",
+                            "subsections": [
+                                {
+                                    "title": "Churning Hull",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ChurningHull",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Death Vessel",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DeathVessel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Frost-Locked Hull",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#FrostLockedHull",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Living Vessel",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#LivingVessel",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Reinforced Hull",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ReinforcedHull",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Vigilant Watch",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#VigilantWatch",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Movement Upgrades",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#MovementUpgrades",
+                            "subsections": [
+                                {
+                                    "title": "Clockwork Oars",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ClockworkOars",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Ever-Full Sails",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#EverFullSails",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Defiant Sails",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DefiantSails",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Dragon Sails",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DragonSails",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Screaming Sails",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ScreamingSails",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Scything Oars",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ScythingOars",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Weapon Upgrades",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#WeaponUpgrades",
+                            "subsections": [
+                                {
+                                    "title": "Arcane Artillery",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ArcaneArtillery",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Concussive Rounds",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ConcussiveRounds",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Explosive Rounds",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#ExplosiveRounds",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Grasping Rounds",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#GraspingRounds",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Figurehead Upgrades",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#FigureheadUpgrades",
+                            "subsections": [
+                                {
+                                    "title": "Guardian Figurehead",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#GuardianFigurehead",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Red Dragon Figurehead",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#RedDragonFigurehead",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Storm Giant Figurehead",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#StormGiantFigurehead",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Miscellaneous Upgrades",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#MiscellaneousUpgrades",
+                            "subsections": [
+                                {
+                                    "title": "Bones of Endless Toil",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#BonesofEndlessToil",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Smuggler’s Banner",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#SmugglersBanner",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Taskmaster’s Drums",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#TaskmastersDrums",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ships in Combat",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#ShipsinCombat",
+                    "subsections": [
+                        {
+                            "title": "Ships and Initiative",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#ShipsandInitiative",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Officer Actions",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#SpecialOfficerActions",
+                            "subsections": [
+                                {
+                                    "title": "Take Aim",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#TakeAim",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Full Speed Ahead",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#FullSpeedAhead",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Crew in Combat",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#CrewinCombat",
+                            "subsections": [
+                                {
+                                    "title": "Crew Casualties",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#CrewCasualties",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Crashing a Ship",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#CrashingaShip",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Travel at Sea",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#TravelatSea",
+                    "subsections": [
+                        {
+                            "title": "Travel Pace",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#TravelPace",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Activity While Traveling",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#ActivityWhileTraveling",
+                            "subsections": [
+                                {
+                                    "title": "Draw a Map",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DrawaMap",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Forage",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Forage",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Raise Morale (First Mate Only)",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#RaiseMoraleFirstMateOnly",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Navigate (Quartermaster Only)",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#NavigateQuartermasterOnly",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Noticing Threats",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#NoticingThreats",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Repair (Bosun Only)",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#RepairBosunOnly",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Stealth (Captain Only)",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#StealthCaptainOnly",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Hazards",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Hazards",
+                            "subsections": [
+                                {
+                                    "title": "Group Checks",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#GroupChecks",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Determining Hazards",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#DeterminingHazards",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Crew Conflict",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#CrewConflict",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fire",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Fire",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Fog",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Fog",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Infestation",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Infestation",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Storm",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Storm",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ocean Environs",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#OceanEnvirons",
+                    "subsections": []
+                },
+                {
+                    "title": "Encounters at Sea",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#EncountersatSea",
+                    "subsections": [
+                        {
+                            "title": "Random Encounters",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#RandomEncounters",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Random Ships",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#RandomShips",
+                    "subsections": [
+                        {
+                            "title": "Ship Type",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#ShipType",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Ship Name",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#ShipName",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Crew",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#Crew",
+                            "subsections": [
+                                {
+                                    "title": "Crew Member Names",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#CrewMemberNames",
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Ship Purpose",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#ShipPurpose",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Attitude and Race",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#AttitudeandRace",
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Mysterious Islands",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#MysteriousIslands",
+                    "subsections": [
+                        {
+                            "title": "Island Size",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#IslandSize",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Island Habitat",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#IslandHabitat",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Island Theme",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#IslandTheme",
+                            "subsections": [
+                                {
+                                    "title": "Alien",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Alien",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Cursed",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Cursed",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Hostile",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Hostile",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Sanctum",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Sanctum",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Welcoming",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#Welcoming",
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Wild Island",
+                                    "urlName": "gos/of-ships-and-the-sea",
+                                    "anchorName": "#WildIsland",
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Underwater Locations",
+                    "urlName": "gos/of-ships-and-the-sea",
+                    "anchorName": "#UnderwaterLocations",
+                    "subsections": [
+                        {
+                            "title": "Cove Reef",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#CoveReef",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Wreck of the Marshal",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#WreckoftheMarshal",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Warthalkeel Ruins",
+                            "urlName": "gos/of-ships-and-the-sea",
+                            "anchorName": "#WarthalkeelRuins",
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Appendix B: Magic Items",
+            "urlName": "gos/magic-items",
+            "anchorName": "#AppendixBMagicItems",
+            "subsections": [
+                {
+                    "title": "Charm of Plant Command",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#CharmofPlantCommand",
+                    "subsections": []
+                },
+                {
+                    "title": "Cursed Luckstone",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#CursedLuckstone",
+                    "subsections": []
+                },
+                {
+                    "title": "Helm of Underwater Action",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#HelmofUnderwaterAction",
+                    "subsections": []
+                },
+                {
+                    "title": "Pipe of Remembrance",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#PipeofRemembrance",
+                    "subsections": []
+                },
+                {
+                    "title": "Pressure Capsule",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#PressureCapsule",
+                    "subsections": []
+                },
+                {
+                    "title": "Sekolahian Worshiping Statuette",
+                    "urlName": "gos/magic-items",
+                    "anchorName": "#SekolahianWorshipingStatuette",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Appendix C: Monsters and NPCs",
+            "urlName": "gos/monsters-and-npcs",
+            "anchorName": "#AppendixCMonstersandNPCs",
+            "subsections": [
+                {
+                    "title": "Monsters A - E",
+                    "urlName": "gos/monsters-and-npcs",
+                    "anchorName": "#MonstersAE",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters F - K",
+                    "urlName": "gos/monsters-and-npcs",
+                    "anchorName": "#MonstersFK",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters L - P",
+                    "urlName": "gos/monsters-and-npcs",
+                    "anchorName": "#MonstersLP",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters R - S",
+                    "urlName": "gos/monsters-and-npcs",
+                    "anchorName": "#MonstersRS",
+                    "subsections": []
+                },
+                {
+                    "title": "Monsters T - Z",
+                    "urlName": "gos/monsters-and-npcs",
+                    "anchorName": "#MonstersTZ",
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Credits",
+            "urlName": "gos/credits",
+            "anchorName": "#",
+            "subsections": []
+        }
+    ]
+}

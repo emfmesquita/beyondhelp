@@ -5,12 +5,12 @@
     "subsections": [
         {
             "title": "Preface",
-            "urlName": "rules/vgtm/preface",
+            "urlName": "vgtm/preface",
             "anchorName": "#Preface",
             "subsections": [
                 {
                     "title": "Notes from Elminster Aumar",
-                    "urlName": "rules/vgtm/preface",
+                    "urlName": "vgtm/preface",
                     "anchorName": "#NotesfromElminsterAumar",
                     "subsections": []
                 }
@@ -18,53 +18,53 @@
         },
         {
             "title": "Chapter 1: Monster Lore",
-            "urlName": "rules/vgtm/monster-lore",
+            "urlName": "vgtm/monster-lore",
             "anchorName": "#Chapter1MonsterLore",
             "subsections": [
                 {
                     "title": "Beholders: Bad Dreams Come True",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#BeholdersBadDreamsComeTrue",
                     "subsections": [
                         {
                             "title": "Physical Characteristics",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#PhysicalCharacteristics",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying a Beholder",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaBeholder",
                             "subsections": []
                         },
                         {
                             "title": "Beholder Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#BeholderNames",
                             "subsections": []
                         },
                         {
                             "title": "Battle Tactics",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#BattleTactics",
                             "subsections": []
                         },
                         {
                             "title": "Outside Combat",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#OutsideCombat",
                             "subsections": []
                         },
                         {
                             "title": "Variant Abilities",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#VariantAbilities",
                             "subsections": []
                         },
                         {
                             "title": "Beholder Lairs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#BeholderLairs",
                             "subsections": []
                         }
@@ -72,72 +72,72 @@
                 },
                 {
                     "title": "Giants: World Shakers",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#GiantsWorldShakers",
                     "subsections": [
                         {
                             "title": "Children of the All-Father",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#ChildrenoftheAllFather",
                             "subsections": []
                         },
                         {
                             "title": "The Giant Tongue",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#TheGiantTongue",
                             "subsections": []
                         },
                         {
                             "title": "Giants and Magic",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GiantsandMagic",
                             "subsections": []
                         },
                         {
                             "title": "How to Lay a Giant Low",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#HowtoLayaGiantLow",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying a Giant",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaGiant",
                             "subsections": []
                         },
                         {
                             "title": "Cloud Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#CloudGiants",
                             "subsections": []
                         },
                         {
                             "title": "Fire Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#FireGiants",
                             "subsections": []
                         },
                         {
                             "title": "Frost Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#FrostGiants",
                             "subsections": []
                         },
                         {
                             "title": "Hill Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#HillGiants",
                             "subsections": []
                         },
                         {
                             "title": "Stone Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#StoneGiants",
                             "subsections": []
                         },
                         {
                             "title": "Storm Giants",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#StormGiants",
                             "subsections": []
                         }
@@ -145,54 +145,54 @@
                 },
                 {
                     "title": "Gnolls: The Insatiable Hunger",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#GnollsTheInsatiableHunger",
                     "subsections": [
                         {
                             "title": "Yeenoghu",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Yeenoghu",
                             "subsections": []
                         },
                         {
                             "title": "Gnoll Tactics",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GnollTactics",
                             "subsections": []
                         },
                         {
                             "title": "Language",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Language",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying Gnolls and Cultists of Yeenoghu",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingGnollsandCultistsofYeenoghu",
                             "subsections": []
                         },
                         {
                             "title": "Gnoll Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GnollNames",
                             "subsections": []
                         },
                         {
                             "title": "Anatomy of a War Band",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#AnatomyofaWarBand",
                             "subsections": []
                         },
                         {
                             "title": "Gnoll Allies",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GnollAllies",
                             "subsections": []
                         },
                         {
                             "title": "Creating a Gnoll War Band",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#CreatingaGnollWarBand",
                             "subsections": []
                         }
@@ -200,36 +200,36 @@
                 },
                 {
                     "title": "Goblinoids: The Conquering Host",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#GoblinoidsTheConqueringHost",
                     "subsections": [
                         {
                             "title": "Goblins",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Goblins",
                             "subsections": []
                         },
                         {
                             "title": "Bugbears",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Bugbears",
                             "subsections": []
                         },
                         {
                             "title": "Hobgoblins",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Hobgoblins",
                             "subsections": []
                         },
                         {
                             "title": "Maglubiyet’s Will Be Done",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#MaglubiyetsWillBeDone",
                             "subsections": []
                         },
                         {
                             "title": "Goblinoid War Camp",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GoblinoidWarCamp",
                             "subsections": []
                         }
@@ -237,48 +237,48 @@
                 },
                 {
                     "title": "Hags: Dark Sisterhood",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#HagsDarkSisterhood",
                     "subsections": [
                         {
                             "title": "Roleplaying a Hag",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaHag",
                             "subsections": []
                         },
                         {
                             "title": "Hag Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#HagNames",
                             "subsections": []
                         },
                         {
                             "title": "Mounts and Vehicles",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#MountsandVehicles",
                             "subsections": []
                         },
                         {
                             "title": "Types of Hags",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#TypesofHags",
                             "subsections": []
                         },
                         {
                             "title": "Hag Lairs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#HagLairs",
                             "subsections": []
                         },
                         {
                             "title": "Hag Lair Actions",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#HagLairActions",
                             "subsections": []
                         },
                         {
                             "title": "Regional Effects",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RegionalEffects",
                             "subsections": []
                         }
@@ -286,60 +286,60 @@
                 },
                 {
                     "title": "Kobolds: Little Dragons",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#KoboldsLittleDragons",
                     "subsections": [
                         {
                             "title": "Dragon Servitors",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#DragonServitors",
                             "subsections": []
                         },
                         {
                             "title": "Arcane Magic Users",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#ArcaneMagicUsers",
                             "subsections": []
                         },
                         {
                             "title": "Environment",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Environment",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying a Kobold",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaKobold",
                             "subsections": []
                         },
                         {
                             "title": "Kobold Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#KoboldNames",
                             "subsections": []
                         },
                         {
                             "title": "Physical Variations",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#PhysicalVariationsKobolds",
                             "subsections": []
                         },
                         {
                             "title": "Tactics",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Tactics",
                             "subsections": []
                         },
                         {
                             "title": "Allies, Minions, and Pets",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#AlliesMinionsandPets",
                             "subsections": []
                         },
                         {
                             "title": "Kobold Lairs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#KoboldLairs",
                             "subsections": []
                         }
@@ -347,42 +347,42 @@
                 },
                 {
                     "title": "Mind Flayers: Scourge of Worlds",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#MindFlayersScourgeofWorlds",
                     "subsections": [
                         {
                             "title": "The Importance of Brains",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#TheImportanceofBrains",
                             "subsections": []
                         },
                         {
                             "title": "The Elder Brain",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#TheElderBrain",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying a Mind Flayer",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaMindFlayer",
                             "subsections": []
                         },
                         {
                             "title": "Mind Flayer Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#MindFlayerNames",
                             "subsections": []
                         },
                         {
                             "title": "Mind Flayer Lairs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#MindFlayerLairs",
                             "subsections": []
                         },
                         {
                             "title": "Nautiloids",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#Nautiloids",
                             "subsections": []
                         }
@@ -390,42 +390,42 @@
                 },
                 {
                     "title": "Orcs: The Godsworn",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#OrcsTheGodsworn",
                     "subsections": [
                         {
                             "title": "Gods of the Orcs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GodsoftheOrcs",
                             "subsections": []
                         },
                         {
                             "title": "Life in the Tribe",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#LifeintheTribe",
                             "subsections": []
                         },
                         {
                             "title": "Orc Culture and Beliefs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#OrcCultureandBeliefs",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying an Orc",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayinganOrc",
                             "subsections": []
                         },
                         {
                             "title": "Orc Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#OrcNames",
                             "subsections": []
                         },
                         {
                             "title": "Orc Lairs",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#OrcLairs",
                             "subsections": []
                         }
@@ -433,54 +433,54 @@
                 },
                 {
                     "title": "Yuan-ti: Snake People",
-                    "urlName": "rules/vgtm/monster-lore",
+                    "urlName": "vgtm/monster-lore",
                     "anchorName": "#YuantiSnakePeople",
                     "subsections": [
                         {
                             "title": "Undercover Empire",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#UndercoverEmpire",
                             "subsections": []
                         },
                         {
                             "title": "Gods of the Yuan-ti",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#GodsoftheYuanti",
                             "subsections": []
                         },
                         {
                             "title": "Serpent Cults",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#SerpentCults",
                             "subsections": []
                         },
                         {
                             "title": "Physical Variations",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#PhysicalVariationsYuanti",
                             "subsections": []
                         },
                         {
                             "title": "Roleplaying a Yuan-ti",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#RoleplayingaYuanti",
                             "subsections": []
                         },
                         {
                             "title": "Yuan-ti Names",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#YuantiNames",
                             "subsections": []
                         },
                         {
                             "title": "Yuan-ti Cities",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#YuantiCities",
                             "subsections": []
                         },
                         {
                             "title": "Allies and Minions",
-                            "urlName": "rules/vgtm/monster-lore",
+                            "urlName": "vgtm/monster-lore",
                             "anchorName": "#AlliesandMinions",
                             "subsections": []
                         }
@@ -490,64 +490,64 @@
         },
         {
             "title": "Chapter 2: Character Races",
-            "urlName": "rules/vgtm/character-races",
+            "urlName": "vgtm/character-races",
             "anchorName": "#Chapter2CharacterRaces",
             "subsections": [
                 {
                     "title": "Aasimar",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Aasimar",
                     "subsections": [
                         {
                             "title": "Celestial Champions",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#CelestialChampions",
                             "subsections": []
                         },
                         {
                             "title": "Hidden Wanderers",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HiddenWanderers",
                             "subsections": []
                         },
                         {
                             "title": "Aasimar Guides",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AasimarGuides",
                             "subsections": []
                         },
                         {
                             "title": "Conflicted Souls",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#ConflictedSouls",
                             "subsections": []
                         },
                         {
                             "title": "Aasimar Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AasimarNames",
                             "subsections": []
                         },
                         {
                             "title": "Aasimar Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AasimarTraits",
                             "subsections": [
                                 {
                                     "title": "Protector Aasimar",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#ProtectorAasimar",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Scourge Aasimar",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#ScourgeAasimar",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Fallen Aasimar",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#FallenAasimar",
                                     "subsections": []
                                 }
@@ -557,42 +557,42 @@
                 },
                 {
                     "title": "Firbolg",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Firbolg",
                     "subsections": [
                         {
                             "title": "Humble Guardians",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HumbleGuardians",
                             "subsections": []
                         },
                         {
                             "title": "Natural Druids",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#NaturalDruids",
                             "subsections": []
                         },
                         {
                             "title": "Hidden Shepherds",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HiddenShepherds",
                             "subsections": []
                         },
                         {
                             "title": "Outcast Adventurers",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#OutcastAdventurers",
                             "subsections": []
                         },
                         {
                             "title": "Firbolg Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#FirbolgNames",
                             "subsections": []
                         },
                         {
                             "title": "Firbolg Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#FirbolgTraits",
                             "subsections": []
                         }
@@ -600,36 +600,36 @@
                 },
                 {
                     "title": "Goliath",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Goliath",
                     "subsections": [
                         {
                             "title": "Driven Competitors",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#DrivenCompetitors",
                             "subsections": []
                         },
                         {
                             "title": "Fair Play",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#FairPlay",
                             "subsections": []
                         },
                         {
                             "title": "Survival of the Fittest",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#SurvivaloftheFittest",
                             "subsections": []
                         },
                         {
                             "title": "Goliath Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#GoliathNames",
                             "subsections": []
                         },
                         {
                             "title": "Goliath Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#GoliathTraits",
                             "subsections": []
                         }
@@ -637,48 +637,48 @@
                 },
                 {
                     "title": "Kenku",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Kenku",
                     "subsections": [
                         {
                             "title": "An Ancient Curse",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AnAncientCurse",
                             "subsections": []
                         },
                         {
                             "title": "Dreams of Flight",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#DreamsofFlight",
                             "subsections": []
                         },
                         {
                             "title": "Hopeless Plagiarists",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HopelessPlagiarists",
                             "subsections": []
                         },
                         {
                             "title": "Ideal Minions",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#IdealMinions",
                             "subsections": []
                         },
                         {
                             "title": "Kenku Adventurers",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#KenkuAdventurers",
                             "subsections": []
                         },
                         {
                             "title": "Kenku Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#KenkuNames",
                             "subsections": []
                         },
                         {
                             "title": "Kenku Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#KenkuTraits",
                             "subsections": []
                         }
@@ -686,48 +686,48 @@
                 },
                 {
                     "title": "Lizardfolk",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Lizardfolk",
                     "subsections": [
                         {
                             "title": "Alien Minds",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AlienMinds",
                             "subsections": []
                         },
                         {
                             "title": "Cold and Calculating",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#ColdandCalculating",
                             "subsections": []
                         },
                         {
                             "title": "Utility and Survival",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#UtilityandSurvival",
                             "subsections": []
                         },
                         {
                             "title": "Hapless Soft Ones",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HaplessSoftOnes",
                             "subsections": []
                         },
                         {
                             "title": "Lizardfolk Personality",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#LizardfolkPersonality",
                             "subsections": []
                         },
                         {
                             "title": "Lizardfolk Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#LizardfolkNames",
                             "subsections": []
                         },
                         {
                             "title": "Lizardfolk Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#LizardfolkTraits",
                             "subsections": []
                         }
@@ -735,48 +735,48 @@
                 },
                 {
                     "title": "Tabaxi",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Tabaxi",
                     "subsections": [
                         {
                             "title": "Wandering Outcasts",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#WanderingOutcasts",
                             "subsections": []
                         },
                         {
                             "title": "Barterers of Lore",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#BarterersofLore",
                             "subsections": []
                         },
                         {
                             "title": "Fleeting Fancies",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#FleetingFancies",
                             "subsections": []
                         },
                         {
                             "title": "Tinkers and Minstrels",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TinkersandMinstrels",
                             "subsections": []
                         },
                         {
                             "title": "Tabaxi Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TabaxiNames",
                             "subsections": []
                         },
                         {
                             "title": "Tabaxi Personality",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TabaxiPersonality",
                             "subsections": []
                         },
                         {
                             "title": "Tabaxi Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TabaxiTraits",
                             "subsections": []
                         }
@@ -784,48 +784,48 @@
                 },
                 {
                     "title": "Triton",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#Triton",
                     "subsections": [
                         {
                             "title": "Aquatic Crusaders",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#AquaticCrusaders",
                             "subsections": []
                         },
                         {
                             "title": "Haughty Nobles",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#HaughtyNobles",
                             "subsections": []
                         },
                         {
                             "title": "Staunch Champions",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#StaunchChampions",
                             "subsections": []
                         },
                         {
                             "title": "Strangers to the Surface",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#StrangerstotheSurface",
                             "subsections": []
                         },
                         {
                             "title": "Triton Personality",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TritonPersonality",
                             "subsections": []
                         },
                         {
                             "title": "Triton Names",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TritonNames",
                             "subsections": []
                         },
                         {
                             "title": "Triton Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#TritonTraits",
                             "subsections": []
                         }
@@ -833,29 +833,29 @@
                 },
                 {
                     "title": "Monstrous Adventurers",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#MonstrousAdventurers",
                     "subsections": [
                         {
                             "title": "Why a Monstrous Character?",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#WhyaMonstrousCharacter",
                             "subsections": [
                                 {
                                     "title": "Rare or Mundane?",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#RareorMundane",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Outcast or Ambassador?",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#OutcastorAmbassador",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Friends or Enemies?",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#FriendsorEnemies",
                                     "subsections": []
                                 }
@@ -863,42 +863,42 @@
                         },
                         {
                             "title": "Racial Traits",
-                            "urlName": "rules/vgtm/character-races",
+                            "urlName": "vgtm/character-races",
                             "anchorName": "#RacialTraits",
                             "subsections": [
                                 {
                                     "title": "Bugbear Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#BugbearTraits",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Goblin Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#GoblinTraits",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Hobgoblin Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#HobgoblinTraits",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Kobold Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#KoboldTraits",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Orc Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#OrcTraits",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Yuan-ti Pureblood Traits",
-                                    "urlName": "rules/vgtm/character-races",
+                                    "urlName": "vgtm/character-races",
                                     "anchorName": "#YuantiPurebloodTraits",
                                     "subsections": []
                                 }
@@ -908,7 +908,7 @@
                 },
                 {
                     "title": "Height and Weight",
-                    "urlName": "rules/vgtm/character-races",
+                    "urlName": "vgtm/character-races",
                     "anchorName": "#HeightandWeight",
                     "subsections": []
                 }
@@ -916,48 +916,48 @@
         },
         {
             "title": "Chapter 3: Bestiary",
-            "urlName": "rules/vgtm/bestiary",
+            "urlName": "vgtm/bestiary",
             "anchorName": "#Chapter3Bestiary",
             "subsections": [
                 {
                     "title": "Monsters B - D",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersBD",
                     "subsections": []
                 },
                 {
                     "title": "Monsters F - H",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersFH",
                     "subsections": []
                 },
                 {
                     "title": "Monsters K - M",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersKM",
                     "subsections": []
                 },
                 {
                     "title": "Monsters N - O",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersNO",
                     "subsections": []
                 },
                 {
                     "title": "Monsters Q - S",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersQS",
                     "subsections": []
                 },
                 {
                     "title": "Monsters T - V",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersTV",
                     "subsections": []
                 },
                 {
                     "title": "Monsters W - Y",
-                    "urlName": "rules/vgtm/bestiary",
+                    "urlName": "vgtm/bestiary",
                     "anchorName": "#MonstersWY",
                     "subsections": []
                 }
@@ -965,30 +965,30 @@
         },
         {
             "title": "Appendix A: Assorted Beasts",
-            "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+            "urlName": "vgtm/appendix-a-assorted-beasts",
             "anchorName": "#AppendixAAssortedBeasts",
             "subsections": [
                 {
                     "title": "Aurochs",
-                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "urlName": "vgtm/appendix-a-assorted-beasts",
                     "anchorName": "#Aurochs",
                     "subsections": []
                 },
                 {
                     "title": "Cattle",
-                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "urlName": "vgtm/appendix-a-assorted-beasts",
                     "anchorName": "#Cattle",
                     "subsections": []
                 },
                 {
                     "title": "Dolphin",
-                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "urlName": "vgtm/appendix-a-assorted-beasts",
                     "anchorName": "#Dolphin",
                     "subsections": []
                 },
                 {
                     "title": "Swarm of Rot Grubs",
-                    "urlName": "rules/vgtm/appendix-a-assorted-beasts",
+                    "urlName": "vgtm/appendix-a-assorted-beasts",
                     "anchorName": "#SwarmofRotGrubs",
                     "subsections": []
                 }
@@ -996,30 +996,30 @@
         },
         {
             "title": "Appendix B: Nonplayer Characters",
-            "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+            "urlName": "vgtm/appendix-b-nonplayer-characters",
             "anchorName": "#AppendixBNonplayerCharacters",
             "subsections": [
                 {
                     "title": "Nonplayer Characters A - C",
-                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "urlName": "vgtm/appendix-b-nonplayer-characters",
                     "anchorName": "#NonplayerCharactersAC",
                     "subsections": []
                 },
                 {
                     "title": "Nonplayer Characters D - I",
-                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "urlName": "vgtm/appendix-b-nonplayer-characters",
                     "anchorName": "#NonplayerCharactersDI",
                     "subsections": []
                 },
                 {
                     "title": "Nonplayer Characters K - N",
-                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "urlName": "vgtm/appendix-b-nonplayer-characters",
                     "anchorName": "#NonplayerCharactersKN",
                     "subsections": []
                 },
                 {
                     "title": "Nonplayer Characters S - W",
-                    "urlName": "rules/vgtm/appendix-b-nonplayer-characters",
+                    "urlName": "vgtm/appendix-b-nonplayer-characters",
                     "anchorName": "#NonplayerCharactersSW",
                     "subsections": []
                 }
@@ -1027,24 +1027,24 @@
         },
         {
             "title": "Appendix C: Monster Lists",
-            "urlName": "rules/vgtm/appendix-c-monster-lists",
+            "urlName": "vgtm/appendix-c-monster-lists",
             "anchorName": "#AppendixCMonsterLists",
             "subsections": [
                 {
                     "title": "Stat Blocks by Creature Type",
-                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "urlName": "vgtm/appendix-c-monster-lists",
                     "anchorName": "#StatBlocksbyCreatureType",
                     "subsections": []
                 },
                 {
                     "title": "Stat Blocks by Challenge Rating",
-                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "urlName": "vgtm/appendix-c-monster-lists",
                     "anchorName": "#StatBlocksbyChallengeRating",
                     "subsections": []
                 },
                 {
                     "title": "Creatures by Environment",
-                    "urlName": "rules/vgtm/appendix-c-monster-lists",
+                    "urlName": "vgtm/appendix-c-monster-lists",
                     "anchorName": "#CreaturesbyEnvironment",
                     "subsections": []
                 }
@@ -1052,12 +1052,12 @@
         },
         {
             "title": "Credits",
-            "urlName": "rules/vgtm/credits",
+            "urlName": "vgtm/credits",
             "anchorName": "#Credits",
             "subsections": [
                 {
                     "title": "About This Book",
-                    "urlName": "rules/vgtm/credits",
+                    "urlName": "vgtm/credits",
                     "anchorName": "#AboutThisBook",
                     "subsections": []
                 }

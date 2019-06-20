@@ -1,12 +1,13 @@
 import $ from "jquery";
 import C from "../../Constants";
+import CharacterList from "./CharacterList";
 import CharactersApp from "./CharactersApp";
 import CharactersService from "./CharactersService";
+import Configuration from "../../data/Configuration";
 import MessageService from "../../services/MessageService";
 import Opt from "../../Options";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Configuration from "../../data/Configuration";
 
 /* global chrome */
 

@@ -15,17 +15,20 @@ class TOCApp extends Component {
             hasScrollDown: false,
             scrollInterval: 0
         };
+        this.menuUl = React.createRef();
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleHeight);
         window.addEventListener('resize', this.handleHeight);
-        new ResizeObserver(() => this.updateScrollButtons(this.handleHeight)).observe(this.menuUl);
+        this.menuUl.current.addEventListener('wheel', this.handleMenuScroll);
+        new ResizeObserver(() => this.updateScrollButtons(this.handleHeight)).observe(this.menuUl.current);
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleHeight);
         window.removeEventListener('resize', this.handleHeight);
+        this.menuUl.current.removeEventListener('wheel', this.handleMenuScroll);
     }
 
     handleHeight = throttle(() => {
@@ -42,10 +45,11 @@ class TOCApp extends Component {
     }
 
     updateScrollButtons = (callback) => {
-        if (!this.menuUl) return;
-        const hasScroll = this.menuUl.clientHeight < this.menuUl.scrollHeight;
-        const hasScrollUp = this.menuUl.scrollTop > 0;
-        const hasScrollDown = this.menuUl.scrollTop + this.menuUl.clientHeight < this.menuUl.scrollHeight;
+        const menu = this.menuUl.current;
+        if (!menu) return;
+        const hasScroll = menu.clientHeight < menu.scrollHeight;
+        const hasScrollUp = menu.scrollTop > 0;
+        const hasScrollDown = menu.scrollTop + menu.clientHeight < menu.scrollHeight;
 
         this.setState({
             hasScroll,
@@ -57,7 +61,7 @@ class TOCApp extends Component {
     }
 
     scroll = (delta) => {
-        this.menuUl.scrollTop += delta;
+        this.menuUl.current.scrollTop += delta;
         this.updateScrollButtons();
     }
 
@@ -98,7 +102,7 @@ class TOCApp extends Component {
                 <a href="#top" className="sidebar-menu-top-link">Back to Top</a>
             </div>
             {this.renderScrollUp()}
-            <ul className={"quick-menu quick-menu-tier-1 hidden-scrollbar"} style={{ overflowY: 'auto', overflowX: 'hidden' }} onWheel={this.handleMenuScroll} ref={(el) => this.menuUl = el}>
+            <ul className={"quick-menu quick-menu-tier-1 hidden-scrollbar"} style={{ overflowY: 'auto', overflowX: 'hidden' }} ref={this.menuUl}>
                 {this.props.object.subsections.map(o => <TOCElement key={o.urlName + o.anchorName} object={o} level={2} currentUrl={this.props.currentUrl} menuItemsLookup={this.props.menuItemsLookup} />)}
             </ul>
             {this.renderScrollDown()}

@@ -5,35 +5,35 @@
     "subsections": [
         {
             "title": "Introduction",
-            "urlName": "rules/dmg/introduction",
+            "urlName": "dmg/introduction",
             "anchorName": "#Introduction",
             "subsections": [
                 {
                     "title": "The Dungeon Master",
-                    "urlName": "rules/dmg/introduction",
+                    "urlName": "dmg/introduction",
                     "anchorName": "#TheDungeonMaster",
                     "subsections": []
                 },
                 {
                     "title": "How to Use These Rules",
-                    "urlName": "rules/dmg/introduction",
+                    "urlName": "dmg/introduction",
                     "anchorName": "#HowtoUseTheseRules",
                     "subsections": [
                         {
                             "title": "Part 1: Master of Worlds",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Part1MasterofWorlds",
                             "subsections": []
                         },
                         {
                             "title": "Part 2: Master of Adventures",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Part2MasterofAdventures",
                             "subsections": []
                         },
                         {
                             "title": "Part 3: Master of Rules",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Part3MasterofRules",
                             "subsections": []
                         }
@@ -41,48 +41,48 @@
                 },
                 {
                     "title": "Know Your Players",
-                    "urlName": "rules/dmg/introduction",
+                    "urlName": "dmg/introduction",
                     "anchorName": "#KnowYourPlayers",
                     "subsections": [
                         {
                             "title": "Acting",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Acting",
                             "subsections": []
                         },
                         {
                             "title": "Exploring",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Exploring",
                             "subsections": []
                         },
                         {
                             "title": "Instigating",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Instigating",
                             "subsections": []
                         },
                         {
                             "title": "Fighting",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Fighting",
                             "subsections": []
                         },
                         {
                             "title": "Optimizing",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Optimizing",
                             "subsections": []
                         },
                         {
                             "title": "Problem Solving",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#ProblemSolving",
                             "subsections": []
                         },
                         {
                             "title": "Storytelling",
-                            "urlName": "rules/dmg/introduction",
+                            "urlName": "dmg/introduction",
                             "anchorName": "#Storytelling",
                             "subsections": []
                         }
@@ -92,23 +92,23 @@
         },
         {
             "title": "Chapter 1: A World of Your Own",
-            "urlName": "rules/dmg/a-world-of-your-own",
+            "urlName": "dmg/a-world-of-your-own",
             "anchorName": "#Chapter1AWorldofYourOwn",
             "subsections": [
                 {
                     "title": "The Big Picture",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#TheBigPicture",
                     "subsections": [
                         {
                             "title": "Core Assumptions",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#CoreAssumptions",
                             "subsections": []
                         },
                         {
                             "title": "It’s Your World",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#ItsYourWorld",
                             "subsections": []
                         }
@@ -116,24 +116,24 @@
                 },
                 {
                     "title": "Gods of Your World",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#GodsofYourWorld",
                     "subsections": [
                         {
                             "title": "Loose Pantheons",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#LoosePantheons",
                             "subsections": []
                         },
                         {
                             "title": "Other Religious Systems",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#OtherReligiousSystems",
                             "subsections": []
                         },
                         {
                             "title": "Humanoids and the Gods",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#HumanoidsandtheGods",
                             "subsections": []
                         }
@@ -141,30 +141,30 @@
                 },
                 {
                     "title": "Mapping Your Campaign",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#MappingYourCampaign",
                     "subsections": [
                         {
                             "title": "Province Scale",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#ProvinceScale",
                             "subsections": []
                         },
                         {
                             "title": "Kingdom Scale",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#KingdomScale",
                             "subsections": []
                         },
                         {
                             "title": "Continent Scale",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#ContinentScale",
                             "subsections": []
                         },
                         {
                             "title": "Combining Scales",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#CombiningScales",
                             "subsections": []
                         }
@@ -172,42 +172,42 @@
                 },
                 {
                     "title": "Settlements",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#Settlements",
                     "subsections": [
                         {
                             "title": "Purpose",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Purpose",
                             "subsections": []
                         },
                         {
                             "title": "Size",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Size",
                             "subsections": []
                         },
                         {
                             "title": "Atmosphere",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Atmosphere",
                             "subsections": []
                         },
                         {
                             "title": "Government",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Government",
                             "subsections": []
                         },
                         {
                             "title": "Commerce",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Commerce",
                             "subsections": []
                         },
                         {
                             "title": "Currency",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Currency",
                             "subsections": []
                         }
@@ -215,24 +215,24 @@
                 },
                 {
                     "title": "Languages and Dialects",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#LanguagesandDialects",
                     "subsections": []
                 },
                 {
                     "title": "Factions and Organizations",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#FactionsandOrganizations",
                     "subsections": [
                         {
                             "title": "Adventurers and Organizations",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#AdventurersandOrganizations",
                             "subsections": []
                         },
                         {
                             "title": "Renown",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Renown",
                             "subsections": []
                         }
@@ -240,30 +240,30 @@
                 },
                 {
                     "title": "Magic in Your World",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#MagicinYourWorld",
                     "subsections": [
                         {
                             "title": "Restrictions on Magic",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#RestrictionsonMagic",
                             "subsections": []
                         },
                         {
                             "title": "Schools of Magic",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#SchoolsofMagic",
                             "subsections": []
                         },
                         {
                             "title": "Teleportation Circles",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#TeleportationCircles",
                             "subsections": []
                         },
                         {
                             "title": "Bringing Back the Dead",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#BringingBacktheDead",
                             "subsections": []
                         }
@@ -271,30 +271,30 @@
                 },
                 {
                     "title": "Creating a Campaign",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#CreatingaCampaign",
                     "subsections": [
                         {
                             "title": "Start Small",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#StartSmall",
                             "subsections": []
                         },
                         {
                             "title": "Set the Stage",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#SettheStage",
                             "subsections": []
                         },
                         {
                             "title": "Involving the Characters",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#InvolvingtheCharacters",
                             "subsections": []
                         },
                         {
                             "title": "Creating a Background",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#CreatingaBackground",
                             "subsections": []
                         }
@@ -302,36 +302,36 @@
                 },
                 {
                     "title": "Campaign Events",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#CampaignEvents",
                     "subsections": [
                         {
                             "title": "Putting Events in Motion",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#PuttingEventsinMotion",
                             "subsections": []
                         },
                         {
                             "title": "When Not to Shake It Up",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#WhenNottoShakeItUp",
                             "subsections": []
                         },
                         {
                             "title": "World-Shaking Events",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#WorldShakingEvents",
                             "subsections": []
                         },
                         {
                             "title": "Tracking Time",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#TrackingTime",
                             "subsections": []
                         },
                         {
                             "title": "Ending a Campaign",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#EndingaCampaign",
                             "subsections": []
                         }
@@ -339,42 +339,42 @@
                 },
                 {
                     "title": "Play Style",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#PlayStyle",
                     "subsections": [
                         {
                             "title": "Hack and Slash",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#HackandSlash",
                             "subsections": []
                         },
                         {
                             "title": "Immersive Storytelling",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#ImmersiveStorytelling",
                             "subsections": []
                         },
                         {
                             "title": "Something in Between",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#SomethinginBetween",
                             "subsections": []
                         },
                         {
                             "title": "Character Names",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#CharacterNames",
                             "subsections": []
                         },
                         {
                             "title": "Continuing or Episodic Campaigns",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#ContinuingorEpisodicCampaigns",
                             "subsections": []
                         },
                         {
                             "title": "Campaign Theme",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#CampaignTheme",
                             "subsections": []
                         }
@@ -382,36 +382,36 @@
                 },
                 {
                     "title": "Tiers of Play",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#TiersofPlay",
                     "subsections": [
                         {
                             "title": "Levels 1-4: Local Heroes",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Levels14LocalHeroes",
                             "subsections": []
                         },
                         {
                             "title": "Levels 5-10: Heroes of the Realm",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Levels510HeroesoftheRealm",
                             "subsections": []
                         },
                         {
                             "title": "Levels 11-16: Masters of the Realm",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Levels1116MastersoftheRealm",
                             "subsections": []
                         },
                         {
                             "title": "Levels 17-20: Masters of the World",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#Levels1720MastersoftheWorld",
                             "subsections": []
                         },
                         {
                             "title": "Starting at Higher Level",
-                            "urlName": "rules/dmg/a-world-of-your-own",
+                            "urlName": "dmg/a-world-of-your-own",
                             "anchorName": "#StartingatHigherLevel",
                             "subsections": []
                         }
@@ -419,7 +419,7 @@
                 },
                 {
                     "title": "Flavors of Fantasy",
-                    "urlName": "rules/dmg/a-world-of-your-own",
+                    "urlName": "dmg/a-world-of-your-own",
                     "anchorName": "#FlavorsofFantasy",
                     "subsections": []
                 }
@@ -427,59 +427,59 @@
         },
         {
             "title": "Chapter 2: Creating a Multiverse",
-            "urlName": "rules/dmg/creating-a-multiverse",
+            "urlName": "dmg/creating-a-multiverse",
             "anchorName": "#Chapter2CreatingaMultiverse",
             "subsections": [
                 {
                     "title": "The Planes",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#ThePlanes",
                     "subsections": []
                 },
                 {
                     "title": "Planar Travel",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#PlanarTravel",
                     "subsections": []
                 },
                 {
                     "title": "Astral Plane",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#AstralPlane",
                     "subsections": []
                 },
                 {
                     "title": "Ethereal Plane",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#EtherealPlane",
                     "subsections": []
                 },
                 {
                     "title": "Feywild",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#Feywild",
                     "subsections": []
                 },
                 {
                     "title": "Shadowfell",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#Shadowfell",
                     "subsections": []
                 },
                 {
                     "title": "Inner Planes",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#InnerPlanes",
                     "subsections": []
                 },
                 {
                     "title": "Outer Planes",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#OuterPlanes",
                     "subsections": [
                         {
                             "title": "Mount Celestia",
-                            "urlName": "rules/dmg/creating-a-multiverse",
+                            "urlName": "dmg/creating-a-multiverse",
                             "anchorName": "#MountCelestia",
                             "subsections": []
                         }
@@ -487,13 +487,13 @@
                 },
                 {
                     "title": "Other Planes",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#OtherPlanes",
                     "subsections": []
                 },
                 {
                     "title": "Known Worlds of the Material Plane",
-                    "urlName": "rules/dmg/creating-a-multiverse",
+                    "urlName": "dmg/creating-a-multiverse",
                     "anchorName": "#KnownWorldsoftheMaterialPlane",
                     "subsections": []
                 }
@@ -501,41 +501,41 @@
         },
         {
             "title": "Chapter 3: Creating Adventures",
-            "urlName": "rules/dmg/creating-adventures",
+            "urlName": "dmg/creating-adventures",
             "anchorName": "#Chapter3CreatingAdventures",
             "subsections": [
                 {
                     "title": "Elements of a Great Adventure",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#ElementsofaGreatAdventure",
                     "subsections": []
                 },
                 {
                     "title": "Published Adventures",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#PublishedAdventures",
                     "subsections": []
                 },
                 {
                     "title": "Adventure Structure",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#AdventureStructure",
                     "subsections": [
                         {
                             "title": "Beginning",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Beginning",
                             "subsections": []
                         },
                         {
                             "title": "Middle",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Middle",
                             "subsections": []
                         },
                         {
                             "title": "Ending",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Ending",
                             "subsections": []
                         }
@@ -543,36 +543,36 @@
                 },
                 {
                     "title": "Adventure Types",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#AdventureTypes",
                     "subsections": [
                         {
                             "title": "Location-Based Adventures",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#LocationBasedAdventures",
                             "subsections": []
                         },
                         {
                             "title": "Event-Based Adventures",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#EventBasedAdventures",
                             "subsections": []
                         },
                         {
                             "title": "Mysteries",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Mysteries",
                             "subsections": []
                         },
                         {
                             "title": "Intrigue",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Intrigue",
                             "subsections": []
                         },
                         {
                             "title": "Framing Events",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#FramingEvents",
                             "subsections": []
                         }
@@ -580,24 +580,24 @@
                 },
                 {
                     "title": "Complications",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#Complications",
                     "subsections": [
                         {
                             "title": "Moral Quandaries",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#MoralQuandaries",
                             "subsections": []
                         },
                         {
                             "title": "Twists",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#Twists",
                             "subsections": []
                         },
                         {
                             "title": "Side Quests",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#SideQuests",
                             "subsections": []
                         }
@@ -605,30 +605,30 @@
                 },
                 {
                     "title": "Creating Encounters",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#CreatingEncounters",
                     "subsections": [
                         {
                             "title": "Character Objectives",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#CharacterObjectives",
                             "subsections": []
                         },
                         {
                             "title": "Creating a Combat Encounter",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#CreatingaCombatEncounter",
                             "subsections": []
                         },
                         {
                             "title": "Modifying Encounter Difficulty",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#ModifyingEncounterDifficulty",
                             "subsections": []
                         },
                         {
                             "title": "Fun Combat Encounters",
-                            "urlName": "rules/dmg/creating-adventures",
+                            "urlName": "dmg/creating-adventures",
                             "anchorName": "#FunCombatEncounters",
                             "subsections": []
                         }
@@ -636,7 +636,7 @@
                 },
                 {
                     "title": "Random Encounters",
-                    "urlName": "rules/dmg/creating-adventures",
+                    "urlName": "dmg/creating-adventures",
                     "anchorName": "#RandomEncounters",
                     "subsections": []
                 }
@@ -644,35 +644,35 @@
         },
         {
             "title": "Chapter 4: Creating Nonplayer Characters",
-            "urlName": "rules/dmg/creating-nonplayer-characters",
+            "urlName": "dmg/creating-nonplayer-characters",
             "anchorName": "#Chapter4CreatingNonplayerCharacters",
             "subsections": [
                 {
                     "title": "Designing NPCs",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#DesigningNPCs",
                     "subsections": [
                         {
                             "title": "Quick NPCs",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#QuickNPCs",
                             "subsections": []
                         },
                         {
                             "title": "Detailed NPCs",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#DetailedNPCs",
                             "subsections": []
                         },
                         {
                             "title": "Monsters as NPCs",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#MonstersasNPCs",
                             "subsections": []
                         },
                         {
                             "title": "NPC Statistics",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#NPCStatistics",
                             "subsections": []
                         }
@@ -680,24 +680,24 @@
                 },
                 {
                     "title": "NPC Party Members",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#NPCPartyMembers",
                     "subsections": [
                         {
                             "title": "Low-Level Followers",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#LowLevelFollowers",
                             "subsections": []
                         },
                         {
                             "title": "Adventurer NPCs",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#AdventurerNPCs",
                             "subsections": []
                         },
                         {
                             "title": "Optional Rule: Loyalty",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#OptionalRuleLoyalty",
                             "subsections": []
                         }
@@ -705,12 +705,12 @@
                 },
                 {
                     "title": "Contacts",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#Contacts",
                     "subsections": [
                         {
                             "title": "Patrons",
-                            "urlName": "rules/dmg/creating-nonplayer-characters",
+                            "urlName": "dmg/creating-nonplayer-characters",
                             "anchorName": "#Patrons",
                             "subsections": []
                         }
@@ -718,37 +718,37 @@
                 },
                 {
                     "title": "Hirelings",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#Hirelings",
                     "subsections": []
                 },
                 {
                     "title": "Extras",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#Extras",
                     "subsections": []
                 },
                 {
                     "title": "Villains",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#Villains",
                     "subsections": []
                 },
                 {
                     "title": "Villainous Class Options",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#VillainousClassOptions",
                     "subsections": []
                 },
                 {
                     "title": "Cleric: Death Domain",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#ClericDeathDomain",
                     "subsections": []
                 },
                 {
                     "title": "Paladin: Oathbreaker",
-                    "urlName": "rules/dmg/creating-nonplayer-characters",
+                    "urlName": "dmg/creating-nonplayer-characters",
                     "anchorName": "#PaladinOathbreaker",
                     "subsections": []
                 }
@@ -756,23 +756,23 @@
         },
         {
             "title": "Chapter 5: Adventure Environments",
-            "urlName": "rules/dmg/adventure-environments",
+            "urlName": "dmg/adventure-environments",
             "anchorName": "#Chapter5AdventureEnvironments",
             "subsections": [
                 {
                     "title": "Dungeons",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#Dungeons",
                     "subsections": [
                         {
                             "title": "Building a Dungeon",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#BuildingaDungeon",
                             "subsections": []
                         },
                         {
                             "title": "Dungeon Inhabitants",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#DungeonInhabitants",
                             "subsections": []
                         }
@@ -780,18 +780,18 @@
                 },
                 {
                     "title": "Mapping a Dungeon",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#MappingaDungeon",
                     "subsections": [
                         {
                             "title": "Dungeon Features",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#DungeonFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Dungeon Hazards",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#DungeonHazards",
                             "subsections": []
                         }
@@ -799,18 +799,18 @@
                 },
                 {
                     "title": "Wilderness",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#Wilderness",
                     "subsections": [
                         {
                             "title": "Travel-Montage Approach",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#TravelMontageApproach",
                             "subsections": []
                         },
                         {
                             "title": "Hour-by-Hour Approach",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#HourbyHourApproach",
                             "subsections": []
                         }
@@ -818,18 +818,18 @@
                 },
                 {
                     "title": "Mapping a Wilderness",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#MappingaWilderness",
                     "subsections": [
                         {
                             "title": "Movement on the Map",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#MovementontheMap",
                             "subsections": []
                         },
                         {
                             "title": "Wilderness Features",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#WildernessFeatures",
                             "subsections": []
                         }
@@ -837,36 +837,36 @@
                 },
                 {
                     "title": "Wilderness Survival",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#WildernessSurvival",
                     "subsections": [
                         {
                             "title": "Weather",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#Weather",
                             "subsections": []
                         },
                         {
                             "title": "High Altitude",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#HighAltitude",
                             "subsections": []
                         },
                         {
                             "title": "Wilderness Hazards",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#WildernessHazards",
                             "subsections": []
                         },
                         {
                             "title": "Foraging",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#Foraging",
                             "subsections": []
                         },
                         {
                             "title": "Becoming Lost",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#BecomingLost",
                             "subsections": []
                         }
@@ -874,18 +874,18 @@
                 },
                 {
                     "title": "Settlements (Towns, Villages, Cities)",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#SettlementsTownsVillagesCities",
                     "subsections": [
                         {
                             "title": "Random Settlements",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#RandomSettlements",
                             "subsections": []
                         },
                         {
                             "title": "Random Buildings",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#RandomBuildings",
                             "subsections": []
                         }
@@ -893,24 +893,24 @@
                 },
                 {
                     "title": "Mapping a Settlement",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#MappingaSettlement",
                     "subsections": []
                 },
                 {
                     "title": "Urban Encounters",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#UrbanEncounters",
                     "subsections": [
                         {
                             "title": "Law and Order",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#LawandOrder",
                             "subsections": []
                         },
                         {
                             "title": "Random Urban Encounters",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#RandomUrbanEncounters",
                             "subsections": []
                         }
@@ -918,24 +918,24 @@
                 },
                 {
                     "title": "Unusual Environments",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#UnusualEnvironments",
                     "subsections": [
                         {
                             "title": "Underwater",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#Underwater",
                             "subsections": []
                         },
                         {
                             "title": "The Sea",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#TheSea",
                             "subsections": []
                         },
                         {
                             "title": "The Sky",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#TheSky",
                             "subsections": []
                         }
@@ -943,18 +943,18 @@
                 },
                 {
                     "title": "Traps",
-                    "urlName": "rules/dmg/adventure-environments",
+                    "urlName": "dmg/adventure-environments",
                     "anchorName": "#Traps",
                     "subsections": [
                         {
                             "title": "Traps in Play",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#TrapsinPlay",
                             "subsections": []
                         },
                         {
                             "title": "Sample Traps",
-                            "urlName": "rules/dmg/adventure-environments",
+                            "urlName": "dmg/adventure-environments",
                             "anchorName": "#SampleTraps",
                             "subsections": []
                         }
@@ -964,29 +964,29 @@
         },
         {
             "title": "Chapter 6: Between Adventures",
-            "urlName": "rules/dmg/between-adventures",
+            "urlName": "dmg/between-adventures",
             "anchorName": "#Chapter6BetweenAdventures",
             "subsections": [
                 {
                     "title": "Linking Adventures",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#LinkingAdventures",
                     "subsections": []
                 },
                 {
                     "title": "Using an Overarching Story",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#UsinganOverarchingStory",
                     "subsections": [
                         {
                             "title": "Example 1: The Quest of Many Parts",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#Example1TheQuestofManyParts",
                             "subsections": []
                         },
                         {
                             "title": "Example 2: Agents of X",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#Example2AgentsofX",
                             "subsections": []
                         }
@@ -994,36 +994,36 @@
                 },
                 {
                     "title": "Planting Adventure Seeds",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#PlantingAdventureSeeds",
                     "subsections": []
                 },
                 {
                     "title": "Foreshadowing",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#Foreshadowing",
                     "subsections": []
                 },
                 {
                     "title": "Campaign Tracking",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#CampaignTracking",
                     "subsections": []
                 },
                 {
                     "title": "Recurring Expenses",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#RecurringExpenses",
                     "subsections": [
                         {
                             "title": "Businesses",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#Businesses",
                             "subsections": []
                         },
                         {
                             "title": "Garrisons",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#Garrisons",
                             "subsections": []
                         }
@@ -1031,65 +1031,65 @@
                 },
                 {
                     "title": "Downtime Activities",
-                    "urlName": "rules/dmg/between-adventures",
+                    "urlName": "dmg/between-adventures",
                     "anchorName": "#DowntimeActivities",
                     "subsections": [
                         {
                             "title": "More Downtime Activities",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#MoreDowntimeActivities",
                             "subsections": [
                                 {
                                     "title": "Building a Stronghold",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#BuildingaStronghold",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Carousing",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#Carousing",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Crafting a Magic Item",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#CraftingaMagicItem",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Gaining Renown",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#GainingRenown",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Performing Sacred Rites",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#PerformingSacredRites",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Running a Business",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#RunningaBusiness",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Selling Magic Items",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#SellingMagicItems",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Sowing Rumors",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#SowingRumors",
                                     "subsections": []
                                 },
                                 {
                                     "title": "Training to Gain Levels",
-                                    "urlName": "rules/dmg/between-adventures",
+                                    "urlName": "dmg/between-adventures",
                                     "anchorName": "#TrainingtoGainLevels",
                                     "subsections": []
                                 }
@@ -1097,7 +1097,7 @@
                         },
                         {
                             "title": "Creating Downtime Activities",
-                            "urlName": "rules/dmg/between-adventures",
+                            "urlName": "dmg/between-adventures",
                             "anchorName": "#CreatingDowntimeActivities",
                             "subsections": []
                         }
@@ -1107,23 +1107,23 @@
         },
         {
             "title": "Chapter 7: Treasure",
-            "urlName": "rules/dmg/treasure",
+            "urlName": "dmg/treasure",
             "anchorName": "#Chapter7Treasure",
             "subsections": [
                 {
                     "title": "Types of Treasure",
-                    "urlName": "rules/dmg/treasure",
+                    "urlName": "dmg/treasure",
                     "anchorName": "#TypesofTreasure",
                     "subsections": []
                 },
                 {
                     "title": "Random Treasure",
-                    "urlName": "rules/dmg/treasure",
+                    "urlName": "dmg/treasure",
                     "anchorName": "#RandomTreasure",
                     "subsections": [
                         {
                             "title": "Treasure Tables",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#TreasureTables",
                             "subsections": []
                         }
@@ -1131,78 +1131,78 @@
                 },
                 {
                     "title": "Magic Items",
-                    "urlName": "rules/dmg/treasure",
+                    "urlName": "dmg/treasure",
                     "anchorName": "#MagicItems",
                     "subsections": [
                         {
                             "title": "Rarity",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#Rarity",
                             "subsections": []
                         },
                         {
                             "title": "Buying and Selling",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#BuyingandSelling",
                             "subsections": []
                         },
                         {
                             "title": "Identifying a Magic Item",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#IdentifyingaMagicItem",
                             "subsections": []
                         },
                         {
                             "title": "Attunement",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#Attunement",
                             "subsections": []
                         },
                         {
                             "title": "Cursed Items",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#CursedItems",
                             "subsections": []
                         },
                         {
                             "title": "Magic Item Categories",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#MagicItemCategories",
                             "subsections": []
                         },
                         {
                             "title": "Wearing and Wielding Items",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#WearingandWieldingItems",
                             "subsections": []
                         },
                         {
                             "title": "Activating an Item",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#ActivatinganItem",
                             "subsections": []
                         },
                         {
                             "title": "Magic Item Resilience",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#MagicItemResilience",
                             "subsections": []
                         },
                         {
                             "title": "Special Features",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#SpecialFeatures",
                             "subsections": []
                         },
                         {
                             "title": "Random Magic Items",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#RandomMagicItems",
                             "subsections": []
                         },
                         {
                             "title": "Magic Items A–Z",
-                            "urlName": "rules/dmg/treasure",
+                            "urlName": "dmg/treasure",
                             "anchorName": "#MagicItemsAZ",
                             "subsections": []
                         }
@@ -1212,42 +1212,42 @@
         },
         {
             "title": "Chapter 7: Magic Items A–Z",
-            "urlName": "rules/dmg/magic-items-a-z",
+            "urlName": "dmg/magic-items-a-z",
             "anchorName": "#MagicItemsAZ",
             "subsections": [
                 {
                     "title": "Magic Items (A - D)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsAD",
                     "subsections": []
                 },
                 {
                     "title": "Magic Items (E - H)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsEH",
                     "subsections": []
                 },
                 {
                     "title": "Magic Items (I - L)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsIL",
                     "subsections": []
                 },
                 {
                     "title": "Magic Items (M - P)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsMP",
                     "subsections": []
                 },
                 {
                     "title": "Magic Items (Q - T)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsQT",
                     "subsections": []
                 },
                 {
                     "title": "Magic Items (U - W)",
-                    "urlName": "rules/dmg/magic-items-a-z",
+                    "urlName": "dmg/magic-items-a-z",
                     "anchorName": "#MagicItemsUW",
                     "subsections": []
                 }
@@ -1255,115 +1255,140 @@
         },
         {
             "title": "Chapter 7: Sentient Magic Items",
-            "urlName": "rules/dmg/sentient-magic-items-artifacts",
+            "urlName": "dmg/sentient-magic-items-artifacts",
             "anchorName": "#",
             "subsections": [
                 {
                     "title": "Creating Sentient Magic Items",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                    "anchorName": "#",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#CreatingSentientMagicItems",
                     "subsections": []
                 },
                 {
                     "title": "Conflict",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
                     "anchorName": "#Conflict",
                     "subsections": []
                 },
                 {
                     "title": "Sample Sentient Items",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
                     "anchorName": "#SampleSentientItems",
                     "subsections": [
                         {
                             "title": "Blackrazor",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#Blackrazor",
                             "subsections": []
                         },
                         {
                             "title": "Moonblade",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#Moonblade",
                             "subsections": []
                         },
                         {
                             "title": "Wave",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#Wave",
                             "subsections": []
                         },
                         {
                             "title": "Whelm",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#Whelm",
                             "subsections": []
                         }
                     ]
                 },
                 {
                     "title": "Artifacts",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
                     "anchorName": "#Artifacts",
                     "subsections": []
                 },
                 {
                     "title": "Artifact Properties",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                    "anchorName": "#",
-                    "subsections": []
+                    "urlName": "dmg/sentient-magic-items-artifacts",
+                    "anchorName": "#ArtifactProperties",
+                    "subsections": [
+                        {
+                            "title": "Minor Beneficial Properties",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#MinorBeneficialProperties",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Major Beneficial Properties",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#MajorBeneficialProperties",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Minor Detrimental Properties",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#MinorDetrimentalProperties",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Major Detrimental Properties",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#MajorDetrimentalProperties",
+                            "subsections": []
+                        }
+                    ]
                 },
                 {
                     "title": "Destroying Artifacts",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
                     "anchorName": "#DestroyingArtifacts",
                     "subsections": []
                 },
                 {
                     "title": "Sample Artifacts",
-                    "urlName": "rules/dmg/sentient-magic-items-artifacts",
+                    "urlName": "dmg/sentient-magic-items-artifacts",
                     "anchorName": "#SampleArtifacts",
                     "subsections": [
                         {
                             "title": "Axe of the Dwarvish Lords",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#AxeoftheDwarvishLords",
                             "subsections": []
                         },
                         {
                             "title": "Book of Exalted Deeds",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#BookofExaltedDeeds",
                             "subsections": []
                         },
                         {
                             "title": "Book of Vile Darkness",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#BookofVileDarkness",
                             "subsections": []
                         },
                         {
                             "title": "Eye and Hand of Vecna",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#EyeandHandofVecna",
                             "subsections": []
                         },
                         {
                             "title": "Orb of Dragonkind",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#OrbofDragonkind",
                             "subsections": []
                         },
                         {
                             "title": "Sword of Kas",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#SwordofKas",
                             "subsections": []
                         },
                         {
                             "title": "Wand of Orcus",
-                            "urlName": "rules/dmg/sentient-magic-items-artifacts",
-                            "anchorName": "#",
+                            "urlName": "dmg/sentient-magic-items-artifacts",
+                            "anchorName": "#WandofOrcus",
                             "subsections": []
                         }
                     ]
@@ -1372,24 +1397,86 @@
         },
         {
             "title": "Chapter 7: Other Rewards",
-            "urlName": "rules/dmg/other-rewards",
+            "urlName": "dmg/other-rewards",
             "anchorName": "#",
             "subsections": [
                 {
                     "title": "Supernatural Gifts",
-                    "urlName": "rules/dmg/other-rewards",
+                    "urlName": "dmg/other-rewards",
                     "anchorName": "#SupernaturalGifts",
-                    "subsections": []
+                    "subsections": [
+                        {
+                            "title": "Blessings",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Blessings",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Charms",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Charms",
+                            "subsections": []
+                        }
+                    ]
                 },
                 {
                     "title": "Marks of Prestige",
-                    "urlName": "rules/dmg/other-rewards",
+                    "urlName": "dmg/other-rewards",
                     "anchorName": "#MarksofPrestige",
-                    "subsections": []
+                    "subsections": [
+                        {
+                            "title": "Letters of Recommendation",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#LettersofRecommendation",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Medals",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Medals",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Parcels of Land",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#ParcelsofLand",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Favors",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#SpecialFavors",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Special Rights",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#SpecialRights",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Strongholds",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Strongholds",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Titles",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Titles",
+                            "subsections": []
+                        },
+                        {
+                            "title": "Training",
+                            "urlName": "dmg/other-rewards",
+                            "anchorName": "#Training",
+                            "subsections": []
+                        }
+                    ]
                 },
                 {
                     "title": "Epic Boons",
-                    "urlName": "rules/dmg/other-rewards",
+                    "urlName": "dmg/other-rewards",
                     "anchorName": "#EpicBoons",
                     "subsections": []
                 }
@@ -1397,53 +1484,53 @@
         },
         {
             "title": "Chapter 8: Running the Game",
-            "urlName": "rules/dmg/running-the-game",
+            "urlName": "dmg/running-the-game",
             "anchorName": "#Chapter8RunningtheGame",
             "subsections": [
                 {
                     "title": "Table Rules",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#TableRules",
                     "subsections": []
                 },
                 {
                     "title": "The Role of Dice",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#TheRoleofDice",
                     "subsections": []
                 },
                 {
                     "title": "Using Ability Scores",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#UsingAbilityScores",
                     "subsections": []
                 },
                 {
                     "title": "Exploration",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Exploration",
                     "subsections": []
                 },
                 {
                     "title": "Social Interaction",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#SocialInteraction",
                     "subsections": []
                 },
                 {
                     "title": "Objects",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Objects",
                     "subsections": []
                 },
                 {
                     "title": "Combat",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Combat",
                     "subsections": [
                         {
                             "title": "Mob Attacks",
-                            "urlName": "rules/dmg/running-the-game",
+                            "urlName": "dmg/running-the-game",
                             "anchorName": "#MobAttacks",
                             "subsections": []
                         }
@@ -1451,37 +1538,37 @@
                 },
                 {
                     "title": "Chases",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Chases",
                     "subsections": []
                 },
                 {
                     "title": "Siege Equipment",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#SiegeEquipment",
                     "subsections": []
                 },
                 {
                     "title": "Diseases",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Diseases",
                     "subsections": []
                 },
                 {
                     "title": "Poisons",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Poisons",
                     "subsections": []
                 },
                 {
                     "title": "Madness",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#Madness",
                     "subsections": []
                 },
                 {
                     "title": "Experience Points",
-                    "urlName": "rules/dmg/running-the-game",
+                    "urlName": "dmg/running-the-game",
                     "anchorName": "#ExperiencePoints",
                     "subsections": []
                 }
@@ -1489,35 +1576,35 @@
         },
         {
             "title": "Chapter 9: Dungeon Master’s Workshop",
-            "urlName": "rules/dmg/dungeon-masters-workshop",
+            "urlName": "dmg/dungeon-masters-workshop",
             "anchorName": "#Chapter9DungeonMastersWorkshop",
             "subsections": [
                 {
                     "title": "Ability Options",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#AbilityOptions",
                     "subsections": [
                         {
                             "title": "Proficiency Dice",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#ProficiencyDice",
                             "subsections": []
                         },
                         {
                             "title": "Skill Variants",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#SkillVariants",
                             "subsections": []
                         },
                         {
                             "title": "Hero Points",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#HeroPoints",
                             "subsections": []
                         },
                         {
                             "title": "New Ability Scores: Honor and Sanity",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#NewAbilityScoresHonorandSanity",
                             "subsections": []
                         }
@@ -1525,48 +1612,48 @@
                 },
                 {
                     "title": "Adventuring Options",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#AdventuringOptions",
                     "subsections": [
                         {
                             "title": "Fear and Horror",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#FearandHorror",
                             "subsections": []
                         },
                         {
                             "title": "Healing",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#Healing",
                             "subsections": []
                         },
                         {
                             "title": "Rest Variants",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#RestVariants",
                             "subsections": []
                         },
                         {
                             "title": "Firearms",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#Firearms",
                             "subsections": []
                         },
                         {
                             "title": "Explosives",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#Explosives",
                             "subsections": []
                         },
                         {
                             "title": "Alien Technology",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#AlienTechnology",
                             "subsections": []
                         },
                         {
                             "title": "Plot Points",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#PlotPoints",
                             "subsections": []
                         }
@@ -1574,48 +1661,48 @@
                 },
                 {
                     "title": "Combat Options",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#CombatOptions",
                     "subsections": [
                         {
                             "title": "Initiative Variants",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#InitiativeVariants",
                             "subsections": []
                         },
                         {
                             "title": "Action Options",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#ActionOptions",
                             "subsections": []
                         },
                         {
                             "title": "Hitting Cover",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#HittingCover",
                             "subsections": []
                         },
                         {
                             "title": "Cleaving through Creatures",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CleavingthroughCreatures",
                             "subsections": []
                         },
                         {
                             "title": "Injuries",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#Injuries",
                             "subsections": []
                         },
                         {
                             "title": "Massive Damage",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#MassiveDamage",
                             "subsections": []
                         },
                         {
                             "title": "Morale",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#Morale",
                             "subsections": []
                         }
@@ -1623,36 +1710,36 @@
                 },
                 {
                     "title": "Creating a Monster",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#CreatingaMonster",
                     "subsections": [
                         {
                             "title": "Modifying a Monster",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#ModifyingaMonster",
                             "subsections": []
                         },
                         {
                             "title": "Creating Quick Monster Stats",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CreatingQuickMonsterStats",
                             "subsections": []
                         },
                         {
                             "title": "Creating a Monster Stat Block",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CreatingaMonsterStatBlock",
                             "subsections": []
                         },
                         {
                             "title": "NPC Stat Blocks",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#NPCStatBlocks",
                             "subsections": []
                         },
                         {
                             "title": "Monsters with Classes",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#MonsterswithClasses",
                             "subsections": []
                         }
@@ -1660,18 +1747,18 @@
                 },
                 {
                     "title": "Creating a Spell",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#CreatingaSpell",
                     "subsections": [
                         {
                             "title": "Spell Damage",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#SpellDamage",
                             "subsections": []
                         },
                         {
                             "title": "Healing Spells",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#HealingSpells",
                             "subsections": []
                         }
@@ -1679,18 +1766,18 @@
                 },
                 {
                     "title": "Creating a Magic Item",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#CreatingaMagicItem",
                     "subsections": [
                         {
                             "title": "Modifying an Item",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#ModifyinganItem",
                             "subsections": []
                         },
                         {
                             "title": "Creating a New Item",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CreatingaNewItem",
                             "subsections": []
                         }
@@ -1698,24 +1785,24 @@
                 },
                 {
                     "title": "Creating New Character Options",
-                    "urlName": "rules/dmg/dungeon-masters-workshop",
+                    "urlName": "dmg/dungeon-masters-workshop",
                     "anchorName": "#CreatingNewCharacterOptions",
                     "subsections": [
                         {
                             "title": "Creating a Race or Subrace",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CreatingaRaceorSubrace",
                             "subsections": []
                         },
                         {
                             "title": "Modifying a Class",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#ModifyingaClass",
                             "subsections": []
                         },
                         {
                             "title": "Creating a Background",
-                            "urlName": "rules/dmg/dungeon-masters-workshop",
+                            "urlName": "dmg/dungeon-masters-workshop",
                             "anchorName": "#CreatingaBackground",
                             "subsections": []
                         }
@@ -1725,48 +1812,48 @@
         },
         {
             "title": "Appendix A: Random Dungeons",
-            "urlName": "rules/dmg/appendix-a-random-dungeons",
+            "urlName": "dmg/appendix-a-random-dungeons",
             "anchorName": "#AppendixARandomDungeons",
             "subsections": [
                 {
                     "title": "Starting Area",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#StartingArea",
                     "subsections": []
                 },
                 {
                     "title": "Passages",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#Passages",
                     "subsections": []
                 },
                 {
                     "title": "Doors",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#Doors",
                     "subsections": []
                 },
                 {
                     "title": "Chambers",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#Chambers",
                     "subsections": []
                 },
                 {
                     "title": "Stairs",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#Stairs",
                     "subsections": []
                 },
                 {
                     "title": "Connecting Areas",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#ConnectingAreas",
                     "subsections": []
                 },
                 {
                     "title": "Stocking a Dungeon",
-                    "urlName": "rules/dmg/appendix-a-random-dungeons",
+                    "urlName": "dmg/appendix-a-random-dungeons",
                     "anchorName": "#StockingaDungeon",
                     "subsections": []
                 }
@@ -1774,18 +1861,18 @@
         },
         {
             "title": "Appendix B: Monster Lists",
-            "urlName": "rules/dmg/appendix-b-monster-lists",
+            "urlName": "dmg/appendix-b-monster-lists",
             "anchorName": "#AppendixBMonsterLists",
             "subsections": [
                 {
                     "title": "Monsters by Environment",
-                    "urlName": "rules/dmg/appendix-b-monster-lists",
+                    "urlName": "dmg/appendix-b-monster-lists",
                     "anchorName": "#MonstersbyEnvironment",
                     "subsections": []
                 },
                 {
                     "title": "Monsters by Challenge Rating",
-                    "urlName": "rules/dmg/appendix-b-monster-lists",
+                    "urlName": "dmg/appendix-b-monster-lists",
                     "anchorName": "#MonstersbyChallengeRating",
                     "subsections": []
                 }
@@ -1793,19 +1880,19 @@
         },
         {
             "title": "Appendix C: Maps",
-            "urlName": "rules/dmg/appendix-c-maps",
+            "urlName": "dmg/appendix-c-maps",
             "anchorName": "#AppendixCMaps",
             "subsections": []
         },
         {
             "title": "Appendix D: Dungeon Master Inspiration",
-            "urlName": "rules/dmg/appendix-d-dungeon-master-inspiration",
+            "urlName": "dmg/appendix-d-dungeon-master-inspiration",
             "anchorName": "#AppendixDDungeonMasterInspiration",
             "subsections": []
         },
         {
             "title": "Credits",
-            "urlName": "rules/dmg/credits",
+            "urlName": "dmg/credits",
             "anchorName": "#Credits",
             "subsections": []
         }
