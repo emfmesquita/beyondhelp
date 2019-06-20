@@ -26,7 +26,7 @@ const disableScrollOutsideFrame = function () {
         }
     };
 
-    $(document).on('wheel', trapWheel);
+    document.addEventListener("wheel", trapWheel, { passive: false });
 };
 
 disableScrollOutsideFrame();
