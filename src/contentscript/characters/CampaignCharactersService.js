@@ -1,11 +1,14 @@
 import $ from "jquery";
 import C from "../../Constants";
+import CharacterFoldersStorageService from "../../services/storage/CharacterFoldersStorageService";
 import CharacterList from "./CharacterList";
 import CharactersApp from "./CharactersApp";
 import CharactersService from "./CharactersService";
 import MessageService from "../../services/MessageService";
 import React from 'react';
 import ReactDOM from 'react-dom';
+import UserService from "../../services/UserService";
+import regeneratorRuntime from "regenerator-runtime";
 
 /* global chrome */
 
@@ -19,8 +22,11 @@ class CampaignCharactersService {
 
         const campaign = path.substring(11);
 
-        MessageService.send(C.UsernameMessage, {}, (username: string) => {
-            if (!username) return;
+        MessageService.send(C.UsernameMessage, {}, async (username: string) => {
+            const userId = UserService.getUserID();
+            if (username) {
+                await CharacterFoldersStorageService.migrateToId(username, userId);
+            }
 
             const charListContainers = $(".listing-container");
             const hasDeactivatedList = charListContainers.length > 1;
@@ -39,7 +45,7 @@ class CampaignCharactersService {
                 originalListingBodies.first().detach();
 
                 // renders the character folder structure on content page
-                ReactDOM.render(<CharactersApp allCharacters={characters} owner={username} campaign={campaign} />, jqFoldersContainer[0]);
+                ReactDOM.render(<CharactersApp allCharacters={characters} owner={userId} campaign={campaign} />, jqFoldersContainer[0]);
             } else {
                 ReactDOM.render(<CharacterList characters={characters} />, originalListingBodies[0]);
             }
