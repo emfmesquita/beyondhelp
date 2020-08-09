@@ -21,7 +21,8 @@ class CharactersService {
             } else {
                 const [lvl, race, classes] = jqcharWrapperEl.find(".ddb-campaigns-character-card-header-upper-character-info-secondary").first().text().split("|");
                 const viewUrl = jqcharWrapperEl.find(".ddb-campaigns-character-card-footer-links-item-view").attr("href");
-                const [, , , , id] = viewUrl.split("/");
+                const tokens = viewUrl.split("/");
+                const id = tokens[tokens.length - 1];
                 character = new CharacterData(id, name, lvl, race, classes, jqcharWrapperEl[0]);
             }
 

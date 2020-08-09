@@ -95,7 +95,6 @@ class OptionsApp extends Component {
             <Tab.Content animation>
                 <Tab.Pane eventKey="cfolders">
                     {this.optionField("Enable folders on 'My Characters' page.", Opt.MyCharactersFolders)}
-                    {this.optionField("Sort characters alphabetically on 'My Characters' page.", Opt.MyCharacterSort)}
                     {this.optionField("Enable folders on campaign pages.", Opt.CampaignCharactersFolders)}
                 </Tab.Pane>
                 <Tab.Pane eventKey="editor">

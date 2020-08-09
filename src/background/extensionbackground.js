@@ -61,6 +61,14 @@ chrome.webRequest.onCompleted.addListener((details) => details.tabId >= 0 && Mes
     ]
 });
 
+// listen comment created, edited, deleted, undeleted
+// sends a message to the content script to handle it - basically to init tooltips on it
+chrome.webRequest.onCompleted.addListener((details) => details.tabId >= 0 && MessageService.sendToTab(details.tabId, C.CharactersUpdateMessage), {
+    urls: [
+        "*://character-service.dndbeyond.com/character/*"
+    ]
+});
+
 // listen when a monster is added from AddMonsterButton, adds a notification
 MessageService.listen(C.AddMonsterMessage, (message) => {
     if (message.addNotificationMessage) {

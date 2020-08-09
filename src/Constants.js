@@ -41,6 +41,7 @@ const commentChangedMessage = "commentchangedmessage";
 const buildTooltipMessage = "buildtooltipmessage";
 const extraMapRefsChangesMessage = "extraMapRefsChangesMessage";
 const openLinkMessage = "openLinkMessage";
+const charactersUpdateMessage = "charactersUpdateMessage";
 
 class Constants {
     static get DefaultMonsterColor() {
@@ -132,6 +133,9 @@ class Constants {
     }
     static get OpenLinkMessage() {
         return openLinkMessage;
+    }
+    static get CharactersUpdateMessage() {
+        return charactersUpdateMessage;
     }
 }
 

@@ -29,23 +29,25 @@ class CharactersApp extends Component {
     }
 
     componentDidMount() {
+        // adds create folder buttons if not had before
+        if ($(".bh-folder-button").length === 0) {
+            if (!this.props.campaign) {
+                // renders both of the buttons to create folders on content page
+                const temp = document.createElement("div");
+                ReactDOM.render(<CreateFolderButton buttonClasses="bh-folder-button button-alt button-alt-character" onCreateFolder={this.handleCreateFolder} />, temp, () => {
+                    $(".page-header .more-links__links").append(temp.children[0]);
+                });
 
-        if (!this.props.campaign) {
-            // renders both of the buttons to create folders on content page
-            const temp = document.createElement("div");
-            ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-character" onCreateFolder={this.handleCreateFolder} />, temp, () => {
-                $(".page-header .more-links__links").append(temp.children[0]);
-            });
-
-            const temp2 = document.createElement("div");
-            ReactDOM.render(<CreateFolderButton buttonClasses="button" onCreateFolder={this.handleCreateFolder} />, temp2, () => {
-                $(".ddb-characters-listing-header-secondary").append(temp2.children[0]);
-            });
-        } else {
-            const temp3 = document.createElement("div");
-            ReactDOM.render(<CreateFolderButton buttonClasses="button-alt button-alt-default" onCreateFolder={this.handleCreateFolder} />, temp3, () => {
-                $(".page-header .more-links__links").append(temp3.children[0]);
-            });
+                const temp2 = document.createElement("div");
+                ReactDOM.render(<CreateFolderButton buttonClasses="bh-folder-button button" onCreateFolder={this.handleCreateFolder} />, temp2, () => {
+                    $(".ddb-characters-listing-header-secondary").append(temp2.children[0]);
+                });
+            } else {
+                const temp3 = document.createElement("div");
+                ReactDOM.render(<CreateFolderButton buttonClasses="bh-folder-button button-alt button-alt-default" onCreateFolder={this.handleCreateFolder} />, temp3, () => {
+                    $(".page-header .more-links__links").append(temp3.children[0]);
+                });
+            }
         }
 
         // load folders from storage

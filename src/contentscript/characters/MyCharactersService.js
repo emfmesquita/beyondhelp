@@ -21,36 +21,37 @@ class MyCharactersService {
         const path = window.location.pathname;
         if (path !== "/my-characters") return;
 
+        const userId = UserService.getUserID();
+
+        // hide the original container of characters
+        $(".ddb-characters-listing-body .listing-body").hide();
+
         MessageService.send(C.UsernameMessage, {}, async (username: string) => {
-            const userId = UserService.getUserID();
             if (username) {
                 await CharacterFoldersStorageService.migrateToId(username, userId);
             }
+        });
+
+        const updateCharacters = () => {
+            // removes the old bh folders container
+            $(".bh-characters-container").detach();
+
+            // adds a new container of characters folders on content page
+            const jqFoldersContainer = $("<div class='bh-characters-container'></div>");
+            $(".ddb-characters-listing-body .listing-container").after(jqFoldersContainer);
+
+            // empties the folder container
+            jqFoldersContainer.empty();
 
             // parses and sort characters by name
             let characters = CharactersService.parseCharacters();
 
-            if (config[Opt.MyCharacterSort]) {
-                characters = characters.sort((a, b) => a.name.localeCompare(b.name));
-            }
+            // renders the character folder structure on content page
+            ReactDOM.render(<CharactersApp allCharacters={characters} owner={userId} />, jqFoldersContainer[0]);
+        }
 
-            const originalListingBodies = $(".ddb-characters-listing-body .listing-body");
-
-            if (config[Opt.MyCharactersFolders]) {
-                // adds the container of characters folders on content page
-                const jqFoldersContainer = $("<div></div>");
-                $(".ddb-characters-listing-body .listing-header").after(jqFoldersContainer);
-
-                // removes the original container of characters from content page
-                originalListingBodies.detach();
-
-                // renders the character folder structure on content page
-                ReactDOM.render(<CharactersApp allCharacters={characters} owner={userId} />, jqFoldersContainer[0]);
-            } else {
-                // renders only sorted characters
-                ReactDOM.render(<CharacterList characters={characters} />, originalListingBodies[0]);
-            }
-        });
+        updateCharacters();
+        MessageService.listen(C.CharactersUpdateMessage, updateCharacters);
     }
 }
 

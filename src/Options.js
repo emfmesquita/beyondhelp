@@ -7,7 +7,7 @@ const monstercrindicator = "monstercrindicator";
 const tableroll = "tableroll";
 const charfavicon = "charfavicon";
 const mycharacterfolders = "mycharacterfolders";
-const mycharactersort = "mycharactersort";
+const mycharactersort = "mycharactersort"; // deprecated
 const campaigncharacterfolders = "campaigncharacterfolders";
 const editorButton = "editorButton";
 const fullscreenButton = "fullscreenButton";
@@ -55,7 +55,6 @@ const allOptions = [
     tableroll,
     charfavicon,
     mycharacterfolders,
-    mycharactersort,
     campaigncharacterfolders,
     editorButton,
     fullscreenButton,
@@ -122,6 +121,9 @@ class Options {
     static get MyCharactersFolders(): string {
         return mycharacterfolders;
     }
+    /**
+     * Deprecated
+     */
     static get MyCharacterSort(): string {
         return mycharactersort;
     }
