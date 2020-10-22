@@ -1,6 +1,6 @@
 {
     "name": "Beyond Help",
-    "version": "0.18.0",
+    "version": "0.18.1",
     "description": "DISCONTINUED - Chrome extension with helpers to https://www.dndbeyond.com/.",
     "background": {
         "scripts": [

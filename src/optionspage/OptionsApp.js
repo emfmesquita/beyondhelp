@@ -70,6 +70,14 @@ class OptionsApp extends Component {
     }
 
     renderTabTitles = () => {
+        // discontinued
+        return (
+            <Nav bsStyle="pills" stacked>
+                <NavItem eventKey="pbp">Play by Post</NavItem>
+                <NavItem eventKey="credits">Credits</NavItem>
+            </Nav>
+        );
+
         return (
             <Nav bsStyle="pills" stacked>
                 <NavItem eventKey="cfolders">Character Folders</NavItem>
@@ -172,9 +180,8 @@ class OptionsApp extends Component {
     render() {
         if (!initialized) return null;
 
-        return <div style={{ padding: "30px", textAlign: "center" }}>This extension was discontinued. <a href="https://github.com/emfmesquita/beyondhelp">More Info.</a></div>
-
-        const startTab = this.state[Opt.ExtraMapRefsDrawingBundle] ? "custommaprefs" : "cfolders";
+        // const startTab = this.state[Opt.ExtraMapRefsDrawingBundle] ? "custommaprefs" : "cfolders";
+        const startTab = "pbp";
         return (
             <div>
                 <Tab.Container id="bh-options-tabs" defaultActiveKey={startTab}>
@@ -187,6 +194,8 @@ class OptionsApp extends Component {
                                 <span className="BH-option-logo" />
                                 Beyond Help Options Page
                             </h1>
+
+                            <div style={{ padding: "30px", textAlign: "center" }}>This extension was discontinued. <a href="https://github.com/emfmesquita/beyondhelp">More Info.</a></div>
                             {this.renderTabContents()}
                         </Col>
                     </Row>

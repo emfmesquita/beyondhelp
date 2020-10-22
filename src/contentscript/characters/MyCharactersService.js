@@ -48,7 +48,7 @@ class MyCharactersService {
 
             // renders the character folder structure on content page
             ReactDOM.render(<CharactersApp allCharacters={characters} owner={userId} />, jqFoldersContainer[0]);
-        }
+        };
 
         updateCharacters();
         MessageService.listen(C.CharactersUpdateMessage, updateCharacters);
