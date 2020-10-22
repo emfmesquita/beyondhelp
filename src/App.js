@@ -281,6 +281,9 @@ class App extends Component {
         const hCollection = <Link address={`${base}/homebrew/collection`}>Homebrew Collection</Link>;
         const hCreation = <Link address={`${base}/homebrew/creations`}>Homebrew Creations</Link>;
 
+        // discontinued
+        return null;
+
         return (
             <Well className="Monster-empty-list">
                 <p>No monsters added. Try to add a {goblin}. Monsters can also be added from the expanded details of {mList}, {mHomebrew}, {hCollection} and {hCreation}.</p>
@@ -372,7 +375,12 @@ class App extends Component {
                         theme={SelectUtils.defaultTheme()}
                         styles={SelectUtils.defaultStyle({})}
                     />
-                </div>
+                </div>`
+                
+                <Well style={{ margin: "0px 10px", padding: "10px", textAlign: "center" }}>
+                    <div>This extension was discontinued.</div>
+                    <a href="javascript:void(0)" onClick={LinkService.toNewTabHandler("https://github.com/emfmesquita/beyondhelp", true)}>More Info.</a>
+                </Well>`
 
                 {this.renderMainContent()}
 

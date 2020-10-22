@@ -63,6 +63,9 @@ MessageService.listen(C.ExtraMapRefsChangesMessage, (message) => ConfigStorageSe
 
 
 ConfigStorageService.getConfig().then((config: Configuration) => {
+    // discontinued
+    return;
+
     ContentScriptService.init(config);
 
     init(config);

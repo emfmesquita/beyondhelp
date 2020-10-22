@@ -171,6 +171,9 @@ class OptionsApp extends Component {
 
     render() {
         if (!initialized) return null;
+
+        return <div style={{ padding: "30px", textAlign: "center" }}>This extension was discontinued. <a href="https://github.com/emfmesquita/beyondhelp">More Info.</a></div>
+
         const startTab = this.state[Opt.ExtraMapRefsDrawingBundle] ? "custommaprefs" : "cfolders";
         return (
             <div>

@@ -13,7 +13,7 @@ const insertNew = (data) => {
             chrome.runtime.lastError ? reject(chrome.runtime.lastError) : resolve(data);
         });
     });
-}
+};
 
 class CharacterFoldersStorageService {
     /**
